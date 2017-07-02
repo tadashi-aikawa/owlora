@@ -1,0 +1,24 @@
+{
+  "name": "owlora",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tadashi-aikawa/owlora.git",
+  "author": "tadashi-aikawa <syou.maman@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --progress"
+  },
+  "dependencies": {
+    "@types/react": "^15.0.34",
+    "@types/react-dom": "^15.5.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.1",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

@@ -1,1 +1,5 @@
-# owlora
+# Owlora
+
+```
+$ yarn run dev
+```
