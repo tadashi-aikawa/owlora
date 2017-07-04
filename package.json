@@ -12,12 +12,18 @@
     "@types/react": "^15.0.34",
     "@types/react-dom": "^15.5.1",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.70.0"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",
+    "css-loader": "^0.28.4",
+    "image-loader": "^0.0.1",
     "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
     "typescript": "^2.4.1",
+    "url-loader": "^0.5.9",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
   }

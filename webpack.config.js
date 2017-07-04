@@ -29,11 +29,23 @@ module.exports = {
 
     module: {
         rules: [
-            // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, use: "awesome-typescript-loader" },
-
-            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, use: "source-map-loader" }
+            {
+                test: /\.tsx?$/,
+                use: "awesome-typescript-loader"
+            },
+            {
+                test: /\.js$/,
+                use: "source-map-loader",
+                enforce: "pre"
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(otf|eot|svg|ttf|woff|woff2|jpg|png)(\?.+)?$/,
+                use: 'url-loader'
+            }
         ]
     },
 
