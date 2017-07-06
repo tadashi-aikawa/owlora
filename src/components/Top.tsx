@@ -1,15 +1,21 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Dictionary} from 'lodash';
 import {Card, Feed, Label, Segment, Statistic} from 'semantic-ui-react';
 import Emojify from 'react-emojione';
 import * as moment from 'moment';
-import {Moment} from "moment";
+import {Moment} from 'moment';
 
-
-const MINUTES = 240;
 const DATE_FORMAT = "YYYY-MM-DD (ddd)";
-const toDisplayFormat = (v: string): string => moment(v).format(DATE_FORMAT);
+const SIMPLE_FORMAT = 'YYYYMMDD';
+const MINUTES_PER_DAY = 240;
+const MINUTES_PER_SPECIFIC_DAYS = {
+    20170707: 0,
+    20170710: 0,
+    20170713: 120,
+    20170717: 0,
+    20170726: 0
+};
+
 
 export interface Task {
     id: number;
@@ -45,15 +51,19 @@ export interface DailyCardProps {
 }
 
 const colorMap = (time: number) => {
-    if (time < 2) return "red";
-    if (time < 1) return "violet";
+    if (time < -120) return "red";
+    if (time < -60) return "violet";
     if (time < 0) return "orange";
     return "green";
 };
 
 export const DailyCard = (props: DailyCardProps) => {
-    const totalElapsedMinutes = _.sumBy(props.tasks, t => t.elapsedMinutes);
-    const freeMinutes = MINUTES - totalElapsedMinutes;
+    const totalElapsedMinutes = _.sumBy(
+        props.tasks.filter(t => t.dateString !== '毎日' && t.dateString !== '平日'),
+        t => t.elapsedMinutes
+    );
+    const specifiedMinutes = MINUTES_PER_SPECIFIC_DAYS[props.date.format(SIMPLE_FORMAT)];
+    const freeMinutes = (specifiedMinutes !== undefined ? specifiedMinutes : MINUTES_PER_DAY) - totalElapsedMinutes;
 
     const toTaskFeed = (task: Task) =>
         <TaskFeed
@@ -82,7 +92,10 @@ export const DailyCard = (props: DailyCardProps) => {
             </Segment>
             <Card.Content>
                 <Feed>
-                    {props.tasks.map(toTaskFeed)}
+                    {props.tasks
+                        .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
+                        .map(toTaskFeed)
+                    }
                 </Feed>
             </Card.Content>
         </Card>
@@ -97,7 +110,7 @@ const isThursDay = (date: Moment): boolean => date.day() === 4;
 const isFriDay = (date: Moment): boolean => date.day() === 5;
 
 const inTheDay = (task: Task, date: Moment): boolean => {
-    if (date.format('YYYYMMDD') === task.dueDate.format('YYYYMMDD')) {
+    if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
         return true;
     }
 
