@@ -10,7 +10,7 @@ import {fetchProjects, fetchTasks} from './client/TodoistClient';
 import Project from './models/todoist/Project';
 import * as moment from 'moment';
 
-const HOGEHOGE = 'TODO'
+const HOGEHOGE = ''
 const LABELS = {
     760006: 5,
     760002: 15,

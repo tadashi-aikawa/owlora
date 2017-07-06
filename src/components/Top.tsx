@@ -53,7 +53,7 @@ export interface DailyCardProps {
 const colorMap = (time: number) => {
     if (time < -120) return "red";
     if (time < -60) return "violet";
-    if (time < 0) return "orange";
+    if (time <= 0) return "orange";
     return "green";
 };
 
