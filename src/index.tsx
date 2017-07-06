@@ -8,8 +8,9 @@ import {Dictionary} from 'lodash';
 import {Task, Top} from './components/Top';
 import {fetchProjects, fetchTasks} from './client/TodoistClient';
 import Project from './models/todoist/Project';
+import * as moment from 'moment';
 
-const HOGEHOGE = 'TODO';
+const HOGEHOGE = 'TODO'
 const LABELS = {
     760006: 5,
     760002: 15,
@@ -25,10 +26,12 @@ Promise.all([fetchProjects(HOGEHOGE), fetchTasks(HOGEHOGE)])
             .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in LABELS))
             .orderBy(x => x.project_id)
             .map(x => ({
+                id: x.id,
                 name: x.content,
                 projectName: projectsById[String(x.project_id)].name,
                 elapsedMinutes: _.find(LABELS, (v, k) => _.includes(x.labels, Number(k))),
-                dueDate: x.due_date_utc
+                dueDate: moment(x.due_date_utc),
+                dateString: x.date_string
             }))
             .value();
 
