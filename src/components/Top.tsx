@@ -4,17 +4,7 @@ import {Card, Feed, Label, Segment, Statistic} from 'semantic-ui-react';
 import Emojify from 'react-emojione';
 import * as moment from 'moment';
 import {Moment} from 'moment';
-
-const DATE_FORMAT = "YYYY-MM-DD (ddd)";
-const SIMPLE_FORMAT = 'YYYYMMDD';
-const MINUTES_PER_DAY = 240;
-const MINUTES_PER_SPECIFIC_DAYS = {
-    20170707: 0,
-    20170710: 0,
-    20170713: 120,
-    20170717: 0,
-    20170726: 0
-};
+import {MINUTES_PER_SPECIFIC_DAYS, SIMPLE_FORMAT, MINUTES_PER_DAY, DATE_FORMAT} from "../storage/settings";
 
 
 export interface Task {

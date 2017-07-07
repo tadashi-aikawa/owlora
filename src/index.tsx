@@ -9,27 +9,20 @@ import {Task, Top} from './components/Top';
 import {fetchProjects, fetchTasks} from './client/TodoistClient';
 import Project from './models/todoist/Project';
 import * as moment from 'moment';
-
-const HOGEHOGE = ''
-const LABELS = {
-    760006: 5,
-    760002: 15,
-    760003: 30,
-    760004: 60
-};
+import {HOGEHOGE, ESTIMATED_LABELS} from './storage/settings';
 
 Promise.all([fetchProjects(HOGEHOGE), fetchTasks(HOGEHOGE)])
     .then(([projects, todoistTasks]) => {
         const projectsById: Dictionary<Project> = _.keyBy(projects, p => p.id);
 
         const tasks: Task[] = _(todoistTasks)
-            .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in LABELS))
+            .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in ESTIMATED_LABELS))
             .orderBy(x => x.project_id)
             .map(x => ({
                 id: x.id,
                 name: x.content,
                 projectName: projectsById[String(x.project_id)].name,
-                elapsedMinutes: _.find(LABELS, (v, k) => _.includes(x.labels, Number(k))),
+                elapsedMinutes: _.find(ESTIMATED_LABELS, (v, k) => _.includes(x.labels, Number(k))),
                 dueDate: moment(x.due_date_utc),
                 dateString: x.date_string
             }))
