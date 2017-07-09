@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Card, Feed, Label, Segment, Statistic} from 'semantic-ui-react';
+import {Card, Feed, Label, Segment, Statistic, Menu} from 'semantic-ui-react';
 import Emojify from 'react-emojione';
 import * as moment from 'moment';
 import {Moment} from 'moment';
@@ -133,10 +133,20 @@ export const Top = (props: TopProps) => {
         />;
 
     return (
-        <div style={{padding: 10}}>
-            <Card.Group itemsPerRow={5}>
-                {dates.map(toDailyCard)}
-            </Card.Group>
+        <div>
+            <Menu stackable inverted>
+                <Menu.Item>
+                    <img src='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
+                </Menu.Item>
+                <Menu.Item>
+                    <h2>Owlora</h2>
+                </Menu.Item>
+            </Menu>
+            <div style={{padding: 10}}>
+                <Card.Group itemsPerRow={5}>
+                    {dates.map(toDailyCard)}
+                </Card.Group>
+            </div>
         </div>
     );
 };
