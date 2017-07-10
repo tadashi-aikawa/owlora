@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Card, Feed, Label, Segment, Statistic} from 'semantic-ui-react';
+import {Icon, Message, Card, Feed, Label, Segment, Statistic, Dimmer} from 'semantic-ui-react';
 import {Moment} from 'moment';
 import {DATE_FORMAT, MINUTES_PER_DAY, MINUTES_PER_SPECIFIC_DAYS, SIMPLE_FORMAT} from '../storage/settings';
 import {TaskFeed} from './TaskFeed';
@@ -52,6 +52,23 @@ export const DailyCard = (props: DailyCardProps) => {
                 </Label.Group>
             </Segment>
             <Card.Content>
+                <Message info icon hidden={specifiedMinutes !== 0}>
+                    <Icon name='smile' />
+                    <Message.Content>
+                        <Message.Header>
+                            Off time
+                        </Message.Header>
+                        <p>Enjoy without tasks</p>
+                    </Message.Content>
+                </Message>
+                <Message negative icon hidden={!(specifiedMinutes === 0 && totalElapsedMinutes !== 0)}>
+                    <Icon name='warning sign'/>
+                    <Message.Content>
+                        <Message.Header>
+                            Move your tasks to other days!!
+                        </Message.Header>
+                    </Message.Content>
+                </Message>
                 <Feed>
                     {props.tasks
                         .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
