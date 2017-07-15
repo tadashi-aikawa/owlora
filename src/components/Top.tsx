@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Icon, Button, Dimmer, Loader, Menu, Modal} from 'semantic-ui-react';
+import {Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
 import {TaskCards} from './TaskCards';
 import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -31,7 +31,7 @@ export default (props: TopProps) =>
             </Menu.Item>
             <Menu.Item position='right'>
                 <Modal trigger={<Button icon inverted><Icon name="setting" size="large"/></Button>}>
-                    <Modal.Header content="Settings" />
+                    <Header icon="setting" content="Settings" />
                     <Modal.Content>
                         <ConfigEditor defaultConfig={props.config}
                                       onSaveConfig={props.onChangeConfig}

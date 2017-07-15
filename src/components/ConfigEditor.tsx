@@ -39,10 +39,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                 <Grid>
                     <Form.Field inline>
                         <label>Todoist API token</label>
-                        <Form.Input
-                            name="todoistToken"
-                            value={this.state.todoistToken}
-                            onChange={this.handleChange}
+                        <Form.Input type="password"
+                                    name="todoistToken"
+                                    value={this.state.todoistToken}
+                                    onChange={this.handleChange}
                         />
                     </Form.Field>
                     <Form.Field inline>
