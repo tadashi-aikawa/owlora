@@ -44,6 +44,9 @@ export default (props: TopProps) =>
             <Dimmer active={props.isLoading} page>
                 <Loader content='Loading' size='huge' active={props.isLoading}/>
             </Dimmer>
-            <TaskCards tasks={props.tasks} minutesToUsePerDay={props.config.minutesToUsePerDay}/>
+            <TaskCards tasks={props.tasks}
+                       minutesToUsePerDay={props.config.minutesToUsePerDay}
+                       minutesToUsePerSpecificDays={props.config.minutesToUsePerSpecificDays}
+            />
         </div>
     </div>;

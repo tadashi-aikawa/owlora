@@ -6,6 +6,7 @@ import {Moment} from 'moment';
 import {SIMPLE_FORMAT} from '../storage/settings';
 import Task from '../models/Task';
 import {DailyCard} from './DailyCard';
+import {Dictionary} from 'lodash';
 
 
 const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6;
@@ -34,6 +35,7 @@ const inTheDay = (task: Task, date: Moment): boolean => {
 export interface TaskCardsProps {
     tasks: Task[];
     minutesToUsePerDay: number;
+    minutesToUsePerSpecificDays: Dictionary<number>;
 }
 
 export const TaskCards = (props: TaskCardsProps) => {
@@ -48,6 +50,7 @@ export const TaskCards = (props: TaskCardsProps) => {
             date={date}
             tasks={props.tasks.filter(t => inTheDay(t, date))}
             minutesToUsePerDay={props.minutesToUsePerDay}
+            minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
         />;
 
     return (

@@ -13,6 +13,7 @@ const INITIAL_CONFIG_STATE: ConfigState = {
         todoistToken: '',
         minutesToUsePerDay: 240,
         estimatedLabels: {},
+        minutesToUsePerSpecificDays: {},
     }
 };
 
