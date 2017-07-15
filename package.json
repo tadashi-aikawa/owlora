@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
+    "@types/js-yaml": "^3.9.0",
     "@types/lodash": "^4.14.68",
     "@types/moment": "^2.13.0",
     "@types/query-string": "^4.3.1",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^15.5.1",
     "@types/react-redux": "^4.4.45",
     "axios": "^0.16.2",
+    "js-yaml": "^3.9.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "query-string": "^4.3.4",

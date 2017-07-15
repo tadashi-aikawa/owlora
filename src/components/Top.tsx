@@ -3,6 +3,7 @@ import {Accordion, Button, Dimmer, Form, Input, Loader, Menu} from 'semantic-ui-
 import {TaskCards} from './TaskCards';
 import Task from '../models/Task';
 import {Dictionary} from 'lodash';
+import {safeLoad} from 'js-yaml';
 
 export interface TopProps {
     tasks: Task[];
@@ -42,8 +43,12 @@ export const Top = (props: TopProps) =>
                         </Form.Field>
                         <Form.Field inline>
                             <Form.TextArea label='estimatedLabels'
-                                           placeholder='Estimated labels as json (key is label id)'
-                                           onChange={(e, data) => props.onChangeEstimatedLabels(JSON.parse(data.value))}/>
+                                           placeholder='Estimated labels as yaml (key is label id)'
+                                           onChange={
+                                               (e, data) => props.onChangeEstimatedLabels(
+                                                   safeLoad(data.value)
+                                               )
+                                           }/>
                         </Form.Field>
                     </Form>
                 </Accordion.Content>
