@@ -31,7 +31,7 @@ export default (props: TopProps) =>
             </Menu.Item>
             <Menu.Item position='right'>
                 <Modal trigger={<Button icon inverted><Icon name="setting" size="large"/></Button>}>
-                    <Header icon="setting" content="Settings" />
+                    <Header icon="setting" content="Settings"/>
                     <Modal.Content>
                         <ConfigEditor defaultConfig={props.config}
                                       onSaveConfig={props.onChangeConfig}
@@ -44,9 +44,12 @@ export default (props: TopProps) =>
             <Dimmer active={props.isLoading} page>
                 <Loader content='Loading' size='huge' active={props.isLoading}/>
             </Dimmer>
-            <TaskCards tasks={props.tasks}
-                       minutesToUsePerDay={props.config.minutesToUsePerDay}
-                       minutesToUsePerSpecificDays={props.config.minutesToUsePerSpecificDays}
-            />
+            {
+                props.tasks.length
+                    ? <TaskCards tasks={props.tasks}
+                                 minutesToUsePerDay={props.config.minutesToUsePerDay}
+                                 minutesToUsePerSpecificDays={props.config.minutesToUsePerSpecificDays}/>
+                    : ''
+            }
         </div>
     </div>;

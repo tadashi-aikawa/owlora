@@ -1,18 +1,11 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Icon, Message, Card, Feed, Label, Segment, Statistic, Dimmer} from 'semantic-ui-react';
+import {Dictionary} from 'lodash';
+import {Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import {TaskFeed} from './TaskFeed';
 import Task from '../models/Task';
-import {Dictionary} from 'lodash';
-
-const colorMap = (time: number) => {
-    if (time < -120) return "red";
-    if (time < -60) return "violet";
-    if (time <= 0) return "orange";
-    return "green";
-};
 
 export interface DailyCardProps {
     date: Moment;
@@ -27,7 +20,8 @@ export const DailyCard = (props: DailyCardProps) => {
         t => t.elapsedMinutes
     );
     const specifiedMinutes = props.minutesToUsePerSpecificDays[props.date.format(SIMPLE_FORMAT)];
-    const freeMinutes = (specifiedMinutes !== undefined ? specifiedMinutes : props.minutesToUsePerDay) - totalElapsedMinutes;
+    const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : props.minutesToUsePerDay;
+    const freeMinutes = minutesToUse - totalElapsedMinutes;
 
     const toTaskFeed = (task: Task) =>
         <TaskFeed
@@ -43,20 +37,25 @@ export const DailyCard = (props: DailyCardProps) => {
                 <Statistic size='mini' color="olive">
                     <Statistic.Value>{props.date.format(DATE_FORMAT)}</Statistic.Value>
                 </Statistic>
-                <Label.Group>
-                    <Label color={colorMap(freeMinutes)}>
-                        Total
-                        <Label.Detail>{totalElapsedMinutes}</Label.Detail>
-                    </Label>
-                    <Label color={colorMap(freeMinutes)}>
-                        Reminding
-                        <Label.Detail>{freeMinutes}</Label.Detail>
-                    </Label>
-                </Label.Group>
+                <Progress value={freeMinutes}
+                          total={props.minutesToUsePerDay}
+                          color="green"
+                          size="small"
+                          inverted="true"
+                          error={freeMinutes / props.minutesToUsePerDay < 0.20}
+                          warning={freeMinutes / props.minutesToUsePerDay < 0.40}
+                          disabled={minutesToUse === 0}
+                >
+                    {
+                        freeMinutes < 0
+                            ? <span><Icon name="fire"/> Lack {-freeMinutes}</span>
+                            : <span><Icon name="heart"/> {freeMinutes}</span>
+                    }
+                </Progress>
             </Segment>
             <Card.Content>
                 <Message info icon hidden={specifiedMinutes !== 0}>
-                    <Icon name='smile' />
+                    <Icon name='smile'/>
                     <Message.Content>
                         <Message.Header>
                             Off time
@@ -64,7 +63,7 @@ export const DailyCard = (props: DailyCardProps) => {
                         <p>Enjoy without tasks</p>
                     </Message.Content>
                 </Message>
-                <Message negative icon hidden={!(specifiedMinutes === 0 && totalElapsedMinutes !== 0)}>
+                <Message negative icon hidden={freeMinutes >= 0}>
                     <Icon name='warning sign'/>
                     <Message.Content>
                         <Message.Header>
