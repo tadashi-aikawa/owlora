@@ -1,6 +1,5 @@
-import {Dictionary} from 'lodash';
+import CommonConfig from '../models/CommonConfig';
 
 export interface ConfigState {
-    todoistToken: string;
-    estimatedLabels: Dictionary<number>;
+    common: CommonConfig;
 }

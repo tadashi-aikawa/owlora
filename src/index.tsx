@@ -12,7 +12,7 @@ import owloraApp from './reducers';
 import * as persistState from 'redux-localstorage'
 
 
-const finalCreateStore = compose(persistState('config'))(createStore);
+const finalCreateStore = compose(persistState('config', {key: 'config'}))(createStore);
 const sagaMiddleware = createSagaMiddleware();
 const store = finalCreateStore(owloraApp, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(root);

@@ -33,6 +33,7 @@ const inTheDay = (task: Task, date: Moment): boolean => {
 
 export interface TaskCardsProps {
     tasks: Task[];
+    minutesToUsePerDay: number;
 }
 
 export const TaskCards = (props: TaskCardsProps) => {
@@ -46,6 +47,7 @@ export const TaskCards = (props: TaskCardsProps) => {
             key={date.toString()}
             date={date}
             tasks={props.tasks.filter(t => inTheDay(t, date))}
+            minutesToUsePerDay={props.minutesToUsePerDay}
         />;
 
     return (

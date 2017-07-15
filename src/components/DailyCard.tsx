@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import {Icon, Message, Card, Feed, Label, Segment, Statistic, Dimmer} from 'semantic-ui-react';
 import {Moment} from 'moment';
-import {DATE_FORMAT, MINUTES_PER_DAY, MINUTES_PER_SPECIFIC_DAYS, SIMPLE_FORMAT} from '../storage/settings';
+import {DATE_FORMAT, MINUTES_TO_USE_PER_SPECIFIC_DAYS, SIMPLE_FORMAT} from '../storage/settings';
 import {TaskFeed} from './TaskFeed';
 import Task from '../models/Task';
 
@@ -16,6 +16,7 @@ const colorMap = (time: number) => {
 export interface DailyCardProps {
     date: Moment;
     tasks: Task[];
+    minutesToUsePerDay: number;
 }
 
 export const DailyCard = (props: DailyCardProps) => {
@@ -23,8 +24,8 @@ export const DailyCard = (props: DailyCardProps) => {
         props.tasks.filter(t => t.dateString !== '毎日' && t.dateString !== '平日'),
         t => t.elapsedMinutes
     );
-    const specifiedMinutes = MINUTES_PER_SPECIFIC_DAYS[props.date.format(SIMPLE_FORMAT)];
-    const freeMinutes = (specifiedMinutes !== undefined ? specifiedMinutes : MINUTES_PER_DAY) - totalElapsedMinutes;
+    const specifiedMinutes = MINUTES_TO_USE_PER_SPECIFIC_DAYS[props.date.format(SIMPLE_FORMAT)];
+    const freeMinutes = (specifiedMinutes !== undefined ? specifiedMinutes : props.minutesToUsePerDay) - totalElapsedMinutes;
 
     const toTaskFeed = (task: Task) =>
         <TaskFeed
