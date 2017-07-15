@@ -5,9 +5,10 @@ import RootState from '../states/index';
 import {Dictionary} from 'lodash';
 
 const mapStateToProps = (state: RootState) => ({
-    tasks: state.appState.tasks,
-    apiToken: state.appState.todoistToken,
-    isLoading: state.appState.isTaskLoading,
+    tasks: state.app.tasks,
+    apiToken: state.config.todoistToken,
+    estimateLabels: state.config.estimatedLabels,
+    isLoading: state.app.isTaskLoading,
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
