@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {Menu, Form, Input} from 'semantic-ui-react';
+import {Accordion, Button, Dimmer, Form, Input, Loader, Menu} from 'semantic-ui-react';
 import {TaskCards} from './TaskCards';
-import {Button, Dimmer, Loader, Segment} from 'semantic-ui-react';
 import Task from '../models/Task';
+import {Dictionary} from 'lodash';
 
 export interface TopProps {
     tasks: Task[];
@@ -10,6 +10,7 @@ export interface TopProps {
     isLoading: boolean;
     onReload: () => void;
     onChangeTodoistToken: (token: string) => void;
+    onChangeEstimatedLabels: (estimatedLabels: Dictionary<number>) => void;
 }
 
 export const Top = (props: TopProps) =>
@@ -29,14 +30,24 @@ export const Top = (props: TopProps) =>
             </Menu.Item>
         </Menu>
         <div style={{padding: 10}}>
-            <Form>
-                <Form.Field inline>
-                    <label>Todoist API token</label>
-                    <Input type='password' name="apiToken" value={props.apiToken} onChange={
-                        (e, data) => props.onChangeTodoistToken(data.value)
-                    }/>
-                </Form.Field>
-            </Form>
+            <Accordion>
+                <Accordion.Title>Settings</Accordion.Title>
+                <Accordion.Content>
+                    <Form>
+                        <Form.Field inline>
+                            <label>Todoist API token</label>
+                            <Input type='password' name="apiToken" value={props.apiToken} onChange={
+                                (e, data) => props.onChangeTodoistToken(data.value)
+                            }/>
+                        </Form.Field>
+                        <Form.Field inline>
+                            <Form.TextArea label='estimatedLabels'
+                                           placeholder='Estimated labels as json (key is label id)'
+                                           onChange={(e, data) => props.onChangeEstimatedLabels(JSON.parse(data.value))}/>
+                        </Form.Field>
+                    </Form>
+                </Accordion.Content>
+            </Accordion>
         </div>
         <div style={{padding: 10}}>
             <Dimmer active={props.isLoading} page>
