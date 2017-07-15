@@ -30,7 +30,7 @@
     "redux-localstorage": "^0.4.1",
     "redux-saga": "^0.15.4",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.70.0"
+    "semantic-ui-react": "^0.71.0"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",
