@@ -6,7 +6,7 @@
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --progress",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "build": "webpack --progress"
   },
   "dependencies": {

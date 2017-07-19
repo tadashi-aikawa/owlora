@@ -13,9 +13,14 @@ $ yarn global add webpack
 $ yarn install
 ```
 
-## Build and Debug
+## Debug
 
 ```
-$ yarn run dev
+$ yarn dev
 ```
 
+## Build
+
+```
+$ yarn build
+```
