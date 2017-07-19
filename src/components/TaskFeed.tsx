@@ -5,12 +5,13 @@ import Emojify from 'react-emojione';
 export interface TaskFeedProps {
     name: string;
     project: string;
+    iconUrl: string;
     elapsedMinutes: number;
 }
 
 export const TaskFeed = (props: TaskFeedProps) =>
     <Feed.Event>
-        <Feed.Label image='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
+        <Feed.Label image={props.iconUrl}/>
         <Feed.Content>
             <Feed.Date content={props.project}/>
             <Feed.Summary>

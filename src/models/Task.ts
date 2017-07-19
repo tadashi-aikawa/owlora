@@ -7,6 +7,7 @@ interface Task {
     dueDate: Moment;
     elapsedMinutes: number;
     dateString: string;
+    iconUrl: string;
 }
 
 export default Task;

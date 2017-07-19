@@ -14,6 +14,7 @@ const INITIAL_CONFIG_STATE: ConfigState = {
         minutesToUsePerDay: 240,
         estimatedLabels: {},
         minutesToUsePerSpecificDays: {},
+        iconsByProject: {},
     }
 };
 

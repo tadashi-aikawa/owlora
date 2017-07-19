@@ -13,6 +13,7 @@ export interface ConfigEditorState {
     estimatedLabels: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
+    iconsByProject: string;
 
     validationError?: string;
 }
@@ -24,6 +25,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         estimatedLabels: safeDump(this.props.defaultConfig.estimatedLabels),
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: safeDump(this.props.defaultConfig.minutesToUsePerSpecificDays),
+        iconsByProject: safeDump(this.props.defaultConfig.iconsByProject),
     };
 
     handleChange = (e, {name, value}) => this.setState(Object.assign({}, this.state, {[name]: value}));
@@ -32,13 +34,15 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         try {
             const estimatedLabels = safeLoad(this.state.estimatedLabels);
             const minutesToUsePerSpecificDays = safeLoad(this.state.minutesToUsePerSpecificDays);
+            const iconsByProject = safeLoad(this.state.iconsByProject);
 
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
                 todoistToken: this.state.todoistToken,
                 estimatedLabels,
                 minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
-                minutesToUsePerSpecificDays
+                minutesToUsePerSpecificDays,
+                iconsByProject
             });
         } catch (e) {
             this.setState(Object.assign({}, this.state, {validationError: e.toString()}));
@@ -78,6 +82,14 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        label='minutesToUsePerSpecificDays'
                                        placeholder='Specific days as yaml (key is yyyyMMdd)'
                                        value={this.state.minutesToUsePerSpecificDays}
+                                       onChange={this.handleChange}
+                        />
+                    </Form.Field>
+                    <Form.Field inline>
+                        <Form.TextArea name="iconsByProject"
+                                       label='iconsByProject'
+                                       placeholder='Specific icon urls by projects as yaml (key is project id)'
+                                       value={this.state.iconsByProject}
                                        onChange={this.handleChange}
                         />
                     </Form.Field>

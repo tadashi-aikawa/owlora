@@ -5,6 +5,7 @@ interface CommonConfig {
     minutesToUsePerDay: number;
     estimatedLabels: Dictionary<number>;
     minutesToUsePerSpecificDays: Dictionary<number>;
+    iconsByProject: Dictionary<string>;
 }
 
 export default CommonConfig;

@@ -28,6 +28,7 @@ export const DailyCard = (props: DailyCardProps) => {
             key={task.id}
             name={task.name}
             project={task.projectName}
+            iconUrl={task.iconUrl}
             elapsedMinutes={task.elapsedMinutes}
         />;
 
