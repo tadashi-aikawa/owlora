@@ -21,5 +21,5 @@ ReactDOM.render(
     <Provider store={store}>
         <TasksConteiner />
     </Provider>,
-    document.getElementById("example")
+    document.getElementById("root")
 );
