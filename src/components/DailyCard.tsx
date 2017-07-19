@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import {Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
-import {Moment} from 'moment';
+import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import {TaskFeed} from './TaskFeed';
 import Task from '../models/Task';
@@ -34,7 +34,7 @@ export const DailyCard = (props: DailyCardProps) => {
 
     return (
         <Card>
-            <Dimmer active={props.date.isBefore()} content={
+            <Dimmer active={props.date.isBefore(now(), 'day')} content={
                 <div>
                     <h2>Facing forward !!</h2>
                     <Icon name='hand outline right' size='huge' />
