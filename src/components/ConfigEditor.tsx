@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Form, Grid} from 'semantic-ui-react';
+import {Message, Form, Grid} from 'semantic-ui-react';
 import {safeDump, safeLoad} from 'js-yaml';
 import CommonConfig from '../models/CommonConfig';
 
@@ -13,6 +13,8 @@ export interface ConfigEditorState {
     estimatedLabels: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
+
+    validationError?: string;
 }
 
 export default class extends React.Component<ConfigEditorProps, ConfigEditorState> {
@@ -24,14 +26,24 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         minutesToUsePerSpecificDays: safeDump(this.props.defaultConfig.minutesToUsePerSpecificDays),
     };
 
-    handleChange = (e, {name, value}) => this.setState({[name]: value});
+    handleChange = (e, {name, value}) => this.setState(Object.assign({}, this.state, {[name]: value}));
 
-    handleSubmit = e => this.props.onSaveConfig({
-        todoistToken: this.state.todoistToken,
-        estimatedLabels: safeLoad(this.state.estimatedLabels),
-        minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
-        minutesToUsePerSpecificDays: safeLoad(this.state.minutesToUsePerSpecificDays),
-    });
+    handleSubmit = e => {
+        try {
+            const estimatedLabels = safeLoad(this.state.estimatedLabels);
+            const minutesToUsePerSpecificDays = safeLoad(this.state.minutesToUsePerSpecificDays);
+
+            this.setState(Object.assign({}, this.state, {validationError: ""}));
+            this.props.onSaveConfig({
+                todoistToken: this.state.todoistToken,
+                estimatedLabels,
+                minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
+                minutesToUsePerSpecificDays
+            });
+        } catch (e) {
+            this.setState(Object.assign({}, this.state, {validationError: e.toString()}));
+        }
+    };
 
     render() {
         return (
@@ -71,6 +83,9 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Form.Field>
                 </Grid>
                 <Form.Button content='Save'/>
+                <Message error visible={!!this.state.validationError}>
+                    {this.state.validationError}
+                </Message>
             </Form>
         );
     }

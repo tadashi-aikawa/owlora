@@ -4,6 +4,7 @@ import {TaskCards} from './TaskCards';
 import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
+import {Component} from 'react';
 
 export interface TopProps {
     tasks: Task[];
@@ -14,42 +15,63 @@ export interface TopProps {
     onChangeConfig: (config: CommonConfig) => void;
 }
 
-export default (props: TopProps) =>
-    <div>
-        <Menu stackable inverted>
-            <Menu.Item>
-                <img src='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
-            </Menu.Item>
-            <Menu.Item>
-                <h2>Owlora</h2>
-            </Menu.Item>
-            <Menu.Item>
-                <Button primary onClick={e => {
-                    e.preventDefault();
-                    props.onReload();
-                }}>Reload</Button>
-            </Menu.Item>
-            <Menu.Item position='right'>
-                <Modal trigger={<Button icon inverted><Icon name="setting" size="large"/></Button>}>
-                    <Header icon="setting" content="Settings"/>
-                    <Modal.Content>
-                        <ConfigEditor defaultConfig={props.config}
-                                      onSaveConfig={props.onChangeConfig}
-                        />
-                    </Modal.Content>
-                </Modal>
-            </Menu.Item>
-        </Menu>
-        <div style={{padding: 10}}>
-            <Dimmer active={props.isLoading} page>
-                <Loader content='Loading' size='huge' active={props.isLoading}/>
-            </Dimmer>
-            {
-                props.tasks.length
-                    ? <TaskCards tasks={props.tasks}
-                                 minutesToUsePerDay={props.config.minutesToUsePerDay}
-                                 minutesToUsePerSpecificDays={props.config.minutesToUsePerSpecificDays}/>
-                    : ''
-            }
-        </div>
-    </div>;
+export interface TopState {
+    isModalOpen: boolean;
+}
+
+export default class extends Component<TopProps, TopState> {
+
+    state: TopState = {isModalOpen: false};
+    handleOpen = () => this.setState({isModalOpen: true});
+    handleClose = () => this.setState({isModalOpen: false});
+
+    render() {
+        return (
+            <div>
+                <Menu stackable inverted>
+                    <Menu.Item>
+                        <img src='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <h2>Owlora</h2>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Button primary onClick={e => {
+                            e.preventDefault();
+                            this.props.onReload();
+                        }}>Reload</Button>
+                    </Menu.Item>
+                    <Menu.Item position='right'>
+                        <Modal open={this.state.isModalOpen} onClose={this.handleClose} trigger={
+                            <Button icon inverted onClick={this.handleOpen}>
+                                <Icon name="setting" size="large"/>
+                            </Button>
+                        }>
+                            <Header icon="setting" content="Settings"/>
+                            <Modal.Content>
+                                <ConfigEditor defaultConfig={this.props.config}
+                                              onSaveConfig={(config) => {
+                                                  this.props.onChangeConfig(config);
+                                                  this.handleClose();
+                                              }}
+                                />
+                            </Modal.Content>
+                        </Modal>
+                    </Menu.Item>
+                </Menu>
+                <div style={{padding: 10}}>
+                    <Dimmer active={this.props.isLoading} page>
+                        <Loader content='Loading' size='huge' active={this.props.isLoading}/>
+                    </Dimmer>
+                    {
+                        this.props.tasks.length
+                            ? <TaskCards tasks={this.props.tasks}
+                                         minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                         minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays}/>
+                            : ''
+                    }
+                </div>
+            </div>
+        );
+    }
+}
