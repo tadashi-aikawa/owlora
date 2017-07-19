@@ -6,7 +6,8 @@
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --progress"
+    "dev": "webpack-dev-server --progress",
+    "build": "webpack --progress"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
