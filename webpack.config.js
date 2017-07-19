@@ -6,11 +6,7 @@ module.exports = {
     entry: "./src/index.tsx",
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'index.html'
-        })
+        new webpack.HotModuleReplacementPlugin()
     ],
 
     output: {
