@@ -66,6 +66,8 @@ export default class extends Component<TopProps, TopState> {
                     {
                         this.props.tasks.length
                             ? <TaskCards tasks={this.props.tasks}
+                                         taskSortField={this.props.config.taskSortField}
+                                         taskOrder={this.props.config.taskOrder}
                                          minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                          minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays}/>
                             : ''

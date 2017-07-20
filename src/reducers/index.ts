@@ -2,6 +2,8 @@ import {combineReducers, Reducer} from 'redux';
 import {Actions, FETCH_TASKS, SUCCESS_FETCH_TASKS, UPDATE_COMMON_CONFIG} from '../actions';
 import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
+import Order from '../constants/Order';
+import TaskSortField from '../constants/TaskSortField';
 
 const INITIAL_APP_STATE: AppState = {
     tasks: [],
@@ -15,6 +17,8 @@ const INITIAL_CONFIG_STATE: ConfigState = {
         estimatedLabels: {},
         minutesToUsePerSpecificDays: {},
         iconsByProject: {},
+        taskSortField: TaskSortField.PROJECT_NAME,
+        taskOrder: Order.ASC,
     }
 };
 

@@ -26,10 +26,11 @@ export function* fetchTasks(token: string) {
             id: x.id,
             name: x.content,
             projectName: projectsById[String(x.project_id)].name,
-            elapsedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
+            estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
             dueDate: moment(x.due_date_utc),
             dateString: x.date_string,
-            iconUrl: iconsByProject[String(x.project_id)]
+            iconUrl: iconsByProject[String(x.project_id)],
+            dayOrder: x.day_order,
         }))
         .value();
 

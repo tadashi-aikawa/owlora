@@ -7,6 +7,8 @@ import {SIMPLE_FORMAT} from '../storage/settings';
 import Task from '../models/Task';
 import {DailyCard} from './DailyCard';
 import {Dictionary} from 'lodash';
+import TaskSortField from '../constants/TaskSortField';
+import Order from '../constants/Order';
 
 
 const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6;
@@ -34,6 +36,8 @@ const inTheDay = (task: Task, date: Moment): boolean => {
 
 export interface TaskCardsProps {
     tasks: Task[];
+    taskSortField: TaskSortField;
+    taskOrder: Order;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
 }
@@ -49,6 +53,8 @@ export const TaskCards = (props: TaskCardsProps) => {
             key={date.toString()}
             date={date}
             tasks={props.tasks.filter(t => inTheDay(t, date))}
+            taskSortField={props.taskSortField}
+            taskOrder={props.taskOrder}
             minutesToUsePerDay={props.minutesToUsePerDay}
             minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
         />;

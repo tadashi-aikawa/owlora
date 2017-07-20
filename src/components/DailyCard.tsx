@@ -6,10 +6,29 @@ import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import {TaskFeed} from './TaskFeed';
 import Task from '../models/Task';
+import TaskSortField from '../constants/TaskSortField';
+import Order from '../constants/Order';
+
+
+// I want to use rich enum
+const toSortFieldValue = (task: Task, sortField: TaskSortField) => {
+    switch (sortField) {
+        case TaskSortField.PROJECT_NAME:
+            return task.projectName;
+        case TaskSortField.DAY_ORDER:
+            return task.dayOrder;
+        case TaskSortField.TASK_NAME:
+            return task.name;
+        case TaskSortField.ESTIMATED_MINUTES:
+            return task.estimatedMinutes;
+    }
+};
 
 export interface DailyCardProps {
     date: Moment;
     tasks: Task[];
+    taskSortField: TaskSortField;
+    taskOrder: Order;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
 }
@@ -17,7 +36,7 @@ export interface DailyCardProps {
 export const DailyCard = (props: DailyCardProps) => {
     const totalElapsedMinutes = _.sumBy(
         props.tasks.filter(t => t.dateString !== '毎日' && t.dateString !== '平日'),
-        t => t.elapsedMinutes
+        t => t.estimatedMinutes
     );
     const specifiedMinutes = props.minutesToUsePerSpecificDays[props.date.format(SIMPLE_FORMAT)];
     const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : props.minutesToUsePerDay;
@@ -29,7 +48,7 @@ export const DailyCard = (props: DailyCardProps) => {
             name={task.name}
             project={task.projectName}
             iconUrl={task.iconUrl}
-            elapsedMinutes={task.elapsedMinutes}
+            estimatedMinutes={task.estimatedMinutes}
         />;
 
     return (
@@ -37,9 +56,9 @@ export const DailyCard = (props: DailyCardProps) => {
             <Dimmer active={props.date.isBefore(now(), 'day')} content={
                 <div>
                     <h2>Facing forward !!</h2>
-                    <Icon name='hand outline right' size='huge' />
+                    <Icon name='hand outline right' size='huge'/>
                 </div>
-            } />
+            }/>
             <Segment inverted>
                 <Statistic size='mini' color="olive">
                     <Statistic.Value>{props.date.format(DATE_FORMAT)}</Statistic.Value>
@@ -79,9 +98,11 @@ export const DailyCard = (props: DailyCardProps) => {
                     </Message.Content>
                 </Message>
                 <Feed>
-                    {props.tasks
-                        .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
+                    {_(props.tasks)
+                        .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
+                        .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
                         .map(toTaskFeed)
+                        .value()
                     }
                 </Feed>
             </Card.Content>

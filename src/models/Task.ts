@@ -5,9 +5,10 @@ interface Task {
     name: string;
     projectName: string;
     dueDate: Moment;
-    elapsedMinutes: number;
+    estimatedMinutes: number;
     dateString: string;
     iconUrl: string;
+    dayOrder: number;
 }
 
 export default Task;

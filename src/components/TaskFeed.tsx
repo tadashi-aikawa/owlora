@@ -6,7 +6,7 @@ export interface TaskFeedProps {
     name: string;
     project: string;
     iconUrl: string;
-    elapsedMinutes: number;
+    estimatedMinutes: number;
 }
 
 export const TaskFeed = (props: TaskFeedProps) =>
@@ -18,5 +18,5 @@ export const TaskFeed = (props: TaskFeedProps) =>
                 <Emojify style={{height: 20, width: 20}}>{props.name}</Emojify>
             </Feed.Summary>
         </Feed.Content>
-        <Label color='teal' circular style={{width: 25, height: 20, textAlign: 'center'}}>{props.elapsedMinutes}</Label>
+        <Label color='teal' circular style={{width: 25, height: 20, textAlign: 'center'}}>{props.estimatedMinutes}</Label>
     </Feed.Event>;
