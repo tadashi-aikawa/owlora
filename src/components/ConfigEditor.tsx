@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Radio, Message, Form, Grid, Checkbox} from 'semantic-ui-react';
 import {safeDump, safeLoad} from 'js-yaml';
-import CommonConfig from '../models/CommonConfig';
+import CommonConfig, {DictAndYaml} from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
@@ -26,10 +26,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     state: ConfigEditorState = {
         todoistToken: this.props.defaultConfig.todoistToken,
-        estimatedLabels: safeDump(this.props.defaultConfig.estimatedLabels),
+        estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
-        minutesToUsePerSpecificDays: safeDump(this.props.defaultConfig.minutesToUsePerSpecificDays),
-        iconsByProject: safeDump(this.props.defaultConfig.iconsByProject),
+        minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
+        iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
         taskSortField: this.props.defaultConfig.taskSortField,
         taskOrder: this.props.defaultConfig.taskOrder,
     };
@@ -42,17 +42,22 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     handleSubmit = e => {
         try {
-            const estimatedLabels = safeLoad(this.state.estimatedLabels);
-            const minutesToUsePerSpecificDays = safeLoad(this.state.minutesToUsePerSpecificDays);
-            const iconsByProject = safeLoad(this.state.iconsByProject);
-
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
                 todoistToken: this.state.todoistToken,
-                estimatedLabels,
+                estimatedLabels: {
+                    dict: safeLoad(this.state.estimatedLabels),
+                    yaml: this.state.estimatedLabels,
+                },
                 minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
-                minutesToUsePerSpecificDays,
-                iconsByProject,
+                minutesToUsePerSpecificDays: {
+                    dict: safeLoad(this.state.minutesToUsePerSpecificDays),
+                    yaml: this.state.minutesToUsePerSpecificDays,
+                },
+                iconsByProject: {
+                    dict: safeLoad(this.state.iconsByProject),
+                    yaml: this.state.iconsByProject,
+                },
                 taskSortField: this.state.taskSortField,
                 taskOrder: this.state.taskOrder,
             });

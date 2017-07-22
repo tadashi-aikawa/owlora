@@ -69,7 +69,7 @@ export default class extends Component<TopProps, TopState> {
                                          taskSortField={this.props.config.taskSortField}
                                          taskOrder={this.props.config.taskOrder}
                                          minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                         minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays}/>
+                                         minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}/>
                             : ''
                     }
                 </div>

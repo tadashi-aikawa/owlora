@@ -14,9 +14,18 @@ const INITIAL_CONFIG_STATE: ConfigState = {
     common: {
         todoistToken: '',
         minutesToUsePerDay: 240,
-        estimatedLabels: {},
-        minutesToUsePerSpecificDays: {},
-        iconsByProject: {},
+        estimatedLabels: {
+            dict: {},
+            yaml: ''
+        },
+        minutesToUsePerSpecificDays: {
+            dict: {},
+            yaml: ''
+        },
+        iconsByProject: {
+            dict: {},
+            yaml: ''
+        },
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
     }

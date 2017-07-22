@@ -2,14 +2,22 @@ import {Dictionary} from 'lodash';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
+interface DictAndYaml<T> {
+    dict: Dictionary<T>;
+    yaml: string;
+}
+
 interface CommonConfig {
     todoistToken: string;
     minutesToUsePerDay: number;
-    estimatedLabels: Dictionary<number>;
-    minutesToUsePerSpecificDays: Dictionary<number>;
-    iconsByProject: Dictionary<string>;
+    estimatedLabels: DictAndYaml<number>;
+    minutesToUsePerSpecificDays: DictAndYaml<number>;
+    iconsByProject: DictAndYaml<string>;
     taskSortField: TaskSortField;
     taskOrder: Order;
 }
 
 export default CommonConfig;
+export {
+    DictAndYaml
+}
