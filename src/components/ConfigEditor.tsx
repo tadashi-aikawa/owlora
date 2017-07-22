@@ -17,6 +17,7 @@ export interface ConfigEditorProps {
 export interface ConfigEditorState {
     todoistToken: string;
     estimatedLabels: string;
+    milestoneLabel: number;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
     iconsByProject: string;
@@ -31,6 +32,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
     state: ConfigEditorState = {
         todoistToken: this.props.defaultConfig.todoistToken,
         estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
+        milestoneLabel: this.props.defaultConfig.milestoneLabel,
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
         iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
@@ -53,6 +55,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     dict: safeLoad(this.state.estimatedLabels),
                     yaml: this.state.estimatedLabels,
                 },
+                milestoneLabel: Number(this.state.milestoneLabel),
                 minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
                 minutesToUsePerSpecificDays: {
                     dict: safeLoad(this.state.minutesToUsePerSpecificDays),
@@ -90,6 +93,14 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        value={this.state.estimatedLabels}
                                        onChange={this.handleChange}
                                        autoHeight
+                        />
+                    </Form.Field>
+                    <Form.Field inline>
+                        <label>Milestone label id</label>
+                        <Form.Input type="number"
+                                    name="milestoneLabel"
+                                    value={this.state.milestoneLabel}
+                                    onChange={this.handleChange}
                         />
                     </Form.Field>
                     <Accordion styled panels={[{

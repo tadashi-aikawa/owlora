@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as _ from 'lodash';
+import Emojify from 'react-emojione';
 import {Dictionary} from 'lodash';
 import {Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
@@ -16,6 +17,15 @@ const Fire = ({minutes}) =>
         Lack {minutes} <Icon name="heart"/>
         <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
     </span>;
+
+const Milestone = ({header, body}) =>
+    <Message icon color="violet">
+        <Icon name='diamond'/>
+        <Message.Content>
+            <Message.Header><Emojify>{header}</Emojify></Message.Header>
+            <p><Emojify>{body}</Emojify></p>
+        </Message.Content>
+    </Message>;
 
 // I want to use rich enum
 const toSortFieldValue = (task: Task, sortField: TaskSortField) => {
@@ -87,6 +97,8 @@ export const DailyCard = (props: DailyCardProps) => {
                 </Progress>
             </Segment>
             <Card.Content>
+                {props.tasks.filter(t => t.isMilestone)
+                    .map(t => <Milestone key={t.id} header={t.projectName} body={t.name}/>)}
                 <Message info icon hidden={specifiedMinutes !== 0}>
                     <Icon name='smile'/>
                     <Message.Content>
@@ -107,6 +119,7 @@ export const DailyCard = (props: DailyCardProps) => {
                 <Feed>
                     {_(props.tasks)
                         .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
+                        .reject(t => t.isMilestone)
                         .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
                         .map(toTaskFeed)
                         .value()

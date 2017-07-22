@@ -9,6 +9,7 @@ interface Task {
     dateString: string;
     iconUrl: string;
     dayOrder: number;
+    isMilestone: boolean;
 }
 
 export default Task;

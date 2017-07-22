@@ -2,7 +2,10 @@ import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import * as moment from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
-import {estimatedLabelsSelector, iconsByProjectSelector, todoistTokenSelector} from '../reducers/selectors';
+import {
+    estimatedLabelsSelector, iconsByProjectSelector, milestoneLabelSelector,
+    todoistTokenSelector
+} from '../reducers/selectors';
 import {call, select} from 'redux-saga/effects';
 import TodoistAll from '../models/todoist/TodoistALl';
 import TodoistProject from '../models/todoist/TodoistProject';
@@ -17,11 +20,16 @@ class TodoistSyncService implements SyncService {
         const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
 
         const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
+        const milestoneLabel: number = yield select(milestoneLabelSelector);
         const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
 
         const projectsById: Dictionary<TodoistProject> = _.keyBy(res.projects, p => p.id);
         const tasks: Task[] = _(res.items)
-            .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in estimatedLabels))
+            .filter(x =>
+                !x.checked &&
+                x.due_date_utc &&
+                x.labels.some(l => l in estimatedLabels || l === milestoneLabel)
+            )
             .orderBy(x => x.project_id)
             .map(x => ({
                 id: x.id,
@@ -32,6 +40,7 @@ class TodoistSyncService implements SyncService {
                 dateString: x.date_string,
                 iconUrl: iconsByProject[String(x.project_id)],
                 dayOrder: x.day_order,
+                isMilestone: _.includes(x.labels, milestoneLabel)
             }))
             .value();
         const projects: Project[] = res.projects.map(x => x);
