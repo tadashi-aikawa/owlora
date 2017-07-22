@@ -6,5 +6,6 @@ export interface AppState {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
+    error?: Error;
     isSyncing: boolean;
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
+import {Message, Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
 import {TaskCards} from './TaskCards';
 import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -8,12 +8,20 @@ import {Component} from 'react';
 import Project from '../models/Project';
 import Label from '../models/Label';
 
+const toErrorMessage = (error: Error) =>
+    <Message negative>
+        <Message.Header>{error.name}</Message.Header>
+        <p>{error.message}</p>
+        <p>{error.stack}</p>
+    </Message>;
+
 export interface TopProps {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
     config: CommonConfig;
     isLoading: boolean;
+    error: Error;
 
     onReload: () => void;
     onChangeConfig: (config: CommonConfig) => void;
@@ -71,6 +79,7 @@ export default class extends Component<TopProps, TopState> {
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
                     {
+                        this.props.error ? toErrorMessage(this.props.error) :
                         this.props.tasks.length
                             ? <TaskCards tasks={this.props.tasks}
                                          taskSortField={this.props.config.taskSortField}

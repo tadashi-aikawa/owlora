@@ -7,8 +7,12 @@ import SyncService from './SyncService';
 export function* sync() {
     const service: SyncService = new TodoistSyncService();
 
-    const payload: SyncPayload = yield call(service.sync);
-    yield put(actions.successSync(payload));
+    try {
+        const payload: SyncPayload = yield call(service.sync);
+        yield put(actions.successSync(payload));
+    } catch (e) {
+        yield put(actions.errorSync(e));
+    }
 }
 
 function* syncLoop() {

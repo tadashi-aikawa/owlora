@@ -9,6 +9,7 @@ const mapStateToProps = (state: RootState) => ({
     projects: state.app.projects,
     labels: state.app.labels,
     config: state.config.common,
+    error: state.app.error,
     isLoading: state.app.isSyncing,
 });
 
