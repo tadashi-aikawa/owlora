@@ -1,12 +1,14 @@
 import * as React from 'react';
-import {Segment, Checkbox, Divider, Form, Message, Radio} from 'semantic-ui-react';
+import {Accordion, Segment, Checkbox, Divider, Form, Message, Radio} from 'semantic-ui-react';
 import {safeLoad} from 'js-yaml';
 import CommonConfig from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
+import Project from '../models/Project';
 
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
+    projects: Project[],
     onSaveConfig: (config: CommonConfig) => void;
 }
 
@@ -117,6 +119,12 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        autoHeight
                         />
                     </Form.Field>
+                    <Accordion styled panels={[{
+                        title: 'Projects by ids',
+                        content: <ul>
+                            {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
+                        </ul>
+                    }]}/>
                     <Divider section/>
                     <Form.Field>
                         <Form.Field>

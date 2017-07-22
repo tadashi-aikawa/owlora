@@ -3,7 +3,7 @@ import '../node_modules/semantic-ui-css/semantic.min.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import TasksConteiner from './containers/TasksContainer';
+import TopContainer from './containers/TopContainer';
 
 import {applyMiddleware, createStore, compose} from 'redux';
 import createSagaMiddleware from 'redux-saga'
@@ -19,7 +19,7 @@ sagaMiddleware.run(root);
 
 ReactDOM.render(
     <Provider store={store}>
-        <TasksConteiner />
+        <TopContainer />
     </Provider>,
     document.getElementById("root")
 );

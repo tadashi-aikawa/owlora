@@ -5,9 +5,11 @@ import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import {Component} from 'react';
+import Project from '../models/Project';
 
 export interface TopProps {
     tasks: Task[];
+    projects: Project[];
     config: CommonConfig;
     isLoading: boolean;
 
@@ -50,6 +52,7 @@ export default class extends Component<TopProps, TopState> {
                             <Header icon="setting" content="Settings"/>
                             <Modal.Content>
                                 <ConfigEditor defaultConfig={this.props.config}
+                                              projects={this.props.projects}
                                               onSaveConfig={(config) => {
                                                   this.props.onChangeConfig(config);
                                                   this.handleClose();

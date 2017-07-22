@@ -1,8 +1,9 @@
 import Task from '../models/Task';
 import Project from '../models/Project';
 
-export interface AppState {
+interface FetchTodoist {
     tasks: Task[];
     projects: Project[];
-    isTaskLoading: boolean;
 }
+
+export default FetchTodoist;

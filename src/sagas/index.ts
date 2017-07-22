@@ -34,12 +34,12 @@ export function* fetchTasks(token: string) {
         }))
         .value();
 
-    yield put(actions.successFetchTasks(tasks));
+    yield put(actions.successFetchTodoist(tasks, projects));
 }
 
 function* loadTasks() {
     while (true) {
-        yield take(actions.FETCH_TASKS);
+        yield take(actions.FETCH_TODOIST);
         const token = yield select(todoistTokenSelector);
         yield call(fetchTasks, token);
     }

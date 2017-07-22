@@ -1,5 +1,5 @@
 import {combineReducers, Reducer} from 'redux';
-import {Actions, FETCH_TASKS, SUCCESS_FETCH_TASKS, UPDATE_COMMON_CONFIG} from '../actions';
+import {Actions, FETCH_TODOIST, SUCCESS_FETCH_TODOIST, UPDATE_COMMON_CONFIG} from '../actions';
 import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
@@ -7,6 +7,7 @@ import TaskSortField from '../constants/TaskSortField';
 
 const INITIAL_APP_STATE: AppState = {
     tasks: [],
+    projects: [],
     isTaskLoading: false,
 };
 
@@ -33,10 +34,14 @@ const INITIAL_CONFIG_STATE: ConfigState = {
 
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
     switch (action.type) {
-        case FETCH_TASKS:
+        case FETCH_TODOIST:
             return Object.assign({}, state, {isTaskLoading: true});
-        case SUCCESS_FETCH_TASKS:
-            return Object.assign({}, state, {tasks: action.payload, isTaskLoading: false});
+        case SUCCESS_FETCH_TODOIST:
+            return Object.assign({}, state, {
+                tasks: action.payload.tasks,
+                projects: action.payload.projects,
+                isTaskLoading: false
+            });
         default:
             return state;
     }
