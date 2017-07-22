@@ -2,6 +2,7 @@ import {Action} from 'redux';
 import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import Project from '../models/Project';
+import Label from '../models/Label';
 import FetchTodoist from '../payloads/FetchTodoist';
 
 export const FETCH_TODOIST = 'FETCH_TODOIST';
@@ -31,8 +32,8 @@ export function fetchTodoist(): FetchTodistAction {
     return {type: FETCH_TODOIST}
 }
 
-export function successFetchTodoist(tasks: Task[], projects: Project[]): SuccessFetchTodoistAction {
-    return {type: SUCCESS_FETCH_TODOIST, payload: {tasks, projects}}
+export function successFetchTodoist(tasks: Task[], projects: Project[], labels: Label[]): SuccessFetchTodoistAction {
+    return {type: SUCCESS_FETCH_TODOIST, payload: {tasks, projects, labels}}
 }
 
 export function updateCommonConfig(config: CommonConfig): UpdateCommonConfigAction {

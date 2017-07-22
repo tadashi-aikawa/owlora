@@ -3,8 +3,9 @@ import * as actions from '../actions';
 import * as TodoistClient from '../client/TodoistClient';
 import {estimatedLabelsSelector, todoistTokenSelector, iconsByProjectSelector} from '../reducers/selectors';
 import Task from '../models/Task';
-import Project from '../models/todoist/Project';
+import TodoistProject from '../models/todoist/TodoistProject';
 import TodoistTask from '../models/todoist/TodoistTask';
+import TodoistLabel from '../models/todoist/TodoistLabel';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import * as moment from 'moment';
@@ -14,11 +15,12 @@ import * as moment from 'moment';
 export function* fetchTasks(token: string) {
     // TODO: Add failure case
     const todoistTasks: TodoistTask[] = yield call(TodoistClient.fetchTasks, token);
-    const projects: Project[] = yield call(TodoistClient.fetchProjects, token);
+    const projects: TodoistProject[] = yield call(TodoistClient.fetchProjects, token);
+    const labels: TodoistLabel[] = yield call(TodoistClient.fetchLabels, token);
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
 
-    const projectsById: Dictionary<Project> = _.keyBy(projects, p => p.id);
+    const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
     const tasks: Task[] = _(todoistTasks)
         .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in estimatedLabels))
         .orderBy(x => x.project_id)
@@ -34,7 +36,7 @@ export function* fetchTasks(token: string) {
         }))
         .value();
 
-    yield put(actions.successFetchTodoist(tasks, projects));
+    yield put(actions.successFetchTodoist(tasks, projects, labels));
 }
 
 function* loadTasks() {

@@ -5,10 +5,12 @@ import CommonConfig from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import Project from '../models/Project';
+import Label from '../models/Label';
 
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     projects: Project[],
+    labels: Label[],
     onSaveConfig: (config: CommonConfig) => void;
 }
 
@@ -90,6 +92,12 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        autoHeight
                         />
                     </Form.Field>
+                    <Accordion styled panels={[{
+                        title: 'Show all labels',
+                        content: <ul>
+                            {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
+                        </ul>
+                    }]}/>
                     <Divider section/>
                     <Form.Field inline>
                         <label>Minutes to use per day</label>
@@ -120,7 +128,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         />
                     </Form.Field>
                     <Accordion styled panels={[{
-                        title: 'Projects by ids',
+                        title: 'Show all projects',
                         content: <ul>
                             {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
                         </ul>

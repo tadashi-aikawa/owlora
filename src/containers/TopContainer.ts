@@ -7,8 +7,9 @@ import CommonConfig from '../models/CommonConfig';
 const mapStateToProps = (state: RootState) => ({
     tasks: state.app.tasks,
     projects: state.app.projects,
+    labels: state.app.labels,
     config: state.config.common,
-    isLoading: state.app.isTaskLoading,
+    isLoading: state.app.isTodoistLoading,
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

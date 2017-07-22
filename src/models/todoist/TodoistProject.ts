@@ -2,7 +2,7 @@
  * Projects from Todoist API
  * {@link https://developer.todoist.com/?shell#items}
  */
-interface Project {
+interface TodoistProject {
     id: number;
     name: string;
     indent: number;
@@ -16,4 +16,4 @@ interface Project {
     shared: boolean;
 }
 
-export default Project;
+export default TodoistProject;

@@ -8,7 +8,8 @@ import TaskSortField from '../constants/TaskSortField';
 const INITIAL_APP_STATE: AppState = {
     tasks: [],
     projects: [],
-    isTaskLoading: false,
+    labels: [],
+    isTodoistLoading: false,
 };
 
 const INITIAL_CONFIG_STATE: ConfigState = {
@@ -35,12 +36,13 @@ const INITIAL_CONFIG_STATE: ConfigState = {
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
     switch (action.type) {
         case FETCH_TODOIST:
-            return Object.assign({}, state, {isTaskLoading: true});
+            return Object.assign({}, state, {isTodoistLoading: true});
         case SUCCESS_FETCH_TODOIST:
             return Object.assign({}, state, {
                 tasks: action.payload.tasks,
                 projects: action.payload.projects,
-                isTaskLoading: false
+                labels: action.payload.labels,
+                isTodoistLoading: false,
             });
         default:
             return state;

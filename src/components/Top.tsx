@@ -6,10 +6,12 @@ import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import {Component} from 'react';
 import Project from '../models/Project';
+import Label from '../models/Label';
 
 export interface TopProps {
     tasks: Task[];
     projects: Project[];
+    labels: Label[];
     config: CommonConfig;
     isLoading: boolean;
 
@@ -53,6 +55,7 @@ export default class extends Component<TopProps, TopState> {
                             <Modal.Content>
                                 <ConfigEditor defaultConfig={this.props.config}
                                               projects={this.props.projects}
+                                              labels={this.props.labels}
                                               onSaveConfig={(config) => {
                                                   this.props.onChangeConfig(config);
                                                   this.handleClose();
