@@ -24,3 +24,9 @@ $ yarn dev
 ```
 $ yarn build
 ```
+
+## Deploy
+
+1. Increment version in `package.json`
+2. `yarn deploy`
+ 
