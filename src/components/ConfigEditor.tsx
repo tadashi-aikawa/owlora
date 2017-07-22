@@ -85,6 +85,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        placeholder='Estimated labels as yaml (key is label id)'
                                        value={this.state.estimatedLabels}
                                        onChange={this.handleChange}
+                                       autoHeight
                         />
                     </Form.Field>
                     <Divider section/>
@@ -103,6 +104,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        placeholder='Specific days as yaml (key is yyyyMMdd)'
                                        value={this.state.minutesToUsePerSpecificDays}
                                        onChange={this.handleChange}
+                                       autoHeight
                         />
                     </Form.Field>
                     <Divider section/>
@@ -112,6 +114,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        placeholder='Specific icon urls by projects as yaml (key is project id)'
                                        value={this.state.iconsByProject}
                                        onChange={this.handleChange}
+                                       autoHeight
                         />
                     </Form.Field>
                     <Divider section/>
