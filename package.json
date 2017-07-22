@@ -1,6 +1,6 @@
 {
   "name": "owlora",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "repository": "https://github.com/tadashi-aikawa/owlora.git",
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "build": "webpack --progress",
-    "deploy": "cross-conf-env git commit -m 'Deploy $npm_package_version' && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push"
+    "deploy": "cross-conf-env git commit -am \"Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
