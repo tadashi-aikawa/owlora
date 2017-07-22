@@ -20,4 +20,5 @@ function* syncLoop() {
 
 export default function* () {
     yield fork(syncLoop);
+    yield call(sync);
 }

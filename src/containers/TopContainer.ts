@@ -13,7 +13,6 @@ const mapStateToProps = (state: RootState) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    dispatch(sync());
     return {
         onReload: () => {
             dispatch(sync())
