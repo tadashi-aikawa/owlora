@@ -12,14 +12,17 @@ const mapStateToProps = (state: RootState) => ({
     isLoading: state.app.isSyncing,
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-    onReload: () => {
-        dispatch(sync())
-    },
-    onChangeConfig: (config: CommonConfig) => {
-        dispatch(updateCommonConfig(config));
+const mapDispatchToProps = (dispatch, ownProps) => {
+    dispatch(sync());
+    return {
+        onReload: () => {
+            dispatch(sync())
+        },
+        onChangeConfig: (config: CommonConfig) => {
+            dispatch(updateCommonConfig(config));
+        }
     }
-});
+};
 
 const TopContainer = connect(
     mapStateToProps,
