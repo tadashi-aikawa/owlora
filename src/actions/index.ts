@@ -1,21 +1,18 @@
 import {Action} from 'redux';
-import Task from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
-import Project from '../models/Project';
-import Label from '../models/Label';
-import FetchTodoist from '../payloads/FetchTodoist';
+import SyncPayload from '../payloads/SyncPayload';
 
-export const FETCH_TODOIST = 'FETCH_TODOIST';
-export const SUCCESS_FETCH_TODOIST = 'SUCCESS_FETCH_TODOIST';
+export const SYNC = 'SYNC';
+export const SUCCESS_SYNC = 'SUCCESS_SYNC';
 export const UPDATE_COMMON_CONFIG = 'UPDATE_COMMON_CONFIG';
 
-export interface FetchTodistAction extends Action {
-    type: 'FETCH_TODOIST';
+export interface SyncAction extends Action {
+    type: 'SYNC';
 }
 
-export interface SuccessFetchTodoistAction extends Action {
-    type: 'SUCCESS_FETCH_TODOIST';
-    payload: FetchTodoist;
+export interface SuccessSync extends Action {
+    type: 'SUCCESS_SYNC';
+    payload: SyncPayload;
 }
 
 export interface UpdateCommonConfigAction extends Action {
@@ -24,16 +21,16 @@ export interface UpdateCommonConfigAction extends Action {
 }
 
 export type Actions =
-    FetchTodistAction |
-    SuccessFetchTodoistAction |
+    SyncAction |
+    SuccessSync |
     UpdateCommonConfigAction;
 
-export function fetchTodoist(): FetchTodistAction {
-    return {type: FETCH_TODOIST}
+export function sync(): SyncAction {
+    return {type: SYNC}
 }
 
-export function successFetchTodoist(tasks: Task[], projects: Project[], labels: Label[]): SuccessFetchTodoistAction {
-    return {type: SUCCESS_FETCH_TODOIST, payload: {tasks, projects, labels}}
+export function successSync(payload: SyncPayload): SuccessSync {
+    return {type: SUCCESS_SYNC, payload}
 }
 
 export function updateCommonConfig(config: CommonConfig): UpdateCommonConfigAction {

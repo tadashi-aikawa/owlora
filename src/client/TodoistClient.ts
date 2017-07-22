@@ -1,8 +1,5 @@
 import Axios from 'axios';
 import {stringify} from 'query-string';
-import TodoistProject from '../models/todoist/TodoistProject';
-import TodoistTask from '../models/todoist/TodoistTask';
-import TodoistLabel from '../models/todoist/TodoistLabel';
 import TodoistAll from '../models/todoist/TodoistALl';
 
 const baseURL = 'https://todoist.com/API/v7/';
