@@ -3,32 +3,27 @@ import {stringify} from 'query-string';
 import TodoistProject from '../models/todoist/TodoistProject';
 import TodoistTask from '../models/todoist/TodoistTask';
 import TodoistLabel from '../models/todoist/TodoistLabel';
+import TodoistAll from '../models/todoist/TodoistALl';
 
 const baseURL = 'https://todoist.com/API/v7/';
 
-async function sync<T>(token: string, resourceType: string): Promise<T> {
+const decorateDoubleQuote = (v: string) => `"${v}"`;
+
+async function sync(token: string, resourceTypes: string[]): Promise<TodoistAll> {
     return await Axios.post(
         '/sync',
         stringify({
             token,
             sync_token: '*',
-            resource_types: `["${resourceType}"]`
+            resource_types: `[${resourceTypes.map(decorateDoubleQuote).join(',')}]`
         }),
         {baseURL}
-    ).then((r: any) => r.data[resourceType] as T);
+    ).then((r: any) => r.data);
 }
 
-const fetchTasks = async (token: string): Promise<TodoistTask[]> =>
-    await sync<TodoistTask[]>(token, 'items');
-
-const fetchProjects = async (token: string): Promise<TodoistProject[]> =>
-    await sync<TodoistProject[]>(token, 'projects');
-
-const fetchLabels = async (token: string): Promise<TodoistLabel[]> =>
-    await sync<TodoistLabel[]>(token, 'labels');
+const fetchAll = async (token: string): Promise<TodoistAll> =>
+    await sync(token, ['labels', 'projects', 'items']);
 
 export {
-    fetchTasks,
-    fetchProjects,
-    fetchLabels
+    fetchAll,
 }

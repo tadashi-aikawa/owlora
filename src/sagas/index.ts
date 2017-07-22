@@ -1,27 +1,27 @@
 import {call, fork, put, select, take} from 'redux-saga/effects';
 import * as actions from '../actions';
 import * as TodoistClient from '../client/TodoistClient';
-import {estimatedLabelsSelector, todoistTokenSelector, iconsByProjectSelector} from '../reducers/selectors';
+import {estimatedLabelsSelector, iconsByProjectSelector, todoistTokenSelector} from '../reducers/selectors';
 import Task from '../models/Task';
 import TodoistProject from '../models/todoist/TodoistProject';
-import TodoistTask from '../models/todoist/TodoistTask';
-import TodoistLabel from '../models/todoist/TodoistLabel';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import * as moment from 'moment';
+import TodoistAll from '../models/todoist/TodoistALl';
+import Project from '../models/Project';
+import Label from '../models/Label';
 
 // TODO: Move to reducer
 
 export function* fetchTasks(token: string) {
     // TODO: Add failure case
-    const todoistTasks: TodoistTask[] = yield call(TodoistClient.fetchTasks, token);
-    const projects: TodoistProject[] = yield call(TodoistClient.fetchProjects, token);
-    const labels: TodoistLabel[] = yield call(TodoistClient.fetchLabels, token);
+    const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
+
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
 
-    const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
-    const tasks: Task[] = _(todoistTasks)
+    const projectsById: Dictionary<TodoistProject> = _.keyBy(res.projects, p => p.id);
+    const tasks: Task[] = _(res.items)
         .filter(x => !x.checked && x.due_date_utc && x.labels.some(l => l in estimatedLabels))
         .orderBy(x => x.project_id)
         .map(x => ({
@@ -35,6 +35,8 @@ export function* fetchTasks(token: string) {
             dayOrder: x.day_order,
         }))
         .value();
+    const projects: Project[] = res.projects.map(x => x);
+    const labels: Label[] = res.labels.map(x => x);
 
     yield put(actions.successFetchTodoist(tasks, projects, labels));
 }
