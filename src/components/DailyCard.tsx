@@ -11,14 +11,14 @@ import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
 
-const Fire = ({minutes}) =>
+const Fire = ({minutes}: { minutes: number }) =>
     <span>
         <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
         Lack {minutes} <Icon name="heart"/>
         <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
     </span>;
 
-const Milestone = ({header, body}) =>
+const Milestone = ({header, body}: { header: string, body: string }) =>
     <Message icon color="violet">
         <Icon name='diamond'/>
         <Message.Content>
@@ -26,6 +26,27 @@ const Milestone = ({header, body}) =>
             <p><Emojify>{body}</Emojify></p>
         </Message.Content>
     </Message>;
+
+
+const TaskFeeds = ({tasks, taskSortField, taskOrder}: {
+    tasks: Task[],
+    taskSortField: TaskSortField,
+    taskOrder: Order
+}) => (
+    <Feed>{
+        _(tasks)
+            .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
+            .reject(t => t.isMilestone)
+            .orderBy(t => toSortFieldValue(t, taskSortField), taskOrder)
+            .map(t => <TaskFeed key={t.id}
+                                name={t.name}
+                                project={t.projectName}
+                                iconUrl={t.iconUrl}
+                                estimatedMinutes={t.estimatedMinutes}/>)
+            .value()
+    }</Feed>
+);
+
 
 // I want to use rich enum
 const toSortFieldValue = (task: Task, sortField: TaskSortField) => {
@@ -59,15 +80,6 @@ export const DailyCard = (props: DailyCardProps) => {
     const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : props.minutesToUsePerDay;
     const freeMinutes = minutesToUse - totalElapsedMinutes;
 
-    const toTaskFeed = (task: Task) =>
-        <TaskFeed
-            key={task.id}
-            name={task.name}
-            project={task.projectName}
-            iconUrl={task.iconUrl}
-            estimatedMinutes={task.estimatedMinutes}
-        />;
-
     return (
         <Card>
             <Dimmer active={props.date.isBefore(now(), 'day')} content={
@@ -91,7 +103,7 @@ export const DailyCard = (props: DailyCardProps) => {
                 >
                     {
                         freeMinutes < 0
-                            ? <Fire minutes={-freeMinutes} />
+                            ? <Fire minutes={-freeMinutes}/>
                             : <span><Icon name="heart"/> {freeMinutes}</span>
                     }
                 </Progress>
@@ -116,15 +128,9 @@ export const DailyCard = (props: DailyCardProps) => {
                         </Message.Header>
                     </Message.Content>
                 </Message>
-                <Feed>
-                    {_(props.tasks)
-                        .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
-                        .reject(t => t.isMilestone)
-                        .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
-                        .map(toTaskFeed)
-                        .value()
-                    }
-                </Feed>
+                <TaskFeeds tasks={props.tasks}
+                           taskSortField={props.taskSortField}
+                           taskOrder={props.taskOrder}/>
             </Card.Content>
         </Card>
     );
