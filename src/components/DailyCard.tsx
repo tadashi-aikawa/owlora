@@ -10,6 +10,13 @@ import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
 
+const Fire = ({minutes}) =>
+    <span>
+        <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
+        Lack {minutes} <Icon name="heart"/>
+        <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
+    </span>;
+
 // I want to use rich enum
 const toSortFieldValue = (task: Task, sortField: TaskSortField) => {
     switch (sortField) {
@@ -74,7 +81,7 @@ export const DailyCard = (props: DailyCardProps) => {
                 >
                     {
                         freeMinutes < 0
-                            ? <span><Icon name="fire"/> Lack {-freeMinutes}</span>
+                            ? <Fire minutes={-freeMinutes} />
                             : <span><Icon name="heart"/> {freeMinutes}</span>
                     }
                 </Progress>

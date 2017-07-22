@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Divider, Feed, Label} from 'semantic-ui-react';
+import {Feed, Label} from 'semantic-ui-react';
 import Emojify from 'react-emojione';
 
 export interface TaskFeedProps {
