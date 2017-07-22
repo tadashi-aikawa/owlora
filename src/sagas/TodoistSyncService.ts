@@ -38,7 +38,7 @@ class TodoistSyncService implements SyncService {
                 estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
                 dueDate: moment(x.due_date_utc),
                 dateString: x.date_string,
-                iconUrl: iconsByProject[String(x.project_id)],
+                icon: iconsByProject[String(x.project_id)],
                 dayOrder: x.day_order,
                 isMilestone: _.includes(x.labels, milestoneLabel)
             }))

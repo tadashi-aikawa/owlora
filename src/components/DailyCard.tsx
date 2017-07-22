@@ -41,7 +41,7 @@ const TaskFeeds = ({tasks, taskSortField, taskOrder}: {
             .map(t => <TaskFeed key={t.id}
                                 name={t.name}
                                 project={t.projectName}
-                                iconUrl={t.iconUrl}
+                                icon={t.icon}
                                 estimatedMinutes={t.estimatedMinutes}/>)
             .value()
     }</Feed>

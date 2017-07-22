@@ -7,7 +7,8 @@ interface Task {
     dueDate: Moment;
     estimatedMinutes: number;
     dateString: string;
-    iconUrl: string;
+    /** URL or emoji(ex. :bow:) */
+    icon: string;
     dayOrder: number;
     isMilestone: boolean;
 }

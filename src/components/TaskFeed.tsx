@@ -5,13 +5,17 @@ import Emojify from 'react-emojione';
 export interface TaskFeedProps {
     name: string;
     project: string;
-    iconUrl: string;
+    icon: string;
     estimatedMinutes: number;
 }
 
+const isEmoji = v => v && v.match(/^:[^:]+:$/);
+
 export const TaskFeed = (props: TaskFeedProps) =>
     <Feed.Event>
-        <Feed.Label image={props.iconUrl}/>
+        <Feed.Label>
+            {isEmoji(props.icon) ? <Emojify>{props.icon}</Emojify> : <img src={props.icon} />}
+        </Feed.Label>
         <Feed.Content>
             <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{props.project}</Emojify>}/>
             <Feed.Summary>
