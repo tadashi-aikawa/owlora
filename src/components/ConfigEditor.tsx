@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {Radio, Message, Form, Grid, Checkbox} from 'semantic-ui-react';
-import {safeDump, safeLoad} from 'js-yaml';
-import CommonConfig, {DictAndYaml} from '../models/CommonConfig';
+import {Segment, Checkbox, Divider, Form, Message, Radio} from 'semantic-ui-react';
+import {safeLoad} from 'js-yaml';
+import CommonConfig from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
@@ -69,7 +69,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
     render() {
         return (
             <Form onSubmit={this.handleSubmit}>
-                <Grid>
+                <Segment>
                     <Form.Field inline>
                         <label>Todoist API token</label>
                         <Form.Input type="password"
@@ -78,6 +78,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                     onChange={this.handleChange}
                         />
                     </Form.Field>
+                    <Divider section/>
                     <Form.Field inline>
                         <Form.TextArea name="estimatedLabels"
                                        label='estimatedLabels'
@@ -86,6 +87,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        onChange={this.handleChange}
                         />
                     </Form.Field>
+                    <Divider section/>
                     <Form.Field inline>
                         <label>Minutes to use per day</label>
                         <Form.Input type="number"
@@ -94,6 +96,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                     onChange={this.handleChange}
                         />
                     </Form.Field>
+                    <Divider section/>
                     <Form.Field inline>
                         <Form.TextArea name="minutesToUsePerSpecificDays"
                                        label='minutesToUsePerSpecificDays'
@@ -102,6 +105,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        onChange={this.handleChange}
                         />
                     </Form.Field>
+                    <Divider section/>
                     <Form.Field inline>
                         <Form.TextArea name="iconsByProject"
                                        label='iconsByProject'
@@ -110,6 +114,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        onChange={this.handleChange}
                         />
                     </Form.Field>
+                    <Divider section/>
                     <Form.Field>
                         <Form.Field>
                             Sort order for task
@@ -160,14 +165,15 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                               })
                                           )
                                       }
-                                      toggle />
+                                      toggle/>
                         </Form.Field>
                     </Form.Field>
-                </Grid>
-                <Form.Button content='Save'/>
-                <Message error visible={!!this.state.validationError}>
-                    {this.state.validationError}
-                </Message>
+                    <Divider section/>
+                    <Form.Button content='Save'/>
+                    <Message error visible={!!this.state.validationError}>
+                        {this.state.validationError}
+                    </Message>
+                </Segment>
             </Form>
         );
     }
