@@ -8,6 +8,9 @@ import {Component} from 'react';
 import Project from '../models/Project';
 import Label from '../models/Label';
 
+import '../../package';
+import {version} from '../../package.json';
+
 const toErrorMessage = (error: Error) =>
     <Message negative>
         <Message.Header>{error.name}</Message.Header>
@@ -47,32 +50,37 @@ export default class extends Component<TopProps, TopState> {
                     <Menu.Item>
                         <h2>Owlora</h2>
                     </Menu.Item>
-                    <Menu.Item>
-                        <Button primary onClick={e => {
-                            e.preventDefault();
-                            this.props.onReload();
-                        }}>Reload</Button>
+                    <Menu.Item size="mini">
+                        version {version}
                     </Menu.Item>
-                    <Menu.Item position='right'>
-                        <Modal open={this.state.isModalOpen} onClose={this.handleClose} trigger={
-                            <Button icon inverted onClick={this.handleOpen}>
-                                <Icon name="setting" size="large"/>
-                            </Button>
-                        }>
-                            <Header icon="setting" content="Settings"/>
-                            <Modal.Content>
-                                <ConfigEditor defaultConfig={this.props.config}
-                                              projects={this.props.projects}
-                                              labels={this.props.labels}
-                                              onSaveConfig={(config) => {
-                                                  this.props.onChangeConfig(config);
-                                                  this.handleClose();
-                                                  this.props.onReload();
-                                              }}
-                                />
-                            </Modal.Content>
-                        </Modal>
-                    </Menu.Item>
+                    <Menu.Menu position="right">
+                        <Menu.Item>
+                            <Button icon="refresh" content="Refresh" inverted onClick={e => {
+                                e.preventDefault();
+                                this.props.onReload();
+                            }} />
+                        </Menu.Item>
+                        <Menu.Item>
+                            <Modal open={this.state.isModalOpen} onClose={this.handleClose} trigger={
+                                <Button icon inverted onClick={this.handleOpen}>
+                                    <Icon name="setting" size="large"/>
+                                </Button>
+                            }>
+                                <Header icon="setting" content="Settings"/>
+                                <Modal.Content>
+                                    <ConfigEditor defaultConfig={this.props.config}
+                                                  projects={this.props.projects}
+                                                  labels={this.props.labels}
+                                                  onSaveConfig={(config) => {
+                                                      this.props.onChangeConfig(config);
+                                                      this.handleClose();
+                                                      this.props.onReload();
+                                                  }}
+                                    />
+                                </Modal.Content>
+                            </Modal>
+                        </Menu.Item>
+                    </Menu.Menu>
                 </Menu>
                 <div style={{padding: 10}}>
                     <Dimmer active={this.props.isLoading} page>
@@ -80,13 +88,13 @@ export default class extends Component<TopProps, TopState> {
                     </Dimmer>
                     {
                         this.props.error ? toErrorMessage(this.props.error) :
-                        this.props.tasks.length
-                            ? <TaskCards tasks={this.props.tasks}
-                                         taskSortField={this.props.config.taskSortField}
-                                         taskOrder={this.props.config.taskOrder}
-                                         minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                         minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}/>
-                            : ''
+                            this.props.tasks.length
+                                ? <TaskCards tasks={this.props.tasks}
+                                             taskSortField={this.props.config.taskSortField}
+                                             taskOrder={this.props.config.taskOrder}
+                                             minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                             minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}/>
+                                : ''
                     }
                 </div>
             </div>

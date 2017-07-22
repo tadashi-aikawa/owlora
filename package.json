@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
-    "build": "webpack --progress"
+    "build": "webpack --progress",
+    "deploy": "cross-conf-env git commit -m 'Deploy $npm_package_version' && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",
+    "cross-conf-env": "^1.1.2",
     "css-loader": "^0.28.4",
     "image-loader": "^0.0.1",
     "source-map-loader": "^0.2.1",
