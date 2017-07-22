@@ -59,6 +59,7 @@ export default class extends Component<TopProps, TopState> {
                                               onSaveConfig={(config) => {
                                                   this.props.onChangeConfig(config);
                                                   this.handleClose();
+                                                  this.props.onReload();
                                               }}
                                 />
                             </Modal.Content>
