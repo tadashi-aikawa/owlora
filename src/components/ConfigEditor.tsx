@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Accordion, Segment, Checkbox, Divider, Form, Message, Radio} from 'semantic-ui-react';
+import {Accordion, Checkbox, Divider, Form, Icon, Message, Radio, Segment} from 'semantic-ui-react';
 import {safeLoad} from 'js-yaml';
 import CommonConfig from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
@@ -77,8 +77,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         return (
             <Form onSubmit={this.handleSubmit}>
                 <Segment>
-                    <Form.Field inline>
-                        <label>Todoist API token</label>
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>Todoist API token</label>
                         <Form.Input type="password"
                                     name="todoistToken"
                                     value={this.state.todoistToken}
@@ -86,9 +86,9 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         />
                     </Form.Field>
                     <Divider section/>
-                    <Form.Field inline>
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>Estimated Labels</label>
                         <Form.TextArea name="estimatedLabels"
-                                       label='estimatedLabels'
                                        placeholder='Estimated labels as yaml (key is label id)'
                                        value={this.state.estimatedLabels}
                                        onChange={this.handleChange}
@@ -96,7 +96,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         />
                     </Form.Field>
                     <Form.Field inline>
-                        <label>Milestone label id</label>
+                        <label><Icon name="pencil"/>Milestone label id</label>
                         <Form.Input type="number"
                                     name="milestoneLabel"
                                     value={this.state.milestoneLabel}
@@ -110,8 +110,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         </ul>
                     }]}/>
                     <Divider section/>
-                    <Form.Field inline>
-                        <label>Minutes to use per day</label>
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>Minutes to use per day</label>
                         <Form.Input type="number"
                                     name="minutesToUsePerDay"
                                     value={this.state.minutesToUsePerDay}
@@ -120,8 +120,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Form.Field>
                     <Divider section/>
                     <Form.Field inline>
+                        <label><Icon name="pencil" />Minutes to use per specific days</label>
                         <Form.TextArea name="minutesToUsePerSpecificDays"
-                                       label='minutesToUsePerSpecificDays'
                                        placeholder='Specific days as yaml (key is yyyyMMdd)'
                                        value={this.state.minutesToUsePerSpecificDays}
                                        onChange={this.handleChange}
@@ -130,8 +130,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Form.Field>
                     <Divider section/>
                     <Form.Field inline>
-                        <Form.TextArea name="iconsByProject"
-                                       label='iconsByProject'
+                        <label><Icon name="pencil" />Icons by project id</label>
+                        <Form.TextArea name="iconsByProjectId"
                                        placeholder='Specific icon urls by projects as yaml (key is project id)'
                                        value={this.state.iconsByProject}
                                        onChange={this.handleChange}
@@ -147,7 +147,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     <Divider section/>
                     <Form.Field>
                         <Form.Field>
-                            Sort order for task
+                            <label><Icon name="pencil" />Sort order for task</label>
                         </Form.Field>
                         <Form.Field>
                             <Radio
