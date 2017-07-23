@@ -1,18 +1,17 @@
 import '../../package';
 
 import * as React from 'react';
-import {Message, Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
+import {Component} from 'react';
+import {Button, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
-import {Component} from 'react';
 import Project from '../models/Project';
 import Label from '../models/Label';
-import { DragDropContext } from 'react-dnd';
+import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import ReduxToastr from 'react-redux-toastr'
-import {toastr} from 'react-redux-toastr'
+import ReduxToastr, {toastr} from 'react-redux-toastr'
 
 import {version} from '../../package.json';
 
@@ -75,14 +74,14 @@ export default class extends Component<TopProps, TopState> {
                     </Menu.Item>
                     <Menu.Menu position="right">
                         <Menu.Item>
-                            <Button icon="refresh" content="Refresh" inverted onClick={e => {
+                            <Button accessKey="r" icon="refresh" content="Refresh" inverted onClick={e => {
                                 e.preventDefault();
                                 this.props.onReload();
-                            }} />
+                            }}/>
                         </Menu.Item>
                         <Menu.Item>
                             <Modal open={this.state.isModalOpen} onClose={this.handleClose} trigger={
-                                <Button icon inverted onClick={this.handleOpen}>
+                                <Button accessKey="s" icon inverted onClick={this.handleOpen}>
                                     <Icon name="setting" size="large"/>
                                 </Button>
                             }>

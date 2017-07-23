@@ -215,7 +215,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         </Form.Field>
                     </Form.Field>
                     <Divider section/>
-                    <Form.Button content='Save'/>
+                    <Form.Button accessKey="s" content='Save'/>
                     <Message error visible={!!this.state.validationError}>
                         {this.state.validationError}
                     </Message>
