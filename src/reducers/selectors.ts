@@ -1,5 +1,6 @@
 import RootState from '../states/index';
 import {Dictionary} from 'lodash';
+
 export const todoistTokenSelector = (state: RootState): string =>
     state.config.common.todoistToken;
 export const estimatedLabelsSelector = (state: RootState): Dictionary<number> =>

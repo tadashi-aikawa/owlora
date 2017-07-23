@@ -3,9 +3,11 @@ import {Dictionary} from 'lodash';
 import * as moment from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
 import {
-    estimatedLabelsSelector, iconsByProjectSelector, milestoneLabelSelector,
-    todoistTokenSelector,
     colorsByTaskNameRegexpSelector,
+    estimatedLabelsSelector,
+    iconsByProjectSelector,
+    milestoneLabelSelector,
+    todoistTokenSelector,
 } from '../reducers/selectors';
 import {call, select} from 'redux-saga/effects';
 import TodoistAll from '../models/todoist/TodoistALl';

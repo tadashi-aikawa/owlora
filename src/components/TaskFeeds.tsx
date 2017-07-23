@@ -1,11 +1,10 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Feed, Label} from 'semantic-ui-react';
+import {Feed} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskFeed from './TaskFeed';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
-import {Moment} from 'moment';
 
 
 // I want to use rich enum

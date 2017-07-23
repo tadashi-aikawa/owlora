@@ -1,7 +1,5 @@
 import {call, put, takeEvery} from 'redux-saga/effects';
-import ActionType, {
-    successUpdateTasks, successSync, errorSync, errorUpdateTasks
-} from '../actions';
+import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from './TodoistSyncService';
 import SyncService from './SyncService';
