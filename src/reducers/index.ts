@@ -1,7 +1,6 @@
 import {combineReducers, Reducer} from 'redux';
 import {
-    Actions, SYNC, SUCCESS_SYNC, UPDATE_COMMON_CONFIG, ERROR_SYNC, UPDATE_TASKS,
-    SUCCESS_UPDATE_TASKS, ERROR_UPDATE_TASKS
+    Actions, default as ActionType
 } from '../actions';
 import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
@@ -38,9 +37,9 @@ const INITIAL_CONFIG_STATE: ConfigState = {
 
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
     switch (action.type) {
-        case SYNC:
+        case ActionType.SYNC:
             return Object.assign({}, state, {isSyncing: true});
-        case SUCCESS_SYNC:
+        case ActionType.SUCCESS_SYNC:
             return Object.assign({}, state, {
                 tasks: action.payload.tasks,
                 projects: action.payload.projects,
@@ -48,21 +47,21 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
                 isSyncing: false,
                 error: null,
             });
-        case ERROR_SYNC:
+        case ActionType.ERROR_SYNC:
             return Object.assign({}, state, {
                 error: action.error,
                 isSyncing: false,
             });
-        case UPDATE_TASKS:
+        case ActionType.UPDATE_TASKS:
             // TODO:
             return Object.assign({}, state, {isSyncing: true});
-        case SUCCESS_UPDATE_TASKS:
+        case ActionType.SUCCESS_UPDATE_TASKS:
             return Object.assign({}, state, {
                 tasks: action.payload,
                 isSyncing: false,
                 error: null,
             });
-        case ERROR_UPDATE_TASKS:
+        case ActionType.ERROR_UPDATE_TASKS:
             return Object.assign({}, state, {
                 error: action.error,
                 isSyncing: false,
@@ -74,7 +73,7 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
 
 const configState = (state: ConfigState = INITIAL_CONFIG_STATE, action: Actions): ConfigState => {
     switch (action.type) {
-        case UPDATE_COMMON_CONFIG:
+        case ActionType.UPDATE_COMMON_CONFIG:
             return Object.assign({}, state, {common: action.payload});
         default:
             return state;

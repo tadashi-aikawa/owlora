@@ -5,33 +5,33 @@ import * as udvi4u from 'uuid/v4';
 
 const baseURL = 'https://todoist.com/API/v7/';
 
-const decorateDoubleQuote = (v: string) => `"${v}"`;
+export interface Args {
+    id: number;
+    due_date_utc: string;
+}
 
 interface Command {
     type: string;
     uuid: string;
-    args: {
-        id: number;
-        due_date_utc: string;
-    };
+    args: Args;
 }
 
-async function sync(token: string, resourceTypes: string[], command?: Command): Promise<TodoistAll> {
+async function sync(token: string, resourceTypes: string[], commands?: Command[]): Promise<TodoistAll> {
     return await Axios.post(
         '/sync',
         stringify({
             token,
             sync_token: '*',
             resource_types: JSON.stringify(resourceTypes),
-            commands: JSON.stringify(command)
+            commands: JSON.stringify(commands)
         }),
         {baseURL}
     ).then((r: any) => r.data);
 }
 
-const updateTasks = async (token: string, args: any) =>
+const updateTasks = async (token: string, argsList: Args[]) =>
     // TODO: Remove projects
-    await sync(token, ['items', 'projects'], args.map(x => ({
+    await sync(token, ['items', 'projects'], argsList.map(x => ({
         type: "item_update",
         uuid: udvi4u(),
         args: x

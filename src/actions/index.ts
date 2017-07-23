@@ -3,43 +3,45 @@ import CommonConfig from '../models/CommonConfig';
 import SyncPayload from '../payloads/SyncPayload';
 import {default as Task, TaskUpdateParameter} from '../models/Task';
 
-export const SYNC = 'SYNC';
-export const SUCCESS_SYNC = 'SUCCESS_SYNC';
-export const ERROR_SYNC = 'ERROR_SYNC';
+enum ActionType {
+    SYNC = 'SYNC',
+    SUCCESS_SYNC = 'SUCCESS_SYNC',
+    ERROR_SYNC = 'ERROR_SYNC',
 
-export const UPDATE_TASKS = 'UPDATE_TASKS';
-export const SUCCESS_UPDATE_TASKS = 'SUCCESS_UPDATE_TASKS';
-export const ERROR_UPDATE_TASKS = 'ERROR_UPDATE_TASKS';
+    UPDATE_TASKS = 'UPDATE_TASKS',
+    SUCCESS_UPDATE_TASKS = 'SUCCESS_UPDATE_TASKS',
+    ERROR_UPDATE_TASKS = 'ERROR_UPDATE_TASKS',
 
-export const UPDATE_COMMON_CONFIG = 'UPDATE_COMMON_CONFIG';
+    UPDATE_COMMON_CONFIG = 'UPDATE_COMMON_CONFIG',
+}
 
 export interface SyncAction extends Action {
-    type: 'SYNC';
+    type: ActionType.SYNC;
 }
 export interface SuccessSyncAction extends Action {
-    type: 'SUCCESS_SYNC';
+    type: ActionType.SUCCESS_SYNC;
     payload: SyncPayload;
 }
 export interface ErrorSyncAction extends Action {
-    type: 'ERROR_SYNC';
+    type: ActionType.ERROR_SYNC;
     error: Error;
 }
 
 export interface UpdateTasksAction extends Action {
-    type: 'UPDATE_TASKS';
+    type: ActionType.UPDATE_TASKS;
     payload: TaskUpdateParameter[];
 }
 export interface SuccessUpdateTasksAction extends Action {
-    type: 'SUCCESS_UPDATE_TASKS';
+    type: ActionType.SUCCESS_UPDATE_TASKS;
     payload: Task[];
 }
 export interface ErrorUpdateTasksAction extends Action {
-    type: 'ERROR_UPDATE_TASKS';
+    type: ActionType.ERROR_UPDATE_TASKS;
     error: Error;
 }
 
 export interface UpdateCommonConfigAction extends Action {
-    type: 'UPDATE_COMMON_CONFIG';
+    type: ActionType.UPDATE_COMMON_CONFIG;
     payload: CommonConfig;
 }
 
@@ -53,25 +55,27 @@ export type Actions =
     UpdateCommonConfigAction;
 
 export function sync(): SyncAction {
-    return {type: SYNC}
+    return {type: ActionType.SYNC}
 }
 export function successSync(payload: SyncPayload): SuccessSyncAction {
-    return {type: SUCCESS_SYNC, payload}
+    return {type: ActionType.SUCCESS_SYNC, payload}
 }
 export function errorSync(error: Error): ErrorSyncAction {
-    return {type: ERROR_SYNC, error}
+    return {type: ActionType.ERROR_SYNC, error}
 }
 
 export function updateTasks(taskUpdateParameters: TaskUpdateParameter[]): UpdateTasksAction {
-    return {type: UPDATE_TASKS, payload: taskUpdateParameters}
+    return {type: ActionType.UPDATE_TASKS, payload: taskUpdateParameters}
 }
 export function successUpdateTasks(tasks: Task[]): SuccessUpdateTasksAction {
-    return {type: SUCCESS_UPDATE_TASKS, payload: tasks}
+    return {type: ActionType.SUCCESS_UPDATE_TASKS, payload: tasks}
 }
 export function errorUpdateTasks(error: Error): ErrorUpdateTasksAction {
-    return {type: ERROR_UPDATE_TASKS, error}
+    return {type: ActionType.ERROR_UPDATE_TASKS, error}
 }
 
 export function updateCommonConfig(config: CommonConfig): UpdateCommonConfigAction {
-    return {type: UPDATE_COMMON_CONFIG, payload: config}
+    return {type: ActionType.UPDATE_COMMON_CONFIG, payload: config}
 }
+
+export default ActionType;
