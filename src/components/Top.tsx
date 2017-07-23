@@ -63,7 +63,7 @@ export default class extends Component<TopProps, TopState> {
     render() {
         return (
             <div>
-                <Menu stackable inverted>
+                <Menu stackable inverted fixed="top">
                     <Menu.Item>
                         <img src='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
                     </Menu.Item>
@@ -102,7 +102,7 @@ export default class extends Component<TopProps, TopState> {
                         </Menu.Item>
                     </Menu.Menu>
                 </Menu>
-                <div style={{padding: 10}}>
+                <div style={{padding: 10, marginTop: 70}}>
                     <Dimmer active={this.props.isLoading} page>
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
