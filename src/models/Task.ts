@@ -13,4 +13,12 @@ interface Task {
     isMilestone: boolean;
 }
 
+interface TaskUpdateParameter {
+    id: number;
+    dueDate?: Moment;
+}
+
 export default Task;
+export {
+    TaskUpdateParameter
+}

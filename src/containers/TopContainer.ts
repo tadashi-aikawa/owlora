@@ -1,8 +1,9 @@
 import {connect} from 'react-redux';
 import Top from '../components/Top';
-import {sync, updateCommonConfig} from '../actions/index';
+import {sync, updateCommonConfig, updateTasks} from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
+import {TaskUpdateParameter} from '../models/Task';
 
 const mapStateToProps = (state: RootState) => ({
     tasks: state.app.tasks,
@@ -20,6 +21,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         },
         onChangeConfig: (config: CommonConfig) => {
             dispatch(updateCommonConfig(config));
+        },
+        onUpdateTask: (parameter: TaskUpdateParameter) => {
+            dispatch(updateTasks([parameter]))
         }
     }
 };

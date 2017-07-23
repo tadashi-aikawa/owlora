@@ -4,8 +4,8 @@ import {Card} from 'semantic-ui-react';
 import * as moment from 'moment';
 import {Moment} from 'moment';
 import {SIMPLE_FORMAT} from '../storage/settings';
-import Task from '../models/Task';
-import {DailyCard} from './DailyCard';
+import Task, {TaskUpdateParameter} from '../models/Task';
+import DailyCard from './DailyCard';
 import {Dictionary} from 'lodash';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
@@ -40,6 +40,8 @@ export interface TaskCardsProps {
     taskOrder: Order;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
+
+    onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
 export const TaskCards = (props: TaskCardsProps) => {
@@ -57,6 +59,7 @@ export const TaskCards = (props: TaskCardsProps) => {
             taskOrder={props.taskOrder}
             minutesToUsePerDay={props.minutesToUsePerDay}
             minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
+            onUpdateTask={props.onUpdateTask}
         />;
 
     return (

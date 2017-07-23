@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {Message, Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
 import {TaskCards} from './TaskCards';
-import Task from '../models/Task';
+import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import {Component} from 'react';
 import Project from '../models/Project';
 import Label from '../models/Label';
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
 
 import '../../package';
 import {version} from '../../package.json';
@@ -28,12 +30,17 @@ export interface TopProps {
 
     onReload: () => void;
     onChangeConfig: (config: CommonConfig) => void;
+
+    // TODO: move to container
+    onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
 export interface TopState {
     isModalOpen: boolean;
 }
 
+
+@DragDropContext(HTML5Backend)
 export default class extends Component<TopProps, TopState> {
 
     state: TopState = {isModalOpen: false};
@@ -93,7 +100,8 @@ export default class extends Component<TopProps, TopState> {
                                              taskSortField={this.props.config.taskSortField}
                                              taskOrder={this.props.config.taskOrder}
                                              minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                             minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}/>
+                                             minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                             onUpdateTask={this.props.onUpdateTask}/>
                                 : ''
                     }
                 </div>

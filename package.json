@@ -20,12 +20,15 @@
     "@types/react": "^15.0.34",
     "@types/react-dom": "^15.5.1",
     "@types/react-redux": "^4.4.45",
+    "@types/uuid": "^3.4.0",
     "axios": "^0.16.2",
     "js-yaml": "^3.9.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "query-string": "^4.3.4",
     "react": "^15.6.1",
+    "react-dnd": "^2.4.0",
+    "react-dnd-html5-backend": "^2.4.1",
     "react-dom": "^15.6.1",
     "react-emojione": "^3.1.10",
     "react-redux": "^5.0.5",
@@ -33,7 +36,8 @@
     "redux-localstorage": "^0.4.1",
     "redux-saga": "^0.15.4",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.71.0"
+    "semantic-ui-react": "^0.71.0",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.1",

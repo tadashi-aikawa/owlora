@@ -1,5 +1,8 @@
 import {combineReducers, Reducer} from 'redux';
-import {Actions, SYNC, SUCCESS_SYNC, UPDATE_COMMON_CONFIG, ERROR_SYNC} from '../actions';
+import {
+    Actions, SYNC, SUCCESS_SYNC, UPDATE_COMMON_CONFIG, ERROR_SYNC, UPDATE_TASKS,
+    SUCCESS_UPDATE_TASKS, ERROR_UPDATE_TASKS
+} from '../actions';
 import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
@@ -46,6 +49,20 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
                 error: null,
             });
         case ERROR_SYNC:
+            return Object.assign({}, state, {
+                error: action.error,
+                isSyncing: false,
+            });
+        case UPDATE_TASKS:
+            // TODO:
+            return Object.assign({}, state, {isSyncing: true});
+        case SUCCESS_UPDATE_TASKS:
+            return Object.assign({}, state, {
+                tasks: action.payload,
+                isSyncing: false,
+                error: null,
+            });
+        case ERROR_UPDATE_TASKS:
             return Object.assign({}, state, {
                 error: action.error,
                 isSyncing: false,
