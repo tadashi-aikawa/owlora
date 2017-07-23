@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Message, Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
-import {TaskCards} from './TaskCards';
+import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
@@ -96,12 +96,12 @@ export default class extends Component<TopProps, TopState> {
                     {
                         this.props.error ? toErrorMessage(this.props.error) :
                             this.props.tasks.length
-                                ? <TaskCards tasks={this.props.tasks}
-                                             taskSortField={this.props.config.taskSortField}
-                                             taskOrder={this.props.config.taskOrder}
-                                             minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                             minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                             onUpdateTask={this.props.onUpdateTask}/>
+                                ? <DailyCards tasks={this.props.tasks}
+                                              taskSortField={this.props.config.taskSortField}
+                                              taskOrder={this.props.config.taskOrder}
+                                              minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                              minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                              onUpdateTask={this.props.onUpdateTask}/>
                                 : ''
                     }
                 </div>

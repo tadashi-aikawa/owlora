@@ -24,14 +24,14 @@ const inTheDay = (task: Task, date: Moment): boolean => {
     }
 
     return date.isSameOrAfter(task.dueDate) && _.some([
-            task.dateString === '毎日',
-            task.dateString === '平日' && isWeekDay(date),
-            task.dateString === '毎週月曜' && isMonDay(date),
-            task.dateString === '毎週火曜' && isTuesDay(date),
-            task.dateString === '毎週水曜' && isWednesDay(date),
-            task.dateString === '毎週木曜' && isThursDay(date),
-            task.dateString === '毎週金曜' && isFriDay(date),
-        ]);
+        task.dateString === '毎日',
+        task.dateString === '平日' && isWeekDay(date),
+        task.dateString === '毎週月曜' && isMonDay(date),
+        task.dateString === '毎週火曜' && isTuesDay(date),
+        task.dateString === '毎週水曜' && isWednesDay(date),
+        task.dateString === '毎週木曜' && isThursDay(date),
+        task.dateString === '毎週金曜' && isFriDay(date),
+    ]);
 };
 
 export interface TaskCardsProps {
@@ -44,27 +44,26 @@ export interface TaskCardsProps {
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
-export const TaskCards = (props: TaskCardsProps) => {
+export const DailyCards = (props: TaskCardsProps) => {
     const dates: Moment[] = _(_.range(0, 30))
         .map(i => moment().startOf('week').add(i, 'day'))
         .filter(isWeekDay)
         .value();
 
-    const toDailyCard = (date: Moment) =>
-        <DailyCard
-            key={date.toString()}
-            date={date}
-            tasks={props.tasks.filter(t => inTheDay(t, date))}
-            taskSortField={props.taskSortField}
-            taskOrder={props.taskOrder}
-            minutesToUsePerDay={props.minutesToUsePerDay}
-            minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
-            onUpdateTask={props.onUpdateTask}
-        />;
-
     return (
         <Card.Group itemsPerRow={5}>
-            {dates.map(toDailyCard)}
+            {dates.map((date: Moment) => (
+                <DailyCard
+                    key={date.toString()}
+                    date={date}
+                    tasks={props.tasks.filter(t => inTheDay(t, date))}
+                    taskSortField={props.taskSortField}
+                    taskOrder={props.taskOrder}
+                    minutesToUsePerDay={props.minutesToUsePerDay}
+                    minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
+                    onUpdateTask={props.onUpdateTask}
+                />
+            ))}
         </Card.Group>
     );
 };
