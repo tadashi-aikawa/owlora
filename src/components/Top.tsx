@@ -110,6 +110,7 @@ export default class extends Component<TopProps, TopState> {
                                 taskOrder={this.props.config.taskOrder}
                                 minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                 minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}
                                 onUpdateTask={this.props.onUpdateTask}/>
                 </div>
                 <ReduxToastr

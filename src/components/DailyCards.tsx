@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as _ from 'lodash';
-import {Card} from 'semantic-ui-react';
+import {Card, SemanticWIDTHS} from 'semantic-ui-react';
 import * as moment from 'moment';
 import {Moment} from 'moment';
 import {SIMPLE_FORMAT} from '../storage/settings';
@@ -40,6 +40,7 @@ export interface TaskCardsProps {
     taskOrder: Order;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
+    numberOfCardsPerRow: SemanticWIDTHS;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
@@ -51,7 +52,7 @@ export const DailyCards = (props: TaskCardsProps) => {
         .value();
 
     return (
-        <Card.Group itemsPerRow={5}>
+        <Card.Group itemsPerRow={props.numberOfCardsPerRow}>
             {dates.map((date: Moment) => (
                 <DailyCard
                     key={date.toString()}

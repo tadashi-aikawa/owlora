@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Accordion, Checkbox, Divider, Form, Icon, Message, Radio, Segment} from 'semantic-ui-react';
+import {Accordion, Checkbox, Divider, Form, Icon, Message, Radio, Segment, SemanticWIDTHS} from 'semantic-ui-react';
 import {safeLoad} from 'js-yaml';
 import CommonConfig from '../models/CommonConfig';
 import TaskSortField from '../constants/TaskSortField';
@@ -24,6 +24,7 @@ export interface ConfigEditorState {
     colorsByTaskNameRegexp: string;
     taskSortField: TaskSortField;
     taskOrder: Order;
+    numberOfCardsPerRow: SemanticWIDTHS;
 
     validationError?: string;
 }
@@ -40,6 +41,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         colorsByTaskNameRegexp: this.props.defaultConfig.colorsByTaskNameRegexp.yaml,
         taskSortField: this.props.defaultConfig.taskSortField,
         taskOrder: this.props.defaultConfig.taskOrder,
+        numberOfCardsPerRow: this.props.defaultConfig.numberOfCardsPerRow
     };
 
     handleChange = (e, {name, value}) =>
@@ -73,6 +75,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                 },
                 taskSortField: this.state.taskSortField,
                 taskOrder: this.state.taskOrder,
+                numberOfCardsPerRow: this.state.numberOfCardsPerRow as SemanticWIDTHS,
             });
         } catch (e) {
             this.setState(Object.assign({}, this.state, {validationError: e.toString()}));
@@ -213,6 +216,17 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                       }
                                       toggle/>
                         </Form.Field>
+                    </Form.Field>
+                    <Divider section/>
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>A Number of cards per row (default)</label>
+                        <Form.Input type="number"
+                                    name="numberOfCardsPerRow"
+                                    min={1}
+                                    max={5}
+                                    value={this.state.numberOfCardsPerRow}
+                                    onChange={this.handleChange}
+                        />
                     </Form.Field>
                     <Divider section/>
                     <Form.Button accessKey="s" content='Save'/>
