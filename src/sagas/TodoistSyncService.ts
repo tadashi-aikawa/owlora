@@ -4,7 +4,8 @@ import * as moment from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
 import {
     estimatedLabelsSelector, iconsByProjectSelector, milestoneLabelSelector,
-    todoistTokenSelector
+    todoistTokenSelector,
+    colorsByTaskNameRegexpSelector,
 } from '../reducers/selectors';
 import {call, select} from 'redux-saga/effects';
 import TodoistAll from '../models/todoist/TodoistALl';
@@ -16,12 +17,16 @@ import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 
 
-function *todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]) {
+function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]) {
     // This method returns Dictionary<Task>
     // TODO: Argument TodoistProject[] have to be removed
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
     const milestoneLabel: number = yield select(milestoneLabelSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
+    const colorsByTaskNameRegexp: Dictionary<string> = Object.assign(
+        yield select(colorsByTaskNameRegexpSelector),
+        {'.*': 'rgba(200, 200, 200, 0.1)'}
+    );
 
     const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
 
@@ -41,14 +46,15 @@ function *todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             dateString: x.date_string,
             icon: iconsByProject[String(x.project_id)],
             dayOrder: x.day_order,
-            isMilestone: _.includes(x.labels, milestoneLabel)
+            isMilestone: _.includes(x.labels, milestoneLabel),
+            color: _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
         }))
         .keyBy(x => x.id)
         .value();
 }
 
 class TodoistSyncService implements SyncService {
-    *sync() {
+    * sync() {
         const token = yield select(todoistTokenSelector);
         const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
 
@@ -59,7 +65,7 @@ class TodoistSyncService implements SyncService {
         return yield Promise.resolve({tasksById, projects, labels})
     }
 
-    *updateTasks(taskUpdateParameters: TaskUpdateParameter[]) {
+    * updateTasks(taskUpdateParameters: TaskUpdateParameter[]) {
         const token = yield select(todoistTokenSelector);
         const res: TodoistAll = yield call(
             TodoistClient.updateTasks,

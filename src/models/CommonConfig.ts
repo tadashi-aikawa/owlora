@@ -14,6 +14,7 @@ interface CommonConfig {
     milestoneLabel?: number;
     minutesToUsePerSpecificDays: DictAndYaml<number>;
     iconsByProject: DictAndYaml<string>;
+    colorsByTaskNameRegexp: DictAndYaml<string>;
     taskSortField: TaskSortField;
     taskOrder: Order;
 }

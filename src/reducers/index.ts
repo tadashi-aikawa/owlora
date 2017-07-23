@@ -33,6 +33,10 @@ const INITIAL_CONFIG_STATE: ConfigState = {
             dict: {},
             yaml: ''
         },
+        colorsByTaskNameRegexp: {
+            dict: {},
+            yaml: ''
+        },
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
     }

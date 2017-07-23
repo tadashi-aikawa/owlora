@@ -4,16 +4,12 @@ import {Feed, Label} from 'semantic-ui-react';
 import Emojify from 'react-emojione';
 import {DragSource} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
-import {TaskUpdateParameter} from '../models/Task';
+import {default as Task, TaskUpdateParameter} from '../models/Task';
 
 const isEmoji = v => v && v.match(/^:[^:]+:$/);
 
 export interface TaskFeedProps {
-    id: number;
-    name: string;
-    project: string;
-    icon: string;
-    estimatedMinutes: number;
+    task: Task;
 
     connectDragSource?: Function;
     isDragging?: boolean;
@@ -24,21 +20,21 @@ export interface TaskFeedProps {
 @DragSource(
     'task-feed',
     {
-        beginDrag(props) {
+        beginDrag(props: TaskFeedProps) {
             return {
-                id: props.id,
-                name: props.name
+                id: props.task.id,
+                name: props.task.name
             };
         },
 
-        endDrag(props, monitor, component) {
+        endDrag(props: TaskFeedProps, monitor, component) {
             if (!monitor.didDrop()) {
                 return;
             }
 
             props.onUpdate({
-                id: props.id,
-                name: props.name,
+                id: props.task.id,
+                name: props.task.name,
                 dueDate: monitor.getDropResult().date
             });
         }
@@ -54,22 +50,30 @@ class TaskFeed extends Component<TaskFeedProps> {
     }
 
     render() {
+        const {name, projectName, icon, estimatedMinutes, color} = this.props.task;
         return (
             <Feed.Event style={{
+                backgroundColor: color,
+                border: '2px solid',
+                borderRadius: '20px',
+                borderColor: color,
+                padding: '10px',
+                marginTop: '10px',
+                marginBottom: '10px',
                 cursor: 'move',
                 opacity: this.props.isDragging ? 0.1 : 1
             }}>
                 <Feed.Label>
-                    {isEmoji(this.props.icon) ? <Emojify>{this.props.icon}</Emojify> : <img src={this.props.icon}/>}
+                    {isEmoji(icon) ? <Emojify>{icon}</Emojify> : <img src={icon}/>}
                 </Feed.Label>
                 <Feed.Content>
-                    <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{this.props.project}</Emojify>}/>
+                    <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
                     <Feed.Summary>
-                        <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{this.props.name}</Emojify>
+                        <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
                     </Feed.Summary>
                 </Feed.Content>
                 <Label color='teal' circular
-                       style={{width: 25, height: 20, textAlign: 'center'}}>{this.props.estimatedMinutes}</Label>
+                       style={{width: 25, height: 20, textAlign: 'center'}}>{estimatedMinutes}</Label>
             </Feed.Event>
         );
     }

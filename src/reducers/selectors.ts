@@ -8,3 +8,5 @@ export const milestoneLabelSelector = (state: RootState): number =>
     state.config.common.milestoneLabel;
 export const iconsByProjectSelector = (state: RootState): Dictionary<string> =>
     state.config.common.iconsByProject.dict;
+export const colorsByTaskNameRegexpSelector = (state: RootState): Dictionary<string> =>
+    state.config.common.colorsByTaskNameRegexp.dict;

@@ -36,12 +36,6 @@ export const TaskFeeds = (props: TaskFeedsProps) =>
             .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
             .reject(t => t.isMilestone)
             .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
-            .map(t => <TaskFeed key={t.id}
-                                id={t.id}
-                                name={t.name}
-                                project={t.projectName}
-                                icon={t.icon}
-                                estimatedMinutes={t.estimatedMinutes}
-                                onUpdate={props.onUpdateTask}/>)
+            .map(t => <TaskFeed key={t.id} task={t} onUpdate={props.onUpdateTask}/>)
             .value()
     }</Feed>;

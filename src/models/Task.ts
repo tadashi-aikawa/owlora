@@ -10,6 +10,7 @@ interface Task {
     /** URL or emoji(ex. :bow:) */
     icon: string;
     dayOrder: number;
+    color: string;
     isMilestone: boolean;
 }
 

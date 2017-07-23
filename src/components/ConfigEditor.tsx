@@ -21,6 +21,7 @@ export interface ConfigEditorState {
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
     iconsByProject: string;
+    colorsByTaskNameRegexp: string;
     taskSortField: TaskSortField;
     taskOrder: Order;
 
@@ -36,6 +37,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
         iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
+        colorsByTaskNameRegexp: this.props.defaultConfig.colorsByTaskNameRegexp.yaml,
         taskSortField: this.props.defaultConfig.taskSortField,
         taskOrder: this.props.defaultConfig.taskOrder,
     };
@@ -64,6 +66,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                 iconsByProject: {
                     dict: safeLoad(this.state.iconsByProject),
                     yaml: this.state.iconsByProject,
+                },
+                colorsByTaskNameRegexp: {
+                    dict: safeLoad(this.state.colorsByTaskNameRegexp),
+                    yaml: this.state.colorsByTaskNameRegexp,
                 },
                 taskSortField: this.state.taskSortField,
                 taskOrder: this.state.taskOrder,
@@ -131,8 +137,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     <Divider section/>
                     <Form.Field inline>
                         <label><Icon name="pencil" />Icons by project id</label>
-                        <Form.TextArea name="iconsByProjectId"
-                                       placeholder='Specific icon urls by projects as yaml (key is project id)'
+                        <Form.TextArea name="iconsByProject"
+                                       placeholder='Icon urls by projects as yaml (key is project id)'
                                        value={this.state.iconsByProject}
                                        onChange={this.handleChange}
                                        autoHeight
@@ -144,6 +150,16 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                             {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
                         </ul>
                     }]}/>
+                    <Divider section/>
+                    <Form.Field inline>
+                        <label><Icon name="pencil" />Colors by task name regexp</label>
+                        <Form.TextArea name="colorsByTaskNameRegexp"
+                                       placeholder='Task name regexp and color used'
+                                       value={this.state.colorsByTaskNameRegexp}
+                                       onChange={this.handleChange}
+                                       autoHeight
+                        />
+                    </Form.Field>
                     <Divider section/>
                     <Form.Field>
                         <Form.Field>
