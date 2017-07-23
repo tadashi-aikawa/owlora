@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "build": "webpack --progress",
     "predeploy": "webpack",
-    "deploy": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push origin --tags"
+    "deploy": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
