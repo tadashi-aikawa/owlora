@@ -7,6 +7,7 @@ import TodoistSyncService from './TodoistSyncService';
 import SyncService from './SyncService';
 import Task from '../models/Task';
 import {UpdateTasksAction} from '../actions/index';
+import {Dictionary} from "lodash";
 
 const service: SyncService = new TodoistSyncService();
 
@@ -21,10 +22,13 @@ export function* sync() {
 
 export function* updateTasks(action: UpdateTasksAction) {
     try {
-        const tasks: Task[] = yield call(service.updateTasks, action.payload);
+        const tasks: Dictionary<Task> = yield call(service.updateTasks, action.payload);
         yield put(successUpdateTasks(tasks));
     } catch (e) {
-        yield put(errorUpdateTasks(e));
+        yield put(errorUpdateTasks({
+            name: 'Failure update task',
+            message: `${action.payload.map(x => `${x.name}\n`)}`
+        }));
     }
 }
 

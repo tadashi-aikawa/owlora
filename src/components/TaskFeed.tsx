@@ -38,6 +38,7 @@ export interface TaskFeedProps {
 
             props.onUpdate({
                 id: props.id,
+                name: props.name,
                 dueDate: monitor.getDropResult().date
             });
         }

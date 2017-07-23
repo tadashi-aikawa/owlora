@@ -1,9 +1,10 @@
 import Task from '../models/Task';
 import Project from '../models/Project';
 import Label from '../models/Label';
+import {Dictionary} from 'lodash';
 
 interface SyncPayload {
-    tasks: Task[];
+    tasksById: Dictionary<Task>;
     projects: Project[];
     labels: Label[];
 }

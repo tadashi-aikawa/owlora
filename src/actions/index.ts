@@ -2,6 +2,7 @@ import {Action} from 'redux';
 import CommonConfig from '../models/CommonConfig';
 import SyncPayload from '../payloads/SyncPayload';
 import {default as Task, TaskUpdateParameter} from '../models/Task';
+import {Dictionary} from 'lodash';
 
 enum ActionType {
     SYNC = 'SYNC',
@@ -33,7 +34,7 @@ export interface UpdateTasksAction extends Action {
 }
 export interface SuccessUpdateTasksAction extends Action {
     type: ActionType.SUCCESS_UPDATE_TASKS;
-    payload: Task[];
+    payload: Dictionary<Task>;
 }
 export interface ErrorUpdateTasksAction extends Action {
     type: ActionType.ERROR_UPDATE_TASKS;
@@ -67,8 +68,8 @@ export function errorSync(error: Error): ErrorSyncAction {
 export function updateTasks(taskUpdateParameters: TaskUpdateParameter[]): UpdateTasksAction {
     return {type: ActionType.UPDATE_TASKS, payload: taskUpdateParameters}
 }
-export function successUpdateTasks(tasks: Task[]): SuccessUpdateTasksAction {
-    return {type: ActionType.SUCCESS_UPDATE_TASKS, payload: tasks}
+export function successUpdateTasks(tasksById: Dictionary<Task>): SuccessUpdateTasksAction {
+    return {type: ActionType.SUCCESS_UPDATE_TASKS, payload: tasksById}
 }
 export function errorUpdateTasks(error: Error): ErrorUpdateTasksAction {
     return {type: ActionType.ERROR_UPDATE_TASKS, error}

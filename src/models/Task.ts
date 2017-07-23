@@ -15,6 +15,7 @@ interface Task {
 
 interface TaskUpdateParameter {
     id: number;
+    name: string;
     dueDate?: Moment;
 }
 

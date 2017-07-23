@@ -1,3 +1,5 @@
+import * as _ from 'lodash';
+import {reducer as toastrReducer} from 'react-redux-toastr'
 import {combineReducers, Reducer} from 'redux';
 import {
     Actions, default as ActionType
@@ -7,11 +9,12 @@ import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 
+
 const INITIAL_APP_STATE: AppState = {
-    tasks: [],
+    tasksById: {},
     projects: [],
     labels: [],
-    isSyncing: false,
+    isSyncing: true,
 };
 
 const INITIAL_CONFIG_STATE: ConfigState = {
@@ -41,7 +44,7 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
             return Object.assign({}, state, {isSyncing: true});
         case ActionType.SUCCESS_SYNC:
             return Object.assign({}, state, {
-                tasks: action.payload.tasks,
+                tasksById: action.payload.tasksById,
                 projects: action.payload.projects,
                 labels: action.payload.labels,
                 isSyncing: false,
@@ -53,18 +56,23 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
                 isSyncing: false,
             });
         case ActionType.UPDATE_TASKS:
-            // TODO:
-            return Object.assign({}, state, {isSyncing: true});
+            return Object.assign({}, state, {
+                tasksById: Object.assign({}, state.tasksById,
+                    _(action.payload)
+                        .map(x => Object.assign({}, state.tasksById[x.id], {dueDate: x.dueDate}))
+                        .keyBy(x => x.id)
+                        .value()
+                )
+            });
         case ActionType.SUCCESS_UPDATE_TASKS:
             return Object.assign({}, state, {
-                tasks: action.payload,
+                tasksById: action.payload,
                 isSyncing: false,
                 error: null,
             });
         case ActionType.ERROR_UPDATE_TASKS:
             return Object.assign({}, state, {
                 error: action.error,
-                isSyncing: false,
             });
         default:
             return state;
@@ -83,4 +91,5 @@ const configState = (state: ConfigState = INITIAL_CONFIG_STATE, action: Actions)
 export default combineReducers({
     app: appState as Reducer<any>,
     config: configState as Reducer<any>,
+    toastr: toastrReducer,
 });

@@ -1,3 +1,4 @@
+import * as _ from 'lodash';
 import {connect} from 'react-redux';
 import Top from '../components/Top';
 import {sync, updateCommonConfig, updateTasks} from '../actions/index';
@@ -6,7 +7,7 @@ import CommonConfig from '../models/CommonConfig';
 import {TaskUpdateParameter} from '../models/Task';
 
 const mapStateToProps = (state: RootState) => ({
-    tasks: state.app.tasks,
+    tasks: _.values(state.app.tasksById),
     projects: state.app.projects,
     labels: state.app.labels,
     config: state.config.common,

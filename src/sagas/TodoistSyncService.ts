@@ -17,7 +17,7 @@ import TodoistTask from '../models/todoist/TodoistTask';
 
 
 function *todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]) {
-    // This method returns SyncPayload
+    // This method returns Dictionary<Task>
     // TODO: Argument TodoistProject[] have to be removed
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
     const milestoneLabel: number = yield select(milestoneLabelSelector);
@@ -43,6 +43,7 @@ function *todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             dayOrder: x.day_order,
             isMilestone: _.includes(x.labels, milestoneLabel)
         }))
+        .keyBy(x => x.id)
         .value();
 }
 
@@ -51,11 +52,11 @@ class TodoistSyncService implements SyncService {
         const token = yield select(todoistTokenSelector);
         const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
 
-        const tasks: Task[] = yield todoistTasksToTasks(res.items, res.projects);
+        const tasksById: Dictionary<Task> = yield todoistTasksToTasks(res.items, res.projects);
         const projects: Project[] = res.projects.map(x => x);
         const labels: Label[] = res.labels.map(x => x);
 
-        return yield Promise.resolve({tasks, projects, labels})
+        return yield Promise.resolve({tasksById, projects, labels})
     }
 
     *updateTasks(taskUpdateParameters: TaskUpdateParameter[]) {
@@ -69,8 +70,8 @@ class TodoistSyncService implements SyncService {
             }))
         );
 
-        const tasks: Task[] = yield todoistTasksToTasks(res.items, res.projects);
-        return yield Promise.resolve(tasks);
+        const tasksById: Dictionary<Task> = yield todoistTasksToTasks(res.items, res.projects);
+        return yield Promise.resolve(tasksById);
     }
 }
 

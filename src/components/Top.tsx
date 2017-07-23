@@ -1,3 +1,5 @@
+import '../../package';
+
 import * as React from 'react';
 import {Message, Icon, Button, Dimmer, Loader, Menu, Modal, Header} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
@@ -9,16 +11,11 @@ import Project from '../models/Project';
 import Label from '../models/Label';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import ReduxToastr from 'react-redux-toastr'
+import {toastr} from 'react-redux-toastr'
 
-import '../../package';
 import {version} from '../../package.json';
 
-const toErrorMessage = (error: Error) =>
-    <Message negative>
-        <Message.Header>{error.name}</Message.Header>
-        <p>{error.message}</p>
-        <p>{error.stack}</p>
-    </Message>;
 
 export interface TopProps {
     tasks: Task[];
@@ -37,15 +34,31 @@ export interface TopProps {
 
 export interface TopState {
     isModalOpen: boolean;
+    hasErrorToast: boolean;
 }
 
 
 @DragDropContext(HTML5Backend)
 export default class extends Component<TopProps, TopState> {
 
-    state: TopState = {isModalOpen: false};
+    state: TopState = {isModalOpen: false, hasErrorToast: false};
     handleOpen = () => this.setState({isModalOpen: true});
     handleClose = () => this.setState({isModalOpen: false});
+
+    componentWillReceiveProps(nextProps: TopProps) {
+        if (nextProps.error) {
+            toastr.error(nextProps.error.name, nextProps.error.message, {
+                showCloseButton: false,
+                removeOnHover: false
+            });
+            this.state.hasErrorToast = true;
+        } else {
+            if (this.state.hasErrorToast) {
+                toastr.removeByType("error");
+                this.state.hasErrorToast = false;
+            }
+        }
+    }
 
     render() {
         return (
@@ -93,18 +106,21 @@ export default class extends Component<TopProps, TopState> {
                     <Dimmer active={this.props.isLoading} page>
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
-                    {
-                        this.props.error ? toErrorMessage(this.props.error) :
-                            this.props.tasks.length
-                                ? <DailyCards tasks={this.props.tasks}
-                                              taskSortField={this.props.config.taskSortField}
-                                              taskOrder={this.props.config.taskOrder}
-                                              minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                              minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                              onUpdateTask={this.props.onUpdateTask}/>
-                                : ''
-                    }
+                    <DailyCards tasks={this.props.tasks}
+                                taskSortField={this.props.config.taskSortField}
+                                taskOrder={this.props.config.taskOrder}
+                                minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                onUpdateTask={this.props.onUpdateTask}/>
                 </div>
+                <ReduxToastr
+                    timeOut={0}
+                    newestOnTop={false}
+                    preventDuplicates
+                    position="bottom-right"
+                    transitionIn="fadeIn"
+                    transitionOut="fadeOut"
+                />
             </div>
         );
     }
