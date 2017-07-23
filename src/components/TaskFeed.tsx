@@ -55,7 +55,10 @@ class TaskFeed extends Component<TaskFeedProps> {
 
     render() {
         return (
-            <Feed.Event style={{opacity: this.props.isDragging ? 0.1 : 1}}>
+            <Feed.Event style={{
+                cursor: 'move',
+                opacity: this.props.isDragging ? 0.1 : 1
+            }}>
                 <Feed.Label>
                     {isEmoji(this.props.icon) ? <Emojify>{this.props.icon}</Emojify> : <img src={this.props.icon}/>}
                 </Feed.Label>
