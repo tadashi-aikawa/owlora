@@ -1,15 +1,15 @@
 import * as React from 'react';
+import {Component} from 'react';
 import * as _ from 'lodash';
-import Emojify from 'react-emojione';
 import {Dictionary} from 'lodash';
-import {Grid, Image, Accordion, Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
+import Emojify from 'react-emojione';
+import {Accordion, Card, Dimmer, Icon, Label, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
-import {Component} from 'react';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
@@ -171,7 +171,10 @@ export default class extends Component<DailyCardProps> {
                             }))
                             .orderBy(x => x.minutes, 'desc')
                             .map(x => (
-                                <span style={{marginRight: 10}}><ImageOrEmoji src={x.icon}/> <Icon name="heart"/> {x.minutes}</span>
+                                <span style={{marginRight: 10}}>
+                                    <ImageOrEmoji src={x.icon}/>
+                                    <Label color='teal' circular>{x.minutes}</Label>
+                                </span>
                             ))
                             .value()
                     }
