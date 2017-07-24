@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import Emojify from 'react-emojione';
 import {Dictionary} from 'lodash';
-import {Accordion, Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {Grid, Image, Accordion, Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -12,6 +12,7 @@ import {DragSource, DropTarget} from 'react-dnd';
 import {Component} from 'react';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
+import ImageOrEmoji from './ImageOrEmoji';
 
 
 const Fire = ({minutes}: { minutes: number }) =>
@@ -79,7 +80,7 @@ export default class extends Component<DailyCardProps> {
             .reject(t => t.isMilestone)
             .value();
 
-        const totalEstimatedMinutes = _.sumBy(estimatedTasks,t => t.estimatedMinutes);
+        const totalEstimatedMinutes = _.sumBy(estimatedTasks, t => t.estimatedMinutes);
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
         const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : this.props.minutesToUsePerDay;
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
@@ -159,6 +160,21 @@ export default class extends Component<DailyCardProps> {
                                        onUpdateTask={this.props.onUpdateTask}/>
                         </Accordion.Content>
                     </Accordion>
+                </Card.Content>
+                <Card.Content extra>
+                    {
+                        _(estimatedTasks)
+                            .groupBy(t => t.icon)
+                            .map((tasks: Task[]) => ({
+                                icon: tasks[0].icon,
+                                minutes: _.sumBy(tasks, t => t.estimatedMinutes)
+                            }))
+                            .orderBy(x => x.minutes, 'desc')
+                            .map(x => (
+                                <span style={{marginRight: 10}}><ImageOrEmoji src={x.icon}/> <Icon name="heart"/> {x.minutes}</span>
+                            ))
+                            .value()
+                    }
                 </Card.Content>
             </Card>
         );

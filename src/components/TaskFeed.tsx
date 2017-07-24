@@ -5,8 +5,7 @@ import Emojify from 'react-emojione';
 import {DragSource} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import {default as Task, TaskUpdateParameter} from '../models/Task';
-
-const isEmoji = v => v && v.match(/^:[^:]+:$/);
+import ImageOrEmoji from './ImageOrEmoji';
 
 export interface TaskFeedProps {
     task: Task;
@@ -64,7 +63,7 @@ class TaskFeed extends Component<TaskFeedProps> {
                 opacity: this.props.isDragging ? 0.1 : 1
             }}>
                 <Feed.Label>
-                    {isEmoji(icon) ? <Emojify>{icon}</Emojify> : <img src={icon}/>}
+                    <ImageOrEmoji src={icon}/>
                 </Feed.Label>
                 <Feed.Content>
                     <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
