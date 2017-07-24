@@ -103,7 +103,7 @@ export default class extends Component<DailyCardProps> {
                         <Icon name='hand outline right' size='huge'/>
                     </div>
                 }/>
-                <Segment inverted>
+                <Segment inverted style={{margin: 0}}>
                     <Statistic size='mini' color="olive">
                         <Statistic.Value>{this.props.date.format(DATE_FORMAT)}</Statistic.Value>
                     </Statistic>
