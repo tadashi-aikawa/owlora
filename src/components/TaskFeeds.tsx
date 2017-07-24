@@ -32,8 +32,6 @@ export interface TaskFeedsProps {
 export const TaskFeeds = (props: TaskFeedsProps) =>
     <Feed>{
         _(props.tasks)
-            .filter((t: Task) => t.dateString !== '毎日' && t.dateString !== '平日')
-            .reject(t => t.isMilestone)
             .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
             .map(t => <TaskFeed key={t.id} task={t} onUpdate={props.onUpdateTask}/>)
             .value()

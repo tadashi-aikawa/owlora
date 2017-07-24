@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import Emojify from 'react-emojione';
 import {Dictionary} from 'lodash';
-import {Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {Accordion, Dimmer, Card, Feed, Icon, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -74,13 +74,15 @@ export default class extends Component<DailyCardProps> {
     }
 
     render() {
-        const totalElapsedMinutes = _.sumBy(
-            this.props.tasks.filter(t => t.dateString !== '毎日' && t.dateString !== '平日'),
-            t => t.estimatedMinutes
-        );
+        const estimatedTasks: Task[] = _(this.props.tasks)
+            .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
+            .reject(t => t.isMilestone)
+            .value();
+
+        const totalEstimatedMinutes = _.sumBy(estimatedTasks,t => t.estimatedMinutes);
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
         const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : this.props.minutesToUsePerDay;
-        const freeMinutes = minutesToUse - totalElapsedMinutes;
+        const freeMinutes = minutesToUse - totalEstimatedMinutes;
 
         return (
             <Card>
@@ -141,10 +143,22 @@ export default class extends Component<DailyCardProps> {
                             </Message.Header>
                         </Message.Content>
                     </Message>
-                    <TaskFeeds tasks={this.props.tasks}
-                               taskSortField={this.props.taskSortField}
-                               taskOrder={this.props.taskOrder}
-                               onUpdateTask={this.props.onUpdateTask}/>
+                    <Accordion defaultActiveIndex={0}>
+                        <Accordion.Title>
+                            <Statistic size="mini">
+                                <Statistic.Value>
+                                    <Icon name='dropdown'/>
+                                    {estimatedTasks.length} Tasks
+                                </Statistic.Value>
+                            </Statistic>
+                        </Accordion.Title>
+                        <Accordion.Content>
+                            <TaskFeeds tasks={estimatedTasks}
+                                       taskSortField={this.props.taskSortField}
+                                       taskOrder={this.props.taskOrder}
+                                       onUpdateTask={this.props.onUpdateTask}/>
+                        </Accordion.Content>
+                    </Accordion>
                 </Card.Content>
             </Card>
         );
