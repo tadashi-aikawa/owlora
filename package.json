@@ -63,6 +63,7 @@
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.1.9",
+    "@storybook/addon-notes": "^3.1.6",
     "@storybook/addon-storyshots": "^3.1.9",
     "@storybook/react": "^3.1.9",
     "@types/jest": "^20.0.5",

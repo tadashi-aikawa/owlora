@@ -3,9 +3,9 @@ import * as React from 'react';
 import {Component} from 'react';
 
 import {storiesOf} from '@storybook/react';
+import {WithNotes} from '@storybook/addon-notes';
 import {action} from '@storybook/addon-actions';
-
-import {Button, Welcome} from '@storybook/react/demo';
+import {Card} from 'semantic-ui-react';
 
 import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
@@ -22,6 +22,7 @@ class DnDWrapper extends Component<any, any> {
         return <div>{this.props.children}</div>;
     }
 }
+
 const DnDWrapperDecorator = (storyFn) => <DnDWrapper>{storyFn()}</DnDWrapper>;
 
 
@@ -56,116 +57,227 @@ storiesOf('DailyCard', module)
                    tasks={object(
                        'Tasks',
                        [
+                           createTask({id: 1, name: 'Task1', dayOrder: 3, icon: ":person_with_pouting_face:"}),
+                           createTask({id: 2, name: 'Task2', dayOrder: 2, icon: ":whale:"}),
                            createTask({
-                               id: 1,
+                               id: 3,
+                               name: 'Task3',
                                dayOrder: 1,
-                               icon: "https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                               icon: ":japan:",
+                               color: "rgba(200, 50, 50, 0.1)"
                            }),
-                           createTask({id: 2, dayOrder: 2, icon: ":japan:"}),
-                           createTask({id: 3, dayOrder: 3, icon: ":japan:", color: "rgba(200, 50, 50, 0.1)"}),
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, isMilestone: true}),
                        ]
                    )}
                    onUpdateTask={action}
         />
     ))
-    .add('Icon from emoji', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={300}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       icon: text('task.icon', ':innocent:'),
-                   })]}
-                   onUpdateTask={action}
-        />
+    .add('Sort', () => {
+        const tasks: Task[] = [
+            createTask({id: 1, name: 'Task1', projectName: 'PJ2', dayOrder: 3, estimatedMinutes: 10, icon: ":bow:"}),
+            createTask({id: 2, name: 'Task2', projectName: 'PJ1', dayOrder: 2, estimatedMinutes: 50, icon: ":whale:"}),
+            createTask({id: 3, name: 'Task3', projectName: 'PJ3', dayOrder: 1, estimatedMinutes: 20, icon: ":whale:"}),
+            createTask({id: 4, name: 'Milestone', dayOrder: 4, estimatedMinutes: 100, isMilestone: true}),
+        ];
+
+        return (
+            <Card.Group>
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={select('Sort by project', TaskSortField.toObject, TaskSortField.PROJECT_NAME)}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={tasks}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={select('Sort by day order', TaskSortField.toObject, TaskSortField.DAY_ORDER)}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={tasks}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={select('Sort by estimated minutes', TaskSortField.toObject, TaskSortField.ESTIMATED_MINUTES)}
+                           taskOrder={Order.DESC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={tasks}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={select('Sort by task name', TaskSortField.toObject, TaskSortField.TASK_NAME)}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={tasks}
+                           onUpdateTask={action}
+                />
+            </Card.Group>
+        )
+    })
+    .add('Feed icon', () => (
+        <Card.Group>
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           icon: text('task.icon (emoji)', ':innocent:'),
+                       })]}
+                       onUpdateTask={action}
+            />
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           icon: text('task.icon (url)', 'https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg'),
+                       })]}
+                       onUpdateTask={action}
+            />
+        </Card.Group>
     ))
-    .add('Icon from url', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={300}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       icon: text('task.icon', 'https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg'),
-                   })]}
-                   onUpdateTask={action}
-        />
-    ))
-    .add('Color of card', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={300}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       color: text("task.color", "rgba(200, 50, 50, 0.2)")
-                   })]}
-                   onUpdateTask={action}
-        />
+    .add('Feed color', () => (
+        <Card.Group>
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           color: text("task.color (name)", "pink")
+                       })]}
+                       onUpdateTask={action}
+            />
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           color: text("task.color (rgb)", "#7777CC")
+                       })]}
+                       onUpdateTask={action}
+            />
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           color: text("task.color (rgba)", "rgba(200, 50, 50, 0.2)")
+                       })]}
+                       onUpdateTask={action}
+            />
+        </Card.Group>
     ))
     .add('Milestone', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={300}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       isMilestone: boolean("task.isMilestone", true)
-                   })]}
-                   onUpdateTask={action}
-        />
+        <WithNotes notes='Even if Milestone has a estimated minutes, ignored estimated them'>
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           dayOrder: 1,
+                           isMilestone: boolean("task.isMilestone", true)
+                       })]}
+                       onUpdateTask={action}
+            />
+        </WithNotes>
     ))
-    .add('Warning', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={100}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       estimatedMinutes: number('task.estimatedMinutes', 61)
-                   })]}
-                   onUpdateTask={action}
-        />
-    ))
-    .add('Danger', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={100}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       estimatedMinutes: number('task.estimatedMinutes', 81)
-                   })]}
-                   onUpdateTask={action}
-        />
-    ))
-    .add('Lack', () => (
-        <DailyCard date={toDate('2099/01/01')}
-                   taskSortField={TaskSortField.PROJECT_NAME}
-                   taskOrder={Order.ASC}
-                   minutesToUsePerDay={50}
-                   minutesToUsePerSpecificDays={{}}
-                   tasks={[createTask({
-                       id: 1,
-                       dayOrder: 1,
-                       estimatedMinutes: number('task.estimatedMinutes', 80)
-                   })]}
-                   onUpdateTask={action}
-        />
+    .add('Life status', () => (
+        <WithNotes notes='Lack < ♥ 0 <= Danger < ♥20% <= Warning < ♥40% <= Fine'>
+            <Card.Group>
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (fine♥40)', 60)
+                           })]}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (warning♥39)', 61)
+                           })]}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (warning♥20)', 80)
+                           })]}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (danger♥19)', 81)
+                           })]}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (danger♥0)', 100)
+                           })]}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={100}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               estimatedMinutes: number('task.estimatedMinutes (lack)', 101)
+                           })]}
+                           onUpdateTask={action}
+                />
+            </Card.Group>
+        </WithNotes>
     ))
     .add('Offtime', () => (
         <DailyCard date={toDate('2099/01/01')}
