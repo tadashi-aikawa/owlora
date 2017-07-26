@@ -62,14 +62,11 @@ interface TaskFeedProps {
     })
 )
 class TaskFeed extends Component<TaskFeedProps> {
-    componentDidMount() {
-        this.props.connectDragSource(findDOMNode(this));
-    }
 
     render() {
         const {name, projectName, icon, estimatedMinutes, color} = this.props.task;
         return (
-            <Feed.Event style={{
+            <Feed.Event ref={node => this.props.connectDragSource(findDOMNode(this))} style={{
                 backgroundColor: color,
                 border: '2px solid',
                 borderRadius: '20px',

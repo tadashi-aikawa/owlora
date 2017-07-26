@@ -11,7 +11,24 @@
     "predeploy": "webpack",
     "deploy": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
@@ -45,13 +62,18 @@
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.1.9",
+    "@storybook/addon-storyshots": "^3.1.9",
     "@storybook/react": "^3.1.9",
+    "@types/jest": "^20.0.5",
     "awesome-typescript-loader": "^3.2.1",
     "cross-conf-env": "^1.1.2",
     "css-loader": "^0.28.4",
     "image-loader": "^0.0.1",
+    "jest-cli": "^20.0.4",
+    "react-test-renderer": "^15.6.1",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.18.2",
+    "ts-jest": "^20.0.7",
     "typescript": "^2.4.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.0.0",

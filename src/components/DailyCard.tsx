@@ -70,10 +70,6 @@ export interface DailyCardProps {
     })
 )
 export default class extends Component<DailyCardProps> {
-    componentDidMount() {
-        this.props.connectDropTarget(findDOMNode(this));
-    }
-
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
@@ -86,7 +82,7 @@ export default class extends Component<DailyCardProps> {
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
 
         return (
-            <Card>
+            <Card ref={node => this.props.connectDropTarget(findDOMNode(this))}>
                 <Dimmer active={!this.props.canDrop && this.props.isOver}
                         style={{backgroundColor: "grey", opacity: 0.5}}
                         content=""/>

@@ -16,16 +16,16 @@ import * as Moment from 'moment';
 import DailyCard from '../components/DailyCard';
 import {boolean, number, object, select, text, withKnobs} from '@storybook/addon-knobs';
 
-const toDate = (v: string) => Moment(v, 'YYYY/MM/DD');
-
 @DragDropContext(HTML5Backend)
 class DnDWrapper extends Component<any, any> {
     render() {
         return <div>{this.props.children}</div>;
     }
 }
-
 const DnDWrapperDecorator = (storyFn) => <DnDWrapper>{storyFn()}</DnDWrapper>;
+
+
+const toDate = (v: string) => Moment(v, 'YYYY/MM/DD');
 const CoolPaddingDecorator = (storyFn) => <div style={{padding: 20}}>{storyFn()}</div>;
 const createTask = (properties): Task => _.assign({}, {
     id: null,

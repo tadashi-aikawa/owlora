@@ -1,0 +1,3149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DailyCard Color of card 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={95}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "95%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(200, 50, 50, 0.2)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(200, 50, 50, 0.2)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Danger 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small error inverted warning progress"
+          data-percent={19}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "19%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              19
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  81
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            81
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Icon from emoji 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={95}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "95%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Icon from url 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={95}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "95%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <img
+                    alt={undefined}
+                    className="ui avatar image"
+                    height={undefined}
+                    src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                    width={undefined}
+                  />
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <img
+            alt={undefined}
+            className="ui avatar image"
+            height={undefined}
+            src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+            width={undefined}
+          />
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Lack 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small error inverted warning progress"
+          data-percent={0}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "0%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+              Lack 
+              30
+               
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+              <i
+                aria-hidden="true"
+                className="fire icon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  80
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            80
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Milestone 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={100}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              300
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui violet icon message"
+        >
+          <i
+            aria-hidden="true"
+            className="diamond icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              <span>
+                Project
+              </span>
+            </div>
+            <p>
+              <span>
+                Task
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                0
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Offtime 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small disabled error inverted warning progress"
+          data-percent={0}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "0%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              0
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                0
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Past 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui active transition visible dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2000-01-01 (Sat)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={95}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "95%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Summary 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted progress"
+          data-percent={85}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "85%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              255
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui violet icon message"
+        >
+          <i
+            aria-hidden="true"
+            className="diamond icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              <span>
+                Project
+              </span>
+            </div>
+            <p>
+              <span>
+                Milestone
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                3
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <img
+                    alt={undefined}
+                    className="ui avatar image"
+                    height={undefined}
+                    src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                    width={undefined}
+                  />
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -32.5px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":japan:"
+                    >
+                      🗾
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(200, 50, 50, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(200, 50, 50, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -32.5px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":japan:"
+                    >
+                      🗾
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -32.5px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":japan:"
+            >
+              🗾
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            30
+          </div>
+        </span>
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <img
+            alt={undefined}
+            className="ui avatar image"
+            height={undefined}
+            src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+            width={undefined}
+          />
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Warning 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <div
+          className="ui olive mini statistic"
+        >
+          <div
+            className="value"
+          >
+            2099-01-01 (Thu)
+          </div>
+        </div>
+        <div
+          className="ui green small inverted warning progress"
+          data-percent={39}
+        >
+          <div
+            className="bar"
+            style={
+              Object {
+                "width": "39%",
+              }
+            }
+          />
+          <div
+            className="label"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              39
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui hidden icon info message"
+        >
+          <i
+            aria-hidden="true"
+            className="smile icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Off time
+            </div>
+            <p>
+              Enjoy without tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="ui hidden icon negative message"
+        >
+          <i
+            aria-hidden="true"
+            className="warning sign icon"
+          />
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              Move your tasks to other days!!
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui accordion"
+        >
+          <div
+            className="active title"
+            onClick={[Function]}
+          >
+            <div
+              className="ui mini statistic"
+            >
+              <div
+                className="value"
+              >
+                <i
+                  aria-hidden="true"
+                  className="dropdown icon"
+                />
+                1
+                 Tasks
+              </div>
+            </div>
+          </div>
+          <div
+            className="content active"
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "height": 20,
+                      "textAlign": "center",
+                      "width": 25,
+                    }
+                  }
+                >
+                  61
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -325px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":innocent:"
+            >
+              😇
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            61
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
