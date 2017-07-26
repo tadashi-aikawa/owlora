@@ -12,7 +12,8 @@
     "deploy": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "jest": {
     "transform": {
