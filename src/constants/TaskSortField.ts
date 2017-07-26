@@ -5,4 +5,13 @@ enum TaskSortField {
     ESTIMATED_MINUTES = 'estimated_minutes',
 }
 
+module TaskSortField {
+    export const toObject = {
+        [TaskSortField.PROJECT_NAME]: TaskSortField.PROJECT_NAME,
+        [TaskSortField.DAY_ORDER]: TaskSortField.DAY_ORDER,
+        [TaskSortField.TASK_NAME]: TaskSortField.TASK_NAME,
+        [TaskSortField.ESTIMATED_MINUTES]: TaskSortField.ESTIMATED_MINUTES,
+    };
+}
+
 export default TaskSortField;
