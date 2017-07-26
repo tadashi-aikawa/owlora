@@ -1,5 +1,3 @@
-import '../node_modules/semantic-ui-css/semantic.min.css';
-
 import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
@@ -11,11 +9,11 @@ import {Button, Welcome} from '@storybook/react/demo';
 
 import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import Task from '../src/models/Task';
-import TaskSortField from '../src/constants/TaskSortField';
-import Order from '../src/constants/Order';
+import Task from '../models/Task';
+import TaskSortField from '../constants/TaskSortField';
+import Order from '../constants/Order';
 import * as Moment from 'moment';
-import DailyCard from '../src/components/DailyCard';
+import DailyCard from '../components/DailyCard';
 import {boolean, number, object, select, text, withKnobs} from '@storybook/addon-knobs';
 
 const toDate = (v: string) => Moment(v, 'YYYY/MM/DD');
