@@ -256,13 +256,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -563,13 +564,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -870,13 +872,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -1194,13 +1197,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -1481,13 +1485,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -1785,13 +1790,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -2092,13 +2098,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -2399,13 +2406,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -2706,13 +2714,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -3013,13 +3022,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -3345,13 +3355,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -4086,13 +4097,14 @@ exports[`Storyshots DailyCard Past 1`] = `
                   </div>
                 </div>
                 <div
-                  className="ui teal circular label"
+                  className="ui teal large circular label"
                   onClick={[Function]}
                   style={
                     Object {
-                      "height": 20,
+                      "margin": "auto",
+                      "marginLeft": "5",
                       "textAlign": "center",
-                      "width": 25,
+                      "width": "auto",
                     }
                   }
                 >
@@ -4433,13 +4445,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -4512,13 +4525,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -4591,13 +4605,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -4963,13 +4978,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -5042,13 +5058,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -5121,13 +5138,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -5493,13 +5511,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -5572,13 +5591,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -5651,13 +5671,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -6023,13 +6044,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -6102,13 +6124,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -6181,13 +6204,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     </div>
                   </div>
                   <div
-                    className="ui teal circular label"
+                    className="ui teal large circular label"
                     onClick={[Function]}
                     style={
                       Object {
-                        "height": 20,
+                        "margin": "auto",
+                        "marginLeft": "5",
                         "textAlign": "center",
-                        "width": 25,
+                        "width": "auto",
                       }
                     }
                   >
@@ -6567,13 +6591,14 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   </div>
                 </div>
                 <div
-                  className="ui teal circular label"
+                  className="ui teal large circular label"
                   onClick={[Function]}
                   style={
                     Object {
-                      "height": 20,
+                      "margin": "auto",
+                      "marginLeft": "5",
                       "textAlign": "center",
-                      "width": 25,
+                      "width": "auto",
                     }
                   }
                 >
@@ -6641,18 +6666,19 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     className="summary"
                   >
                     <span>
-                      Task2
+                      Task2 this is long name task hogehoge!!
                     </span>
                   </div>
                 </div>
                 <div
-                  className="ui teal circular label"
+                  className="ui teal large circular label"
                   onClick={[Function]}
                   style={
                     Object {
-                      "height": 20,
+                      "margin": "auto",
+                      "marginLeft": "5",
                       "textAlign": "center",
-                      "width": 25,
+                      "width": "auto",
                     }
                   }
                 >
@@ -6725,13 +6751,14 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   </div>
                 </div>
                 <div
-                  className="ui teal circular label"
+                  className="ui teal large circular label"
                   onClick={[Function]}
                   style={
                     Object {
-                      "height": 20,
+                      "margin": "auto",
+                      "marginLeft": "5",
                       "textAlign": "center",
-                      "width": 25,
+                      "width": "auto",
                     }
                   }
                 >

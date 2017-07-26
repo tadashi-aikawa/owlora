@@ -86,8 +86,8 @@ class TaskFeed extends Component<TaskFeedProps> {
                         <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
                     </Feed.Summary>
                 </Feed.Content>
-                <Label color='teal' circular
-                       style={{width: 25, height: 20, textAlign: 'center'}}>{estimatedMinutes}</Label>
+                <Label color='teal' circular size="large"
+                       style={{margin: 'auto', width: 'auto', textAlign: 'center', marginLeft: '5'}}>{estimatedMinutes}</Label>
             </Feed.Event>
         );
     }

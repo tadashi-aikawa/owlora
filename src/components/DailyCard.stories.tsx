@@ -58,7 +58,7 @@ storiesOf('DailyCard', module)
                        'Tasks',
                        [
                            createTask({id: 1, name: 'Task1', dayOrder: 3, icon: ":person_with_pouting_face:"}),
-                           createTask({id: 2, name: 'Task2', dayOrder: 2, icon: ":whale:"}),
+                           createTask({id: 2, name: 'Task2 this is long name task hogehoge!!', dayOrder: 2, icon: ":whale:"}),
                            createTask({
                                id: 3,
                                name: 'Task3',
