@@ -2,7 +2,7 @@ import '../../package';
 
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
+import {Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -20,6 +20,7 @@ export interface TopProps {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
+    isAllTaskOpen: boolean;
     config: CommonConfig;
     isLoading: boolean;
     error: Error;
@@ -29,6 +30,8 @@ export interface TopProps {
 
     // TODO: move to container
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    openAllTask: () => void;
+    closeAllTask: () => void;
 }
 
 export interface TopState {
@@ -74,6 +77,14 @@ export default class extends Component<TopProps, TopState> {
                     </Menu.Item>
                     <Menu.Menu position="right">
                         <Menu.Item>
+                            <span style={{fontColor: "white", marginRight: 5}}>Open all task</span>
+                            <Checkbox checked={this.props.isAllTaskOpen}
+                                      onChange={
+                                          this.props.isAllTaskOpen ? this.props.closeAllTask : this.props.openAllTask
+                                      }
+                                      toggle/>
+                        </Menu.Item>
+                        <Menu.Item>
                             <Button accessKey="r" icon="refresh" content="Refresh" inverted onClick={e => {
                                 e.preventDefault();
                                 this.props.onReload();
@@ -108,10 +119,12 @@ export default class extends Component<TopProps, TopState> {
                     <DailyCards tasks={this.props.tasks}
                                 taskSortField={this.props.config.taskSortField}
                                 taskOrder={this.props.config.taskOrder}
+                                isAllTaskOpen={this.props.isAllTaskOpen}
                                 minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                 minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
                                 numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}
-                                onUpdateTask={this.props.onUpdateTask}/>
+                                onUpdateTask={this.props.onUpdateTask}
+                    />
                 </div>
                 <ReduxToastr
                     timeOut={0}

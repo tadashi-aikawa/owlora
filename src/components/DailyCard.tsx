@@ -36,6 +36,7 @@ export interface DailyCardProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
+    isTaskOpen: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
 
@@ -44,6 +45,10 @@ export interface DailyCardProps {
     canDrop?: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+}
+
+export interface DailyCardState {
+    isTasksOpen: boolean;
 }
 
 @DropTarget(
@@ -69,7 +74,20 @@ export interface DailyCardProps {
         canDrop: monitor.canDrop(),
     })
 )
-export default class extends Component<DailyCardProps> {
+export default class extends Component<DailyCardProps, DailyCardState> {
+    constructor(props: DailyCardProps) {
+        super(props);
+        this.state = {
+            isTasksOpen: this.props.isTaskOpen
+        };
+    }
+
+    componentWillReceiveProps(nextProps: DailyCardProps) {
+        this.state = {
+            isTasksOpen: nextProps.isTaskOpen
+        }
+    }
+
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
@@ -140,8 +158,10 @@ export default class extends Component<DailyCardProps> {
                             </Message.Header>
                         </Message.Content>
                     </Message>
-                    <Accordion defaultActiveIndex={0}>
-                        <Accordion.Title>
+                    <Accordion>
+                        <Accordion.Title  active={this.state.isTasksOpen} onClick={
+                            () => this.setState(Object.assign({}, this.state, {isTasksOpen: !this.state.isTasksOpen}))
+                        }>
                             <Statistic size="mini">
                                 <Statistic.Value>
                                     <Icon name='dropdown'/>
@@ -149,7 +169,7 @@ export default class extends Component<DailyCardProps> {
                                 </Statistic.Value>
                             </Statistic>
                         </Accordion.Title>
-                        <Accordion.Content>
+                        <Accordion.Content active={this.state.isTasksOpen}>
                             <TaskFeeds tasks={estimatedTasks}
                                        taskSortField={this.props.taskSortField}
                                        taskOrder={this.props.taskOrder}

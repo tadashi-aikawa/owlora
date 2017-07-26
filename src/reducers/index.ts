@@ -15,6 +15,7 @@ const INITIAL_APP_STATE: AppState = {
     projects: [],
     labels: [],
     isSyncing: true,
+    isAllTaskOpen: true,
 };
 
 const INITIAL_CONFIG_STATE: ConfigState = {
@@ -79,6 +80,10 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
             return Object.assign({}, state, {
                 error: action.error,
             });
+        case ActionType.OPEN_ALL_TASK:
+            return Object.assign({}, state, {isAllTaskOpen: true});
+        case ActionType.CLOSE_ALL_TASK:
+            return Object.assign({}, state, {isAllTaskOpen: false});
         default:
             return state;
     }

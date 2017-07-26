@@ -14,6 +14,9 @@ enum ActionType {
     ERROR_UPDATE_TASKS = 'ERROR_UPDATE_TASKS',
 
     UPDATE_COMMON_CONFIG = 'UPDATE_COMMON_CONFIG',
+
+    OPEN_ALL_TASK = 'OPEN_ALL_TASK',
+    CLOSE_ALL_TASK = 'CLOSE_ALL_TASK',
 }
 
 export interface SyncAction extends Action {
@@ -46,6 +49,13 @@ export interface UpdateCommonConfigAction extends Action {
     payload: CommonConfig;
 }
 
+export interface OpenAllTaskAction extends Action {
+    type: ActionType.OPEN_ALL_TASK
+}
+export interface CloseAllTaskAction extends Action {
+    type: ActionType.CLOSE_ALL_TASK
+}
+
 export type Actions =
     SyncAction |
     SuccessSyncAction |
@@ -53,7 +63,9 @@ export type Actions =
     UpdateTasksAction |
     SuccessUpdateTasksAction |
     ErrorUpdateTasksAction |
-    UpdateCommonConfigAction;
+    UpdateCommonConfigAction |
+    OpenAllTaskAction |
+    CloseAllTaskAction;
 
 export function sync(): SyncAction {
     return {type: ActionType.SYNC}
@@ -77,6 +89,13 @@ export function errorUpdateTasks(error: Error): ErrorUpdateTasksAction {
 
 export function updateCommonConfig(config: CommonConfig): UpdateCommonConfigAction {
     return {type: ActionType.UPDATE_COMMON_CONFIG, payload: config}
+}
+
+export function openAllTask(): OpenAllTaskAction {
+    return {type: ActionType.OPEN_ALL_TASK}
+}
+export function closeAllTask(): CloseAllTaskAction {
+    return {type: ActionType.CLOSE_ALL_TASK}
 }
 
 export default ActionType;

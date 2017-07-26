@@ -87,7 +87,7 @@ class TaskFeed extends Component<TaskFeedProps> {
                     </Feed.Summary>
                 </Feed.Content>
                 <Label color='teal' circular size="large"
-                       style={{margin: 'auto', width: 'auto', textAlign: 'center', marginLeft: '5'}}>{estimatedMinutes}</Label>
+                       style={{margin: 'auto', width: 'auto', textAlign: 'center', marginLeft: 5}}>{estimatedMinutes}</Label>
             </Feed.Event>
         );
     }

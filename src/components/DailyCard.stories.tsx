@@ -69,6 +69,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, isMilestone: true}),
                        ]
                    )}
+                   isTaskOpen
                    onUpdateTask={action}
         />
     ))
@@ -88,6 +89,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -96,6 +98,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -104,6 +107,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -112,6 +116,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -129,6 +134,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            icon: text('task.icon (emoji)', ':innocent:'),
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -141,6 +147,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            icon: text('task.icon (url)', 'https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg'),
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
         </Card.Group>
@@ -157,6 +164,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (name)", "pink")
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -169,6 +177,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (rgb)", "#7777CC")
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -181,6 +190,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (rgba)", "rgba(200, 50, 50, 0.2)")
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
         </Card.Group>
@@ -197,6 +207,7 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            isMilestone: boolean("task.isMilestone", true)
                        })]}
+                       isTaskOpen
                        onUpdateTask={action}
             />
         </WithNotes>
@@ -214,6 +225,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (fine♥40)', 60)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -226,6 +238,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (warning♥39)', 61)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -238,6 +251,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (warning♥20)', 80)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -250,6 +264,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (danger♥19)', 81)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -262,6 +277,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (danger♥0)', 100)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -274,6 +290,7 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (lack)', 101)
                            })]}
+                           isTaskOpen
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -288,6 +305,7 @@ storiesOf('DailyCard', module)
                        '20990101': 0
                    })}
                    tasks={[]}
+                   isTaskOpen
                    onUpdateTask={action}
         />
     ))
@@ -301,6 +319,7 @@ storiesOf('DailyCard', module)
                        id: 1,
                        dayOrder: 1,
                    })]}
+                   isTaskOpen
                    onUpdateTask={action}
         />
     ));

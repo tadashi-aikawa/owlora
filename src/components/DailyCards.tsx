@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as _ from 'lodash';
+import {Dictionary} from 'lodash';
 import {Card, SemanticWIDTHS} from 'semantic-ui-react';
 import * as moment from 'moment';
 import {Moment} from 'moment';
 import {SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import DailyCard from './DailyCard';
-import {Dictionary} from 'lodash';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
@@ -38,6 +38,7 @@ export interface TaskCardsProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
+    isAllTaskOpen: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
     numberOfCardsPerRow: SemanticWIDTHS;
@@ -60,6 +61,7 @@ export const DailyCards = (props: TaskCardsProps) => {
                     tasks={props.tasks.filter(t => inTheDay(t, date))}
                     taskSortField={props.taskSortField}
                     taskOrder={props.taskOrder}
+                    isTaskOpen={props.isAllTaskOpen}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
                     onUpdateTask={props.onUpdateTask}
