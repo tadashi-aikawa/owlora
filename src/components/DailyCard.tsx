@@ -167,7 +167,7 @@ export default class extends Component<DailyCardProps> {
                             }))
                             .orderBy(x => x.minutes, 'desc')
                             .map(x => (
-                                <span style={{marginRight: 10}}>
+                                <span key={x.icon} style={{marginRight: 10}}>
                                     <ImageOrEmoji src={x.icon}/>
                                     <Label color='teal' circular>{x.minutes}</Label>
                                 </span>
