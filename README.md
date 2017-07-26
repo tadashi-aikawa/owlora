@@ -19,6 +19,24 @@ $ yarn install
 $ yarn dev
 ```
 
+## Show storybook
+
+```
+$ yarn storybook
+```
+
+## Test
+
+```
+$ yarn test
+```
+
+or
+
+```
+$ yarn test:watch
+```
+
 ## Build
 
 ```
