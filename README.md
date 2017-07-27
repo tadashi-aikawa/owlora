@@ -1,5 +1,12 @@
 # Owlora
 
+![](./owlora.png)
+
+Task management tool in which can medium term.
+
+For now, `Owlora` uses Todoist API as backend.
+
+[Demo](https://tadashi-aikawa.github.io/owlora/)
 
 ## Optional
 

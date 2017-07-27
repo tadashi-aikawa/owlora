@@ -67,7 +67,7 @@ export default class extends Component<TopProps, TopState> {
             <div>
                 <Menu stackable inverted fixed="top">
                     <Menu.Item>
-                        <img src='https://blog.todoist.com/wp-content/uploads/2015/09/todoist-logo.png'/>
+                        <img src='https://github.com/tadashi-aikawa/owlora/raw/master/owlora.png'/>
                     </Menu.Item>
                     <Menu.Item>
                         <h2>Owlora</h2>
