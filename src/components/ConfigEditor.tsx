@@ -56,21 +56,25 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
             this.props.onSaveConfig({
                 todoistToken: this.state.todoistToken,
                 estimatedLabels: {
-                    dict: safeLoad(this.state.estimatedLabels),
+                    dict: this.state.estimatedLabels ?
+                        safeLoad(this.state.estimatedLabels) : {},
                     yaml: this.state.estimatedLabels,
                 },
-                milestoneLabel: Number(this.state.milestoneLabel),
-                minutesToUsePerDay: Number(this.state.minutesToUsePerDay),
+                milestoneLabel: this.state.milestoneLabel && Number(this.state.milestoneLabel),
+                minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
                 minutesToUsePerSpecificDays: {
-                    dict: safeLoad(this.state.minutesToUsePerSpecificDays),
+                    dict: this.state.minutesToUsePerSpecificDays ?
+                        safeLoad(this.state.minutesToUsePerSpecificDays) : {},
                     yaml: this.state.minutesToUsePerSpecificDays,
                 },
                 iconsByProject: {
-                    dict: safeLoad(this.state.iconsByProject),
+                    dict: this.state.iconsByProject ?
+                        safeLoad(this.state.iconsByProject) : {},
                     yaml: this.state.iconsByProject,
                 },
                 colorsByTaskNameRegexp: {
-                    dict: safeLoad(this.state.colorsByTaskNameRegexp),
+                    dict: this.state.colorsByTaskNameRegexp ?
+                        safeLoad(this.state.colorsByTaskNameRegexp) : {},
                     yaml: this.state.colorsByTaskNameRegexp,
                 },
                 taskSortField: this.state.taskSortField,
@@ -129,7 +133,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Form.Field>
                     <Divider section/>
                     <Form.Field inline>
-                        <label><Icon name="pencil" />Minutes to use per specific days</label>
+                        <label><Icon name="pencil"/>Minutes to use per specific days</label>
                         <Form.TextArea name="minutesToUsePerSpecificDays"
                                        placeholder='Specific days as yaml (key is yyyyMMdd)'
                                        value={this.state.minutesToUsePerSpecificDays}
@@ -139,7 +143,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Form.Field>
                     <Divider section/>
                     <Form.Field inline>
-                        <label><Icon name="pencil" />Icons by project id</label>
+                        <label><Icon name="pencil"/>Icons by project id</label>
                         <Form.TextArea name="iconsByProject"
                                        placeholder='Icon urls by projects as yaml (key is project id)'
                                        value={this.state.iconsByProject}
@@ -155,7 +159,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     }]}/>
                     <Divider section/>
                     <Form.Field inline>
-                        <label><Icon name="pencil" />Colors by task name regexp</label>
+                        <label><Icon name="pencil"/>Colors by task name regexp</label>
                         <Form.TextArea name="colorsByTaskNameRegexp"
                                        placeholder='Task name regexp and color used'
                                        value={this.state.colorsByTaskNameRegexp}
@@ -166,7 +170,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     <Divider section/>
                     <Form.Field>
                         <Form.Field>
-                            <label><Icon name="pencil" />Sort order for task</label>
+                            <label><Icon name="pencil"/>Sort order for task</label>
                         </Form.Field>
                         <Form.Field>
                             <Radio
