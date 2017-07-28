@@ -1,9 +1,10 @@
 import * as _ from 'lodash';
 import {connect} from 'react-redux';
 import Top from '../components/Top';
-import {closeAllTask, openAllTask, sync, updateCommonConfig} from '../actions/index';
+import {closeAllTask, openAllTask, sync, updateCommonConfig, updateTasks} from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
+import {TaskUpdateParameter} from '../models/Task';
 
 const mapStateToProps = (state: RootState) => ({
     tasks: _.values(state.app.tasksById),
@@ -22,6 +23,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         },
         onChangeConfig: (config: CommonConfig) => {
             dispatch(updateCommonConfig(config));
+        },
+        onUpdateTask: (parameter: TaskUpdateParameter) => {
+            dispatch(updateTasks([parameter]));
         },
         openAllTask: () => {
             dispatch(openAllTask())
