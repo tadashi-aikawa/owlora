@@ -132,12 +132,12 @@ export default class extends Component<TopProps, TopState> {
                                     overflowY: "scroll",
                                     position: "fixed",
                                     height: "85vh",
-                                    transition: "all 1.0s",
+                                    transition: "all 0.5s",
                                 }
                                 :
                                 {
                                     transform: "translate(-400px)",
-                                    transition: "all 1.0s",
+                                    transition: "all 0.5s",
                                     position: "fixed",
                                 }
                         }>
@@ -153,13 +153,13 @@ export default class extends Component<TopProps, TopState> {
                             {
                                 transform: "scale(0.9, 0.9)",
                                 transformOrigin: "top",
-                                transition: "all 1.0s",
+                                transition: "all 0.5s",
                                 marginLeft: 350,
                             }
                             :
                             {
                                 transformOrigin: "top",
-                                transition: "all 1.0s"
+                                transition: "all 0.5s"
                             }
                     }>
                         <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
