@@ -126,13 +126,26 @@ export default class extends Component<TopProps, TopState> {
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
                     {
-                        this.props.isIceboxVisible &&
-                        <div style={{overflowY: "scroll", position: "fixed", height: "85vh"}}>
-                            <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
-                                    taskSortField={this.props.config.taskSortField}
-                                    taskOrder={this.props.config.taskOrder}
-                                    onUpdateTask={this.props.onUpdateTask}
-                                    width={350}/>
+                        <div style={
+                            this.props.isIceboxVisible ?
+                                {
+                                    overflowY: "scroll",
+                                    position: "fixed",
+                                    height: "85vh",
+                                    transition: "all 1.0s",
+                                }
+                                :
+                                {
+                                    transform: "translate(-400px)",
+                                    transition: "all 1.0s",
+                                    position: "fixed",
+                                }
+                        }>
+                                <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
+                                        taskSortField={this.props.config.taskSortField}
+                                        taskOrder={this.props.config.taskOrder}
+                                        onUpdateTask={this.props.onUpdateTask}
+                                        width={350}/>
                         </div>
                     }
                     <div style={
@@ -140,9 +153,14 @@ export default class extends Component<TopProps, TopState> {
                             {
                                 transform: "scale(0.9, 0.9)",
                                 transformOrigin: "top",
-                                marginLeft: 350
+                                transition: "all 1.0s",
+                                marginLeft: 350,
                             }
-                            : {}
+                            :
+                            {
+                                transformOrigin: "top",
+                                transition: "all 1.0s"
+                            }
                     }>
                         <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
                                     taskSortField={this.props.config.taskSortField}
