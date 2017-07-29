@@ -1,4 +1,4 @@
-import {call, put, takeEvery} from 'redux-saga/effects';
+import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
 import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from './TodoistSyncService';
@@ -31,7 +31,7 @@ export function* updateTasks(action: UpdateTasksAction) {
 }
 
 export default function* () {
-    yield takeEvery(ActionType.SYNC, sync);
+    yield takeLatest(ActionType.SYNC, sync);
     yield takeEvery(ActionType.UPDATE_TASKS, updateTasks);
     yield call(sync);
 }

@@ -17,9 +17,10 @@ import Project from '../models/Project';
 import Label from '../models/Label';
 import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
+import SyncPayload from '../payloads/SyncPayload';
 
 
-function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]) {
+function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]): IterableIterator<any | Dictionary<Task>> {
     // This method returns Dictionary<Task>
     // TODO: Argument TodoistProject[] have to be removed
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
@@ -32,7 +33,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
 
     const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
 
-    return yield _(todoistTasks)
+    return _(todoistTasks)
         .filter(x =>
             !x.checked &&
             x.due_date_utc &&
@@ -56,7 +57,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
 }
 
 class TodoistSyncService implements SyncService {
-    * sync() {
+    * sync(): IterableIterator<any | SyncPayload> {
         const token = yield select(todoistTokenSelector);
         const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
 
@@ -64,10 +65,10 @@ class TodoistSyncService implements SyncService {
         const projects: Project[] = res.projects.map(x => x);
         const labels: Label[] = res.labels.map(x => x);
 
-        return yield Promise.resolve({tasksById, projects, labels})
+        return {tasksById, projects, labels}
     }
 
-    * updateTasks(taskUpdateParameters: TaskUpdateParameter[]) {
+    * updateTasks(taskUpdateParameters: TaskUpdateParameter[]): IterableIterator<any | Dictionary<Task>> {
         const token = yield select(todoistTokenSelector);
         const res: TodoistAll = yield call(
             TodoistClient.updateTasks,
@@ -78,8 +79,7 @@ class TodoistSyncService implements SyncService {
             }))
         );
 
-        const tasksById: Dictionary<Task> = yield todoistTasksToTasks(res.items, res.projects);
-        return yield Promise.resolve(tasksById);
+        return yield todoistTasksToTasks(res.items, res.projects);
     }
 }
 
