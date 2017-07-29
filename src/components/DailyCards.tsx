@@ -9,6 +9,7 @@ import Task, {TaskUpdateParameter} from '../models/Task';
 import DailyCard from './DailyCard';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
+import CardAppearance from '../constants/CardAppearance';
 
 
 const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6;
@@ -38,7 +39,7 @@ export interface TaskCardsProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
-    isAllTaskOpen: boolean;
+    cardAppearance: CardAppearance;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
     numberOfCardsPerRow: SemanticWIDTHS;
@@ -61,7 +62,7 @@ export const DailyCards = (props: TaskCardsProps) => {
                     tasks={props.tasks.filter(t => inTheDay(t, date))}
                     taskSortField={props.taskSortField}
                     taskOrder={props.taskOrder}
-                    isTaskOpen={props.isAllTaskOpen}
+                    appearance={props.cardAppearance}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
                     onUpdateTask={props.onUpdateTask}

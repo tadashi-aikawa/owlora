@@ -2,7 +2,7 @@ import '../../package';
 
 import * as React from 'react';
 import {Component} from 'react';
-import {Grid, Segment, Sidebar, Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
+import {Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -15,13 +15,14 @@ import ReduxToastr, {toastr} from 'react-redux-toastr'
 
 import {version} from '../../package.json';
 import Icebox from './Icebox';
+import CardAppearance from '../constants/CardAppearance';
 
 
 export interface TopProps {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
-    isAllTaskOpen: boolean;
+    cardAppearance: CardAppearance;
     isIceboxVisible: boolean;
     config: CommonConfig;
     isLoading: boolean;
@@ -32,9 +33,8 @@ export interface TopProps {
 
     // TODO: move to container
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
-    openAllTask: () => void;
-    closeAllTask: () => void;
-    setIceboxVisibility: (visible: boolean) => void;
+    onChangeCardAppearance: (appearance: CardAppearance) => void;
+    onChangeIceboxVisibility: (visible: boolean) => void;
 }
 
 export interface TopState {
@@ -82,16 +82,24 @@ export default class extends Component<TopProps, TopState> {
                         <Menu.Item>
                             <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
                             <Checkbox checked={this.props.isIceboxVisible}
-                                      onChange={() => this.props.setIceboxVisibility(!this.props.isIceboxVisible)}
+                                      onChange={() => this.props.onChangeIceboxVisibility(!this.props.isIceboxVisible)}
                                       toggle/>
                         </Menu.Item>
                         <Menu.Item>
-                            <span style={{fontColor: "white", marginRight: 5}}>Open all task</span>
-                            <Checkbox checked={this.props.isAllTaskOpen}
-                                      onChange={
-                                          this.props.isAllTaskOpen ? this.props.closeAllTask : this.props.openAllTask
-                                      }
-                                      toggle/>
+                            <Button.Group>
+                                <Button toggle
+                                        active={this.props.cardAppearance === CardAppearance.OVERVIEW}
+                                        onClick={() => this.props.onChangeCardAppearance(CardAppearance.OVERVIEW)}>
+                                    Overview
+                                </Button>
+                                <Button.Or />
+                                <Button toggle
+                                        active={this.props.cardAppearance === CardAppearance.DETAIL}
+                                        onClick={() => this.props.onChangeCardAppearance(CardAppearance.DETAIL)}
+                                >
+                                    Detail
+                                </Button>
+                            </Button.Group>
                         </Menu.Item>
                         <Menu.Item>
                             <Button accessKey="r" icon="refresh" content="Refresh" inverted onClick={e => {
@@ -165,7 +173,7 @@ export default class extends Component<TopProps, TopState> {
                         <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
                                     taskSortField={this.props.config.taskSortField}
                                     taskOrder={this.props.config.taskOrder}
-                                    isAllTaskOpen={this.props.isAllTaskOpen}
+                                    cardAppearance={this.props.cardAppearance}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
                                     numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}

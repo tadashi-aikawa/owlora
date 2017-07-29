@@ -8,6 +8,7 @@ import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
+import CardAppearance from '../constants/CardAppearance';
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -15,7 +16,7 @@ const INITIAL_APP_STATE: AppState = {
     projects: [],
     labels: [],
     isSyncing: true,
-    isAllTaskOpen: true,
+    cardAppearance: CardAppearance.OVERVIEW,
     isIceboxVisible: false,
 };
 
@@ -81,10 +82,8 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
             return Object.assign({}, state, {
                 error: action.error,
             });
-        case ActionType.OPEN_ALL_TASK:
-            return Object.assign({}, state, {isAllTaskOpen: true});
-        case ActionType.CLOSE_ALL_TASK:
-            return Object.assign({}, state, {isAllTaskOpen: false});
+        case ActionType.SET_CARD_APPEARANCE:
+            return Object.assign({}, state, {cardAppearance: action.payload});
         case ActionType.SET_TASK_VISIBILITY:
             return Object.assign({}, state, {isIceboxVisible: action.payload});
         default:

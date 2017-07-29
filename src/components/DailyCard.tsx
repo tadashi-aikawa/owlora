@@ -13,6 +13,7 @@ import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
+import CardAppearance from '../constants/CardAppearance';
 
 
 const Fire = ({minutes}: { minutes: number }) =>
@@ -36,7 +37,7 @@ export interface DailyCardProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
-    isTaskOpen: boolean;
+    appearance: CardAppearance;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
 
@@ -47,14 +48,11 @@ export interface DailyCardProps {
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
-export interface DailyCardState {
-    isTasksOpen: boolean;
-}
 
 @DropTarget(
     'task-feed',
     {
-        drop(props: DailyCardProps, monitor, component) {
+        drop(props: DailyCardProps, monitor) {
             if (monitor.didDrop()) {
                 return;
             }
@@ -74,20 +72,7 @@ export interface DailyCardState {
         canDrop: monitor.canDrop(),
     })
 )
-export default class extends Component<DailyCardProps, DailyCardState> {
-    constructor(props: DailyCardProps) {
-        super(props);
-        this.state = {
-            isTasksOpen: this.props.isTaskOpen
-        };
-    }
-
-    componentWillReceiveProps(nextProps: DailyCardProps) {
-        this.state = {
-            isTasksOpen: nextProps.isTaskOpen
-        }
-    }
-
+export default class extends Component<DailyCardProps> {
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
@@ -159,9 +144,7 @@ export default class extends Component<DailyCardProps, DailyCardState> {
                         </Message.Content>
                     </Message>
                     <Accordion>
-                        <Accordion.Title  active={this.state.isTasksOpen} onClick={
-                            () => this.setState(Object.assign({}, this.state, {isTasksOpen: !this.state.isTasksOpen}))
-                        }>
+                        <Accordion.Title  active={this.props.appearance === CardAppearance.DETAIL}>
                             <Statistic size="mini">
                                 <Statistic.Value>
                                     <Icon name='dropdown'/>
@@ -169,7 +152,7 @@ export default class extends Component<DailyCardProps, DailyCardState> {
                                 </Statistic.Value>
                             </Statistic>
                         </Accordion.Title>
-                        <Accordion.Content active={this.state.isTasksOpen}>
+                        <Accordion.Content active={this.props.appearance === CardAppearance.DETAIL}>
                             <TaskFeeds tasks={estimatedTasks}
                                        taskSortField={this.props.taskSortField}
                                        taskOrder={this.props.taskOrder}

@@ -2,6 +2,7 @@ import Task from '../models/Task';
 import Project from '../models/Project';
 import Label from '../models/Label';
 import {Dictionary} from 'lodash';
+import CardAppearance from '../constants/CardAppearance';
 
 export interface AppState {
     tasksById: Dictionary<Task>;
@@ -9,6 +10,6 @@ export interface AppState {
     labels: Label[];
     error?: Error;
     isSyncing: boolean;
-    isAllTaskOpen: boolean;
+    cardAppearance: CardAppearance;
     isIceboxVisible: boolean;
 }

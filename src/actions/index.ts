@@ -3,6 +3,7 @@ import CommonConfig from '../models/CommonConfig';
 import SyncPayload from '../payloads/SyncPayload';
 import {default as Task, TaskUpdateParameter} from '../models/Task';
 import {Dictionary} from 'lodash';
+import CardAppearance from '../constants/CardAppearance';
 
 enum ActionType {
     SYNC = 'SYNC',
@@ -15,9 +16,7 @@ enum ActionType {
 
     UPDATE_COMMON_CONFIG = 'UPDATE_COMMON_CONFIG',
 
-    OPEN_ALL_TASK = 'OPEN_ALL_TASK',
-    CLOSE_ALL_TASK = 'CLOSE_ALL_TASK',
-
+    SET_CARD_APPEARANCE = 'SET_CARD_APPEARANCE',
     SET_TASK_VISIBILITY = 'SET_TASK_VISIBILITY',
 }
 
@@ -51,11 +50,9 @@ export interface UpdateCommonConfigAction extends Action {
     payload: CommonConfig;
 }
 
-export interface OpenAllTaskAction extends Action {
-    type: ActionType.OPEN_ALL_TASK;
-}
-export interface CloseAllTaskAction extends Action {
-    type: ActionType.CLOSE_ALL_TASK;
+export interface SetCardAppearanceAction extends Action {
+    type: ActionType.SET_CARD_APPEARANCE;
+    payload: CardAppearance;
 }
 
 export interface SetTaskVisibilityAction extends Action {
@@ -71,8 +68,7 @@ export type Actions =
     SuccessUpdateTasksAction |
     ErrorUpdateTasksAction |
     UpdateCommonConfigAction |
-    OpenAllTaskAction |
-    CloseAllTaskAction |
+    SetCardAppearanceAction |
     SetTaskVisibilityAction;
 
 export function sync(): SyncAction {
@@ -99,11 +95,8 @@ export function updateCommonConfig(config: CommonConfig): UpdateCommonConfigActi
     return {type: ActionType.UPDATE_COMMON_CONFIG, payload: config}
 }
 
-export function openAllTask(): OpenAllTaskAction {
-    return {type: ActionType.OPEN_ALL_TASK}
-}
-export function closeAllTask(): CloseAllTaskAction {
-    return {type: ActionType.CLOSE_ALL_TASK}
+export function setCardAppearance(appearance: CardAppearance): SetCardAppearanceAction {
+    return {type: ActionType.SET_CARD_APPEARANCE, payload: appearance}
 }
 
 export function setTaskVisibility(visible: boolean): SetTaskVisibilityAction {
