@@ -36,7 +36,6 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
     return _(todoistTasks)
         .filter(x =>
             !x.checked &&
-            x.due_date_utc &&
             x.labels.some(l => l in estimatedLabels || l === milestoneLabel)
         )
         .orderBy(x => x.project_id)
@@ -45,7 +44,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             name: x.content,
             projectName: projectsById[String(x.project_id)].name,
             estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
-            dueDate: moment(x.due_date_utc),
+            dueDate: x.due_date_utc && moment(x.due_date_utc),
             dateString: x.date_string,
             icon: iconsByProject[String(x.project_id)],
             dayOrder: x.day_order,
@@ -75,7 +74,8 @@ class TodoistSyncService implements SyncService {
             token,
             taskUpdateParameters.map(x => ({
                 id: x.id,
-                due_date_utc: x.dueDate.utc().format('YYYY-M-DDTHH:mm:59')
+                due_date_utc: x.dueDate && x.dueDate.utc().format('YYYY-M-DDTHH:mm:59'),
+                date_string: x.dateString
             }))
         );
 

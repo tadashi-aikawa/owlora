@@ -10,4 +10,5 @@ export interface AppState {
     error?: Error;
     isSyncing: boolean;
     isAllTaskOpen: boolean;
+    isIceboxVisible: boolean;
 }

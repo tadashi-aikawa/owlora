@@ -18,6 +18,7 @@ interface TaskUpdateParameter {
     id: number;
     name: string;
     dueDate?: Moment;
+    dateString?: string;
 }
 
 export default Task;

@@ -17,6 +17,8 @@ enum ActionType {
 
     OPEN_ALL_TASK = 'OPEN_ALL_TASK',
     CLOSE_ALL_TASK = 'CLOSE_ALL_TASK',
+
+    SET_TASK_VISIBILITY = 'SET_TASK_VISIBILITY',
 }
 
 export interface SyncAction extends Action {
@@ -50,10 +52,15 @@ export interface UpdateCommonConfigAction extends Action {
 }
 
 export interface OpenAllTaskAction extends Action {
-    type: ActionType.OPEN_ALL_TASK
+    type: ActionType.OPEN_ALL_TASK;
 }
 export interface CloseAllTaskAction extends Action {
-    type: ActionType.CLOSE_ALL_TASK
+    type: ActionType.CLOSE_ALL_TASK;
+}
+
+export interface SetTaskVisibilityAction extends Action {
+    type: ActionType.SET_TASK_VISIBILITY;
+    payload: boolean;
 }
 
 export type Actions =
@@ -65,7 +72,8 @@ export type Actions =
     ErrorUpdateTasksAction |
     UpdateCommonConfigAction |
     OpenAllTaskAction |
-    CloseAllTaskAction;
+    CloseAllTaskAction |
+    SetTaskVisibilityAction;
 
 export function sync(): SyncAction {
     return {type: ActionType.SYNC}
@@ -96,6 +104,10 @@ export function openAllTask(): OpenAllTaskAction {
 }
 export function closeAllTask(): CloseAllTaskAction {
     return {type: ActionType.CLOSE_ALL_TASK}
+}
+
+export function setTaskVisibility(visible: boolean): SetTaskVisibilityAction {
+    return {type: ActionType.SET_TASK_VISIBILITY, payload: visible}
 }
 
 export default ActionType;

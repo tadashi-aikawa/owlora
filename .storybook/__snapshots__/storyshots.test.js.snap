@@ -6900,3 +6900,464 @@ exports[`Storyshots DailyCard Summary 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Icebox Summary 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui card"
+      href={undefined}
+      onClick={[Function]}
+      style={
+        Object {
+          "width": 350,
+        }
+      }
+    >
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "opacity": 0.5,
+          }
+        }
+      >
+        
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "red",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Remove duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow circle outline down huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui inverted segment"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
+      >
+        <i
+          aria-hidden="true"
+          className="teal inbox big icon"
+        />
+        <div
+          className="ui teal mini inverted statistic"
+        >
+          <div
+            className="value"
+          >
+            ICEBOX
+          </div>
+        </div>
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="ui feed"
+        >
+          <div
+            className="event"
+            style={
+              Object {
+                "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                "border": "2px solid",
+                "borderColor": "rgba(150, 150, 150, 0.1)",
+                "borderRadius": "20px",
+                "cursor": "move",
+                "marginBottom": "10px",
+                "marginTop": "10px",
+                "opacity": 1,
+                "padding": "10px",
+              }
+            }
+          >
+            <div
+              className="label"
+            >
+              <span>
+                <span
+                  onClick={undefined}
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundPosition": "-292.5px -1170px",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "1397px 1397px",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "height": 32,
+                      "imageRendering": "optimizeQuality",
+                      "lineHeight": "normal",
+                      "margin": "0 .15em",
+                      "position": "relative",
+                      "textIndent": "-9999em",
+                      "top": -3,
+                      "verticalAlign": "middle",
+                      "width": 32,
+                    }
+                  }
+                  title=":person_with_pouting_face:"
+                >
+                  🙎
+                </span>
+              </span>
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="date"
+              >
+                <span>
+                  Project
+                </span>
+              </div>
+              <div
+                className="summary"
+              >
+                <span>
+                  Task1
+                </span>
+              </div>
+            </div>
+            <div
+              className="ui teal large circular label"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "auto",
+                  "marginLeft": 5,
+                  "textAlign": "center",
+                  "width": "auto",
+                }
+              }
+            >
+              15
+            </div>
+          </div>
+          <div
+            className="event"
+            style={
+              Object {
+                "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                "border": "2px solid",
+                "borderColor": "rgba(150, 150, 150, 0.1)",
+                "borderRadius": "20px",
+                "cursor": "move",
+                "marginBottom": "10px",
+                "marginTop": "10px",
+                "opacity": 1,
+                "padding": "10px",
+              }
+            }
+          >
+            <div
+              className="label"
+            >
+              <span>
+                <span
+                  onClick={undefined}
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundPosition": "-617.5px -812.5px",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "1397px 1397px",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "height": 32,
+                      "imageRendering": "optimizeQuality",
+                      "lineHeight": "normal",
+                      "margin": "0 .15em",
+                      "position": "relative",
+                      "textIndent": "-9999em",
+                      "top": -3,
+                      "verticalAlign": "middle",
+                      "width": 32,
+                    }
+                  }
+                  title=":whale:"
+                >
+                  🐳
+                </span>
+              </span>
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="date"
+              >
+                <span>
+                  Project
+                </span>
+              </div>
+              <div
+                className="summary"
+              >
+                <span>
+                  Task2 this is long name task hogehoge!!
+                </span>
+              </div>
+            </div>
+            <div
+              className="ui teal large circular label"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "auto",
+                  "marginLeft": 5,
+                  "textAlign": "center",
+                  "width": "auto",
+                }
+              }
+            >
+              15
+            </div>
+          </div>
+          <div
+            className="event"
+            style={
+              Object {
+                "backgroundColor": "rgba(200, 50, 50, 0.1)",
+                "border": "2px solid",
+                "borderColor": "rgba(200, 50, 50, 0.1)",
+                "borderRadius": "20px",
+                "cursor": "move",
+                "marginBottom": "10px",
+                "marginTop": "10px",
+                "opacity": 1,
+                "padding": "10px",
+              }
+            }
+          >
+            <div
+              className="label"
+            >
+              <span>
+                <span
+                  onClick={undefined}
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundPosition": "-1137.5px -32.5px",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "1397px 1397px",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "height": 32,
+                      "imageRendering": "optimizeQuality",
+                      "lineHeight": "normal",
+                      "margin": "0 .15em",
+                      "position": "relative",
+                      "textIndent": "-9999em",
+                      "top": -3,
+                      "verticalAlign": "middle",
+                      "width": 32,
+                    }
+                  }
+                  title=":japan:"
+                >
+                  🗾
+                </span>
+              </span>
+            </div>
+            <div
+              className="content"
+            >
+              <div
+                className="date"
+              >
+                <span>
+                  Project
+                </span>
+              </div>
+              <div
+                className="summary"
+              >
+                <span>
+                  Task3
+                </span>
+              </div>
+            </div>
+            <div
+              className="ui teal large circular label"
+              onClick={[Function]}
+              style={
+                Object {
+                  "margin": "auto",
+                  "marginLeft": 5,
+                  "textAlign": "center",
+                  "width": "auto",
+                }
+              }
+            >
+              15
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="extra content"
+      >
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-292.5px -1170px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":person_with_pouting_face:"
+            >
+              🙎
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-617.5px -812.5px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":whale:"
+            >
+              🐳
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+        <span
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                  "backgroundPosition": "-1137.5px -32.5px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "1397px 1397px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 32,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 32,
+                }
+              }
+              title=":japan:"
+            >
+              🗾
+            </span>
+          </span>
+          <div
+            className="ui teal circular label"
+            onClick={[Function]}
+          >
+            15
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

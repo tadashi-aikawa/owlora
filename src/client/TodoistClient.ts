@@ -5,9 +5,13 @@ import * as udvi4u from 'uuid/v4';
 
 const baseURL = 'https://todoist.com/API/v7/';
 
+const dueDateUtcReplacer = (key, value) =>
+    (key === 'due_date_utc' && value === '') ? null : value;
+
 export interface Args {
     id: number;
-    due_date_utc: string;
+    due_date_utc?: string;
+    date_string?: string;
 }
 
 interface Command {
@@ -23,7 +27,7 @@ async function sync(token: string, resourceTypes: string[], commands?: Command[]
             token,
             sync_token: '*',
             resource_types: JSON.stringify(resourceTypes),
-            commands: JSON.stringify(commands)
+            commands: JSON.stringify(commands, dueDateUtcReplacer)
         }),
         {baseURL}
     ).then((r: any) => r.data);

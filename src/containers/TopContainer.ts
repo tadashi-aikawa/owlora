@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 import {connect} from 'react-redux';
 import Top from '../components/Top';
-import {closeAllTask, openAllTask, sync, updateCommonConfig, updateTasks} from '../actions/index';
+import {closeAllTask, openAllTask, setTaskVisibility, sync, updateCommonConfig, updateTasks} from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
 import {TaskUpdateParameter} from '../models/Task';
@@ -14,6 +14,7 @@ const mapStateToProps = (state: RootState) => ({
     error: state.app.error,
     isLoading: state.app.isSyncing,
     isAllTaskOpen: state.app.isAllTaskOpen,
+    isIceboxVisible: state.app.isIceboxVisible,
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -28,10 +29,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
             dispatch(updateTasks([parameter]));
         },
         openAllTask: () => {
-            dispatch(openAllTask())
+            dispatch(openAllTask());
         },
         closeAllTask: () => {
-            dispatch(closeAllTask())
+            dispatch(closeAllTask());
+        },
+        setIceboxVisibility: (visible: boolean) => {
+            dispatch(setTaskVisibility(visible));
         }
     }
 };

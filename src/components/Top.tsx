@@ -2,7 +2,7 @@ import '../../package';
 
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
+import {Grid, Segment, Sidebar, Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -14,6 +14,7 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import ReduxToastr, {toastr} from 'react-redux-toastr'
 
 import {version} from '../../package.json';
+import Icebox from './Icebox';
 
 
 export interface TopProps {
@@ -21,6 +22,7 @@ export interface TopProps {
     projects: Project[];
     labels: Label[];
     isAllTaskOpen: boolean;
+    isIceboxVisible: boolean;
     config: CommonConfig;
     isLoading: boolean;
     error: Error;
@@ -32,6 +34,7 @@ export interface TopProps {
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
     openAllTask: () => void;
     closeAllTask: () => void;
+    setIceboxVisibility: (visible: boolean) => void;
 }
 
 export interface TopState {
@@ -77,6 +80,12 @@ export default class extends Component<TopProps, TopState> {
                     </Menu.Item>
                     <Menu.Menu position="right">
                         <Menu.Item>
+                            <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
+                            <Checkbox checked={this.props.isIceboxVisible}
+                                      onChange={() => this.props.setIceboxVisibility(!this.props.isIceboxVisible)}
+                                      toggle/>
+                        </Menu.Item>
+                        <Menu.Item>
                             <span style={{fontColor: "white", marginRight: 5}}>Open all task</span>
                             <Checkbox checked={this.props.isAllTaskOpen}
                                       onChange={
@@ -116,15 +125,35 @@ export default class extends Component<TopProps, TopState> {
                     <Dimmer active={this.props.isLoading} page>
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
-                    <DailyCards tasks={this.props.tasks}
-                                taskSortField={this.props.config.taskSortField}
-                                taskOrder={this.props.config.taskOrder}
-                                isAllTaskOpen={this.props.isAllTaskOpen}
-                                minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}
-                                onUpdateTask={this.props.onUpdateTask}
-                    />
+                    {
+                        this.props.isIceboxVisible &&
+                        <div style={{overflowY: "scroll", position: "fixed", height: "85vh"}}>
+                            <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
+                                    taskSortField={this.props.config.taskSortField}
+                                    taskOrder={this.props.config.taskOrder}
+                                    onUpdateTask={this.props.onUpdateTask}
+                                    width={350}/>
+                        </div>
+                    }
+                    <div style={
+                        this.props.isIceboxVisible ?
+                            {
+                                transform: "scale(0.9, 0.9)",
+                                transformOrigin: "top",
+                                marginLeft: 350
+                            }
+                            : {}
+                    }>
+                        <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
+                                    taskSortField={this.props.config.taskSortField}
+                                    taskOrder={this.props.config.taskOrder}
+                                    isAllTaskOpen={this.props.isAllTaskOpen}
+                                    minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                    minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                    numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}
+                                    onUpdateTask={this.props.onUpdateTask}
+                        />
+                    </div>
                 </div>
                 <ReduxToastr
                     timeOut={0}

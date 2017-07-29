@@ -7,21 +7,13 @@ import {WithNotes} from '@storybook/addon-notes';
 import {action} from '@storybook/addon-actions';
 import {Card} from 'semantic-ui-react';
 
-import {DragDropContext} from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
 import Task from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import * as Moment from 'moment';
 import DailyCard from '../components/DailyCard';
 import {boolean, number, object, select, text, withKnobs} from '@storybook/addon-knobs';
-
-@DragDropContext(HTML5Backend)
-class DnDWrapper extends Component<any, any> {
-    render() {
-        return <div>{this.props.children}</div>;
-    }
-}
+import DnDWrapper from './DnDWrapper';
 
 const DnDWrapperDecorator = (storyFn) => <DnDWrapper>{storyFn()}</DnDWrapper>;
 

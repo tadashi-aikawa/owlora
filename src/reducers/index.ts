@@ -16,6 +16,7 @@ const INITIAL_APP_STATE: AppState = {
     labels: [],
     isSyncing: true,
     isAllTaskOpen: true,
+    isIceboxVisible: false,
 };
 
 const INITIAL_CONFIG_STATE: ConfigState = {
@@ -84,6 +85,8 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
             return Object.assign({}, state, {isAllTaskOpen: true});
         case ActionType.CLOSE_ALL_TASK:
             return Object.assign({}, state, {isAllTaskOpen: false});
+        case ActionType.SET_TASK_VISIBILITY:
+            return Object.assign({}, state, {isIceboxVisible: action.payload});
         default:
             return state;
     }

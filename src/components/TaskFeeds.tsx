@@ -52,7 +52,8 @@ interface TaskFeedProps {
             props.onUpdate({
                 id: props.task.id,
                 name: props.task.name,
-                dueDate: monitor.getDropResult().date
+                dueDate: monitor.getDropResult().date,
+                dateString: monitor.getDropResult().dateString
             });
         }
     },
