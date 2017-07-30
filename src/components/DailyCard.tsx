@@ -118,8 +118,16 @@ export default class extends Component<DailyCardProps> {
                     >
                         {
                             freeMinutes < 0
-                                ? <Fire minutes={-freeMinutes}/>
-                                : <span><Icon name="heart"/> {freeMinutes}</span>
+                                ?
+                                <div>
+                                    <Fire minutes={-freeMinutes}/>
+                                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+                                </div>
+                                :
+                                <div>
+                                    <Icon name="heart"/> {freeMinutes}
+                                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+                                </div>
                         }
                     </Progress>
                 </Segment>
@@ -143,22 +151,28 @@ export default class extends Component<DailyCardProps> {
                             </Message.Header>
                         </Message.Content>
                     </Message>
-                    <Accordion>
-                        <Accordion.Title  active={this.props.appearance === CardAppearance.DETAIL}>
-                            <Statistic size="mini">
-                                <Statistic.Value>
-                                    <Icon name='dropdown'/>
-                                    {estimatedTasks.length} Tasks
-                                </Statistic.Value>
-                            </Statistic>
-                        </Accordion.Title>
-                        <Accordion.Content active={this.props.appearance === CardAppearance.DETAIL}>
-                            <TaskFeeds tasks={estimatedTasks}
-                                       taskSortField={this.props.taskSortField}
-                                       taskOrder={this.props.taskOrder}
-                                       onUpdateTask={this.props.onUpdateTask}/>
-                        </Accordion.Content>
-                    </Accordion>
+                    <div style={
+                        this.props.appearance === CardAppearance.DETAIL ?
+                            {
+                                opacity: 1,
+                                maxHeight: "100%",
+                                transform: "scaleY(1)",
+                                transformOrigin: "top",
+                                transition: "all 0.5s",
+                            } :
+                            {
+                                opacity: 0,
+                                maxHeight: 0,
+                                transform: "scaleY(0)",
+                                transformOrigin: "top",
+                                transition: "all 0.5s",
+                            }
+                    }>
+                        <TaskFeeds tasks={estimatedTasks}
+                                   taskSortField={this.props.taskSortField}
+                                   taskOrder={this.props.taskOrder}
+                                   onUpdateTask={this.props.onUpdateTask}/>
+                    </div>
                 </Card.Content>
                 <Card.Content extra>
                     {
