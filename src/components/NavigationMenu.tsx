@@ -3,7 +3,7 @@ import '../../package';
 import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Checkbox, Dropdown, Header, Icon, Input, Menu, Modal, SemanticWIDTHS} from 'semantic-ui-react';
+import {Button, Checkbox, Dropdown, Header, Icon, Menu, Modal, SemanticWIDTHS} from 'semantic-ui-react';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import Project from '../models/Project';
@@ -96,13 +96,15 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                 }/>
                     </Menu.Item>
                     <Menu.Item>
-                        <Input type='number' min={1} max={5}
-                               label={{basic: true, content: 'col'}}
-                               labelPosition='right'
-                               value={this.props.uiConfig.numberOfCardsPerRow}
-                               onChange={(e, data) => this.props.onChangeUiConfig(
-                                   Object.assign({}, this.props.uiConfig, {numberOfCardsPerRow: data.value as SemanticWIDTHS})
-                               )}/>
+                        <Dropdown text={this.props.uiConfig.numberOfCardsPerRow as string}
+                                  search labeled button floating compact
+                                  className="icon" icon="columns"
+                                  onChange={(e, {value}: { value: string }) => this.props.onChangeUiConfig(
+                                      Object.assign({}, this.props.uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
+                                  )}
+                                  options={
+                                      _.map(_.range(1, 6), v => ({key: `${v}`, text: `${v} col`, value: `${v}`}))
+                                  }/>
                     </Menu.Item>
                     <Menu.Item>
                         <Button accessKey="r" icon="refresh" inverted onClick={e => {
