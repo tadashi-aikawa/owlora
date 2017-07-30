@@ -3,7 +3,7 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import Emojify from 'react-emojione';
-import {Accordion, Card, Dimmer, Icon, Label, Message, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -104,9 +104,20 @@ export default class extends Component<DailyCardProps> {
                     </div>
                 }/>
                 <Segment inverted style={{margin: 0}}>
-                    <Statistic size='mini' color="olive">
-                        <Statistic.Value>{this.props.date.format(DATE_FORMAT)}</Statistic.Value>
-                    </Statistic>
+                    <Popup
+                        flowing
+                        trigger={
+                            <Statistic size='mini' color="olive">
+                                <Statistic.Value>{this.props.date.format(DATE_FORMAT)}</Statistic.Value>
+                            </Statistic>
+                        }
+                        content={
+                            <TaskFeeds tasks={estimatedTasks}
+                                       taskSortField={this.props.taskSortField}
+                                       taskOrder={this.props.taskOrder}
+                            />
+                        }
+                    />
                     <Progress value={freeMinutes}
                               total={this.props.minutesToUsePerDay}
                               color="green"
@@ -180,14 +191,27 @@ export default class extends Component<DailyCardProps> {
                             .groupBy(t => t.icon)
                             .map((tasks: Task[]) => ({
                                 icon: tasks[0].icon,
-                                minutes: _.sumBy(tasks, t => t.estimatedMinutes)
+                                minutes: _.sumBy(tasks, t => t.estimatedMinutes),
+                                tasks: tasks
                             }))
                             .orderBy(x => x.minutes, 'desc')
                             .map(x => (
-                                <span key={x.icon} style={{marginRight: 10}}>
-                                    <ImageOrEmoji src={x.icon}/>
-                                    <Label color='teal' circular>{x.minutes}</Label>
-                                </span>
+                                <Popup
+                                    flowing
+                                    key={x.icon}
+                                    trigger={
+                                        <span style={{marginRight: 10}}>
+                                            <ImageOrEmoji src={x.icon}/>
+                                            <Label color='teal' circular>{x.minutes}</Label>
+                                        </span>
+                                    }
+                                    content={
+                                        <TaskFeeds tasks={x.tasks}
+                                                   taskSortField={this.props.taskSortField}
+                                                   taskOrder={this.props.taskOrder}
+                                        />
+                                    }
+                                />
                             ))
                             .value()
                     }

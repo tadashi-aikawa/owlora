@@ -44,7 +44,7 @@ interface TaskFeedProps {
             };
         },
 
-        endDrag(props: TaskFeedProps, monitor, component) {
+        endDrag(props: TaskFeedProps, monitor) {
             if (!monitor.didDrop()) {
                 return;
             }
@@ -88,7 +88,12 @@ class TaskFeed extends Component<TaskFeedProps> {
                     </Feed.Summary>
                 </Feed.Content>
                 <Label color='teal' circular size="large"
-                       style={{margin: 'auto', width: 'auto', textAlign: 'center', marginLeft: 5}}>{estimatedMinutes}</Label>
+                       style={{
+                           margin: 'auto',
+                           width: 'auto',
+                           textAlign: 'center',
+                           marginLeft: 5
+                       }}>{estimatedMinutes}</Label>
             </Feed.Event>
         );
     }
@@ -100,7 +105,7 @@ export interface TaskFeedsProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
 
-    onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onUpdateTask?: (parameter: TaskUpdateParameter) => void;
 }
 
 export const TaskFeeds = (props: TaskFeedsProps) =>
