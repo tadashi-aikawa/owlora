@@ -65,6 +65,34 @@ storiesOf('DailyCard', module)
                    onUpdateTask={action}
         />
     ))
+    .add('Appearance', () => (
+        <Card.Group>
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[
+                           createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
+                           createTask({id: 2, name: 'Milestone', dayOrder: 2, isMilestone: true}),
+                       ]}
+                       appearance={select('Appearance (overview)', CardAppearance.toObject, CardAppearance.OVERVIEW)}
+                       onUpdateTask={action}
+            />
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[
+                           createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
+                           createTask({id: 2, name: 'Milestone', dayOrder: 2, isMilestone: true}),
+                       ]}
+                       appearance={select('Appearance (detail)', CardAppearance.toObject, CardAppearance.DETAIL)}
+                       onUpdateTask={action}
+            />
+        </Card.Group>
+    ))
     .add('Sort', () => {
         const tasks: Task[] = [
             createTask({id: 1, name: 'Task1', projectName: 'PJ2', dayOrder: 3, estimatedMinutes: 10, icon: ":bow:"}),
