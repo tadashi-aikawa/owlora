@@ -111,7 +111,7 @@ export default class extends Component<DailyCardProps> {
                               total={this.props.minutesToUsePerDay}
                               color="green"
                               size="small"
-                              inverted="true"
+                              inverted
                               error={freeMinutes / this.props.minutesToUsePerDay < 0.20}
                               warning={freeMinutes / this.props.minutesToUsePerDay < 0.40}
                               disabled={minutesToUse === 0}
