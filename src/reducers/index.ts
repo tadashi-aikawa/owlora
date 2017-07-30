@@ -9,6 +9,7 @@ import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 import CardAppearance from '../constants/CardAppearance';
+import RootState from '../states/index';
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -18,7 +19,7 @@ const INITIAL_APP_STATE: AppState = {
     isSyncing: true,
 };
 
-const INITIAL_CONFIG_STATE: ConfigState = {
+export const INITIAL_CONFIG_STATE: ConfigState = {
     common: {
         todoistToken: '',
         minutesToUsePerDay: 240,
@@ -46,6 +47,11 @@ const INITIAL_CONFIG_STATE: ConfigState = {
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,
     }
+};
+
+export const INITIAL_ROOT_STATE: RootState = {
+    app: INITIAL_APP_STATE,
+    config: INITIAL_CONFIG_STATE,
 };
 
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
