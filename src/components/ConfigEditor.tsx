@@ -1,9 +1,7 @@
 import * as React from 'react';
-import {Accordion, Checkbox, Divider, Form, Icon, Message, Radio, Segment, SemanticWIDTHS} from 'semantic-ui-react';
+import {Accordion, Divider, Form, Icon, Message, Segment} from 'semantic-ui-react';
 import {safeLoad} from 'js-yaml';
 import CommonConfig from '../models/CommonConfig';
-import TaskSortField from '../constants/TaskSortField';
-import Order from '../constants/Order';
 import Project from '../models/Project';
 import Label from '../models/Label';
 
@@ -22,9 +20,6 @@ export interface ConfigEditorState {
     minutesToUsePerSpecificDays: string;
     iconsByProject: string;
     colorsByTaskNameRegexp: string;
-    taskSortField: TaskSortField;
-    taskOrder: Order;
-    numberOfCardsPerRow: SemanticWIDTHS;
 
     validationError?: string;
 }
@@ -39,18 +34,12 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
         iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
         colorsByTaskNameRegexp: this.props.defaultConfig.colorsByTaskNameRegexp.yaml,
-        taskSortField: this.props.defaultConfig.taskSortField,
-        taskOrder: this.props.defaultConfig.taskOrder,
-        numberOfCardsPerRow: this.props.defaultConfig.numberOfCardsPerRow
     };
 
     handleChange = (e, {name, value}) =>
         this.setState(Object.assign({}, this.state, {[name]: value}));
 
-    handleTaskOrderChange = (e, {value}) =>
-        this.setState(Object.assign({}, this.state, {taskSortField: value}));
-
-    handleSubmit = e => {
+    handleSubmit = () => {
         try {
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
@@ -77,9 +66,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         safeLoad(this.state.colorsByTaskNameRegexp) : {},
                     yaml: this.state.colorsByTaskNameRegexp,
                 },
-                taskSortField: this.state.taskSortField,
-                taskOrder: this.state.taskOrder,
-                numberOfCardsPerRow: this.state.numberOfCardsPerRow as SemanticWIDTHS,
             });
         } catch (e) {
             this.setState(Object.assign({}, this.state, {validationError: e.toString()}));
@@ -165,71 +151,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        value={this.state.colorsByTaskNameRegexp}
                                        onChange={this.handleChange}
                                        autoHeight
-                        />
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Field>
-                        <Form.Field>
-                            <label><Icon name="pencil"/>Sort order for task</label>
-                        </Form.Field>
-                        <Form.Field>
-                            <Radio
-                                label='Project ID'
-                                name='radioGroup'
-                                value={TaskSortField.PROJECT_NAME}
-                                checked={this.state.taskSortField === TaskSortField.PROJECT_NAME}
-                                onChange={this.handleTaskOrderChange}
-                            />
-                        </Form.Field>
-                        <Form.Field>
-                            <Radio
-                                label='Day order'
-                                name='radioGroup'
-                                value={TaskSortField.DAY_ORDER}
-                                checked={this.state.taskSortField === TaskSortField.DAY_ORDER}
-                                onChange={this.handleTaskOrderChange}
-                            />
-                        </Form.Field>
-                        <Form.Field>
-                            <Radio
-                                label='Task name'
-                                name='radioGroup'
-                                value={TaskSortField.TASK_NAME}
-                                checked={this.state.taskSortField === TaskSortField.TASK_NAME}
-                                onChange={this.handleTaskOrderChange}
-                            />
-                        </Form.Field>
-                        <Form.Field>
-                            <Radio
-                                label='Estimated minutes'
-                                name='radioGroup'
-                                value={TaskSortField.ESTIMATED_MINUTES}
-                                checked={this.state.taskSortField === TaskSortField.ESTIMATED_MINUTES}
-                                onChange={this.handleTaskOrderChange}
-                            />
-                        </Form.Field>
-                        <Form.Field>
-                            <Checkbox checked={this.state.taskOrder === Order.DESC}
-                                      label="Descend"
-                                      onChange={
-                                          () => this.setState(
-                                              Object.assign({}, this.state, {
-                                                  taskOrder: this.state.taskOrder === Order.ASC ? Order.DESC : Order.ASC
-                                              })
-                                          )
-                                      }
-                                      toggle/>
-                        </Form.Field>
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>A Number of cards per row (default)</label>
-                        <Form.Input type="number"
-                                    name="numberOfCardsPerRow"
-                                    min={1}
-                                    max={5}
-                                    value={this.state.numberOfCardsPerRow}
-                                    onChange={this.handleChange}
                         />
                     </Form.Field>
                     <Divider section/>

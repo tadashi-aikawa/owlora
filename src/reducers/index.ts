@@ -16,8 +16,6 @@ const INITIAL_APP_STATE: AppState = {
     projects: [],
     labels: [],
     isSyncing: true,
-    cardAppearance: CardAppearance.OVERVIEW,
-    isIceboxVisible: false,
 };
 
 const INITIAL_CONFIG_STATE: ConfigState = {
@@ -40,6 +38,10 @@ const INITIAL_CONFIG_STATE: ConfigState = {
             dict: {},
             yaml: ''
         },
+    },
+    ui: {
+        cardAppearance: CardAppearance.DETAIL,
+        isIceboxVisible: false,
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,
@@ -82,10 +84,6 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
             return Object.assign({}, state, {
                 error: action.error,
             });
-        case ActionType.SET_CARD_APPEARANCE:
-            return Object.assign({}, state, {cardAppearance: action.payload});
-        case ActionType.SET_TASK_VISIBILITY:
-            return Object.assign({}, state, {isIceboxVisible: action.payload});
         default:
             return state;
     }
@@ -95,6 +93,8 @@ const configState = (state: ConfigState = INITIAL_CONFIG_STATE, action: Actions)
     switch (action.type) {
         case ActionType.UPDATE_COMMON_CONFIG:
             return Object.assign({}, state, {common: action.payload});
+        case ActionType.UPDATE_UI_CONFIG:
+            return Object.assign({}, state, {ui: action.payload});
         default:
             return state;
     }

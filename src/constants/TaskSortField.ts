@@ -1,3 +1,5 @@
+import {Dictionary} from 'lodash';
+
 enum TaskSortField {
     PROJECT_NAME = 'project_name',
     DAY_ORDER = 'day_order',
@@ -6,7 +8,7 @@ enum TaskSortField {
 }
 
 module TaskSortField {
-    export const toObject = {
+    export const toObject: Dictionary<TaskSortField> = {
         [TaskSortField.PROJECT_NAME]: TaskSortField.PROJECT_NAME,
         [TaskSortField.DAY_ORDER]: TaskSortField.DAY_ORDER,
         [TaskSortField.TASK_NAME]: TaskSortField.TASK_NAME,

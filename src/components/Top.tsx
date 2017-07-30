@@ -1,8 +1,21 @@
 import '../../package';
 
+import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Checkbox, Dimmer, Header, Icon, Loader, Menu, Modal} from 'semantic-ui-react';
+import {
+    Button,
+    Checkbox,
+    Dimmer,
+    Dropdown,
+    Header,
+    Icon,
+    Input,
+    Loader,
+    Menu,
+    Modal,
+    SemanticWIDTHS
+} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -16,25 +29,24 @@ import ReduxToastr, {toastr} from 'react-redux-toastr'
 import {version} from '../../package.json';
 import Icebox from './Icebox';
 import CardAppearance from '../constants/CardAppearance';
+import UiConfig from '../models/UiConfig';
+import TaskSortField from '../constants/TaskSortField';
+import Order from '../constants/Order';
 
 
 export interface TopProps {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
-    cardAppearance: CardAppearance;
-    isIceboxVisible: boolean;
     config: CommonConfig;
+    uiConfig: UiConfig;
     isLoading: boolean;
     error: Error;
 
     onReload: () => void;
-    onChangeConfig: (config: CommonConfig) => void;
-
-    // TODO: move to container
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
-    onChangeCardAppearance: (appearance: CardAppearance) => void;
-    onChangeIceboxVisibility: (visible: boolean) => void;
+    onChangeConfig: (config: CommonConfig) => void;
+    onChangeUiConfig: (config: UiConfig) => void;
 }
 
 export interface TopState {
@@ -81,28 +93,60 @@ export default class extends Component<TopProps, TopState> {
                     <Menu.Menu position="right">
                         <Menu.Item>
                             <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
-                            <Checkbox checked={this.props.isIceboxVisible}
-                                      onChange={() => this.props.onChangeIceboxVisibility(!this.props.isIceboxVisible)}
+                            <Checkbox checked={this.props.uiConfig.isIceboxVisible}
+                                      onChange={() => this.props.onChangeUiConfig(
+                                          Object.assign({}, this.props.uiConfig, {isIceboxVisible: !this.props.uiConfig.isIceboxVisible})
+                                      )}
                                       toggle/>
                         </Menu.Item>
                         <Menu.Item>
                             <Button.Group>
                                 <Button toggle
-                                        active={this.props.cardAppearance === CardAppearance.OVERVIEW}
-                                        onClick={() => this.props.onChangeCardAppearance(CardAppearance.OVERVIEW)}>
+                                        active={this.props.uiConfig.cardAppearance === CardAppearance.OVERVIEW}
+                                        onClick={() => this.props.onChangeUiConfig(
+                                            Object.assign({}, this.props.uiConfig, {cardAppearance: CardAppearance.OVERVIEW})
+                                        )}>
                                     Overview
                                 </Button>
-                                <Button.Or />
+                                <Button.Or/>
                                 <Button toggle
-                                        active={this.props.cardAppearance === CardAppearance.DETAIL}
-                                        onClick={() => this.props.onChangeCardAppearance(CardAppearance.DETAIL)}
-                                >
+                                        active={this.props.uiConfig.cardAppearance === CardAppearance.DETAIL}
+                                        onClick={() => this.props.onChangeUiConfig(
+                                            Object.assign({}, this.props.uiConfig, {cardAppearance: CardAppearance.DETAIL})
+                                        )}>
+                                    >
                                     Detail
                                 </Button>
                             </Button.Group>
                         </Menu.Item>
                         <Menu.Item>
-                            <Button accessKey="r" icon="refresh" content="Refresh" inverted onClick={e => {
+                            <Button icon={Order.iconNames[this.props.uiConfig.taskOrder]}
+                                    onClick={() => this.props.onChangeUiConfig(
+                                        Object.assign({}, this.props.uiConfig, {taskOrder: Order.inverses[this.props.uiConfig.taskOrder]})
+                                    )}
+                                    labelPosition='left'
+                                    content={
+                                        <Dropdown search
+                                                  text={this.props.uiConfig.taskSortField}
+                                                  onChange={(e, {value}: { value: TaskSortField }) => this.props.onChangeUiConfig(
+                                                      Object.assign({}, this.props.uiConfig, {taskSortField: value})
+                                                  )}
+                                                  options={
+                                                      _.map(TaskSortField.toObject, v => ({key: v, text: v, value: v}))
+                                                  }/>
+                                    }/>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <Input type='number' min={1} max={5}
+                                   label={{basic: true, content: 'col'}}
+                                   labelPosition='right'
+                                   value={this.props.uiConfig.numberOfCardsPerRow}
+                                   onChange={(e, data) => this.props.onChangeUiConfig(
+                                       Object.assign({}, this.props.uiConfig, {numberOfCardsPerRow: data.value as SemanticWIDTHS})
+                                   )}/>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <Button accessKey="r" icon="refresh" inverted onClick={e => {
                                 e.preventDefault();
                                 this.props.onReload();
                             }}/>
@@ -135,7 +179,7 @@ export default class extends Component<TopProps, TopState> {
                     </Dimmer>
                     {
                         <div style={
-                            this.props.isIceboxVisible ?
+                            this.props.uiConfig.isIceboxVisible ?
                                 {
                                     overflowY: "scroll",
                                     position: "fixed",
@@ -149,15 +193,15 @@ export default class extends Component<TopProps, TopState> {
                                     position: "fixed",
                                 }
                         }>
-                                <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
-                                        taskSortField={this.props.config.taskSortField}
-                                        taskOrder={this.props.config.taskOrder}
-                                        onUpdateTask={this.props.onUpdateTask}
-                                        width={350}/>
+                            <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
+                                    taskSortField={this.props.uiConfig.taskSortField}
+                                    taskOrder={this.props.uiConfig.taskOrder}
+                                    onUpdateTask={this.props.onUpdateTask}
+                                    width={350}/>
                         </div>
                     }
                     <div style={
-                        this.props.isIceboxVisible ?
+                        this.props.uiConfig.isIceboxVisible ?
                             {
                                 transform: "scale(0.9, 0.9)",
                                 transformOrigin: "top",
@@ -171,12 +215,12 @@ export default class extends Component<TopProps, TopState> {
                             }
                     }>
                         <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
-                                    taskSortField={this.props.config.taskSortField}
-                                    taskOrder={this.props.config.taskOrder}
-                                    cardAppearance={this.props.cardAppearance}
+                                    taskSortField={this.props.uiConfig.taskSortField}
+                                    taskOrder={this.props.uiConfig.taskOrder}
+                                    cardAppearance={this.props.uiConfig.cardAppearance}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                    numberOfCardsPerRow={this.props.config.numberOfCardsPerRow}
+                                    numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
                                     onUpdateTask={this.props.onUpdateTask}
                         />
                     </div>
