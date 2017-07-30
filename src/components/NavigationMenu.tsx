@@ -74,7 +74,6 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                     onClick={() => this.props.onChangeUiConfig(
                                         Object.assign({}, this.props.uiConfig, {cardAppearance: CardAppearance.DETAIL})
                                     )}>
-                                >
                                 Detail
                             </Button>
                         </Button.Group>
