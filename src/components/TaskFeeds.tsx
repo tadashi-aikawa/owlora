@@ -39,6 +39,7 @@ interface TaskFeedProps {
     {
         beginDrag(props: TaskFeedProps) {
             return {
+                task: props.task,
                 id: props.task.id,
                 name: props.task.name
             };
