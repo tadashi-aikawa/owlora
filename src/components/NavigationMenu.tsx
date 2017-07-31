@@ -3,7 +3,7 @@ import '../../package';
 import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Checkbox, Dropdown, Header, Icon, Menu, Modal, SemanticWIDTHS} from 'semantic-ui-react';
+import {Button, Checkbox, Dropdown, Header, Icon, Menu, Modal, Popup, SemanticWIDTHS} from 'semantic-ui-react';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import Project from '../models/Project';
@@ -15,6 +15,82 @@ import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
+
+
+const isMobile = () => {
+    return window.innerWidth < 1200;
+};
+
+const IceboxToggle = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
+        <Checkbox checked={uiConfig.isIceboxVisible}
+                  onChange={() => onChangeUiConfig(
+                      Object.assign({}, uiConfig, {isIceboxVisible: !uiConfig.isIceboxVisible})
+                  )}
+                  toggle/>
+    </Menu.Item>;
+
+const AppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Button.Group>
+            <Button toggle
+                    active={uiConfig.cardAppearance === CardAppearance.OVERVIEW}
+                    onClick={() => onChangeUiConfig(
+                        Object.assign({}, uiConfig, {cardAppearance: CardAppearance.OVERVIEW})
+                    )}>
+                Overview
+            </Button>
+            <Button.Or/>
+            <Button toggle
+                    active={uiConfig.cardAppearance === CardAppearance.DETAIL}
+                    onClick={() => onChangeUiConfig(
+                        Object.assign({}, uiConfig, {cardAppearance: CardAppearance.DETAIL})
+                    )}>
+                Detail
+            </Button>
+        </Button.Group>
+    </Menu.Item>;
+
+const SortOrderSelector = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Button icon={Order.iconNames[uiConfig.taskOrder]}
+                onClick={() => onChangeUiConfig(
+                    Object.assign({}, uiConfig, {taskOrder: Order.inverses[uiConfig.taskOrder]})
+                )}
+                labelPosition='left'
+                content={
+                    <Dropdown search
+                              text={uiConfig.taskSortField}
+                              onChange={(e, {value}: { value: TaskSortField }) => onChangeUiConfig(
+                                  Object.assign({}, uiConfig, {taskSortField: value})
+                              )}
+                              options={
+                                  _.map(TaskSortField.toObject, v => ({
+                                      key: v,
+                                      text: v,
+                                      value: v
+                                  }))
+                              }/>
+                }/>
+    </Menu.Item>;
+
+const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Dropdown text={uiConfig.numberOfCardsPerRow as string}
+                  search labeled button floating compact
+                  className="icon" icon="columns"
+                  onChange={(e, {value}: { value: string }) => onChangeUiConfig(
+                      Object.assign({}, uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
+                  )}
+                  options={
+                      _.map(_.range(1, 6), v => ({
+                          key: `${v}`,
+                          text: `${v} col`,
+                          value: `${v}`
+                      }))
+                  }/>
+    </Menu.Item>;
 
 
 export interface NavigationMenuProps {
@@ -51,61 +127,45 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                     version {version}
                 </Menu.Item>
                 <Menu.Menu position="right">
-                    <Menu.Item>
-                        <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
-                        <Checkbox checked={this.props.uiConfig.isIceboxVisible}
-                                  onChange={() => this.props.onChangeUiConfig(
-                                      Object.assign({}, this.props.uiConfig, {isIceboxVisible: !this.props.uiConfig.isIceboxVisible})
-                                  )}
-                                  toggle/>
-                    </Menu.Item>
-                    <Menu.Item>
-                        <Button.Group>
-                            <Button toggle
-                                    active={this.props.uiConfig.cardAppearance === CardAppearance.OVERVIEW}
-                                    onClick={() => this.props.onChangeUiConfig(
-                                        Object.assign({}, this.props.uiConfig, {cardAppearance: CardAppearance.OVERVIEW})
-                                    )}>
-                                Overview
-                            </Button>
-                            <Button.Or/>
-                            <Button toggle
-                                    active={this.props.uiConfig.cardAppearance === CardAppearance.DETAIL}
-                                    onClick={() => this.props.onChangeUiConfig(
-                                        Object.assign({}, this.props.uiConfig, {cardAppearance: CardAppearance.DETAIL})
-                                    )}>
-                                Detail
-                            </Button>
-                        </Button.Group>
-                    </Menu.Item>
-                    <Menu.Item>
-                        <Button icon={Order.iconNames[this.props.uiConfig.taskOrder]}
-                                onClick={() => this.props.onChangeUiConfig(
-                                    Object.assign({}, this.props.uiConfig, {taskOrder: Order.inverses[this.props.uiConfig.taskOrder]})
-                                )}
-                                labelPosition='left'
-                                content={
-                                    <Dropdown search
-                                              text={this.props.uiConfig.taskSortField}
-                                              onChange={(e, {value}: { value: TaskSortField }) => this.props.onChangeUiConfig(
-                                                  Object.assign({}, this.props.uiConfig, {taskSortField: value})
-                                              )}
-                                              options={
-                                                  _.map(TaskSortField.toObject, v => ({key: v, text: v, value: v}))
-                                              }/>
-                                }/>
-                    </Menu.Item>
-                    <Menu.Item>
-                        <Dropdown text={this.props.uiConfig.numberOfCardsPerRow as string}
-                                  search labeled button floating compact
-                                  className="icon" icon="columns"
-                                  onChange={(e, {value}: { value: string }) => this.props.onChangeUiConfig(
-                                      Object.assign({}, this.props.uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
-                                  )}
-                                  options={
-                                      _.map(_.range(1, 6), v => ({key: `${v}`, text: `${v} col`, value: `${v}`}))
-                                  }/>
-                    </Menu.Item>
+                    {
+                        isMobile() ?
+                            <Menu.Item position="right">
+                                <Popup inverted
+                                       trigger={<Button content="More..." icon="dropdown" inverted/>}
+                                       content={
+                                           <Menu.Menu style={{
+                                               display: "flex",
+                                               flexDirection: "column",
+                                               justifyContent: "space-around",
+                                               height: 250
+                                           }}>
+                                               <IceboxToggle uiConfig={this.props.uiConfig}
+                                                             onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                               <AppearanceToggle uiConfig={this.props.uiConfig}
+                                                                 onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                               <SortOrderSelector uiConfig={this.props.uiConfig}
+                                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                               <CardColumnsNumSelector uiConfig={this.props.uiConfig}
+                                                                       onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                           </Menu.Menu>
+                                       }
+                                       on='click'
+                                       position='top right'
+                                />
+                            </Menu.Item>
+                            :
+                            <Menu.Menu position="right">
+                                <IceboxToggle uiConfig={this.props.uiConfig}
+                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <AppearanceToggle uiConfig={this.props.uiConfig}
+                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <SortOrderSelector uiConfig={this.props.uiConfig}
+                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <CardColumnsNumSelector uiConfig={this.props.uiConfig}
+                                                        onChangeUiConfig={this.props.onChangeUiConfig}/>
+                            </Menu.Menu>
+                    }
+
                     <Menu.Item>
                         <Button accessKey="r" icon="refresh" inverted onClick={e => {
                             e.preventDefault();
