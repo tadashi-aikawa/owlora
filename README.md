@@ -8,31 +8,40 @@ For now, `Owlora` uses Todoist API as backend.
 
 [Demo](https://tadashi-aikawa.github.io/owlora/)
 
-## Optional
+## Support platforms
+
+* Google chrome (Not for all)
+* Firefox (Not for all)
+* Android (Not for all)
+* iOS (Not for all)
+
+## For developer
+
+### Optional
 
 ```
 $ yarn global add webpack
 ```
 
-## Install dependencies
+### Install dependencies
 
 ```
 $ yarn install
 ```
 
-## Debug
+### Debug
 
 ```
 $ yarn dev
 ```
 
-## Show storybook
+### Show storybook
 
 ```
 $ yarn storybook
 ```
 
-## Test
+### Test
 
 ```
 $ yarn test
@@ -44,13 +53,13 @@ or
 $ yarn test:watch
 ```
 
-## Build
+### Build
 
 ```
 $ yarn build
 ```
 
-## Deploy
+### Deploy
 
 1. Increment version in `package.json`
 2. `yarn deploy`
