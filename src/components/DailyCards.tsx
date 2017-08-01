@@ -10,14 +10,8 @@ import DailyCard from './DailyCard';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import CardAppearance from '../constants/CardAppearance';
-
-
-const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6;
-const isMonDay = (date: Moment): boolean => date.day() === 1;
-const isTuesDay = (date: Moment): boolean => date.day() === 2;
-const isWednesDay = (date: Moment): boolean => date.day() === 3;
-const isThursDay = (date: Moment): boolean => date.day() === 4;
-const isFriDay = (date: Moment): boolean => date.day() === 5;
+import Repetition from '../constants/Repetition';
+import * as DateUtil from '../utils/DateUtil';
 
 const inTheDay = (task: Task, date: Moment): boolean => {
     if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
@@ -25,13 +19,13 @@ const inTheDay = (task: Task, date: Moment): boolean => {
     }
 
     return date.isSameOrAfter(task.dueDate) && _.some([
-        task.dateString === '毎日',
-        task.dateString === '平日' && isWeekDay(date),
-        task.dateString === '毎週月曜' && isMonDay(date),
-        task.dateString === '毎週火曜' && isTuesDay(date),
-        task.dateString === '毎週水曜' && isWednesDay(date),
-        task.dateString === '毎週木曜' && isThursDay(date),
-        task.dateString === '毎週金曜' && isFriDay(date),
+        task.repetition === Repetition.EVERY_DAY,
+        task.repetition === Repetition.WEEKDAY && DateUtil.isWeekDay(date),
+        task.repetition === Repetition.EVERY_MONDAY && DateUtil.isMonDay(date),
+        task.repetition === Repetition.EVERY_TUESDAY && DateUtil.isTuesDay(date),
+        task.repetition === Repetition.EVERY_WEDNESDAY && DateUtil.isWednesDay(date),
+        task.repetition === Repetition.EVERY_THURSDAY && DateUtil.isThursDay(date),
+        task.repetition === Repetition.EVERY_FRIDAY && DateUtil.isFriDay(date),
     ]);
 };
 
@@ -50,7 +44,7 @@ export interface TaskCardsProps {
 export const DailyCards = (props: TaskCardsProps) => {
     const dates: Moment[] = _(_.range(0, 30))
         .map(i => moment().startOf('week').add(i, 'day'))
-        .filter(isWeekDay)
+        .filter(DateUtil.isWeekDay)
         .value();
 
     return (

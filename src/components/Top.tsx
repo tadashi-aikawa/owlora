@@ -1,14 +1,13 @@
 import '../../package';
 import * as React from 'react';
 import {Component} from 'react';
-import {Label as SLabel, Dimmer, Loader, Feed} from 'semantic-ui-react';
+import {Dimmer, Feed, Label as SLabel, Loader} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
 import Project from '../models/Project';
 import Label from '../models/Label';
 import {DragDropContext} from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
 import ReduxToastr, {toastr} from 'react-redux-toastr'
 import Emojify from 'react-emojione';
 

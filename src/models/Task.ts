@@ -1,4 +1,5 @@
 import {Moment} from 'moment';
+import Repetition from '../constants/Repetition';
 
 interface Task {
     id: number;
@@ -6,7 +7,7 @@ interface Task {
     projectName: string;
     dueDate: Moment;
     estimatedMinutes: number;
-    dateString: string;
+    repetition: Repetition;
     /** URL or emoji(ex. :bow:) */
     icon: string;
     dayOrder: number;

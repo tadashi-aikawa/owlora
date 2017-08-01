@@ -18,6 +18,26 @@ import Label from '../models/Label';
 import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
+import Repetition from '../constants/Repetition';
+
+const toRepetition = (dateString: string): Repetition => {
+    if (!dateString) {
+        return null;
+    }
+
+    const mappings = [
+        {predicate: x => x === '毎日', repetition: Repetition.EVERY_DAY},
+        {predicate: x => x === '平日', repetition: Repetition.WEEKDAY},
+        {predicate: x => x.startsWith('毎週月曜'), repetition: Repetition.EVERY_MONDAY},
+        {predicate: x => x.startsWith('毎週火曜'), repetition: Repetition.EVERY_TUESDAY},
+        {predicate: x => x.startsWith('毎週水曜'), repetition: Repetition.EVERY_WEDNESDAY},
+        {predicate: x => x.startsWith('毎週木曜'), repetition: Repetition.EVERY_THURSDAY},
+        {predicate: x => x.startsWith('毎週金曜'), repetition: Repetition.EVERY_FRIDAY},
+    ];
+
+    const found = _.find(mappings, m => m.predicate(dateString));
+    return found && found.repetition;
+};
 
 
 function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]): IterableIterator<any | Dictionary<Task>> {
@@ -45,7 +65,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             projectName: projectsById[String(x.project_id)].name,
             estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
             dueDate: x.due_date_utc && moment(x.due_date_utc),
-            dateString: x.date_string,
+            repetition: toRepetition(x.date_string),
             icon: iconsByProject[String(x.project_id)],
             dayOrder: x.day_order,
             isMilestone: _.includes(x.labels, milestoneLabel),

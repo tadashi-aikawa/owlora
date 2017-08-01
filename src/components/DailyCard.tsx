@@ -14,6 +14,7 @@ import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
 import CardAppearance from '../constants/CardAppearance';
+import Repetition from '../constants/Repetition';
 
 
 const Fire = ({minutes}: { minutes: number }) =>
@@ -75,7 +76,7 @@ export interface DailyCardProps {
 export default class extends Component<DailyCardProps> {
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
-            .filter(t => t.dateString !== '毎日' && t.dateString !== '平日')
+            .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
             .reject(t => t.isMilestone)
             .value();
 
