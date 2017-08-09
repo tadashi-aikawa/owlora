@@ -148,6 +148,7 @@ export default class extends Component<TopProps, TopState> {
                                     cardAppearance={this.props.uiConfig.cardAppearance}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                    numberOfCards={this.props.uiConfig.numberOfCards}
                                     numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
                                     onUpdateTask={this.props.onUpdateTask}
                         />

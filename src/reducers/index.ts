@@ -46,6 +46,7 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,
+        numberOfCards: 30,
     }
 };
 

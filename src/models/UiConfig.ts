@@ -10,6 +10,7 @@ interface UiConfig {
     taskSortField: TaskSortField;
     taskOrder: Order;
     numberOfCardsPerRow: SemanticWIDTHS;
+    numberOfCards: number;
 }
 
 export default UiConfig;

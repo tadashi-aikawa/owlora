@@ -84,9 +84,26 @@ const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
                       Object.assign({}, uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
                   )}
                   options={
-                      _.map(_.range(1, 6), v => ({
+                      _.map(_.range(1, 5+1), v => ({
                           key: `${v}`,
                           text: `${v} col`,
+                          value: `${v}`
+                      }))
+                  }/>
+    </Menu.Item>;
+
+const CardNumSelector = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Dropdown text={uiConfig.numberOfCards as string}
+                  search labeled button floating compact
+                  className="icon" icon="calendar"
+                  onChange={(e, {value}: { value: string }) => onChangeUiConfig(
+                      Object.assign({}, uiConfig, {numberOfCards: Number(value)})
+                  )}
+                  options={
+                      _.map(_.range(1, 180+1), v => ({
+                          key: `${v}`,
+                          text: `${v} days`,
                           value: `${v}`
                       }))
                   }/>
@@ -123,9 +140,6 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                 <Menu.Item>
                     <h2>Owlora</h2>
                 </Menu.Item>
-                <Menu.Item size="mini">
-                    version {version}
-                </Menu.Item>
                 <Menu.Menu position="right">
                     {
                         isMobile() ?
@@ -147,6 +161,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <CardColumnsNumSelector uiConfig={this.props.uiConfig}
                                                                        onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                               <CardNumSelector uiConfig={this.props.uiConfig}
+                                                                onChangeUiConfig={this.props.onChangeUiConfig}/>
                                            </Menu.Menu>
                                        }
                                        on='click'
@@ -163,6 +179,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                    onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <CardColumnsNumSelector uiConfig={this.props.uiConfig}
                                                         onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <CardNumSelector uiConfig={this.props.uiConfig}
+                                                 onChangeUiConfig={this.props.onChangeUiConfig}/>
                             </Menu.Menu>
                     }
 
@@ -178,7 +196,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                 <Icon name="setting" size="large"/>
                             </Button>
                         }>
-                            <Header icon="setting" content="Settings"/>
+                            <Header icon="setting" content={`Settings (version ${version})`}/>
                             <Modal.Content>
                                 <ConfigEditor defaultConfig={this.props.config}
                                               projects={this.props.projects}

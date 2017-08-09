@@ -29,6 +29,21 @@ const inTheDay = (task: Task, date: Moment): boolean => {
     ]);
 };
 
+function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: number): IterableIterator<Moment> {
+    let i = 0;
+    let count = 0;
+
+    while (count < max) {
+        const m = begin.clone().add(i, 'day');
+        if (filter(m)) {
+            yield m;
+            count++;
+        }
+        i++;
+    }
+}
+
+
 export interface TaskCardsProps {
     tasks: Task[];
     taskSortField: TaskSortField;
@@ -36,16 +51,21 @@ export interface TaskCardsProps {
     cardAppearance: CardAppearance;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
+    numberOfCards: number;
     numberOfCardsPerRow: SemanticWIDTHS;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
 export const DailyCards = (props: TaskCardsProps) => {
-    const dates: Moment[] = _(_.range(0, 30))
-        .map(i => moment().startOf('week').add(i, 'day'))
-        .filter(DateUtil.isWeekDay)
-        .value();
+
+    const dates: Moment[] = Array.from(
+        momentIterator(
+            moment().startOf('week'),
+            DateUtil.isWeekDay,
+            props.numberOfCards
+        )
+    );
 
     return (
         <Card.Group itemsPerRow={props.numberOfCardsPerRow}>
