@@ -94,7 +94,7 @@ class TodoistSyncService implements SyncService {
             token,
             taskUpdateParameters.map(x => ({
                 id: x.id,
-                due_date_utc: x.dueDate && x.dueDate.utc().format('YYYY-M-DDTHH:mm:59'),
+                due_date_utc: x.dueDate && x.dueDate.hour(23).minute(59).second(59).utc().format('YYYY-M-DDTHH:mm:ss'),
                 date_string: x.dateString
             }))
         );
