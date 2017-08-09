@@ -3,7 +3,7 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import Emojify from 'react-emojione';
-import {Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {Reveal, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -32,6 +32,62 @@ const Milestone = ({header, body}: { header: string, body: string }) =>
             <p><Emojify>{body}</Emojify></p>
         </Message.Content>
     </Message>;
+
+const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
+    props: DailyCardProps, estimatedTasks: Task[], freeMinutes: number, isOffTime: boolean
+}) =>
+    <Segment inverted style={{margin: 0}}>
+        <Popup
+            flowing
+            trigger={
+                <Statistic.Group widths='one' size='mini' inverted color={isOffTime ? "teal" : "olive"}
+                                 style={{paddingBottom: 10}}>
+                    <Statistic value={props.date.format(DATE_FORMAT)}/>
+                </Statistic.Group>
+            }
+            content={
+                <TaskFeeds tasks={estimatedTasks}
+                           taskSortField={props.taskSortField}
+                           taskOrder={props.taskOrder}
+                />
+            }
+        />
+        {
+            isOffTime ?
+                <Statistic.Group widths='one' size='tiny' inverted color={isOffTime ? "teal" : "olive"}>
+                    <Statistic>
+                        <Statistic.Value>
+                            <Icon name="hand peace"/> Off day!! <Icon name="hand peace"/>
+                        </Statistic.Value>
+                    </Statistic>
+                </Statistic.Group>
+                :
+                <Progress value={freeMinutes}
+                          total={props.minutesToUsePerDay}
+                          color="green"
+                          size="small"
+                          inverted
+                          error={freeMinutes / props.minutesToUsePerDay < 0.20}
+                          warning={freeMinutes / props.minutesToUsePerDay < 0.40}
+                          disabled={isOffTime}
+                >
+                    {
+                        freeMinutes < 0
+                            ?
+                            <div>
+                                <Fire minutes={-freeMinutes}/>
+                                <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+                            </div>
+                            :
+                            <div>
+                                <Icon name="heart"/> {freeMinutes}
+                                <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+                            </div>
+
+                    }
+                </Progress>
+        }
+    </Segment>;
 
 export interface DailyCardProps {
     date: Moment;
@@ -104,57 +160,14 @@ export default class extends Component<DailyCardProps> {
                         <Icon name='hand outline right' size='huge'/>
                     </div>
                 }/>
-                <Segment inverted style={{margin: 0}}>
-                    <Popup
-                        flowing
-                        trigger={
-                            <Statistic size='mini' color="olive">
-                                <Statistic.Value>{this.props.date.format(DATE_FORMAT)}</Statistic.Value>
-                            </Statistic>
-                        }
-                        content={
-                            <TaskFeeds tasks={estimatedTasks}
-                                       taskSortField={this.props.taskSortField}
-                                       taskOrder={this.props.taskOrder}
-                            />
-                        }
-                    />
-                    <Progress value={freeMinutes}
-                              total={this.props.minutesToUsePerDay}
-                              color="green"
-                              size="small"
-                              inverted
-                              error={freeMinutes / this.props.minutesToUsePerDay < 0.20}
-                              warning={freeMinutes / this.props.minutesToUsePerDay < 0.40}
-                              disabled={minutesToUse === 0}
-                    >
-                        {
-                            freeMinutes < 0
-                                ?
-                                <div>
-                                    <Fire minutes={-freeMinutes}/>
-                                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
-                                </div>
-                                :
-                                <div>
-                                    <Icon name="heart"/> {freeMinutes}
-                                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
-                                </div>
-                        }
-                    </Progress>
-                </Segment>
+                <CardHeader props={this.props}
+                            estimatedTasks={estimatedTasks}
+                            freeMinutes={freeMinutes}
+                            isOffTime={minutesToUse === 0}
+                />
                 <Card.Content>
                     {this.props.tasks.filter(t => t.isMilestone)
                         .map(t => <Milestone key={t.id} header={t.projectName} body={t.name}/>)}
-                    <Message info icon hidden={specifiedMinutes !== 0}>
-                        <Icon name='smile'/>
-                        <Message.Content>
-                            <Message.Header>
-                                Off time
-                            </Message.Header>
-                            <p>Enjoy without tasks</p>
-                        </Message.Content>
-                    </Message>
                     <Message negative icon hidden={freeMinutes >= 0}>
                         <Icon name='warning sign'/>
                         <Message.Content>
