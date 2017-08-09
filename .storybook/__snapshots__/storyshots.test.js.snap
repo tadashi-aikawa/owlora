@@ -88,17 +88,29 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -116,25 +128,23 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
@@ -162,26 +172,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -426,17 +416,29 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -454,25 +456,23 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
@@ -500,26 +500,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -781,17 +761,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -809,51 +801,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -1095,17 +1065,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -1123,51 +1105,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -1409,17 +1369,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -1437,51 +1409,29 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -1740,17 +1690,29 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -1768,51 +1730,29 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -2054,17 +1994,29 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -2082,51 +2034,29 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                285
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              285
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -2345,17 +2275,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -2373,51 +2315,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                40
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              40
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -2659,17 +2579,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -2687,51 +2619,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                39
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              39
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -2973,17 +2883,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -3001,51 +2923,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                20
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              20
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -3287,17 +3187,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -3315,51 +3227,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                19
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              19
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -3601,17 +3491,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -3629,51 +3531,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                0
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              0
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -3915,17 +3795,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui red mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -3943,78 +3835,29 @@ exports[`Storyshots DailyCard Life status 1`] = `
             <div
               className="label"
             >
-              <div>
-                <span>
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                  Lack 
-                  1
-                   
-                  <i
-                    aria-hidden="true"
-                    className="heart icon"
-                  />
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                  <i
-                    aria-hidden="true"
-                    className="fire icon"
-                  />
-                </span>
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              -1
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                1
-              </div>
+                }
+              />
+               
+              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
-              </p>
-            </div>
-          </div>
           <div
             className="ui icon negative message"
           >
@@ -4270,17 +4113,29 @@ exports[`Storyshots DailyCard Milestone 1`] = `
         }
       >
         <div
-          className="ui olive mini statistic"
+          className="ui olive mini inverted one statistics"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          style={
+            Object {
+              "paddingBottom": 10,
+            }
+          }
         >
           <div
-            className="value"
+            className="ui statistic"
           >
-            2099-01-01 (Thu)
+            <div
+              className="value"
+            >
+              2099-01-01 (Thu)
+            </div>
+            <div
+              className="label"
+            />
           </div>
         </div>
         <div
@@ -4298,25 +4153,23 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="label"
           >
-            <div>
-              <i
-                aria-hidden="true"
-                className="heart icon"
-              />
-               
-              300
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
+            <i
+              aria-hidden="true"
+              className="heart icon"
+            />
+             
+            300
+            <i
+              aria-hidden="true"
+              className="tasks icon"
+              style={
+                Object {
+                  "marginLeft": 5,
                 }
-              />
-               
-              0
-            </div>
+              }
+            />
+             
+            0
           </div>
         </div>
       </div>
@@ -4344,26 +4197,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               <span>
                 Task
               </span>
-            </p>
-          </div>
-        </div>
-        <div
-          className="ui hidden icon info message"
-        >
-          <i
-            aria-hidden="true"
-            className="smile icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              Off time
-            </div>
-            <p>
-              Enjoy without tasks
             </p>
           </div>
         </div>
@@ -4493,52 +4326,49 @@ exports[`Storyshots DailyCard Offtime 1`] = `
         }
       >
         <div
-          className="ui olive mini statistic"
+          className="ui teal mini inverted one statistics"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          style={
+            Object {
+              "paddingBottom": 10,
+            }
+          }
         >
           <div
-            className="value"
+            className="ui statistic"
           >
-            2099-01-01 (Thu)
+            <div
+              className="value"
+            >
+              2099-01-01 (Thu)
+            </div>
+            <div
+              className="label"
+            />
           </div>
         </div>
         <div
-          className="ui green small disabled error inverted warning progress"
-          data-percent={0}
+          className="ui teal tiny inverted one statistics"
         >
           <div
-            className="bar"
-            style={
-              Object {
-                "width": "0%",
-              }
-            }
-          />
-          <div
-            className="label"
+            className="ui statistic"
           >
-            <div>
+            <div
+              className="value"
+            >
               <i
                 aria-hidden="true"
-                className="heart icon"
+                className="hand peace icon"
               />
-               
-              0
+               Off day!! 
               <i
                 aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
+                className="hand peace icon"
               />
-               
-              0
             </div>
           </div>
         </div>
@@ -4546,26 +4376,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
       <div
         className="content"
       >
-        <div
-          className="ui icon info message"
-        >
-          <i
-            aria-hidden="true"
-            className="smile icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              Off time
-            </div>
-            <p>
-              Enjoy without tasks
-            </p>
-          </div>
-        </div>
         <div
           className="ui hidden icon negative message"
         >
@@ -4692,17 +4502,29 @@ exports[`Storyshots DailyCard Past 1`] = `
         }
       >
         <div
-          className="ui olive mini statistic"
+          className="ui olive mini inverted one statistics"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          style={
+            Object {
+              "paddingBottom": 10,
+            }
+          }
         >
           <div
-            className="value"
+            className="ui statistic"
           >
-            2000-01-01 (Sat)
+            <div
+              className="value"
+            >
+              2000-01-01 (Sat)
+            </div>
+            <div
+              className="label"
+            />
           </div>
         </div>
         <div
@@ -4720,51 +4542,29 @@ exports[`Storyshots DailyCard Past 1`] = `
           <div
             className="label"
           >
-            <div>
-              <i
-                aria-hidden="true"
-                className="heart icon"
-              />
-               
-              285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
+            <i
+              aria-hidden="true"
+              className="heart icon"
+            />
+             
+            285
+            <i
+              aria-hidden="true"
+              className="tasks icon"
+              style={
+                Object {
+                  "marginLeft": 5,
                 }
-              />
-               
-              1
-            </div>
+              }
+            />
+             
+            1
           </div>
         </div>
       </div>
       <div
         className="content"
       >
-        <div
-          className="ui hidden icon info message"
-        >
-          <i
-            aria-hidden="true"
-            className="smile icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              Off time
-            </div>
-            <p>
-              Enjoy without tasks
-            </p>
-          </div>
-        </div>
         <div
           className="ui hidden icon negative message"
         >
@@ -5022,17 +4822,29 @@ exports[`Storyshots DailyCard Sort 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -5050,25 +4862,23 @@ exports[`Storyshots DailyCard Sort 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                220
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              220
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                3
-              </div>
+                }
+              />
+               
+              3
             </div>
           </div>
         </div>
@@ -5096,26 +4906,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -5566,17 +5356,29 @@ exports[`Storyshots DailyCard Sort 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -5594,25 +5396,23 @@ exports[`Storyshots DailyCard Sort 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                220
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              220
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                3
-              </div>
+                }
+              />
+               
+              3
             </div>
           </div>
         </div>
@@ -5640,26 +5440,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -6110,17 +5890,29 @@ exports[`Storyshots DailyCard Sort 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -6138,25 +5930,23 @@ exports[`Storyshots DailyCard Sort 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                220
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              220
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                3
-              </div>
+                }
+              />
+               
+              3
             </div>
           </div>
         </div>
@@ -6184,26 +5974,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -6654,17 +6424,29 @@ exports[`Storyshots DailyCard Sort 1`] = `
           }
         >
           <div
-            className="ui olive mini statistic"
+            className="ui olive mini inverted one statistics"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
           >
             <div
-              className="value"
+              className="ui statistic"
             >
-              2099-01-01 (Thu)
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
           <div
@@ -6682,25 +6464,23 @@ exports[`Storyshots DailyCard Sort 1`] = `
             <div
               className="label"
             >
-              <div>
-                <i
-                  aria-hidden="true"
-                  className="heart icon"
-                />
-                 
-                220
-                <i
-                  aria-hidden="true"
-                  className="tasks icon"
-                  style={
-                    Object {
-                      "marginLeft": 5,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              220
+              <i
+                aria-hidden="true"
+                className="tasks icon"
+                style={
+                  Object {
+                    "marginLeft": 5,
                   }
-                />
-                 
-                3
-              </div>
+                }
+              />
+               
+              3
             </div>
           </div>
         </div>
@@ -6728,26 +6508,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="ui hidden icon info message"
-          >
-            <i
-              aria-hidden="true"
-              className="smile icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                Off time
-              </div>
-              <p>
-                Enjoy without tasks
               </p>
             </div>
           </div>
@@ -7212,17 +6972,29 @@ exports[`Storyshots DailyCard Summary 1`] = `
         }
       >
         <div
-          className="ui olive mini statistic"
+          className="ui olive mini inverted one statistics"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          style={
+            Object {
+              "paddingBottom": 10,
+            }
+          }
         >
           <div
-            className="value"
+            className="ui statistic"
           >
-            2099-01-01 (Thu)
+            <div
+              className="value"
+            >
+              2099-01-01 (Thu)
+            </div>
+            <div
+              className="label"
+            />
           </div>
         </div>
         <div
@@ -7240,25 +7012,23 @@ exports[`Storyshots DailyCard Summary 1`] = `
           <div
             className="label"
           >
-            <div>
-              <i
-                aria-hidden="true"
-                className="heart icon"
-              />
-               
-              255
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
+            <i
+              aria-hidden="true"
+              className="heart icon"
+            />
+             
+            255
+            <i
+              aria-hidden="true"
+              className="tasks icon"
+              style={
+                Object {
+                  "marginLeft": 5,
                 }
-              />
-               
-              3
-            </div>
+              }
+            />
+             
+            3
           </div>
         </div>
       </div>
@@ -7286,26 +7056,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
               <span>
                 Milestone
               </span>
-            </p>
-          </div>
-        </div>
-        <div
-          className="ui hidden icon info message"
-        >
-          <i
-            aria-hidden="true"
-            className="smile icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              Off time
-            </div>
-            <p>
-              Enjoy without tasks
             </p>
           </div>
         </div>
