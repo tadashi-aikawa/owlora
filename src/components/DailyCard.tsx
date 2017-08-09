@@ -17,13 +17,6 @@ import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 
 
-const Fire = ({minutes}: { minutes: number }) =>
-    <span>
-        <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
-        Lack {minutes} <Icon name="heart"/>
-        <Icon name="fire"/><Icon name="fire"/><Icon name="fire"/>
-    </span>;
-
 const Milestone = ({header, body}: { header: string, body: string }) =>
     <Message icon color="violet">
         <Icon name='diamond'/>
@@ -40,7 +33,8 @@ const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
         <Popup
             flowing
             trigger={
-                <Statistic.Group widths='one' size='mini' inverted color={isOffTime ? "teal" : "olive"}
+                <Statistic.Group widths='one' size='mini' inverted
+                                 color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}
                                  style={{paddingBottom: 10}}>
                     <Statistic value={props.date.format(DATE_FORMAT)}/>
                 </Statistic.Group>
@@ -54,7 +48,8 @@ const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
         />
         {
             isOffTime ?
-                <Statistic.Group widths='one' size='tiny' inverted color={isOffTime ? "teal" : "olive"}>
+                <Statistic.Group widths='one' size='tiny' inverted
+                                 color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}>
                     <Statistic>
                         <Statistic.Value>
                             <Icon name="hand peace"/> Off day!! <Icon name="hand peace"/>
@@ -71,20 +66,10 @@ const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
                           warning={freeMinutes / props.minutesToUsePerDay < 0.40}
                           disabled={isOffTime}
                 >
-                    {
-                        freeMinutes < 0
-                            ?
-                            <div>
-                                <Fire minutes={-freeMinutes}/>
-                                <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
-                            </div>
-                            :
-                            <div>
-                                <Icon name="heart"/> {freeMinutes}
-                                <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
-                            </div>
 
-                    }
+                        <Icon name="heart"/> {freeMinutes}
+                        <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+
                 </Progress>
         }
     </Segment>;
