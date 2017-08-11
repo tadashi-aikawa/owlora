@@ -115,7 +115,7 @@ const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
 
 const CardNumSelector = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
-        <Dropdown text={uiConfig.numberOfCards as string}
+        <Dropdown text={String(uiConfig.numberOfCards)}
                   search labeled button floating compact
                   className="icon" icon="calendar"
                   onChange={(e, {value}: { value: string }) => onChangeUiConfig(

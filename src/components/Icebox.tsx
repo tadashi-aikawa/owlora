@@ -69,7 +69,7 @@ export default class extends Component<IceboxProps> {
                         }/>
                 <Segment inverted style={{margin: 0}}>
                     <Icon name="inbox" size="big" color="teal"/>
-                    <Statistic size='mini' color="teal" inverted="true">
+                    <Statistic size='mini' color="teal" inverted>
                         <Statistic.Value>ICEBOX</Statistic.Value>
                     </Statistic>
                 </Segment>

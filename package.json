@@ -58,8 +58,8 @@
     "redux": "^3.7.1",
     "redux-localstorage": "^0.4.1",
     "redux-saga": "^0.15.6",
-    "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.71.3",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.71.4",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
