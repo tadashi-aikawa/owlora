@@ -18,7 +18,7 @@ import Order from '../constants/Order';
 
 
 const isMobile = () => {
-    return window.innerWidth < 1200;
+    return window.innerWidth < 1400;
 };
 
 const IceboxToggle = ({uiConfig, onChangeUiConfig}) =>
@@ -165,6 +165,12 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                     {
                         isMobile() ?
                             <Menu.Item position="right">
+                                <IceboxToggle uiConfig={this.props.uiConfig}
+                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <AppearanceToggle uiConfig={this.props.uiConfig}
+                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <SortOrderSelector uiConfig={this.props.uiConfig}
+                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <Popup inverted
                                        trigger={<Button content="More..." icon="dropdown" inverted/>}
                                        content={
@@ -172,16 +178,10 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                display: "flex",
                                                flexDirection: "column",
                                                justifyContent: "space-around",
-                                               height: 250
+                                               height: 150
                                            }}>
-                                               <IceboxToggle uiConfig={this.props.uiConfig}
-                                                             onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                               <AppearanceToggle uiConfig={this.props.uiConfig}
-                                                                 onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <DayAppearanceToggle uiConfig={this.props.uiConfig}
                                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                               <SortOrderSelector uiConfig={this.props.uiConfig}
-                                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <CardColumnsNumSelector uiConfig={this.props.uiConfig}
                                                                        onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <CardNumSelector uiConfig={this.props.uiConfig}
