@@ -41,7 +41,8 @@ interface TaskFeedProps {
             return {
                 task: props.task,
                 id: props.task.id,
-                name: props.task.name
+                name: props.task.name,
+                date: props.task.dueDate,
             };
         },
 

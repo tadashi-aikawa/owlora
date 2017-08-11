@@ -67,8 +67,8 @@ const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
                           disabled={isOffTime}
                 >
 
-                        <Icon name="heart"/> {freeMinutes}
-                        <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
+                    <Icon name="heart"/> {freeMinutes}
+                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
 
                 </Progress>
         }
@@ -105,7 +105,8 @@ export interface DailyCardProps {
         },
 
         canDrop(props: DailyCardProps, monitor) {
-            return !_.includes(props.tasks.map(x => x.id), monitor.getItem().id)
+            return props.date.isSameOrAfter(now(), 'day') &&
+                !props.date.isSame(monitor.getItem().date, 'day');
         }
     },
     (connect, monitor) => ({
@@ -128,6 +129,12 @@ export default class extends Component<DailyCardProps> {
 
         return (
             <Card ref={node => this.props.connectDropTarget(findDOMNode(this))}>
+                <Dimmer active={this.props.date.isBefore(now(), 'day')} content={
+                    <div>
+                        <h2>Facing forward !!</h2>
+                        <Icon name='hand outline right' size='huge'/>
+                    </div>
+                }/>
                 <Dimmer active={!this.props.canDrop && this.props.isOver}
                         style={{backgroundColor: "grey", opacity: 0.5}}
                         content=""/>
@@ -139,12 +146,6 @@ export default class extends Component<DailyCardProps> {
                                 <Icon name='arrow circle outline down' size='huge'/>
                             </div>
                         }/>
-                <Dimmer active={this.props.date.isBefore(now(), 'day')} content={
-                    <div>
-                        <h2>Facing forward !!</h2>
-                        <Icon name='hand outline right' size='huge'/>
-                    </div>
-                }/>
                 <CardHeader props={this.props}
                             estimatedTasks={estimatedTasks}
                             freeMinutes={freeMinutes}
