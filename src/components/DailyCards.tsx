@@ -12,7 +12,6 @@ import Order from '../constants/Order';
 import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import * as DateUtil from '../utils/DateUtil';
-import DayAppearance from "../constants/DayAppearance";
 
 const inTheDay = (task: Task, date: Moment): boolean => {
     if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
@@ -30,17 +29,6 @@ const inTheDay = (task: Task, date: Moment): boolean => {
     ]);
 };
 
-const dayFilter = (appearance: DayAppearance): (m: Moment) => boolean => {
-    if (appearance === DayAppearance.ALL_DAY) {
-        return DateUtil.isAnyDay;
-    }
-    if (appearance === DayAppearance.WEEKDAY) {
-        return DateUtil.isWeekDay;
-    }
-    return DateUtil.isWeekDay;
-};
-
-
 function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: number): IterableIterator<Moment> {
     let i = 0;
     let count = 0;
@@ -56,7 +44,7 @@ function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: num
 }
 
 
-export interface TaskCardsProps {
+export interface DailyCardsProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
@@ -65,17 +53,17 @@ export interface TaskCardsProps {
     minutesToUsePerSpecificDays: Dictionary<number>;
     numberOfCards: number;
     numberOfCardsPerRow: SemanticWIDTHS;
-    dayAppearance: DayAppearance;
+    onlyWeekday: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
-export const DailyCards = (props: TaskCardsProps) => {
+export const DailyCards = (props: DailyCardsProps) => {
 
     const dates: Moment[] = Array.from(
         momentIterator(
             moment().startOf('week'),
-            dayFilter(props.dayAppearance),
+            props.onlyWeekday ? DateUtil.isWeekDay : () => true,
             props.numberOfCards
         )
     );

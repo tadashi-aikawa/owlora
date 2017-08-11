@@ -15,7 +15,6 @@ import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
-import DayAppearance from "../constants/DayAppearance";
 
 
 const isMobile = () => {
@@ -57,17 +56,17 @@ const DayAppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
         <Button.Group>
             <Button toggle
-                    active={uiConfig.dayAppearance === DayAppearance.WEEKDAY}
+                    active={uiConfig.onlyWeekday}
                     onClick={() => onChangeUiConfig(
-                        Object.assign({}, uiConfig, {dayAppearance: DayAppearance.WEEKDAY})
+                        Object.assign({}, uiConfig, {onlyWeekday: true})
                     )}>
                 Weekday
             </Button>
             <Button.Or/>
             <Button toggle
-                    active={uiConfig.dayAppearance === DayAppearance.ALL_DAY}
+                    active={!uiConfig.onlyWeekday}
                     onClick={() => onChangeUiConfig(
-                        Object.assign({}, uiConfig, {dayAppearance: DayAppearance.ALL_DAY})
+                        Object.assign({}, uiConfig, {onlyWeekday: false})
                     )}>
                 All Day
             </Button>
@@ -123,7 +122,7 @@ const CardNumSelector = ({uiConfig, onChangeUiConfig}) =>
                       Object.assign({}, uiConfig, {numberOfCards: Number(value)})
                   )}
                   options={
-                      _.map(_.range(1, 180+1), v => ({
+                      _.map(_.range(1, 180 + 1), v => ({
                           key: `${v}`,
                           text: `${v} days`,
                           value: `${v}`

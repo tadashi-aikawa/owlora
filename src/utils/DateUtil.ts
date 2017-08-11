@@ -1,6 +1,5 @@
 import {Moment} from 'moment';
 
-export const isAnyDay = (date: Moment): boolean => true;
 export const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6;
 export const isMonDay = (date: Moment): boolean => date.day() === 1;
 export const isTuesDay = (date: Moment): boolean => date.day() === 2;

@@ -150,7 +150,7 @@ export default class extends Component<TopProps, TopState> {
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
                                     numberOfCards={this.props.uiConfig.numberOfCards}
                                     numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
-                                    dayAppearance={this.props.uiConfig.dayAppearance}
+                                    onlyWeekday={this.props.uiConfig.onlyWeekday}
                                     onUpdateTask={this.props.onUpdateTask}
                         />
                     </div>

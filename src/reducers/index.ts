@@ -1,16 +1,13 @@
 import * as _ from 'lodash';
 import {reducer as toastrReducer} from 'react-redux-toastr'
 import {combineReducers, Reducer} from 'redux';
-import {
-    Actions, default as ActionType
-} from '../actions';
+import {Actions, default as ActionType} from '../actions';
 import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 import CardAppearance from '../constants/CardAppearance';
 import RootState from '../states/index';
-import DayAppearance from "../constants/DayAppearance";
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -48,7 +45,7 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,
         numberOfCards: 30,
-        dayAppearance: DayAppearance.WEEKDAY,
+        onlyWeekday: true,
     }
 };
 
