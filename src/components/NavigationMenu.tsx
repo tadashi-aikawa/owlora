@@ -15,6 +15,7 @@ import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
+import DayAppearance from "../constants/DayAppearance";
 
 
 const isMobile = () => {
@@ -52,6 +53,27 @@ const AppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
         </Button.Group>
     </Menu.Item>;
 
+const DayAppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Button.Group>
+            <Button toggle
+                    active={uiConfig.dayAppearance === DayAppearance.WEEKDAY}
+                    onClick={() => onChangeUiConfig(
+                        Object.assign({}, uiConfig, {dayAppearance: DayAppearance.WEEKDAY})
+                    )}>
+                Weekday
+            </Button>
+            <Button.Or/>
+            <Button toggle
+                    active={uiConfig.dayAppearance === DayAppearance.ALL_DAY}
+                    onClick={() => onChangeUiConfig(
+                        Object.assign({}, uiConfig, {dayAppearance: DayAppearance.ALL_DAY})
+                    )}>
+                All Day
+            </Button>
+        </Button.Group>
+    </Menu.Item>;
+
 const SortOrderSelector = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
         <Button icon={Order.iconNames[uiConfig.taskOrder]}
@@ -84,7 +106,7 @@ const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
                       Object.assign({}, uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
                   )}
                   options={
-                      _.map(_.range(1, 5+1), v => ({
+                      _.map(_.range(1, 7 + 1), v => ({
                           key: `${v}`,
                           text: `${v} col`,
                           value: `${v}`
@@ -157,6 +179,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <AppearanceToggle uiConfig={this.props.uiConfig}
                                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                               <DayAppearanceToggle uiConfig={this.props.uiConfig}
+                                                                    onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <SortOrderSelector uiConfig={this.props.uiConfig}
                                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <CardColumnsNumSelector uiConfig={this.props.uiConfig}
@@ -175,6 +199,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                               onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <AppearanceToggle uiConfig={this.props.uiConfig}
                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <DayAppearanceToggle uiConfig={this.props.uiConfig}
+                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <SortOrderSelector uiConfig={this.props.uiConfig}
                                                    onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <CardColumnsNumSelector uiConfig={this.props.uiConfig}

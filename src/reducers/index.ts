@@ -10,6 +10,7 @@ import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 import CardAppearance from '../constants/CardAppearance';
 import RootState from '../states/index';
+import DayAppearance from "../constants/DayAppearance";
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -47,6 +48,7 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,
         numberOfCards: 30,
+        dayAppearance: DayAppearance.WEEKDAY,
     }
 };
 
