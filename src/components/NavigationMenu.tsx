@@ -106,7 +106,7 @@ const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
                       Object.assign({}, uiConfig, {numberOfCardsPerRow: value as SemanticWIDTHS})
                   )}
                   options={
-                      _.map(_.range(1, 5+1), v => ({
+                      _.map(_.range(1, 7 + 1), v => ({
                           key: `${v}`,
                           text: `${v} col`,
                           value: `${v}`
