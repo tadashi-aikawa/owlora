@@ -20,6 +20,28 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -52,28 +74,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -348,6 +348,28 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -380,28 +402,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -693,6 +693,28 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -725,28 +747,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -997,6 +997,28 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -1029,28 +1051,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -1301,6 +1301,28 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -1333,28 +1355,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -1622,6 +1622,28 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -1654,28 +1676,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -1926,6 +1926,28 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -1958,28 +1980,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -2207,6 +2207,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -2239,28 +2261,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -2511,6 +2511,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -2543,28 +2565,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -2815,6 +2815,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -2847,28 +2869,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -3119,6 +3119,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -3151,28 +3173,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -3423,6 +3423,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -3455,28 +3477,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -3727,6 +3727,28 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -3759,28 +3781,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -4045,6 +4045,28 @@ exports[`Storyshots DailyCard Milestone 1`] = `
       <div
         className="ui dimmer"
         onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
         style={
           Object {
             "backgroundColor": "grey",
@@ -4077,28 +4099,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               <i
                 aria-hidden="true"
                 className="arrow circle outline down huge icon"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ui dimmer"
-        onClick={[Function]}
-      >
-        <div
-          className="content"
-        >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
               />
             </div>
           </div>
@@ -4258,6 +4258,28 @@ exports[`Storyshots DailyCard Offtime 1`] = `
       <div
         className="ui dimmer"
         onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
         style={
           Object {
             "backgroundColor": "grey",
@@ -4290,28 +4312,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
               <i
                 aria-hidden="true"
                 className="arrow circle outline down huge icon"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ui dimmer"
-        onClick={[Function]}
-      >
-        <div
-          className="content"
-        >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
               />
             </div>
           </div>
@@ -4432,6 +4432,28 @@ exports[`Storyshots DailyCard Past 1`] = `
       onClick={[Function]}
     >
       <div
+        className="ui active transition visible dimmer"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
         className="ui dimmer"
         onClick={[Function]}
         style={
@@ -4466,28 +4488,6 @@ exports[`Storyshots DailyCard Past 1`] = `
               <i
                 aria-hidden="true"
                 className="arrow circle outline down huge icon"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ui active transition visible dimmer"
-        onClick={[Function]}
-      >
-        <div
-          className="content"
-        >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
               />
             </div>
           </div>
@@ -4754,6 +4754,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -4786,28 +4808,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -5288,6 +5288,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -5320,28 +5342,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -5822,6 +5822,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -5854,28 +5876,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -6356,6 +6356,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="ui dimmer"
           onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
               "backgroundColor": "grey",
@@ -6388,28 +6410,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <i
                   aria-hidden="true"
                   className="arrow circle outline down huge icon"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ui dimmer"
-          onClick={[Function]}
-        >
-          <div
-            className="content"
-          >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
                 />
               </div>
             </div>
@@ -6904,6 +6904,28 @@ exports[`Storyshots DailyCard Summary 1`] = `
       <div
         className="ui dimmer"
         onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="center"
+          >
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand outline right huge icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui dimmer"
+        onClick={[Function]}
         style={
           Object {
             "backgroundColor": "grey",
@@ -6936,28 +6958,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
               <i
                 aria-hidden="true"
                 className="arrow circle outline down huge icon"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ui dimmer"
-        onClick={[Function]}
-      >
-        <div
-          className="content"
-        >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
               />
             </div>
           </div>
