@@ -66,7 +66,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
             dueDate: x.due_date_utc && moment(x.due_date_utc),
             repetition: toRepetition(x.date_string),
-            icon: iconsByProject[String(x.project_id)],
+            icon: iconsByProject[String(x.project_id)] || ":white_circle:",
             dayOrder: x.day_order,
             isMilestone: _.includes(x.labels, milestoneLabel),
             color: _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
