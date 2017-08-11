@@ -224,6 +224,7 @@ storiesOf('DailyCard', module)
                        minutesToUsePerSpecificDays={{}}
                        tasks={[createTask({
                            id: 1,
+                           name: ":beer: Party!!",
                            dayOrder: 1,
                            isMilestone: boolean("task.isMilestone", true)
                        })]}

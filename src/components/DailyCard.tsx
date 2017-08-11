@@ -3,7 +3,7 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import Emojify from 'react-emojione';
-import {Reveal, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {Divider, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -17,12 +17,10 @@ import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 
 
-const Milestone = ({header, body}: { header: string, body: string }) =>
-    <Message icon color="violet">
-        <Icon name='diamond'/>
+const Milestone = ({name}: { name: string}) =>
+    <Message color="pink">
         <Message.Content>
-            <Message.Header><Emojify>{header}</Emojify></Message.Header>
-            <p><Emojify>{body}</Emojify></p>
+            <Message.Header><Emojify>{name}</Emojify></Message.Header>
         </Message.Content>
     </Message>;
 
@@ -66,10 +64,7 @@ const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
                           warning={freeMinutes / props.minutesToUsePerDay < 0.40}
                           disabled={isOffTime}
                 >
-
                     <Icon name="heart"/> {freeMinutes}
-                    <Icon name="tasks" style={{marginLeft: 5}}/> {estimatedTasks.length}
-
                 </Progress>
         }
     </Segment>;
@@ -152,8 +147,6 @@ export default class extends Component<DailyCardProps> {
                             isOffTime={minutesToUse === 0}
                 />
                 <Card.Content>
-                    {this.props.tasks.filter(t => t.isMilestone)
-                        .map(t => <Milestone key={t.id} header={t.projectName} body={t.name}/>)}
                     <Message negative icon hidden={freeMinutes >= 0}>
                         <Icon name='warning sign'/>
                         <Message.Content>
@@ -162,6 +155,9 @@ export default class extends Component<DailyCardProps> {
                             </Message.Header>
                         </Message.Content>
                     </Message>
+                    {this.props.tasks.filter(t => t.isMilestone)
+                        .map(t => <Milestone key={t.id} name={t.name}/>)}
+                    <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
                     <div style={
                         this.props.appearance === CardAppearance.DETAIL ?
                             {

@@ -134,47 +134,12 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -191,6 +156,27 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -462,47 +448,12 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -519,6 +470,27 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -807,17 +779,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -840,6 +801,12 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -1111,17 +1078,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -1144,6 +1100,12 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -1415,17 +1377,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -1448,6 +1399,12 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -1736,17 +1693,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -1769,6 +1715,12 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -2040,17 +1992,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               />
                
               285
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -2073,6 +2014,12 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -2321,17 +2268,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               40
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -2354,6 +2290,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -2625,17 +2567,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               39
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -2658,6 +2589,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -2929,17 +2866,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               20
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -2962,6 +2888,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -3233,17 +3165,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               19
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -3266,6 +3187,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -3537,17 +3464,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               0
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -3570,6 +3486,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -3841,17 +3763,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               />
                
               -1
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              1
             </div>
           </div>
         </div>
@@ -3874,6 +3785,12 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            1
+             Tasks
           </div>
           <div
             style={
@@ -4159,47 +4076,12 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             />
              
             300
-            <i
-              aria-hidden="true"
-              className="tasks icon"
-              style={
-                Object {
-                  "marginLeft": 5,
-                }
-              }
-            />
-             
-            0
           </div>
         </div>
       </div>
       <div
         className="content"
       >
-        <div
-          className="ui violet icon message"
-        >
-          <i
-            aria-hidden="true"
-            className="diamond icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              <span>
-                Project
-              </span>
-            </div>
-            <p>
-              <span>
-                Task
-              </span>
-            </p>
-          </div>
-        </div>
         <div
           className="ui hidden icon negative message"
         >
@@ -4216,6 +4098,52 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               Move your tasks to other days!!
             </div>
           </div>
+        </div>
+        <div
+          className="ui pink message"
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              <span>
+                <span
+                  onClick={undefined}
+                  style={
+                    Object {
+                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundPosition": "-682.5px -650px",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "1397px 1397px",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "height": 32,
+                      "imageRendering": "optimizeQuality",
+                      "lineHeight": "normal",
+                      "margin": "0 .15em",
+                      "position": "relative",
+                      "textIndent": "-9999em",
+                      "top": -3,
+                      "verticalAlign": "middle",
+                      "width": 32,
+                    }
+                  }
+                  title=":beer:"
+                >
+                  🍺
+                </span>
+                 Party!!
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui horizontal divider"
+        >
+          0
+           Tasks
         </div>
         <div
           style={
@@ -4394,6 +4322,12 @@ exports[`Storyshots DailyCard Offtime 1`] = `
           </div>
         </div>
         <div
+          className="ui horizontal divider"
+        >
+          0
+           Tasks
+        </div>
+        <div
           style={
             Object {
               "maxHeight": "100%",
@@ -4548,17 +4482,6 @@ exports[`Storyshots DailyCard Past 1`] = `
             />
              
             285
-            <i
-              aria-hidden="true"
-              className="tasks icon"
-              style={
-                Object {
-                  "marginLeft": 5,
-                }
-              }
-            />
-             
-            1
           </div>
         </div>
       </div>
@@ -4581,6 +4504,12 @@ exports[`Storyshots DailyCard Past 1`] = `
               Move your tasks to other days!!
             </div>
           </div>
+        </div>
+        <div
+          className="ui horizontal divider"
+        >
+          1
+           Tasks
         </div>
         <div
           style={
@@ -4868,47 +4797,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               />
                
               220
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              3
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -4925,6 +4819,27 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            3
+             Tasks
           </div>
           <div
             style={
@@ -5402,47 +5317,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               />
                
               220
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              3
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -5459,6 +5339,27 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            3
+             Tasks
           </div>
           <div
             style={
@@ -5936,47 +5837,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               />
                
               220
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              3
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -5993,6 +5859,27 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            3
+             Tasks
           </div>
           <div
             style={
@@ -6470,47 +6357,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               />
                
               220
-              <i
-                aria-hidden="true"
-                className="tasks icon"
-                style={
-                  Object {
-                    "marginLeft": 5,
-                  }
-                }
-              />
-               
-              3
             </div>
           </div>
         </div>
         <div
           className="content"
         >
-          <div
-            className="ui violet icon message"
-          >
-            <i
-              aria-hidden="true"
-              className="diamond icon"
-            />
-            <div
-              className="content"
-            >
-              <div
-                className="header"
-              >
-                <span>
-                  Project
-                </span>
-              </div>
-              <p>
-                <span>
-                  Milestone
-                </span>
-              </p>
-            </div>
-          </div>
           <div
             className="ui hidden icon negative message"
           >
@@ -6527,6 +6379,27 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 Move your tasks to other days!!
               </div>
             </div>
+          </div>
+          <div
+            className="ui pink message"
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  Milestone
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            3
+             Tasks
           </div>
           <div
             style={
@@ -7018,47 +6891,12 @@ exports[`Storyshots DailyCard Summary 1`] = `
             />
              
             255
-            <i
-              aria-hidden="true"
-              className="tasks icon"
-              style={
-                Object {
-                  "marginLeft": 5,
-                }
-              }
-            />
-             
-            3
           </div>
         </div>
       </div>
       <div
         className="content"
       >
-        <div
-          className="ui violet icon message"
-        >
-          <i
-            aria-hidden="true"
-            className="diamond icon"
-          />
-          <div
-            className="content"
-          >
-            <div
-              className="header"
-            >
-              <span>
-                Project
-              </span>
-            </div>
-            <p>
-              <span>
-                Milestone
-              </span>
-            </p>
-          </div>
-        </div>
         <div
           className="ui hidden icon negative message"
         >
@@ -7075,6 +6913,27 @@ exports[`Storyshots DailyCard Summary 1`] = `
               Move your tasks to other days!!
             </div>
           </div>
+        </div>
+        <div
+          className="ui pink message"
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              <span>
+                Milestone
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui horizontal divider"
+        >
+          3
+           Tasks
         </div>
         <div
           style={
