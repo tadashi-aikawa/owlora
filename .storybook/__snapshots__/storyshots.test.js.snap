@@ -159,6 +159,12 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -473,6 +479,12 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -4101,6 +4113,12 @@ exports[`Storyshots DailyCard Milestone 1`] = `
         </div>
         <div
           className="ui pink message"
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
         >
           <div
             className="content"
@@ -4822,6 +4840,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -5342,6 +5366,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -5862,6 +5892,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -6382,6 +6418,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui pink message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
           >
             <div
               className="content"
@@ -6916,6 +6958,12 @@ exports[`Storyshots DailyCard Summary 1`] = `
         </div>
         <div
           className="ui pink message"
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
         >
           <div
             className="content"
@@ -7423,6 +7471,33 @@ exports[`Storyshots Icebox Summary 1`] = `
       <div
         className="content"
       >
+        <div
+          className="ui pink message"
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="header"
+            >
+              <span>
+                Milestone
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui horizontal divider"
+        >
+          3
+           Tasks
+        </div>
         <div
           className="ui feed"
         >

@@ -15,14 +15,8 @@ import {TaskFeeds} from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
 import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
+import Milestone from './Milestone';
 
-
-const Milestone = ({name}: { name: string}) =>
-    <Message color="pink">
-        <Message.Content>
-            <Message.Header><Emojify>{name}</Emojify></Message.Header>
-        </Message.Content>
-    </Message>;
 
 const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
     props: DailyCardProps, estimatedTasks: Task[], freeMinutes: number, isOffTime: boolean
@@ -87,7 +81,7 @@ export interface DailyCardProps {
 
 
 @DropTarget(
-    'task-feed',
+    'task',
     {
         drop(props: DailyCardProps, monitor) {
             if (monitor.didDrop()) {
@@ -156,7 +150,12 @@ export default class extends Component<DailyCardProps> {
                         </Message.Content>
                     </Message>
                     {this.props.tasks.filter(t => t.isMilestone)
-                        .map(t => <Milestone key={t.id} name={t.name}/>)}
+                        .map(t => <Milestone key={t.id}
+                                             id={t.id}
+                                             name={t.name}
+                                             date={t.dueDate}
+                                             onUpdate={this.props.onUpdateTask}
+                        />)}
                     <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
                     <div style={
                         this.props.appearance === CardAppearance.DETAIL ?

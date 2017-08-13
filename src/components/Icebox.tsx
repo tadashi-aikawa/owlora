@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Component} from 'react';
 import * as _ from 'lodash';
-import {Card, Dimmer, Icon, Label, Segment, Statistic} from 'semantic-ui-react';
+import {Divider, Card, Dimmer, Icon, Label, Segment, Statistic} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
@@ -9,6 +9,7 @@ import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
+import Milestone from './Milestone';
 
 
 export interface IceboxProps {
@@ -25,7 +26,7 @@ export interface IceboxProps {
 }
 
 @DropTarget(
-    'task-feed',
+    'task',
     {
         drop(props: IceboxProps, monitor, component) {
             if (monitor.didDrop()) {
@@ -74,6 +75,14 @@ export default class extends Component<IceboxProps> {
                     </Statistic>
                 </Segment>
                 <Card.Content>
+                    {this.props.tasks.filter(t => t.isMilestone)
+                        .map(t => <Milestone key={t.id}
+                                             id={t.id}
+                                             name={t.name}
+                                             date={t.dueDate}
+                                             onUpdate={this.props.onUpdateTask}
+                        />)}
+                    <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
                     <TaskFeeds tasks={estimatedTasks}
                                taskSortField={this.props.taskSortField}
                                taskOrder={this.props.taskOrder}
