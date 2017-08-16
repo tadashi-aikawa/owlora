@@ -158,7 +158,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -478,7 +478,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -4112,7 +4112,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           </div>
         </div>
         <div
-          className="ui pink message"
+          className="ui purple message"
           style={
             Object {
               "cursor": "move",
@@ -4839,7 +4839,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -5365,7 +5365,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -5891,7 +5891,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -6417,7 +6417,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             </div>
           </div>
           <div
-            className="ui pink message"
+            className="ui purple message"
             style={
               Object {
                 "cursor": "move",
@@ -6957,7 +6957,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
           </div>
         </div>
         <div
-          className="ui pink message"
+          className="ui purple message"
           style={
             Object {
               "cursor": "move",
@@ -7472,7 +7472,7 @@ exports[`Storyshots Icebox Summary 1`] = `
         className="content"
       >
         <div
-          className="ui pink message"
+          className="ui blue message"
           style={
             Object {
               "cursor": "move",

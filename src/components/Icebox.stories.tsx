@@ -56,7 +56,7 @@ storiesOf('Icebox', module)
                             icon: ":japan:",
                             color: "rgba(200, 50, 50, 0.1)"
                         }),
-                        createTask({id: 4, name: 'Milestone', dayOrder: 4, isMilestone: true}),
+                        createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "blue", isMilestone: true}),
                     ]
                 )}
                 width={number('width', 350)}

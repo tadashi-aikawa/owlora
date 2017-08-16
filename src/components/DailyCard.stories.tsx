@@ -50,7 +50,12 @@ storiesOf('DailyCard', module)
                        'Tasks',
                        [
                            createTask({id: 1, name: 'Task1', dayOrder: 3, icon: ":person_with_pouting_face:"}),
-                           createTask({id: 2, name: 'Task2 this is long name task hogehoge!!', dayOrder: 2, icon: ":whale:"}),
+                           createTask({
+                               id: 2,
+                               name: 'Task2 this is long name task hogehoge!!',
+                               dayOrder: 2,
+                               icon: ":whale:"
+                           }),
                            createTask({
                                id: 3,
                                name: 'Task3',
@@ -58,7 +63,7 @@ storiesOf('DailyCard', module)
                                icon: ":japan:",
                                color: "rgba(200, 50, 50, 0.1)"
                            }),
-                           createTask({id: 4, name: 'Milestone', dayOrder: 4, isMilestone: true}),
+                           createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
                        ]
                    )}
                    appearance={select('Appearance', CardAppearance.toObject, CardAppearance.DETAIL)}
@@ -74,7 +79,7 @@ storiesOf('DailyCard', module)
                        minutesToUsePerSpecificDays={{}}
                        tasks={[
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
-                           createTask({id: 2, name: 'Milestone', dayOrder: 2, isMilestone: true}),
+                           createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
                        appearance={select('Appearance (overview)', CardAppearance.toObject, CardAppearance.OVERVIEW)}
                        onUpdateTask={action}
@@ -86,7 +91,7 @@ storiesOf('DailyCard', module)
                        minutesToUsePerSpecificDays={{}}
                        tasks={[
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
-                           createTask({id: 2, name: 'Milestone', dayOrder: 2, isMilestone: true}),
+                           createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
                        appearance={select('Appearance (detail)', CardAppearance.toObject, CardAppearance.DETAIL)}
                        onUpdateTask={action}
@@ -98,7 +103,14 @@ storiesOf('DailyCard', module)
             createTask({id: 1, name: 'Task1', projectName: 'PJ2', dayOrder: 3, estimatedMinutes: 10, icon: ":bow:"}),
             createTask({id: 2, name: 'Task2', projectName: 'PJ1', dayOrder: 2, estimatedMinutes: 50, icon: ":whale:"}),
             createTask({id: 3, name: 'Task3', projectName: 'PJ3', dayOrder: 1, estimatedMinutes: 20, icon: ":whale:"}),
-            createTask({id: 4, name: 'Milestone', dayOrder: 4, estimatedMinutes: 100, isMilestone: true}),
+            createTask({
+                id: 4,
+                name: 'Milestone',
+                dayOrder: 4,
+                estimatedMinutes: 100,
+                color: "purple",
+                isMilestone: true
+            }),
         ];
 
         return (
@@ -226,6 +238,7 @@ storiesOf('DailyCard', module)
                            id: 1,
                            name: ":beer: Party!!",
                            dayOrder: 1,
+                           color: text("task.color", "purple"),
                            isMilestone: boolean("task.isMilestone", true)
                        })]}
                        appearance={CardAppearance.DETAIL}
