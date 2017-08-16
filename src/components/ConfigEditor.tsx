@@ -5,6 +5,21 @@ import CommonConfig from '../models/CommonConfig';
 import Project from '../models/Project';
 import Label from '../models/Label';
 
+const MILESTONES_PLACEHOLDER = `By yaml
+---------------
+
+- color: green
+  condition:
+    regexp: vacation
+    labelIdsOr: [2148194362]
+- color: red
+  condition:
+    labelIdsOr: [2148194362]
+- color: purple
+  condition:
+    projectIdsOr: [153016633]
+`;
+
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     projects: Project[],
@@ -15,7 +30,7 @@ export interface ConfigEditorProps {
 export interface ConfigEditorState {
     todoistToken: string;
     estimatedLabels: string;
-    milestoneLabel: number;
+    milestones: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
     iconsByProject: string;
@@ -29,7 +44,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
     state: ConfigEditorState = {
         todoistToken: this.props.defaultConfig.todoistToken,
         estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
-        milestoneLabel: this.props.defaultConfig.milestoneLabel,
+        milestones: this.props.defaultConfig.milestones.yaml,
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
         iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
@@ -49,7 +64,11 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                         safeLoad(this.state.estimatedLabels) : {},
                     yaml: this.state.estimatedLabels,
                 },
-                milestoneLabel: this.state.milestoneLabel && Number(this.state.milestoneLabel),
+                milestones: {
+                    array: this.state.milestones ?
+                        safeLoad(this.state.milestones) : {},
+                    yaml: this.state.milestones,
+                },
                 minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
                 minutesToUsePerSpecificDays: {
                     dict: this.state.minutesToUsePerSpecificDays ?
@@ -94,12 +113,13 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        autoHeight
                         />
                     </Form.Field>
-                    <Form.Field inline>
-                        <label><Icon name="pencil"/>Milestone label id</label>
-                        <Form.Input type="number"
-                                    name="milestoneLabel"
-                                    value={this.state.milestoneLabel}
-                                    onChange={this.handleChange}
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>Milestones</label>
+                        <Form.TextArea name="milestones"
+                                       placeholder={MILESTONES_PLACEHOLDER}
+                                       value={this.state.milestones}
+                                       onChange={this.handleChange}
+                                       autoHeight
                         />
                     </Form.Field>
                     <Accordion styled panels={[{

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Component} from 'react';
 import * as _ from 'lodash';
-import {Divider, Card, Dimmer, Icon, Label, Segment, Statistic} from 'semantic-ui-react';
+import {Divider, Card, Dimmer, Icon, Label, Segment, Statistic, SemanticCOLORS} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
@@ -79,6 +79,7 @@ export default class extends Component<IceboxProps> {
                         .map(t => <Milestone key={t.id}
                                              id={t.id}
                                              name={t.name}
+                                             color={t.color as SemanticCOLORS}
                                              date={t.dueDate}
                                              onUpdate={this.props.onUpdateTask}
                         />)}

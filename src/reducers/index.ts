@@ -25,6 +25,10 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
             dict: {},
             yaml: ''
         },
+        milestones: {
+            array: [],
+            yaml: ''
+        },
         minutesToUsePerSpecificDays: {
             dict: {},
             yaml: ''

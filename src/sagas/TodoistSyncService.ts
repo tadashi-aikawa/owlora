@@ -6,7 +6,7 @@ import {
     colorsByTaskNameRegexpSelector,
     estimatedLabelsSelector,
     iconsByProjectSelector,
-    milestoneLabelSelector,
+    milestonesSelector,
     todoistTokenSelector,
 } from '../reducers/selectors';
 import {call, select} from 'redux-saga/effects';
@@ -19,6 +19,7 @@ import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
 import Repetition from '../constants/Repetition';
+import MilestoneConfig, {Condition} from '../models/MilestoneConfig';
 
 const toRepetition = (dateString: string): Repetition => {
     if (!dateString) {
@@ -44,7 +45,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
     // This method returns Dictionary<Task>
     // TODO: Argument TodoistProject[] have to be removed
     const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
-    const milestoneLabel: number = yield select(milestoneLabelSelector);
+    const milestones: MilestoneConfig[] = yield select(milestonesSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
     const colorsByTaskNameRegexp: Dictionary<string> = Object.assign(
         yield select(colorsByTaskNameRegexpSelector),
@@ -54,23 +55,32 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
     const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
 
     return _(todoistTasks)
-        .filter(x =>
-            !x.checked &&
-            x.labels.some(l => l in estimatedLabels || l === milestoneLabel)
-        )
+        .filter(x => !x.checked)
         .orderBy(x => x.project_id)
-        .map(x => ({
-            id: x.id,
-            name: x.content,
-            projectName: projectsById[String(x.project_id)].name,
-            estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
-            dueDate: x.due_date_utc && moment(x.due_date_utc),
-            repetition: toRepetition(x.date_string),
-            icon: iconsByProject[String(x.project_id)] || ":white_circle:",
-            dayOrder: x.day_order,
-            isMilestone: _.includes(x.labels, milestoneLabel),
-            color: _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
-        }))
+        .map(x => {
+            const matched: MilestoneConfig = _.find(
+                milestones,
+                (m: MilestoneConfig) => _.every([
+                    !m.condition.regexp || x.content.match(new RegExp(m.condition.regexp)),
+                    !m.condition.labelIdsOr || _.intersection(x.labels, m.condition.labelIdsOr).length > 0,
+                    !m.condition.projectIdsOr || _.includes(m.condition.projectIdsOr, x.project_id)
+                ])
+            );
+            return {
+                id: x.id,
+                name: x.content,
+                projectName: projectsById[String(x.project_id)].name,
+                estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
+                dueDate: x.due_date_utc && moment(x.due_date_utc),
+                repetition: toRepetition(x.date_string),
+                icon: iconsByProject[String(x.project_id)] || ":white_circle:",
+                dayOrder: x.day_order,
+                isMilestone: !!matched,
+                color: !!matched ? matched.color :
+                    _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+            }
+        })
+        .filter(x => x.estimatedMinutes || x.isMilestone)
         .keyBy(x => x.id)
         .value();
 }

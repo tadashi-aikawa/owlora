@@ -3,7 +3,10 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import Emojify from 'react-emojione';
-import {Divider, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic} from 'semantic-ui-react';
+import {
+    Divider, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic,
+    SemanticCOLORS
+} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -153,6 +156,7 @@ export default class extends Component<DailyCardProps> {
                         .map(t => <Milestone key={t.id}
                                              id={t.id}
                                              name={t.name}
+                                             color={t.color as SemanticCOLORS}
                                              date={t.dueDate}
                                              onUpdate={this.props.onUpdateTask}
                         />)}

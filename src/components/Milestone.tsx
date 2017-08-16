@@ -2,7 +2,7 @@ import * as React from 'react';
 import {findDOMNode} from 'react-dom';
 import {Component} from 'react';
 import Emojify from 'react-emojione';
-import {Message} from 'semantic-ui-react';
+import {Message, SemanticCOLORS} from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
@@ -12,6 +12,7 @@ export interface MilestoneProps {
     id: number;
     name: string;
     date: Moment;
+    color: SemanticCOLORS;
 
     connectDragSource?: Function;
     isDragging?: boolean;
@@ -50,7 +51,7 @@ export interface MilestoneProps {
 export default class extends Component<MilestoneProps> {
     render() {
         return (
-            <Message color="pink" ref={node => this.props.connectDragSource(findDOMNode(this))} style={{
+            <Message color={this.props.color} ref={node => this.props.connectDragSource(findDOMNode(this))} style={{
                 cursor: 'move',
                 opacity: this.props.isDragging ? 0.1 : 1
             }}>
