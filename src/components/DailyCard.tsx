@@ -2,10 +2,17 @@ import * as React from 'react';
 import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
-import Emojify from 'react-emojione';
 import {
-    Divider, Card, Dimmer, Icon, Label, Message, Popup, Progress, Segment, Statistic,
-    SemanticCOLORS
+    Card,
+    Dimmer,
+    Divider,
+    Icon,
+    Message,
+    Popup,
+    Progress,
+    Segment,
+    SemanticCOLORS,
+    Statistic
 } from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
@@ -15,32 +22,21 @@ import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
-import ImageOrEmoji from './ImageOrEmoji';
 import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
+import EstimateIconGroup from './EstimateIconGroup';
 
 
 const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
     props: DailyCardProps, estimatedTasks: Task[], freeMinutes: number, isOffTime: boolean
 }) =>
     <Segment inverted style={{margin: 0}}>
-        <Popup
-            flowing
-            trigger={
-                <Statistic.Group widths='one' size='mini' inverted
-                                 color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}
-                                 style={{paddingBottom: 10}}>
-                    <Statistic value={props.date.format(DATE_FORMAT)}/>
-                </Statistic.Group>
-            }
-            content={
-                <TaskFeeds tasks={estimatedTasks}
-                           taskSortField={props.taskSortField}
-                           taskOrder={props.taskOrder}
-                />
-            }
-        />
+        <Statistic.Group widths='one' size='mini' inverted
+                         color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}
+                         style={{paddingBottom: 10}}>
+            <Statistic value={props.date.format(DATE_FORMAT)}/>
+        </Statistic.Group>
         {
             isOffTime ?
                 <Statistic.Group widths='one' size='tiny' inverted
@@ -160,7 +156,21 @@ export default class extends Component<DailyCardProps> {
                                              date={t.dueDate}
                                              onUpdate={this.props.onUpdateTask}
                         />)}
-                    <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
+                    <Popup
+                        flowing
+                        position="bottom center"
+                        openOnTriggerMouseEnter={
+                            estimatedTasks.length > 0 && this.props.appearance === CardAppearance.OVERVIEW
+                        }
+                        trigger={
+                            <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
+                        }
+                    >
+                        <TaskFeeds tasks={estimatedTasks}
+                                   taskSortField={this.props.taskSortField}
+                                   taskOrder={this.props.taskOrder}
+                        />
+                    </Popup>
                     <div style={
                         this.props.appearance === CardAppearance.DETAIL ?
                             {
@@ -185,35 +195,9 @@ export default class extends Component<DailyCardProps> {
                     </div>
                 </Card.Content>
                 <Card.Content extra>
-                    {
-                        _(estimatedTasks)
-                            .groupBy(t => t.icon)
-                            .map((tasks: Task[]) => ({
-                                icon: tasks[0].icon,
-                                minutes: _.sumBy(tasks, t => t.estimatedMinutes),
-                                tasks: tasks
-                            }))
-                            .orderBy(x => x.minutes, 'desc')
-                            .map(x => (
-                                <Popup
-                                    flowing
-                                    key={x.icon}
-                                    trigger={
-                                        <span style={{marginRight: 10}}>
-                                            <ImageOrEmoji src={x.icon}/>
-                                            <Label color='teal' circular>{x.minutes}</Label>
-                                        </span>
-                                    }
-                                    content={
-                                        <TaskFeeds tasks={x.tasks}
-                                                   taskSortField={this.props.taskSortField}
-                                                   taskOrder={this.props.taskOrder}
-                                        />
-                                    }
-                                />
-                            ))
-                            .value()
-                    }
+                    <EstimateIconGroup tasks={estimatedTasks}
+                                       taskSortFieldInPopup={this.props.taskSortField}
+                                       taskOrderInPopup={this.props.taskOrder}/>
                 </Card.Content>
             </Card>
         );

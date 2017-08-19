@@ -89,11 +89,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -180,6 +175,11 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -222,7 +222,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -284,50 +284,84 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -409,11 +443,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -500,6 +529,11 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -542,7 +576,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -604,50 +638,84 @@ exports[`Storyshots DailyCard Appearance 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -746,11 +814,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -816,6 +879,11 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -858,7 +926,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -920,50 +988,84 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -1045,11 +1147,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -1115,6 +1212,11 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -1157,7 +1259,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -1219,50 +1321,84 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -1344,11 +1480,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -1414,6 +1545,11 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -1456,7 +1592,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -1518,50 +1654,84 @@ exports[`Storyshots DailyCard Feed color 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -1660,11 +1830,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -1730,6 +1895,11 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -1772,7 +1942,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -1834,50 +2004,84 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              15
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -1959,11 +2163,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -2029,6 +2228,11 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -2071,6 +2275,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     className="ui avatar image"
                     height={undefined}
                     src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                    style={undefined}
                     width={undefined}
                   />
                 </div>
@@ -2113,30 +2318,70 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
-              }
-            }
-          >
-            <img
-              alt={undefined}
-              className="ui avatar image"
-              height={undefined}
-              src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
-              width={undefined}
-            />
+          <span>
             <div
-              className="ui teal circular label"
+              onBlur={[Function]}
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
             >
-              15
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <img
+                    alt={undefined}
+                    className="ui avatar image"
+                    height={undefined}
+                    src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                    style={
+                      Object {
+                        "height": "28px",
+                        "width": "28px",
+                      }
+                    }
+                    width={undefined}
+                  />
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -2235,11 +2480,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -2305,6 +2545,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -2347,7 +2592,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -2409,50 +2654,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              60
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  60
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -2534,11 +2813,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -2604,6 +2878,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -2646,7 +2925,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -2708,50 +2987,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              61
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  61
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -2833,11 +3146,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -2903,6 +3211,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -2945,7 +3258,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -3007,50 +3320,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              80
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  80
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -3132,11 +3479,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -3202,6 +3544,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -3244,7 +3591,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -3306,50 +3653,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              81
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  81
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -3431,11 +3812,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -3501,6 +3877,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -3543,7 +3924,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -3605,50 +3986,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              100
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  100
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -3730,11 +4145,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
         >
           <div
             className="ui red mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -3800,6 +4210,11 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             1
              Tasks
@@ -3842,7 +4257,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1137.5px -325px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -3904,50 +4319,84 @@ exports[`Storyshots DailyCard Life status 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1137.5px -325px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":innocent:"
               >
-                😇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              101
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  101
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -4043,11 +4492,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
       >
         <div
           className="ui olive mini inverted one statistics"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           style={
             Object {
               "paddingBottom": 10,
@@ -4159,6 +4603,11 @@ exports[`Storyshots DailyCard Milestone 1`] = `
         </div>
         <div
           className="ui horizontal divider"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           0
            Tasks
@@ -4181,7 +4630,9 @@ exports[`Storyshots DailyCard Milestone 1`] = `
       </div>
       <div
         className="extra content"
-      />
+      >
+        <span />
+      </div>
     </div>
   </div>
 </div>
@@ -4273,11 +4724,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
       >
         <div
           className="ui teal mini inverted one statistics"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           style={
             Object {
               "paddingBottom": 10,
@@ -4341,6 +4787,11 @@ exports[`Storyshots DailyCard Offtime 1`] = `
         </div>
         <div
           className="ui horizontal divider"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           0
            Tasks
@@ -4363,7 +4814,9 @@ exports[`Storyshots DailyCard Offtime 1`] = `
       </div>
       <div
         className="extra content"
-      />
+      >
+        <span />
+      </div>
     </div>
   </div>
 </div>
@@ -4455,11 +4908,6 @@ exports[`Storyshots DailyCard Past 1`] = `
       >
         <div
           className="ui olive mini inverted one statistics"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           style={
             Object {
               "paddingBottom": 10,
@@ -4525,6 +4973,11 @@ exports[`Storyshots DailyCard Past 1`] = `
         </div>
         <div
           className="ui horizontal divider"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           1
            Tasks
@@ -4567,7 +5020,7 @@ exports[`Storyshots DailyCard Past 1`] = `
                     onClick={undefined}
                     style={
                       Object {
-                        "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                         "backgroundPosition": "-1137.5px -325px",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "1397px 1397px",
@@ -4629,50 +5082,84 @@ exports[`Storyshots DailyCard Past 1`] = `
       <div
         className="extra content"
       >
-        <span
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "marginRight": 10,
+        <span>
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-1137.5px -325px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":innocent:"
             >
-              😇
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-995.3125px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":innocent:"
+                  >
+                    😇
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
         </span>
       </div>
@@ -4770,11 +5257,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -4861,6 +5343,11 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             3
              Tasks
@@ -4903,7 +5390,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -4983,7 +5470,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1170px -585px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -5063,7 +5550,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -5125,96 +5612,162 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-617.5px -812.5px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":whale:"
               >
-                🐳
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              70
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-540.3125px -710.9375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":whale:"
+                    >
+                      🐳
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  70
+                </div>
+              </div>
             </div>
-          </span>
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1170px -585px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":bow:"
               >
-                🙇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              10
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1023.75px -511.875px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":bow:"
+                    >
+                      🙇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  10
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -5296,11 +5849,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -5387,6 +5935,11 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             3
              Tasks
@@ -5429,7 +5982,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -5509,7 +6062,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -5589,7 +6142,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1170px -585px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -5651,96 +6204,162 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-617.5px -812.5px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":whale:"
               >
-                🐳
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              70
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-540.3125px -710.9375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":whale:"
+                    >
+                      🐳
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  70
+                </div>
+              </div>
             </div>
-          </span>
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1170px -585px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":bow:"
               >
-                🙇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              10
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1023.75px -511.875px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":bow:"
+                    >
+                      🙇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  10
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -5822,11 +6441,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -5913,6 +6527,11 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             3
              Tasks
@@ -5955,7 +6574,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6035,7 +6654,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6115,7 +6734,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1170px -585px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6177,96 +6796,162 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-617.5px -812.5px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":whale:"
               >
-                🐳
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              70
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-540.3125px -710.9375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":whale:"
+                    >
+                      🐳
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  70
+                </div>
+              </div>
             </div>
-          </span>
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1170px -585px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":bow:"
               >
-                🙇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              10
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1023.75px -511.875px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":bow:"
+                    >
+                      🙇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  10
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -6348,11 +7033,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
         >
           <div
             className="ui olive mini inverted one statistics"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
             style={
               Object {
                 "paddingBottom": 10,
@@ -6439,6 +7119,11 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             3
              Tasks
@@ -6481,7 +7166,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-1170px -585px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6561,7 +7246,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6641,7 +7326,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       onClick={undefined}
                       style={
                         Object {
-                          "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                           "backgroundPosition": "-617.5px -812.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
@@ -6703,96 +7388,162 @@ exports[`Storyshots DailyCard Sort 1`] = `
         <div
           className="extra content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-617.5px -812.5px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":whale:"
               >
-                🐳
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              70
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-540.3125px -710.9375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":whale:"
+                    >
+                      🐳
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  70
+                </div>
+              </div>
             </div>
-          </span>
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "marginRight": 10,
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
               }
-            }
-          >
-            <span>
-              <span
-                onClick={undefined}
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                    "backgroundPosition": "-1170px -585px",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "1397px 1397px",
-                    "display": "inline-block",
-                    "fontSize": "inherit",
-                    "height": 32,
-                    "imageRendering": "optimizeQuality",
-                    "lineHeight": "normal",
-                    "margin": "0 .15em",
-                    "position": "relative",
-                    "textIndent": "-9999em",
-                    "top": -3,
-                    "verticalAlign": "middle",
-                    "width": 32,
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
                   }
                 }
-                title=":bow:"
               >
-                🙇
-              </span>
-            </span>
-            <div
-              className="ui teal circular label"
-              onClick={[Function]}
-            >
-              10
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1023.75px -511.875px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":bow:"
+                    >
+                      🙇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  10
+                </div>
+              </div>
             </div>
           </span>
         </div>
@@ -6888,11 +7639,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
       >
         <div
           className="ui olive mini inverted one statistics"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
           style={
             Object {
               "paddingBottom": 10,
@@ -6979,6 +7725,11 @@ exports[`Storyshots DailyCard Summary 1`] = `
         </div>
         <div
           className="ui horizontal divider"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           3
            Tasks
@@ -7021,7 +7772,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     onClick={undefined}
                     style={
                       Object {
-                        "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                         "backgroundPosition": "-292.5px -1170px",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "1397px 1397px",
@@ -7101,7 +7852,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     onClick={undefined}
                     style={
                       Object {
-                        "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                         "backgroundPosition": "-617.5px -812.5px",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "1397px 1397px",
@@ -7181,7 +7932,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     onClick={undefined}
                     style={
                       Object {
-                        "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                         "backgroundPosition": "-1137.5px -32.5px",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "1397px 1397px",
@@ -7243,142 +7994,240 @@ exports[`Storyshots DailyCard Summary 1`] = `
       <div
         className="extra content"
       >
-        <span
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "marginRight": 10,
+        <span>
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-292.5px -1170px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":person_with_pouting_face:"
             >
-              🙎
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-255.9375px -1023.75px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":person_with_pouting_face:"
+                  >
+                    🙎
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
-        </span>
-        <span
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "marginRight": 10,
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-617.5px -812.5px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":whale:"
             >
-              🐳
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-540.3125px -710.9375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":whale:"
+                  >
+                    🐳
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
-        </span>
-        <span
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "marginRight": 10,
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-1137.5px -32.5px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":japan:"
             >
-              🗾
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-995.3125px -28.4375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":japan:"
+                  >
+                    🗾
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
         </span>
       </div>
@@ -7525,7 +8374,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                   onClick={undefined}
                   style={
                     Object {
-                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                       "backgroundPosition": "-292.5px -1170px",
                       "backgroundRepeat": "no-repeat",
                       "backgroundSize": "1397px 1397px",
@@ -7605,7 +8454,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                   onClick={undefined}
                   style={
                     Object {
-                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                       "backgroundPosition": "-617.5px -812.5px",
                       "backgroundRepeat": "no-repeat",
                       "backgroundSize": "1397px 1397px",
@@ -7685,7 +8534,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                   onClick={undefined}
                   style={
                     Object {
-                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
+                      "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
                       "backgroundPosition": "-1137.5px -32.5px",
                       "backgroundRepeat": "no-repeat",
                       "backgroundSize": "1397px 1397px",
@@ -7746,127 +8595,240 @@ exports[`Storyshots Icebox Summary 1`] = `
       <div
         className="extra content"
       >
-        <span
-          style={
-            Object {
-              "marginRight": 10,
+        <span>
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-292.5px -1170px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":person_with_pouting_face:"
             >
-              🙎
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-255.9375px -1023.75px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":person_with_pouting_face:"
+                  >
+                    🙎
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
-        </span>
-        <span
-          style={
-            Object {
-              "marginRight": 10,
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-617.5px -812.5px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":whale:"
             >
-              🐳
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-540.3125px -710.9375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":whale:"
+                  >
+                    🐳
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
-        </span>
-        <span
-          style={
-            Object {
-              "marginRight": 10,
+          <div
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "display": "inline-block",
+              }
             }
-          }
-        >
-          <span>
-            <span
-              onClick={undefined}
+          >
+            <div
               style={
                 Object {
-                  "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                  "backgroundPosition": "-1137.5px -32.5px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1397px 1397px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 32,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 32,
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                  "marginTop": 2,
                 }
               }
-              title=":japan:"
             >
-              🗾
-            </span>
-          </span>
-          <div
-            className="ui teal circular label"
-            onClick={[Function]}
-          >
-            15
+              <div
+                style={
+                  Object {
+                    "height": 28,
+                    "width": 28,
+                  }
+                }
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-995.3125px -28.4375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1222.375px 1222.375px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":japan:"
+                  >
+                    🗾
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ui teal label"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "borderRadius": 10,
+                    "marginTop": 4,
+                    "paddingBottom": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                15
+              </div>
+            </div>
           </div>
         </span>
       </div>

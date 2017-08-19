@@ -1,15 +1,15 @@
 import * as React from 'react';
 import {Component} from 'react';
 import * as _ from 'lodash';
-import {Divider, Card, Dimmer, Icon, Label, Segment, Statistic, SemanticCOLORS} from 'semantic-ui-react';
+import {Card, Dimmer, Divider, Icon, Segment, SemanticCOLORS, Statistic} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import {TaskFeeds} from "./TaskFeeds";
-import ImageOrEmoji from './ImageOrEmoji';
 import Milestone from './Milestone';
+import EstimateIconGroup from './EstimateIconGroup';
 
 
 export interface IceboxProps {
@@ -90,22 +90,9 @@ export default class extends Component<IceboxProps> {
                                onUpdateTask={this.props.onUpdateTask}/>
                 </Card.Content>
                 <Card.Content extra>
-                    {
-                        _(estimatedTasks)
-                            .groupBy(t => t.icon)
-                            .map((tasks: Task[]) => ({
-                                icon: tasks[0].icon,
-                                minutes: _.sumBy(tasks, t => t.estimatedMinutes)
-                            }))
-                            .orderBy(x => x.minutes, 'desc')
-                            .map(x => (
-                                <span key={x.icon} style={{marginRight: 10}}>
-                                    <ImageOrEmoji src={x.icon}/>
-                                    <Label color='teal' circular>{x.minutes}</Label>
-                                </span>
-                            ))
-                            .value()
-                    }
+                    <EstimateIconGroup tasks={estimatedTasks}
+                                       taskSortFieldInPopup={this.props.taskSortField}
+                                       taskOrderInPopup={this.props.taskOrder}/>
                 </Card.Content>
             </Card>
         );
