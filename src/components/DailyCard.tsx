@@ -153,6 +153,7 @@ export default class extends Component<DailyCardProps> {
                                              id={t.id}
                                              name={t.name}
                                              color={t.color as SemanticCOLORS}
+                                             size={t.size}
                                              date={t.dueDate}
                                              onUpdate={this.props.onUpdateTask}
                         />)}

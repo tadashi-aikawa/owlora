@@ -14,6 +14,7 @@ import DailyCard from '../components/DailyCard';
 import {boolean, number, object, select, text, withKnobs} from '@storybook/addon-knobs';
 import DnDWrapper from './DnDWrapper';
 import CardAppearance from '../constants/CardAppearance';
+import Size from '../constants/Size';
 
 const DnDWrapperDecorator = (storyFn) => <DnDWrapper>{storyFn()}</DnDWrapper>;
 
@@ -239,6 +240,7 @@ storiesOf('DailyCard', module)
                            name: ":beer: Party!!",
                            dayOrder: 1,
                            color: text("task.color", "purple"),
+                           size: text("task.size", Size.LARGE),
                            isMilestone: boolean("task.isMilestone", true)
                        })]}
                        appearance={CardAppearance.DETAIL}

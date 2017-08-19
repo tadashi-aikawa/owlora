@@ -1,5 +1,6 @@
 import {Moment} from 'moment';
 import Repetition from '../constants/Repetition';
+import Size from '../constants/Size';
 
 interface Task {
     id: number;
@@ -13,6 +14,7 @@ interface Task {
     dayOrder: number;
     color: string;
     isMilestone: boolean;
+    size: Size;
 }
 
 interface TaskUpdateParameter {

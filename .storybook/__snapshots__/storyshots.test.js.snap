@@ -4556,7 +4556,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           </div>
         </div>
         <div
-          className="ui purple message"
+          className="ui purple large message"
           style={
             Object {
               "cursor": "move",
@@ -4575,13 +4575,13 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                   onClick={undefined}
                   style={
                     Object {
-                      "backgroundImage": "url(https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png)",
-                      "backgroundPosition": "-682.5px -650px",
+                      "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                      "backgroundPosition": "-639.84375px -609.375px",
                       "backgroundRepeat": "no-repeat",
-                      "backgroundSize": "1397px 1397px",
+                      "backgroundSize": "1309.6875px 1309.6875px",
                       "display": "inline-block",
                       "fontSize": "inherit",
-                      "height": 32,
+                      "height": 30,
                       "imageRendering": "optimizeQuality",
                       "lineHeight": "normal",
                       "margin": "0 .15em",
@@ -4589,7 +4589,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                       "textIndent": "-9999em",
                       "top": -3,
                       "verticalAlign": "middle",
-                      "width": 32,
+                      "width": 30,
                     }
                   }
                   title=":beer:"

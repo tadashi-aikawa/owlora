@@ -1,18 +1,19 @@
 import * as React from 'react';
-import {findDOMNode} from 'react-dom';
 import {Component} from 'react';
+import {findDOMNode} from 'react-dom';
 import Emojify from 'react-emojione';
 import {Message, SemanticCOLORS} from 'semantic-ui-react';
-import {Moment, now} from 'moment';
+import {Moment} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
-
+import Size from '../constants/Size';
 
 export interface MilestoneProps {
     id: number;
     name: string;
     date: Moment;
     color: SemanticCOLORS;
+    size: Size;
 
     connectDragSource?: Function;
     isDragging?: boolean;
@@ -51,12 +52,22 @@ export interface MilestoneProps {
 export default class extends Component<MilestoneProps> {
     render() {
         return (
-            <Message color={this.props.color} ref={node => this.props.connectDragSource(findDOMNode(this))} style={{
-                cursor: 'move',
-                opacity: this.props.isDragging ? 0.1 : 1
-            }}>
+            <Message color={this.props.color}
+                     size={this.props.size}
+                     ref={node => this.props.connectDragSource(findDOMNode(this))}
+                     style={{
+                         cursor: 'move',
+                         opacity: this.props.isDragging ? 0.1 : 1
+                     }}>
                 <Message.Content>
-                    <Message.Header><Emojify>{this.props.name}</Emojify></Message.Header>
+                    <Message.Header>
+                        <Emojify style={{
+                            width: Size.toEmojiSize[this.props.size],
+                            height: Size.toEmojiSize[this.props.size]
+                        }}>
+                            {this.props.name}
+                        </Emojify>
+                    </Message.Header>
                 </Message.Content>
             </Message>
         );

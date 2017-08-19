@@ -13,6 +13,7 @@ const MILESTONES_PLACEHOLDER = `By yaml
     regexp: vacation
     labelIdsOr: [2148194362]
 - color: red
+  size: huge  # (mini | tiny | small(default) | large | big | huge | massive)
   condition:
     labelIdsOr: [2148194362]
 - color: purple

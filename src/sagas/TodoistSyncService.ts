@@ -19,7 +19,8 @@ import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
 import Repetition from '../constants/Repetition';
-import MilestoneConfig, {Condition} from '../models/MilestoneConfig';
+import MilestoneConfig from '../models/MilestoneConfig';
+import Size from '../constants/Size';
 
 const toRepetition = (dateString: string): Repetition => {
     if (!dateString) {
@@ -78,6 +79,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 isMilestone: !!matched,
                 color: !!matched ? matched.color :
                     _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+                size: !!matched ? (matched.size || Size.SMALL) : Size.SMALL,
             }
         })
         .filter(x => x.estimatedMinutes || x.isMilestone)
