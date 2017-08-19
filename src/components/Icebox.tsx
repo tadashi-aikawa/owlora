@@ -92,7 +92,8 @@ export default class extends Component<IceboxProps> {
                 <Card.Content extra>
                     <EstimateIconGroup tasks={estimatedTasks}
                                        taskSortFieldInPopup={this.props.taskSortField}
-                                       taskOrderInPopup={this.props.taskOrder}/>
+                                       taskOrderInPopup={this.props.taskOrder}
+                                       onUpdateTask={this.props.onUpdateTask}/>
                 </Card.Content>
             </Card>
         );
