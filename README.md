@@ -1,6 +1,6 @@
 # Owlora
 
-![](./owlora.png)
+<img src="./owlora.png" width="200px" />
 
 Task management tool in which can medium term.
 

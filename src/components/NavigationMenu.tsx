@@ -16,6 +16,8 @@ import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 
+const LOGO = require('../../owlora.png');
+
 
 const isMobile = () => {
     return window.innerWidth < 1400;
@@ -156,7 +158,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
         return (
             <Menu stackable inverted fixed="top">
                 <Menu.Item>
-                    <img src='https://github.com/tadashi-aikawa/owlora/raw/master/owlora.png'/>
+                    <img src={LOGO}/>
                 </Menu.Item>
                 <Menu.Item>
                     <h2>Owlora</h2>
