@@ -175,14 +175,17 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -529,14 +532,17 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -879,14 +885,17 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -1212,14 +1221,17 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -1545,14 +1557,17 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -1895,14 +1910,17 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -2228,14 +2246,17 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -2545,14 +2566,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -2878,14 +2902,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -3211,14 +3238,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -3544,14 +3574,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -3877,14 +3910,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -4210,14 +4246,17 @@ exports[`Storyshots DailyCard Life status 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            1
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -4603,14 +4642,17 @@ exports[`Storyshots DailyCard Milestone 1`] = `
         </div>
         <div
           className="ui horizontal divider"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
         >
-          0
-           Tasks
+          <span
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            0
+             Tasks
+          </span>
         </div>
         <div
           style={
@@ -4787,14 +4829,17 @@ exports[`Storyshots DailyCard Offtime 1`] = `
         </div>
         <div
           className="ui horizontal divider"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
         >
-          0
-           Tasks
+          <span
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            0
+             Tasks
+          </span>
         </div>
         <div
           style={
@@ -4973,14 +5018,17 @@ exports[`Storyshots DailyCard Past 1`] = `
         </div>
         <div
           className="ui horizontal divider"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
         >
-          1
-           Tasks
+          <span
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            1
+             Tasks
+          </span>
         </div>
         <div
           style={
@@ -5343,14 +5391,17 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            3
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              3
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -5935,14 +5986,17 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            3
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              3
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -6527,14 +6581,17 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            3
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              3
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -7119,14 +7176,17 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui horizontal divider"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
           >
-            3
-             Tasks
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              3
+               Tasks
+            </span>
           </div>
           <div
             style={
@@ -7725,14 +7785,17 @@ exports[`Storyshots DailyCard Summary 1`] = `
         </div>
         <div
           className="ui horizontal divider"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
         >
-          3
-           Tasks
+          <span
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            3
+             Tasks
+          </span>
         </div>
         <div
           style={

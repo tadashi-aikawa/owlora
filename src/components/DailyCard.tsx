@@ -157,13 +157,14 @@ export default class extends Component<DailyCardProps> {
                                              date={t.dueDate}
                                              onUpdate={this.props.onUpdateTask}
                         />)}
+                    <Divider horizontal>
                     <Popup flowing hoverable
                         position="bottom center"
                         openOnTriggerMouseEnter={
                             estimatedTasks.length > 0 && this.props.appearance === CardAppearance.OVERVIEW
                         }
                         trigger={
-                            <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
+                            <span>{estimatedTasks.length} Tasks</span>
                         }
                     >
                         <TaskFeeds tasks={estimatedTasks}
@@ -172,6 +173,7 @@ export default class extends Component<DailyCardProps> {
                                    onUpdateTask={this.props.onUpdateTask}
                         />
                     </Popup>
+                    </Divider>
                     <div style={
                         this.props.appearance === CardAppearance.DETAIL ?
                             {
