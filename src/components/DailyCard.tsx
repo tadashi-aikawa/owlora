@@ -104,6 +104,14 @@ export interface DailyCardProps {
     })
 )
 export default class extends Component<DailyCardProps> {
+    shouldComponentUpdate(nextProps: Readonly<DailyCardProps>) {
+        // For avoid performance issues
+        return !(this.props === nextProps || _.isEqual(
+            _.omit(this.props, ['canDrop']),
+            _.omit(nextProps, ['canDrop']),
+        ))
+    }
+
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
@@ -158,21 +166,21 @@ export default class extends Component<DailyCardProps> {
                                              onUpdate={this.props.onUpdateTask}
                         />)}
                     <Divider horizontal>
-                    <Popup flowing hoverable
-                        position="bottom center"
-                        openOnTriggerMouseEnter={
-                            estimatedTasks.length > 0 && this.props.appearance === CardAppearance.OVERVIEW
-                        }
-                        trigger={
-                            <span>{estimatedTasks.length} Tasks</span>
-                        }
-                    >
-                        <TaskFeeds tasks={estimatedTasks}
-                                   taskSortField={this.props.taskSortField}
-                                   taskOrder={this.props.taskOrder}
-                                   onUpdateTask={this.props.onUpdateTask}
-                        />
-                    </Popup>
+                        <Popup flowing hoverable
+                               position="bottom center"
+                               openOnTriggerMouseEnter={
+                                   estimatedTasks.length > 0 && this.props.appearance === CardAppearance.OVERVIEW
+                               }
+                               trigger={
+                                   <span>{estimatedTasks.length} Tasks</span>
+                               }
+                        >
+                            <TaskFeeds tasks={estimatedTasks}
+                                       taskSortField={this.props.taskSortField}
+                                       taskOrder={this.props.taskOrder}
+                                       onUpdateTask={this.props.onUpdateTask}
+                            />
+                        </Popup>
                     </Divider>
                     <div style={
                         this.props.appearance === CardAppearance.DETAIL ?

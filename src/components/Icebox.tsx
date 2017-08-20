@@ -50,6 +50,14 @@ export interface IceboxProps {
     })
 )
 export default class extends Component<IceboxProps> {
+    shouldComponentUpdate(nextProps: Readonly<IceboxProps>) {
+        // For avoid performance issues
+        return !(this.props === nextProps || _.isEqual(
+            _.omit(this.props, ['canDrop']),
+            _.omit(nextProps, ['canDrop']),
+        ))
+    }
+
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .reject(t => t.isMilestone)
