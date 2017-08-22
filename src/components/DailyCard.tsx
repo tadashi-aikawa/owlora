@@ -26,41 +26,53 @@ import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
+import Emojify from 'react-emojione';
 
 
-const CardHeader = ({props, estimatedTasks, freeMinutes, isOffTime}: {
-    props: DailyCardProps, estimatedTasks: Task[], freeMinutes: number, isOffTime: boolean
-}) =>
-    <Segment inverted style={{margin: 0}}>
-        <Statistic.Group widths='one' size='mini' inverted
-                         color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}
-                         style={{paddingBottom: 10}}>
-            <Statistic value={props.date.format(DATE_FORMAT)}/>
-        </Statistic.Group>
-        {
-            isOffTime ?
-                <Statistic.Group widths='one' size='tiny' inverted
-                                 color={isOffTime ? "teal" : freeMinutes < 0 ? "red" : "olive"}>
-                    <Statistic>
-                        <Statistic.Value>
-                            <Icon name="hand peace"/> Off day!! <Icon name="hand peace"/>
-                        </Statistic.Value>
-                    </Statistic>
-                </Statistic.Group>
-                :
-                <Progress value={freeMinutes}
-                          total={props.minutesToUsePerDay}
-                          color="green"
-                          size="small"
-                          inverted
-                          error={freeMinutes / props.minutesToUsePerDay < 0.20}
-                          warning={freeMinutes / props.minutesToUsePerDay < 0.40}
-                          disabled={isOffTime}
-                >
-                    <Icon name="heart"/> {freeMinutes}
-                </Progress>
-        }
-    </Segment>;
+const CardHeader = ({props, freeMinutes, isOffTime}: {
+    props: DailyCardProps, freeMinutes: number, isOffTime: boolean
+}) => {
+    const restPercent = freeMinutes / props.minutesToUsePerDay;
+
+    const isWarning: boolean = _.inRange(restPercent, 0.20, 0.40);
+    const isDanger: boolean = _.inRange(restPercent, 0, 0.20);
+    const isDead: boolean = restPercent < 0;
+
+    const color = isDead || isOffTime ? undefined :
+        isDanger ? "red" : isWarning ? "yellow" : undefined;
+
+    return (
+        <Segment inverted style={{margin: 0}} color={isOffTime ? "grey" : isDead ? "red" : "black"}>
+            <Statistic.Group widths='one' size='mini' inverted
+                             color={color}
+                             style={{paddingBottom: 10}}>
+                <Statistic value={props.date.format(DATE_FORMAT)}/>
+            </Statistic.Group>
+            {
+                isOffTime ?
+                    <Statistic.Group widths='one' size='tiny' inverted>
+                        <Statistic>
+                            <Statistic.Value>
+                                <Emojify>:laughing: Off day!! :laughing:</Emojify>
+                            </Statistic.Value>
+                        </Statistic>
+                    </Statistic.Group>
+                    :
+                    <Progress value={freeMinutes}
+                              total={props.minutesToUsePerDay}
+                              color={isDead || isDanger ? "red" : isWarning ? "yellow" : "green"}
+                              size="small"
+                              inverted
+                              disabled={isOffTime}
+                    >
+                        {isDead && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:innocent:</Emojify>}
+                        <Icon name="heart" color={color}/> <span style={{color: color}}>{freeMinutes}</span>
+                        {isDead && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:innocent:</Emojify>}
+                    </Progress>
+            }
+        </Segment>
+    );
+};
 
 export interface DailyCardProps {
     date: Moment;
@@ -143,7 +155,6 @@ export default class extends Component<DailyCardProps> {
                             </div>
                         }/>
                 <CardHeader props={this.props}
-                            estimatedTasks={estimatedTasks}
                             freeMinutes={freeMinutes}
                             isOffTime={minutesToUse === 0}
                 />
