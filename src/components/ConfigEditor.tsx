@@ -1,9 +1,26 @@
 import * as React from 'react';
-import {Accordion, Divider, Form, Icon, Message, Segment} from 'semantic-ui-react';
-import {safeLoad} from 'js-yaml';
+import {
+    Header,
+    Image,
+    Button,
+    TextArea,
+    Grid,
+    Menu,
+    Accordion,
+    Divider,
+    Form,
+    Icon,
+    Message,
+    Segment
+} from 'semantic-ui-react';
+import {safeLoad, safeDump} from 'js-yaml';
+import {version} from '../../package.json';
 import CommonConfig from '../models/CommonConfig';
 import Project from '../models/Project';
 import Label from '../models/Label';
+import {PureComponent} from "react";
+
+const LOGO = require('../../owlora.png');
 
 const MILESTONES_PLACEHOLDER = `By yaml
 ---------------
@@ -21,6 +38,47 @@ const MILESTONES_PLACEHOLDER = `By yaml
     projectIdsOr: [153016633]
 `;
 
+interface ConfigImporterState {
+    str: string;
+}
+
+interface ConfigImporterProps {
+    config: Object;
+    onImport: (config: Object) => void;
+}
+
+class ConfigImporter extends PureComponent<ConfigImporterProps, ConfigImporterState> {
+    state: ConfigImporterState = {
+        str: JSON.stringify(this.props.config)
+    };
+
+    render() {
+        return (
+            <div>
+                <Button icon="arrow circle outline down"
+                        content="Import"
+                        style={{margin: 5}}
+                        onClick={() => this.props.onImport(JSON.parse(this.state.str))} />
+            <TextArea autoHeight
+                      value={this.state.str}
+                      style={{width: "100%"}}
+                      onChange={(e, {name, value}) => this.setState({str: value})}
+            />
+            </div>
+        );
+    }
+}
+
+const Info = ({version: string}) =>
+    <div>
+        <Image centered src={LOGO}/>
+        <Header as='h2' textAlign='center'>
+            <Header.Content>
+                {`Owlora version ${version}`}
+            </Header.Content>
+        </Header>
+    </div>;
+
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     projects: Project[],
@@ -29,6 +87,8 @@ export interface ConfigEditorProps {
 }
 
 export interface ConfigEditorState {
+    activeItem: 'main' | 'import/export' | 'info';
+
     todoistToken: string;
     estimatedLabels: string;
     milestones: string;
@@ -43,6 +103,7 @@ export interface ConfigEditorState {
 export default class extends React.Component<ConfigEditorProps, ConfigEditorState> {
 
     state: ConfigEditorState = {
+        activeItem: 'main',
         todoistToken: this.props.defaultConfig.todoistToken,
         estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
         milestones: this.props.defaultConfig.milestones.yaml,
@@ -54,6 +115,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     handleChange = (e, {name, value}) =>
         this.setState(Object.assign({}, this.state, {[name]: value}));
+
+    handleItemClick = (e, {name}) => this.setState({activeItem: name})
 
     handleSubmit = () => {
         try {
@@ -94,93 +157,121 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     render() {
         return (
-            <Form onSubmit={this.handleSubmit}>
-                <Segment>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>Todoist API token</label>
-                        <Form.Input type="password"
-                                    name="todoistToken"
-                                    value={this.state.todoistToken}
-                                    onChange={this.handleChange}
-                        />
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>Estimated Labels</label>
-                        <Form.TextArea name="estimatedLabels"
-                                       placeholder='Estimated labels as yaml (key is label id)'
-                                       value={this.state.estimatedLabels}
-                                       onChange={this.handleChange}
-                                       autoHeight
-                        />
-                    </Form.Field>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>Milestones</label>
-                        <Form.TextArea name="milestones"
-                                       placeholder={MILESTONES_PLACEHOLDER}
-                                       value={this.state.milestones}
-                                       onChange={this.handleChange}
-                                       autoHeight
-                        />
-                    </Form.Field>
-                    <Accordion styled panels={[{
-                        title: 'Show all labels',
-                        content: <ul>
-                            {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
-                        </ul>
-                    }]}/>
-                    <Divider section/>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>Minutes to use per day</label>
-                        <Form.Input type="number"
-                                    name="minutesToUsePerDay"
-                                    value={this.state.minutesToUsePerDay}
-                                    onChange={this.handleChange}
-                        />
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Field inline>
-                        <label><Icon name="pencil"/>Minutes to use per specific days</label>
-                        <Form.TextArea name="minutesToUsePerSpecificDays"
-                                       placeholder='Specific days as yaml (key is yyyyMMdd)'
-                                       value={this.state.minutesToUsePerSpecificDays}
-                                       onChange={this.handleChange}
-                                       autoHeight
-                        />
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Field inline>
-                        <label><Icon name="pencil"/>Icons by project id</label>
-                        <Form.TextArea name="iconsByProject"
-                                       placeholder='Icon urls by projects as yaml (key is project id)'
-                                       value={this.state.iconsByProject}
-                                       onChange={this.handleChange}
-                                       autoHeight
-                        />
-                    </Form.Field>
-                    <Accordion styled panels={[{
-                        title: 'Show all projects',
-                        content: <ul>
-                            {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
-                        </ul>
-                    }]}/>
-                    <Divider section/>
-                    <Form.Field inline>
-                        <label><Icon name="pencil"/>Colors by task name regexp</label>
-                        <Form.TextArea name="colorsByTaskNameRegexp"
-                                       placeholder='Task name regexp and color used'
-                                       value={this.state.colorsByTaskNameRegexp}
-                                       onChange={this.handleChange}
-                                       autoHeight
-                        />
-                    </Form.Field>
-                    <Divider section/>
-                    <Form.Button accessKey="s" content='Save'/>
-                    <Message error visible={!!this.state.validationError}>
-                        {this.state.validationError}
-                    </Message>
-                </Segment>
-            </Form>
+            <Grid>
+                <Grid.Column width={4}>
+                    <Menu fluid vertical tabular icon="labeled">
+                        <Menu.Item name='main' active={this.state.activeItem === 'main'}
+                                   onClick={this.handleItemClick}>
+                            <Icon name='settings'/>
+                            Main
+                        </Menu.Item>
+                        <Menu.Item name='import/export' active={this.state.activeItem === 'import/export'}
+                                   onClick={this.handleItemClick}>
+                            <Icon name='file outline'/>
+                            Import / Export
+                        </Menu.Item>
+                        <Menu.Item name='info' active={this.state.activeItem === 'info'} onClick={this.handleItemClick}>
+                            <Icon name='info'/>
+                            Information
+                        </Menu.Item>
+                    </Menu>
+                </Grid.Column>
+
+                <Grid.Column stretched width={12}>
+                    <Segment>
+                        {this.state.activeItem === 'main' ?
+                            <Form onSubmit={this.handleSubmit}>
+                                <Form.Field inline required>
+                                    <label><Icon name="pencil"/>Todoist API token</label>
+                                    <Form.Input type="password"
+                                                name="todoistToken"
+                                                value={this.state.todoistToken}
+                                                onChange={this.handleChange}
+                                    />
+                                </Form.Field>
+                                <Divider section/>
+                                <Form.Field inline required>
+                                    <label><Icon name="pencil"/>Estimated Labels</label>
+                                    <Form.TextArea name="estimatedLabels"
+                                                   placeholder='Estimated labels as yaml (key is label id)'
+                                                   value={this.state.estimatedLabels}
+                                                   onChange={this.handleChange}
+                                                   autoHeight
+                                    />
+                                </Form.Field>
+                                <Form.Field inline required>
+                                    <label><Icon name="pencil"/>Milestones</label>
+                                    <Form.TextArea name="milestones"
+                                                   placeholder={MILESTONES_PLACEHOLDER}
+                                                   value={this.state.milestones}
+                                                   onChange={this.handleChange}
+                                                   autoHeight
+                                    />
+                                </Form.Field>
+                                <Accordion styled panels={[{
+                                    title: 'Show all labels',
+                                    content: <ul>
+                                        {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
+                                    </ul>
+                                }]}/>
+                                <Divider section/>
+                                <Form.Field inline required>
+                                    <label><Icon name="pencil"/>Minutes to use per day</label>
+                                    <Form.Input type="number"
+                                                name="minutesToUsePerDay"
+                                                value={this.state.minutesToUsePerDay}
+                                                onChange={this.handleChange}
+                                    />
+                                </Form.Field>
+                                <Divider section/>
+                                <Form.Field inline>
+                                    <label><Icon name="pencil"/>Minutes to use per specific days</label>
+                                    <Form.TextArea name="minutesToUsePerSpecificDays"
+                                                   placeholder='Specific days as yaml (key is yyyyMMdd)'
+                                                   value={this.state.minutesToUsePerSpecificDays}
+                                                   onChange={this.handleChange}
+                                                   autoHeight
+                                    />
+                                </Form.Field>
+                                <Divider section/>
+                                <Form.Field inline>
+                                    <label><Icon name="pencil"/>Icons by project id</label>
+                                    <Form.TextArea name="iconsByProject"
+                                                   placeholder='Icon urls by projects as yaml (key is project id)'
+                                                   value={this.state.iconsByProject}
+                                                   onChange={this.handleChange}
+                                                   autoHeight
+                                    />
+                                </Form.Field>
+                                <Accordion styled panels={[{
+                                    title: 'Show all projects',
+                                    content: <ul>
+                                        {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
+                                    </ul>
+                                }]}/>
+                                <Divider section/>
+                                <Form.Field inline>
+                                    <label><Icon name="pencil"/>Colors by task name regexp</label>
+                                    <Form.TextArea name="colorsByTaskNameRegexp"
+                                                   placeholder='Task name regexp and color used'
+                                                   value={this.state.colorsByTaskNameRegexp}
+                                                   onChange={this.handleChange}
+                                                   autoHeight
+                                    />
+                                </Form.Field>
+                                <Divider section/>
+                                <Form.Button accessKey="s" content='Save'/>
+                                <Message error visible={!!this.state.validationError}>
+                                    {this.state.validationError}
+                                </Message>
+                            </Form> :
+                            this.state.activeItem === 'import/export' ?
+                                <ConfigImporter config={this.state} onImport={newState => this.setState(newState as ConfigEditorState)}/> :
+                                this.state.activeItem === 'info' ? <Info version={version}/> : ""
+                        }
+                    </Segment>
+                </Grid.Column>
+            </Grid>
         );
     }
 }

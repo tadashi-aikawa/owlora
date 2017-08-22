@@ -10,7 +10,6 @@ import Project from '../models/Project';
 import Label from '../models/Label';
 import {DragDropContext} from 'react-dnd';
 
-import {version} from '../../package.json';
 import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
@@ -218,13 +217,16 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                         }}/>
                     </Menu.Item>
                     <Menu.Item>
-                        <Modal open={this.state.isModalOpen} onClose={this.handleClose} trigger={
-                            <Button accessKey="s" icon inverted onClick={this.handleOpen}>
-                                <Icon name="setting" size="large"/>
-                            </Button>
-                        }>
-                            <Header icon="setting" content={`Settings (version ${version})`}/>
-                            <Modal.Content>
+                        <Modal size="large"
+                               open={this.state.isModalOpen}
+                               onClose={this.handleClose}
+                               trigger={
+                                   <Button accessKey="s" icon inverted onClick={this.handleOpen}>
+                                       <Icon name="setting" size="large"/>
+                                   </Button>
+                               }>
+                            <Header icon="setting" content={`Settings`}/>
+                            <Modal.Content scrolling style={{height: "90vh"}}>
                                 <ConfigEditor defaultConfig={this.props.config}
                                               projects={this.props.projects}
                                               labels={this.props.labels}
