@@ -3,7 +3,19 @@ import '../../package';
 import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
-import {Button, Checkbox, Dropdown, Header, Icon, Menu, Modal, Popup, SemanticWIDTHS} from 'semantic-ui-react';
+import {
+    Segment,
+    Input,
+    Button,
+    Checkbox,
+    Dropdown,
+    Header,
+    Icon,
+    Menu,
+    Modal,
+    Popup,
+    SemanticWIDTHS
+} from 'semantic-ui-react';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './ConfigEditor';
 import Project from '../models/Project';
@@ -14,6 +26,7 @@ import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
+import Emojify from 'react-emojione';
 
 const LOGO = require('../../owlora.png');
 
@@ -146,6 +159,8 @@ export interface NavigationMenuProps {
 
 export interface NavigationMenuState {
     isModalOpen: boolean;
+    // TODO: Move!
+    emojiPreviewStr?: string;
 }
 
 export default class extends Component<NavigationMenuProps, NavigationMenuState> {
@@ -225,11 +240,57 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                        <Icon name="setting" size="large"/>
                                    </Button>
                                }>
-                            <Header icon="setting" content={`Settings`}/>
+                            <Header>
+                                <div style={{display: "flex"}}>
+                                    <Icon name="setting"/>
+                                    <span>Settings</span>
+                                    <div style={{marginLeft: 'auto'}}>
+                                        <Popup
+                                            on="click"
+                                            flowing
+                                            size="mini"
+                                            position="bottom right"
+                                            trigger={<Button icon="smile" circular title="Emoji helper"/>}
+                                        >
+                                            <Input value={this.state.emojiPreviewStr}
+                                                   onChange={(e, {name, value}) => this.setState({emojiPreviewStr: value})}
+                                                   labelPosition="right"
+                                                   label={<Button title="Go to github to show all emoji" icon='github'
+                                                               as="a"
+                                                               href="https://github.com/pladaria/react-emojione/blob/master/src/data/emoji-data.js" />}
+                                            />
+                                            <Segment>
+                                                Preview: <Emojify>{this.state.emojiPreviewStr}</Emojify>
+                                            </Segment>
+                                        </Popup>
+
+                                        <Popup
+                                            on="click"
+                                            flowing
+                                            size="mini"
+                                            position="bottom right"
+                                            trigger={<Button icon="tags" circular title="Show labels"/>}
+                                        >
+                                            <ul>
+                                                {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
+                                            </ul>
+                                        </Popup>
+                                        <Popup
+                                            on="click"
+                                            flowing
+                                            size="mini"
+                                            position="bottom right"
+                                            trigger={<Button icon="object group" circular title="Show projects"/>}
+                                        >
+                                            <ul>
+                                                {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
+                                            </ul>
+                                        </Popup>
+                                    </div>
+                                </div>
+                            </Header>
                             <Modal.Content scrolling style={{height: "90vh"}}>
                                 <ConfigEditor defaultConfig={this.props.config}
-                                              projects={this.props.projects}
-                                              labels={this.props.labels}
                                               onSaveConfig={(config) => {
                                                   this.props.onChangeConfig(config);
                                                   this.handleClose();

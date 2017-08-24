@@ -92,8 +92,6 @@ const Info = ({version: string}) =>
 
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
-    projects: Project[],
-    labels: Label[],
     onSaveConfig: (config: CommonConfig) => void;
 }
 
@@ -181,7 +179,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                             <Icon name='file outline'/>
                             Import / Export
                         </Menu.Item>
-                        <Menu.Item name='info' active={this.state.activeItem === 'info'} onClick={this.handleItemClick}>
+                        <Menu.Item name='info' active={this.state.activeItem === 'info'}
+                                   onClick={this.handleItemClick}>
                             <Icon name='info'/>
                             Information
                         </Menu.Item>
@@ -219,12 +218,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                                    autoHeight
                                     />
                                 </Form.Field>
-                                <Accordion styled panels={[{
-                                    title: 'Show all labels',
-                                    content: <ul>
-                                        {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
-                                    </ul>
-                                }]}/>
                                 <Divider section/>
                                 <Form.Field inline required>
                                     <label><Icon name="pencil"/>Minutes to use per day</label>
@@ -254,12 +247,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                                    autoHeight
                                     />
                                 </Form.Field>
-                                <Accordion styled panels={[{
-                                    title: 'Show all projects',
-                                    content: <ul>
-                                        {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
-                                    </ul>
-                                }]}/>
                                 <Divider section/>
                                 <Form.Field inline>
                                     <label><Icon name="pencil"/>Colors by task name regexp</label>
