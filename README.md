@@ -12,8 +12,6 @@ For now, `Owlora` uses Todoist API as backend.
 
 * Google chrome (Not for all)
 * Firefox (Not for all)
-* Android (Not for all)
-* iOS (Not for all)
 
 ## For developer
 
