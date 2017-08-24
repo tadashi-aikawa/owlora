@@ -17,7 +17,7 @@ import {
     SemanticWIDTHS
 } from 'semantic-ui-react';
 import CommonConfig from '../models/CommonConfig';
-import ConfigEditor from './ConfigEditor';
+import ConfigEditor from './config/ConfigEditor';
 import Project from '../models/Project';
 import Label from '../models/Label';
 import {DragDropContext} from 'react-dnd';
