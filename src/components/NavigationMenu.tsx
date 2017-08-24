@@ -93,21 +93,22 @@ const SortOrderSelector = ({uiConfig, onChangeUiConfig}) =>
                 onClick={() => onChangeUiConfig(
                     Object.assign({}, uiConfig, {taskOrder: Order.inverses[uiConfig.taskOrder]})
                 )}
-                labelPosition='left'
-                content={
-                    <Dropdown search
-                              text={uiConfig.taskSortField}
-                              onChange={(e, {value}: { value: TaskSortField }) => onChangeUiConfig(
-                                  Object.assign({}, uiConfig, {taskSortField: value})
-                              )}
-                              options={
-                                  _.map(TaskSortField.toObject, v => ({
-                                      key: v,
-                                      text: v,
-                                      value: v
-                                  }))
-                              }/>
-                }/>
+        />
+        <Dropdown floating
+                  button
+                  search
+                  text={uiConfig.taskSortField}
+                  onChange={(e, {value}: { value: TaskSortField }) => onChangeUiConfig(
+                      Object.assign({}, uiConfig, {taskSortField: value})
+                  )}
+                  options={
+                      _.map(TaskSortField.toObject, v => ({
+                          key: v,
+                          text: v,
+                          value: v
+                      }))
+                  }
+        />
     </Menu.Item>;
 
 const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
@@ -256,8 +257,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                    onChange={(e, {name, value}) => this.setState({emojiPreviewStr: value})}
                                                    labelPosition="right"
                                                    label={<Button title="Go to github to show all emoji" icon='github'
-                                                               as="a"
-                                                               href="https://github.com/pladaria/react-emojione/blob/master/src/data/emoji-data.js" />}
+                                                                  as="a"
+                                                                  href="https://github.com/pladaria/react-emojione/blob/master/src/data/emoji-data.js"/>}
                                             />
                                             <Segment>
                                                 Preview: <Emojify>{this.state.emojiPreviewStr}</Emojify>
