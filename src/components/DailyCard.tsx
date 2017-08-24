@@ -21,7 +21,7 @@ import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
-import {TaskFeeds} from "./TaskFeeds";
+import TaskFeeds from "./TaskFeeds";
 import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';

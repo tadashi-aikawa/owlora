@@ -1,8 +1,8 @@
 import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
 import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
-import TodoistSyncService from './TodoistSyncService';
-import SyncService from './SyncService';
+import TodoistSyncService from '../services/TodoistSyncService';
+import SyncService from '../services/SyncService';
 import Task from '../models/Task';
 import {UpdateTasksAction} from '../actions/index';
 import {Dictionary} from "lodash";

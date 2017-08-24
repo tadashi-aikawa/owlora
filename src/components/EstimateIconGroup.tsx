@@ -5,7 +5,7 @@ import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
-import {TaskFeeds} from "./TaskFeeds";
+import TaskFeeds from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
 
 export interface EstimateIconGroupProps {
