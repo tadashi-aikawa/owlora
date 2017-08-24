@@ -1,3 +1,4 @@
+import * as _ from 'lodash';
 import * as React from 'react';
 import {
     Header,
@@ -25,7 +26,7 @@ const LOGO = require('../../owlora.png');
 const MILESTONES_PLACEHOLDER = `By yaml
 ---------------
 
-- color: green
+- color: green  # See https://react.semantic-ui.com/elements/segment#segment-example-colored-inverted
   condition:
     regexp: vacation
     labelIdsOr: [2148194362]
@@ -40,6 +41,7 @@ const MILESTONES_PLACEHOLDER = `By yaml
 
 interface ConfigImporterState {
     str: string;
+    err?: string;
 }
 
 interface ConfigImporterProps {
@@ -49,7 +51,7 @@ interface ConfigImporterProps {
 
 class ConfigImporter extends PureComponent<ConfigImporterProps, ConfigImporterState> {
     state: ConfigImporterState = {
-        str: JSON.stringify(this.props.config)
+        str: JSON.stringify(this.props.config),
     };
 
     render() {
@@ -58,12 +60,21 @@ class ConfigImporter extends PureComponent<ConfigImporterProps, ConfigImporterSt
                 <Button icon="arrow circle outline down"
                         content="Import"
                         style={{margin: 5}}
-                        onClick={() => this.props.onImport(JSON.parse(this.state.str))} />
-            <TextArea autoHeight
-                      value={this.state.str}
-                      style={{width: "100%"}}
-                      onChange={(e, {name, value}) => this.setState({str: value})}
-            />
+                        onClick={() => {
+                            try {
+                                const parsed = JSON.parse(this.state.str)
+                                this.props.onImport(parsed);
+                                this.setState({err: undefined})
+                            } catch (e) {
+                                this.setState({err: e.toString()})
+                            }
+                        }}/>
+                {this.state.err && <Message error>{this.state.err}</Message>}
+                <TextArea autoHeight
+                          value={this.state.str}
+                          style={{width: "100%"}}
+                          onChange={(e, {name, value}) => this.setState({str: value})}
+                />
             </div>
         );
     }
@@ -264,9 +275,15 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                 <Message error visible={!!this.state.validationError}>
                                     {this.state.validationError}
                                 </Message>
-                            </Form> :
+                            </Form>
+                            :
                             this.state.activeItem === 'import/export' ?
-                                <ConfigImporter config={this.state} onImport={newState => this.setState(newState as ConfigEditorState)}/> :
+                                <ConfigImporter config={_.omit(this.state, ['activeItem', 'todoistToken'])}
+                                                onImport={newState => this.setState(
+                                                    Object.assign(newState as ConfigEditorState, {activeItem: "main"})
+                                                )}
+                                />
+                                :
                                 this.state.activeItem === 'info' ? <Info version={version}/> : ""
                         }
                     </Segment>
