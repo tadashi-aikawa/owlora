@@ -1,3 +1,5 @@
+import {Dictionary} from 'lodash';
+
 enum Size {
     MINI = 'mini',
     TINY = 'tiny',
@@ -9,6 +11,16 @@ enum Size {
 }
 
 module Size {
+    export const toObject: Dictionary<Size> = {
+        [Size.MINI]: Size.MINI,
+        [Size.TINY]: Size.TINY,
+        [Size.SMALL]: Size.SMALL,
+        [Size.LARGE]: Size.LARGE,
+        [Size.BIG]: Size.BIG,
+        [Size.HUGE]: Size.HUGE,
+        [Size.MASSIVE]: Size.MASSIVE,
+    };
+
     export const toEmojiSize = {
         [Size.MINI]: 18,
         [Size.TINY]: 22,

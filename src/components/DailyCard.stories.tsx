@@ -20,6 +20,7 @@ const DnDWrapperDecorator = (storyFn) => <DnDWrapper>{storyFn()}</DnDWrapper>;
 
 
 const toDate = (v: string) => Moment(v, 'YYYY/MM/DD');
+const toDateTime = (v: string) => Moment(v, 'YYYY/MM/DD H:mm');
 const CoolPaddingDecorator = (storyFn) => <div style={{padding: 20}}>{storyFn()}</div>;
 const createTask = (properties): Task => _.assign({}, {
     id: null,
@@ -53,16 +54,24 @@ storiesOf('DailyCard', module)
                            createTask({id: 1, name: 'Task1', dayOrder: 3, icon: ":person_with_pouting_face:"}),
                            createTask({
                                id: 2,
-                               name: 'Task2 this is long name task hogehoge!!',
+                               name: 'Task2 this is long name task hogehoge!! (11:00-12:00)',
                                dayOrder: 2,
-                               icon: ":whale:"
+                               icon: ":whale:",
+                               time: {
+                                   start: toDateTime('2099/01/01 11:00'),
+                                   end: toDateTime('2099/01/01 12:00'),
+                               },
                            }),
                            createTask({
                                id: 3,
-                               name: 'Task3',
+                               name: 'Task3 (13:30-16:15)',
                                dayOrder: 1,
                                icon: ":japan:",
-                               color: "rgba(200, 50, 50, 0.1)"
+                               color: "rgba(200, 50, 50, 0.1)",
+                               time: {
+                                   start: toDateTime('2099/01/01 13:30'),
+                                   end: toDateTime('2099/01/01 16:15'),
+                               },
                            }),
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
                        ]
@@ -155,6 +164,79 @@ storiesOf('DailyCard', module)
             </Card.Group>
         )
     })
+    .add('Time lamps', () => {
+        return (
+            <Card.Group>
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.TASK_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               name: 'Task1 (11:00-12:00)',
+                               time: {
+                                   start: toDateTime(text('(1)time.start', '2099/01/01 11:00')),
+                                   end: toDateTime(text('(1)time.end', '2099/01/01 12:00')),
+                               },
+                           })]}
+                           appearance={CardAppearance.DETAIL}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.TASK_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[
+                               createTask({
+                                   id: 1,
+                                   name: 'Task1 (11:00-12:00)',
+                                   time: {
+                                       start: toDateTime(text('(2)Task1: time.start', '2099/01/01 11:00')),
+                                       end: toDateTime(text('(2)Task1: time.end', '2099/01/01 12:00')),
+                                   },
+                               }),
+                               createTask({
+                                   id: 2,
+                                   name: 'Task2 (14:15-17:15)',
+                                   time: {
+                                       start: toDateTime(text('(2)Task2: time.start', '2099/01/01 14:15')),
+                                       end: toDateTime(text('(2)Task2: time.end', '2099/01/01 17:15')),
+                                   },
+                               })
+                           ]}
+                           appearance={CardAppearance.DETAIL}
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.TASK_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[
+                               createTask({
+                                   id: 1,
+                                   name: 'Task1 (16:00-16:15)',
+                                   time: {
+                                       start: toDateTime(text('(3)Task1: time.start', '2099/01/01 16:00')),
+                                       end: toDateTime(text('(3)Task1: time.end', '2099/01/01 16:15')),
+                                   },
+                               }),
+                               createTask({
+                                   id: 2,
+                                   name: 'Task2 (15:00-17:00)',
+                                   time: {
+                                       start: toDateTime(text('(3)Task2: time.start', '2099/01/01 15:00')),
+                                       end: toDateTime(text('(3)Task2: time.end', '2099/01/01 17:00')),
+                                   },
+                               })
+                           ]}
+                           appearance={CardAppearance.DETAIL}
+                           onUpdateTask={action}
+                />
+            </Card.Group>
+        )
+    })
     .add('Feed icon', () => (
         <Card.Group>
             <DailyCard date={toDate('2099/01/01')}
@@ -240,7 +322,7 @@ storiesOf('DailyCard', module)
                            name: ":beer: Party!!",
                            dayOrder: 1,
                            color: text("task.color", "purple"),
-                           size: text("task.size", Size.LARGE),
+                           size: select("task.size", Size.toObject, Size.LARGE),
                            isMilestone: boolean("task.isMilestone", true)
                        })]}
                        appearance={CardAppearance.DETAIL}
