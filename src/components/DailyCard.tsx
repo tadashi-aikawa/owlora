@@ -3,6 +3,8 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import {
+    Container,
+    Label,
     Card,
     Dimmer,
     Divider,
@@ -28,6 +30,25 @@ import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Emojify from 'react-emojione';
 
+const groupByHours = (tasks: Task[]): Dictionary<Task[]> => {
+    const estimatedTasksByHour: Dictionary<Task[]> = {};
+
+    for (let t of tasks) {
+        if (!(t.time)) {
+            continue;
+        }
+        const hours: number[] = _.range(t.time.start.hour(), t.time.end.hour() + t.time.end.minutes() / 60);
+        hours.forEach(h => {
+            if (estimatedTasksByHour[h]) {
+                estimatedTasksByHour[h].push(t);
+            } else {
+                estimatedTasksByHour[h] = [t];
+            }
+        })
+    }
+
+    return estimatedTasksByHour;
+};
 
 const CardHeader = ({props, freeMinutes, isOffTime}: {
     props: DailyCardProps, freeMinutes: number, isOffTime: boolean
@@ -129,6 +150,7 @@ export default class extends Component<DailyCardProps> {
             .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
             .reject(t => t.isMilestone)
             .value();
+        const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
 
         const totalEstimatedMinutes = _.sumBy(estimatedTasks, t => t.estimatedMinutes);
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
@@ -159,6 +181,24 @@ export default class extends Component<DailyCardProps> {
                             isOffTime={minutesToUse === 0}
                 />
                 <Card.Content>
+                    <Container textAlign="center">
+                        {_.range(10, 20).map(h =>
+                            <Popup flowing hoverable
+                                   key={h}
+                                   openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
+                                   trigger={
+                                       <Label key={h} content={h} size="mini"
+                                              color={estimatedTasksByHours[h] ? "red" : "grey"}/>
+                                   }
+                            >
+                                <TaskFeeds tasks={estimatedTasksByHours[h]}
+                                           taskSortField={this.props.taskSortField}
+                                           taskOrder={this.props.taskOrder}
+                                           onUpdateTask={this.props.onUpdateTask}
+                                />
+                            </Popup>
+                        )}
+                    </Container>
                     <Message negative icon hidden={freeMinutes >= 0}>
                         <Icon name='warning sign'/>
                         <Message.Content>
@@ -216,11 +256,16 @@ export default class extends Component<DailyCardProps> {
                                    onUpdateTask={this.props.onUpdateTask}/>
                     </div>
                 </Card.Content>
-                <Card.Content extra>
-                    <EstimateIconGroup tasks={estimatedTasks}
-                                       taskSortFieldInPopup={this.props.taskSortField}
-                                       taskOrderInPopup={this.props.taskOrder}
-                                       onUpdateTask={this.props.onUpdateTask}/>
+                < Card.Content extra>
+                    < EstimateIconGroup
+                        tasks={estimatedTasks}
+                        taskSortFieldInPopup={this.props.taskSortField
+                        }
+                        taskOrderInPopup={this.props.taskOrder
+                        }
+                        onUpdateTask={this.props.onUpdateTask
+                        }
+                    />
                 </Card.Content>
             </Card>
         );

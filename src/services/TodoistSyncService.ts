@@ -67,12 +67,18 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     !m.condition.projectIdsOr || _.includes(m.condition.projectIdsOr, x.project_id)
                 ])
             );
+            const times = x.content.match(/(\d{1,2}):(\d{2})-(\d{1,2}):(\d{2})/);
+
             return {
                 id: x.id,
                 name: x.content,
                 projectName: projectsById[String(x.project_id)].name,
                 estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
                 dueDate: x.due_date_utc && moment(x.due_date_utc),
+                time: times && {
+                    start: moment(x.due_date_utc).hour(Number(times[1])).minute(Number(times[2])),
+                    end: moment(x.due_date_utc).hour(Number(times[3])).minute(Number(times[4])),
+                },
                 repetition: toRepetition(x.date_string),
                 icon: iconsByProject[String(x.project_id)] || ":white_circle:",
                 dayOrder: x.day_order,

@@ -8,6 +8,10 @@ interface Task {
     projectName: string;
     dueDate: Moment;
     estimatedMinutes: number;
+    time?: {
+        start: Moment;
+        end: Moment;
+    },
     repetition: Repetition;
     /** URL or emoji(ex. :bow:) */
     icon: string;
