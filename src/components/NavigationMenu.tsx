@@ -37,12 +37,11 @@ const isMobile = () => {
 
 const IceboxToggle = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
-        <span style={{fontColor: "white", marginRight: 5}}>Icebox</span>
-        <Checkbox checked={uiConfig.isIceboxVisible}
-                  onChange={() => onChangeUiConfig(
-                      Object.assign({}, uiConfig, {isIceboxVisible: !uiConfig.isIceboxVisible})
-                  )}
-                  toggle/>
+        <Button icon="inbox"
+                color={uiConfig.isIceboxVisible ? "teal" : "grey"}
+                onClick={() => onChangeUiConfig(
+                    Object.assign({}, uiConfig, {isIceboxVisible: !uiConfig.isIceboxVisible})
+                )}/>
     </Menu.Item>;
 
 const AppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
@@ -182,8 +181,6 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                     {
                         isMobile() ?
                             <Menu.Item position="right">
-                                <IceboxToggle uiConfig={this.props.uiConfig}
-                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <AppearanceToggle uiConfig={this.props.uiConfig}
                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <SortOrderSelector uiConfig={this.props.uiConfig}
@@ -208,11 +205,11 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                        on='click'
                                        position='top right'
                                 />
+                                <IceboxToggle uiConfig={this.props.uiConfig}
+                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
                             </Menu.Item>
                             :
                             <Menu.Menu position="right">
-                                <IceboxToggle uiConfig={this.props.uiConfig}
-                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <AppearanceToggle uiConfig={this.props.uiConfig}
                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <DayAppearanceToggle uiConfig={this.props.uiConfig}
@@ -223,6 +220,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                         onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <CardNumSelector uiConfig={this.props.uiConfig}
                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <IceboxToggle uiConfig={this.props.uiConfig}
+                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
                             </Menu.Menu>
                     }
 
