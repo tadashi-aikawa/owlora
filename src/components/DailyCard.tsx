@@ -101,6 +101,7 @@ export interface DailyCardProps {
     taskOrder: Order;
     timeLamps: boolean;
     milestone: boolean;
+    warning: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
@@ -203,14 +204,17 @@ export default class extends Component<DailyCardProps> {
                         )}
                     </Container>
                     }
-                    <Message negative icon hidden={freeMinutes >= 0}>
-                        <Icon name='warning sign'/>
-                        <Message.Content>
-                            <Message.Header>
-                                Move your tasks to other days!!
-                            </Message.Header>
-                        </Message.Content>
-                    </Message>
+                    {
+                        this.props.warning &&
+                        <Message negative icon hidden={freeMinutes >= 0}>
+                            <Icon name='warning sign'/>
+                            <Message.Content>
+                                <Message.Header>
+                                    Move your tasks to other days!!
+                                </Message.Header>
+                            </Message.Content>
+                        </Message>
+                    }
                     {
                         this.props.milestone &&
                         this.props.tasks.filter(t => t.isMilestone)

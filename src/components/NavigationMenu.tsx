@@ -51,6 +51,10 @@ const ToggleButtonGroup = ({uiConfig, onChangeUiConfig}) =>
                 icon="diamond"
                 enabled={uiConfig.milestone}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {milestone: enabled})}/>
+            <ToggleButton
+                icon="warning sign"
+                enabled={uiConfig.warning}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {warning: enabled})}/>
         </Button.Group>
     </Menu.Item>;
 

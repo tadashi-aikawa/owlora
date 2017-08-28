@@ -45,6 +45,7 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         icebox: false,
         timeLamps: true,
         milestone: true,
+        warning: true,
         isTasksExpanded: false,
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
