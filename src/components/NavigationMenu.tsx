@@ -22,23 +22,15 @@ const isMobile = () => {
     return window.innerWidth < 1400;
 };
 
-const IceboxToggle = ({uiConfig, onChangeUiConfig}) =>
-    <Menu.Item>
-        <Button icon="inbox"
-                color={uiConfig.isIceboxVisible ? "teal" : "grey"}
-                onClick={() => onChangeUiConfig(
-                    Object.assign({}, uiConfig, {isIceboxVisible: !uiConfig.isIceboxVisible})
-                )}/>
-    </Menu.Item>;
+const updateUiConfig = (props, property: Object) =>
+    props.onChangeUiConfig(Object.assign({}, props.uiConfig, property));
 
-const TasksExpandedToggle = ({uiConfig, onChangeUiConfig}) =>
-    <Menu.Item>
-        <Button icon="tasks"
-                color={uiConfig.isTasksExpanded ? "teal" : "grey"}
-                onClick={() => onChangeUiConfig(
-                    Object.assign({}, uiConfig, {isTasksExpanded: !uiConfig.isTasksExpanded})
-                )}/>
-    </Menu.Item>;
+const ToggleButton = ({enabled, icon, onChange}: {
+    enabled: boolean, icon: string, onChange: (enabled: boolean) => void
+}) =>
+    <Button icon={icon}
+            color={enabled ? "teal" : "grey"}
+            onClick={() => onChange(!enabled)}/>;
 
 const DayAppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
@@ -156,7 +148,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                     {
                         isMobile() ?
                             <Menu.Item position="right"><SortOrderSelector uiConfig={this.props.uiConfig}
-                                                   onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                                                           onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <Popup inverted
                                        trigger={<Button content="More..." icon="dropdown" inverted/>}
                                        content={
@@ -177,10 +169,18 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                        on='click'
                                        position='top right'
                                 />
-                                <IceboxToggle uiConfig={this.props.uiConfig}
-                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                <TasksExpandedToggle uiConfig={this.props.uiConfig}
-                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <Menu.Item>
+                                    <Button.Group>
+                                        <ToggleButton
+                                            icon="inbox"
+                                            enabled={this.props.uiConfig.isIceboxVisible}
+                                            onChange={enabled => updateUiConfig(this.props, {isIceboxVisible: enabled})}/>
+                                        <ToggleButton
+                                            icon="tasks"
+                                            enabled={this.props.uiConfig.isTasksExpanded}
+                                            onChange={enabled => updateUiConfig(this.props, {isTasksExpanded: enabled})}/>
+                                    </Button.Group>
+                                </Menu.Item>
 
                             </Menu.Item>
                             :
@@ -193,10 +193,18 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                         onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <CardNumSelector uiConfig={this.props.uiConfig}
                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                <IceboxToggle uiConfig={this.props.uiConfig}
-                                              onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                <TasksExpandedToggle uiConfig={this.props.uiConfig}
-                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <Menu.Item>
+                                    <Button.Group>
+                                        <ToggleButton
+                                            icon="inbox"
+                                            enabled={this.props.uiConfig.isIceboxVisible}
+                                            onChange={enabled => updateUiConfig(this.props, {isIceboxVisible: enabled})}/>
+                                        <ToggleButton
+                                            icon="tasks"
+                                            enabled={this.props.uiConfig.isTasksExpanded}
+                                            onChange={enabled => updateUiConfig(this.props, {isTasksExpanded: enabled})}/>
+                                    </Button.Group>
+                                </Menu.Item>
                             </Menu.Menu>
                     }
 
