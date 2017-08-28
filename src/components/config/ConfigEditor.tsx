@@ -123,7 +123,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                             <Menu.Item name='visual' active={this.state.activeItem === 'visual'}
                                        onClick={this.handleItemClick}>
                                 <Icon name='eye'/>
-                                Time
+                                Visual
                             </Menu.Item>
                             <Menu.Item name='import/export' active={this.state.activeItem === 'import/export'}
                                        onClick={this.handleItemClick}>
@@ -145,7 +145,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Grid.Column>
 
                     <Grid.Column stretched width={12}>
-                        <Segment>
+                        l<Segment>
                             {this.state.activeItem === 'main' ?
                                 <Form>
                                     <Form.Field inline required>
