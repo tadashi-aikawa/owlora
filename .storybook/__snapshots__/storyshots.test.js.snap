@@ -5967,337 +5967,629 @@ exports[`Storyshots DailyCard Milestone 1`] = `
 >
   <div>
     <div
-      className="ui card"
-      href={undefined}
-      onClick={[Function]}
+      className="ui cards"
     >
       <div
-        className="ui dimmer"
+        className="ui card"
+        href={undefined}
         onClick={[Function]}
       >
         <div
-          className="content"
+          className="ui dimmer"
+          onClick={[Function]}
         >
           <div
-            className="center"
+            className="content"
           >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
-              />
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="ui dimmer"
-        onClick={[Function]}
-        style={
-          Object {
-            "backgroundColor": "grey",
-            "opacity": 0.5,
-          }
-        }
-      >
-        
-      </div>
-      <div
-        className="ui dimmer"
-        onClick={[Function]}
-        style={
-          Object {
-            "backgroundColor": "red",
-            "opacity": 0.5,
-          }
-        }
-      >
         <div
-          className="content"
-        >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Change duedate
-              </h2>
-              <i
-                aria-hidden="true"
-                className="arrow circle outline down huge icon"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ui black inverted segment"
-        style={
-          Object {
-            "margin": 0,
-          }
-        }
-      >
-        <div
-          className="ui mini inverted one statistics"
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
-              "paddingBottom": 10,
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
             }
           }
         >
           <div
-            className="ui statistic"
+            className="content"
           >
             <div
-              className="value"
+              className="center"
             >
-              2099-01-01 (Thu)
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
             </div>
-            <div
-              className="label"
-            />
           </div>
         </div>
         <div
-          className="ui green small inverted progress"
-          data-percent={100}
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
         >
           <div
-            className="bar"
+            className="ui mini inverted one statistics"
             style={
               Object {
-                "width": "100%",
+                "paddingBottom": 10,
               }
             }
-          />
-          <div
-            className="label"
-          >
-            <i
-              aria-hidden="true"
-              className="heart icon"
-            />
-             
-            <span
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
-            >
-              300
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="content"
-      >
-        <div
-          className="ui center aligned container"
-        >
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            10
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            11
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            12
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            13
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            14
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            15
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            16
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            17
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            18
-          </div>
-          <div
-            className="ui grey mini circular label"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            19
-          </div>
-        </div>
-        <div
-          className="ui hidden icon negative message"
-        >
-          <i
-            aria-hidden="true"
-            className="warning sign icon"
-          />
-          <div
-            className="content"
           >
             <div
-              className="header"
+              className="ui statistic"
             >
-              Move your tasks to other days!!
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
             </div>
           </div>
-        </div>
-        <div
-          className="ui purple large message"
-          style={
-            Object {
-              "cursor": "move",
-              "opacity": 1,
-            }
-          }
-        >
           <div
-            className="content"
+            className="ui green small inverted progress"
+            data-percent={100}
           >
             <div
-              className="header"
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
             >
-              <span>
-                <span
-                  onClick={undefined}
-                  style={
-                    Object {
-                      "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
-                      "backgroundPosition": "-639.84375px -609.375px",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundSize": "1309.6875px 1309.6875px",
-                      "display": "inline-block",
-                      "fontSize": "inherit",
-                      "height": 30,
-                      "imageRendering": "optimizeQuality",
-                      "lineHeight": "normal",
-                      "margin": "0 .15em",
-                      "position": "relative",
-                      "textIndent": "-9999em",
-                      "top": -3,
-                      "verticalAlign": "middle",
-                      "width": 30,
-                    }
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
                   }
-                  title=":beer:"
-                >
-                  🍺
-                </span>
-                 Party!!
+                }
+              >
+                300
               </span>
             </div>
           </div>
         </div>
         <div
-          className="ui horizontal divider"
+          className="content"
         >
-          <span
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
+          <div
+            className="ui center aligned container"
           >
-            0
-             Tasks
-          </span>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              10
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              11
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              12
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              13
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              14
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              15
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              16
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              17
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              18
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              19
+            </div>
+          </div>
+          <div
+            className="ui hidden icon negative message"
+          >
+            <i
+              aria-hidden="true"
+              className="warning sign icon"
+            />
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                Move your tasks to other days!!
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui purple large message"
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
+          >
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                <span>
+                  <span
+                    onClick={undefined}
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                        "backgroundPosition": "-639.84375px -609.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1309.6875px 1309.6875px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 30,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 30,
+                      }
+                    }
+                    title=":beer:"
+                  >
+                    🍺
+                  </span>
+                   Party!!
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
         </div>
         <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
           style={
             Object {
-              "maxHeight": "100%",
-              "opacity": 1,
-              "transform": "scaleY(1)",
-              "transformOrigin": "top",
-              "transition": "all 0.5s",
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
             }
           }
         >
           <div
-            className="ui feed"
-          />
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        className="extra content"
-      >
-        <span />
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui center aligned container"
+          >
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              10
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              11
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              12
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              13
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              14
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              15
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              16
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              17
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              18
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              19
+            </div>
+          </div>
+          <div
+            className="ui hidden icon negative message"
+          >
+            <i
+              aria-hidden="true"
+              className="warning sign icon"
+            />
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                Move your tasks to other days!!
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
       </div>
     </div>
   </div>
@@ -12253,6 +12545,350 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                   }
                 >
                   30
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui hidden icon negative message"
+          >
+            <i
+              aria-hidden="true"
+              className="warning sign icon"
+            />
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                Move your tasks to other days!!
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div
+              className="ui feed"
+            >
+              <div
+                className="event"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1137.5px -325px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Task1 (11:00-12:00)
+                    </span>
+                  </div>
+                </div>
+                <div
+                  className="ui teal large circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "margin": "auto",
+                      "marginLeft": 5,
+                      "textAlign": "center",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-995.3125px -284.375px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1222.375px 1222.375px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 28,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 28,
+                        }
+                      }
+                      title=":innocent:"
+                    >
+                      😇
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
                 </div>
               </div>
             </div>

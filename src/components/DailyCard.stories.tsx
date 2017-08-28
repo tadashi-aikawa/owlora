@@ -94,7 +94,7 @@ storiesOf('DailyCard', module)
                        ]}
                        timeLamps
                        milestone
-                       isTasksExpanded={boolean('isTasksExpanded', false)}
+                       isTasksExpanded={boolean('(1)isTasksExpanded', false)}
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -108,7 +108,7 @@ storiesOf('DailyCard', module)
                        ]}
                        timeLamps
                        milestone
-                       isTasksExpanded={boolean('isTasksExpanded', true)}
+                       isTasksExpanded={boolean('(2)isTasksExpanded', true)}
                        onUpdateTask={action}
             />
         </Card.Group>
@@ -358,42 +358,44 @@ storiesOf('DailyCard', module)
     ))
     .add('Milestone', () => (
         <WithNotes notes='Even if Milestone has a estimated minutes, ignored estimated them'>
-            <DailyCard date={toDate('2099/01/01')}
-                       taskSortField={TaskSortField.PROJECT_NAME}
-                       taskOrder={Order.ASC}
-                       minutesToUsePerDay={300}
-                       minutesToUsePerSpecificDays={{}}
-                       tasks={[createTask({
-                           id: 1,
-                           name: ":beer: Party!!",
-                           dayOrder: 1,
-                           color: text("(1)task.color", "purple"),
-                           size: select("(1)task.size", Size.toObject, Size.LARGE),
-                           isMilestone: boolean("(1)task.isMilestone", true)
-                       })]}
-                       timeLamps
-                       milestone
-                       isTasksExpanded
-                       onUpdateTask={action}
-            />
-            <DailyCard date={toDate('2099/01/01')}
-                       taskSortField={TaskSortField.PROJECT_NAME}
-                       taskOrder={Order.ASC}
-                       minutesToUsePerDay={300}
-                       minutesToUsePerSpecificDays={{}}
-                       tasks={[createTask({
-                           id: 1,
-                           name: ":beer: Party!!",
-                           dayOrder: 1,
-                           color: "purple",
-                           size: "large",
-                           isMilestone: true,
-                       })]}
-                       timeLamps
-                       milestone={boolean('(2)Milestone is enabled', false)}
-                       isTasksExpanded
-                       onUpdateTask={action}
-            />
+            <Card.Group>
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               name: ":beer: Party!!",
+                               dayOrder: 1,
+                               color: text("(1)task.color", "purple"),
+                               size: select("(1)task.size", Size.toObject, Size.LARGE),
+                               isMilestone: boolean("(1)task.isMilestone", true),
+                           })]}
+                           timeLamps
+                           milestone
+                           isTasksExpanded
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               name: ":beer: Party!!",
+                               dayOrder: 1,
+                               color: "purple",
+                               size: Size.LARGE,
+                               isMilestone: true,
+                           })]}
+                           timeLamps
+                           milestone={boolean('(2)Milestone is enabled', false)}
+                           isTasksExpanded
+                           onUpdateTask={action}
+                />
+            </Card.Group>
         </WithNotes>
     ))
     .add('Life status', () => (
