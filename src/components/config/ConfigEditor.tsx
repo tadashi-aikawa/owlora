@@ -145,7 +145,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Grid.Column>
 
                     <Grid.Column stretched width={12}>
-                        l<Segment>
+                        <Segment>
                             {this.state.activeItem === 'main' ?
                                 <Form>
                                     <Form.Field inline required>
