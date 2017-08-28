@@ -185,9 +185,10 @@ export default class extends Component<DailyCardProps> {
                         {_.range(10, 20).map(h =>
                             <Popup flowing hoverable
                                    key={h}
+                                   position="top center"
                                    openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
                                    trigger={
-                                       <Label key={h} content={h} size="mini"
+                                       <Label key={h} content={h} size="mini" circular
                                               color={estimatedTasksByHours[h] ? "red" : "grey"}/>
                                    }
                             >
