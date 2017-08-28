@@ -108,7 +108,7 @@ export default class extends Component<TopProps, TopState> {
                         <Loader content='Loading' size='huge' active={this.props.isLoading}/>
                     </Dimmer>
                     <div style={
-                        this.props.uiConfig.isIceboxVisible ?
+                        this.props.uiConfig.icebox ?
                             {
                                 overflowY: "scroll",
                                 position: "fixed",
@@ -129,7 +129,7 @@ export default class extends Component<TopProps, TopState> {
                                 width={350}/>
                     </div>
                     <div style={
-                        this.props.uiConfig.isIceboxVisible ?
+                        this.props.uiConfig.icebox ?
                             {
                                 transform: "scale(0.9, 0.9)",
                                 transformOrigin: "top",

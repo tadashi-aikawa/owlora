@@ -42,8 +42,9 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         },
     },
     ui: {
+        icebox: false,
+        timeLamps: true,
         isTasksExpanded: false,
-        isIceboxVisible: false,
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,
         numberOfCardsPerRow: 5,

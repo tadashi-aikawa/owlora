@@ -22,8 +22,8 @@ const isMobile = () => {
     return window.innerWidth < 1400;
 };
 
-const updateUiConfig = (props, property: Object) =>
-    props.onChangeUiConfig(Object.assign({}, props.uiConfig, property));
+const updateUiConfig = (uiConfig, onChangeUiConfig, property: Object) =>
+    onChangeUiConfig(Object.assign({}, uiConfig, property));
 
 const ToggleButton = ({enabled, icon, onChange}: {
     enabled: boolean, icon: string, onChange: (enabled: boolean) => void
@@ -31,6 +31,20 @@ const ToggleButton = ({enabled, icon, onChange}: {
     <Button icon={icon}
             color={enabled ? "teal" : "grey"}
             onClick={() => onChange(!enabled)}/>;
+
+const ToggleButtonGroup = ({uiConfig, onChangeUiConfig}) =>
+    <Menu.Item>
+        <Button.Group>
+            <ToggleButton
+                icon="inbox"
+                enabled={uiConfig.icebox}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {icebox: enabled})}/>
+            <ToggleButton
+                icon="tasks"
+                enabled={uiConfig.isTasksExpanded}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {isTasksExpanded: enabled})}/>
+        </Button.Group>
+    </Menu.Item>;
 
 const DayAppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
@@ -169,19 +183,9 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                        on='click'
                                        position='top right'
                                 />
-                                <Menu.Item>
-                                    <Button.Group>
-                                        <ToggleButton
-                                            icon="inbox"
-                                            enabled={this.props.uiConfig.isIceboxVisible}
-                                            onChange={enabled => updateUiConfig(this.props, {isIceboxVisible: enabled})}/>
-                                        <ToggleButton
-                                            icon="tasks"
-                                            enabled={this.props.uiConfig.isTasksExpanded}
-                                            onChange={enabled => updateUiConfig(this.props, {isTasksExpanded: enabled})}/>
-                                    </Button.Group>
-                                </Menu.Item>
-
+                                <ToggleButtonGroup uiConfig={this.props.uiConfig}
+                                                   onChangeUiConfig={this.props.onChangeUiConfig}
+                                />
                             </Menu.Item>
                             :
                             <Menu.Menu position="right">
@@ -193,18 +197,9 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                         onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <CardNumSelector uiConfig={this.props.uiConfig}
                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                <Menu.Item>
-                                    <Button.Group>
-                                        <ToggleButton
-                                            icon="inbox"
-                                            enabled={this.props.uiConfig.isIceboxVisible}
-                                            onChange={enabled => updateUiConfig(this.props, {isIceboxVisible: enabled})}/>
-                                        <ToggleButton
-                                            icon="tasks"
-                                            enabled={this.props.uiConfig.isTasksExpanded}
-                                            onChange={enabled => updateUiConfig(this.props, {isTasksExpanded: enabled})}/>
-                                    </Button.Group>
-                                </Menu.Item>
+                                <ToggleButtonGroup uiConfig={this.props.uiConfig}
+                                                   onChangeUiConfig={this.props.onChangeUiConfig}
+                                />
                             </Menu.Menu>
                     }
 

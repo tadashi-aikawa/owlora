@@ -4,7 +4,8 @@ import {SemanticWIDTHS} from 'semantic-ui-react';
 
 
 interface UiConfig {
-    isIceboxVisible: boolean;
+    icebox: boolean;
+    timeLamps: boolean;
     isTasksExpanded: boolean;
     taskSortField: TaskSortField;
     taskOrder: Order;
