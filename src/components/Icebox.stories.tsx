@@ -1,6 +1,5 @@
 import * as _ from 'lodash';
 import * as React from 'react';
-import {Component} from 'react';
 
 import {storiesOf} from '@storybook/react';
 import {WithNotes} from '@storybook/addon-notes';
@@ -39,6 +38,7 @@ storiesOf('Icebox', module)
     .add('Summary', () => (
         <Icebox taskSortField={select('Task sort field', TaskSortField.toObject, TaskSortField.PROJECT_NAME)}
                 taskOrder={select('Task order', Order.toObject, Order.ASC)}
+                milestone
                 tasks={object(
                     'Tasks',
                     [

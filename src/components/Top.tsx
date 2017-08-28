@@ -125,6 +125,7 @@ export default class extends Component<TopProps, TopState> {
                         <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
                                 taskSortField={this.props.uiConfig.taskSortField}
                                 taskOrder={this.props.uiConfig.taskOrder}
+                                milestone={this.props.uiConfig.milestone}
                                 onUpdateTask={this.props.onUpdateTask}
                                 width={350}/>
                     </div>
@@ -146,6 +147,7 @@ export default class extends Component<TopProps, TopState> {
                                     taskSortField={this.props.uiConfig.taskSortField}
                                     taskOrder={this.props.uiConfig.taskOrder}
                                     timeLamps={this.props.uiConfig.timeLamps}
+                                    milestone={this.props.uiConfig.milestone}
                                     isTasksExpanded={this.props.uiConfig.isTasksExpanded}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}

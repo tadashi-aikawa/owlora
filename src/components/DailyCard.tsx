@@ -100,6 +100,7 @@ export interface DailyCardProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
     timeLamps: boolean;
+    milestone: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
@@ -182,25 +183,25 @@ export default class extends Component<DailyCardProps> {
                 />
                 <Card.Content>
                     {this.props.timeLamps &&
-                        <Container textAlign="center">
-                            {_.range(10, 20).map(h =>
-                                <Popup flowing hoverable
-                                       key={h}
-                                       position="top center"
-                                       openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
-                                       trigger={
-                                           <Label key={h} content={h} size="mini" circular
-                                                  color={estimatedTasksByHours[h] ? "red" : "grey"}/>
-                                       }
-                                >
-                                    <TaskFeeds tasks={estimatedTasksByHours[h]}
-                                               taskSortField={this.props.taskSortField}
-                                               taskOrder={this.props.taskOrder}
-                                               onUpdateTask={this.props.onUpdateTask}
-                                    />
-                                </Popup>
-                            )}
-                        </Container>
+                    <Container textAlign="center">
+                        {_.range(10, 20).map(h =>
+                            <Popup flowing hoverable
+                                   key={h}
+                                   position="top center"
+                                   openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
+                                   trigger={
+                                       <Label key={h} content={h} size="mini" circular
+                                              color={estimatedTasksByHours[h] ? "red" : "grey"}/>
+                                   }
+                            >
+                                <TaskFeeds tasks={estimatedTasksByHours[h]}
+                                           taskSortField={this.props.taskSortField}
+                                           taskOrder={this.props.taskOrder}
+                                           onUpdateTask={this.props.onUpdateTask}
+                                />
+                            </Popup>
+                        )}
+                    </Container>
                     }
                     <Message negative icon hidden={freeMinutes >= 0}>
                         <Icon name='warning sign'/>
@@ -210,15 +211,17 @@ export default class extends Component<DailyCardProps> {
                             </Message.Header>
                         </Message.Content>
                     </Message>
-                    {this.props.tasks.filter(t => t.isMilestone)
-                        .map(t => <Milestone key={t.id}
-                                             id={t.id}
-                                             name={t.name}
-                                             color={t.color as SemanticCOLORS}
-                                             size={t.size}
-                                             date={t.dueDate}
-                                             onUpdate={this.props.onUpdateTask}
-                        />)}
+                    {
+                        this.props.milestone &&
+                        this.props.tasks.filter(t => t.isMilestone)
+                            .map(t => <Milestone key={t.id}
+                                                 id={t.id}
+                                                 name={t.name}
+                                                 color={t.color as SemanticCOLORS}
+                                                 size={t.size}
+                                                 date={t.dueDate}
+                                                 onUpdate={this.props.onUpdateTask}
+                            />)}
                     <Divider horizontal>
                         <Popup flowing hoverable
                                position="bottom center"
@@ -259,15 +262,12 @@ export default class extends Component<DailyCardProps> {
                                    onUpdateTask={this.props.onUpdateTask}/>
                     </div>
                 </Card.Content>
-                < Card.Content extra>
-                    < EstimateIconGroup
+                <Card.Content extra>
+                    <EstimateIconGroup
                         tasks={estimatedTasks}
-                        taskSortFieldInPopup={this.props.taskSortField
-                        }
-                        taskOrderInPopup={this.props.taskOrder
-                        }
-                        onUpdateTask={this.props.onUpdateTask
-                        }
+                        taskSortFieldInPopup={this.props.taskSortField}
+                        taskOrderInPopup={this.props.taskOrder}
+                        onUpdateTask={this.props.onUpdateTask}
                     />
                 </Card.Content>
             </Card>

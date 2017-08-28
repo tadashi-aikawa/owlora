@@ -48,6 +48,7 @@ export interface DailyCardsProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
     timeLamps: boolean;
+    milestone: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
@@ -78,6 +79,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     taskSortField={props.taskSortField}
                     taskOrder={props.taskOrder}
                     timeLamps={props.timeLamps}
+                    milestone={props.milestone}
                     isTasksExpanded={props.isTasksExpanded}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}

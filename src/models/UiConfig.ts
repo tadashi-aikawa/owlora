@@ -6,6 +6,7 @@ import {SemanticWIDTHS} from 'semantic-ui-react';
 interface UiConfig {
     icebox: boolean;
     timeLamps: boolean;
+    milestone: boolean;
     isTasksExpanded: boolean;
     taskSortField: TaskSortField;
     taskOrder: Order;

@@ -75,6 +75,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
                        ]
                    )}
+                   milestone={boolean('milestone', true)}
                    timeLamps={boolean('timeLamps', true)}
                    isTasksExpanded={boolean('isTasksExpanded', true)}
                    onUpdateTask={action}
@@ -92,6 +93,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
                        timeLamps
+                       milestone
                        isTasksExpanded={boolean('isTasksExpanded', false)}
                        onUpdateTask={action}
             />
@@ -105,6 +107,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
                        timeLamps
+                       milestone
                        isTasksExpanded={boolean('isTasksExpanded', true)}
                        onUpdateTask={action}
             />
@@ -134,6 +137,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -144,6 +148,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -154,6 +159,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -164,6 +170,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -187,6 +194,7 @@ storiesOf('DailyCard', module)
                            })]}
                            isTasksExpanded
                            timeLamps
+                           milestone
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -213,6 +221,7 @@ storiesOf('DailyCard', module)
                                })
                            ]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -241,6 +250,24 @@ storiesOf('DailyCard', module)
                            ]}
                            isTasksExpanded
                            timeLamps
+                           milestone
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.TASK_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               name: 'Task1 (11:00-12:00)',
+                               time: {
+                                   start: toDateTime('2099/01/01 11:00'),
+                                   end: toDateTime('2099/01/01 12:00'),
+                               },
+                           })]}
+                           isTasksExpanded
+                           timeLamps={boolean('(4)Time lamps is enabled', false)}
+                           milestone
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -259,6 +286,7 @@ storiesOf('DailyCard', module)
                            icon: text('task.icon (emoji)', ':innocent:'),
                        })]}
                        timeLamps
+                       milestone
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -273,6 +301,7 @@ storiesOf('DailyCard', module)
                            icon: text('task.icon (url)', 'https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg'),
                        })]}
                        timeLamps
+                       milestone
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -291,6 +320,7 @@ storiesOf('DailyCard', module)
                            color: text("task.color (name)", "pink")
                        })]}
                        timeLamps
+                       milestone
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -305,6 +335,7 @@ storiesOf('DailyCard', module)
                            color: text("task.color (rgb)", "#7777CC")
                        })]}
                        timeLamps
+                       milestone
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -319,6 +350,7 @@ storiesOf('DailyCard', module)
                            color: text("task.color (rgba)", "rgba(200, 50, 50, 0.2)")
                        })]}
                        timeLamps
+                       milestone
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -335,11 +367,30 @@ storiesOf('DailyCard', module)
                            id: 1,
                            name: ":beer: Party!!",
                            dayOrder: 1,
-                           color: text("task.color", "purple"),
-                           size: select("task.size", Size.toObject, Size.LARGE),
-                           isMilestone: boolean("task.isMilestone", true)
+                           color: text("(1)task.color", "purple"),
+                           size: select("(1)task.size", Size.toObject, Size.LARGE),
+                           isMilestone: boolean("(1)task.isMilestone", true)
                        })]}
                        timeLamps
+                       milestone
+                       isTasksExpanded
+                       onUpdateTask={action}
+            />
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       tasks={[createTask({
+                           id: 1,
+                           name: ":beer: Party!!",
+                           dayOrder: 1,
+                           color: "purple",
+                           size: "large",
+                           isMilestone: true,
+                       })]}
+                       timeLamps
+                       milestone={boolean('(2)Milestone is enabled', false)}
                        isTasksExpanded
                        onUpdateTask={action}
             />
@@ -359,6 +410,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (fine♥40)', 60)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -373,6 +425,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (warning♥39)', 61)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -387,6 +440,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (warning♥20)', 80)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -401,6 +455,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (danger♥19)', 81)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -415,6 +470,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (danger♥0)', 100)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -429,6 +485,7 @@ storiesOf('DailyCard', module)
                                estimatedMinutes: number('task.estimatedMinutes (lack)', 101)
                            })]}
                            timeLamps
+                           milestone
                            isTasksExpanded
                            onUpdateTask={action}
                 />
@@ -445,6 +502,7 @@ storiesOf('DailyCard', module)
                    })}
                    tasks={[]}
                    timeLamps
+                   milestone
                    isTasksExpanded
                    onUpdateTask={action}
         />
@@ -460,6 +518,7 @@ storiesOf('DailyCard', module)
                        dayOrder: 1,
                    })]}
                    timeLamps
+                   milestone
                    isTasksExpanded
                    onUpdateTask={action}
         />
