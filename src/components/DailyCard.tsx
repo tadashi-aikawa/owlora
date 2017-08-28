@@ -99,6 +99,7 @@ export interface DailyCardProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
+    timeLamps: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
@@ -180,25 +181,27 @@ export default class extends Component<DailyCardProps> {
                             isOffTime={minutesToUse === 0}
                 />
                 <Card.Content>
-                    <Container textAlign="center">
-                        {_.range(10, 20).map(h =>
-                            <Popup flowing hoverable
-                                   key={h}
-                                   position="top center"
-                                   openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
-                                   trigger={
-                                       <Label key={h} content={h} size="mini" circular
-                                              color={estimatedTasksByHours[h] ? "red" : "grey"}/>
-                                   }
-                            >
-                                <TaskFeeds tasks={estimatedTasksByHours[h]}
-                                           taskSortField={this.props.taskSortField}
-                                           taskOrder={this.props.taskOrder}
-                                           onUpdateTask={this.props.onUpdateTask}
-                                />
-                            </Popup>
-                        )}
-                    </Container>
+                    {this.props.timeLamps &&
+                        <Container textAlign="center">
+                            {_.range(10, 20).map(h =>
+                                <Popup flowing hoverable
+                                       key={h}
+                                       position="top center"
+                                       openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
+                                       trigger={
+                                           <Label key={h} content={h} size="mini" circular
+                                                  color={estimatedTasksByHours[h] ? "red" : "grey"}/>
+                                       }
+                                >
+                                    <TaskFeeds tasks={estimatedTasksByHours[h]}
+                                               taskSortField={this.props.taskSortField}
+                                               taskOrder={this.props.taskOrder}
+                                               onUpdateTask={this.props.onUpdateTask}
+                                    />
+                                </Popup>
+                            )}
+                        </Container>
+                    }
                     <Message negative icon hidden={freeMinutes >= 0}>
                         <Icon name='warning sign'/>
                         <Message.Content>

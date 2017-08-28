@@ -75,6 +75,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
                        ]
                    )}
+                   timeLamps={boolean('timeLamps', true)}
                    isTasksExpanded={boolean('isTasksExpanded', true)}
                    onUpdateTask={action}
         />
@@ -90,6 +91,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
+                       timeLamps
                        isTasksExpanded={boolean('isTasksExpanded', false)}
                        onUpdateTask={action}
             />
@@ -102,6 +104,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
                        ]}
+                       timeLamps
                        isTasksExpanded={boolean('isTasksExpanded', true)}
                        onUpdateTask={action}
             />
@@ -130,7 +133,8 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -139,7 +143,8 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -148,7 +153,8 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -157,7 +163,8 @@ storiesOf('DailyCard', module)
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
                            tasks={tasks}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -178,7 +185,8 @@ storiesOf('DailyCard', module)
                                    end: toDateTime(text('(1)time.end', '2099/01/01 12:00')),
                                },
                            })]}
-                           isTasksExpanded={true}
+                           isTasksExpanded
+                           timeLamps
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -204,7 +212,8 @@ storiesOf('DailyCard', module)
                                    },
                                })
                            ]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -230,7 +239,8 @@ storiesOf('DailyCard', module)
                                    },
                                })
                            ]}
-                           isTasksExpanded={true}
+                           isTasksExpanded
+                           timeLamps
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -248,7 +258,8 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            icon: text('task.icon (emoji)', ':innocent:'),
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -261,7 +272,8 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            icon: text('task.icon (url)', 'https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg'),
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
         </Card.Group>
@@ -278,7 +290,8 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (name)", "pink")
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -291,7 +304,8 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (rgb)", "#7777CC")
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
             <DailyCard date={toDate('2099/01/01')}
@@ -304,7 +318,8 @@ storiesOf('DailyCard', module)
                            dayOrder: 1,
                            color: text("task.color (rgba)", "rgba(200, 50, 50, 0.2)")
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
         </Card.Group>
@@ -324,7 +339,8 @@ storiesOf('DailyCard', module)
                            size: select("task.size", Size.toObject, Size.LARGE),
                            isMilestone: boolean("task.isMilestone", true)
                        })]}
-                       isTasksExpanded={true}
+                       timeLamps
+                       isTasksExpanded
                        onUpdateTask={action}
             />
         </WithNotes>
@@ -342,7 +358,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (fine♥40)', 60)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -355,7 +372,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (warning♥39)', 61)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -368,7 +386,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (warning♥20)', 80)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -381,7 +400,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (danger♥19)', 81)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -394,7 +414,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (danger♥0)', 100)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
                 <DailyCard date={toDate('2099/01/01')}
@@ -407,7 +428,8 @@ storiesOf('DailyCard', module)
                                dayOrder: 1,
                                estimatedMinutes: number('task.estimatedMinutes (lack)', 101)
                            })]}
-                           isTasksExpanded={true}
+                           timeLamps
+                           isTasksExpanded
                            onUpdateTask={action}
                 />
             </Card.Group>
@@ -422,7 +444,8 @@ storiesOf('DailyCard', module)
                        '20990101': 0
                    })}
                    tasks={[]}
-                   isTasksExpanded={true}
+                   timeLamps
+                   isTasksExpanded
                    onUpdateTask={action}
         />
     ))
@@ -436,7 +459,8 @@ storiesOf('DailyCard', module)
                        id: 1,
                        dayOrder: 1,
                    })]}
-                   isTasksExpanded={true}
+                   timeLamps
+                   isTasksExpanded
                    onUpdateTask={action}
         />
     ));

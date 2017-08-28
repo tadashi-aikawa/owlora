@@ -43,6 +43,10 @@ const ToggleButtonGroup = ({uiConfig, onChangeUiConfig}) =>
                 icon="tasks"
                 enabled={uiConfig.isTasksExpanded}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {isTasksExpanded: enabled})}/>
+            <ToggleButton
+                icon="time"
+                enabled={uiConfig.timeLamps}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {timeLamps: enabled})}/>
         </Button.Group>
     </Menu.Item>;
 
