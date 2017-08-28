@@ -9,7 +9,6 @@ import Task, {TaskUpdateParameter} from '../models/Task';
 import DailyCard from './DailyCard';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
-import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import * as DateUtil from '../utils/DateUtil';
 
@@ -48,7 +47,7 @@ export interface DailyCardsProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
-    cardAppearance: CardAppearance;
+    isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
     numberOfCards: number;
@@ -77,7 +76,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     tasks={props.tasks.filter(t => inTheDay(t, date))}
                     taskSortField={props.taskSortField}
                     taskOrder={props.taskOrder}
-                    appearance={props.cardAppearance}
+                    isTasksExpanded={props.isTasksExpanded}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
                     onUpdateTask={props.onUpdateTask}

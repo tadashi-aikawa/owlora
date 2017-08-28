@@ -147,7 +147,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -157,7 +157,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -167,7 +167,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -177,7 +177,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -187,7 +187,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -197,7 +197,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -207,7 +207,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -217,7 +217,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -227,7 +227,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -237,7 +237,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -616,7 +616,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -626,7 +626,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -636,7 +636,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -646,7 +646,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -656,7 +656,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -666,7 +666,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -676,7 +676,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -686,7 +686,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -696,7 +696,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -706,7 +706,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1102,7 +1102,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1112,7 +1112,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1122,7 +1122,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1132,7 +1132,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1142,7 +1142,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1152,7 +1152,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1162,7 +1162,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1172,7 +1172,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1182,7 +1182,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1192,7 +1192,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1550,7 +1550,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1560,7 +1560,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1570,7 +1570,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1580,7 +1580,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1590,7 +1590,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1600,7 +1600,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1610,7 +1610,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1620,7 +1620,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1630,7 +1630,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1640,7 +1640,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1998,7 +1998,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2008,7 +2008,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2018,7 +2018,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2028,7 +2028,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2038,7 +2038,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2048,7 +2048,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2058,7 +2058,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2068,7 +2068,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2078,7 +2078,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2088,7 +2088,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2463,7 +2463,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2473,7 +2473,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2483,7 +2483,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2493,7 +2493,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2503,7 +2503,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2513,7 +2513,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2523,7 +2523,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2533,7 +2533,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2543,7 +2543,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2553,7 +2553,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2911,7 +2911,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2921,7 +2921,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2931,7 +2931,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2941,7 +2941,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2951,7 +2951,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2961,7 +2961,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2971,7 +2971,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2981,7 +2981,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -2991,7 +2991,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3001,7 +3001,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3343,7 +3343,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3353,7 +3353,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3363,7 +3363,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3373,7 +3373,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3383,7 +3383,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3393,7 +3393,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3403,7 +3403,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3413,7 +3413,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3423,7 +3423,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3433,7 +3433,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3791,7 +3791,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3801,7 +3801,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3811,7 +3811,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3821,7 +3821,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3831,7 +3831,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3841,7 +3841,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3851,7 +3851,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3861,7 +3861,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3871,7 +3871,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3881,7 +3881,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4239,7 +4239,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4249,7 +4249,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4259,7 +4259,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4269,7 +4269,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4279,7 +4279,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4289,7 +4289,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4299,7 +4299,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4309,7 +4309,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4319,7 +4319,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4329,7 +4329,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4687,7 +4687,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4697,7 +4697,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4707,7 +4707,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4717,7 +4717,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4727,7 +4727,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4737,7 +4737,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4747,7 +4747,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4757,7 +4757,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4767,7 +4767,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4777,7 +4777,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5135,7 +5135,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5145,7 +5145,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5155,7 +5155,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5165,7 +5165,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5175,7 +5175,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5185,7 +5185,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5195,7 +5195,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5205,7 +5205,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5215,7 +5215,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5225,7 +5225,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5639,7 +5639,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5649,7 +5649,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5659,7 +5659,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5669,7 +5669,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5679,7 +5679,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5689,7 +5689,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5699,7 +5699,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5709,7 +5709,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5719,7 +5719,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -5729,7 +5729,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -6101,7 +6101,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6111,7 +6111,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             10
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6121,7 +6121,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             11
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6131,7 +6131,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             12
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6141,7 +6141,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             13
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6151,7 +6151,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             14
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6161,7 +6161,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             15
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6171,7 +6171,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             16
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6181,7 +6181,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             17
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6191,7 +6191,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             18
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6482,7 +6482,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6492,7 +6492,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             10
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6502,7 +6502,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             11
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6512,7 +6512,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             12
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6522,7 +6522,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             13
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6532,7 +6532,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             14
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6542,7 +6542,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             15
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6552,7 +6552,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             16
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6562,7 +6562,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             17
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6572,7 +6572,7 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             18
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6783,7 +6783,7 @@ exports[`Storyshots DailyCard Past 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6793,7 +6793,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             10
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6803,7 +6803,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             11
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6813,7 +6813,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             12
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6823,7 +6823,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             13
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6833,7 +6833,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             14
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6843,7 +6843,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             15
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6853,7 +6853,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             16
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6863,7 +6863,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             17
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -6873,7 +6873,7 @@ exports[`Storyshots DailyCard Past 1`] = `
             18
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -7247,7 +7247,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7257,7 +7257,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7267,7 +7267,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7277,7 +7277,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7287,7 +7287,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7297,7 +7297,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7307,7 +7307,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7317,7 +7317,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7327,7 +7327,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7337,7 +7337,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7954,7 +7954,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7964,7 +7964,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7974,7 +7974,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7984,7 +7984,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -7994,7 +7994,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8004,7 +8004,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8014,7 +8014,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8024,7 +8024,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8034,7 +8034,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8044,7 +8044,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8661,7 +8661,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8671,7 +8671,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8681,7 +8681,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8691,7 +8691,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8701,7 +8701,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8711,7 +8711,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8721,7 +8721,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8731,7 +8731,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8741,7 +8741,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -8751,7 +8751,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9368,7 +9368,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9378,7 +9378,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9388,7 +9388,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9398,7 +9398,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9408,7 +9408,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9418,7 +9418,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9428,7 +9428,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9438,7 +9438,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9448,7 +9448,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -9458,7 +9458,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10089,7 +10089,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10099,7 +10099,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             10
           </div>
           <div
-            className="ui red mini label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10109,7 +10109,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             11
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10119,7 +10119,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             12
           </div>
           <div
-            className="ui red mini label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10129,7 +10129,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             13
           </div>
           <div
-            className="ui red mini label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10139,7 +10139,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             14
           </div>
           <div
-            className="ui red mini label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10149,7 +10149,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             15
           </div>
           <div
-            className="ui red mini label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10159,7 +10159,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             16
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10169,7 +10169,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             17
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10179,7 +10179,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             18
           </div>
           <div
-            className="ui grey mini label"
+            className="ui grey mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -10890,7 +10890,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10900,7 +10900,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               10
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10910,7 +10910,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10920,7 +10920,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10930,7 +10930,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10940,7 +10940,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               14
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10950,7 +10950,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               15
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10960,7 +10960,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10970,7 +10970,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -10980,7 +10980,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11338,7 +11338,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11348,7 +11348,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               10
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11358,7 +11358,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11368,7 +11368,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11378,7 +11378,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               13
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11388,7 +11388,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               14
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11398,7 +11398,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               15
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11408,7 +11408,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               16
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11418,7 +11418,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11428,7 +11428,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11866,7 +11866,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11876,7 +11876,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               10
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11886,7 +11886,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               11
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11896,7 +11896,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               12
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11906,7 +11906,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               13
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11916,7 +11916,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               14
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11926,7 +11926,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               15
             </div>
             <div
-              className="ui red mini label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11936,7 +11936,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               16
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11946,7 +11946,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               17
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -11956,7 +11956,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               18
             </div>
             <div
-              className="ui grey mini label"
+              className="ui grey mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}

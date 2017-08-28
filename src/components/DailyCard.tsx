@@ -3,12 +3,12 @@ import {Component} from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import {
-    Container,
-    Label,
     Card,
+    Container,
     Dimmer,
     Divider,
     Icon,
+    Label,
     Message,
     Popup,
     Progress,
@@ -24,7 +24,6 @@ import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import TaskFeeds from "./TaskFeeds";
-import CardAppearance from '../constants/CardAppearance';
 import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
@@ -100,7 +99,7 @@ export interface DailyCardProps {
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
-    appearance: CardAppearance;
+    isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
 
@@ -221,7 +220,7 @@ export default class extends Component<DailyCardProps> {
                         <Popup flowing hoverable
                                position="bottom center"
                                openOnTriggerMouseEnter={
-                                   estimatedTasks.length > 0 && this.props.appearance === CardAppearance.OVERVIEW
+                                   estimatedTasks.length > 0 && !this.props.isTasksExpanded
                                }
                                trigger={
                                    <span>{estimatedTasks.length} Tasks</span>
@@ -235,7 +234,7 @@ export default class extends Component<DailyCardProps> {
                         </Popup>
                     </Divider>
                     <div style={
-                        this.props.appearance === CardAppearance.DETAIL ?
+                        this.props.isTasksExpanded ?
                             {
                                 opacity: 1,
                                 maxHeight: "100%",

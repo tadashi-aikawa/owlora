@@ -6,7 +6,6 @@ import {AppState} from '../states/AppState';
 import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
-import CardAppearance from '../constants/CardAppearance';
 import RootState from '../states/index';
 
 
@@ -43,7 +42,7 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         },
     },
     ui: {
-        cardAppearance: CardAppearance.DETAIL,
+        isTasksExpanded: false,
         isIceboxVisible: false,
         taskSortField: TaskSortField.PROJECT_NAME,
         taskOrder: Order.ASC,

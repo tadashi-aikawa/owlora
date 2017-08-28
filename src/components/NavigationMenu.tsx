@@ -3,26 +3,13 @@ import '../../package';
 import * as _ from 'lodash';
 import * as React from 'react';
 import {Component} from 'react';
-import {
-    Segment,
-    Input,
-    Button,
-    Checkbox,
-    Dropdown,
-    Header,
-    Icon,
-    Menu,
-    Modal,
-    Popup,
-    SemanticWIDTHS
-} from 'semantic-ui-react';
+import {Button, Dropdown, Header, Icon, Input, Menu, Modal, Popup, Segment, SemanticWIDTHS} from 'semantic-ui-react';
 import CommonConfig from '../models/CommonConfig';
 import ConfigEditor from './config/ConfigEditor';
 import Project from '../models/Project';
 import Label from '../models/Label';
 import {DragDropContext} from 'react-dnd';
 
-import CardAppearance from '../constants/CardAppearance';
 import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
@@ -44,25 +31,13 @@ const IceboxToggle = ({uiConfig, onChangeUiConfig}) =>
                 )}/>
     </Menu.Item>;
 
-const AppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
+const TasksExpandedToggle = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
-        <Button.Group>
-            <Button toggle
-                    active={uiConfig.cardAppearance === CardAppearance.OVERVIEW}
-                    onClick={() => onChangeUiConfig(
-                        Object.assign({}, uiConfig, {cardAppearance: CardAppearance.OVERVIEW})
-                    )}>
-                Overview
-            </Button>
-            <Button.Or/>
-            <Button toggle
-                    active={uiConfig.cardAppearance === CardAppearance.DETAIL}
-                    onClick={() => onChangeUiConfig(
-                        Object.assign({}, uiConfig, {cardAppearance: CardAppearance.DETAIL})
-                    )}>
-                Detail
-            </Button>
-        </Button.Group>
+        <Button icon="tasks"
+                color={uiConfig.isTasksExpanded ? "teal" : "grey"}
+                onClick={() => onChangeUiConfig(
+                    Object.assign({}, uiConfig, {isTasksExpanded: !uiConfig.isTasksExpanded})
+                )}/>
     </Menu.Item>;
 
 const DayAppearanceToggle = ({uiConfig, onChangeUiConfig}) =>
@@ -180,10 +155,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                 <Menu.Menu position="right">
                     {
                         isMobile() ?
-                            <Menu.Item position="right">
-                                <AppearanceToggle uiConfig={this.props.uiConfig}
-                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
-                                <SortOrderSelector uiConfig={this.props.uiConfig}
+                            <Menu.Item position="right"><SortOrderSelector uiConfig={this.props.uiConfig}
                                                    onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <Popup inverted
                                        trigger={<Button content="More..." icon="dropdown" inverted/>}
@@ -207,11 +179,12 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                 />
                                 <IceboxToggle uiConfig={this.props.uiConfig}
                                               onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <TasksExpandedToggle uiConfig={this.props.uiConfig}
+                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
+
                             </Menu.Item>
                             :
                             <Menu.Menu position="right">
-                                <AppearanceToggle uiConfig={this.props.uiConfig}
-                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <DayAppearanceToggle uiConfig={this.props.uiConfig}
                                                      onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <SortOrderSelector uiConfig={this.props.uiConfig}
@@ -222,6 +195,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
                                 <IceboxToggle uiConfig={this.props.uiConfig}
                                               onChangeUiConfig={this.props.onChangeUiConfig}/>
+                                <TasksExpandedToggle uiConfig={this.props.uiConfig}
+                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
                             </Menu.Menu>
                     }
 

@@ -145,7 +145,7 @@ export default class extends Component<TopProps, TopState> {
                         <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
                                     taskSortField={this.props.uiConfig.taskSortField}
                                     taskOrder={this.props.uiConfig.taskOrder}
-                                    cardAppearance={this.props.uiConfig.cardAppearance}
+                                    isTasksExpanded={this.props.uiConfig.isTasksExpanded}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
                                     minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
                                     numberOfCards={this.props.uiConfig.numberOfCards}
