@@ -3,10 +3,12 @@ import {reducer as toastrReducer} from 'react-redux-toastr'
 import {combineReducers, Reducer} from 'redux';
 import {Actions, default as ActionType} from '../actions';
 import {AppState} from '../states/AppState';
-import {ConfigState} from '../states/ConfigState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 import RootState from '../states/index';
+import {firebaseStateReducer} from 'react-redux-firebase'
+import {SharedState} from "../states/SharedState";
+import {StorageState} from '../states/StorageState';
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -16,32 +18,38 @@ const INITIAL_APP_STATE: AppState = {
     isSyncing: true,
 };
 
-export const INITIAL_CONFIG_STATE: ConfigState = {
-    common: {
-        todoistToken: '',
+export const INITIAL_SHARED_STATE: SharedState = {
+    config: {
         minutesToUsePerDay: 240,
         estimatedLabels: {
-            dict: {},
-            yaml: ''
+            dict: {77777: 30},
+            yaml: '77777: 30'
         },
         milestones: {
-            array: [],
-            yaml: ''
+            array: [{color: 'green', condition: {regexp: ':yum:'}}],
+            yaml: '{color: "green", condition: {regexp: ":yum:"}}'
         },
         minutesToUsePerSpecificDays: {
-            dict: {},
-            yaml: ''
+            dict: {20200101: 0},
+            yaml: '20200101: 0'
         },
         iconsByProject: {
-            dict: {},
-            yaml: ''
+            dict: {777777777: ':smile:'},
+            yaml: '77777: ":smile:"'
         },
         colorsByTaskNameRegexp: {
-            dict: {},
-            yaml: ''
+            dict: {":arrow_up:": "rgba(220,55,55,0.2)"},
+            yaml: '":arrow_up:": rgba(220,55,55,0.2)'
         },
     },
-    ui: {
+};
+
+export const INITIAL_STORAGE_STATE: StorageState = {
+    todoist: {
+        token: '',
+        updating: false,
+    },
+    uiConfig: {
         icebox: false,
         timeLamps: true,
         milestone: true,
@@ -52,12 +60,13 @@ export const INITIAL_CONFIG_STATE: ConfigState = {
         numberOfCardsPerRow: 5,
         numberOfCards: 30,
         onlyWeekday: true,
-    }
+    },
 };
 
 export const INITIAL_ROOT_STATE: RootState = {
     app: INITIAL_APP_STATE,
-    config: INITIAL_CONFIG_STATE,
+    storage: INITIAL_STORAGE_STATE,
+    firebase: INITIAL_SHARED_STATE,
 };
 
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
@@ -101,12 +110,22 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
     }
 };
 
-const configState = (state: ConfigState = INITIAL_CONFIG_STATE, action: Actions): ConfigState => {
+const storageState = (state: StorageState = INITIAL_STORAGE_STATE, action: Actions): StorageState => {
     switch (action.type) {
-        case ActionType.UPDATE_COMMON_CONFIG:
-            return Object.assign({}, state, {common: action.payload});
         case ActionType.UPDATE_UI_CONFIG:
-            return Object.assign({}, state, {ui: action.payload});
+            return Object.assign({}, state, {uiConfig: action.payload});
+        case ActionType.UPDATE_TODOIST_TOKEN:
+            return Object.assign({}, state, {
+                todoist: {token: null, error: null, updating: true,}
+            });
+        case ActionType.SUCCESS_UPDATE_TODOIST_TOKEN:
+            return Object.assign({}, state, {
+                todoist: {token: action.payload, error: null, updating: false,}
+            });
+        case ActionType.ERROR_UPDATE_TODOIST_TOKEN:
+            return Object.assign({}, state, {
+                todoist: {token: action.payload, error: action.error, updating: false,}
+            });
         default:
             return state;
     }
@@ -114,6 +133,7 @@ const configState = (state: ConfigState = INITIAL_CONFIG_STATE, action: Actions)
 
 export default combineReducers({
     app: appState as Reducer<any>,
-    config: configState as Reducer<any>,
+    storage: storageState as Reducer<any>,
     toastr: toastrReducer,
+    firebase: firebaseStateReducer,
 });

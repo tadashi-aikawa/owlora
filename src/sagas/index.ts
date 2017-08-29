@@ -1,11 +1,20 @@
 import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
-import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
+import {delay} from 'redux-saga';
+import ActionType, {
+    errorSync, errorUpdateTasks, successSync, successUpdateTasks
+} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from '../services/TodoistSyncService';
 import SyncService from '../services/SyncService';
 import Task from '../models/Task';
-import {UpdateTasksAction} from '../actions/index';
+import {
+    errorUpdateTodoistToken,
+    LoginAction, successUpdateTodoistToken, UpdateConfigAction, UpdateTasksAction,
+    UpdateTodoistTokenAction,
+    LogoutAction,
+} from '../actions/index';
 import {Dictionary} from "lodash";
+import {isLoaded} from 'react-redux-firebase'
 
 const service: SyncService = new TodoistSyncService();
 
@@ -30,8 +39,49 @@ export function* updateTasks(action: UpdateTasksAction) {
     }
 }
 
+export function* login(action: LoginAction) {
+    try {
+        const r = yield action.payload.login({provider: 'google'});
+    } catch (e) {
+        // TODO: error toaster
+        console.log(e);
+    }
+}
+
+export function* logout(action: LogoutAction) {
+    try {
+        yield action.payload.logout();
+    } catch (e) {
+        // TODO: error toaster
+        console.log(e);
+    }
+}
+
+export function* updateConfig(action: UpdateConfigAction) {
+    try {
+        yield action.payload.firebase.set('/config', action.payload.config);
+    } catch (e) {
+        // TODO: error toaster
+        console.log(e);
+    }
+}
+
+export function* updateTodoistToken(action: UpdateTodoistTokenAction) {
+    try {
+        yield call(service.ping, action.payload);
+        yield put(successUpdateTodoistToken(action.payload));
+    } catch (e) {
+        yield put(errorUpdateTodoistToken(action.payload, e));
+    }
+}
+
+
 export default function* () {
     yield takeLatest(ActionType.SYNC, sync);
+    yield takeLatest(ActionType.LOGIN, login);
+    yield takeLatest(ActionType.LOGOUT, logout);
+    yield takeLatest(ActionType.UPDATE_CONFIG, updateConfig);
+    yield takeLatest(ActionType.UPDATE_TODOIST_TOKEN, updateTodoistToken);
+
     yield takeEvery(ActionType.UPDATE_TASKS, updateTasks);
-    yield call(sync);
 }
