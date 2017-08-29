@@ -12,7 +12,6 @@ interface ArrayAndYaml<T> {
 }
 
 interface CommonConfig {
-    todoistToken: string;
     minutesToUsePerDay: number;
     estimatedLabels: DictAndYaml<number>;
     milestones: ArrayAndYaml<MilestoneConfig>;

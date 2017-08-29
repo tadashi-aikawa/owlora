@@ -94,9 +94,13 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
 }
 
 class TodoistSyncService implements SyncService {
+    * ping(token: string) {
+        yield call(TodoistClient.fetchAll, token);
+    }
+
     * sync(): IterableIterator<any | SyncPayload> {
-        const token = yield select(todoistTokenSelector);
-        const res: TodoistAll = yield call(TodoistClient.fetchAll, token);
+        const requestToken = yield select(todoistTokenSelector);
+        const res: TodoistAll = yield call(TodoistClient.fetchAll, requestToken);
 
         const tasksById: Dictionary<Task> = yield todoistTasksToTasks(res.items, res.projects);
         const projects: Project[] = res.projects.map(x => x);

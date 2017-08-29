@@ -29,9 +29,8 @@ export interface ConfigEditorProps {
 }
 
 export interface ConfigEditorState {
-    activeItem: 'main' | 'time' | 'visual' | 'import/export' | 'info';
+    activeItem: 'time' | 'visual' | 'import/export' | 'account' | 'info';
 
-    todoistToken: string;
     estimatedLabels: string;
     milestones: string;
     minutesToUsePerDay: number;
@@ -45,8 +44,7 @@ export interface ConfigEditorState {
 export default class extends React.Component<ConfigEditorProps, ConfigEditorState> {
 
     state: ConfigEditorState = {
-        activeItem: 'main',
-        todoistToken: this.props.defaultConfig.todoistToken,
+        activeItem: 'time',
         estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
         milestones: this.props.defaultConfig.milestones.yaml,
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
@@ -64,7 +62,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         try {
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
-                todoistToken: this.state.todoistToken,
                 estimatedLabels: {
                     dict: this.state.estimatedLabels ?
                         safeLoad(this.state.estimatedLabels) : {},
@@ -110,11 +107,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                 <Grid>
                     <Grid.Column width={4}>
                         <Menu fluid vertical tabular icon="labeled">
-                            <Menu.Item name='main' active={this.state.activeItem === 'main'}
-                                       onClick={this.handleItemClick}>
-                                <Icon name='settings'/>
-                                Main
-                            </Menu.Item>
                             <Menu.Item name='time' active={this.state.activeItem === 'time'}
                                        onClick={this.handleItemClick}>
                                 <Icon name='time'/>
@@ -129,6 +121,11 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        onClick={this.handleItemClick}>
                                 <Icon name='file outline'/>
                                 Import / Export
+                            </Menu.Item>
+                            <Menu.Item name='account' active={this.state.activeItem === 'account'}
+                                       onClick={this.handleItemClick}>
+                                <Icon name='user'/>
+                                Account
                             </Menu.Item>
                             <Menu.Item name='info' active={this.state.activeItem === 'info'}
                                        onClick={this.handleItemClick}>
@@ -146,18 +143,7 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
                     <Grid.Column stretched width={12}>
                         <Segment>
-                            {this.state.activeItem === 'main' ?
-                                <Form>
-                                    <Form.Field inline required>
-                                        <label><Icon name="pencil"/>Todoist API token</label>
-                                        <Form.Input type="password"
-                                                    name="todoistToken"
-                                                    value={this.state.todoistToken}
-                                                    onChange={this.handleChange}
-                                        />
-                                    </Form.Field>
-                                </Form>
-                                :
+                            {
                                 this.state.activeItem === 'visual' ?
                                     <Form>
                                         <Form.Field inline required>
@@ -227,7 +213,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                                             )}
                                             />
                                             :
-                                            this.state.activeItem === 'info' ? <ConfigInfo version={version}/> : ""
+                                            this.state.activeItem === 'account' ?
+                                                <span>TODO</span>
+                                                :
+                                                this.state.activeItem === 'info' ? <ConfigInfo version={version}/> : ""
                             }
                         </Segment>
                     </Grid.Column>

@@ -148,6 +148,7 @@ export interface NavigationMenuProps {
     onReload: () => void;
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
+    onLogout: () => void;
 }
 
 export interface NavigationMenuState {
@@ -282,13 +283,15 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                             <Modal.Content scrolling style={{height: "90vh"}}>
                                 <ConfigEditor defaultConfig={this.props.config}
                                               onSaveConfig={(config) => {
-                                                  this.props.onChangeConfig(config);
                                                   this.handleClose();
-                                                  this.props.onReload();
+                                                  this.props.onChangeConfig(config);
                                               }}
                                 />
                             </Modal.Content>
                         </Modal>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Menu.Item name='logout' onClick={this.props.onLogout} />
                     </Menu.Item>
                 </Menu.Menu>
             </Menu>

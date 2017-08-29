@@ -1,7 +1,21 @@
 import '../../package';
 import * as React from 'react';
+import * as _ from 'lodash';
 import {Component} from 'react';
-import {Dimmer, Feed, Label as SLabel, Loader} from 'semantic-ui-react';
+import {
+    Segment,
+    Image,
+    Step,
+    Container,
+    Message,
+    Button,
+    Form,
+    Icon,
+    Dimmer,
+    Feed,
+    Label as SLabel,
+    Loader
+} from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import CommonConfig from '../models/CommonConfig';
@@ -19,34 +33,78 @@ import NavigationMenu from './NavigationMenu';
 import MultiBackend, {Preview} from 'react-dnd-multi-backend';
 import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch';
 import ImageOrEmoji from './ImageOrEmoji';
+import {INITIAL_SHARED_STATE} from '../reducers/index';
+import {isLoaded, isEmpty} from 'react-redux-firebase'
+
+
+const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
+    <Step.Group>
+        <Step disabled={activeGroupIndex !== 0}>
+            <Image size="tiny"
+                   src='https://d1x0mwiac2rqwt.cloudfront.net/bab0a0c4b1c3135a24bd0518417b66e3/as/logo_todoist_schema.png'/>
+            <Step.Content title='STEP 1:  Set token'
+                          description='Set your todoist token to sync tasks and any more'/>
+        </Step>
+        <Step disabled={activeGroupIndex !== 1}>
+            <Image size="tiny"
+                   src="https://www.google.co.jp/images/branding/googleg/1x/googleg_standard_color_128dp.png"/>
+            <Step.Content title='STEP 2:  Login'
+                          description='Login with your google account to sync settings in your devices'/>
+        </Step>
+    </Step.Group>;
 
 
 export interface TopProps {
     tasks: Task[];
     projects: Project[];
     labels: Label[];
-    config: CommonConfig;
-    uiConfig: UiConfig;
     isLoading: boolean;
     error: Error;
+
+    config: CommonConfig;
+    uiConfig: UiConfig;
+    token: string;
+    isTokenUpdating: boolean;
+    tokenUpdateError: Error;
+
+    auth: any,
+    authError: any,
+    profile: any,
 
     onReload: () => void;
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
+    onUpdateToken: (token: string) => void;
+    onLogin: (provider: string) => void;
+    onLogout: () => void;
 }
 
 export interface TopState {
     hasErrorToast: boolean;
+    inputToken: string;
 }
 
 
 @DragDropContext(MultiBackend(HTML5toTouch))
 export default class extends Component<TopProps, TopState> {
 
-    state: TopState = {hasErrorToast: false};
+    state: TopState = {
+        hasErrorToast: false,
+        inputToken: this.props.token,
+    };
 
     componentWillReceiveProps(nextProps: TopProps) {
+        if (!_.isEqual(this.props.config, nextProps.config)) {
+            nextProps.onReload();
+        }
+
+        // XXX: mumumumumu....
+        if (isLoaded(nextProps.config) && isEmpty(nextProps.config)) {
+            nextProps.onChangeConfig(INITIAL_SHARED_STATE.config);
+        }
+
+        // Toaster
         if (nextProps.error) {
             toastr.error(nextProps.error.name, nextProps.error.message, {
                 showCloseButton: false,
@@ -94,81 +152,117 @@ export default class extends Component<TopProps, TopState> {
     }
 
     render() {
-        return (
-            <div>
-                <NavigationMenu projects={this.props.projects}
-                                labels={this.props.labels}
-                                config={this.props.config}
-                                uiConfig={this.props.uiConfig}
-                                onReload={this.props.onReload}
-                                onChangeConfig={this.props.onChangeConfig}
-                                onChangeUiConfig={this.props.onChangeUiConfig}/>
-                <div style={{padding: 10, marginTop: 70}}>
-                    <Dimmer active={this.props.isLoading} page>
-                        <Loader content='Loading' size='huge' active={this.props.isLoading}/>
-                    </Dimmer>
-                    <div style={
-                        this.props.uiConfig.icebox ?
-                            {
-                                overflowY: "scroll",
-                                position: "fixed",
-                                height: "85vh",
-                                transition: "all 0.5s",
-                            }
-                            :
-                            {
-                                transform: "translate(-400px)",
-                                transition: "all 0.5s",
-                                position: "fixed",
-                            }
-                    }>
-                        <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
-                                taskSortField={this.props.uiConfig.taskSortField}
-                                taskOrder={this.props.uiConfig.taskOrder}
-                                milestone={this.props.uiConfig.milestone}
-                                onUpdateTask={this.props.onUpdateTask}
-                                width={350}/>
-                    </div>
-                    <div style={
-                        this.props.uiConfig.icebox ?
-                            {
-                                transform: "scale(0.9, 0.9)",
-                                transformOrigin: "top",
-                                transition: "all 0.5s",
-                                marginLeft: 350,
-                            }
-                            :
-                            {
-                                transformOrigin: "top",
-                                transition: "all 0.5s"
-                            }
-                    }>
-                        <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
-                                    taskSortField={this.props.uiConfig.taskSortField}
-                                    taskOrder={this.props.uiConfig.taskOrder}
-                                    timeLamps={this.props.uiConfig.timeLamps}
-                                    milestone={this.props.uiConfig.milestone}
-                                    warning={this.props.uiConfig.warning}
-                                    isTasksExpanded={this.props.uiConfig.isTasksExpanded}
-                                    minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                    minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                    numberOfCards={this.props.uiConfig.numberOfCards}
-                                    numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
-                                    onlyWeekday={this.props.uiConfig.onlyWeekday}
-                                    onUpdateTask={this.props.onUpdateTask}
+        const needsValidTodoistToken = !this.props.token || this.props.tokenUpdateError;
+        const needsLogin = isLoaded(this.props.auth) && isEmpty(this.props.auth);
+        const readyToLoadingTasks = isLoaded(this.props.config);
+
+        return needsValidTodoistToken ?
+            <Container textAlign="center" style={{marginTop: 60}}>
+                <Steps activeGroupIndex={0}/>
+                <Form onSubmit={() => this.props.onUpdateToken(this.state.inputToken)}>
+                    <Form.Field inline required>
+                        <label><Icon name="pencil"/>Todoist API token</label>
+                        <Form.Input type="password"
+                                    name="todoistToken"
+                                    value={this.state.inputToken}
+                                    onChange={(e, {name, value}) => this.setState({inputToken: value})}
                         />
+                    </Form.Field>
+                    <Button loading={this.props.isTokenUpdating}>Submit</Button>
+                    <Message error visible={!!this.props.tokenUpdateError}>Token is invalid!!</Message>
+                </Form>
+            </Container>
+            :
+            needsLogin ?
+                <Container textAlign="center" style={{marginTop: 60}}>
+                    <Steps activeGroupIndex={1}/>
+                    <div style={{padding: 50}}>
+                        <Button color='google plus' onClick={() => this.props.onLogin('google')}>Login with Google</Button>
                     </div>
+                </Container>
+                :
+                <div>
+                    <NavigationMenu projects={this.props.projects}
+                                    labels={this.props.labels}
+                                    config={this.props.config}
+                                    uiConfig={this.props.uiConfig}
+                                    onReload={this.props.onReload}
+                                    onLogout={this.props.onLogout}
+                                    onChangeConfig={this.props.onChangeConfig}
+                                    onChangeUiConfig={this.props.onChangeUiConfig}
+                    />
+                    <Dimmer active={!readyToLoadingTasks} page>
+                        <Loader content='Loading settings of your account...' size='huge'
+                                active={this.props.isLoading}/>
+                    </Dimmer>
+                    {
+                        readyToLoadingTasks &&
+                        <div style={{padding: 10, marginTop: 70}}>
+                            <Dimmer active={this.props.isLoading} page>
+                                <Loader content='Loading' size='huge' active={this.props.isLoading}/>
+                            </Dimmer>
+                            <div style={
+                                this.props.uiConfig.icebox ?
+                                    {
+                                        overflowY: "scroll",
+                                        position: "fixed",
+                                        height: "85vh",
+                                        transition: "all 0.5s",
+                                    }
+                                    :
+                                    {
+                                        transform: "translate(-400px)",
+                                        transition: "all 0.5s",
+                                        position: "fixed",
+                                    }
+                            }>
+                                <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
+                                        taskSortField={this.props.uiConfig.taskSortField}
+                                        taskOrder={this.props.uiConfig.taskOrder}
+                                        milestone={this.props.uiConfig.milestone}
+                                        onUpdateTask={this.props.onUpdateTask}
+                                        width={350}/>
+                            </div>
+                            <div style={
+                                this.props.uiConfig.icebox ?
+                                    {
+                                        transform: "scale(0.9, 0.9)",
+                                        transformOrigin: "top",
+                                        transition: "all 0.5s",
+                                        marginLeft: 350,
+                                    }
+                                    :
+                                    {
+                                        transformOrigin: "top",
+                                        transition: "all 0.5s"
+                                    }
+                            }>
+                                <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
+                                            taskSortField={this.props.uiConfig.taskSortField}
+                                            taskOrder={this.props.uiConfig.taskOrder}
+                                            timeLamps={this.props.uiConfig.timeLamps}
+                                            milestone={this.props.uiConfig.milestone}
+                                            warning={this.props.uiConfig.warning}
+                                            isTasksExpanded={this.props.uiConfig.isTasksExpanded}
+                                            minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                            minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                            numberOfCards={this.props.uiConfig.numberOfCards}
+                                            numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
+                                            onlyWeekday={this.props.uiConfig.onlyWeekday}
+                                            onUpdateTask={this.props.onUpdateTask}
+                                />
+                            </div>
+                        </div>
+                    }
+                    <Preview generator={this.generatePreview}/>
+                    <ReduxToastr
+                        timeOut={0}
+                        newestOnTop={false}
+                        preventDuplicates
+                        position="bottom-right"
+                        transitionIn="fadeIn"
+                        transitionOut="fadeOut"
+                    />
                 </div>
-                <Preview generator={this.generatePreview}/>
-                <ReduxToastr
-                    timeOut={0}
-                    newestOnTop={false}
-                    preventDuplicates
-                    position="bottom-right"
-                    transitionIn="fadeIn"
-                    transitionOut="fadeOut"
-                />
-            </div>
-        );
     }
 }

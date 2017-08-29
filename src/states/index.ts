@@ -1,9 +1,11 @@
 import {AppState} from './AppState';
-import {ConfigState} from './ConfigState';
+import {SharedState} from './SharedState';
+import {StorageState} from './StorageState';
 
 interface RootState {
     app: AppState,
-    config: ConfigState
+    storage: StorageState,
+    firebase?: SharedState,
 }
 
 export default RootState;
