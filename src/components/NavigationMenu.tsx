@@ -105,7 +105,7 @@ const SortOrderSelector = ({uiConfig, onChangeUiConfig}) =>
 
 const CardColumnsNumSelector = ({uiConfig, onChangeUiConfig}) =>
     <Menu.Item>
-        <Dropdown text={uiConfig.numberOfCardsPerRow as string}
+        <Dropdown text={String(uiConfig.numberOfCardsPerRow)}
                   search labeled button floating compact
                   className="icon" icon="columns"
                   onChange={(e, {value}: { value: string }) => onChangeUiConfig(
