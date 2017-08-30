@@ -154,115 +154,131 @@ export default class extends Component<TopProps, TopState> {
     render() {
         const needsValidTodoistToken = !this.props.token || this.props.tokenUpdateError;
         const needsLogin = isLoaded(this.props.auth) && isEmpty(this.props.auth);
-        const readyToLoadingTasks = isLoaded(this.props.config);
+        const readyToLoadingTasks = isLoaded(this.props.config) && !isEmpty(this.props.config);
 
-        return needsValidTodoistToken ?
-            <Container textAlign="center" style={{marginTop: 60}}>
-                <Steps activeGroupIndex={0}/>
-                <Form onSubmit={() => this.props.onUpdateToken(this.state.inputToken)}>
-                    <Form.Field inline required>
-                        <label><Icon name="pencil"/>Todoist API token</label>
-                        <Form.Input type="password"
-                                    name="todoistToken"
-                                    value={this.state.inputToken}
-                                    onChange={(e, {name, value}) => this.setState({inputToken: value})}
-                        />
-                    </Form.Field>
-                    <Button loading={this.props.isTokenUpdating}>Submit</Button>
-                    <Message error visible={!!this.props.tokenUpdateError}>Token is invalid!!</Message>
-                </Form>
-            </Container>
-            :
-            needsLogin ?
+        if (needsValidTodoistToken) {
+            return (
+                <Container textAlign="center" style={{marginTop: 60}}>
+                    <Steps activeGroupIndex={0}/>
+                    <Form onSubmit={() => this.props.onUpdateToken(this.state.inputToken)}>
+                        <Form.Field inline required>
+                            <label><Icon name="pencil"/>Todoist API token</label>
+                            <Form.Input type="password"
+                                        name="todoistToken"
+                                        value={this.state.inputToken}
+                                        onChange={(e, {name, value}) => this.setState({inputToken: value})}
+                            />
+                        </Form.Field>
+                        <Button loading={this.props.isTokenUpdating}>Submit</Button>
+                        <Message error visible={!!this.props.tokenUpdateError}>Token is invalid!!</Message>
+                    </Form>
+                </Container>
+            );
+        }
+
+        if (needsLogin) {
+            return (
                 <Container textAlign="center" style={{marginTop: 60}}>
                     <Steps activeGroupIndex={1}/>
                     <div style={{padding: 50}}>
                         <Button color='google plus' onClick={() => this.props.onLogin('google')}>Login with Google</Button>
                     </div>
                 </Container>
-                :
+            );
+        }
+
+        if (!readyToLoadingTasks) {
+            return (
                 <div>
-                    <NavigationMenu projects={this.props.projects}
-                                    labels={this.props.labels}
-                                    config={this.props.config}
-                                    uiConfig={this.props.uiConfig}
-                                    onReload={this.props.onReload}
-                                    onLogout={this.props.onLogout}
-                                    onChangeConfig={this.props.onChangeConfig}
-                                    onChangeUiConfig={this.props.onChangeUiConfig}
-                    />
-                    <Dimmer active={!readyToLoadingTasks} page>
+                    <Dimmer active page>
                         <Loader content='Loading settings of your account...' size='huge'
                                 active={this.props.isLoading}/>
                     </Dimmer>
-                    {
-                        readyToLoadingTasks &&
-                        <div style={{padding: 10, marginTop: 70}}>
-                            <Dimmer active={this.props.isLoading} page>
-                                <Loader content='Loading' size='huge' active={this.props.isLoading}/>
-                            </Dimmer>
-                            <div style={
-                                this.props.uiConfig.icebox ?
-                                    {
-                                        overflowY: "scroll",
-                                        position: "fixed",
-                                        height: "85vh",
-                                        transition: "all 0.5s",
-                                    }
-                                    :
-                                    {
-                                        transform: "translate(-400px)",
-                                        transition: "all 0.5s",
-                                        position: "fixed",
-                                    }
-                            }>
-                                <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
-                                        taskSortField={this.props.uiConfig.taskSortField}
-                                        taskOrder={this.props.uiConfig.taskOrder}
-                                        milestone={this.props.uiConfig.milestone}
-                                        onUpdateTask={this.props.onUpdateTask}
-                                        width={350}/>
-                            </div>
-                            <div style={
-                                this.props.uiConfig.icebox ?
-                                    {
-                                        transform: "scale(0.9, 0.9)",
-                                        transformOrigin: "top",
-                                        transition: "all 0.5s",
-                                        marginLeft: 350,
-                                    }
-                                    :
-                                    {
-                                        transformOrigin: "top",
-                                        transition: "all 0.5s"
-                                    }
-                            }>
-                                <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
-                                            taskSortField={this.props.uiConfig.taskSortField}
-                                            taskOrder={this.props.uiConfig.taskOrder}
-                                            timeLamps={this.props.uiConfig.timeLamps}
-                                            milestone={this.props.uiConfig.milestone}
-                                            warning={this.props.uiConfig.warning}
-                                            isTasksExpanded={this.props.uiConfig.isTasksExpanded}
-                                            minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                            minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
-                                            numberOfCards={this.props.uiConfig.numberOfCards}
-                                            numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
-                                            onlyWeekday={this.props.uiConfig.onlyWeekday}
-                                            onUpdateTask={this.props.onUpdateTask}
-                                />
-                            </div>
-                        </div>
-                    }
-                    <Preview generator={this.generatePreview}/>
-                    <ReduxToastr
-                        timeOut={0}
-                        newestOnTop={false}
-                        preventDuplicates
-                        position="bottom-right"
-                        transitionIn="fadeIn"
-                        transitionOut="fadeOut"
-                    />
                 </div>
+            );
+        }
+
+        return (
+            <div>
+                <NavigationMenu projects={this.props.projects}
+                                labels={this.props.labels}
+                                config={this.props.config}
+                                uiConfig={this.props.uiConfig}
+                                onReload={this.props.onReload}
+                                onLogout={this.props.onLogout}
+                                onChangeConfig={this.props.onChangeConfig}
+                                onChangeUiConfig={this.props.onChangeUiConfig}
+                />
+                <Dimmer active={!readyToLoadingTasks} page>
+                    <Loader content='Loading settings of your account...' size='huge'
+                            active={this.props.isLoading}/>
+                </Dimmer>
+                <div style={{padding: 10, marginTop: 70}}>
+                    <Dimmer active={this.props.isLoading} page>
+                        <Loader content='Loading' size='huge' active={this.props.isLoading}/>
+                    </Dimmer>
+                    <div style={
+                        this.props.uiConfig.icebox ?
+                            {
+                                overflowY: "scroll",
+                                position: "fixed",
+                                height: "85vh",
+                                transition: "all 0.5s",
+                            }
+                            :
+                            {
+                                transform: "translate(-400px)",
+                                transition: "all 0.5s",
+                                position: "fixed",
+                            }
+                    }>
+                        <Icebox tasks={this.props.tasks.filter(x => !x.dueDate)}
+                                taskSortField={this.props.uiConfig.taskSortField}
+                                taskOrder={this.props.uiConfig.taskOrder}
+                                milestone={this.props.uiConfig.milestone}
+                                onUpdateTask={this.props.onUpdateTask}
+                                width={350}/>
+                    </div>
+                    <div style={
+                        this.props.uiConfig.icebox ?
+                            {
+                                transform: "scale(0.9, 0.9)",
+                                transformOrigin: "top",
+                                transition: "all 0.5s",
+                                marginLeft: 350,
+                            }
+                            :
+                            {
+                                transformOrigin: "top",
+                                transition: "all 0.5s"
+                            }
+                    }>
+                        <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
+                                    taskSortField={this.props.uiConfig.taskSortField}
+                                    taskOrder={this.props.uiConfig.taskOrder}
+                                    timeLamps={this.props.uiConfig.timeLamps}
+                                    milestone={this.props.uiConfig.milestone}
+                                    warning={this.props.uiConfig.warning}
+                                    isTasksExpanded={this.props.uiConfig.isTasksExpanded}
+                                    minutesToUsePerDay={this.props.config.minutesToUsePerDay}
+                                    minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                    numberOfCards={this.props.uiConfig.numberOfCards}
+                                    numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
+                                    onlyWeekday={this.props.uiConfig.onlyWeekday}
+                                    onUpdateTask={this.props.onUpdateTask}
+                        />
+                    </div>
+                </div>
+                <Preview generator={this.generatePreview}/>
+                <ReduxToastr
+                    timeOut={0}
+                    newestOnTop={false}
+                    preventDuplicates
+                    position="bottom-right"
+                    transitionIn="fadeIn"
+                    transitionOut="fadeOut"
+                />
+            </div>
+        );
     }
 }

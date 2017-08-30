@@ -1,20 +1,20 @@
 import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
-import {delay} from 'redux-saga';
-import ActionType, {
-    errorSync, errorUpdateTasks, successSync, successUpdateTasks
-} from '../actions';
+import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from '../services/TodoistSyncService';
 import SyncService from '../services/SyncService';
 import Task from '../models/Task';
 import {
     errorUpdateTodoistToken,
-    LoginAction, successUpdateTodoistToken, UpdateConfigAction, UpdateTasksAction,
-    UpdateTodoistTokenAction,
+    LoginAction,
     LogoutAction,
+    successUpdateTodoistToken,
+    UpdateConfigAction,
+    UpdateTasksAction,
+    UpdateTodoistTokenAction,
 } from '../actions/index';
 import {Dictionary} from "lodash";
-import {isLoaded} from 'react-redux-firebase'
+import {config} from "../utils/FirebasePathUtil";
 
 const service: SyncService = new TodoistSyncService();
 
@@ -59,7 +59,7 @@ export function* logout(action: LogoutAction) {
 
 export function* updateConfig(action: UpdateConfigAction) {
     try {
-        yield action.payload.firebase.set('/config', action.payload.config);
+        yield action.payload.firebase.set(config(action.payload.firebase), action.payload.config);
     } catch (e) {
         // TODO: error toaster
         console.log(e);

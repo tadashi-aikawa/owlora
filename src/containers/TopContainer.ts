@@ -6,8 +6,8 @@ import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
 import {TaskUpdateParameter} from '../models/Task';
 import UiConfig from '../models/UiConfig';
-import {pathToJS, dataToJS, firebaseConnect} from 'react-redux-firebase'
-
+import {dataToJS, firebaseConnect, getFirebase, pathToJS} from 'react-redux-firebase'
+import {config} from "../utils/FirebasePathUtil";
 
 const mapStateToProps = (state: RootState) => ({
     tasks: _.values(state.app.tasksById),
@@ -16,7 +16,7 @@ const mapStateToProps = (state: RootState) => ({
     error: state.app.error,
     isLoading: state.app.isSyncing,
 
-    config: dataToJS(state.firebase, 'config'),
+    config: dataToJS(state.firebase, config(getFirebase())),
     uiConfig: state.storage.uiConfig,
     token: state.storage.todoist.token,
     isTokenUpdating: state.storage.todoist.updating,
@@ -54,9 +54,9 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-const wrappedTop = firebaseConnect([
-    'config'
-])(Top);
+const wrappedTop = firebaseConnect((props, firebase) => ([
+    config(firebase)
+]))(Top);
 
 const TopContainer = connect(
     mapStateToProps,
