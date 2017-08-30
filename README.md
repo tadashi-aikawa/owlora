@@ -6,7 +6,7 @@ Task management tool in which can medium term.
 
 For now, `Owlora` uses Todoist API as backend.
 
-[Demo](https://tadashi-aikawa.github.io/owlora/)
+[Demo](https://owlora-mamansoft.firebaseapp.com/)
 
 ## Support platforms
 
