@@ -52,3 +52,5 @@ typings/
 .env
 
 .idea/
+
+public/bundle*
