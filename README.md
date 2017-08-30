@@ -21,6 +21,13 @@ For now, `Owlora` uses Todoist API as backend.
 $ yarn global add webpack
 ```
 
+If you want to release..
+
+```
+$ npm install -g firebase-tools
+$ firebase login
+```
+
 ### Install dependencies
 
 ```
@@ -57,8 +64,8 @@ $ yarn test:watch
 $ yarn build
 ```
 
-### Deploy
+### Release
 
 1. Increment version in `package.json`
-2. `yarn deploy`
+2. `yarn release`
  
