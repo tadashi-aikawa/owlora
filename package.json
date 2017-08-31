@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
-    "build": "webpack --define process.env.NODE_ENV=production --config webpack.config.pro.js",
+    "build": "webpack --config webpack.config.pro.js",
     "deploy": "firebase deploy --project owlora-mamansoft",
-    "prerelease": "jest && webpack --define process.env.NODE_ENV=production --config webpack.config.pro.js",
+    "prerelease": "jest && webpack --config webpack.config.pro.js",
     "release": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "postrelease": "firebase deploy --project owlora-mamansoft",
     "storybook": "start-storybook -p 6006",
