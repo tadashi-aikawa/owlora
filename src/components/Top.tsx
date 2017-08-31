@@ -261,7 +261,7 @@ export default class extends Component<TopProps, TopState> {
                                     warning={this.props.uiConfig.warning}
                                     isTasksExpanded={this.props.uiConfig.isTasksExpanded}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}
-                                    minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict}
+                                    minutesToUsePerSpecificDays={this.props.config.minutesToUsePerSpecificDays.dict || {}}
                                     numberOfCards={this.props.uiConfig.numberOfCards}
                                     numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
                                     onlyWeekday={this.props.uiConfig.onlyWeekday}

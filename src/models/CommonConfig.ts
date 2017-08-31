@@ -2,7 +2,7 @@ import {Dictionary} from 'lodash';
 import MilestoneConfig from './MilestoneConfig';
 
 interface DictAndYaml<T> {
-    dict: Dictionary<T>;
+    dict?: Dictionary<T>;
     yaml: string;
 }
 
