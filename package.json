@@ -7,13 +7,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
-    "build": "webpack --progress",
+    "build": "webpack --define process.env.NODE_ENV=production --config webpack.config.pro.js",
     "deploy": "firebase deploy --project owlora-mamansoft",
-
-    "prerelease": "jest && webpack",
+    "prerelease": "jest && webpack --define process.env.NODE_ENV=production --config webpack.config.pro.js",
     "release": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "postrelease": "firebase deploy --project owlora-mamansoft",
-
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
@@ -83,6 +81,7 @@
     "style-loader": "^0.18.2",
     "ts-jest": "^20.0.7",
     "typescript": "^2.4.2",
+    "uglifyjs-webpack-plugin": "next",
     "url-loader": "^0.5.9",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
