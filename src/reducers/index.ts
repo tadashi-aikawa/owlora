@@ -21,25 +21,25 @@ const INITIAL_APP_STATE: AppState = {
 export const INITIAL_SHARED_STATE: SharedState = {
     config: {
         minutesToUsePerDay: 240,
-        estimatedLabels: {
-            dict: {77777: 30},
-            yaml: '77777: 30'
+        estimates: {
+            array: [],
+            yaml: '',
         },
         milestones: {
-            array: [{color: 'green', condition: {regexp: ':yum:'}}],
-            yaml: '{color: "green", condition: {regexp: ":yum:"}}'
+            array: [],
+            yaml: ''
         },
         minutesToUsePerSpecificDays: {
-            dict: {20200101: 0},
-            yaml: '20200101: 0'
+            dict: {},
+            yaml: ''
         },
         iconsByProject: {
-            dict: {777777777: ':smile:'},
-            yaml: '77777: ":smile:"'
+            dict: {},
+            yaml: ''
         },
         colorsByTaskNameRegexp: {
-            dict: {":arrow_up:": "rgba(220,55,55,0.2)"},
-            yaml: '":arrow_up:": rgba(220,55,55,0.2)'
+            dict: {},
+            yaml: ''
         },
     },
 };

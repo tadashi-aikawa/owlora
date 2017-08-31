@@ -1,5 +1,6 @@
 import {Dictionary} from 'lodash';
 import MilestoneConfig from './MilestoneConfig';
+import EstimateConfig from './EstimateConfig';
 
 interface DictAndYaml<T> {
     dict?: Dictionary<T>;
@@ -13,7 +14,7 @@ interface ArrayAndYaml<T> {
 
 interface CommonConfig {
     minutesToUsePerDay: number;
-    estimatedLabels: DictAndYaml<number>;
+    estimates: ArrayAndYaml<EstimateConfig>;
     milestones: ArrayAndYaml<MilestoneConfig>;
     minutesToUsePerSpecificDays: DictAndYaml<number>;
     iconsByProject: DictAndYaml<string>;

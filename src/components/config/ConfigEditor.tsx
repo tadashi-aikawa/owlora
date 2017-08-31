@@ -23,6 +23,19 @@ const MILESTONES_PLACEHOLDER = `By yaml
     projectIdsOr: [153016633]
 `;
 
+const ESTIMATES_PLACEHOLDER = `By yaml
+---------------
+
+- minutes: 5
+  condition:
+    regexp: " @5min"
+    labelId: 2148194362
+    projectId: 153016592
+- minutes: 15
+  condition:
+    regexp: " @15min"
+`;
+
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     onSaveConfig: (config: CommonConfig) => void;
@@ -31,7 +44,7 @@ export interface ConfigEditorProps {
 export interface ConfigEditorState {
     activeItem: 'time' | 'visual' | 'import/export' | 'account' | 'info';
 
-    estimatedLabels: string;
+    estimates: string;
     milestones: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
@@ -45,7 +58,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     state: ConfigEditorState = {
         activeItem: 'time',
-        estimatedLabels: this.props.defaultConfig.estimatedLabels.yaml,
+        estimates: this.props.defaultConfig.estimates &&
+            this.props.defaultConfig.estimates.yaml,
         milestones: this.props.defaultConfig.milestones.yaml,
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
@@ -62,14 +76,14 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         try {
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
-                estimatedLabels: {
-                    dict: this.state.estimatedLabels ?
-                        safeLoad(this.state.estimatedLabels) : {},
-                    yaml: this.state.estimatedLabels,
+                estimates: {
+                    array: this.state.estimates ?
+                        safeLoad(this.state.estimates) : [],
+                    yaml: this.state.estimates,
                 },
                 milestones: {
                     array: this.state.milestones ?
-                        safeLoad(this.state.milestones) : {},
+                        safeLoad(this.state.milestones) : [],
                     yaml: this.state.milestones,
                 },
                 minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
@@ -196,10 +210,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                                 />
                                             </Form.Field>
                                             <Form.Field inline required>
-                                                <label><Icon name="pencil"/>Estimated Labels (todo)</label>
-                                                <Form.TextArea name="estimatedLabels"
-                                                               placeholder='Estimated labels as yaml (key is label id)'
-                                                               value={this.state.estimatedLabels}
+                                                <label><Icon name="pencil"/>Estimates</label>
+                                                <Form.TextArea name="estimates"
+                                                               placeholder={ESTIMATES_PLACEHOLDER}
+                                                               value={this.state.estimates}
                                                                onChange={this.handleChange}
                                                                autoHeight
                                                 />

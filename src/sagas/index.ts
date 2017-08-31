@@ -23,6 +23,7 @@ export function* sync() {
         const payload: SyncPayload = yield call(service.sync);
         yield put(successSync(payload));
     } catch (e) {
+        console.log(e);
         yield put(errorSync(e));
     }
 }
@@ -32,6 +33,7 @@ export function* updateTasks(action: UpdateTasksAction) {
         const tasks: Dictionary<Task> = yield call(service.updateTasks, action.payload);
         yield put(successUpdateTasks(tasks));
     } catch (e) {
+        console.log(e);
         yield put(errorUpdateTasks({
             name: 'Failure update task',
             message: `${action.payload.map(x => `${x.name}\n`)}`
@@ -71,6 +73,7 @@ export function* updateTodoistToken(action: UpdateTodoistTokenAction) {
         yield call(service.ping, action.payload);
         yield put(successUpdateTodoistToken(action.payload));
     } catch (e) {
+        console.log(e);
         yield put(errorUpdateTodoistToken(action.payload, e));
     }
 }

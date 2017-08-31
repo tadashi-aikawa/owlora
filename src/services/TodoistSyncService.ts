@@ -4,7 +4,7 @@ import * as moment from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
 import {
     colorsByTaskNameRegexpSelector,
-    estimatedLabelsSelector,
+    estimatesSelector,
     iconsByProjectSelector,
     milestonesSelector,
     todoistTokenSelector,
@@ -21,6 +21,7 @@ import SyncPayload from '../payloads/SyncPayload';
 import Repetition from '../constants/Repetition';
 import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
+import EstimateConfig from '../models/EstimateConfig';
 
 const toRepetition = (dateString: string): Repetition => {
     if (!dateString) {
@@ -45,7 +46,7 @@ const toRepetition = (dateString: string): Repetition => {
 function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]): IterableIterator<any | Dictionary<Task>> {
     // This method returns Dictionary<Task>
     // TODO: Argument TodoistProject[] have to be removed
-    const estimatedLabels: Dictionary<number> = yield select(estimatedLabelsSelector);
+    const estimates: EstimateConfig[] = yield select(estimatesSelector);
     const milestones: MilestoneConfig[] = yield select(milestonesSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
     const colorsByTaskNameRegexp: Dictionary<string> = Object.assign(
@@ -59,7 +60,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
         .filter(x => !x.checked)
         .orderBy(x => x.project_id)
         .map(x => {
-            const matched: MilestoneConfig = _.find(
+            const matchedMilestone: MilestoneConfig = _.find(
                 milestones,
                 (m: MilestoneConfig) => _.every([
                     !m.condition.regexp || x.content.match(new RegExp(m.condition.regexp)),
@@ -67,13 +68,22 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     !m.condition.projectIdsOr || _.includes(m.condition.projectIdsOr, x.project_id)
                 ])
             );
+            const matchedEstimate: EstimateConfig =  _.find(
+                estimates,
+                (e: EstimateConfig) => _.every([
+                    !e.condition.regexp || x.content.match(new RegExp(e.condition.regexp)),
+                    !e.condition.labelId || _.includes(x.labels, e.condition.labelId),
+                    !e.condition.projectId || x.project_id === e.condition.projectId,
+                ])
+            );
+
             const times = x.content.match(/(\d{1,2}):(\d{2})-(\d{1,2}):(\d{2})/);
 
             return {
                 id: x.id,
                 name: x.content,
                 projectName: projectsById[String(x.project_id)].name,
-                estimatedMinutes: _.find(estimatedLabels, (v, k) => _.includes(x.labels, Number(k))),
+                estimatedMinutes: matchedEstimate && matchedEstimate.minutes,
                 dueDate: x.due_date_utc && moment(x.due_date_utc),
                 time: times && {
                     start: moment(x.due_date_utc).hour(Number(times[1])).minute(Number(times[2])),
@@ -82,10 +92,10 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 repetition: toRepetition(x.date_string),
                 icon: iconsByProject[String(x.project_id)] || ":white_circle:",
                 dayOrder: x.day_order,
-                isMilestone: !!matched,
-                color: !!matched ? matched.color :
+                isMilestone: !!matchedMilestone,
+                color: !!matchedMilestone ? matchedMilestone.color :
                     _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
-                size: !!matched ? (matched.size || Size.SMALL) : Size.SMALL,
+                size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
             }
         })
         .filter(x => x.estimatedMinutes || x.isMilestone)
