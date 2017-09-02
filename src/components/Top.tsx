@@ -1,20 +1,19 @@
 import '../../package';
 import * as React from 'react';
-import * as _ from 'lodash';
 import {Component} from 'react';
+import * as _ from 'lodash';
 import {
-    Segment,
-    Image,
-    Step,
-    Container,
-    Message,
     Button,
-    Form,
-    Icon,
+    Container,
     Dimmer,
     Feed,
+    Form,
+    Icon,
+    Image,
     Label as SLabel,
-    Loader
+    Loader,
+    Message,
+    Step
 } from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -34,7 +33,7 @@ import MultiBackend, {Preview} from 'react-dnd-multi-backend';
 import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch';
 import ImageOrEmoji from './ImageOrEmoji';
 import {INITIAL_SHARED_STATE} from '../reducers/index';
-import {isLoaded, isEmpty} from 'react-redux-firebase'
+import {isEmpty, isLoaded} from 'react-redux-firebase'
 
 
 const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
@@ -181,7 +180,8 @@ export default class extends Component<TopProps, TopState> {
                 <Container textAlign="center" style={{marginTop: 60}}>
                     <Steps activeGroupIndex={1}/>
                     <div style={{padding: 50}}>
-                        <Button color='google plus' onClick={() => this.props.onLogin('google')}>Login with Google</Button>
+                        <Button color='google plus' onClick={() => this.props.onLogin('google')}>Login with
+                            Google</Button>
                     </div>
                 </Container>
             );
@@ -236,6 +236,7 @@ export default class extends Component<TopProps, TopState> {
                                 taskSortField={this.props.uiConfig.taskSortField}
                                 taskOrder={this.props.uiConfig.taskOrder}
                                 milestone={this.props.uiConfig.milestone}
+                                seal={this.props.uiConfig.seal}
                                 onUpdateTask={this.props.onUpdateTask}
                                 width={350}/>
                     </div>

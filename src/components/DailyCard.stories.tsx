@@ -74,8 +74,8 @@ storiesOf('DailyCard', module)
                                },
                            }),
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
-                           createTask({id: 5, name: 'Seal1', dayOrder: 5, color: "magenda", isSeal: true}),
-                           createTask({id: 6, name: ':wine: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
+                           createTask({id: 5, name: 'Seal1', dayOrder: 5, color: "orange", isSeal: true}),
+                           createTask({id: 6, name: ':wine_glass: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
                        ]
                    )}
                    timeLamps={boolean('timeLamps', true)}
@@ -447,7 +447,7 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={[createTask({
                                id: 1,
-                               name: ":home: At home",
+                               name: ":house: At home",
                                dayOrder: 1,
                                color: text("(1)task.color", "purple"),
                                isSeal: boolean("(1)task.isSeal", true),
@@ -466,14 +466,14 @@ storiesOf('DailyCard', module)
                            minutesToUsePerSpecificDays={{}}
                            tasks={[createTask({
                                id: 1,
-                               name: ":home: At home",
+                               name: ":house: At home",
                                dayOrder: 1,
                                color: "purple",
                                isSeal: true,
                            })]}
                            timeLamps
-                           milestone={boolean('(2)Seal is enabled', false)}
-                           seal
+                           milestone
+                           seal={boolean('(2)Seal is enabled', false)}
                            warning
                            isTasksExpanded
                            onUpdateTask={action}

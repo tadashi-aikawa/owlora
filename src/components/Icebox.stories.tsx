@@ -22,6 +22,7 @@ const createTask = (properties): Task => _.assign({}, {
     icon: ":innocent:",
     color: "rgba(150, 150, 150, 0.1)",
     isMilestone: false,
+    isSeal: false,
 
     name: "Task",
     projectName: "Project",
@@ -39,6 +40,7 @@ storiesOf('Icebox', module)
         <Icebox taskSortField={select('Task sort field', TaskSortField.toObject, TaskSortField.PROJECT_NAME)}
                 taskOrder={select('Task order', Order.toObject, Order.ASC)}
                 milestone
+                seal
                 tasks={object(
                     'Tasks',
                     [
@@ -57,6 +59,8 @@ storiesOf('Icebox', module)
                             color: "rgba(200, 50, 50, 0.1)"
                         }),
                         createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "blue", isMilestone: true}),
+                        createTask({id: 5, name: 'Seal1', dayOrder: 5, color: "orange", isSeal: true}),
+                        createTask({id: 6, name: ':wine_glass: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
                     ]
                 )}
                 width={number('width', 350)}

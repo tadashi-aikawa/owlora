@@ -10,6 +10,7 @@ import {findDOMNode} from 'react-dom';
 import TaskFeeds from "./TaskFeeds";
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
+import Seal from './Seal';
 
 
 export interface IceboxProps {
@@ -17,6 +18,7 @@ export interface IceboxProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
     milestone: boolean;
+    seal: boolean
     width: number;
 
     connectDropTarget?: Function;
@@ -61,7 +63,7 @@ export default class extends Component<IceboxProps> {
 
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
-            .reject(t => t.isMilestone)
+            .reject(t => t.isMilestone || t.isSeal)
             .value();
 
         return (
@@ -85,6 +87,17 @@ export default class extends Component<IceboxProps> {
                 </Segment>
                 <Card.Content>
                     {
+                        this.props.seal &&
+                        this.props.tasks.filter(t => t.isSeal)
+                            .map(t => <Seal key={t.id}
+                                            id={t.id}
+                                            name={t.name}
+                                            color={t.color as SemanticCOLORS}
+                                            date={t.dueDate}
+                                            onUpdate={this.props.onUpdateTask}
+                            />)
+                    }
+                    {
                         this.props.milestone && this.props.tasks.filter(t => t.isMilestone)
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
@@ -93,7 +106,8 @@ export default class extends Component<IceboxProps> {
                                                  size={t.size}
                                                  date={t.dueDate}
                                                  onUpdate={this.props.onUpdateTask}
-                            />)}
+                            />)
+                    }
                     <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
                     <TaskFeeds tasks={estimatedTasks}
                                taskSortField={this.props.taskSortField}

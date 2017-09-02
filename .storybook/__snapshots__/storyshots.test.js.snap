@@ -246,6 +246,9 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -715,6 +718,9 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -1201,6 +1207,9 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -1649,6 +1658,9 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -2097,6 +2109,9 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -2562,6 +2577,9 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -3010,6 +3028,9 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -3442,6 +3463,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -3890,6 +3914,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -4338,6 +4365,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -4786,6 +4816,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -5234,6 +5267,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -5738,6 +5774,9 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui icon negative message"
@@ -6203,6 +6242,9 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -6537,6 +6579,9 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -6873,6 +6918,9 @@ exports[`Storyshots DailyCard Offtime 1`] = `
           >
             19
           </div>
+          <div
+            className="ui divider"
+          />
         </div>
         <div
           className="ui hidden icon negative message"
@@ -7174,6 +7222,9 @@ exports[`Storyshots DailyCard Past 1`] = `
           >
             19
           </div>
+          <div
+            className="ui divider"
+          />
         </div>
         <div
           className="ui hidden icon negative message"
@@ -7386,6 +7437,644 @@ exports[`Storyshots DailyCard Past 1`] = `
             </div>
           </div>
         </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DailyCard Seal 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui cards"
+    >
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui center aligned container"
+          >
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              10
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              11
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              12
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              13
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              14
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              15
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              16
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              17
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              18
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              19
+            </div>
+            <div
+              className="ui divider"
+            />
+          </div>
+          <div
+            className="ui purple basic label"
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "move",
+                "opacity": 1,
+              }
+            }
+          >
+            <span>
+              <span
+                onClick={undefined}
+                style={
+                  Object {
+                    "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                    "backgroundPosition": "-390px -195px",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "698.5px 698.5px",
+                    "display": "inline-block",
+                    "fontSize": "inherit",
+                    "height": 16,
+                    "imageRendering": "optimizeQuality",
+                    "lineHeight": "normal",
+                    "margin": "0 .15em",
+                    "position": "relative",
+                    "textIndent": "-9999em",
+                    "top": -3,
+                    "verticalAlign": "middle",
+                    "width": 16,
+                  }
+                }
+                title=":house:"
+              >
+                🏠
+              </span>
+               At home
+            </span>
+          </div>
+          <div
+            className="ui hidden icon negative message"
+          >
+            <i
+              aria-hidden="true"
+              className="warning sign icon"
+            />
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                Move your tasks to other days!!
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2099-01-01 (Thu)
+              </div>
+              <div
+                className="label"
+              />
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui center aligned container"
+          >
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              10
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              11
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              12
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              13
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              14
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              15
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              16
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              17
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              18
+            </div>
+            <div
+              className="ui grey mini circular label"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              19
+            </div>
+            <div
+              className="ui divider"
+            />
+          </div>
+          <div
+            className="ui hidden icon negative message"
+          >
+            <i
+              aria-hidden="true"
+              className="warning sign icon"
+            />
+            <div
+              className="content"
+            >
+              <div
+                className="header"
+              >
+                Move your tasks to other days!!
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div
+              className="ui feed"
+            />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
       </div>
     </div>
   </div>
@@ -7638,6 +8327,9 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -8345,6 +9037,9 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -9052,6 +9747,9 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -9759,6 +10457,9 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -10480,6 +11181,62 @@ exports[`Storyshots DailyCard Summary 1`] = `
           >
             19
           </div>
+          <div
+            className="ui divider"
+          />
+        </div>
+        <div
+          className="ui orange basic label"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
+        >
+          <span>
+            Seal1
+          </span>
+        </div>
+        <div
+          className="ui pink basic label"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                  "backgroundPosition": "-341.25px -276.25px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "698.5px 698.5px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 16,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 16,
+                }
+              }
+              title=":wine_glass:"
+            >
+              🍷
+            </span>
+             Seal2
+          </span>
         </div>
         <div
           className="ui hidden icon negative message"
@@ -11281,6 +12038,9 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -11729,6 +12489,9 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -12257,6 +13020,9 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -13202,6 +13968,9 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui icon negative message"
@@ -13706,6 +14475,9 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui horizontal divider"
@@ -14137,6 +14909,9 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -14585,6 +15360,9 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               19
             </div>
+            <div
+              className="ui divider"
+            />
           </div>
           <div
             className="ui horizontal divider"
@@ -14871,6 +15649,59 @@ exports[`Storyshots Icebox Summary 1`] = `
       <div
         className="content"
       >
+        <div
+          className="ui orange basic label"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
+        >
+          <span>
+            Seal1
+          </span>
+        </div>
+        <div
+          className="ui pink basic label"
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "move",
+              "opacity": 1,
+            }
+          }
+        >
+          <span>
+            <span
+              onClick={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                  "backgroundPosition": "-341.25px -276.25px",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "698.5px 698.5px",
+                  "display": "inline-block",
+                  "fontSize": "inherit",
+                  "height": 16,
+                  "imageRendering": "optimizeQuality",
+                  "lineHeight": "normal",
+                  "margin": "0 .15em",
+                  "position": "relative",
+                  "textIndent": "-9999em",
+                  "top": -3,
+                  "verticalAlign": "middle",
+                  "width": 16,
+                }
+              }
+              title=":wine_glass:"
+            >
+              🍷
+            </span>
+             Seal2
+          </span>
+        </div>
         <div
           className="ui blue message"
           style={
