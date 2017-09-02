@@ -7,6 +7,7 @@ import {Moment} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
 import Size from '../constants/Size';
+import EditorIcon from './EditIcon';
 
 export interface MilestoneProps {
     id: number;
@@ -67,6 +68,7 @@ export default class extends Component<MilestoneProps> {
                         }}>
                             {this.props.name}
                         </Emojify>
+                        <EditorIcon id={this.props.id}/>
                     </Message.Header>
                 </Message.Content>
             </Message>

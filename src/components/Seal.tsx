@@ -6,6 +6,7 @@ import {Label, SemanticCOLORS} from 'semantic-ui-react';
 import {Moment} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
+import EditorIcon from './EditIcon';
 
 export interface SealProps {
     id: number;
@@ -63,6 +64,7 @@ export default class extends Component<SealProps> {
                 }}>
                     {this.props.name}
                 </Emojify>
+                <EditorIcon id={this.props.id} margin={3}/>
             </Label>
         );
     }

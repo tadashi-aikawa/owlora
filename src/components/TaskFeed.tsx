@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {Component} from 'react';
-import {Feed, Label} from 'semantic-ui-react';
+import {Icon, Feed, Label} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import {findDOMNode} from 'react-dom';
 import ImageOrEmoji from './ImageOrEmoji';
 import Emojify from 'react-emojione';
 import {DragSource, DropTarget} from 'react-dnd';
+import EditorIcon from './EditIcon';
 
 interface TaskFeedProps {
     task: Task;
@@ -66,6 +67,7 @@ export default class extends Component<TaskFeedProps> {
                     <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
                     <Feed.Summary>
                         <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
+                        <EditorIcon id={this.props.task.id}/>
                     </Feed.Summary>
                 </Feed.Content>
                 <Label color='teal' circular size="large"

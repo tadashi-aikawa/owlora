@@ -285,6 +285,20 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F2"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -379,6 +393,20 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -757,6 +785,20 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F2"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -851,6 +893,20 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -1319,6 +1375,20 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -1770,6 +1840,20 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -2221,6 +2305,20 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -2689,6 +2787,20 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -3121,6 +3233,20 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -3575,6 +3701,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -4026,6 +4166,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -4477,6 +4631,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -4928,6 +5096,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -5379,6 +5561,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -5886,6 +6082,20 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -6306,6 +6516,20 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                   </span>
                    Party!!
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F1"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -7334,6 +7558,20 @@ exports[`Storyshots DailyCard Past 1`] = `
                   <span>
                     Task
                   </span>
+                  <a
+                    href="https://todoist.com/app?#task%2F1"
+                    style={
+                      Object {
+                        "marginLeft": 8,
+                      }
+                    }
+                    target="blank"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="edit link icon"
+                    />
+                  </a>
                 </div>
               </div>
               <div
@@ -7731,6 +7969,20 @@ exports[`Storyshots DailyCard Seal 1`] = `
               </span>
                At home
             </span>
+            <a
+              href="https://todoist.com/app?#task%2F1"
+              style={
+                Object {
+                  "marginLeft": 3,
+                }
+              }
+              target="blank"
+            >
+              <i
+                aria-hidden="true"
+                className="edit link icon"
+              />
+            </a>
           </div>
           <div
             className="ui hidden icon negative message"
@@ -8366,6 +8618,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F4"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -8460,6 +8726,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -8540,6 +8820,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -8620,6 +8914,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F3"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -9076,6 +9384,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F4"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -9170,6 +9492,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F3"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -9250,6 +9586,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -9330,6 +9680,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -9786,6 +10150,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F4"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -9880,6 +10258,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -9960,6 +10352,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F3"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -10040,6 +10446,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -10496,6 +10916,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F4"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -10590,6 +11024,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -10670,6 +11118,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -10750,6 +11212,20 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F3"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -11198,6 +11674,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
           <span>
             Seal1
           </span>
+          <a
+            href="https://todoist.com/app?#task%2F5"
+            style={
+              Object {
+                "marginLeft": 3,
+              }
+            }
+            target="blank"
+          >
+            <i
+              aria-hidden="true"
+              className="edit link icon"
+            />
+          </a>
         </div>
         <div
           className="ui pink basic label"
@@ -11237,6 +11727,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
             </span>
              Seal2
           </span>
+          <a
+            href="https://todoist.com/app?#task%2F6"
+            style={
+              Object {
+                "marginLeft": 3,
+              }
+            }
+            target="blank"
+          >
+            <i
+              aria-hidden="true"
+              className="edit link icon"
+            />
+          </a>
         </div>
         <div
           className="ui hidden icon negative message"
@@ -11273,6 +11777,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
               <span>
                 Milestone
               </span>
+              <a
+                href="https://todoist.com/app?#task%2F4"
+                style={
+                  Object {
+                    "marginLeft": 8,
+                  }
+                }
+                target="blank"
+              >
+                <i
+                  aria-hidden="true"
+                  className="edit link icon"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -11367,6 +11885,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task1
                   </span>
+                  <a
+                    href="https://todoist.com/app?#task%2F1"
+                    style={
+                      Object {
+                        "marginLeft": 8,
+                      }
+                    }
+                    target="blank"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="edit link icon"
+                    />
+                  </a>
                 </div>
               </div>
               <div
@@ -11447,6 +11979,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task2 this is long name task hogehoge!! (11:00-12:00)
                   </span>
+                  <a
+                    href="https://todoist.com/app?#task%2F2"
+                    style={
+                      Object {
+                        "marginLeft": 8,
+                      }
+                    }
+                    target="blank"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="edit link icon"
+                    />
+                  </a>
                 </div>
               </div>
               <div
@@ -11527,6 +12073,20 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task3 (13:30-16:15)
                   </span>
+                  <a
+                    href="https://todoist.com/app?#task%2F3"
+                    style={
+                      Object {
+                        "marginLeft": 8,
+                      }
+                    }
+                    target="blank"
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="edit link icon"
+                    />
+                  </a>
                 </div>
               </div>
               <div
@@ -12150,6 +12710,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2Fnull"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -12601,6 +13175,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -12681,6 +13269,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task2 (14:15-17:15)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -13132,6 +13734,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (16:00-16:15)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -13212,6 +13828,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task2 (15:00-17:00)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F2"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -13556,6 +14186,20 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2Fnull"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -14080,6 +14724,20 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -14570,6 +15228,20 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -15021,6 +15693,20 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -15455,6 +16141,20 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
+                    <a
+                      href="https://todoist.com/app?#task%2F1"
+                      style={
+                        Object {
+                          "marginLeft": 8,
+                        }
+                      }
+                      target="blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="edit link icon"
+                      />
+                    </a>
                   </div>
                 </div>
                 <div
@@ -15662,6 +16362,20 @@ exports[`Storyshots Icebox Summary 1`] = `
           <span>
             Seal1
           </span>
+          <a
+            href="https://todoist.com/app?#task%2F5"
+            style={
+              Object {
+                "marginLeft": 3,
+              }
+            }
+            target="blank"
+          >
+            <i
+              aria-hidden="true"
+              className="edit link icon"
+            />
+          </a>
         </div>
         <div
           className="ui pink basic label"
@@ -15701,6 +16415,20 @@ exports[`Storyshots Icebox Summary 1`] = `
             </span>
              Seal2
           </span>
+          <a
+            href="https://todoist.com/app?#task%2F6"
+            style={
+              Object {
+                "marginLeft": 3,
+              }
+            }
+            target="blank"
+          >
+            <i
+              aria-hidden="true"
+              className="edit link icon"
+            />
+          </a>
         </div>
         <div
           className="ui blue message"
@@ -15720,6 +16448,20 @@ exports[`Storyshots Icebox Summary 1`] = `
               <span>
                 Milestone
               </span>
+              <a
+                href="https://todoist.com/app?#task%2F4"
+                style={
+                  Object {
+                    "marginLeft": 8,
+                  }
+                }
+                target="blank"
+              >
+                <i
+                  aria-hidden="true"
+                  className="edit link icon"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -15795,6 +16537,20 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task1
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F1"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
             <div
@@ -15875,6 +16631,20 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task2 this is long name task hogehoge!!
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F2"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
             <div
@@ -15955,6 +16725,20 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task3
                 </span>
+                <a
+                  href="https://todoist.com/app?#task%2F3"
+                  style={
+                    Object {
+                      "marginLeft": 8,
+                    }
+                  }
+                  target="blank"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="edit link icon"
+                  />
+                </a>
               </div>
             </div>
             <div
