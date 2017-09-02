@@ -1,7 +1,6 @@
 import * as _ from 'lodash';
 import * as React from 'react';
-import {Button, Divider, Form, Grid, Icon, IconGroup, Menu, Message, Segment} from 'semantic-ui-react';
-import {safeLoad} from 'js-yaml';
+import {Button, Divider, Form, Grid, Icon, Menu, Message, Segment} from 'semantic-ui-react';
 import {version} from '../../../package.json';
 import CommonConfig, {ArrayAndYaml, DictAndYaml} from '../../models/CommonConfig';
 import ConfigImporter from './ConfigImporter';
@@ -48,8 +47,6 @@ const ESTIMATES_PLACEHOLDER = `By yaml
     regexp: " @15min"
 `;
 
-const toYaml = (x: ArrayAndYaml<any>|DictAndYaml<any>) => x ? x.yaml : "";
-
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     onSaveConfig: (config: CommonConfig) => void;
@@ -73,13 +70,13 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     state: ConfigEditorState = {
         activeItem: 'time',
-        estimates: toYaml(this.props.defaultConfig.estimates),
-        milestones: this.props.defaultConfig.milestones.yaml,
-        seals: toYaml(this.props.defaultConfig.seals),
+        estimates: ArrayAndYaml.toYaml(this.props.defaultConfig.estimates),
+        milestones: ArrayAndYaml.toYaml(this.props.defaultConfig.milestones),
+        seals: ArrayAndYaml.toYaml(this.props.defaultConfig.seals),
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
-        minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
-        iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
-        colorsByTaskNameRegexp: this.props.defaultConfig.colorsByTaskNameRegexp.yaml,
+        minutesToUsePerSpecificDays: DictAndYaml.toYaml(this.props.defaultConfig.minutesToUsePerSpecificDays),
+        iconsByProject: DictAndYaml.toYaml(this.props.defaultConfig.iconsByProject),
+        colorsByTaskNameRegexp: DictAndYaml.toYaml(this.props.defaultConfig.colorsByTaskNameRegexp),
     };
 
     handleChange = (e, {name, value}) =>
@@ -91,37 +88,13 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         try {
             this.setState(Object.assign({}, this.state, {validationError: ""}));
             this.props.onSaveConfig({
-                estimates: {
-                    array: this.state.estimates ?
-                        safeLoad(this.state.estimates) : [],
-                    yaml: this.state.estimates,
-                },
-                milestones: {
-                    array: this.state.milestones ?
-                        safeLoad(this.state.milestones) : [],
-                    yaml: this.state.milestones,
-                },
-                seals: {
-                    array: this.state.seals ?
-                        safeLoad(this.state.seals) : [],
-                    yaml: this.state.seals,
-                },
+                estimates: ArrayAndYaml.fromYaml(this.state.estimates),
+                milestones: ArrayAndYaml.fromYaml(this.state.milestones),
+                seals: ArrayAndYaml.fromYaml(this.state.seals),
                 minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
-                minutesToUsePerSpecificDays: {
-                    dict: this.state.minutesToUsePerSpecificDays ?
-                        safeLoad(this.state.minutesToUsePerSpecificDays) : {},
-                    yaml: this.state.minutesToUsePerSpecificDays,
-                },
-                iconsByProject: {
-                    dict: this.state.iconsByProject ?
-                        safeLoad(this.state.iconsByProject) : {},
-                    yaml: this.state.iconsByProject,
-                },
-                colorsByTaskNameRegexp: {
-                    dict: this.state.colorsByTaskNameRegexp ?
-                        safeLoad(this.state.colorsByTaskNameRegexp) : {},
-                    yaml: this.state.colorsByTaskNameRegexp,
-                },
+                minutesToUsePerSpecificDays: DictAndYaml.fromYaml(this.state.minutesToUsePerSpecificDays),
+                iconsByProject: DictAndYaml.fromYaml(this.state.iconsByProject),
+                colorsByTaskNameRegexp: DictAndYaml.fromYaml(this.state.colorsByTaskNameRegexp),
             });
         } catch (e) {
             this.setState(Object.assign({}, this.state, {validationError: e.toString()}));
