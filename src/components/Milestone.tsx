@@ -9,6 +9,10 @@ import {DragSource, DropTarget} from 'react-dnd';
 import Size from '../constants/Size';
 import EditorIcon from './EditIcon';
 
+export interface MilestoneState {
+    hiddenEditIcon: boolean
+}
+
 export interface MilestoneProps {
     id: number;
     name: string;
@@ -50,7 +54,11 @@ export interface MilestoneProps {
         isDragging: monitor.isDragging()
     })
 )
-export default class extends Component<MilestoneProps> {
+export default class extends Component<MilestoneProps, MilestoneState> {
+    state: MilestoneState = {
+        hiddenEditIcon: true
+    };
+
     render() {
         return (
             <Message color={this.props.color}
@@ -59,7 +67,10 @@ export default class extends Component<MilestoneProps> {
                      style={{
                          cursor: 'move',
                          opacity: this.props.isDragging ? 0.1 : 1
-                     }}>
+                     }}
+                     onMouseEnter={() => this.setState({hiddenEditIcon: false})}
+                     onMouseLeave={() => this.setState({hiddenEditIcon: true})}
+            >
                 <Message.Content>
                     <Message.Header>
                         <Emojify style={{
@@ -68,7 +79,7 @@ export default class extends Component<MilestoneProps> {
                         }}>
                             {this.props.name}
                         </Emojify>
-                        <EditorIcon id={this.props.id}/>
+                        <EditorIcon id={this.props.id} hidden={this.state.hiddenEditIcon}/>
                     </Message.Header>
                 </Message.Content>
             </Message>

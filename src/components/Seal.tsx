@@ -7,6 +7,11 @@ import {Moment} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
 import EditorIcon from './EditIcon';
+import {style} from "typestyle";
+
+export interface SealState {
+    hiddenEditIcon: boolean
+}
 
 export interface SealProps {
     id: number;
@@ -19,7 +24,6 @@ export interface SealProps {
 
     onUpdate: (parameter: TaskUpdateParameter) => void;
 }
-
 
 @DragSource(
     'task',
@@ -48,23 +52,32 @@ export interface SealProps {
         isDragging: monitor.isDragging()
     })
 )
-export default class extends Component<SealProps> {
+export default class extends Component<SealProps, SealState> {
+    state: SealState = {
+        hiddenEditIcon: true
+    };
+
     render() {
+        const labelStyle = style({
+            cursor: 'move',
+            opacity: this.props.isDragging ? 0.1 : 1,
+        });
+
         return (
             <Label color={this.props.color}
                    basic
                    ref={node => this.props.connectDragSource(findDOMNode(this))}
-                   style={{
-                       cursor: 'move',
-                       opacity: this.props.isDragging ? 0.1 : 1
-                   }}>
+                   className={labelStyle}
+                   onMouseEnter={() => this.setState({hiddenEditIcon: false})}
+                   onMouseLeave={() => this.setState({hiddenEditIcon: true})}
+            >
                 <Emojify style={{
                     width: 16,
                     height: 16,
                 }}>
                     {this.props.name}
                 </Emojify>
-                <EditorIcon id={this.props.id} margin={3}/>
+                <EditorIcon id={this.props.id} hidden={this.state.hiddenEditIcon} margin={3}/>
             </Label>
         );
     }

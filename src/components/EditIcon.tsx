@@ -3,10 +3,11 @@ import {Icon} from 'semantic-ui-react';
 
 export interface EditorIconProps {
     id: number;
-    margin?: number
+    margin?: number;
+    hidden?: boolean;
 }
 
-const EditorIcon = (props: EditorIconProps) =>
+const EditorIcon = (props: EditorIconProps) => props.hidden ? <span /> :
     <a href={`https://todoist.com/app?#task%2F${props.id}`}
        target="blank"
        style={{marginLeft: props.margin || 8}}>
@@ -14,6 +15,3 @@ const EditorIcon = (props: EditorIconProps) =>
     </a>;
 
 export default EditorIcon;
-
-
-

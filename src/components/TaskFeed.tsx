@@ -8,6 +8,10 @@ import Emojify from 'react-emojione';
 import {DragSource, DropTarget} from 'react-dnd';
 import EditorIcon from './EditIcon';
 
+export interface TaskFeedState {
+    hiddenEditIcon: boolean
+}
+
 interface TaskFeedProps {
     task: Task;
 
@@ -44,22 +48,28 @@ interface TaskFeedProps {
         isDragging: monitor.isDragging()
     })
 )
-export default class extends Component<TaskFeedProps> {
+export default class extends Component<TaskFeedProps, TaskFeedState> {
+    state: TaskFeedState = {
+        hiddenEditIcon: true,
+    };
 
     render() {
         const {name, projectName, icon, estimatedMinutes, color} = this.props.task;
         return (
-            <Feed.Event ref={node => this.props.connectDragSource(findDOMNode(this))} style={{
-                backgroundColor: color,
-                border: '2px solid',
-                borderRadius: '20px',
-                borderColor: color,
-                padding: '10px',
-                marginTop: '10px',
-                marginBottom: '10px',
-                cursor: 'move',
-                opacity: this.props.isDragging ? 0.1 : 1
-            }}>
+            <Feed.Event ref={node => this.props.connectDragSource(findDOMNode(this))}
+                        onMouseEnter={() => this.setState({hiddenEditIcon: false})}
+                        onMouseLeave={() => this.setState({hiddenEditIcon: true})}
+                        style={{
+                            backgroundColor: color,
+                            border: '2px solid',
+                            borderRadius: '20px',
+                            borderColor: color,
+                            padding: '10px',
+                            marginTop: '10px',
+                            marginBottom: '10px',
+                            cursor: 'move',
+                            opacity: this.props.isDragging ? 0.1 : 1
+                        }}>
                 <Feed.Label>
                     <ImageOrEmoji src={icon}/>
                 </Feed.Label>
@@ -67,7 +77,7 @@ export default class extends Component<TaskFeedProps> {
                     <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
                     <Feed.Summary>
                         <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
-                        <EditorIcon id={this.props.task.id}/>
+                        <EditorIcon id={this.props.task.id} hidden={this.state.hiddenEditIcon}/>
                     </Feed.Summary>
                 </Feed.Content>
                 <Label color='teal' circular size="large"

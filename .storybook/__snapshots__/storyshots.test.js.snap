@@ -269,6 +269,8 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -285,20 +287,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F2"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -332,6 +321,8 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -393,20 +384,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -769,6 +747,8 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -785,20 +765,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F2"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -832,6 +799,8 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -893,20 +862,7 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -1314,6 +1270,8 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "pink",
@@ -1375,20 +1333,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -1779,6 +1724,8 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "#7777CC",
@@ -1840,20 +1787,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -2244,6 +2178,8 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(200, 50, 50, 0.2)",
@@ -2305,20 +2241,7 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -2726,6 +2649,8 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -2787,20 +2712,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -3191,6 +3103,8 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -3233,20 +3147,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -3640,6 +3541,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -3701,20 +3604,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -4105,6 +3995,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -4166,20 +4058,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -4570,6 +4449,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -4631,20 +4512,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -5035,6 +4903,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -5096,20 +4966,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -5500,6 +5357,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -5561,20 +5420,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -6021,6 +5867,8 @@ exports[`Storyshots DailyCard Life status 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -6082,20 +5930,7 @@ exports[`Storyshots DailyCard Life status 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -6475,6 +6310,8 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           </div>
           <div
             className="ui purple large message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -6516,20 +6353,7 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                   </span>
                    Party!!
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F1"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -7497,6 +7321,8 @@ exports[`Storyshots DailyCard Past 1`] = `
           >
             <div
               className="event"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
               style={
                 Object {
                   "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -7558,20 +7384,7 @@ exports[`Storyshots DailyCard Past 1`] = `
                   <span>
                     Task
                   </span>
-                  <a
-                    href="https://todoist.com/app?#task%2F1"
-                    style={
-                      Object {
-                        "marginLeft": 8,
-                      }
-                    }
-                    target="blank"
-                  >
-                    <i
-                      aria-hidden="true"
-                      className="edit link icon"
-                    />
-                  </a>
+                  <span />
                 </div>
               </div>
               <div
@@ -7932,14 +7745,10 @@ exports[`Storyshots DailyCard Seal 1`] = `
             />
           </div>
           <div
-            className="ui purple basic label"
+            className="ui purple basic label f1hhgdp"
             onClick={[Function]}
-            style={
-              Object {
-                "cursor": "move",
-                "opacity": 1,
-              }
-            }
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
             <span>
               <span
@@ -7969,20 +7778,7 @@ exports[`Storyshots DailyCard Seal 1`] = `
               </span>
                At home
             </span>
-            <a
-              href="https://todoist.com/app?#task%2F1"
-              style={
-                Object {
-                  "marginLeft": 3,
-                }
-              }
-              target="blank"
-            >
-              <i
-                aria-hidden="true"
-                className="edit link icon"
-              />
-            </a>
+            <span />
           </div>
           <div
             className="ui hidden icon negative message"
@@ -8602,6 +8398,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -8618,20 +8416,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F4"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -8665,6 +8450,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -8726,20 +8513,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -8759,6 +8533,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -8820,20 +8596,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -8853,6 +8616,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -8914,20 +8679,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F3"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -9368,6 +9120,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -9384,20 +9138,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F4"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -9431,6 +9172,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -9492,20 +9235,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F3"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -9525,6 +9255,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -9586,20 +9318,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -9619,6 +9338,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -9680,20 +9401,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -10134,6 +9842,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -10150,20 +9860,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F4"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -10197,6 +9894,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -10258,20 +9957,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -10291,6 +9977,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -10352,20 +10040,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F3"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -10385,6 +10060,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -10446,20 +10123,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -10900,6 +10564,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
           </div>
           <div
             className="ui purple message"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "cursor": "move",
@@ -10916,20 +10582,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                 <span>
                   Milestone
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F4"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
           </div>
@@ -10963,6 +10616,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -11024,20 +10679,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task1
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -11057,6 +10699,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -11118,20 +10762,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task2
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -11151,6 +10782,8 @@ exports[`Storyshots DailyCard Sort 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -11212,20 +10845,7 @@ exports[`Storyshots DailyCard Sort 1`] = `
                     <span>
                       Task3
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F3"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -11662,42 +11282,21 @@ exports[`Storyshots DailyCard Summary 1`] = `
           />
         </div>
         <div
-          className="ui orange basic label"
+          className="ui orange basic label f1hhgdp"
           onClick={[Function]}
-          style={
-            Object {
-              "cursor": "move",
-              "opacity": 1,
-            }
-          }
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           <span>
             Seal1
           </span>
-          <a
-            href="https://todoist.com/app?#task%2F5"
-            style={
-              Object {
-                "marginLeft": 3,
-              }
-            }
-            target="blank"
-          >
-            <i
-              aria-hidden="true"
-              className="edit link icon"
-            />
-          </a>
+          <span />
         </div>
         <div
-          className="ui pink basic label"
+          className="ui pink basic label f1hhgdp"
           onClick={[Function]}
-          style={
-            Object {
-              "cursor": "move",
-              "opacity": 1,
-            }
-          }
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           <span>
             <span
@@ -11727,20 +11326,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
             </span>
              Seal2
           </span>
-          <a
-            href="https://todoist.com/app?#task%2F6"
-            style={
-              Object {
-                "marginLeft": 3,
-              }
-            }
-            target="blank"
-          >
-            <i
-              aria-hidden="true"
-              className="edit link icon"
-            />
-          </a>
+          <span />
         </div>
         <div
           className="ui hidden icon negative message"
@@ -11761,6 +11347,8 @@ exports[`Storyshots DailyCard Summary 1`] = `
         </div>
         <div
           className="ui purple message"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
           style={
             Object {
               "cursor": "move",
@@ -11777,20 +11365,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
               <span>
                 Milestone
               </span>
-              <a
-                href="https://todoist.com/app?#task%2F4"
-                style={
-                  Object {
-                    "marginLeft": 8,
-                  }
-                }
-                target="blank"
-              >
-                <i
-                  aria-hidden="true"
-                  className="edit link icon"
-                />
-              </a>
+              <span />
             </div>
           </div>
         </div>
@@ -11824,6 +11399,8 @@ exports[`Storyshots DailyCard Summary 1`] = `
           >
             <div
               className="event"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
               style={
                 Object {
                   "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -11885,20 +11462,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task1
                   </span>
-                  <a
-                    href="https://todoist.com/app?#task%2F1"
-                    style={
-                      Object {
-                        "marginLeft": 8,
-                      }
-                    }
-                    target="blank"
-                  >
-                    <i
-                      aria-hidden="true"
-                      className="edit link icon"
-                    />
-                  </a>
+                  <span />
                 </div>
               </div>
               <div
@@ -11918,6 +11482,8 @@ exports[`Storyshots DailyCard Summary 1`] = `
             </div>
             <div
               className="event"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
               style={
                 Object {
                   "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -11979,20 +11545,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task2 this is long name task hogehoge!! (11:00-12:00)
                   </span>
-                  <a
-                    href="https://todoist.com/app?#task%2F2"
-                    style={
-                      Object {
-                        "marginLeft": 8,
-                      }
-                    }
-                    target="blank"
-                  >
-                    <i
-                      aria-hidden="true"
-                      className="edit link icon"
-                    />
-                  </a>
+                  <span />
                 </div>
               </div>
               <div
@@ -12012,6 +11565,8 @@ exports[`Storyshots DailyCard Summary 1`] = `
             </div>
             <div
               className="event"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
               style={
                 Object {
                   "backgroundColor": "rgba(200, 50, 50, 0.1)",
@@ -12073,20 +11628,7 @@ exports[`Storyshots DailyCard Summary 1`] = `
                   <span>
                     Task3 (13:30-16:15)
                   </span>
-                  <a
-                    href="https://todoist.com/app?#task%2F3"
-                    style={
-                      Object {
-                        "marginLeft": 8,
-                      }
-                    }
-                    target="blank"
-                  >
-                    <i
-                      aria-hidden="true"
-                      className="edit link icon"
-                    />
-                  </a>
+                  <span />
                 </div>
               </div>
               <div
@@ -12649,6 +12191,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -12710,20 +12254,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2Fnull"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -13114,6 +12645,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -13175,20 +12708,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -13208,6 +12728,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -13269,20 +12791,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task2 (14:15-17:15)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -13673,6 +13182,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -13734,20 +13245,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (16:00-16:15)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -13767,6 +13265,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               </div>
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -13828,20 +13328,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task2 (15:00-17:00)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F2"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -14125,6 +13612,8 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -14186,20 +13675,7 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                     <span>
                       Task1 (11:00-12:00)
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2Fnull"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -14663,6 +14139,8 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -14724,20 +14202,7 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -15167,6 +14632,8 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -15228,20 +14695,7 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -15632,6 +15086,8 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -15693,20 +15149,7 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -16080,6 +15523,8 @@ exports[`Storyshots DailyCard Warning 1`] = `
             >
               <div
                 className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
                 style={
                   Object {
                     "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -16141,20 +15586,7 @@ exports[`Storyshots DailyCard Warning 1`] = `
                     <span>
                       Task
                     </span>
-                    <a
-                      href="https://todoist.com/app?#task%2F1"
-                      style={
-                        Object {
-                          "marginLeft": 8,
-                        }
-                      }
-                      target="blank"
-                    >
-                      <i
-                        aria-hidden="true"
-                        className="edit link icon"
-                      />
-                    </a>
+                    <span />
                   </div>
                 </div>
                 <div
@@ -16350,42 +15782,21 @@ exports[`Storyshots Icebox Summary 1`] = `
         className="content"
       >
         <div
-          className="ui orange basic label"
+          className="ui orange basic label f1hhgdp"
           onClick={[Function]}
-          style={
-            Object {
-              "cursor": "move",
-              "opacity": 1,
-            }
-          }
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           <span>
             Seal1
           </span>
-          <a
-            href="https://todoist.com/app?#task%2F5"
-            style={
-              Object {
-                "marginLeft": 3,
-              }
-            }
-            target="blank"
-          >
-            <i
-              aria-hidden="true"
-              className="edit link icon"
-            />
-          </a>
+          <span />
         </div>
         <div
-          className="ui pink basic label"
+          className="ui pink basic label f1hhgdp"
           onClick={[Function]}
-          style={
-            Object {
-              "cursor": "move",
-              "opacity": 1,
-            }
-          }
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
         >
           <span>
             <span
@@ -16415,23 +15826,12 @@ exports[`Storyshots Icebox Summary 1`] = `
             </span>
              Seal2
           </span>
-          <a
-            href="https://todoist.com/app?#task%2F6"
-            style={
-              Object {
-                "marginLeft": 3,
-              }
-            }
-            target="blank"
-          >
-            <i
-              aria-hidden="true"
-              className="edit link icon"
-            />
-          </a>
+          <span />
         </div>
         <div
           className="ui blue message"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
           style={
             Object {
               "cursor": "move",
@@ -16448,20 +15848,7 @@ exports[`Storyshots Icebox Summary 1`] = `
               <span>
                 Milestone
               </span>
-              <a
-                href="https://todoist.com/app?#task%2F4"
-                style={
-                  Object {
-                    "marginLeft": 8,
-                  }
-                }
-                target="blank"
-              >
-                <i
-                  aria-hidden="true"
-                  className="edit link icon"
-                />
-              </a>
+              <span />
             </div>
           </div>
         </div>
@@ -16476,6 +15863,8 @@ exports[`Storyshots Icebox Summary 1`] = `
         >
           <div
             className="event"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -16537,20 +15926,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task1
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F1"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
             <div
@@ -16570,6 +15946,8 @@ exports[`Storyshots Icebox Summary 1`] = `
           </div>
           <div
             className="event"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "backgroundColor": "rgba(150, 150, 150, 0.1)",
@@ -16631,20 +16009,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task2 this is long name task hogehoge!!
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F2"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
             <div
@@ -16664,6 +16029,8 @@ exports[`Storyshots Icebox Summary 1`] = `
           </div>
           <div
             className="event"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             style={
               Object {
                 "backgroundColor": "rgba(200, 50, 50, 0.1)",
@@ -16725,20 +16092,7 @@ exports[`Storyshots Icebox Summary 1`] = `
                 <span>
                   Task3
                 </span>
-                <a
-                  href="https://todoist.com/app?#task%2F3"
-                  style={
-                    Object {
-                      "marginLeft": 8,
-                    }
-                  }
-                  target="blank"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="edit link icon"
-                  />
-                </a>
+                <span />
               </div>
             </div>
             <div
