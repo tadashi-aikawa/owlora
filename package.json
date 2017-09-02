@@ -7,15 +7,16 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
-    "build": "webpack --config webpack.config.pro.js",
-    "deploy": "firebase deploy --project owlora-mamansoft",
-    "prerelease": "jest && webpack --config webpack.config.pro.js",
-    "release": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
-    "postrelease": "firebase deploy --project owlora-mamansoft",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "----------↑dev↑----------": "",
+    "build": "webpack --config webpack.config.pro.js",
+    "build-storybook": "build-storybook",
+    "----------↑build↑----------": "",
+    "deploy": "firebase deploy --project owlora-mamansoft",
+    "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
+    "release": "run-s test build release:github deploy",
+    "----------↑release↑----------": ""
   },
   "jest": {
     "transform": {
@@ -76,6 +77,7 @@
     "css-loader": "^0.28.4",
     "image-loader": "^0.0.1",
     "jest-cli": "^20.0.4",
+    "npm-run-all": "^4.1.1",
     "react-test-renderer": "^15.6.1",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.18.2",
