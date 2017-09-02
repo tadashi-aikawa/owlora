@@ -258,6 +258,7 @@ export default class extends Component<TopProps, TopState> {
                                     taskOrder={this.props.uiConfig.taskOrder}
                                     timeLamps={this.props.uiConfig.timeLamps}
                                     milestone={this.props.uiConfig.milestone}
+                                    seal={this.props.uiConfig.seal}
                                     warning={this.props.uiConfig.warning}
                                     isTasksExpanded={this.props.uiConfig.isTasksExpanded}
                                     minutesToUsePerDay={this.props.config.minutesToUsePerDay}

@@ -5,7 +5,7 @@ import * as TodoistClient from '../client/TodoistClient';
 import {
     colorsByTaskNameRegexpSelector,
     estimatesSelector,
-    iconsByProjectSelector,
+    iconsByProjectSelector, sealsSelector,
     milestonesSelector,
     todoistTokenSelector,
 } from '../reducers/selectors';
@@ -22,6 +22,7 @@ import Repetition from '../constants/Repetition';
 import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
+import SealConfig from '../models/SealConfig';
 
 const toRepetition = (dateString: string): Repetition => {
     if (!dateString) {
@@ -48,6 +49,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
     // TODO: Argument TodoistProject[] have to be removed
     const estimates: EstimateConfig[] = yield select(estimatesSelector);
     const milestones: MilestoneConfig[] = yield select(milestonesSelector);
+    const seals: SealConfig[] = yield select(sealsSelector);
     const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
     const colorsByTaskNameRegexp: Dictionary<string> = Object.assign(
         yield select(colorsByTaskNameRegexpSelector),
@@ -68,7 +70,15 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     !m.condition.projectIdsOr || _.includes(m.condition.projectIdsOr, x.project_id)
                 ])
             );
-            const matchedEstimate: EstimateConfig =  _.find(
+            const matchedSeal: SealConfig = _.find(
+                seals,
+                (l: SealConfig) => _.every([
+                    !l.condition.regexp || x.content.match(new RegExp(l.condition.regexp)),
+                    !l.condition.labelIdsOr || _.intersection(x.labels, l.condition.labelIdsOr).length > 0,
+                    !l.condition.projectIdsOr || _.includes(l.condition.projectIdsOr, x.project_id)
+                ])
+            );
+            const matchedEstimate: EstimateConfig = _.find(
                 estimates,
                 (e: EstimateConfig) => _.every([
                     !e.condition.regexp || x.content.match(new RegExp(e.condition.regexp)),
@@ -93,12 +103,14 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 icon: iconsByProject[String(x.project_id)] || ":white_circle:",
                 dayOrder: x.day_order,
                 isMilestone: !!matchedMilestone,
+                isSeal: !!matchedSeal,
                 color: !!matchedMilestone ? matchedMilestone.color :
-                    _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+                    !!matchedSeal ? matchedSeal.color :
+                        _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
                 size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
             }
         })
-        .filter(x => x.estimatedMinutes || x.isMilestone)
+        .filter(x => x.estimatedMinutes || x.isMilestone || x.isSeal)
         .keyBy(x => x.id)
         .value();
 }

@@ -7,6 +7,7 @@ interface UiConfig {
     icebox: boolean;
     timeLamps: boolean;
     milestone: boolean;
+    seal: boolean;
     warning: boolean;
     isTasksExpanded: boolean;
     taskSortField: TaskSortField;

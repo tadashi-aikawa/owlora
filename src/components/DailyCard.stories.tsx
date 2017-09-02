@@ -28,6 +28,7 @@ const createTask = (properties): Task => _.assign({}, {
     icon: ":innocent:",
     color: "rgba(150, 150, 150, 0.1)",
     isMilestone: false,
+    isSeal: false,
 
     name: "Task",
     projectName: "Project",
@@ -73,10 +74,13 @@ storiesOf('DailyCard', module)
                                },
                            }),
                            createTask({id: 4, name: 'Milestone', dayOrder: 4, color: "purple", isMilestone: true}),
+                           createTask({id: 5, name: 'Seal1', dayOrder: 5, color: "magenda", isSeal: true}),
+                           createTask({id: 6, name: ':wine: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
                        ]
                    )}
                    timeLamps={boolean('timeLamps', true)}
                    milestone={boolean('milestone', true)}
+                   seal={boolean('seal', true)}
                    warning={boolean('warning', true)}
                    isTasksExpanded={boolean('isTasksExpanded', true)}
                    onUpdateTask={action}
@@ -95,6 +99,7 @@ storiesOf('DailyCard', module)
                        ]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded={boolean('(1)isTasksExpanded', false)}
                        onUpdateTask={action}
@@ -110,6 +115,7 @@ storiesOf('DailyCard', module)
                        ]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded={boolean('(2)isTasksExpanded', true)}
                        onUpdateTask={action}
@@ -141,6 +147,7 @@ storiesOf('DailyCard', module)
                            tasks={tasks}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -153,6 +160,7 @@ storiesOf('DailyCard', module)
                            tasks={tasks}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -165,6 +173,7 @@ storiesOf('DailyCard', module)
                            tasks={tasks}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -177,6 +186,7 @@ storiesOf('DailyCard', module)
                            tasks={tasks}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -202,6 +212,7 @@ storiesOf('DailyCard', module)
                            isTasksExpanded
                            timeLamps
                            milestone
+                           seal
                            warning
                            onUpdateTask={action}
                 />
@@ -230,6 +241,7 @@ storiesOf('DailyCard', module)
                            ]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -260,6 +272,7 @@ storiesOf('DailyCard', module)
                            isTasksExpanded
                            timeLamps
                            milestone
+                           seal
                            warning
                            onUpdateTask={action}
                 />
@@ -278,6 +291,7 @@ storiesOf('DailyCard', module)
                            isTasksExpanded
                            timeLamps={boolean('(4)Time lamps is enabled', false)}
                            milestone
+                           seal
                            warning
                            onUpdateTask={action}
                 />
@@ -298,6 +312,7 @@ storiesOf('DailyCard', module)
                        })]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded
                        onUpdateTask={action}
@@ -314,6 +329,7 @@ storiesOf('DailyCard', module)
                        })]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded
                        onUpdateTask={action}
@@ -334,6 +350,7 @@ storiesOf('DailyCard', module)
                        })]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded
                        onUpdateTask={action}
@@ -350,6 +367,7 @@ storiesOf('DailyCard', module)
                        })]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded
                        onUpdateTask={action}
@@ -366,6 +384,7 @@ storiesOf('DailyCard', module)
                        })]}
                        timeLamps
                        milestone
+                       seal
                        warning
                        isTasksExpanded
                        onUpdateTask={action}
@@ -390,6 +409,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -409,6 +429,51 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone={boolean('(2)Milestone is enabled', false)}
+                           seal
+                           warning
+                           isTasksExpanded
+                           onUpdateTask={action}
+                />
+            </Card.Group>
+        </WithNotes>
+    ))
+    .add('Seal', () => (
+        <WithNotes notes='Even if Seal has a estimated minutes, ignored estimated them'>
+            <Card.Group>
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               name: ":home: At home",
+                               dayOrder: 1,
+                               color: text("(1)task.color", "purple"),
+                               isSeal: boolean("(1)task.isSeal", true),
+                           })]}
+                           timeLamps
+                           milestone
+                           seal
+                           warning
+                           isTasksExpanded
+                           onUpdateTask={action}
+                />
+                <DailyCard date={toDate('2099/01/01')}
+                           taskSortField={TaskSortField.PROJECT_NAME}
+                           taskOrder={Order.ASC}
+                           minutesToUsePerDay={300}
+                           minutesToUsePerSpecificDays={{}}
+                           tasks={[createTask({
+                               id: 1,
+                               name: ":home: At home",
+                               dayOrder: 1,
+                               color: "purple",
+                               isSeal: true,
+                           })]}
+                           timeLamps
+                           milestone={boolean('(2)Seal is enabled', false)}
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -431,6 +496,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning={boolean('(1) warning', true)}
                            isTasksExpanded
                            onUpdateTask={action}
@@ -447,6 +513,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning={boolean('(2) warning', false)}
                            isTasksExpanded
                            onUpdateTask={action}
@@ -463,6 +530,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning={boolean('(3) warning', true)}
                            isTasksExpanded
                            onUpdateTask={action}
@@ -479,6 +547,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning={boolean('(4) warning', false)}
                            isTasksExpanded
                            onUpdateTask={action}
@@ -501,6 +570,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -517,6 +587,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -533,6 +604,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -549,6 +621,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -565,6 +638,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -581,6 +655,7 @@ storiesOf('DailyCard', module)
                            })]}
                            timeLamps
                            milestone
+                           seal
                            warning
                            isTasksExpanded
                            onUpdateTask={action}
@@ -599,6 +674,7 @@ storiesOf('DailyCard', module)
                    tasks={[]}
                    timeLamps
                    milestone
+                   seal
                    warning
                    isTasksExpanded
                    onUpdateTask={action}
@@ -616,6 +692,7 @@ storiesOf('DailyCard', module)
                    })]}
                    timeLamps
                    milestone
+                   seal
                    warning
                    isTasksExpanded
                    onUpdateTask={action}

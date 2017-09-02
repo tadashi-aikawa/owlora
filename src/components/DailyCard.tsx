@@ -28,6 +28,7 @@ import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Emojify from 'react-emojione';
+import Seal from './Seal';
 
 const groupByHours = (tasks: Task[]): Dictionary<Task[]> => {
     const estimatedTasksByHour: Dictionary<Task[]> = {};
@@ -101,6 +102,7 @@ export interface DailyCardProps {
     taskOrder: Order;
     timeLamps: boolean;
     milestone: boolean;
+    seal: boolean;
     warning: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
@@ -150,7 +152,7 @@ export default class extends Component<DailyCardProps> {
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
-            .reject(t => t.isMilestone)
+            .reject(t => t.isMilestone || t.isSeal)
             .value();
         const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
 
@@ -202,7 +204,19 @@ export default class extends Component<DailyCardProps> {
                                 />
                             </Popup>
                         )}
+                        <Divider />
                     </Container>
+                    }
+                    {
+                        this.props.seal &&
+                        this.props.tasks.filter(t => t.isSeal)
+                            .map(t => <Seal key={t.id}
+                                            id={t.id}
+                                            name={t.name}
+                                            color={t.color as SemanticCOLORS}
+                                            date={t.dueDate}
+                                            onUpdate={this.props.onUpdateTask}
+                            />)
                     }
                     {
                         this.props.warning &&

@@ -3,7 +3,7 @@ import * as React from 'react';
 import {Button, Divider, Form, Grid, Icon, IconGroup, Menu, Message, Segment} from 'semantic-ui-react';
 import {safeLoad} from 'js-yaml';
 import {version} from '../../../package.json';
-import CommonConfig from '../../models/CommonConfig';
+import CommonConfig, {ArrayAndYaml, DictAndYaml} from '../../models/CommonConfig';
 import ConfigImporter from './ConfigImporter';
 import ConfigInfo from './ConfigInfo';
 
@@ -23,6 +23,18 @@ const MILESTONES_PLACEHOLDER = `By yaml
     projectIdsOr: [153016633]
 `;
 
+const SEALS_PLACEHOLDER = `By yaml
+---------------
+
+- color: green  # See https://react.semantic-ui.com/elements/segment#segment-example-colored-inverted
+  condition:
+    regexp: vacation
+    labelIdsOr: [2148194362]
+- color: purple
+  condition:
+    projectIdsOr: [153016633]
+`;
+
 const ESTIMATES_PLACEHOLDER = `By yaml
 ---------------
 
@@ -36,6 +48,8 @@ const ESTIMATES_PLACEHOLDER = `By yaml
     regexp: " @15min"
 `;
 
+const toYaml = (x: ArrayAndYaml<any>|DictAndYaml<any>) => x ? x.yaml : "";
+
 export interface ConfigEditorProps {
     defaultConfig: CommonConfig
     onSaveConfig: (config: CommonConfig) => void;
@@ -46,6 +60,7 @@ export interface ConfigEditorState {
 
     estimates: string;
     milestones: string;
+    seals: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
     iconsByProject: string;
@@ -58,9 +73,9 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     state: ConfigEditorState = {
         activeItem: 'time',
-        estimates: this.props.defaultConfig.estimates &&
-            this.props.defaultConfig.estimates.yaml,
+        estimates: toYaml(this.props.defaultConfig.estimates),
         milestones: this.props.defaultConfig.milestones.yaml,
+        seals: toYaml(this.props.defaultConfig.seals),
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: this.props.defaultConfig.minutesToUsePerSpecificDays.yaml,
         iconsByProject: this.props.defaultConfig.iconsByProject.yaml,
@@ -85,6 +100,11 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     array: this.state.milestones ?
                         safeLoad(this.state.milestones) : [],
                     yaml: this.state.milestones,
+                },
+                seals: {
+                    array: this.state.seals ?
+                        safeLoad(this.state.seals) : [],
+                    yaml: this.state.seals,
                 },
                 minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
                 minutesToUsePerSpecificDays: {
@@ -160,11 +180,20 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                             {
                                 this.state.activeItem === 'visual' ?
                                     <Form>
-                                        <Form.Field inline required>
+                                        <Form.Field>
                                             <label><Icon name="pencil"/>Milestones</label>
                                             <Form.TextArea name="milestones"
                                                            placeholder={MILESTONES_PLACEHOLDER}
                                                            value={this.state.milestones}
+                                                           onChange={this.handleChange}
+                                                           autoHeight
+                                            />
+                                        </Form.Field>
+                                        <Form.Field>
+                                            <label><Icon name="pencil"/>Seals</label>
+                                            <Form.TextArea name="seals"
+                                                           placeholder={SEALS_PLACEHOLDER}
+                                                           value={this.state.seals}
                                                            onChange={this.handleChange}
                                                            autoHeight
                                             />

@@ -18,6 +18,7 @@ interface Task {
     dayOrder: number;
     color: string;
     isMilestone: boolean;
+    isSeal: boolean;
     size: Size;
 }
 

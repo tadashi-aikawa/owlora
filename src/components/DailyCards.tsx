@@ -49,6 +49,7 @@ export interface DailyCardsProps {
     taskOrder: Order;
     timeLamps: boolean;
     milestone: boolean;
+    seal: boolean;
     warning: boolean;
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
@@ -81,6 +82,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     taskOrder={props.taskOrder}
                     timeLamps={props.timeLamps}
                     milestone={props.milestone}
+                    seal={props.seal}
                     warning={props.warning}
                     isTasksExpanded={props.isTasksExpanded}
                     minutesToUsePerDay={props.minutesToUsePerDay}

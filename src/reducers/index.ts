@@ -29,6 +29,10 @@ export const INITIAL_SHARED_STATE: SharedState = {
             array: [],
             yaml: ''
         },
+        seals: {
+            array: [],
+            yaml: ''
+        },
         minutesToUsePerSpecificDays: {
             dict: {},
             yaml: ''
@@ -53,6 +57,7 @@ export const INITIAL_STORAGE_STATE: StorageState = {
         icebox: false,
         timeLamps: true,
         milestone: true,
+        seal: true,
         warning: true,
         isTasksExpanded: false,
         taskSortField: TaskSortField.PROJECT_NAME,

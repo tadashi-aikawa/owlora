@@ -52,6 +52,10 @@ const ToggleButtonGroup = ({uiConfig, onChangeUiConfig}) =>
                 enabled={uiConfig.milestone}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {milestone: enabled})}/>
             <ToggleButton
+                icon="ticket"
+                enabled={uiConfig.seal}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {seal: enabled})}/>
+            <ToggleButton
                 icon="warning sign"
                 enabled={uiConfig.warning}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {warning: enabled})}/>
