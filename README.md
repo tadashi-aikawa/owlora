@@ -1,6 +1,6 @@
 # Owlora
 
-<img src="./owlora.png" width="200px" />
+<img src="./owlora.png" />
 
 Task management tool in which can medium term.
 
