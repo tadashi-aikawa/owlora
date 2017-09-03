@@ -6,12 +6,17 @@ Task management tool in which can medium term.
 
 For now, `Owlora` uses Todoist API as backend.
 
-[Demo](https://owlora-mamansoft.firebaseapp.com/)
-
 ## Support platforms
 
 * Google chrome (Not for all)
 * Firefox (Not for all)
+
+## Demo
+
+If you have todoist and google accounts, you can trying [Demo](https://owlora-mamansoft.firebaseapp.com/). 
+
+* Todoist token is used to use todoist sync api
+* Google account is used to synchronize configurations which in server(firebase) and client(browser) 
 
 ## For developer
 
