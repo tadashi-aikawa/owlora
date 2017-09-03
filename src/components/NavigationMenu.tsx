@@ -149,6 +149,8 @@ export interface NavigationMenuProps {
     config: CommonConfig;
     uiConfig: UiConfig;
 
+    isLoading: boolean;
+
     onReload: () => void;
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
@@ -219,12 +221,16 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                 />
                             </Menu.Menu>
                     }
-
                     <Menu.Item>
-                        <Button accessKey="r" icon="refresh" inverted onClick={e => {
-                            e.preventDefault();
-                            this.props.onReload();
-                        }}/>
+                        {
+                            this.props.isLoading ?
+                                <Icon name="refresh" size="large" loading/>
+                                :
+                                <Button accessKey="r" icon="refresh" inverted onClick={e => {
+                                    e.preventDefault();
+                                    this.props.onReload();
+                                }}/>
+                        }
                     </Menu.Item>
                     <Menu.Item>
                         <Modal size="large"
@@ -295,7 +301,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                         </Modal>
                     </Menu.Item>
                     <Menu.Item>
-                        <Menu.Item name='logout' onClick={this.props.onLogout} />
+                        <Menu.Item name='logout' onClick={this.props.onLogout}/>
                     </Menu.Item>
                 </Menu.Menu>
             </Menu>

@@ -58,6 +58,7 @@ export interface TopProps {
     projects: Project[];
     labels: Label[];
     isLoading: boolean;
+    guardLoading: boolean;
     error: Error;
 
     config: CommonConfig;
@@ -71,6 +72,7 @@ export interface TopProps {
     profile: any,
 
     onReload: () => void;
+    onBackgroundReload: () => void;
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
@@ -116,6 +118,14 @@ export default class extends Component<TopProps, TopState> {
                 this.state.hasErrorToast = false;
             }
         }
+    }
+
+    componentDidMount() {
+        window.onfocus = () => this.props.onBackgroundReload();
+    }
+
+    componentWillUnmount() {
+        window.onfocus = undefined;
     }
 
     generatePreview(type, {task}: { task: Task }, style) {
@@ -204,18 +214,15 @@ export default class extends Component<TopProps, TopState> {
                                 labels={this.props.labels}
                                 config={this.props.config}
                                 uiConfig={this.props.uiConfig}
+                                isLoading={this.props.isLoading}
                                 onReload={this.props.onReload}
                                 onLogout={this.props.onLogout}
                                 onChangeConfig={this.props.onChangeConfig}
                                 onChangeUiConfig={this.props.onChangeUiConfig}
                 />
-                <Dimmer active={!readyToLoadingTasks} page>
-                    <Loader content='Loading settings of your account...' size='huge'
-                            active={this.props.isLoading}/>
-                </Dimmer>
                 <div style={{padding: 10, marginTop: 70}}>
-                    <Dimmer active={this.props.isLoading} page>
-                        <Loader content='Loading' size='huge' active={this.props.isLoading}/>
+                    <Dimmer active={this.props.isLoading && this.props.guardLoading} page>
+                        <Loader content='Loading' size='huge' active={this.props.isLoading && this.props.guardLoading}/>
                     </Dimmer>
                     <div style={
                         this.props.uiConfig.icebox ?

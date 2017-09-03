@@ -15,6 +15,7 @@ const mapStateToProps = (state: RootState) => ({
     labels: state.app.labels,
     error: state.app.error,
     isLoading: state.app.isSyncing,
+    guardLoading: state.app.guardSyncing,
 
     config: dataToJS(state.firebase, config(getFirebase())),
     uiConfig: state.storage.uiConfig,
@@ -31,6 +32,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         onReload: () => {
             dispatch(sync())
+        },
+        onBackgroundReload: () => {
+            dispatch(sync(false))
         },
         onChangeConfig: (config: CommonConfig) => {
             dispatch(updateConfig(config));

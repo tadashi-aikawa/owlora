@@ -29,6 +29,7 @@ enum ActionType {
 
 export interface SyncAction extends Action {
     type: ActionType.SYNC;
+    payload: boolean;
 }
 
 export interface SuccessSyncAction extends Action {
@@ -113,8 +114,8 @@ export type Actions =
     SuccessUpdateTodoistTokenAction |
     ErrorUpdateTodoistTokenAction;
 
-export function sync(): SyncAction {
-    return {type: ActionType.SYNC}
+export function sync(guard: boolean=true): SyncAction {
+    return {type: ActionType.SYNC, payload: guard}
 }
 
 export function successSync(payload: SyncPayload): SuccessSyncAction {

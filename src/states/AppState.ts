@@ -9,4 +9,5 @@ export interface AppState {
     labels: Label[];
     error?: Error;
     isSyncing: boolean;
+    guardSyncing: boolean;
 }

@@ -16,6 +16,7 @@ const INITIAL_APP_STATE: AppState = {
     projects: [],
     labels: [],
     isSyncing: true,
+    guardSyncing: false,
 };
 
 export const INITIAL_SHARED_STATE: SharedState = {
@@ -77,7 +78,7 @@ export const INITIAL_ROOT_STATE: RootState = {
 const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppState => {
     switch (action.type) {
         case ActionType.SYNC:
-            return Object.assign({}, state, {isSyncing: true});
+            return Object.assign({}, state, {isSyncing: true, guardSyncing: action.payload});
         case ActionType.SUCCESS_SYNC:
             return Object.assign({}, state, {
                 tasksById: action.payload.tasksById,
