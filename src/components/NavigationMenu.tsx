@@ -172,7 +172,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
         return (
             <Menu stackable inverted fixed="top">
                 <Menu.Item>
-                    <img src={LOGO}/>
+                    <img src={LOGO} style={{width: 40}}/>
                 </Menu.Item>
                 <Menu.Item>
                     <h2>Owlora</h2>
