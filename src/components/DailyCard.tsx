@@ -162,7 +162,7 @@ export default class extends Component<DailyCardProps> {
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
 
         return (
-            <Card ref={node => this.props.connectDropTarget(findDOMNode(this))}>
+            <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
                 <Dimmer active={this.props.date.isBefore(now(), 'day')} content={
                     <div>
                         <h2>Facing forward !!</h2>

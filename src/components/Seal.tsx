@@ -66,7 +66,7 @@ export default class extends Component<SealProps, SealState> {
         return (
             <Label color={this.props.color}
                    basic
-                   ref={node => this.props.connectDragSource(findDOMNode(this))}
+                   ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}
                    className={labelStyle}
                    onMouseEnter={() => this.setState({hiddenEditIcon: false})}
                    onMouseLeave={() => this.setState({hiddenEditIcon: true})}

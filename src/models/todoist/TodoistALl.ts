@@ -8,9 +8,9 @@ import {Dictionary} from "lodash";
 
 interface TodoistAll {
     sync_status?: Dictionary<string>,
-    labels?: TodoistLabel[],
-    projects?: TodoistProject[],
-    items?: TodoistTask[],
+    labels: TodoistLabel[],
+    projects: TodoistProject[],
+    items: TodoistTask[],
 }
 
 export default TodoistAll;

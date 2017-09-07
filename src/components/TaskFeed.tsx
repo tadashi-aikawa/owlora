@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Component} from 'react';
-import {Icon, Feed, Label} from 'semantic-ui-react';
+import {Feed, Label} from 'semantic-ui-react';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import {findDOMNode} from 'react-dom';
 import ImageOrEmoji from './ImageOrEmoji';
@@ -56,7 +56,7 @@ export default class extends Component<TaskFeedProps, TaskFeedState> {
     render() {
         const {name, projectName, icon, estimatedMinutes, color} = this.props.task;
         return (
-            <Feed.Event ref={node => this.props.connectDragSource(findDOMNode(this))}
+            <Feed.Event ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}
                         onMouseEnter={() => this.setState({hiddenEditIcon: false})}
                         onMouseLeave={() => this.setState({hiddenEditIcon: true})}
                         style={{

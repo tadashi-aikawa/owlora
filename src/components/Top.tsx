@@ -121,11 +121,11 @@ export default class extends Component<TopProps, TopState> {
     }
 
     componentDidMount() {
-        window.onfocus = () => this.props.onBackgroundReload();
+        window.addEventListener('focus', this.props.onBackgroundReload, true);
     }
 
     componentWillUnmount() {
-        window.onfocus = undefined;
+        window.removeEventListener('focus');
     }
 
     generatePreview(type, {task}: { task: Task }, style) {

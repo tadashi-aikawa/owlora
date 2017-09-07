@@ -24,9 +24,9 @@ import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
 
-const toRepetition = (dateString: string): Repetition => {
+const toRepetition = (dateString: string): Repetition | undefined => {
     if (!dateString) {
-        return null;
+        return undefined;
     }
 
     const mappings = [
@@ -62,7 +62,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
         .filter(x => !x.checked)
         .orderBy(x => x.project_id)
         .map(x => {
-            const matchedMilestone: MilestoneConfig = _.find(
+            const matchedMilestone: MilestoneConfig | undefined = _.find(
                 milestones,
                 (m: MilestoneConfig) => _.every([
                     !m.condition.regexp || x.content.match(new RegExp(m.condition.regexp)),
@@ -70,7 +70,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     !m.condition.projectIdsOr || _.includes(m.condition.projectIdsOr, x.project_id)
                 ])
             );
-            const matchedSeal: SealConfig = _.find(
+            const matchedSeal: SealConfig | undefined = _.find(
                 seals,
                 (l: SealConfig) => _.every([
                     !l.condition.regexp || x.content.match(new RegExp(l.condition.regexp)),
@@ -78,7 +78,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     !l.condition.projectIdsOr || _.includes(l.condition.projectIdsOr, x.project_id)
                 ])
             );
-            const matchedEstimate: EstimateConfig = _.find(
+            const matchedEstimate: EstimateConfig | undefined = _.find(
                 estimates,
                 (e: EstimateConfig) => _.every([
                     !e.condition.regexp || x.content.match(new RegExp(e.condition.regexp)),

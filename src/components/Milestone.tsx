@@ -63,7 +63,7 @@ export default class extends Component<MilestoneProps, MilestoneState> {
         return (
             <Message color={this.props.color}
                      size={this.props.size}
-                     ref={node => this.props.connectDragSource(findDOMNode(this))}
+                     ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}
                      style={{
                          cursor: 'move',
                          opacity: this.props.isDragging ? 0.1 : 1

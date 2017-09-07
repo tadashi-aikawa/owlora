@@ -27,7 +27,7 @@ export default class extends PureComponent<ConfigImporterProps, ConfigImporterSt
                         style={{margin: 5}}
                         onClick={() => {
                             try {
-                                const parsed = JSON.parse(this.state.str)
+                                const parsed = JSON.parse(this.state.str);
                                 this.props.onImport(parsed);
                                 this.setState({err: undefined})
                             } catch (e) {
@@ -38,7 +38,7 @@ export default class extends PureComponent<ConfigImporterProps, ConfigImporterSt
                 <TextArea autoHeight
                           value={this.state.str}
                           style={{width: "100%"}}
-                          onChange={(e, {name, value}) => this.setState({str: value})}
+                          onChange={(e, {name, value}) => this.setState({str: value || ""})}
                 />
             </div>
         );

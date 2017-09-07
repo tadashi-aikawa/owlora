@@ -27,7 +27,7 @@ interface TaskFeedsProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
 
-    onUpdateTask?: (parameter: TaskUpdateParameter) => void;
+    onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
 
 const TaskFeeds = (props: TaskFeedsProps) =>

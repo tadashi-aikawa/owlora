@@ -67,7 +67,8 @@ export default class extends Component<IceboxProps> {
             .value();
 
         return (
-            <Card ref={node => this.props.connectDropTarget(findDOMNode(this))} style={{width: this.props.width}}>
+            <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}
+                  style={{width: this.props.width}}>
                 <Dimmer active={!this.props.canDrop && this.props.isOver}
                         style={{backgroundColor: "grey", opacity: 0.5}}
                         content=""/>
