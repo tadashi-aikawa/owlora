@@ -1,6 +1,6 @@
-const common = require('./webpack.config');
-const webpack = require('webpack');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const common = require("./webpack.config");
+const webpack = require("webpack");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = Object.assign(common, {
     plugins: [
@@ -9,9 +9,9 @@ module.exports = Object.assign(common, {
             uglifyOptions: { ecma: 8 },
         }),
         new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: '"production"'
-            }
+            "process.env": {
+                NODE_ENV: '"production"',
+            },
         }),
     ],
 });
