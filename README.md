@@ -1,5 +1,7 @@
 # Owlora
 
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 <img src="./owlora.png" />
 
 Task management tool in which can medium term.

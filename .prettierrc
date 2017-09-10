@@ -1,0 +1,11 @@
+{
+    "printWidth": 120,
+    "overrides": [{
+        "files": ["*.json", "*.ts", "*.tsx"],
+        "options": {
+            "tabWidth": 4,
+            "trailingComma": "es5",
+            "parser": "typescript"
+        }
+    }]
+}
