@@ -180,10 +180,9 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                 <Menu.Menu position="right">
                     {
                         isMobile() ?
-                            <Menu.Item position="right"><SortOrderSelector uiConfig={this.props.uiConfig}
-                                                                           onChangeUiConfig={this.props.onChangeUiConfig}/>
+                            <Menu.Item position="right">
                                 <Popup inverted
-                                       trigger={<Button content="More..." icon="dropdown" inverted/>}
+                                       trigger={<Button icon="eye" inverted/>}
                                        content={
                                            <Menu.Menu style={{
                                                display: "flex",
@@ -191,6 +190,8 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                                justifyContent: "space-around",
                                                height: 150
                                            }}>
+                                               <SortOrderSelector uiConfig={this.props.uiConfig}
+                                                                  onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <DayAppearanceToggle uiConfig={this.props.uiConfig}
                                                                     onChangeUiConfig={this.props.onChangeUiConfig}/>
                                                <CardColumnsNumSelector uiConfig={this.props.uiConfig}
@@ -200,7 +201,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                            </Menu.Menu>
                                        }
                                        on='click'
-                                       position='top right'
+                                       position='bottom right'
                                 />
                                 <ToggleButtonGroup uiConfig={this.props.uiConfig}
                                                    onChangeUiConfig={this.props.onChangeUiConfig}
