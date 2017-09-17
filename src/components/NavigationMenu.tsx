@@ -170,7 +170,7 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
 
     render() {
         return (
-            <Menu stackable inverted fixed="top">
+            <Menu stackable inverted fixed="top" style={{height: 70}}>
                 <Menu.Item>
                     <img src={LOGO} style={{width: 40}}/>
                 </Menu.Item>
