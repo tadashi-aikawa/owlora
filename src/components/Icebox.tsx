@@ -21,7 +21,7 @@ export interface IceboxProps {
     taskOrder: Order;
     milestone: boolean;
     seal: boolean;
-    filter: Filter;
+    filter?: Filter;
     width: number;
 
     connectDropTarget?: Function;

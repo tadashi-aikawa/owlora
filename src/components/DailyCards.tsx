@@ -58,7 +58,7 @@ export interface DailyCardsProps {
     numberOfCards: number;
     numberOfCardsPerRow: SemanticWIDTHS;
     onlyWeekday: boolean;
-    filter: Filter;
+    filter?: Filter;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }

@@ -108,7 +108,7 @@ export interface DailyCardProps {
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
-    filter: Filter;
+    filter?: Filter;
 
     connectDropTarget?: Function;
     isOver?: boolean;

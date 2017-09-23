@@ -274,7 +274,7 @@ export default class extends Component<TopProps, TopState> {
                                 taskOrder={this.props.uiConfig.taskOrder}
                                 milestone={this.props.uiConfig.milestone}
                                 seal={this.props.uiConfig.seal}
-                                filter={this.props.filter}
+                                filter={this.props.uiConfig.filter ? this.props.filter : undefined}
                                 onUpdateTask={this.props.onUpdateTask}
                                 width={350}/>
                     </div>
@@ -305,7 +305,7 @@ export default class extends Component<TopProps, TopState> {
                                     numberOfCards={this.props.uiConfig.numberOfCards}
                                     numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
                                     onlyWeekday={this.props.uiConfig.onlyWeekday}
-                                    filter={this.props.filter}
+                                    filter={this.props.uiConfig.filter ? this.props.filter : undefined}
                                     onUpdateTask={this.props.onUpdateTask}
                         />
                     </div>
