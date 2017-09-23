@@ -14,6 +14,8 @@ import {
     Loader,
     Message,
     Step,
+    Input,
+    Segment,
 } from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -97,10 +99,14 @@ export interface TopState {
 @DragDropContext(MultiBackend(HTML5toTouch))
 export default class extends Component<TopProps, TopState> {
 
-    state: TopState = {
-        hasErrorToast: false,
-        inputToken: this.props.token,
-    };
+    constructor(props: TopProps) {
+        super();
+        this.state = {
+            hasErrorToast: false,
+            inputToken: props.token,
+        };
+        this.onChangeFilterWord = _.debounce(this.onChangeFilterWord, 500);
+    }
 
     componentWillReceiveProps(nextProps: TopProps) {
         if (!_.isEqual(this.props.config, nextProps.config)) {
@@ -118,11 +124,11 @@ export default class extends Component<TopProps, TopState> {
                 showCloseButton: false,
                 removeOnHover: false
             });
-            this.state.hasErrorToast = true;
+            this.setState({hasErrorToast: true});
         } else {
             if (this.state.hasErrorToast) {
                 toastr.removeByType("error");
-                this.state.hasErrorToast = false;
+                this.setState({hasErrorToast: false});
             }
         }
     }
@@ -133,6 +139,10 @@ export default class extends Component<TopProps, TopState> {
 
     componentWillUnmount() {
         window.removeEventListener('focus');
+    }
+
+    onChangeFilterWord(word) {
+        this.props.onChangeFilter({...this.props.filter, ...{word}});
     }
 
     generatePreview(type, {task}: { task: Task }, style) {
@@ -246,7 +256,12 @@ export default class extends Component<TopProps, TopState> {
                                 transition: "all 0.5s",
                             }
                     }>
-                        <div style={{display: "flex", justifyContent: "flex-end", padding: 5}}>
+                        <div style={{display: "flex", justifyContent: "flex-end", paddingTop: 10, paddingBottom: 20}}>
+                            <Input placeholder='Filter task name by regexp'
+                                   icon='filter'
+                                   iconPosition='left'
+                                   style={{width: 300, marginRight: 20}}
+                                   onChange={(e, data) => this.onChangeFilterWord(data.value)}/>
                             <IconFilter icons={_(this.props.tasks).map(t => t.icon).uniq().value()}
                                         iconDisabledMap={this.props.filter.iconDisabledMap}
                                         onChangeIconDisabledMap={(iconDisabledMap) => this.props.onChangeFilter(

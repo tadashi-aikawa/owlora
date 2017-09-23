@@ -213,7 +213,7 @@ export default class extends Component<DailyCardProps> {
                     }
                     {
                         this.props.seal &&
-                        this.props.tasks.filter(t => t.isSeal)
+                        this.props.tasks.filter(t => t.isSeal).filter(applyFilter)
                             .map(t => <Seal key={t.id}
                                             id={t.id}
                                             name={t.name}

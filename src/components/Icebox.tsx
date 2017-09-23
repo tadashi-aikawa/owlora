@@ -94,7 +94,7 @@ export default class extends Component<IceboxProps> {
                 <Card.Content>
                     {
                         this.props.seal &&
-                        this.props.tasks.filter(t => t.isSeal)
+                        this.props.tasks.filter(t => t.isSeal).filter(applyFilter)
                             .map(t => <Seal key={t.id}
                                             id={t.id}
                                             name={t.name}
