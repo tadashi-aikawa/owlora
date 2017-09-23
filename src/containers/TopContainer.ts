@@ -1,13 +1,17 @@
 import * as _ from 'lodash';
 import {connect} from 'react-redux';
 import Top from '../components/Top';
-import {login, logout, sync, updateConfig, updateTasks, updateTodoistToken, updateUiConfig} from '../actions/index';
+import {
+    login, logout, sync, updateConfig, updateFilter, updateTasks, updateTodoistToken,
+    updateUiConfig
+} from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
 import {TaskUpdateParameter} from '../models/Task';
 import UiConfig from '../models/UiConfig';
 import {dataToJS, firebaseConnect, getFirebase, pathToJS} from 'react-redux-firebase'
 import {config} from "../utils/FirebasePathUtil";
+import Filter from '../models/Filter';
 
 const mapStateToProps = (state: RootState) => ({
     tasks: _.values(state.app.tasksById),
@@ -19,6 +23,8 @@ const mapStateToProps = (state: RootState) => ({
 
     config: dataToJS(state.firebase, config(getFirebase())),
     uiConfig: state.storage.uiConfig,
+    filter: state.app.filter,
+
     token: state.storage.todoist.token,
     isTokenUpdating: state.storage.todoist.updating,
     tokenUpdateError: state.storage.todoist.error,
@@ -41,6 +47,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         onChangeUiConfig: (config: UiConfig) => {
             dispatch(updateUiConfig(config));
+        },
+        onChangeFilter: (filter: Filter) => {
+            dispatch(updateFilter(filter))
         },
         onUpdateTask: (parameter: TaskUpdateParameter) => {
             dispatch(updateTasks([parameter]));

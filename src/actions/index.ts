@@ -5,6 +5,7 @@ import {default as Task, TaskUpdateParameter} from '../models/Task';
 import {Dictionary} from 'lodash';
 import UiConfig from '../models/UiConfig';
 import {getFirebase} from 'react-redux-firebase';
+import Filter from '../models/Filter';
 
 enum ActionType {
     SYNC = 'SYNC',
@@ -15,12 +16,12 @@ enum ActionType {
     SUCCESS_UPDATE_TASKS = 'SUCCESS_UPDATE_TASKS',
     ERROR_UPDATE_TASKS = 'ERROR_UPDATE_TASKS',
 
+    UPDATE_CONFIG = 'UPDATE_CONFIG',
     UPDATE_UI_CONFIG = 'UPDATE_UI_CONFIG',
+    UPDATE_FILTER = 'UPDATE_FILTER',
 
     LOGIN = 'LOGIN',
     LOGOUT = 'LOGOUT',
-
-    UPDATE_CONFIG = 'UPDATE_CONFIG',
 
     UPDATE_TODOIST_TOKEN = 'UPDATE_TODOIST_TOKEN',
     SUCCESS_UPDATE_TODOIST_TOKEN = 'SUCCESS_UPDATE_TODOIST_TOKEN',
@@ -57,9 +58,23 @@ export interface ErrorUpdateTasksAction extends Action {
     error: Error;
 }
 
+export interface UpdateConfigAction extends Action {
+    type: ActionType.UPDATE_CONFIG;
+    // TODO: firebase
+    payload: {
+        firebase: any,
+        config: CommonConfig,
+    };
+}
+
 export interface UpdateUiConfigAction extends Action {
     type: ActionType.UPDATE_UI_CONFIG;
     payload: UiConfig;
+}
+
+export interface UpdateFilterAction extends Action {
+    type: ActionType.UPDATE_FILTER;
+    payload: Filter;
 }
 
 export interface LoginAction extends Action {
@@ -72,15 +87,6 @@ export interface LogoutAction extends Action {
     type: ActionType.LOGOUT;
     // TODO: firebase
     payload: any;
-}
-
-export interface UpdateConfigAction extends Action {
-    type: ActionType.UPDATE_CONFIG;
-    // TODO: firebase
-    payload: {
-        firebase: any,
-        config: CommonConfig,
-    };
 }
 
 export interface UpdateTodoistTokenAction extends Action {
@@ -106,15 +112,18 @@ export type Actions =
     UpdateTasksAction |
     SuccessUpdateTasksAction |
     ErrorUpdateTasksAction |
+
+    UpdateConfigAction |
     UpdateUiConfigAction |
+    UpdateFilterAction |
+
     LoginAction |
     LogoutAction |
-    UpdateConfigAction |
     UpdateTodoistTokenAction |
     SuccessUpdateTodoistTokenAction |
     ErrorUpdateTodoistTokenAction;
 
-export function sync(guard: boolean=true): SyncAction {
+export function sync(guard: boolean = true): SyncAction {
     return {type: ActionType.SYNC, payload: guard}
 }
 
@@ -138,10 +147,6 @@ export function errorUpdateTasks(error: Error): ErrorUpdateTasksAction {
     return {type: ActionType.ERROR_UPDATE_TASKS, error}
 }
 
-export function updateUiConfig(config: UiConfig): UpdateUiConfigAction {
-    return {type: ActionType.UPDATE_UI_CONFIG, payload: config}
-}
-
 export function login(): LoginAction {
     return {type: ActionType.LOGIN, payload: getFirebase()}
 }
@@ -152,6 +157,14 @@ export function logout(): LogoutAction {
 
 export function updateConfig(config: CommonConfig): UpdateConfigAction {
     return {type: ActionType.UPDATE_CONFIG, payload: {firebase: getFirebase(), config}}
+}
+
+export function updateUiConfig(config: UiConfig): UpdateUiConfigAction {
+    return {type: ActionType.UPDATE_UI_CONFIG, payload: config}
+}
+
+export function updateFilter(filter: Filter): UpdateFilterAction {
+    return {type: ActionType.UPDATE_FILTER, payload: filter}
 }
 
 export function updateTodoistToken(token: string): UpdateTodoistTokenAction {

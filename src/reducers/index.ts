@@ -17,6 +17,9 @@ const INITIAL_APP_STATE: AppState = {
     labels: [],
     isSyncing: true,
     guardSyncing: false,
+    filter: {
+        iconDisabledMap: {}
+    },
 };
 
 export const INITIAL_SHARED_STATE: SharedState = {
@@ -56,6 +59,7 @@ export const INITIAL_STORAGE_STATE: StorageState = {
     },
     uiConfig: {
         icebox: false,
+        filter: true,
         timeLamps: true,
         milestone: true,
         seal: true,
@@ -110,6 +114,10 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
         case ActionType.ERROR_UPDATE_TASKS:
             return Object.assign({}, state, {
                 error: action.error,
+            });
+        case ActionType.UPDATE_FILTER:
+            return Object.assign({}, state, {
+                filter: action.payload,
             });
         default:
             return state;

@@ -7,11 +7,13 @@ import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import TaskFeeds from "./TaskFeeds";
 import ImageOrEmoji from './ImageOrEmoji';
+import {Dictionary} from 'lodash';
 
 export interface EstimateIconGroupProps {
     tasks: Task[];
     taskSortFieldInPopup: TaskSortField;
     taskOrderInPopup: Order;
+    iconDisabledMap: Dictionary<boolean>;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
@@ -36,7 +38,8 @@ const EstimateIconGroup = (props: EstimateIconGroupProps) =>
                                    <div style={{
                                        display: "flex", flexDirection: "column",
                                        alignItems: "center", justifyContent: "center",
-                                       marginLeft: 4, marginRight: 4, marginTop: 2, marginBottom: 2
+                                       marginLeft: 4, marginRight: 4, marginTop: 2, marginBottom: 2,
+                                       opacity: props.iconDisabledMap[x.icon] ? 0.15 : 1.0
                                    }}>
                                        <div style={{width: 28, height: 28}}>
                                            <ImageOrEmoji src={x.icon} style={{width: "28px", height: "28px"}}/>

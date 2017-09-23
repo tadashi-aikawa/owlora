@@ -40,6 +40,10 @@ const ToggleButtonGroup = ({uiConfig, onChangeUiConfig}) =>
                 enabled={uiConfig.icebox}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {icebox: enabled})}/>
             <ToggleButton
+                icon="filter"
+                enabled={uiConfig.filter}
+                onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {filter: enabled})}/>
+            <ToggleButton
                 icon="tasks"
                 enabled={uiConfig.isTasksExpanded}
                 onChange={enabled => updateUiConfig(uiConfig, onChangeUiConfig, {isTasksExpanded: enabled})}/>

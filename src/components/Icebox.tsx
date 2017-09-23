@@ -11,6 +11,7 @@ import TaskFeeds from "./TaskFeeds";
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Seal from './Seal';
+import {Dictionary} from 'lodash';
 
 
 export interface IceboxProps {
@@ -18,7 +19,8 @@ export interface IceboxProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
     milestone: boolean;
-    seal: boolean
+    seal: boolean;
+    iconDisabledMap: Dictionary<boolean>;
     width: number;
 
     connectDropTarget?: Function;
@@ -66,6 +68,8 @@ export default class extends Component<IceboxProps> {
             .reject(t => t.isMilestone || t.isSeal)
             .value();
 
+        const onlyEnabled = (x: Task) => !this.props.iconDisabledMap[x.icon];
+
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}
                   style={{width: this.props.width}}>
@@ -99,7 +103,7 @@ export default class extends Component<IceboxProps> {
                             />)
                     }
                     {
-                        this.props.milestone && this.props.tasks.filter(t => t.isMilestone)
+                        this.props.milestone && this.props.tasks.filter(t => t.isMilestone).filter(onlyEnabled)
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
                                                  name={t.name}
@@ -109,8 +113,8 @@ export default class extends Component<IceboxProps> {
                                                  onUpdate={this.props.onUpdateTask}
                             />)
                     }
-                    <Divider horizontal>{estimatedTasks.length} Tasks</Divider>
-                    <TaskFeeds tasks={estimatedTasks}
+                    <Divider horizontal>{estimatedTasks.filter(onlyEnabled).length} Tasks</Divider>
+                    <TaskFeeds tasks={estimatedTasks.filter(onlyEnabled)}
                                taskSortField={this.props.taskSortField}
                                taskOrder={this.props.taskOrder}
                                onUpdateTask={this.props.onUpdateTask}/>
@@ -119,6 +123,7 @@ export default class extends Component<IceboxProps> {
                     <EstimateIconGroup tasks={estimatedTasks}
                                        taskSortFieldInPopup={this.props.taskSortField}
                                        taskOrderInPopup={this.props.taskOrder}
+                                       iconDisabledMap={this.props.iconDisabledMap}
                                        onUpdateTask={this.props.onUpdateTask}/>
                 </Card.Content>
             </Card>

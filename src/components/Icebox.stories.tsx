@@ -63,6 +63,7 @@ storiesOf('Icebox', module)
                         createTask({id: 6, name: ':wine_glass: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
                     ]
                 )}
+                iconDisabledMap={{}}
                 width={number('width', 350)}
                 onUpdateTask={action}
         />

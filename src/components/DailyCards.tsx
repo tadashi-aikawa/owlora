@@ -57,6 +57,7 @@ export interface DailyCardsProps {
     numberOfCards: number;
     numberOfCardsPerRow: SemanticWIDTHS;
     onlyWeekday: boolean;
+    iconDisabledMap: Dictionary<boolean>;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
@@ -87,6 +88,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     isTasksExpanded={props.isTasksExpanded}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
+                    iconDisabledMap={props.iconDisabledMap}
                     onUpdateTask={props.onUpdateTask}
                 />
             ))}

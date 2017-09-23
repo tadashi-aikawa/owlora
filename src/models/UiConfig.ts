@@ -5,6 +5,7 @@ import {SemanticWIDTHS} from 'semantic-ui-react';
 
 interface UiConfig {
     icebox: boolean;
+    filter: boolean,
     timeLamps: boolean;
     milestone: boolean;
     seal: boolean;

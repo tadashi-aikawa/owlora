@@ -107,6 +107,7 @@ export interface DailyCardProps {
     isTasksExpanded: boolean;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
+    iconDisabledMap: Dictionary<boolean>;
 
     connectDropTarget?: Function;
     isOver?: boolean;
@@ -160,6 +161,8 @@ export default class extends Component<DailyCardProps> {
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
         const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : this.props.minutesToUsePerDay;
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
+
+        const onlyEnabled = (x: Task) => !this.props.iconDisabledMap[x.icon];
 
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
@@ -231,7 +234,7 @@ export default class extends Component<DailyCardProps> {
                     }
                     {
                         this.props.milestone &&
-                        this.props.tasks.filter(t => t.isMilestone)
+                        this.props.tasks.filter(t => t.isMilestone).filter(onlyEnabled)
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
                                                  name={t.name}
@@ -244,13 +247,13 @@ export default class extends Component<DailyCardProps> {
                         <Popup flowing hoverable
                                position="bottom center"
                                openOnTriggerMouseEnter={
-                                   estimatedTasks.length > 0 && !this.props.isTasksExpanded
+                                   estimatedTasks.filter(onlyEnabled).length > 0 && !this.props.isTasksExpanded
                                }
                                trigger={
-                                   <span>{estimatedTasks.length} Tasks</span>
+                                   <span>{estimatedTasks.filter(onlyEnabled).length} Tasks</span>
                                }
                         >
-                            <TaskFeeds tasks={estimatedTasks}
+                            <TaskFeeds tasks={estimatedTasks.filter(onlyEnabled)}
                                        taskSortField={this.props.taskSortField}
                                        taskOrder={this.props.taskOrder}
                                        onUpdateTask={this.props.onUpdateTask}
@@ -274,7 +277,7 @@ export default class extends Component<DailyCardProps> {
                                 transition: "all 0.5s",
                             }
                     }>
-                        <TaskFeeds tasks={estimatedTasks}
+                        <TaskFeeds tasks={estimatedTasks.filter(onlyEnabled)}
                                    taskSortField={this.props.taskSortField}
                                    taskOrder={this.props.taskOrder}
                                    onUpdateTask={this.props.onUpdateTask}/>
@@ -285,6 +288,7 @@ export default class extends Component<DailyCardProps> {
                         tasks={estimatedTasks}
                         taskSortFieldInPopup={this.props.taskSortField}
                         taskOrderInPopup={this.props.taskOrder}
+                        iconDisabledMap={this.props.iconDisabledMap}
                         onUpdateTask={this.props.onUpdateTask}
                     />
                 </Card.Content>

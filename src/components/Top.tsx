@@ -13,7 +13,7 @@ import {
     Label as SLabel,
     Loader,
     Message,
-    Step
+    Step,
 } from 'semantic-ui-react';
 import {DailyCards} from './DailyCards';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -34,6 +34,9 @@ import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch';
 import ImageOrEmoji from './ImageOrEmoji';
 import {INITIAL_SHARED_STATE} from '../reducers/index';
 import {isEmpty, isLoaded} from 'react-redux-firebase'
+import IconFilter from './IconFilter';
+import Filter from '../models/Filter';
+import {Dictionary} from 'lodash';
 
 
 const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
@@ -63,6 +66,7 @@ export interface TopProps {
 
     config: CommonConfig;
     uiConfig: UiConfig;
+    filter: Filter;
     token: string;
     isTokenUpdating: boolean;
     tokenUpdateError: Error;
@@ -74,8 +78,11 @@ export interface TopProps {
     onReload: () => void;
     onBackgroundReload: () => void;
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
+    onChangeFilter: (filter: Filter) => void;
+
     onUpdateToken: (token: string) => void;
     onLogin: (provider: string) => void;
     onLogout: () => void;
@@ -225,6 +232,29 @@ export default class extends Component<TopProps, TopState> {
                         <Loader content='Loading' size='huge' active={this.props.isLoading && this.props.guardLoading}/>
                     </Dimmer>
                     <div style={
+                        this.props.uiConfig.filter ?
+                            {
+                                opacity: 1,
+                                maxHeight: "100%",
+                                transformOrigin: "top",
+                                transition: "all 0.5s",
+                            } :
+                            {
+                                opacity: 0,
+                                maxHeight: 0,
+                                transformOrigin: "top",
+                                transition: "all 0.5s",
+                            }
+                    }>
+                        <div style={{display: "flex", justifyContent: "flex-end", padding: 5}}>
+                            <IconFilter icons={_(this.props.tasks).map(t => t.icon).uniq().value()}
+                                        iconDisabledMap={this.props.filter.iconDisabledMap}
+                                        onChangeIconDisabledMap={(iconDisabledMap) => this.props.onChangeFilter(
+                                            {...this.props.filter, ...{iconDisabledMap}}
+                                        )}/>
+                        </div>
+                    </div>
+                    <div style={
                         this.props.uiConfig.icebox ?
                             {
                                 overflowY: "scroll",
@@ -244,6 +274,7 @@ export default class extends Component<TopProps, TopState> {
                                 taskOrder={this.props.uiConfig.taskOrder}
                                 milestone={this.props.uiConfig.milestone}
                                 seal={this.props.uiConfig.seal}
+                                iconDisabledMap={this.props.filter.iconDisabledMap}
                                 onUpdateTask={this.props.onUpdateTask}
                                 width={350}/>
                     </div>
@@ -274,6 +305,7 @@ export default class extends Component<TopProps, TopState> {
                                     numberOfCards={this.props.uiConfig.numberOfCards}
                                     numberOfCardsPerRow={this.props.uiConfig.numberOfCardsPerRow}
                                     onlyWeekday={this.props.uiConfig.onlyWeekday}
+                                    iconDisabledMap={this.props.filter.iconDisabledMap}
                                     onUpdateTask={this.props.onUpdateTask}
                         />
                     </div>
