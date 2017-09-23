@@ -26,6 +26,13 @@ interface TaskFeedProps {
     {
         beginDrag(props: TaskFeedProps) {
             return {
+                id: props.task.id,
+                name: props.task.name,
+                projectName: props.task.projectName,
+                color: props.task.color,
+                size: props.task.size,
+                icon: props.task.icon,
+                estimatedMinutes: props.task.estimatedMinutes,
                 date: props.task.dueDate,
             };
         },

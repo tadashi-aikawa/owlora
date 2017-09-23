@@ -39,6 +39,7 @@ import {isEmpty, isLoaded} from 'react-redux-firebase'
 import IconFilter from './IconFilter';
 import Filter from '../models/Filter';
 import {Dictionary} from 'lodash';
+import Size from '../constants/Size';
 
 
 const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
@@ -145,36 +146,59 @@ export default class extends Component<TopProps, TopState> {
         this.props.onChangeFilter({...this.props.filter, ...{word}});
     }
 
-    generatePreview(type, {task}: { task: Task }, style) {
-        const {name, projectName, icon, estimatedMinutes, color} = task;
-        Object.assign(style, {
-            backgroundColor: color,
-            border: '2px solid',
-            borderRadius: '20px',
-            borderColor: color,
-            padding: '10px',
-        });
+    generatePreview(type, {date, id, name, size, color, icon, projectName, estimatedMinutes}, style) {
+        switch(type) {
+            case 'task':
+                Object.assign(style, {
+                    backgroundColor: color,
+                    border: '2px solid',
+                    borderRadius: '20px',
+                    borderColor: color,
+                    padding: '10px',
+                });
 
-        return <Feed style={style}>
-            <Feed.Event>
-                <Feed.Label>
-                    <ImageOrEmoji src={icon}/>
-                </Feed.Label>
-                <Feed.Content>
-                    <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
-                    <Feed.Summary>
-                        <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
-                    </Feed.Summary>
-                </Feed.Content>
-                <SLabel color='teal' circular size="large"
-                        style={{
-                            margin: 'auto',
-                            width: 'auto',
-                            textAlign: 'center',
-                            marginLeft: 5
-                        }}>{estimatedMinutes}</SLabel>
-            </Feed.Event>
-        </Feed>;
+                return <Feed style={style}>
+                    <Feed.Event>
+                        <Feed.Label>
+                            <ImageOrEmoji src={icon}/>
+                        </Feed.Label>
+                        <Feed.Content>
+                            <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
+                            <Feed.Summary>
+                                <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
+                            </Feed.Summary>
+                        </Feed.Content>
+                        <SLabel color='teal' circular size="large"
+                                style={{
+                                    margin: 'auto',
+                                    width: 'auto',
+                                    textAlign: 'center',
+                                    marginLeft: 5
+                                }}>{estimatedMinutes}</SLabel>
+                    </Feed.Event>
+                </Feed>;
+            case 'seal':
+                return <SLabel color={color} basic style={style}>
+                    <Emojify style={{width: 16, height: 16,}}>
+                        {name}
+                    </Emojify>
+                </SLabel>;
+            case 'milestone':
+                return <Message color={color} size={size} style={style}>
+                    <Message.Content>
+                        <Message.Header>
+                            <Emojify style={{
+                                width: Size.toEmojiSize[size],
+                                height: Size.toEmojiSize[size]
+                            }}>
+                                {name}
+                            </Emojify>
+                        </Message.Header>
+                    </Message.Content>
+                </Message>;
+            default:
+                return
+        }
     }
 
     render() {

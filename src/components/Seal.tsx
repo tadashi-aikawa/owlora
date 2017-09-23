@@ -26,10 +26,13 @@ export interface SealProps {
 }
 
 @DragSource(
-    'task',
+    'seal',
     {
         beginDrag(props: SealProps) {
             return {
+                id: props.id,
+                name: props.name,
+                color: props.color,
                 date: props.date,
             };
         },

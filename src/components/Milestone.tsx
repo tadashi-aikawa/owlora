@@ -28,10 +28,14 @@ export interface MilestoneProps {
 
 
 @DragSource(
-    'task',
+    'milestone',
     {
         beginDrag(props: MilestoneProps) {
             return {
+                id: props.id,
+                name: props.name,
+                color: props.color,
+                size: props.size,
                 date: props.date,
             };
         },

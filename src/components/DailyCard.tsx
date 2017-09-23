@@ -119,7 +119,7 @@ export interface DailyCardProps {
 
 
 @DropTarget(
-    'task',
+    ['task', 'seal', 'milestone'],
     {
         drop(props: DailyCardProps, monitor) {
             if (monitor.didDrop()) {
