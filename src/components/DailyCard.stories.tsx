@@ -48,7 +48,7 @@ storiesOf('DailyCard', module)
                    taskOrder={select('Task order', Order.toObject, Order.ASC)}
                    minutesToUsePerDay={number('Minutes to use per day', 300)}
                    minutesToUsePerSpecificDays={{}}
-                   iconDisabledMap={{}}
+                   filter={{iconDisabledMap: {}}}
                    tasks={object(
                        'Tasks',
                        [
@@ -94,7 +94,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
@@ -111,7 +111,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[
                            createTask({id: 1, dayOrder: 1, icon: ':innocent:',}),
                            createTask({id: 2, name: 'Milestone', dayOrder: 2, color: "purple", isMilestone: true}),
@@ -147,7 +147,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={tasks}
                            timeLamps
                            milestone
@@ -161,7 +161,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={tasks}
                            timeLamps
                            milestone
@@ -175,7 +175,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.DESC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={tasks}
                            timeLamps
                            milestone
@@ -189,7 +189,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={tasks}
                            timeLamps
                            milestone
@@ -209,7 +209,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                name: 'Task1 (11:00-12:00)',
                                time: {
@@ -229,7 +229,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[
                                createTask({
                                    id: 1,
@@ -260,7 +260,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[
                                createTask({
                                    id: 1,
@@ -291,7 +291,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                name: 'Task1 (11:00-12:00)',
                                time: {
@@ -316,7 +316,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[createTask({
                            id: 1,
                            dayOrder: 1,
@@ -334,7 +334,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[createTask({
                            id: 1,
                            dayOrder: 1,
@@ -356,7 +356,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[createTask({
                            id: 1,
                            dayOrder: 1,
@@ -374,7 +374,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[createTask({
                            id: 1,
                            dayOrder: 1,
@@ -392,7 +392,7 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={{}}
+                       filter={{iconDisabledMap: {}}}
                        tasks={[createTask({
                            id: 1,
                            dayOrder: 1,
@@ -415,7 +415,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                name: ":beer: Party!!",
@@ -436,7 +436,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                name: ":beer: Party!!",
@@ -463,7 +463,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                name: ":house: At home",
@@ -483,7 +483,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={300}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                name: ":house: At home",
@@ -509,7 +509,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -527,7 +527,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -545,7 +545,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -563,7 +563,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -587,7 +587,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -605,7 +605,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -623,7 +623,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -641,7 +641,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -659,7 +659,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -677,7 +677,7 @@ storiesOf('DailyCard', module)
                            taskOrder={Order.ASC}
                            minutesToUsePerDay={100}
                            minutesToUsePerSpecificDays={{}}
-                           iconDisabledMap={{}}
+                           filter={{iconDisabledMap: {}}}
                            tasks={[createTask({
                                id: 1,
                                dayOrder: 1,
@@ -700,7 +700,9 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={object('iconDisabledMap (No icons are disabled)', {})}
+                       filter={object('iconDisabledMap (No icons are disabled)', {
+                           iconDisabledMap: {}
+                       })}
                        tasks={[
                            createTask({
                                id: 1,
@@ -733,7 +735,9 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       iconDisabledMap={object('iconDisabledMap (`smile` icons are disabled)', {":smile:": true})}
+                       filter={object('iconDisabledMap (`smile` icons are disabled)', {
+                           iconDisabledMap: {":smile:": true}
+                       })}
                        tasks={[
                            createTask({
                                id: 1,
@@ -771,7 +775,7 @@ storiesOf('DailyCard', module)
                    minutesToUsePerSpecificDays={object('minutesToUsePerSpecificDays', {
                        '20990101': 0
                    })}
-                   iconDisabledMap={{}}
+                   filter={{iconDisabledMap: {}}}
                    tasks={[]}
                    timeLamps
                    milestone
@@ -787,7 +791,7 @@ storiesOf('DailyCard', module)
                    taskOrder={Order.ASC}
                    minutesToUsePerDay={300}
                    minutesToUsePerSpecificDays={{}}
-                   iconDisabledMap={{}}
+                   filter={{iconDisabledMap: {}}}
                    tasks={[createTask({
                        id: 1,
                        dayOrder: 1,

@@ -9,6 +9,7 @@ import RootState from '../states/index';
 import {firebaseStateReducer} from 'react-redux-firebase'
 import {SharedState} from "../states/SharedState";
 import {StorageState} from '../states/StorageState';
+import Filter from '../models/Filter';
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -18,7 +19,7 @@ const INITIAL_APP_STATE: AppState = {
     isSyncing: true,
     guardSyncing: false,
     filter: {
-        iconDisabledMap: {}
+        iconDisabledMap: {},
     },
 };
 

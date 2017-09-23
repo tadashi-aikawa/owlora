@@ -12,6 +12,7 @@ import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Seal from './Seal';
 import {Dictionary} from 'lodash';
+import Filter, {createApplier} from '../models/Filter';
 
 
 export interface IceboxProps {
@@ -20,7 +21,7 @@ export interface IceboxProps {
     taskOrder: Order;
     milestone: boolean;
     seal: boolean;
-    iconDisabledMap: Dictionary<boolean>;
+    filter: Filter;
     width: number;
 
     connectDropTarget?: Function;
@@ -68,7 +69,7 @@ export default class extends Component<IceboxProps> {
             .reject(t => t.isMilestone || t.isSeal)
             .value();
 
-        const onlyEnabled = (x: Task) => !this.props.iconDisabledMap[x.icon];
+        const applyFilter = createApplier(this.props.filter);
 
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}
@@ -103,7 +104,8 @@ export default class extends Component<IceboxProps> {
                             />)
                     }
                     {
-                        this.props.milestone && this.props.tasks.filter(t => t.isMilestone).filter(onlyEnabled)
+                        this.props.milestone &&
+                        this.props.tasks.filter(t => t.isMilestone).filter(applyFilter)
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
                                                  name={t.name}
@@ -113,17 +115,16 @@ export default class extends Component<IceboxProps> {
                                                  onUpdate={this.props.onUpdateTask}
                             />)
                     }
-                    <Divider horizontal>{estimatedTasks.filter(onlyEnabled).length} Tasks</Divider>
-                    <TaskFeeds tasks={estimatedTasks.filter(onlyEnabled)}
+                    <Divider horizontal>{estimatedTasks.filter(applyFilter).length} Tasks</Divider>
+                    <TaskFeeds tasks={estimatedTasks.filter(applyFilter)}
                                taskSortField={this.props.taskSortField}
                                taskOrder={this.props.taskOrder}
                                onUpdateTask={this.props.onUpdateTask}/>
                 </Card.Content>
                 <Card.Content extra>
-                    <EstimateIconGroup tasks={estimatedTasks}
+                    <EstimateIconGroup tasks={estimatedTasks.filter(applyFilter)}
                                        taskSortFieldInPopup={this.props.taskSortField}
                                        taskOrderInPopup={this.props.taskOrder}
-                                       iconDisabledMap={this.props.iconDisabledMap}
                                        onUpdateTask={this.props.onUpdateTask}/>
                 </Card.Content>
             </Card>

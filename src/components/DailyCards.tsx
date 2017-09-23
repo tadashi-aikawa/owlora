@@ -11,6 +11,7 @@ import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import Repetition from '../constants/Repetition';
 import * as DateUtil from '../utils/DateUtil';
+import Filter from '../models/Filter';
 
 const inTheDay = (task: Task, date: Moment): boolean => {
     if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
@@ -57,7 +58,7 @@ export interface DailyCardsProps {
     numberOfCards: number;
     numberOfCardsPerRow: SemanticWIDTHS;
     onlyWeekday: boolean;
-    iconDisabledMap: Dictionary<boolean>;
+    filter: Filter;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
 }
@@ -88,7 +89,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     isTasksExpanded={props.isTasksExpanded}
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
-                    iconDisabledMap={props.iconDisabledMap}
+                    filter={props.filter}
                     onUpdateTask={props.onUpdateTask}
                 />
             ))}
