@@ -104,7 +104,7 @@ const HTML5toTouch = {
             backend: HTML5Backend
         },
         {
-            backend: TouchBackend({enableMouseEvents: true, delayTouchStart: 500}),
+            backend: TouchBackend({enableMouseEvents: true, delayTouchStart: 200}),
             preview: true,
             transition: TouchTransition
         }

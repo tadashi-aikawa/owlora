@@ -14,8 +14,7 @@
     "build-storybook": "build-storybook",
     "----------↑build↑----------": "",
     "deploy": "firebase deploy --project owlora-mamansoft",
-    "release:github":
-      "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
+    "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "release": "run-s test build release:github deploy",
     "----------↑release↑----------": ""
   },
@@ -24,10 +23,14 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
@@ -76,6 +79,7 @@
     "image-loader": "^0.0.1",
     "jest-cli": "^20.0.4",
     "npm-run-all": "^4.1.1",
+    "prettier": "^1.7.0",
     "react-test-renderer": "^15.6.1",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.18.2",
