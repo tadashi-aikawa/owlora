@@ -93,7 +93,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 id: x.id,
                 name: x.content,
                 projectName: projectsById[String(x.project_id)].name,
-                estimatedMinutes: matchedEstimate && matchedEstimate.minutes,
+                estimatedMinutes: matchedEstimate && (matchedEstimate.minutes || 0),
                 dueDate: x.due_date_utc && moment(x.due_date_utc),
                 time: times && {
                     start: moment(x.due_date_utc).hour(Number(times[1])).minute(Number(times[2])),
@@ -110,7 +110,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
             }
         })
-        .filter(x => x.estimatedMinutes || x.isMilestone || x.isSeal)
+        .filter(x => x.estimatedMinutes !== undefined || x.isMilestone || x.isSeal)
         .keyBy(x => x.id)
         .value();
 }

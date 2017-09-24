@@ -59,7 +59,7 @@ const CardHeader = ({props, freeMinutes, isOffTime}: {
     const isWarning: boolean = _.inRange(restPercent, 0.20, 0.40);
     const isDanger: boolean = _.inRange(restPercent, 0, 0.20);
     const isDead: boolean = restPercent < 0;
-
+    const hasUnknown: boolean = props.tasks.some(x => x.estimatedMinutes === 0);
     const color = isDead || isOffTime ? undefined :
         isDanger ? "red" : isWarning ? "yellow" : undefined;
 
@@ -87,9 +87,11 @@ const CardHeader = ({props, freeMinutes, isOffTime}: {
                               inverted
                               disabled={isOffTime}
                     >
+                        {hasUnknown && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:stuck_out_tongue:</Emojify>}
                         {isDead && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:innocent:</Emojify>}
                         <Icon name="heart" color={color}/> <span style={{color: color}}>{freeMinutes}</span>
                         {isDead && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:innocent:</Emojify>}
+                        {hasUnknown && <Emojify style={{height: 20, width: 20, marginLeft: 10}}>:stuck_out_tongue:</Emojify>}
                     </Progress>
             }
         </Segment>

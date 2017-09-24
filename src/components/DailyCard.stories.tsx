@@ -49,8 +49,7 @@ storiesOf('DailyCard', module)
                    minutesToUsePerDay={number('Minutes to use per day', 300)}
                    minutesToUsePerSpecificDays={{}}
                    filter={{iconDisabledMap: {}}}
-                   tasks={object(
-                       'Tasks',
+                   tasks={
                        [
                            createTask({id: 1, name: 'Task1', dayOrder: 3, icon: ":person_with_pouting_face:"}),
                            createTask({
@@ -78,7 +77,7 @@ storiesOf('DailyCard', module)
                            createTask({id: 5, name: 'Seal1', dayOrder: 5, color: "orange", isSeal: true}),
                            createTask({id: 6, name: ':wine_glass: Seal2', dayOrder: 6, color: "pink", isSeal: true}),
                        ]
-                   )}
+                   }
                    timeLamps={boolean('timeLamps', true)}
                    milestone={boolean('milestone', true)}
                    seal={boolean('seal', true)}
@@ -692,6 +691,37 @@ storiesOf('DailyCard', module)
                 />
             </Card.Group>
         </WithNotes>
+    ))
+    .add('Unknown estimates', () => (
+        <Card.Group>
+            <DailyCard date={toDate('2099/01/01')}
+                       taskSortField={TaskSortField.PROJECT_NAME}
+                       taskOrder={Order.ASC}
+                       minutesToUsePerDay={300}
+                       minutesToUsePerSpecificDays={{}}
+                       filter={{iconDisabledMap: {}}}
+                       tasks={[
+                           createTask({
+                               id: 1,
+                               dayOrder: 1,
+                               icon: ":smile:",
+                               estimatedMinutes: number('0 means unknown', 0),
+                           }),
+                           createTask({
+                               id: 2,
+                               dayOrder: 2,
+                               icon: ":angry:",
+                               estimatedMinutes: 15,
+                           })
+                       ]}
+                       timeLamps
+                       milestone
+                       seal
+                       warning
+                       isTasksExpanded
+                       onUpdateTask={action}
+            />
+        </Card.Group>
     ))
     .add('Icon disable', () => (
         <Card.Group>

@@ -87,13 +87,13 @@ export default class extends Component<TaskFeedProps, TaskFeedState> {
                         <EditorIcon id={this.props.task.id} hidden={this.state.hiddenEditIcon}/>
                     </Feed.Summary>
                 </Feed.Content>
-                <Label color='teal' circular size="large"
+                <Label color={estimatedMinutes ? 'teal' : 'violet'} circular size="large"
                        style={{
                            margin: 'auto',
                            width: 'auto',
                            textAlign: 'center',
                            marginLeft: 5
-                       }}>{estimatedMinutes}</Label>
+                       }}>{estimatedMinutes || '???'}</Label>
             </Feed.Event>
         );
     }

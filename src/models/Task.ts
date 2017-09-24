@@ -7,6 +7,7 @@ interface Task {
     name: string;
     projectName: string;
     dueDate: Moment;
+    /* 0 means undefined */
     estimatedMinutes: number;
     time?: {
         start: Moment;

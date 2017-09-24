@@ -25,6 +25,7 @@ const EstimateIconGroup = (props: EstimateIconGroupProps) =>
                 .map((tasks: Task[]) => ({
                     icon: tasks[0].icon,
                     minutes: _.sumBy(tasks, t => t.estimatedMinutes),
+                    hasUnknown: tasks.some(t => !t.estimatedMinutes),
                     tasks: tasks
                 }))
                 .orderBy(x => x.minutes, 'desc')
@@ -42,9 +43,9 @@ const EstimateIconGroup = (props: EstimateIconGroupProps) =>
                                        <div style={{width: 28, height: 28}}>
                                            <ImageOrEmoji src={x.icon} style={{width: "28px", height: "28px"}}/>
                                        </div>
-                                       <Label color='teal'
+                                       <Label color={x.hasUnknown ? 'violet' : 'teal'}
                                               style={{marginTop: 4, paddingTop: 4, paddingBottom: 4, borderRadius: 10}}>
-                                           {x.minutes}
+                                           {x.minutes}{x.hasUnknown && ' + ?'}
                                        </Label>
                                    </div>
                                </div>
