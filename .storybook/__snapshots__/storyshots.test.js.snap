@@ -3244,7 +3244,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots DailyCard Icon disable 1`] = `
+exports[`Storyshots DailyCard Filter 1`] = `
 <div
   style={
     Object {
@@ -3354,13 +3354,13 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
           </div>
           <div
             className="ui green small inverted progress"
-            data-percent={90}
+            data-percent={80}
           >
             <div
               className="bar"
               style={
                 Object {
-                  "width": "90%",
+                  "width": "80%",
                 }
               }
             />
@@ -3379,7 +3379,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                   }
                 }
               >
-                270
+                240
               </span>
             </div>
           </div>
@@ -3461,7 +3461,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -3521,7 +3521,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              2
+              4
                Tasks
             </span>
           </div>
@@ -3602,7 +3602,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                     className="summary"
                   >
                     <span>
-                      Task
+                      Internal operation
                     </span>
                     <span />
                   </div>
@@ -3685,7 +3685,173 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                     className="summary"
                   >
                     <span>
-                      Task
+                      Project jobs1
+                    </span>
+                    <span />
+                  </div>
+                </div>
+                <div
+                  className="ui teal large circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "margin": "auto",
+                      "marginLeft": 5,
+                      "textAlign": "center",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+              <div
+                className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1137.5px -227.5px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":smile:"
+                    >
+                      😄
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      Project jobs2
+                    </span>
+                    <span />
+                  </div>
+                </div>
+                <div
+                  className="ui teal large circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "margin": "auto",
+                      "marginLeft": 5,
+                      "textAlign": "center",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+              <div
+                className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1137.5px -227.5px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":smile:"
+                    >
+                      😄
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      project
                     </span>
                     <span />
                   </div>
@@ -3786,7 +3952,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                     }
                   }
                 >
-                  15
+                  45
                 </div>
               </div>
             </div>
@@ -3969,13 +4135,13 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
           </div>
           <div
             className="ui green small inverted progress"
-            data-percent={90}
+            data-percent={80}
           >
             <div
               className="bar"
               style={
                 Object {
-                  "width": "90%",
+                  "width": "80%",
                 }
               }
             />
@@ -3994,7 +4160,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                   }
                 }
               >
-                270
+                240
               </span>
             </div>
           </div>
@@ -4076,7 +4242,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4136,7 +4302,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              1
+              2
                Tasks
             </span>
           </div>
@@ -4181,7 +4347,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
-                          "backgroundPosition": "0px -1137.5px",
+                          "backgroundPosition": "-1137.5px -227.5px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1397px 1397px",
                           "display": "inline-block",
@@ -4197,9 +4363,9 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                           "width": 32,
                         }
                       }
-                      title=":angry:"
+                      title=":smile:"
                     >
-                      😠
+                      😄
                     </span>
                   </span>
                 </div>
@@ -4217,7 +4383,90 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                     className="summary"
                   >
                     <span>
-                      Task
+                      Project jobs2
+                    </span>
+                    <span />
+                  </div>
+                </div>
+                <div
+                  className="ui teal large circular label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "margin": "auto",
+                      "marginLeft": 5,
+                      "textAlign": "center",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+              <div
+                className="event"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                    "border": "2px solid",
+                    "borderColor": "rgba(150, 150, 150, 0.1)",
+                    "borderRadius": "20px",
+                    "cursor": "move",
+                    "marginBottom": "10px",
+                    "marginTop": "10px",
+                    "opacity": 1,
+                    "padding": "10px",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  <span>
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
+                          "backgroundPosition": "-1137.5px -227.5px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "1397px 1397px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":smile:"
+                    >
+                      😄
+                    </span>
+                  </span>
+                </div>
+                <div
+                  className="content"
+                >
+                  <div
+                    className="date"
+                  >
+                    <span>
+                      Project
+                    </span>
+                  </div>
+                  <div
+                    className="summary"
+                  >
+                    <span>
+                      project
                     </span>
                     <span />
                   </div>
@@ -4284,7 +4533,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/sprites/emojione.sprites.png\\")",
-                          "backgroundPosition": "0px -995.3125px",
+                          "backgroundPosition": "-995.3125px -199.0625px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "1222.375px 1222.375px",
                           "display": "inline-block",
@@ -4300,9 +4549,9 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                           "width": 28,
                         }
                       }
-                      title=":angry:"
+                      title=":smile:"
                     >
-                      😠
+                      😄
                     </span>
                   </span>
                 </div>
@@ -4318,7 +4567,7 @@ exports[`Storyshots DailyCard Icon disable 1`] = `
                     }
                   }
                 >
-                  15
+                  30
                 </div>
               </div>
             </div>

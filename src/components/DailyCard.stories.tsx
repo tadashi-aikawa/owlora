@@ -723,19 +723,20 @@ storiesOf('DailyCard', module)
             />
         </Card.Group>
     ))
-    .add('Icon disable', () => (
+    .add('Filter', () => (
         <Card.Group>
             <DailyCard date={toDate('2099/01/01')}
                        taskSortField={TaskSortField.PROJECT_NAME}
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       filter={object('iconDisabledMap (No icons are disabled)', {
+                       filter={object('filter (No filter)', {
                            iconDisabledMap: {}
                        })}
                        tasks={[
                            createTask({
                                id: 1,
+                               name: 'Internal operation',
                                dayOrder: 1,
                                icon: ":smile:",
                                time: {
@@ -745,13 +746,34 @@ storiesOf('DailyCard', module)
                            }),
                            createTask({
                                id: 2,
+                               name: 'Project jobs1',
                                dayOrder: 2,
                                icon: ":angry:",
                                time: {
                                    start: toDateTime('2099/01/01 12:00'),
                                    end: toDateTime('2099/01/01 13:00'),
                                },
-                           })
+                           }),
+                           createTask({
+                               id: 3,
+                               name: 'Project jobs2',
+                               dayOrder: 3,
+                               icon: ":smile:",
+                               time: {
+                                   start: toDateTime('2099/01/01 17:00'),
+                                   end: toDateTime('2099/01/01 18:00'),
+                               },
+                           }),
+                           createTask({
+                               id: 4,
+                               name: 'project',
+                               dayOrder: 4,
+                               icon: ":smile:",
+                               time: {
+                                   start: toDateTime('2099/01/01 17:00'),
+                                   end: toDateTime('2099/01/01 18:00'),
+                               },
+                           }),
                        ]}
                        timeLamps
                        milestone
@@ -765,12 +787,14 @@ storiesOf('DailyCard', module)
                        taskOrder={Order.ASC}
                        minutesToUsePerDay={300}
                        minutesToUsePerSpecificDays={{}}
-                       filter={object('iconDisabledMap (`smile` icons are disabled)', {
-                           iconDisabledMap: {":smile:": true}
+                       filter={object('filter (icon and regexp(case insensitive))', {
+                           iconDisabledMap: {":angry:": true},
+                           word: "proj..t"
                        })}
                        tasks={[
                            createTask({
                                id: 1,
+                               name: 'Internal operation',
                                dayOrder: 1,
                                icon: ":smile:",
                                time: {
@@ -780,13 +804,34 @@ storiesOf('DailyCard', module)
                            }),
                            createTask({
                                id: 2,
+                               name: 'Project jobs1',
                                dayOrder: 2,
                                icon: ":angry:",
                                time: {
                                    start: toDateTime('2099/01/01 12:00'),
                                    end: toDateTime('2099/01/01 13:00'),
                                },
-                           })
+                           }),
+                           createTask({
+                               id: 3,
+                               name: 'Project jobs2',
+                               dayOrder: 3,
+                               icon: ":smile:",
+                               time: {
+                                   start: toDateTime('2099/01/01 17:00'),
+                                   end: toDateTime('2099/01/01 18:00'),
+                               },
+                           }),
+                           createTask({
+                               id: 4,
+                               name: 'project',
+                               dayOrder: 4,
+                               icon: ":smile:",
+                               time: {
+                                   start: toDateTime('2099/01/01 17:00'),
+                                   end: toDateTime('2099/01/01 18:00'),
+                               },
+                           }),
                        ]}
                        timeLamps
                        milestone
