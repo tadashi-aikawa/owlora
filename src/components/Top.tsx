@@ -31,8 +31,10 @@ import Icebox from './Icebox';
 import UiConfig from '../models/UiConfig';
 import NavigationMenu from './NavigationMenu';
 
-import MultiBackend, {Preview} from 'react-dnd-multi-backend';
-import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch';
+import HTML5Backend from 'react-dnd-html5-backend';
+import TouchBackend from 'react-dnd-touch-backend';
+import MultiBackend, { TouchTransition, Preview } from 'react-dnd-multi-backend';
+
 import ImageOrEmoji from './ImageOrEmoji';
 import {INITIAL_SHARED_STATE} from '../reducers/index';
 import {isEmpty, isLoaded} from 'react-redux-firebase'
@@ -96,6 +98,18 @@ export interface TopState {
     inputToken: string;
 }
 
+const HTML5toTouch = {
+    backends: [
+        {
+            backend: HTML5Backend
+        },
+        {
+            backend: TouchBackend({enableMouseEvents: true, delayTouchStart: 100}),
+            preview: true,
+            transition: TouchTransition
+        }
+    ]
+};
 
 @DragDropContext(MultiBackend(HTML5toTouch))
 export default class extends Component<TopProps, TopState> {
