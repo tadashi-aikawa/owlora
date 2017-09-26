@@ -32,7 +32,7 @@ export interface IceboxProps {
 }
 
 @DropTarget(
-    'task',
+    ['task', 'seal', 'milestone'],
     {
         drop(props: IceboxProps, monitor, component) {
             if (monitor.didDrop()) {
