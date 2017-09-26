@@ -104,9 +104,9 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 dayOrder: x.day_order,
                 isMilestone: !!matchedMilestone,
                 isSeal: !!matchedSeal,
-                color: !!matchedMilestone ? matchedMilestone.color :
-                    !!matchedSeal ? matchedSeal.color :
-                        _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+                color: _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+                milestoneColor: matchedMilestone && matchedMilestone.color,
+                sealColor: matchedSeal && matchedSeal.color,
                 size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
             }
         })

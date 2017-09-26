@@ -66,7 +66,7 @@ export default class extends Component<IceboxProps> {
 
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
-            .reject(t => t.isMilestone || t.isSeal)
+            .reject(t => t.estimatedMinutes === undefined)
             .value();
 
         const applyFilter = createApplier(this.props.filter);
@@ -98,7 +98,7 @@ export default class extends Component<IceboxProps> {
                             .map(t => <Seal key={t.id}
                                             id={t.id}
                                             name={t.name}
-                                            color={t.color as SemanticCOLORS}
+                                            color={t.sealColor as SemanticCOLORS}
                                             date={t.dueDate}
                                             onUpdate={this.props.onUpdateTask}
                             />)
@@ -109,7 +109,7 @@ export default class extends Component<IceboxProps> {
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
                                                  name={t.name}
-                                                 color={t.color as SemanticCOLORS}
+                                                 color={t.milestoneColor as SemanticCOLORS}
                                                  size={t.size}
                                                  date={t.dueDate}
                                                  onUpdate={this.props.onUpdateTask}

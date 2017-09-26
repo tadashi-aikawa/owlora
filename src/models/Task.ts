@@ -17,7 +17,9 @@ interface Task {
     /** URL or emoji(ex. :bow:) */
     icon: string;
     dayOrder: number;
-    color: string;
+    color?: string;
+    milestoneColor?: string;
+    sealColor?: string;
     isMilestone: boolean;
     isSeal: boolean;
     size: Size;

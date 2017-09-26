@@ -156,7 +156,7 @@ export default class extends Component<DailyCardProps> {
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
             .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
-            .reject(t => t.isMilestone || t.isSeal)
+            .reject(t => t.estimatedMinutes === undefined)
             .value();
         const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
 
@@ -219,7 +219,7 @@ export default class extends Component<DailyCardProps> {
                             .map(t => <Seal key={t.id}
                                             id={t.id}
                                             name={t.name}
-                                            color={t.color as SemanticCOLORS}
+                                            color={t.sealColor as SemanticCOLORS}
                                             date={t.dueDate}
                                             onUpdate={this.props.onUpdateTask}
                             />)
@@ -241,7 +241,7 @@ export default class extends Component<DailyCardProps> {
                             .map(t => <Milestone key={t.id}
                                                  id={t.id}
                                                  name={t.name}
-                                                 color={t.color as SemanticCOLORS}
+                                                 color={t.milestoneColor as SemanticCOLORS}
                                                  size={t.size}
                                                  date={t.dueDate}
                                                  onUpdate={this.props.onUpdateTask}
