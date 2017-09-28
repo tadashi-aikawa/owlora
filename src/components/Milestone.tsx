@@ -16,7 +16,7 @@ export interface MilestoneState {
 export interface MilestoneProps {
     id: number;
     name: string;
-    date: Moment;
+    date?: Moment;
     color: SemanticCOLORS;
     size: Size;
 

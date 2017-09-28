@@ -30,6 +30,14 @@ module ArrayAndYaml {
     export const toYaml = <T>(x: ArrayAndYaml<T>): string => x ? x.yaml : "";
 }
 
+interface CommonConfigValue {
+    estimates: EstimateConfig[];
+    milestones: MilestoneConfig[];
+    seals: SealConfig[];
+    iconsByProject: Dictionary<string>;
+    colorsByTaskNameRegexp: Dictionary<string>;
+}
+
 interface CommonConfig {
     minutesToUsePerDay: number;
     estimates: ArrayAndYaml<EstimateConfig>;
@@ -42,6 +50,7 @@ interface CommonConfig {
 
 export default CommonConfig;
 export {
+    CommonConfigValue,
     DictAndYaml,
     ArrayAndYaml,
 }

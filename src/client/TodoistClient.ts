@@ -20,8 +20,8 @@ interface Command {
     args: Args;
 }
 
-async function sync(token: string, resourceTypes: string[], commands?: Command[]): Promise<TodoistAll> {
-    return await Axios.post(
+function sync(token: string, resourceTypes: string[], commands?: Command[]): Promise<TodoistAll> {
+    return Axios.post(
         '/sync',
         stringify({
             token,
@@ -33,16 +33,16 @@ async function sync(token: string, resourceTypes: string[], commands?: Command[]
     ).then((r: any) => r.data);
 }
 
-const updateTasks = async (token: string, argsList: Args[]) =>
+const updateTasks = (token: string, argsList: Args[]) =>
     // TODO: Remove projects
-    await sync(token, ['items', 'projects'], argsList.map(x => ({
+    sync(token, ['items', 'projects'], argsList.map(x => ({
         type: "item_update",
         uuid: udvi4u(),
         args: x
     })));
 
-const fetchAll = async (token: string): Promise<TodoistAll> =>
-    await sync(token, ['labels', 'projects', 'items']);
+const fetchAll = (token: string): Promise<TodoistAll> =>
+    sync(token, ['labels', 'projects', 'items']);
 
 export {
     updateTasks,

@@ -6,7 +6,7 @@ interface Task {
     id: number;
     name: string;
     projectName: string;
-    dueDate: Moment;
+    dueDate?: Moment;
     /* 0 means undefined */
     estimatedMinutes: number;
     time?: {

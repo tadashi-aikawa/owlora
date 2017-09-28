@@ -42,6 +42,7 @@ import IconFilter from './IconFilter';
 import Filter from '../models/Filter';
 import {Dictionary} from 'lodash';
 import Size from '../constants/Size';
+import {DEFAULT_TASK_COLOR} from '../storage/settings';
 
 
 const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
@@ -164,10 +165,10 @@ export default class extends Component<TopProps, TopState> {
         switch(type) {
             case 'task':
                 Object.assign(style, {
-                    backgroundColor: color,
+                    backgroundColor: color || DEFAULT_TASK_COLOR,
                     border: '2px solid',
                     borderRadius: '20px',
-                    borderColor: color,
+                    borderColor: color || DEFAULT_TASK_COLOR,
                     padding: '10px',
                 });
 

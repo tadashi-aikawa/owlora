@@ -1,4 +1,4 @@
-import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
+import {call, put, select, takeEvery, takeLatest} from 'redux-saga/effects';
 import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from '../services/TodoistSyncService';
@@ -15,28 +15,39 @@ import {
 } from '../actions/index';
 import {Dictionary} from "lodash";
 import {config} from "../utils/FirebasePathUtil";
+import {commonConfigValueSelector, todoistTokenSelector} from '../reducers/selectors';
+import {CommonConfigValue} from '../models/CommonConfig';
 
 const service: SyncService = new TodoistSyncService();
 
 export function* sync() {
+    const token: string = yield select(todoistTokenSelector);
+    const config: CommonConfigValue = yield select(commonConfigValueSelector);
+
     try {
-        const payload: SyncPayload = yield call(service.sync);
+        const payload: SyncPayload = yield call(service.sync, token, config);
         yield put(successSync(payload));
     } catch (e) {
         console.log(e);
-        yield put(errorSync(e));
+        yield put(errorSync({
+            name: 'Failure fetch data',
+            message: "",
+        }));
     }
 }
 
 export function* updateTasks(action: UpdateTasksAction) {
+    const token: string = yield select(todoistTokenSelector);
+    const config: CommonConfigValue = yield select(commonConfigValueSelector);
+
     try {
-        const tasks: Dictionary<Task> = yield call(service.updateTasks, action.payload);
+        const tasks: Dictionary<Task> = yield call(service.updateTasks, token, action.payload, config);
         yield put(successUpdateTasks(tasks));
     } catch (e) {
         console.log(e);
         yield put(errorUpdateTasks({
             name: 'Failure update task',
-            message: `${action.payload.map(x => `${x.name}\n`)}`
+            message: `${action.payload.map(x => `${x.name}\n`)}`,
         }));
     }
 }

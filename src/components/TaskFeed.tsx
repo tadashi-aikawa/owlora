@@ -7,6 +7,7 @@ import ImageOrEmoji from './ImageOrEmoji';
 import Emojify from 'react-emojione';
 import {DragSource, DropTarget} from 'react-dnd';
 import EditorIcon from './EditIcon';
+import {DEFAULT_TASK_COLOR} from '../storage/settings';
 
 export interface TaskFeedState {
     hiddenEditIcon: boolean
@@ -67,10 +68,10 @@ export default class extends Component<TaskFeedProps, TaskFeedState> {
                         onMouseEnter={() => this.setState({hiddenEditIcon: false})}
                         onMouseLeave={() => this.setState({hiddenEditIcon: true})}
                         style={{
-                            backgroundColor: color,
+                            backgroundColor: color || DEFAULT_TASK_COLOR,
                             border: '2px solid',
                             borderRadius: '20px',
-                            borderColor: color,
+                            borderColor: color || DEFAULT_TASK_COLOR,
                             padding: '10px',
                             marginTop: '10px',
                             marginBottom: '10px',

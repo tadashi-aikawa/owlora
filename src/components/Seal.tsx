@@ -16,7 +16,7 @@ export interface SealState {
 export interface SealProps {
     id: number;
     name: string;
-    date: Moment;
+    date?: Moment;
     color: SemanticCOLORS;
 
     connectDragSource?: Function;

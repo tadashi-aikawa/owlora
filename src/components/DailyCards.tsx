@@ -14,6 +14,10 @@ import * as DateUtil from '../utils/DateUtil';
 import Filter from '../models/Filter';
 
 const inTheDay = (task: Task, date: Moment): boolean => {
+    if (!task.dueDate) {
+        return false;
+    }
+
     if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
         return true;
     }

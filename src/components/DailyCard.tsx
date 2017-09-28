@@ -14,7 +14,7 @@ import {
     Progress,
     Segment,
     SemanticCOLORS,
-    Statistic
+    Statistic,
 } from 'semantic-ui-react';
 import {Moment, now} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';

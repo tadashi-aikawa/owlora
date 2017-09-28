@@ -2,14 +2,6 @@ import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import * as moment from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
-import {
-    colorsByTaskNameRegexpSelector,
-    estimatesSelector,
-    iconsByProjectSelector, sealsSelector,
-    milestonesSelector,
-    todoistTokenSelector,
-} from '../reducers/selectors';
-import {call, select} from 'redux-saga/effects';
 import TodoistAll from '../models/todoist/TodoistALl';
 import TodoistProject from '../models/todoist/TodoistProject';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -23,6 +15,7 @@ import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
+import {CommonConfigValue} from '../models/CommonConfig';
 
 const toRepetition = (dateString: string): Repetition | undefined => {
     if (!dateString) {
@@ -44,26 +37,13 @@ const toRepetition = (dateString: string): Repetition | undefined => {
 };
 
 
-function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[]): IterableIterator<any | Dictionary<Task>> {
-    // This method returns Dictionary<Task>
-    // TODO: Argument TodoistProject[] have to be removed
-    const estimates: EstimateConfig[] = yield select(estimatesSelector);
-    const milestones: MilestoneConfig[] = yield select(milestonesSelector);
-    const seals: SealConfig[] = yield select(sealsSelector);
-    const iconsByProject: Dictionary<string> = yield select(iconsByProjectSelector);
-    const colorsByTaskNameRegexp: Dictionary<string> = Object.assign(
-        yield select(colorsByTaskNameRegexpSelector),
-        {'.*': 'rgba(200, 200, 200, 0.1)'}
-    );
-
-    const projectsById: Dictionary<TodoistProject> = _.keyBy(projects, p => p.id);
-
+function convertToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[], config: CommonConfigValue): Dictionary<Task> {
     return _(todoistTasks)
         .filter(x => !x.checked)
         .orderBy(x => x.project_id)
         .map(x => {
             const matchedMilestone: MilestoneConfig | undefined = _.find(
-                milestones,
+                config.milestones,
                 (m: MilestoneConfig) => _.every([
                     !m.condition.regexp || x.content.match(new RegExp(m.condition.regexp)),
                     !m.condition.labelIdsOr || _.intersection(x.labels, m.condition.labelIdsOr).length > 0,
@@ -71,7 +51,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 ])
             );
             const matchedSeal: SealConfig | undefined = _.find(
-                seals,
+                config.seals,
                 (l: SealConfig) => _.every([
                     !l.condition.regexp || x.content.match(new RegExp(l.condition.regexp)),
                     !l.condition.labelIdsOr || _.intersection(x.labels, l.condition.labelIdsOr).length > 0,
@@ -79,7 +59,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                 ])
             );
             const matchedEstimate: EstimateConfig | undefined = _.find(
-                estimates,
+                config.estimates,
                 (e: EstimateConfig) => _.every([
                     !e.condition.regexp || x.content.match(new RegExp(e.condition.regexp)),
                     !e.condition.labelId || _.includes(x.labels, e.condition.labelId),
@@ -92,7 +72,7 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
             return {
                 id: x.id,
                 name: x.content,
-                projectName: projectsById[String(x.project_id)].name,
+                projectName: _.keyBy(projects, p => p.id)[String(x.project_id)].name,
                 estimatedMinutes: matchedEstimate && (matchedEstimate.minutes || 0),
                 dueDate: x.due_date_utc && moment(x.due_date_utc),
                 time: times && {
@@ -100,15 +80,15 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
                     end: moment(x.due_date_utc).hour(Number(times[3])).minute(Number(times[4])),
                 },
                 repetition: toRepetition(x.date_string),
-                icon: iconsByProject[String(x.project_id)] || ":white_circle:",
+                icon: config.iconsByProject[String(x.project_id)] || ":white_circle:",
                 dayOrder: x.day_order,
                 isMilestone: !!matchedMilestone,
                 isSeal: !!matchedSeal,
-                color: _.find(colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
+                color: _.find(config.colorsByTaskNameRegexp, (v, k) => !!x.content.match(new RegExp(k))),
                 milestoneColor: matchedMilestone && matchedMilestone.color,
                 sealColor: matchedSeal && matchedSeal.color,
                 size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
-            }
+            } as Task
         })
         .filter(x => x.estimatedMinutes !== undefined || x.isMilestone || x.isSeal)
         .keyBy(x => x.id)
@@ -116,25 +96,22 @@ function* todoistTasksToTasks(todoistTasks: TodoistTask[], projects: TodoistProj
 }
 
 class TodoistSyncService implements SyncService {
-    * ping(token: string) {
-        yield call(TodoistClient.fetchAll, token);
+    ping(token: string): Promise<TodoistAll> {
+        return TodoistClient.fetchAll(token);
     }
 
-    * sync(): IterableIterator<any | SyncPayload> {
-        const requestToken = yield select(todoistTokenSelector);
-        const res: TodoistAll = yield call(TodoistClient.fetchAll, requestToken);
+    async sync(token: string, config: CommonConfigValue): Promise<SyncPayload> {
+        const res: TodoistAll = await TodoistClient.fetchAll(token);
 
-        const tasksById: Dictionary<Task> = yield todoistTasksToTasks(res.items, res.projects);
+        const tasksById: Dictionary<Task> = convertToTasks(res.items, res.projects, config);
         const projects: Project[] = res.projects.map(x => x);
         const labels: Label[] = res.labels.map(x => x);
 
         return {tasksById, projects, labels}
     }
 
-    * updateTasks(taskUpdateParameters: TaskUpdateParameter[]): IterableIterator<any | Dictionary<Task>> {
-        const token = yield select(todoistTokenSelector);
-        const res: TodoistAll = yield call(
-            TodoistClient.updateTasks,
+    async updateTasks(token: string, taskUpdateParameters: TaskUpdateParameter[], config: CommonConfigValue): Promise<Dictionary<Task>> {
+        const res: TodoistAll = await TodoistClient.updateTasks(
             token,
             taskUpdateParameters.map(x => ({
                 id: x.id,
@@ -142,8 +119,7 @@ class TodoistSyncService implements SyncService {
                 date_string: x.dateString
             }))
         );
-
-        return yield todoistTasksToTasks(res.items, res.projects);
+        return convertToTasks(res.items, res.projects, config);
     }
 }
 
