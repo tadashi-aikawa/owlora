@@ -112,6 +112,9 @@ const HTML5toTouch = {
     ]
 };
 
+const readyToLoadingTasks = (config: CommonConfig): boolean =>
+    isLoaded(config) && !isEmpty(config);
+
 @DragDropContext(MultiBackend(HTML5toTouch))
 export default class extends Component<TopProps, TopState> {
 
@@ -122,10 +125,11 @@ export default class extends Component<TopProps, TopState> {
             inputToken: props.token,
         };
         this.onChangeFilterWord = _.debounce(this.onChangeFilterWord, 500);
+        this.onBackgroundReload = this.onBackgroundReload.bind(this);
     }
 
     componentWillReceiveProps(nextProps: TopProps) {
-        if (!_.isEqual(this.props.config, nextProps.config)) {
+        if (!_.isEqual(this.props.config, nextProps.config) && readyToLoadingTasks(nextProps.config)) {
             nextProps.onReload();
         }
 
@@ -150,7 +154,7 @@ export default class extends Component<TopProps, TopState> {
     }
 
     componentDidMount() {
-        window.addEventListener('focus', this.props.onBackgroundReload, true);
+        window.addEventListener('focus', this.onBackgroundReload, true);
     }
 
     componentWillUnmount() {
@@ -159,6 +163,12 @@ export default class extends Component<TopProps, TopState> {
 
     onChangeFilterWord(word) {
         this.props.onChangeFilter({...this.props.filter, ...{word}});
+    }
+
+    onBackgroundReload() {
+        if (readyToLoadingTasks(this.props.config)) {
+            this.props.onBackgroundReload();
+        }
     }
 
     generatePreview(type, {date, id, name, size, color, icon, projectName, estimatedMinutes}, style) {
@@ -219,7 +229,6 @@ export default class extends Component<TopProps, TopState> {
     render() {
         const needsValidTodoistToken = !this.props.token || this.props.tokenUpdateError;
         const needsLogin = isLoaded(this.props.auth) && isEmpty(this.props.auth);
-        const readyToLoadingTasks = isLoaded(this.props.config) && !isEmpty(this.props.config);
 
         if (needsValidTodoistToken) {
             return (
@@ -253,7 +262,7 @@ export default class extends Component<TopProps, TopState> {
             );
         }
 
-        if (!readyToLoadingTasks) {
+        if (!readyToLoadingTasks(this.props.config)) {
             return (
                 <div>
                     <Dimmer active page>
