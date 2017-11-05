@@ -40,7 +40,7 @@ export default class extends PureComponent<ConfigImporterProps, ConfigImporterSt
                     autoHeight
                     value={this.state.str}
                     style={{ width: "100%" }}
-                    onChange={(e, { name, value }) => this.setState({ str: value || "" })}
+                    onChange={(e, { name, value }) => this.setState({ str: String(value) || "" })}
                 />
             </div>
         );

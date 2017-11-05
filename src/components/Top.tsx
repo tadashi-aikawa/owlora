@@ -158,7 +158,7 @@ export default class extends Component<TopProps, TopState> {
     }
 
     componentWillUnmount() {
-        window.removeEventListener('focus');
+        window.removeEventListener('focus', this.onBackgroundReload);
     }
 
     onChangeFilterWord(word) {

@@ -7,7 +7,7 @@
     "target": "es2015",
     "jsx": "react",
     "allowJs": true,
-    "strict": true,
+    "strict": false,
     "experimentalDecorators": true
   },
   "include": ["./src/**/*"]

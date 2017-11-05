@@ -24,55 +24,50 @@ If you have todoist and google accounts, you can trying [Demo](https://owlora-ma
 
 ### Optional
 
-```
-$ yarn global add webpack
-```
-
 If you want to release..
 
 ```
-$ npm install -g firebase-tools
-$ firebase login
+$ npx firebase login
 ```
 
 ### Install dependencies
 
 ```
-$ yarn install
+$ npm i
 ```
 
 ### Debug
 
 ```
-$ yarn dev
+$ npm run dev
 ```
 
 ### Show storybook
 
 ```
-$ yarn storybook
+$ npm run storybook
 ```
 
 ### Test
 
 ```
-$ yarn test
+$ npm test
 ```
 
-or
+If results are expected, you run...
 
 ```
-$ yarn test:watch
+$ npm test -- -u
 ```
 
 ### Build
 
 ```
-$ yarn build
+$ npm build
 ```
 
 ### Release
 
 1. Increment version in `package.json`
-2. `yarn release`
+2. `npm release`
  

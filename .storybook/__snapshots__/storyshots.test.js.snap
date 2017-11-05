@@ -103,9 +103,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -581,9 +578,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -1076,9 +1070,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -1530,9 +1521,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -1984,9 +1972,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -2455,9 +2440,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -2909,9 +2891,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -3347,9 +3326,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -4128,9 +4104,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -4682,9 +4655,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -5136,9 +5106,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -5590,9 +5557,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -6044,9 +6008,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -6498,9 +6459,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -6952,9 +6910,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -7479,9 +7434,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -7819,9 +7771,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -8348,9 +8297,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -8653,9 +8599,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
             >
               2099-01-01 (Thu)
             </div>
-            <div
-              className="label"
-            />
           </div>
         </div>
         <div
@@ -8991,9 +8934,6 @@ exports[`Storyshots DailyCard Past 1`] = `
             >
               2000-01-01 (Sat)
             </div>
-            <div
-              className="label"
-            />
           </div>
         </div>
         <div
@@ -9461,9 +9401,6 @@ exports[`Storyshots DailyCard Seal 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -9788,9 +9725,6 @@ exports[`Storyshots DailyCard Seal 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -10096,9 +10030,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -10979,9 +10910,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -11862,9 +11790,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -12745,9 +12670,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -13642,9 +13564,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
             >
               2099-01-01 (Thu)
             </div>
-            <div
-              className="label"
-            />
           </div>
         </div>
         <div
@@ -14679,9 +14598,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -15133,9 +15049,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -15670,9 +15583,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -16207,9 +16117,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -16571,9 +16478,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -17260,9 +17164,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -17770,9 +17671,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -18263,9 +18161,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
@@ -18717,9 +18612,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               >
                 2099-01-01 (Thu)
               </div>
-              <div
-                className="label"
-              />
             </div>
           </div>
           <div
