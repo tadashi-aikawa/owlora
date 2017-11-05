@@ -69,5 +69,5 @@ $ npm build
 ### Release
 
 1. Increment version in `package.json`
-2. `npm release`
+2. `npm run release`
  
