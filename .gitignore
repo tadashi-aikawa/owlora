@@ -54,3 +54,8 @@ typings/
 .idea/
 
 public/bundle*
+
+# Visualized test
+.loki
+storybook-static
+

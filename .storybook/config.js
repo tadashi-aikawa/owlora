@@ -1,4 +1,5 @@
 import { configure } from '@storybook/react';
+import 'loki/configure-react';
 import '../node_modules/semantic-ui-css/semantic.min.css';
 
 const req = require.context('../src/components', true, /\.stories\.tsx$/);
