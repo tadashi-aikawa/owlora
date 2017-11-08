@@ -56,6 +56,6 @@ typings/
 public/bundle*
 
 # Visualized test
-.loki
+.captures
 storybook-static
 
