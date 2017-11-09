@@ -109,8 +109,9 @@
         "target": "chrome.docker",
         "waitBeforeCapture": [
           {
+            "kind": "^DailyCard$",
             "story": "^Summary$",
-            "millSec": 5000
+            "millSec": 10000
           }
         ],
         "width": 1366,

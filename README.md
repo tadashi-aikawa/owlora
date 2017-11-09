@@ -42,7 +42,7 @@ $ npm i
 $ npm run dev
 ```
 
-### Show storybook
+### Show storybook (Recommended to run by both human and CI)
 
 ```
 $ npm run storybook
@@ -60,7 +60,7 @@ If results are expected, you run...
 $ npm test -- -u
 ```
 
-### Visualzed test
+### Visualzed test (Recommended to run by CI)
 
 First, you make `regconfig.json` like following.
 
@@ -83,10 +83,16 @@ First, you make `regconfig.json` like following.
 }
 ```
 
-And run
+When PR is created..
 
 ```
-$ npm run visualized-test
+$ npm run visualized-test-branch
+```
+
+When master is committed...
+
+```
+$ npm run visualized-test-master
 ```
 
 ### Build
