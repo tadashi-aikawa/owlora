@@ -8,16 +8,23 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "storybook": "start-storybook -p 6006",
+    "----------↑Dev↑----------": "",
     "test": "jest",
-    "visualized-test": "build-storybook && CI=yes loki --chromeConcurrency 1 --reactUri file:./storybook-static --output .captures && npx reg-suit run",
-    "----------↑dev↑----------": "",
+    "----------↑Structual test↑----------": "",
+    "clean-visualized-test": "rm -rf .captures .reg",
+    "capture-images": "CI=yes loki --chromeConcurrency 1 --reactUri file:./storybook-static --output .captures",
+    "compare-images": "reg-suit sync-expected && reg-suit compare && reg-suit publish",
+    "reg-suit-run": "reg-suit run",
+    "visualized-test-branch": "run-s build-storybook clean-visualized-test capture-images reg-suit-run",
+    "visualized-test-master": "run-s build-storybook clean-visualized-test capture-images compare-images",
+    "----------↑Visualized testv (TODO: refactoring)↑----------": "",
     "build": "webpack --config webpack.config.pro.js",
     "build-storybook": "build-storybook",
-    "----------↑build↑----------": "",
+    "----------↑Build↑----------": "",
     "deploy": "firebase deploy --project owlora-mamansoft",
     "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
     "release": "run-s test build release:github deploy",
-    "----------↑release↑----------": ""
+    "----------↑Release↑----------": ""
   },
   "jest": {
     "transform": {
@@ -61,7 +68,6 @@
     "redux": "^3.7.1",
     "redux-localstorage": "^0.4.1",
     "redux-saga": "^0.15.6",
-    "reg-suit": "^0.5.7",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.76.0",
     "typestyle": "^1.3.8",
@@ -86,6 +92,7 @@
     "reg-keygen-git-hash-plugin": "^0.5.8",
     "reg-notify-slack-plugin": "^0.5.6",
     "reg-publish-s3-plugin": "^0.5.6",
+    "reg-suit": "^0.5.7",
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.18.2",
     "ts-jest": "^20.0.7",
