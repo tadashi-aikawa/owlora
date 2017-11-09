@@ -58,4 +58,6 @@ public/bundle*
 # Visualized test
 .captures
 storybook-static
+.reg
+regconfig.json
 
