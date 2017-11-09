@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "visualized-test": "build-storybook && loki --chromeConcurrency 1 --reactUri file:./storybook-static --output .captures",
+    "visualized-test": "build-storybook && CI=yes loki --chromeConcurrency 1 --reactUri file:./storybook-static --output .captures && npx reg-suit run",
     "----------↑dev↑----------": "",
     "build": "webpack --config webpack.config.pro.js",
     "build-storybook": "build-storybook",

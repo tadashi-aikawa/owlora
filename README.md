@@ -48,7 +48,7 @@ $ npm run dev
 $ npm run storybook
 ```
 
-### Test
+### Structual test
 
 ```
 $ npm test
@@ -58,6 +58,35 @@ If results are expected, you run...
 
 ```
 $ npm test -- -u
+```
+
+### Visualzed test
+
+First, you make `regconfig.json` like following.
+
+```json
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": ".captures",
+    "threshold": 0
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true,
+    "reg-notify-slack-plugin": {
+      "webhookUrl": "https://hooks.slack.com/services/XXXXXXXXXXXXXXXXXX/yyyyyyyyyyyyyyyyyy"
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "reg-publish-bucket-aaaa-bbbb-cccc-dddd-eeee-ffff"
+    }
+  }
+}
+```
+
+And run
+
+```
+$ npm run visualized-test
 ```
 
 ### Build
