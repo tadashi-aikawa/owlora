@@ -1,0 +1,40 @@
+MAKEFLAGS += --warn-undefined-variables
+SHELL := /bin/bash
+.SHELLFLAGS := -eu -o pipefail -c
+.DEFAULT_GOAL := help
+
+.PHONY: $(shell egrep -oh ^[a-zA-Z_-]+: $(MAKEFILE_LIST) | sed 's/://')
+
+help: ## Print this help
+	@echo 'Usage: make [target]'
+	@echo ''
+	@echo 'Targets:'
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+#----
+
+DOCKER_IMAGE ?= tadashi-aikawa/owlora
+
+define run-npm-command
+	docker run \
+	  -e AWS_ACCESS_KEY_ID=$(AWS_ACCESS_KEY_ID) \
+	  -e AWS_SECRET_ACCESS_KEY=$(AWS_SECRET_ACCESS_KEY) \
+	  -t $(DOCKER_IMAGE) \
+	  npm run $(1)
+endef
+
+build-image: ## Build docker image
+	@echo 'Starting $@'
+	docker build -t $(DOCKER_IMAGE) .
+	@echo 'Finished $@'
+
+visualized-test: build-image ## Visualized test. You should execute after PR is created (topic branch => master or develop)
+	@echo 'Staring $@' 
+	$(call run-npm-command,visualized-test-with-notify)
+	@echo 'Finished $@'
+
+update-expected-images: build-image ## Update expected images used by visualized test. You should execute after master is commited.
+	@echo 'Staring $@' 
+	$(call run-npm-command,visualized-test-without-notify)
+	@echo 'Finished $@'
+

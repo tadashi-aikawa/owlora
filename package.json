@@ -6,25 +6,35 @@
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "":"/--------------------------------------",
+    "":"/                Develop               ",
+    "":"/--------------------------------------",
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress",
     "storybook": "start-storybook -p 6006",
-    "----------↑Dev↑----------": "",
+    "":"/--------------------------------------",
+    "/":"            Structual test            ",
+    "/":"--------------------------------------",
     "test": "jest",
-    "----------↑Structual test↑----------": "",
+    "/":"--------------------------------------",
+    "/":"       Visualized test (Only Linux)   ",
+    "/":"--------------------------------------",
     "clean-visualized-test": "rm -rf .captures .reg",
-    "capture-images": "CI=yes loki --chromeConcurrency 1 --reactUri file:./storybook-static --output .captures",
+    "capture-images": "(cd storybook-static && python -m SimpleHTTPServer 6006) & CI=yes loki --chromeConcurrency 1 --output .captures --chromeFlags='--headless --disable-gpu --hide-scrollbars --no-sandbox'; pkill python",
     "compare-images": "reg-suit sync-expected && reg-suit compare",
     "visualized-test": "run-s build-storybook clean-visualized-test capture-images compare-images",
-    "visualized-test-branch": "run-s visualized-test && reg-suit publish -n",
-    "visualized-test-master": "run-s visualized-test && reg-suit publish",
-    "----------↑Visualized testv (TODO: refactoring)↑----------": "",
+    "visualized-test-with-notify": "run-s visualized-test && reg-suit publish -n",
+    "visualized-test-without-notify": "run-s visualized-test && reg-suit publish",
+    "/":"--------------------------------------",
+    "/":"                 Build                ",
+    "/":"--------------------------------------",
     "build": "webpack --config webpack.config.pro.js",
     "build-storybook": "build-storybook",
-    "----------↑Build↑----------": "",
+    "/":"--------------------------------------",
+    "/":"                Release               ",
+    "/":"--------------------------------------",
     "deploy": "firebase deploy --project owlora-mamansoft",
     "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
-    "release": "run-s test build release:github deploy",
-    "----------↑Release↑----------": ""
+    "release": "run-s test build release:github deploy"
   },
   "jest": {
     "transform": {
@@ -106,19 +116,21 @@
   "loki": {
     "configurations": {
       "chrome.laptop": {
-        "target": "chrome.docker",
+        "target": "chrome.app",
         "waitBeforeCapture": [
           {
             "kind": "^DailyCard$",
             "story": "^Summary$",
             "millSec": 10000
+          },
+          {
+            "kind": ".+",
+            "story": ".+",
+            "millSec": 1000
           }
         ],
-        "width": 1366,
-        "height": 768,
-        "deviceScaleFactor": 1,
-        "mobile": false,
-        "fitWindow": false
+        "width": 0,
+        "height": 0
       }
     }
   }
