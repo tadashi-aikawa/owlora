@@ -86,7 +86,10 @@ TODO: refactoring
 
 ### Visualzed test
 
-You need to set `WEBHOOK_URL` and `BUCKET_NAME`.
+#### Requirements
+
+* Set `WEBHOOK_URL` and `BUCKET_NAME`
+* Set aws credentials to access s3 bucket (ex. `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`)
 
 
 #### After PR is created...
