@@ -88,20 +88,26 @@ TODO: refactoring
 
 #### Requirements
 
+* Linux (Not support for windows and mac)
+* Docker
 * Set `WEBHOOK_URL` and `BUCKET_NAME`
 * Set aws credentials to access s3 bucket (ex. `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`)
 
-
-#### After PR is created...
-
-```
-$ make visualized-test-init visualized-test-with-notify
-```
-
-#### After master is committed...
-
+#### Local test after topic branch is committed locally...
 
 ```
-$ make visualized-test-init visualized-test-without-notify
+$ make visualized-test-init visualized-test-quietly
+```
+
+#### After PR is created... (**Optional**)
+
+```
+$ make visualized-test-init visualized-test
+```
+
+#### After master is committed... (**Required**)
+
+```
+$ make visualized-test-init visualized-test-quietly
 ```
 
