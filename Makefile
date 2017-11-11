@@ -23,9 +23,15 @@ define run-npm-command
 	  npm run $(1)
 endef
 
+
 build-image: ## Build docker image
 	@echo 'Starting $@'
 	docker build -t $(DOCKER_IMAGE) .
+	@echo 'Finished $@'
+
+visualized-test-init: ## Preparation of visualized-test. You need to set `WEBHOOK_URL` and `BUCKET_NAME`.
+	@echo 'Starting $@'
+	cat make/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
 	@echo 'Finished $@'
 
 visualized-test: build-image ## Visualized test. You should execute after PR is created (topic branch => master or develop)
