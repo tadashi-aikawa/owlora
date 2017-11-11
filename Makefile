@@ -26,21 +26,21 @@ endef
 
 build-image: ## Build docker image
 	@echo 'Starting $@'
-	docker build -t $(DOCKER_IMAGE) .
+	@docker build -t $(DOCKER_IMAGE) .
 	@echo 'Finished $@'
 
-visualized-test-init: ## Preparation of visualized-test. You need to set `WEBHOOK_URL` and `BUCKET_NAME`.
+visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_URL` and `BUCKET_NAME`.
 	@echo 'Starting $@'
-	cat make/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
+	@cat make/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
 	@echo 'Finished $@'
 
-visualized-test: build-image ## Visualized test. You should execute after PR is created (topic branch => master or develop)
+visualized-test: build-image ## visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 	@echo 'Staring $@' 
-	$(call run-npm-command,visualized-test-with-notify)
+	@$(call run-npm-command,visualized-test-with-notify)
 	@echo 'Finished $@'
 
-update-expected-images: build-image ## Update expected images used by visualized test. You should execute after master is commited.
+update-expected-images: build-image ## Update expected images used by visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 	@echo 'Staring $@' 
-	$(call run-npm-command,visualized-test-without-notify)
+	@$(call run-npm-command,visualized-test-without-notify)
 	@echo 'Finished $@'
 
