@@ -93,6 +93,10 @@ TODO: refactoring
 * Set `WEBHOOK_URL` and `BUCKET_NAME`
 * Set aws credentials to access s3 bucket (ex. `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`)
 
+#### Optionals
+
+* Set `DOCKER_PREFIX` (ex. set `DOCKER_PREFIX=root`if you want to run `sudo docker` instead of `docker`)
+
 #### Local test after topic branch is committed locally...
 
 ```
