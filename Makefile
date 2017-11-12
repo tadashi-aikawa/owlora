@@ -15,6 +15,8 @@ help: ## Print this help
 
 DOCKER_PREFIX ?=
 DOCKER_IMAGE ?= tadashi-aikawa/owlora
+GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
+GIT_HASH := $(shell git rev-parse HEAD)
 
 define run-npm-command
 	$(DOCKER_PREFIX) docker run --rm \
@@ -24,6 +26,13 @@ define run-npm-command
 	  npm run $(1)
 endef
 
+define notify-slack
+	curl -X POST \
+	  --data-urlencode 'payload={"username": "Owlora"
+	  , "text": ":tio: `$(1)` :tio:\n　:frame_with_picture: <https://$(2).s3.amazonaws.com/$(3)/index.html|Visualized test report>"
+	  , "icon_emoji": ":ghost:"}'  \ 
+	$(4)
+endef
 
 build-image: ## Build docker image
 	@echo 'Starting $@'
@@ -37,7 +46,8 @@ visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_UR
 
 visualized-test: build-image ## Visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 	@echo 'Staring $@' 
-	@$(call run-npm-command,visualized-test-with-notify)
+	@$(call run-npm-command,visualized-test-without-notify)
+	@$(call notify-slack,$(GIT_BRANCH),$(BUCKET_NAME),$(GIT_HASH),$(WEBHOOK_URL))
 	@echo 'Finished $@'
 
 visualized-test-quietly: build-image ## Visualized test without notification. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
