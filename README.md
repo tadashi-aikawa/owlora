@@ -79,7 +79,7 @@ CI
 
 ### Release
 
-TODO: refactoring
+TODO: refactor
 
 1. Increment version in `package.json`
 2. `npm run release`
