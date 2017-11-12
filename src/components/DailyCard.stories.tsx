@@ -127,7 +127,7 @@ storiesOf("DailyCard", module)
                         dayOrder: 2,
                         estimatedMinutes: undefined,
                         milestoneColor: "purple",
-                        isMilestone: false,
+                        isMilestone: true,
                     }),
                 ]}
                 timeLamps
