@@ -49,13 +49,13 @@ $ npm i
 $ npm run dev
 ```
 
-### Show storybook (Recommended to run by both human and CI)
+### Show storybook
 
 ```
 $ npm run storybook
 ```
 
-### Structual test
+### Structual test (Recommended to run by both human and CI)
 
 ```
 $ npm test
