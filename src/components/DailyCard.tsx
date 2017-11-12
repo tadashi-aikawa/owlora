@@ -56,7 +56,7 @@ const CardHeader = ({props, freeMinutes, isOffTime}: {
 }) => {
     const restPercent = freeMinutes / props.minutesToUsePerDay;
 
-    const isWarning: boolean = _.inRange(restPercent, 0.20, 0.40);
+    const isWarning: boolean = _.inRange(restPercent, 0.20, 0.50);
     const isDanger: boolean = _.inRange(restPercent, 0, 0.20);
     const isDead: boolean = restPercent < 0;
     const hasUnknown: boolean = props.tasks.some(x => x.estimatedMinutes === 0);
