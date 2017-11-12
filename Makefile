@@ -13,10 +13,11 @@ help: ## Print this help
 
 #----
 
+DOCKER_PREFIX ?=
 DOCKER_IMAGE ?= tadashi-aikawa/owlora
 
 define run-npm-command
-	docker run \
+	$(DOCKER_PREFIX) docker run \
 	  -e AWS_ACCESS_KEY_ID=$(AWS_ACCESS_KEY_ID) \
 	  -e AWS_SECRET_ACCESS_KEY=$(AWS_SECRET_ACCESS_KEY) \
 	  -t $(DOCKER_IMAGE) \
@@ -26,7 +27,7 @@ endef
 
 build-image: ## Build docker image
 	@echo 'Starting $@'
-	@docker build -t $(DOCKER_IMAGE) .
+	$(DOCKER_PREFIX) docker build -t $(DOCKER_IMAGE) .
 	@echo 'Finished $@'
 
 visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_URL` and `BUCKET_NAME`.
