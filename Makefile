@@ -17,7 +17,7 @@ DOCKER_PREFIX ?=
 DOCKER_IMAGE ?= tadashi-aikawa/owlora
 
 define run-npm-command
-	$(DOCKER_PREFIX) docker run \
+	$(DOCKER_PREFIX) docker run --rm \
 	  -e AWS_ACCESS_KEY_ID=$(AWS_ACCESS_KEY_ID) \
 	  -e AWS_SECRET_ACCESS_KEY=$(AWS_SECRET_ACCESS_KEY) \
 	  -t $(DOCKER_IMAGE) \
