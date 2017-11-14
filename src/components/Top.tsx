@@ -2,6 +2,7 @@ import '../../package';
 import * as React from 'react';
 import {Component} from 'react';
 import * as _ from 'lodash';
+import * as moment from 'moment';
 import {
     Button,
     Container,
@@ -355,7 +356,8 @@ export default class extends Component<TopProps, TopState> {
                                 transition: "all 0.5s"
                             }
                     }>
-                        <DailyCards tasks={this.props.tasks.filter(x => x.dueDate)}
+                        <DailyCards baseDate={moment()}
+                                    tasks={this.props.tasks.filter(x => x.dueDate)}
                                     taskSortField={this.props.uiConfig.taskSortField}
                                     taskOrder={this.props.uiConfig.taskOrder}
                                     timeLamps={this.props.uiConfig.timeLamps}

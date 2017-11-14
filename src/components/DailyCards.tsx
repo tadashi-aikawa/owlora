@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import {Card, SemanticWIDTHS} from 'semantic-ui-react';
-import * as moment from 'moment';
 import {Moment} from 'moment';
 import {SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -49,6 +48,7 @@ function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: num
 
 
 export interface DailyCardsProps {
+    baseDate: Moment;
     tasks: Task[];
     taskSortField: TaskSortField;
     taskOrder: Order;
@@ -71,7 +71,7 @@ export const DailyCards = (props: DailyCardsProps) => {
 
     const dates: Moment[] = Array.from(
         momentIterator(
-            moment().startOf('week'),
+            props.baseDate.startOf('week'),
             props.onlyWeekday ? DateUtil.isWeekDay : () => true,
             props.numberOfCards
         )
