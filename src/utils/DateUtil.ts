@@ -6,3 +6,6 @@ export const isTuesDay = (date: Moment): boolean => date.day() === 2;
 export const isWednesDay = (date: Moment): boolean => date.day() === 3;
 export const isThursDay = (date: Moment): boolean => date.day() === 4;
 export const isFriDay = (date: Moment): boolean => date.day() === 5;
+
+export const toStartDayOfWeek = (date: Moment): Moment => date.clone().startOf('week');
+export const plusDays = (date: Moment, days: number): Moment => date.clone().add(days, 'day');

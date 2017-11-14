@@ -1045,5 +1045,6 @@ storiesOf("DailyCard", module)
             warning
             isTasksExpanded
             onUpdateTask={action}
+            past
         />
     ));

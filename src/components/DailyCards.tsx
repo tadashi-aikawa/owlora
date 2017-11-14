@@ -11,6 +11,7 @@ import Order from '../constants/Order';
 import Repetition from '../constants/Repetition';
 import * as DateUtil from '../utils/DateUtil';
 import Filter from '../models/Filter';
+import {plusDays, toStartDayOfWeek} from '../utils/DateUtil';
 
 const inTheDay = (task: Task, date: Moment): boolean => {
     if (!task.dueDate) {
@@ -37,7 +38,7 @@ function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: num
     let count = 0;
 
     while (count < max) {
-        const m = begin.clone().add(i, 'day');
+        const m = plusDays(begin, i);
         if (filter(m)) {
             yield m;
             count++;
@@ -71,7 +72,7 @@ export const DailyCards = (props: DailyCardsProps) => {
 
     const dates: Moment[] = Array.from(
         momentIterator(
-            props.baseDate.startOf('week'),
+            toStartDayOfWeek(props.baseDate),
             props.onlyWeekday ? DateUtil.isWeekDay : () => true,
             props.numberOfCards
         )
@@ -94,6 +95,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     minutesToUsePerDay={props.minutesToUsePerDay}
                     minutesToUsePerSpecificDays={props.minutesToUsePerSpecificDays}
                     filter={props.filter}
+                    past={date.isBefore(props.baseDate, 'day')}
                     onUpdateTask={props.onUpdateTask}
                 />
             ))}

@@ -111,6 +111,7 @@ export interface DailyCardProps {
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: Dictionary<number>;
     filter?: Filter;
+    past?: boolean;
 
     connectDropTarget?: Function;
     isOver?: boolean;
@@ -134,8 +135,7 @@ export interface DailyCardProps {
         },
 
         canDrop(props: DailyCardProps, monitor) {
-            return props.date.isSameOrAfter(now(), 'day') &&
-                !props.date.isSame(monitor.getItem().date, 'day');
+            return !props.past && !props.date.isSame(monitor.getItem().date, 'day');
         }
     },
     (connect, monitor) => ({
@@ -169,7 +169,7 @@ export default class extends Component<DailyCardProps> {
 
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
-                <Dimmer active={this.props.date.isBefore(now(), 'day')} content={
+                <Dimmer active={this.props.past} content={
                     <div>
                         <h2>Facing forward !!</h2>
                         <Icon name='hand outline right' size='huge'/>

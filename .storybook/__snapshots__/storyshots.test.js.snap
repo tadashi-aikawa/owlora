@@ -18978,7 +18978,7 @@ exports[`Storyshots DailyCards Filter 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -19142,7 +19142,7 @@ exports[`Storyshots DailyCards Filter 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -19306,7 +19306,7 @@ exports[`Storyshots DailyCards Filter 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -21207,7 +21207,7 @@ exports[`Storyshots DailyCards Summary 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -21371,7 +21371,7 @@ exports[`Storyshots DailyCards Summary 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -21535,7 +21535,7 @@ exports[`Storyshots DailyCards Summary 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
@@ -21699,7 +21699,7 @@ exports[`Storyshots DailyCards Summary 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ui dimmer"
+          className="ui active transition visible dimmer"
           onClick={[Function]}
         >
           <div
