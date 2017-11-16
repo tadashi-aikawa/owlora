@@ -1,17 +1,25 @@
-FROM centos:7
+FROM node:8
 
-COPY google-chrome.repo /etc/yum.repos.d/google-chrome.repo
+RUN apt-get update && apt-get install -y wget git
 
-RUN yum update -y && yum install -y epel-release wget git
-
-RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash - \
-  && yum install -y gcc gcc-c++ nodejs
-
-RUN yum install -y libX11 GConf2 fontconfig unzip \
-  && wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip \
-  && unzip chromedriver_linux64.zip \
-  && mv chromedriver /usr/local/bin/ \
-  && yum install -y google-chrome-unstable libOSMesa google-noto-cjk-fonts
+# Install Google chrome
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN apt-get -y install gconf-service \
+                       libasound2 \
+                       libatk1.0-0 \
+                       libcups2 \
+                       libdbus-1-3 \
+                       libgconf-2-4 \
+                       libgtk-3-0 \
+                       libnspr4 \
+                       libx11-xcb1 \
+                       libxss1 \
+                       fonts-liberation \
+                       libappindicator1 \
+                       libnss3 \
+                       lsb-release \
+                       xdg-utils
+RUN dpkg -i google-chrome-stable_current_amd64.deb
 
 WORKDIR /usr/src/app
 
