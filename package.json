@@ -6,7 +6,7 @@
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --host 0.0.0.0",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --host 0.0.0.0 --watch-poll",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "clean-visualized-test": "rm -rf .captures .reg",
