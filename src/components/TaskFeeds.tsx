@@ -5,7 +5,8 @@ import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
-import TaskFeed from './TaskFeed';
+import TaskFeed, {TaskFeedState} from './TaskFeed';
+import {Component} from "react";
 
 
 // I want to use rich enum
@@ -31,7 +32,7 @@ interface TaskFeedsProps {
 }
 
 const TaskFeeds = (props: TaskFeedsProps) =>
-    <Feed>{
+    <div>{
         _(props.tasks)
             .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
             .map(t => (
@@ -40,7 +41,7 @@ const TaskFeeds = (props: TaskFeedsProps) =>
                           onUpdate={props.onUpdateTask}/>
             ))
             .value()
-    }</Feed>;
+    }</div>;
 
 
 export default TaskFeeds;
