@@ -413,7 +413,7 @@ storiesOf("DailyCard", module)
                     createTask({
                         id: 1,
                         dayOrder: 1,
-                        icon: text("task.icon (url)", "https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"),
+                        icon: text("task.icon (url)", "https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"),
                     }),
                 ]}
                 timeLamps
