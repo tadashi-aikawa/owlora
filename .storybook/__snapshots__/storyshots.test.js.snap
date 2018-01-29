@@ -3077,7 +3077,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                     >
                       <img
                         className="ui avatar image"
-                        src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                        src="https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
                         style={undefined}
                       />
                     </div>
@@ -3156,7 +3156,7 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                 >
                   <img
                     className="ui avatar image"
-                    src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/react.svg"
+                    src="https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
                     style={
                       Object {
                         "height": "28px",
@@ -13725,89 +13725,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
-                          "backgroundPosition": "-1690px -715px",
-                          "backgroundRepeat": "no-repeat",
-                          "backgroundSize": "2080px",
-                          "display": "inline-block",
-                          "fontSize": "inherit",
-                          "height": 32,
-                          "imageRendering": "optimizeQuality",
-                          "lineHeight": "normal",
-                          "margin": "0 .15em",
-                          "position": "relative",
-                          "textIndent": "-9999em",
-                          "top": -3,
-                          "verticalAlign": "middle",
-                          "width": 32,
-                        }
-                      }
-                      title=":person_pouting:"
-                    >
-                      🙎
-                    </span>
-                  </div>
-                  <div
-                    className="content"
-                  >
-                    <div
-                      className="date"
-                    >
-                      Project
-                    </div>
-                    <div
-                      className="summary"
-                    >
-                      Task1
-                      <span />
-                    </div>
-                  </div>
-                  <div
-                    className="ui teal large circular label"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "margin": "auto",
-                        "marginLeft": 5,
-                        "textAlign": "center",
-                        "width": "auto",
-                      }
-                    }
-                  >
-                    15
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                className="ui feed"
-              >
-                <div
-                  className="event"
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  style={
-                    Object {
-                      "backgroundColor": "rgba(150, 150, 150, 0.1)",
-                      "border": "2px solid",
-                      "borderColor": "rgba(150, 150, 150, 0.1)",
-                      "borderRadius": "20px",
-                      "cursor": "move",
-                      "marginBottom": "10px",
-                      "marginTop": "10px",
-                      "opacity": 1,
-                      "padding": "10px",
-                    }
-                  }
-                >
-                  <div
-                    className="label"
-                  >
-                    <span
-                      onClick={undefined}
-                      style={
-                        Object {
-                          "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
                           "backgroundPosition": "-682.5px -260px",
                           "backgroundRepeat": "no-repeat",
                           "backgroundSize": "2080px",
@@ -13928,6 +13845,89 @@ exports[`Storyshots DailyCard Summary 1`] = `
                       Task3 (13
                       :30-16:
                       15)
+                      <span />
+                    </div>
+                  </div>
+                  <div
+                    className="ui teal large circular label"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "margin": "auto",
+                        "marginLeft": 5,
+                        "textAlign": "center",
+                        "width": "auto",
+                      }
+                    }
+                  >
+                    15
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="ui feed"
+              >
+                <div
+                  className="event"
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                      "border": "2px solid",
+                      "borderColor": "rgba(150, 150, 150, 0.1)",
+                      "borderRadius": "20px",
+                      "cursor": "move",
+                      "marginBottom": "10px",
+                      "marginTop": "10px",
+                      "opacity": 1,
+                      "padding": "10px",
+                    }
+                  }
+                >
+                  <div
+                    className="label"
+                  >
+                    <span
+                      onClick={undefined}
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                          "backgroundPosition": "-1690px -715px",
+                          "backgroundRepeat": "no-repeat",
+                          "backgroundSize": "2080px",
+                          "display": "inline-block",
+                          "fontSize": "inherit",
+                          "height": 32,
+                          "imageRendering": "optimizeQuality",
+                          "lineHeight": "normal",
+                          "margin": "0 .15em",
+                          "position": "relative",
+                          "textIndent": "-9999em",
+                          "top": -3,
+                          "verticalAlign": "middle",
+                          "width": 32,
+                        }
+                      }
+                      title=":person_pouting:"
+                    >
+                      🙎
+                    </span>
+                  </div>
+                  <div
+                    className="content"
+                  >
+                    <div
+                      className="date"
+                    >
+                      Project
+                    </div>
+                    <div
+                      className="summary"
+                    >
+                      Task1
                       <span />
                     </div>
                   </div>

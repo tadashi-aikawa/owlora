@@ -25,6 +25,7 @@ const createTask = (properties): Task =>
         {},
         {
             id: null,
+            itemOrder: null,
             dayOrder: null,
 
             icon: ":innocent:",
@@ -54,10 +55,11 @@ storiesOf("DailyCard", module)
             minutesToUsePerSpecificDays={{}}
             filter={{ iconDisabledMap: {} }}
             tasks={[
-                createTask({ id: 1, name: "Task1", dayOrder: 3, icon: ":person_with_pouting_face:" }),
+                createTask({ id: 1, name: "Task1", itemOrder: 3, dayOrder: 3, icon: ":person_with_pouting_face:" }),
                 createTask({
                     id: 2,
                     name: "Task2 this is long name task hogehoge!! (11:00-12:00)",
+                    itemOrder: 1,
                     dayOrder: 2,
                     icon: ":whale:",
                     time: {
@@ -68,6 +70,7 @@ storiesOf("DailyCard", module)
                 createTask({
                     id: 3,
                     name: "Task3 (13:30-16:15)",
+                    itemOrder: 2,
                     dayOrder: 1,
                     icon: ":japan:",
                     color: "rgba(200, 50, 50, 0.1)",
@@ -79,6 +82,7 @@ storiesOf("DailyCard", module)
                 createTask({
                     id: 4,
                     name: "Milestone",
+                    itemOrder: 4,
                     dayOrder: 4,
                     estimatedMinutes: undefined,
                     color: "rgba(50, 50, 200, 0.1)",

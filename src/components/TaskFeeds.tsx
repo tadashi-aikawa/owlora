@@ -34,6 +34,7 @@ interface TaskFeedsProps {
 const TaskFeeds = (props: TaskFeedsProps) =>
     <div>{
         _(props.tasks)
+            .orderBy<Task>(t => t.itemOrder)
             .orderBy(t => toSortFieldValue(t, props.taskSortField), props.taskOrder)
             .map(t => (
                 <TaskFeed key={t.id}
