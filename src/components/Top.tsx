@@ -120,7 +120,7 @@ const readyToLoadingTasks = (config: CommonConfig): boolean =>
 export default class extends Component<TopProps, TopState> {
 
     constructor(props: TopProps) {
-        super();
+        super(props);
         this.state = {
             hasErrorToast: false,
             inputToken: props.token,

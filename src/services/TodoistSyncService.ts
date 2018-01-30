@@ -39,9 +39,9 @@ const toRepetition = (dateString: string): Repetition | undefined => {
 
 function convertToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[], config: CommonConfigValue): Dictionary<Task> {
     return _(todoistTasks)
-        .filter(x => !x.checked)
-        .orderBy(x => x.project_id)
-        .map(x => {
+        .filter<TodoistTask>(x => !x.checked)
+        .orderBy<TodoistTask>(x => x.project_id)
+        .map<TodoistTask, Task>((x: TodoistTask) => {
             const matchedMilestone: MilestoneConfig | undefined = _.find(
                 config.milestones,
                 (m: MilestoneConfig) => _.every([
@@ -81,6 +81,7 @@ function convertToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[],
                 },
                 repetition: toRepetition(x.date_string),
                 icon: config.iconsByProject[String(x.project_id)] || ":white_circle:",
+                itemOrder: x.item_order,
                 dayOrder: x.day_order,
                 isMilestone: !!matchedMilestone,
                 isSeal: !!matchedSeal,
@@ -88,9 +89,9 @@ function convertToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[],
                 milestoneColor: matchedMilestone && matchedMilestone.color,
                 sealColor: matchedSeal && matchedSeal.color,
                 size: !!matchedMilestone ? (matchedMilestone.size || Size.SMALL) : Size.SMALL,
-            } as Task
+            }
         })
-        .filter(x => x.estimatedMinutes !== undefined || x.isMilestone || x.isSeal)
+        .filter<Task>(x => x.estimatedMinutes !== undefined || x.isMilestone || x.isSeal)
         .keyBy(x => x.id)
         .value();
 }

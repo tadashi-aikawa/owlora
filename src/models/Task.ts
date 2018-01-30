@@ -16,6 +16,7 @@ interface Task {
     repetition: Repetition;
     /** URL or emoji(ex. :bow:) */
     icon: string;
+    itemOrder: number;
     dayOrder: number;
     color?: string;
     milestoneColor?: string;
