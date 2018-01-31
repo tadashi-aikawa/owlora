@@ -307,6 +307,9 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                         </Modal>
                     </Menu.Item>
                     <Menu.Item>
+                        <Trashbox/>
+                    </Menu.Item>
+                    <Menu.Item>
                         <Menu.Item name='logout' onClick={this.props.onLogout}/>
                     </Menu.Item>
                 </Menu.Menu>

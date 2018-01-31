@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Component} from "react";
-import {Dimmer, Icon, Segment} from "semantic-ui-react";
+import {Dimmer, Icon, Popup} from "semantic-ui-react";
 import {DragSource, DropTarget} from "react-dnd";
 import {findDOMNode} from "react-dom";
 
@@ -37,20 +37,16 @@ export default class extends Component<TrashboxProps> {
 
     render() {
         return (
-            <div ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}
-                 style={{width: 60, height: 50}}>
-                <Dimmer active={!this.props.canDrop && this.props.isOver}
-                        style={{backgroundColor: "grey", opacity: 0.5}}
-                        content=""/>
+            <div ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
                 <Dimmer active={this.props.canDrop && this.props.isOver}
-                        style={{backgroundColor: "violet", opacity: 0.5}}
+                        style={{backgroundColor: "violet", opacity: 0.7}}
                         content={
-                            <div>
-                                <h2>Remove forever!!!</h2>
-                                <Icon name='arrow circle outline down' size='huge'/>
-                            </div>
+                            <Icon name='trash outline' size='huge'/>
                         }/>
-                <Icon size='big' name='trash' color='red'/>
+                <Popup
+                    trigger={<Icon size='big' name='trash' color='red' inverted />}
+                    content='Drop to remove anything forever!!'
+                />
             </div>
         )
     }

@@ -308,10 +308,6 @@ export default class extends Component<TopProps, TopState> {
                             }
                     }>
                         <div style={{display: "flex", justifyContent: "flex-end", paddingTop: 10, paddingBottom: 20}}>
-                            <Segment>
-                                <Trashbox />
-                            </Segment>
-                            <span style={{flex: "1 1 auto"}} />
                             <Input placeholder='Filter task name by regexp'
                                    icon='filter'
                                    iconPosition='left'
