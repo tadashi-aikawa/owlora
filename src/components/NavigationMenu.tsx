@@ -14,6 +14,7 @@ import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import Emojify from 'react-emojione';
+import Trashbox from "./Trashbox";
 
 const LOGO = require('../../owlora.png');
 

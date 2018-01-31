@@ -66,6 +66,7 @@ export interface DailyCardsProps {
     filter?: Filter;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 export const DailyCards = (props: DailyCardsProps) => {
@@ -97,6 +98,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     filter={props.filter}
                     past={date.isBefore(props.baseDate, 'day')}
                     onUpdateTask={props.onUpdateTask}
+                    onRemoveTask={props.onRemoveTask}
                 />
             ))}
         </Card.Group>

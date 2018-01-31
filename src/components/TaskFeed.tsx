@@ -20,6 +20,7 @@ interface TaskFeedProps {
     isDragging?: boolean;
 
     onUpdate: (parameter: TaskUpdateParameter) => void;
+    onRemove: (id: number) => void;
 }
 
 @DragSource(
@@ -43,12 +44,21 @@ interface TaskFeedProps {
                 return;
             }
 
-            props.onUpdate({
-                id: props.task.id,
-                name: props.task.name,
-                dueDate: monitor.getDropResult().date,
-                dateString: monitor.getDropResult().dateString,
-            });
+            switch (monitor.getDropResult().type) {
+                case "update":
+                    props.onUpdate({
+                        id: props.task.id,
+                        name: props.task.name,
+                        dueDate: monitor.getDropResult().date,
+                        dateString: monitor.getDropResult().dateString,
+                    });
+                    break;
+                case "remove":
+                    props.onRemove(props.task.id);
+                    break;
+                default:
+                    // TODO: error
+            }
         },
     },
     (connect, monitor) => ({

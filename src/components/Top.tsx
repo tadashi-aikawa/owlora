@@ -44,6 +44,7 @@ import Filter from '../models/Filter';
 import {Dictionary} from 'lodash';
 import Size from '../constants/Size';
 import {DEFAULT_TASK_COLOR} from '../storage/settings';
+import Trashbox from "./Trashbox";
 
 
 const Steps = ({activeGroupIndex}: { activeGroupIndex: number }) =>
@@ -85,6 +86,7 @@ export interface TopProps {
     onReload: () => void;
     onBackgroundReload: () => void;
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 
     onChangeConfig: (config: CommonConfig) => void;
     onChangeUiConfig: (config: UiConfig) => void;
@@ -306,6 +308,10 @@ export default class extends Component<TopProps, TopState> {
                             }
                     }>
                         <div style={{display: "flex", justifyContent: "flex-end", paddingTop: 10, paddingBottom: 20}}>
+                            <Segment>
+                                <Trashbox />
+                            </Segment>
+                            <span style={{flex: "1 1 auto"}} />
                             <Input placeholder='Filter task name by regexp'
                                    icon='filter'
                                    iconPosition='left'
@@ -340,6 +346,7 @@ export default class extends Component<TopProps, TopState> {
                                 seal={this.props.uiConfig.seal}
                                 filter={this.props.uiConfig.filter ? this.props.filter : undefined}
                                 onUpdateTask={this.props.onUpdateTask}
+                                onRemoveTask={this.props.onRemoveTask}
                                 width={350}/>
                     </div>
                     <div style={
@@ -372,6 +379,7 @@ export default class extends Component<TopProps, TopState> {
                                     onlyWeekday={this.props.uiConfig.onlyWeekday}
                                     filter={this.props.uiConfig.filter ? this.props.filter : undefined}
                                     onUpdateTask={this.props.onUpdateTask}
+                                    onRemoveTask={this.props.onRemoveTask}
                         />
                     </div>
                 </div>

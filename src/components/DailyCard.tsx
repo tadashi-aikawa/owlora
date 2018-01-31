@@ -118,6 +118,7 @@ export interface DailyCardProps {
     canDrop?: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 
@@ -130,6 +131,7 @@ export interface DailyCardProps {
             }
 
             return {
+                type: "update",
                 date: props.date
             };
         },
@@ -207,6 +209,7 @@ export default class extends Component<DailyCardProps> {
                                            taskSortField={this.props.taskSortField}
                                            taskOrder={this.props.taskOrder}
                                            onUpdateTask={this.props.onUpdateTask}
+                                           onRemoveTask={this.props.onRemoveTask}
                                 />
                             </Popup>
                         )}
@@ -260,6 +263,7 @@ export default class extends Component<DailyCardProps> {
                                        taskSortField={this.props.taskSortField}
                                        taskOrder={this.props.taskOrder}
                                        onUpdateTask={this.props.onUpdateTask}
+                                       onRemoveTask={this.props.onRemoveTask}
                             />
                         </Popup>
                     </Divider>
@@ -283,7 +287,9 @@ export default class extends Component<DailyCardProps> {
                         <TaskFeeds tasks={estimatedTasks.filter(applyFilter)}
                                    taskSortField={this.props.taskSortField}
                                    taskOrder={this.props.taskOrder}
-                                   onUpdateTask={this.props.onUpdateTask}/>
+                                   onUpdateTask={this.props.onUpdateTask}
+                                   onRemoveTask={this.props.onRemoveTask}
+                        />
                     </div>
                 </Card.Content>
                 <Card.Content extra>
@@ -292,6 +298,7 @@ export default class extends Component<DailyCardProps> {
                         taskSortFieldInPopup={this.props.taskSortField}
                         taskOrderInPopup={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
             </Card>

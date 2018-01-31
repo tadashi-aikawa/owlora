@@ -27,6 +27,7 @@ export interface IceboxProps {
     canDrop?: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 @DropTarget(
@@ -38,6 +39,7 @@ export interface IceboxProps {
             }
 
             return {
+                type: "update",
                 date: "",
                 dateString: "",
             };
@@ -130,6 +132,7 @@ export default class extends Component<IceboxProps> {
                         taskSortField={this.props.taskSortField}
                         taskOrder={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
                 <Card.Content extra>
@@ -138,6 +141,7 @@ export default class extends Component<IceboxProps> {
                         taskSortFieldInPopup={this.props.taskSortField}
                         taskOrderInPopup={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
             </Card>

@@ -1,5 +1,9 @@
 import {call, put, select, takeEvery, takeLatest} from 'redux-saga/effects';
-import ActionType, {errorSync, errorUpdateTasks, successSync, successUpdateTasks} from '../actions';
+import ActionType, {
+    errorRemoveTasks,
+    errorSync, errorUpdateTasks, RemoveTasksAction, successRemoveTasks, successSync,
+    successUpdateTasks
+} from '../actions';
 import SyncPayload from '../payloads/SyncPayload';
 import TodoistSyncService from '../services/TodoistSyncService';
 import SyncService from '../services/SyncService';
@@ -52,6 +56,22 @@ export function* updateTasks(action: UpdateTasksAction) {
     }
 }
 
+export function* removeTasks(action: RemoveTasksAction) {
+    const token: string = yield select(todoistTokenSelector);
+    const config: CommonConfigValue = yield select(commonConfigValueSelector);
+
+    try {
+        const tasks: Dictionary<Task> = yield call(service.removeTasks, token, action.payload, config);
+        yield put(successRemoveTasks(tasks));
+    } catch (e) {
+        console.log(e);
+        yield put(errorRemoveTasks({
+            name: 'Failure remove task',
+            message: `${action.payload}`,
+        }));
+    }
+}
+
 export function* login(action: LoginAction) {
     try {
         const r = yield action.payload.login({provider: 'google'});
@@ -98,4 +118,5 @@ export default function* () {
     yield takeLatest(ActionType.UPDATE_TODOIST_TOKEN, updateTodoistToken);
 
     yield takeEvery(ActionType.UPDATE_TASKS, updateTasks);
+    yield takeEvery(ActionType.REMOVE_TASKS, removeTasks);
 }

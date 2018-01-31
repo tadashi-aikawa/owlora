@@ -12,6 +12,7 @@ interface SyncService {
         taskUpdateParameters: TaskUpdateParameter[],
         config: CommonConfigValue
     ): Promise<Dictionary<Task>>;
+    removeTasks(token: string, ids: number[], config: CommonConfigValue): Promise<Dictionary<Task>>;
 }
 
 export default SyncService;

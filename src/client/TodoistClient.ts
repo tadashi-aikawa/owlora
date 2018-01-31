@@ -8,16 +8,20 @@ const baseURL = 'https://todoist.com/API/v7/';
 const dueDateUtcReplacer = (key, value) =>
     (key === 'due_date_utc' && value === '') ? null : value;
 
-export interface Args {
+export interface UpdateArgs {
     id: number;
     due_date_utc?: string;
     date_string?: string;
 }
 
+export interface DeleteArgs {
+    ids: number[];
+}
+
 interface Command {
     type: string;
     uuid: string;
-    args: Args;
+    args: UpdateArgs | DeleteArgs;
 }
 
 function sync(token: string, resourceTypes: string[], commands?: Command[]): Promise<TodoistAll> {
@@ -33,7 +37,7 @@ function sync(token: string, resourceTypes: string[], commands?: Command[]): Pro
     ).then((r: any) => r.data);
 }
 
-const updateTasks = (token: string, argsList: Args[]) =>
+const updateTasks = (token: string, argsList: UpdateArgs[]) =>
     // TODO: Remove projects
     sync(token, ['items', 'projects'], argsList.map(x => ({
         type: "item_update",
@@ -41,10 +45,18 @@ const updateTasks = (token: string, argsList: Args[]) =>
         args: x
     })));
 
+const removeTasks = (token: string, ids: number[]) =>
+    sync(token, ['items', 'projects'], [{
+        type: "item_delete",
+        uuid: udvi4u(),
+        args: {ids}
+    }]);
+
 const fetchAll = (token: string): Promise<TodoistAll> =>
     sync(token, ['labels', 'projects', 'items']);
 
 export {
     updateTasks,
+    removeTasks,
     fetchAll,
 }

@@ -29,6 +29,7 @@ interface TaskFeedsProps {
     taskOrder: Order;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 const TaskFeeds = (props: TaskFeedsProps) =>
@@ -39,7 +40,9 @@ const TaskFeeds = (props: TaskFeedsProps) =>
             .map(t => (
                 <TaskFeed key={t.id}
                           task={t}
-                          onUpdate={props.onUpdateTask}/>
+                          onUpdate={props.onUpdateTask}
+                          onRemove={props.onRemoveTask}
+                />
             ))
             .value()
     }</div>;

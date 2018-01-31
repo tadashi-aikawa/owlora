@@ -10,6 +10,7 @@ import {firebaseStateReducer} from 'react-redux-firebase'
 import {SharedState} from "../states/SharedState";
 import {StorageState} from '../states/StorageState';
 import Filter from '../models/Filter';
+import Task from "../models/Task";
 
 
 const INITIAL_APP_STATE: AppState = {
@@ -113,6 +114,24 @@ const appState = (state: AppState = INITIAL_APP_STATE, action: Actions): AppStat
                 error: null,
             });
         case ActionType.ERROR_UPDATE_TASKS:
+            return Object.assign({}, state, {
+                error: action.error,
+            });
+        case ActionType.REMOVE_TASKS:
+            return Object.assign({}, state, {
+                tasksById: _(state.tasksById)
+                    .values<Task>()
+                    .reject<Task>(x => _.includes(action.payload, x.id))
+                    .keyBy(x => x.id)
+                    .value()
+            });
+        case ActionType.SUCCESS_REMOVE_TASKS:
+            return Object.assign({}, state, {
+                tasksById: action.payload,
+                isSyncing: false,
+                error: null,
+            });
+        case ActionType.ERROR_REMOVE_TASKS:
             return Object.assign({}, state, {
                 error: action.error,
             });
