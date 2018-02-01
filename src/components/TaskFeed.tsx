@@ -57,7 +57,8 @@ interface TaskFeedProps {
                     props.onRemove(props.task.id);
                     break;
                 default:
-                    // TODO: error
+                    // TODO
+                    console.error('Unexpected error.')
             }
         },
     },

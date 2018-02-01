@@ -23,6 +23,7 @@ export interface SealProps {
     isDragging?: boolean;
 
     onUpdate: (parameter: TaskUpdateParameter) => void;
+    onRemove: (id: number) => void;
 }
 
 @DragSource(
@@ -42,12 +43,22 @@ export interface SealProps {
                 return;
             }
 
-            props.onUpdate({
-                id: props.id,
-                name: props.name,
-                dueDate: monitor.getDropResult().date,
-                dateString: monitor.getDropResult().dateString
-            });
+            switch (monitor.getDropResult().type) {
+                case "update":
+                    props.onUpdate({
+                        id: props.id,
+                        name: props.name,
+                        dueDate: monitor.getDropResult().date,
+                        dateString: monitor.getDropResult().dateString,
+                    });
+                    break;
+                case "remove":
+                    props.onRemove(props.id);
+                    break;
+                default:
+                    // TODO
+                    console.error('Unexpected error.')
+            }
         }
     },
     (connect, monitor) => ({

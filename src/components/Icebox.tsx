@@ -109,6 +109,7 @@ export default class extends Component<IceboxProps> {
                                     color={t.sealColor as SemanticCOLORS}
                                     date={t.dueDate}
                                     onUpdate={this.props.onUpdateTask}
+                                    onRemove={this.props.onRemoveTask}
                                 />
                             ))}
                     {this.props.milestone &&
@@ -124,6 +125,7 @@ export default class extends Component<IceboxProps> {
                                     size={t.size}
                                     date={t.dueDate}
                                     onUpdate={this.props.onUpdateTask}
+                                    onRemove={this.props.onRemoveTask}
                                 />
                             ))}
                     <Divider horizontal>{estimatedTasks.filter(applyFilter).length} Tasks</Divider>

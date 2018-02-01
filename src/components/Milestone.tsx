@@ -24,6 +24,7 @@ export interface MilestoneProps {
     isDragging?: boolean;
 
     onUpdate: (parameter: TaskUpdateParameter) => void;
+    onRemove: (id: number) => void;
 }
 
 
@@ -45,12 +46,22 @@ export interface MilestoneProps {
                 return;
             }
 
-            props.onUpdate({
-                id: props.id,
-                name: props.name,
-                dueDate: monitor.getDropResult().date,
-                dateString: monitor.getDropResult().dateString
-            });
+            switch (monitor.getDropResult().type) {
+                case "update":
+                    props.onUpdate({
+                        id: props.id,
+                        name: props.name,
+                        dueDate: monitor.getDropResult().date,
+                        dateString: monitor.getDropResult().dateString,
+                    });
+                    break;
+                case "remove":
+                    props.onRemove(props.id);
+                    break;
+                default:
+                    // TODO
+                    console.error('Unexpected error.')
+            }
         }
     },
     (connect, monitor) => ({

@@ -16,7 +16,7 @@ import {
     SemanticCOLORS,
     Statistic,
 } from 'semantic-ui-react';
-import {Moment, now} from 'moment';
+import {Moment} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
@@ -225,6 +225,7 @@ export default class extends Component<DailyCardProps> {
                                             color={t.sealColor as SemanticCOLORS}
                                             date={t.dueDate}
                                             onUpdate={this.props.onUpdateTask}
+                                            onRemove={this.props.onRemoveTask}
                             />)
                     }
                     {
@@ -248,6 +249,7 @@ export default class extends Component<DailyCardProps> {
                                                  size={t.size}
                                                  date={t.dueDate}
                                                  onUpdate={this.props.onUpdateTask}
+                                                 onRemove={this.props.onRemoveTask}
                             />)}
                     <Divider horizontal>
                         <Popup flowing hoverable
