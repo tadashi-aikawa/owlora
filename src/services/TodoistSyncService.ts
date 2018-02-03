@@ -122,6 +122,11 @@ class TodoistSyncService implements SyncService {
         );
         return convertToTasks(res.items, res.projects, config);
     }
+
+    async removeTasks(token: string, ids: number[], config: CommonConfigValue): Promise<Dictionary<Task>> {
+        const res: TodoistAll = await TodoistClient.removeTasks(token, ids);
+        return convertToTasks(res.items, res.projects, config);
+    }
 }
 
 export default TodoistSyncService

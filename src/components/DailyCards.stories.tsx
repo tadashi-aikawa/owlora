@@ -68,6 +68,7 @@ storiesOf("DailyCards", module)
             numberOfCardsPerRow={number("numberOfCardsPerRow", 5)}
             onlyWeekday={boolean("onlyWeekday", false)}
             onUpdateTask={action}
+            onRemoveTask={action}
         />
     ))
     .add("Filter", () => (
@@ -102,5 +103,6 @@ storiesOf("DailyCards", module)
                 word: "Task[3-8]",
             })}
             onUpdateTask={action}
+            onRemoveTask={action}
         />
     ));

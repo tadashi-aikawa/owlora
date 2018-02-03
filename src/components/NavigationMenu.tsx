@@ -14,6 +14,7 @@ import UiConfig from '../models/UiConfig';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
 import Emojify from 'react-emojione';
+import Trashbox from "./Trashbox";
 
 const LOGO = require('../../owlora.png');
 
@@ -304,6 +305,9 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                 />
                             </Modal.Content>
                         </Modal>
+                    </Menu.Item>
+                    <Menu.Item>
+                        <Trashbox/>
                     </Menu.Item>
                     <Menu.Item>
                         <Menu.Item name='logout' onClick={this.props.onLogout}/>

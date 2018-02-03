@@ -16,6 +16,10 @@ enum ActionType {
     SUCCESS_UPDATE_TASKS = 'SUCCESS_UPDATE_TASKS',
     ERROR_UPDATE_TASKS = 'ERROR_UPDATE_TASKS',
 
+    REMOVE_TASKS = 'REMOVE_TASKS',
+    SUCCESS_REMOVE_TASKS = 'SUCCESS_REMOVE_TASKS',
+    ERROR_REMOVE_TASKS = 'ERROR_REMOVE_TASKS',
+
     UPDATE_CONFIG = 'UPDATE_CONFIG',
     UPDATE_UI_CONFIG = 'UPDATE_UI_CONFIG',
     UPDATE_FILTER = 'UPDATE_FILTER',
@@ -55,6 +59,21 @@ export interface SuccessUpdateTasksAction extends Action {
 
 export interface ErrorUpdateTasksAction extends Action {
     type: ActionType.ERROR_UPDATE_TASKS;
+    error: Error;
+}
+
+export interface RemoveTasksAction extends Action {
+    type: ActionType.REMOVE_TASKS;
+    payload: number[];
+}
+
+export interface SuccessRemoveTasksAction extends Action {
+    type: ActionType.SUCCESS_REMOVE_TASKS;
+    payload: Dictionary<Task>;
+}
+
+export interface ErrorRemoveTasksAction extends Action {
+    type: ActionType.ERROR_REMOVE_TASKS;
     error: Error;
 }
 
@@ -112,6 +131,9 @@ export type Actions =
     UpdateTasksAction |
     SuccessUpdateTasksAction |
     ErrorUpdateTasksAction |
+    RemoveTasksAction |
+    SuccessRemoveTasksAction |
+    ErrorRemoveTasksAction |
 
     UpdateConfigAction |
     UpdateUiConfigAction |
@@ -145,6 +167,18 @@ export function successUpdateTasks(tasksById: Dictionary<Task>): SuccessUpdateTa
 
 export function errorUpdateTasks(error: Error): ErrorUpdateTasksAction {
     return {type: ActionType.ERROR_UPDATE_TASKS, error}
+}
+
+export function removeTasks(ids: number[]): RemoveTasksAction {
+    return {type: ActionType.REMOVE_TASKS, payload: ids}
+}
+
+export function successRemoveTasks(tasksById: Dictionary<Task>): SuccessRemoveTasksAction {
+    return {type: ActionType.SUCCESS_REMOVE_TASKS, payload: tasksById}
+}
+
+export function errorRemoveTasks(error: Error): ErrorRemoveTasksAction {
+    return {type: ActionType.ERROR_REMOVE_TASKS, error}
 }
 
 export function login(): LoginAction {

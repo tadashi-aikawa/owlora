@@ -15,6 +15,7 @@ export interface EstimateIconGroupProps {
     taskOrderInPopup: Order;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 const EstimateIconGroup = (props: EstimateIconGroupProps) =>
@@ -55,6 +56,7 @@ const EstimateIconGroup = (props: EstimateIconGroupProps) =>
                                    taskSortField={props.taskSortFieldInPopup}
                                    taskOrder={props.taskOrderInPopup}
                                    onUpdateTask={props.onUpdateTask}
+                                   onRemoveTask={props.onRemoveTask}
                         />
                     </Popup>
                 ))

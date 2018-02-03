@@ -16,7 +16,7 @@ import {
     SemanticCOLORS,
     Statistic,
 } from 'semantic-ui-react';
-import {Moment, now} from 'moment';
+import {Moment} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
 import TaskSortField from '../constants/TaskSortField';
@@ -118,6 +118,7 @@ export interface DailyCardProps {
     canDrop?: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 
@@ -130,6 +131,7 @@ export interface DailyCardProps {
             }
 
             return {
+                type: "update",
                 date: props.date
             };
         },
@@ -207,6 +209,7 @@ export default class extends Component<DailyCardProps> {
                                            taskSortField={this.props.taskSortField}
                                            taskOrder={this.props.taskOrder}
                                            onUpdateTask={this.props.onUpdateTask}
+                                           onRemoveTask={this.props.onRemoveTask}
                                 />
                             </Popup>
                         )}
@@ -222,6 +225,7 @@ export default class extends Component<DailyCardProps> {
                                             color={t.sealColor as SemanticCOLORS}
                                             date={t.dueDate}
                                             onUpdate={this.props.onUpdateTask}
+                                            onRemove={this.props.onRemoveTask}
                             />)
                     }
                     {
@@ -245,6 +249,7 @@ export default class extends Component<DailyCardProps> {
                                                  size={t.size}
                                                  date={t.dueDate}
                                                  onUpdate={this.props.onUpdateTask}
+                                                 onRemove={this.props.onRemoveTask}
                             />)}
                     <Divider horizontal>
                         <Popup flowing hoverable
@@ -260,6 +265,7 @@ export default class extends Component<DailyCardProps> {
                                        taskSortField={this.props.taskSortField}
                                        taskOrder={this.props.taskOrder}
                                        onUpdateTask={this.props.onUpdateTask}
+                                       onRemoveTask={this.props.onRemoveTask}
                             />
                         </Popup>
                     </Divider>
@@ -283,7 +289,9 @@ export default class extends Component<DailyCardProps> {
                         <TaskFeeds tasks={estimatedTasks.filter(applyFilter)}
                                    taskSortField={this.props.taskSortField}
                                    taskOrder={this.props.taskOrder}
-                                   onUpdateTask={this.props.onUpdateTask}/>
+                                   onUpdateTask={this.props.onUpdateTask}
+                                   onRemoveTask={this.props.onRemoveTask}
+                        />
                     </div>
                 </Card.Content>
                 <Card.Content extra>
@@ -292,6 +300,7 @@ export default class extends Component<DailyCardProps> {
                         taskSortFieldInPopup={this.props.taskSortField}
                         taskOrderInPopup={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
             </Card>

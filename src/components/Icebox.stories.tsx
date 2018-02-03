@@ -90,5 +90,6 @@ storiesOf("Icebox", module)
             filter={{ iconDisabledMap: {} }}
             width={number("width", 350)}
             onUpdateTask={action}
+            onRemoveTask={action}
         />
     ));

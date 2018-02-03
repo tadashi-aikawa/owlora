@@ -112,6 +112,7 @@ storiesOf("DailyCard", module)
             warning={boolean("warning", true)}
             isTasksExpanded={boolean("isTasksExpanded", true)}
             onUpdateTask={action}
+            onRemoveTask={action}
         />
     ))
     .add("Appearance", () => (
@@ -140,6 +141,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded={boolean("(1)isTasksExpanded", false)}
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
             <DailyCard
                 date={toDate("2099/01/01")}
@@ -165,6 +167,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded={boolean("(2)isTasksExpanded", true)}
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
         </Card.Group>
     ))
@@ -214,6 +217,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -229,6 +233,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -248,6 +253,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -263,6 +269,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         );
@@ -292,6 +299,7 @@ storiesOf("DailyCard", module)
                     seal
                     warning
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -324,6 +332,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -356,6 +365,7 @@ storiesOf("DailyCard", module)
                     seal
                     warning
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -379,6 +389,7 @@ storiesOf("DailyCard", module)
                     seal
                     warning
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         );
@@ -405,6 +416,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
             <DailyCard
                 date={toDate("2099/01/01")}
@@ -426,6 +438,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
         </Card.Group>
     ))
@@ -451,6 +464,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
             <DailyCard
                 date={toDate("2099/01/01")}
@@ -472,6 +486,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
             <DailyCard
                 date={toDate("2099/01/01")}
@@ -493,6 +508,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
         </Card.Group>
     ))
@@ -523,6 +539,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -552,6 +569,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -577,6 +595,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         </WithNotes>
@@ -607,6 +626,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -631,6 +651,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         </WithNotes>
@@ -658,6 +679,7 @@ storiesOf("DailyCard", module)
                     warning={boolean("(1) warning", true)}
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -679,6 +701,7 @@ storiesOf("DailyCard", module)
                     warning={boolean("(2) warning", false)}
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -700,6 +723,7 @@ storiesOf("DailyCard", module)
                     warning={boolean("(3) warning", true)}
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -721,6 +745,7 @@ storiesOf("DailyCard", module)
                     warning={boolean("(4) warning", false)}
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         </WithNotes>
@@ -748,6 +773,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -769,6 +795,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -790,6 +817,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -811,6 +839,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -832,6 +861,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -853,6 +883,7 @@ storiesOf("DailyCard", module)
                     warning
                     isTasksExpanded
                     onUpdateTask={action}
+                    onRemoveTask={action}
                 />
             </Card.Group>
         </WithNotes>
@@ -886,6 +917,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
         </Card.Group>
     ))
@@ -948,6 +980,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
             <DailyCard
                 date={toDate("2099/01/01")}
@@ -1007,6 +1040,7 @@ storiesOf("DailyCard", module)
                 warning
                 isTasksExpanded
                 onUpdateTask={action}
+                onRemoveTask={action}
             />
         </Card.Group>
     ))
@@ -1027,6 +1061,7 @@ storiesOf("DailyCard", module)
             warning
             isTasksExpanded
             onUpdateTask={action}
+            onRemoveTask={action}
         />
     ))
     .add("Past", () => (
@@ -1049,6 +1084,7 @@ storiesOf("DailyCard", module)
             warning
             isTasksExpanded
             onUpdateTask={action}
+            onRemoveTask={action}
             past
         />
     ));

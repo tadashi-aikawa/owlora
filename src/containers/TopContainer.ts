@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import Top from '../components/Top';
 import {
     login, logout, sync, updateConfig, updateFilter, updateTasks, updateTodoistToken,
-    updateUiConfig
+    updateUiConfig, removeTasks
 } from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
@@ -53,6 +53,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         onUpdateTask: (parameter: TaskUpdateParameter) => {
             dispatch(updateTasks([parameter]));
+        },
+        onRemoveTask: (id: number) => {
+            dispatch(removeTasks([id]));
         },
         onUpdateToken: (token: string) => {
             dispatch(updateTodoistToken(token));

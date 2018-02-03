@@ -27,6 +27,7 @@ export interface IceboxProps {
     canDrop?: boolean;
 
     onUpdateTask: (parameter: TaskUpdateParameter) => void;
+    onRemoveTask: (id: number) => void;
 }
 
 @DropTarget(
@@ -38,6 +39,7 @@ export interface IceboxProps {
             }
 
             return {
+                type: "update",
                 date: "",
                 dateString: "",
             };
@@ -107,6 +109,7 @@ export default class extends Component<IceboxProps> {
                                     color={t.sealColor as SemanticCOLORS}
                                     date={t.dueDate}
                                     onUpdate={this.props.onUpdateTask}
+                                    onRemove={this.props.onRemoveTask}
                                 />
                             ))}
                     {this.props.milestone &&
@@ -122,6 +125,7 @@ export default class extends Component<IceboxProps> {
                                     size={t.size}
                                     date={t.dueDate}
                                     onUpdate={this.props.onUpdateTask}
+                                    onRemove={this.props.onRemoveTask}
                                 />
                             ))}
                     <Divider horizontal>{estimatedTasks.filter(applyFilter).length} Tasks</Divider>
@@ -130,6 +134,7 @@ export default class extends Component<IceboxProps> {
                         taskSortField={this.props.taskSortField}
                         taskOrder={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
                 <Card.Content extra>
@@ -138,6 +143,7 @@ export default class extends Component<IceboxProps> {
                         taskSortFieldInPopup={this.props.taskSortField}
                         taskOrderInPopup={this.props.taskOrder}
                         onUpdateTask={this.props.onUpdateTask}
+                        onRemoveTask={this.props.onRemoveTask}
                     />
                 </Card.Content>
             </Card>
