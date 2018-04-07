@@ -2,9 +2,9 @@ import * as _ from "lodash";
 import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { WithNotes } from "@storybook/addon-notes";
 import { action } from "@storybook/addon-actions";
 import { Card } from "semantic-ui-react";
+import { withScreenshot } from 'storybook-chrome-screenshot';
 
 import Task from "../models/Task";
 import TaskSortField from "../constants/TaskSortField";
@@ -46,6 +46,11 @@ storiesOf("DailyCard", module)
     .addDecorator(DnDWrapperDecorator)
     .addDecorator(withKnobs)
     .addDecorator(CoolPaddingDecorator)
+    .addDecorator(withScreenshot({
+      viewport: {
+        width: 1920,
+      }
+    }))
     .add("Summary", () => (
         <DailyCard
             date={toDate(text("Date", "2099/01/01"))}
@@ -513,7 +518,6 @@ storiesOf("DailyCard", module)
         </Card.Group>
     ))
     .add("Milestone", () => (
-        <WithNotes notes="Even if Milestone has a estimated minutes, ignored estimated them">
             <Card.Group>
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -598,10 +602,8 @@ storiesOf("DailyCard", module)
                     onRemoveTask={action}
                 />
             </Card.Group>
-        </WithNotes>
     ))
     .add("Seal", () => (
-        <WithNotes notes="Even if Seal has a estimated minutes, ignored estimated them">
             <Card.Group>
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -654,10 +656,8 @@ storiesOf("DailyCard", module)
                     onRemoveTask={action}
                 />
             </Card.Group>
-        </WithNotes>
     ))
     .add("Warning", () => (
-        <WithNotes notes="">
             <Card.Group>
                 <DailyCard
                     date={toDate("2099/01/01")}
@@ -748,16 +748,13 @@ storiesOf("DailyCard", module)
                     onRemoveTask={action}
                 />
             </Card.Group>
-        </WithNotes>
     ))
     .add("Life status", () => (
-        <WithNotes notes="Lack < ♥ 0 <= Danger < ♥20% <= Warning < ♥40% <= Fine">
             <Card.Group>
                 <DailyCard
                     date={toDate("2099/01/01")}
                     taskSortField={TaskSortField.PROJECT_NAME}
-                    taskOrder={Order.ASC}
-                    minutesToUsePerDay={100}
+                    taskOrder={Order.ASC} minutesToUsePerDay={100}
                     minutesToUsePerSpecificDays={{}}
                     filter={{ iconDisabledMap: {} }}
                     tasks={[
@@ -886,7 +883,6 @@ storiesOf("DailyCard", module)
                     onRemoveTask={action}
                 />
             </Card.Group>
-        </WithNotes>
     ))
     .add("Unknown estimates", () => (
         <Card.Group>

@@ -1,6 +1,9 @@
 import { configure } from '@storybook/react';
-import 'loki/configure-react';
 import '../node_modules/semantic-ui-css/semantic.min.css';
+import { addDecorator } from '@storybook/react';
+import { initScreenshot } from 'storybook-chrome-screenshot';
+
+addDecorator(initScreenshot());
 
 const req = require.context('../src/components', true, /\.stories\.tsx$/);
 
@@ -9,3 +12,4 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+

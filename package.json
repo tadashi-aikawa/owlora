@@ -6,6 +6,7 @@
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "screenshot": "storybook-chrome-screenshot -p 6006 -c .storybook --parallel 2",
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress --host 0.0.0.0 --watch-poll",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
@@ -68,10 +69,10 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-knobs": "^3.4.0",
     "@storybook/addon-notes": "^3.3.11",
-    "@storybook/addon-storyshots": "^3.3.11",
-    "@storybook/react": "^3.3.11",
+    "@storybook/addon-storyshots": "^3.4.0",
+    "@storybook/react": "^3.4.0",
     "@types/jest": "^22.1.0",
     "awesome-typescript-loader": "^3.4.1",
     "cross-conf-env": "^1.1.2",
@@ -80,7 +81,6 @@
     "image-loader": "^0.0.1",
     "jest": "^22.1.4",
     "jest-cli": "^22.1.4",
-    "loki": "github:tadashi-aikawa/loki#master",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.10.2",
     "react-test-renderer": "^16.2.0",
@@ -89,6 +89,7 @@
     "reg-publish-s3-plugin": "^0.7.0",
     "reg-suit": "^0.7.0",
     "source-map-loader": "^0.2.3",
+    "storybook-chrome-screenshot": "^1.1.0-alpha.1",
     "style-loader": "^0.20.1",
     "ts-jest": "^22.0.1",
     "typescript": "^2.6.2",
@@ -97,26 +98,5 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
-  },
-  "loki": {
-    "configurations": {
-      "chrome.laptop": {
-        "target": "chrome.app",
-        "waitBeforeCapture": [
-          {
-            "kind": "^DailyCard$",
-            "story": "^Summary$",
-            "millSec": 10000
-          },
-          {
-            "kind": ".+",
-            "story": ".+",
-            "millSec": 1000
-          }
-        ],
-        "width": 1920,
-        "height": 0
-      }
-    }
   }
 }
