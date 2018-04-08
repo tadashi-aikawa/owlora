@@ -21,24 +21,31 @@ server = app.listen(config.port);
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
 
-  for (const kind of Object.keys(config.storiesByKind)) {
-    console.log(`--------- ${kind} ----------`)
-    for (const story of config.storiesByKind[kind]) {
-      page.setViewport({width: story.width || config.viewport.width || 1, height: story.height || config.viewport.height || 1})
-      const res = await page.goto(`${HOST}/iframe.html?selectedKind=${kind}&selectedStory=${story.story}`, {waitUntil: 'networkidle0'})
-      const status = res.status()
-      if (status < 400) {
-        await page.screenshot({
-          path: `${config.outdir}/${kind}-${story.title || story.story}.png`, fullPage: true
-        })
+  try {
+    for (const kind of Object.keys(config.storiesByKind)) {
+      console.log(`--------- ${kind} ----------`)
+      for (const story of config.storiesByKind[kind]) {
+        page.setViewport({width: story.width || config.viewport.width || 1, height: story.height || config.viewport.height || 1})
+        const res = await page.goto(`${HOST}/iframe.html?selectedKind=${kind}&selectedStory=${story.story}`, {waitUntil: 'networkidle0'})
+        const status = res.status()
+        if (status < 400) {
+          await page.screenshot({
+            path: `${config.outdir}/${kind}-${story.title || story.story}.png`, fullPage: true
+          })
+        }
+        console.log(`  >>> ${status}: ${story.title || story.story}`)
       }
-      console.log(`  >>> ${status}: ${story.title || story.story}`)
     }
+  } catch(e) {
+    console.log(e)
+    process.exit(1)
+  } finally {
+    console.log('Close browser');
+    await browser.close();
+
+    console.log('Stop storybook server');
+    server.close();
   }
 
-  console.log('Close browser');
-  await browser.close();
-
-  console.log('Stop storybook server');
-  server.close();
 })();
+
