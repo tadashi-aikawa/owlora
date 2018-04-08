@@ -51,7 +51,7 @@ build-image: ## Build docker image
 
 visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_URL` and `BUCKET_NAME`.
 	@echo 'Starting $@'
-	@cat make/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
+	@cat templates/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
 	@echo 'Finished $@'
 
 visualized-test: build-image ## Visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.

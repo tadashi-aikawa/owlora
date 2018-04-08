@@ -4,7 +4,6 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { WithNotes } from "@storybook/addon-notes";
 import { action } from "@storybook/addon-actions";
-import { withScreenshot } from 'storybook-chrome-screenshot';
 
 import Task from "../models/Task";
 import TaskSortField from "../constants/TaskSortField";
@@ -41,11 +40,6 @@ storiesOf("Icebox", module)
     .addDecorator(DnDWrapperDecorator)
     .addDecorator(withKnobs)
     .addDecorator(CoolPaddingDecorator)
-    // .addDecorator(withScreenshot({
-    //   viewport: {
-    //     width: 1920,
-    //   }
-    // }))
     .add("Summary", () => (
         <Icebox
             taskSortField={select("Task sort field", TaskSortField.toObject, TaskSortField.PROJECT_NAME)}

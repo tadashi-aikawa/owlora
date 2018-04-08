@@ -4,7 +4,6 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { Card } from "semantic-ui-react";
-import { withScreenshot } from 'storybook-chrome-screenshot';
 
 import Task from "../models/Task";
 import TaskSortField from "../constants/TaskSortField";
@@ -46,11 +45,6 @@ storiesOf("DailyCard", module)
     .addDecorator(DnDWrapperDecorator)
     .addDecorator(withKnobs)
     .addDecorator(CoolPaddingDecorator)
-    .addDecorator(withScreenshot({
-      viewport: {
-        width: 1920,
-      }
-    }))
     .add("Summary", () => (
         <DailyCard
             date={toDate(text("Date", "2099/01/01"))}
