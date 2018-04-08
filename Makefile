@@ -85,4 +85,9 @@ release:  ## Release
 
 	@echo '5. Deploy'
 	npm run deploy
+
+	@echo 'Success All!!'
+	@echo 'Create a pull request and merge to master!!'
+	@echo 'https://github.com/tadashi-aikawa/owlora/compare/$(version)?expand=1'
+
 	@echo 'End $@'

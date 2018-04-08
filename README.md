@@ -117,6 +117,11 @@ $ npm build
 
 ### Release
 
-1. Increment version in `package.json`
-2. `npm run release`
+Before release, you need to `Confirm that your branch name equals release version`
+
+```
+$ make release
+```
+
+Finally, create pull request and merge to master!!
 
