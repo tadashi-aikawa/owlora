@@ -4,6 +4,7 @@ const serveStatic = require('serve-static');
 const fs = require('fs');
 const del = require('del');
 const config = JSON.parse(fs.readFileSync('./storybook-camera.json', 'utf8'));
+const HOST = `http://localhost${config.port}`;
 
 console.log(`Remove ${config.outdir} if exists`)
 del.sync([config.outdir]);
@@ -24,7 +25,7 @@ server = app.listen(config.port);
     console.log(`--------- ${kind} ----------`)
     for (const story of config.storiesByKind[kind]) {
       page.setViewport({width: story.width || config.viewport.width || 1, height: story.height || config.viewport.height || 1})
-      const res = await page.goto(`${config.base}/iframe.html?selectedKind=${kind}&selectedStory=${story.story}`, {waitUntil: 'networkidle0'})
+      const res = await page.goto(`${HOST}/iframe.html?selectedKind=${kind}&selectedStory=${story.story}`, {waitUntil: 'networkidle0'})
       const status = res.status()
       if (status < 400) {
         await page.screenshot({

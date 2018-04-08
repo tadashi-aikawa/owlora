@@ -1,5 +1,4 @@
 {
-  "base": "http://localhost:8000",
   "outdir": ".captures",
   "storydir": "storybook-static",
   "port": 8000,
@@ -25,8 +24,7 @@
     ],
     "DailyCards": [
       {"story": "Summary"},
-      {"story": "Summary", "title": "Summary 700width", "width": 700},
-      {"story": "Summary", "title": "Summary 350width", "width": 350},
+      {"story": "Summary", "title": "Summary 700width", "width": 1368},
       {"story": "Filter"}
     ],
     "Icebox": [
