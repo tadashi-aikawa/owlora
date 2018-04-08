@@ -4,7 +4,7 @@ const serveStatic = require('serve-static');
 const fs = require('fs');
 const del = require('del');
 const config = JSON.parse(fs.readFileSync('./storybook-camera.json', 'utf8'));
-const HOST = `http://localhost${config.port}`;
+const HOST = `http://localhost:${config.port}`;
 
 console.log(`Remove ${config.outdir} if exists`)
 del.sync([config.outdir]);
