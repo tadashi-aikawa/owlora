@@ -25,6 +25,7 @@ RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
 # Run everything after as non-privileged user.
 USER pptruser
 
+
 WORKDIR /usr/src/app
 
 COPY package-lock.json /usr/src/app/
