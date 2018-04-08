@@ -16,9 +16,7 @@
     "publish-report": "reg-suit publish",
     "visualized-test": "run-s build-storybook clean-visualized-test capture-images compare-images publish-report",
     "build": "webpack --config webpack.config.pro.js",
-    "deploy": "firebase deploy --project owlora-mamansoft",
-    "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
-    "release": "run-s test build release:github deploy"
+    "deploy": "firebase deploy --project owlora-mamansoft"
   },
   "jest": {
     "transform": {

@@ -11,6 +11,9 @@ help: ## Print this help
 	@echo 'Targets:'
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+-include .env
+version := $(shell git rev-parse --abbrev-ref HEAD)
+
 #----
 
 DOCKER_PREFIX ?=
@@ -65,3 +68,21 @@ visualized-test-quietly: build-image ## Visualized test without notification. Ne
 	@$(call run-npm-command,visualized-test)
 	@echo 'Finished $@'
 
+
+release:  ## Release
+	@echo 'Start $@'
+	@echo '1. Check tests is ok'
+	npm run test
+
+	@echo '2. Check build is ok'
+	npm run build
+
+	@echo '3. Version up'
+	npm version $(version)
+
+	@echo '4. Push'
+	git push
+
+	@echo '5. Deploy'
+	npm run deploy
+	@echo 'End $@'
