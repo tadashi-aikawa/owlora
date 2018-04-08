@@ -1,6 +1,6 @@
 {
   "name": "owlora",
-  "version": "0.42.0",
+  "version": "0.43.0",
   "main": "index.js",
   "repository": "https://github.com/tadashi-aikawa/owlora.git",
   "author": "tadashi-aikawa <syou.maman@gmail.com>",
@@ -8,17 +8,15 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress --host 0.0.0.0 --watch-poll",
     "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "test": "jest",
-    "clean-visualized-test": "rm -rf .captures .reg",
-    "capture-images": "(cd storybook-static && python -m SimpleHTTPServer 6006) & CI=yes loki --chromeConcurrency 1 --output .captures --chromeFlags='--headless --disable-gpu --hide-scrollbars --no-sandbox'; pkill python",
+    "clean-visualized-test": "rm -rf .reg",
+    "capture-images": "node storybook-camera.js",
     "compare-images": "reg-suit sync-expected && reg-suit compare",
     "publish-report": "reg-suit publish",
     "visualized-test": "run-s build-storybook clean-visualized-test capture-images compare-images publish-report",
     "build": "webpack --config webpack.config.pro.js",
-    "build-storybook": "build-storybook",
-    "deploy": "firebase deploy --project owlora-mamansoft",
-    "release:github": "cross-conf-env git commit -am \":package: Deploy $npm_package_version\" && cross-conf-env git tag $npm_package_version -m $npm_package_version && git push --tags && git push",
-    "release": "run-s test build release:github deploy"
+    "deploy": "firebase deploy --project owlora-mamansoft"
   },
   "jest": {
     "transform": {
@@ -68,21 +66,22 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-knobs": "^3.4.0",
     "@storybook/addon-notes": "^3.3.11",
-    "@storybook/addon-storyshots": "^3.3.11",
-    "@storybook/react": "^3.3.11",
+    "@storybook/addon-storyshots": "^3.4.0",
+    "@storybook/react": "^3.4.0",
     "@types/jest": "^22.1.0",
     "awesome-typescript-loader": "^3.4.1",
     "cross-conf-env": "^1.1.2",
     "css-loader": "^0.28.9",
+    "del": "^3.0.0",
     "firebase-tools": "^3.17.4",
     "image-loader": "^0.0.1",
     "jest": "^22.1.4",
     "jest-cli": "^22.1.4",
-    "loki": "github:tadashi-aikawa/loki#master",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.10.2",
+    "puppeteer": "^1.2.0",
     "react-test-renderer": "^16.2.0",
     "reg-keygen-git-hash-plugin": "^0.7.0",
     "reg-notify-slack-plugin": "^0.7.0",
@@ -97,26 +96,5 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
-  },
-  "loki": {
-    "configurations": {
-      "chrome.laptop": {
-        "target": "chrome.app",
-        "waitBeforeCapture": [
-          {
-            "kind": "^DailyCard$",
-            "story": "^Summary$",
-            "millSec": 10000
-          },
-          {
-            "kind": ".+",
-            "story": ".+",
-            "millSec": 1000
-          }
-        ],
-        "width": 1920,
-        "height": 0
-      }
-    }
   }
 }

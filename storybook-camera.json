@@ -1,0 +1,35 @@
+{
+  "outdir": ".captures",
+  "storydir": "storybook-static",
+  "port": 8000,
+  "viewport": {
+    "width": 1920
+  },
+  "storiesByKind": {
+    "DailyCard": [
+      {"story": "Summary", "width": 350},
+      {"story": "Appearance", "width": 700},
+      {"story": "Sort"},
+      {"story": "Time lamps"},
+      {"story": "Feed icon", "width": 700},
+      {"story": "Feed color", "width": 700},
+      {"story": "Milestone", "width": 1050},
+      {"story": "Seal", "width": 700},
+      {"story": "Warning"},
+      {"story": "Life status"},
+      {"story": "Unknown estimates", "width": 350},
+      {"story": "Filter", "width": 700},
+      {"story": "Offtime", "width": 350},
+      {"story": "Past", "width": 350}
+    ],
+    "DailyCards": [
+      {"story": "Summary"},
+      {"story": "Summary", "title": "Summary 700width", "width": 1368},
+      {"story": "Filter"}
+    ],
+    "Icebox": [
+      {"story": "Summary", "width": 350}
+    ]
+  }
+}
+

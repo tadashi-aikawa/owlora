@@ -1,9 +1,9 @@
-FROM node:8
+FROM node:8-slim
+
 
 RUN apt-get update && apt-get install -y wget git
 
-# Install Google chrome
-RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# puppeteer dependencies
 RUN apt-get -y install gconf-service \
                        libasound2 \
                        libatk1.0-0 \
@@ -19,7 +19,6 @@ RUN apt-get -y install gconf-service \
                        libnss3 \
                        lsb-release \
                        xdg-utils
-RUN dpkg -i google-chrome-stable_current_amd64.deb
 
 WORKDIR /usr/src/app
 

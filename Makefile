@@ -11,6 +11,9 @@ help: ## Print this help
 	@echo 'Targets:'
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+-include .env
+version := $(shell git rev-parse --abbrev-ref HEAD)
+
 #----
 
 DOCKER_PREFIX ?=
@@ -51,17 +54,40 @@ build-image: ## Build docker image
 
 visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_URL` and `BUCKET_NAME`.
 	@echo 'Starting $@'
-	@cat make/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
+	@cat templates/regconfig-tmp.json | sed -e "s@---WEBHOOK_URL---@$(WEBHOOK_URL)@g" -e "s@---BUCKET_NAME---@$(BUCKET_NAME)@g" > regconfig.json
 	@echo 'Finished $@'
 
 visualized-test: build-image ## Visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-	@echo 'Staring $@' 
+	@echo 'Staring $@'
 	@$(call run-npm-command,visualized-test)
 	@$(call notify-slack,$(SLACK_USER),$(SLACK_CHANNEL),$(SLACK_MESSAGE),$(SLACK_ICON_URL),$(WEBHOOK_URL))
 	@echo 'Finished $@'
 
 visualized-test-quietly: build-image ## Visualized test without notification. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-	@echo 'Staring $@' 
+	@echo 'Staring $@'
 	@$(call run-npm-command,visualized-test)
 	@echo 'Finished $@'
 
+
+release:  ## Release
+	@echo 'Start $@'
+	@echo '1. Check tests is ok'
+	npm run test
+
+	@echo '2. Check build is ok'
+	npm run build
+
+	@echo '3. Version up'
+	npm version $(version)
+
+	@echo '4. Push'
+	git push
+
+	@echo '5. Deploy'
+	npm run deploy
+
+	@echo 'Success All!!'
+	@echo 'Create a pull request and merge to master!!'
+	@echo 'https://github.com/tadashi-aikawa/owlora/compare/$(version)?expand=1'
+
+	@echo 'End $@'

@@ -29,6 +29,9 @@ If you have todoist and google accounts, you can trying [Demo](https://owlora-ma
 For developer
 -------------
 
+Only support for Linux (Not support for windows and mac)
+
+
 ### Optional
 
 If you want to release..
@@ -37,11 +40,13 @@ If you want to release..
 $ npx firebase login
 ```
 
+
 ### Install dependencies
 
 ```
 $ npm i
 ```
+
 
 ### Debug
 
@@ -49,11 +54,13 @@ $ npm i
 $ npm run dev
 ```
 
+
 ### Show storybook
 
 ```
 $ npm run storybook
 ```
+
 
 ### Structual test (Recommended to run by both human and CI)
 
@@ -67,28 +74,13 @@ If results are expected, you run...
 $ npm test -- -u
 ```
 
-### Build
-
-```
-$ npm build
-```
-
-
-CI
-==
-
-### Release
-
-TODO: refactoring
-
-1. Increment version in `package.json`
-2. `npm run release`
 
 ### Visualzed test
 
 #### Requirements
 
-* Linux (Not support for windows and mac)
+If you use Makefile
+
 * Docker
 * Set `WEBHOOK_URL` and `BUCKET_NAME`
 * Set aws credentials to access s3 bucket (ex. `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`)
@@ -100,7 +92,7 @@ TODO: refactoring
 #### Local test after topic branch is committed locally...
 
 ```
-$ make visualized-test-init visualized-test-quietly
+$ npm run build-storybook visualized-test
 ```
 
 #### After PR is created... (**Optional**)
@@ -114,4 +106,22 @@ $ make visualized-test-init visualized-test
 ```
 $ make visualized-test-init visualized-test-quietly
 ```
+
+
+### Build
+
+```
+$ npm build
+```
+
+
+### Release
+
+Before release, you need to `Confirm that your branch name equals release version`
+
+```
+$ make release
+```
+
+Finally, create pull request and merge to master!!
 
