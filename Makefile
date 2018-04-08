@@ -55,13 +55,13 @@ visualized-test-init: ## Preparation of visualized-test. Need to set `WEBHOOK_UR
 	@echo 'Finished $@'
 
 visualized-test: build-image ## Visualized test. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-	@echo 'Staring $@' 
+	@echo 'Staring $@'
 	@$(call run-npm-command,visualized-test)
 	@$(call notify-slack,$(SLACK_USER),$(SLACK_CHANNEL),$(SLACK_MESSAGE),$(SLACK_ICON_URL),$(WEBHOOK_URL))
 	@echo 'Finished $@'
 
 visualized-test-quietly: build-image ## Visualized test without notification. Need to set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-	@echo 'Staring $@' 
+	@echo 'Staring $@'
 	@$(call run-npm-command,visualized-test)
 	@echo 'Finished $@'
 
