@@ -83,7 +83,10 @@ release:  ## Release
 	@echo '4. Push'
 	git push
 
-	@echo '5. Deploy'
+	@echo '5. Rebuild with new version'
+	npm run build
+
+	@echo '6. Deploy'
 	npm run deploy
 
 	@echo 'Success All!!'
