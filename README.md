@@ -26,6 +26,25 @@ If you have todoist and google accounts, you can trying [Demo](https://owlora-ma
 * Google account is used to synchronize configurations which in server(firebase) and client(browser) 
 
 
+Support repeated tasks
+----------------------
+
+- [x] every day
+- [ ] every other day
+- [x] every workday
+- [ ] every other workday
+- [x] every monday
+- [x] every wednesday, friday
+- [x] every tue,sat, sun
+- [x] every other monday
+- [x] every other mon,wed,fri
+- [ ] every 1st mon, wed
+- [ ] every 1,15
+
+* It is going to be supported that not marked
+* It is also be supported that case sensitive
+
+
 For developer
 -------------
 
