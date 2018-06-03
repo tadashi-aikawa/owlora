@@ -47,6 +47,12 @@ define run-npm-command
 endef
 
 
+dev: ## Debug
+	npm run dev
+
+structural-test: ## Structural
+	npm run test
+
 build-image: ## Build docker image
 	@echo 'Starting $@'
 	$(DOCKER_PREFIX) docker build -t $(DOCKER_IMAGE) .

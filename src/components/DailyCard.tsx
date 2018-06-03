@@ -24,7 +24,6 @@ import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import TaskFeeds from "./TaskFeeds";
-import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Emojify from 'react-emojione';
@@ -157,7 +156,6 @@ export default class extends Component<DailyCardProps> {
 
     render() {
         const estimatedTasks: Task[] = _(this.props.tasks)
-            .filter(t => t.repetition !== Repetition.EVERY_DAY && t.repetition !== Repetition.WEEKDAY)
             .reject(t => t.estimatedMinutes === undefined)
             .value();
         const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
