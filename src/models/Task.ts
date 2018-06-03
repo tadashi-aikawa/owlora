@@ -1,6 +1,6 @@
 import {Moment} from 'moment';
-import Repetition from '../constants/Repetition';
 import Size from '../constants/Size';
+import {Repetition} from "./Repetition";
 
 interface Task {
     id: number;
@@ -13,7 +13,7 @@ interface Task {
         start: Moment;
         end: Moment;
     },
-    repetition: Repetition;
+    repetition: Repetition | undefined;
     /** URL or emoji(ex. :bow:) */
     icon: string;
     itemOrder: number;

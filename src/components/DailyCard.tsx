@@ -24,7 +24,6 @@ import Order from '../constants/Order';
 import {DragSource, DropTarget} from 'react-dnd';
 import {findDOMNode} from 'react-dom';
 import TaskFeeds from "./TaskFeeds";
-import Repetition from '../constants/Repetition';
 import Milestone from './Milestone';
 import EstimateIconGroup from './EstimateIconGroup';
 import Emojify from 'react-emojione';

@@ -10,30 +10,74 @@ import Label from '../models/Label';
 import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
-import Repetition from '../constants/Repetition';
+import {Repetition, Pattern, EVERY_DAY, EVERY_WEEK_DAY} from '../models/Repetition';
 import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
 import {CommonConfigValue} from '../models/CommonConfig';
 
+
+const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
+    sun: 0,
+    sunday: 0,
+    mon: 1,
+    monday: 1,
+    tue: 2,
+    tuesday: 2,
+    wed: 3,
+    wednesday: 3,
+    thu: 4,
+    thursday: 4,
+    fri: 5,
+    friday: 5,
+    sat: 6,
+    saturday: 6,
+};
+
+const toDaysOfWeek = (daysOfWeekStr: string): number[] =>
+    daysOfWeekStr.split(',')
+        .map(x => DAY_OF_WEEK_MAPPINGS[x.trim()])
+        .filter(x => x !== undefined);
+
 const toRepetition = (dateString: string): Repetition | undefined => {
     if (!dateString) {
         return undefined;
     }
 
-    const mappings = [
-        {predicate: x => x === '毎日', repetition: Repetition.EVERY_DAY},
-        {predicate: x => x === '平日', repetition: Repetition.WEEKDAY},
-        {predicate: x => x.startsWith('毎週月曜'), repetition: Repetition.EVERY_MONDAY},
-        {predicate: x => x.startsWith('毎週火曜'), repetition: Repetition.EVERY_TUESDAY},
-        {predicate: x => x.startsWith('毎週水曜'), repetition: Repetition.EVERY_WEDNESDAY},
-        {predicate: x => x.startsWith('毎週木曜'), repetition: Repetition.EVERY_THURSDAY},
-        {predicate: x => x.startsWith('毎週金曜'), repetition: Repetition.EVERY_FRIDAY},
-    ];
+    const q: string[] = dateString.replace(", ", ",")
+        .toLowerCase()
+        .split(" ");
 
-    const found = _.find(mappings, m => m.predicate(dateString));
-    return found && found.repetition;
+    if (q[0] !== "every") {
+        return undefined;
+    }
+
+    // "every" or "every other" ??
+    q.shift();
+    let pattern: Pattern = "every";
+
+    if (q[0] === "other") {
+        pattern = "every other";
+        q.shift();
+    }
+
+    if (q[0] === "day") {
+        return EVERY_DAY;
+    }
+
+    if (q[0] === "workday") {
+        return EVERY_WEEK_DAY;
+    }
+
+    // TODO: Fix when implementing more feature..
+    const daysOfWeek: number[] = toDaysOfWeek(q[0]);
+    if (daysOfWeek) {
+        return Repetition.fromDaysOfWeek(daysOfWeek, pattern);
+    }
+
+    console.warn("Unsupported pattern!!");
+    return undefined;
 };
 
 

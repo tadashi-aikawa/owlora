@@ -8,10 +8,10 @@ import Task, {TaskUpdateParameter} from '../models/Task';
 import DailyCard from './DailyCard';
 import TaskSortField from '../constants/TaskSortField';
 import Order from '../constants/Order';
-import Repetition from '../constants/Repetition';
 import * as DateUtil from '../utils/DateUtil';
 import Filter from '../models/Filter';
 import {plusDays, toStartDayOfWeek} from '../utils/DateUtil';
+
 
 const inTheDay = (task: Task, date: Moment): boolean => {
     if (!task.dueDate) {
@@ -22,15 +22,20 @@ const inTheDay = (task: Task, date: Moment): boolean => {
         return true;
     }
 
-    return date.isSameOrAfter(task.dueDate) && _.some([
-        task.repetition === Repetition.EVERY_DAY,
-        task.repetition === Repetition.WEEKDAY && DateUtil.isWeekDay(date),
-        task.repetition === Repetition.EVERY_MONDAY && DateUtil.isMonDay(date),
-        task.repetition === Repetition.EVERY_TUESDAY && DateUtil.isTuesDay(date),
-        task.repetition === Repetition.EVERY_WEDNESDAY && DateUtil.isWednesDay(date),
-        task.repetition === Repetition.EVERY_THURSDAY && DateUtil.isThursDay(date),
-        task.repetition === Repetition.EVERY_FRIDAY && DateUtil.isFriDay(date),
-    ]);
+    if (!task.repetition || !date.isSameOrAfter(task.dueDate)) {
+        return false;
+    }
+
+    if (!_.includes<number>(task.repetition.dayOfWeek, date.day())) {
+        return false;
+    }
+
+    const behindWeek: number = toStartDayOfWeek(date).diff(toStartDayOfWeek(task.dueDate), 'week');
+    if (task.repetition.week === "every other" && behindWeek % 2 !== 0) {
+        return false;
+    }
+
+    return true;
 };
 
 function* momentIterator(begin: Moment, filter: (m: Moment) => boolean, max: number): IterableIterator<Moment> {
