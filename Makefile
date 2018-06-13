@@ -53,6 +53,9 @@ dev: ## Debug
 structural-test: ## Structural
 	npm run test
 
+structural-test-update: ## Structural
+	npm run test -- -u
+
 build-image: ## Build docker image
 	@echo 'Starting $@'
 	$(DOCKER_PREFIX) docker build -t $(DOCKER_IMAGE) .
