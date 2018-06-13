@@ -175,28 +175,40 @@ storiesOf("DailyCard", module)
             createTask({ id: 1, name: "Task1", projectName: "PJ2", dayOrder: 3, estimatedMinutes: 10, icon: ":bow:" }),
             createTask({
                 id: 2,
-                name: "Task2",
+                name: "Task2 (11:00-11:50)",
                 projectName: "PJ1",
                 dayOrder: 2,
                 estimatedMinutes: 50,
                 icon: ":whale:",
+                time: {
+                    start: toDateTime(text("(1)time.start", "2099/01/01 11:00")),
+                    end: toDateTime(text("(1)time.end", "2099/01/01 11:50")),
+                },
             }),
             createTask({
                 id: 3,
-                name: "Task3",
+                name: "Task3 (17:15-17:35)",
                 projectName: "PJ3",
                 dayOrder: 1,
                 estimatedMinutes: 20,
                 icon: ":whale:",
+                time: {
+                    start: toDateTime(text("(1)time.start", "2099/01/01 17:15")),
+                    end: toDateTime(text("(1)time.end", "2099/01/01 17:35")),
+                },
             }),
             createTask({
                 id: 4,
-                name: "Both Milestone and Task",
+                name: "Both Milestone and Task (17:00-18:40)",
                 dayOrder: 4,
                 estimatedMinutes: 100,
                 color: "rgba(230, 50, 230, 0.1)",
                 milestoneColor: "purple",
                 isMilestone: true,
+                time: {
+                    start: toDateTime(text("(1)time.start", "2099/01/01 17:00")),
+                    end: toDateTime(text("(1)time.end", "2099/01/01 18:40")),
+                },
             }),
         ];
 
@@ -257,6 +269,22 @@ storiesOf("DailyCard", module)
                 <DailyCard
                     date={toDate("2099/01/01")}
                     taskSortField={select("Sort by task name", TaskSortField.toObject, TaskSortField.TASK_NAME)}
+                    taskOrder={Order.ASC}
+                    minutesToUsePerDay={300}
+                    minutesToUsePerSpecificDays={{}}
+                    filter={{ iconDisabledMap: {} }}
+                    tasks={tasks}
+                    timeLamps
+                    milestone
+                    seal
+                    warning
+                    isTasksExpanded
+                    onUpdateTask={action}
+                    onRemoveTask={action}
+                />
+                <DailyCard
+                    date={toDate("2099/01/01")}
+                    taskSortField={select("Sort by task start time", TaskSortField.toObject, TaskSortField.START_TIME)}
                     taskOrder={Order.ASC}
                     minutesToUsePerDay={300}
                     minutesToUsePerSpecificDays={{}}
