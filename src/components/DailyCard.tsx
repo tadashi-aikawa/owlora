@@ -204,8 +204,8 @@ export default class extends Component<DailyCardProps> {
                                    }
                             >
                                 <TaskFeeds tasks={estimatedTasksByHours[h]}
-                                           taskSortField={this.props.taskSortField}
-                                           taskOrder={this.props.taskOrder}
+                                           taskSortField={TaskSortField.START_TIME}
+                                           taskOrder={Order.ASC}
                                            onUpdateTask={this.props.onUpdateTask}
                                            onRemoveTask={this.props.onRemoveTask}
                                 />
