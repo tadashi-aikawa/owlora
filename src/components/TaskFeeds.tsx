@@ -21,7 +21,7 @@ const toSortFieldValue = (task: Task, sortField: TaskSortField) => {
         case TaskSortField.ESTIMATED_MINUTES:
             return task.estimatedMinutes;
         case TaskSortField.START_TIME:
-            return task.time.start;
+            return task.time ? task.time.start : "";
     }
 };
 
