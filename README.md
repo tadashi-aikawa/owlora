@@ -84,13 +84,13 @@ $ npm run storybook
 ### Structual test (Recommended to run by both human and CI)
 
 ```
-$ npm test
+$ make structual-test
 ```
 
 If results are expected, you run...
 
 ```
-$ npm test -- -u
+$ make structual-test-update
 ```
 
 
