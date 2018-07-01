@@ -64,7 +64,7 @@ const toTimeLampColorStyle = (tasks: Task[], hour: number): object => {
        })
        .sum();
 
-   return  {opacity: estimateMinutes / 60, fontSize: estimateMinutes > 60 ? "100%" : "10%"}
+   return  {opacity: estimateMinutes / 60, fontSize: estimateMinutes > 60 ? "100%" : undefined}
 };
 
 const CardHeader = ({props, freeMinutes, isOffTime}: {
