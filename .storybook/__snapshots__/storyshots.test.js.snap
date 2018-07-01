@@ -144,102 +144,162 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -613,102 +673,162 @@ exports[`Storyshots DailyCard Appearance 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -1099,102 +1219,162 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -1546,102 +1726,162 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -1993,102 +2233,162 @@ exports[`Storyshots DailyCard Feed color 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -2457,102 +2757,162 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -2904,102 +3264,162 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -3333,12 +3753,18 @@ exports[`Storyshots DailyCard Filter 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -3349,6 +3775,12 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               11
             </div>
@@ -3359,46 +3791,76 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -3409,26 +3871,44 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 2,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -4105,12 +4585,18 @@ exports[`Storyshots DailyCard Filter 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -4121,6 +4607,12 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               11
             </div>
@@ -4131,46 +4623,76 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -4181,26 +4703,44 @@ exports[`Storyshots DailyCard Filter 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 2,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -4652,102 +5192,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -5099,102 +5699,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -5546,102 +6206,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -5993,102 +6713,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -6440,102 +7220,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -6939,102 +7779,162 @@ exports[`Storyshots DailyCard Life status 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -7403,102 +8303,162 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -7736,12 +8696,18 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -7752,86 +8718,140 @@ exports[`Storyshots DailyCard Milestone 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -8260,102 +9280,162 @@ exports[`Storyshots DailyCard Milestone 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -8592,102 +9672,162 @@ exports[`Storyshots DailyCard Offtime 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             10
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             11
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             12
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             13
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             14
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             15
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             16
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             17
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             18
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             19
           </div>
@@ -8891,102 +10031,162 @@ exports[`Storyshots DailyCard Past 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             10
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             11
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             12
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             13
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             14
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             15
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             16
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             17
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             18
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             19
           </div>
@@ -9354,102 +10554,162 @@ exports[`Storyshots DailyCard Seal 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -9674,102 +10934,162 @@ exports[`Storyshots DailyCard Seal 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -9977,12 +11297,18 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -9993,56 +11319,92 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.8333333333333334,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -10053,6 +11415,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.3333333333333333,
+                }
+              }
             >
               17
             </div>
@@ -10063,16 +11431,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.6666666666666666,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -10855,12 +12235,18 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -10871,56 +12257,92 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.8333333333333334,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -10931,6 +12353,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.3333333333333333,
+                }
+              }
             >
               17
             </div>
@@ -10941,16 +12369,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.6666666666666666,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -11733,12 +13173,18 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -11749,56 +13195,92 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.8333333333333334,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -11809,6 +13291,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.3333333333333333,
+                }
+              }
             >
               17
             </div>
@@ -11819,16 +13307,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.6666666666666666,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -12611,12 +14111,18 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -12627,56 +14133,92 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.8333333333333334,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -12687,6 +14229,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.3333333333333333,
+                }
+              }
             >
               17
             </div>
@@ -12697,16 +14245,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.6666666666666666,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -13489,12 +15049,18 @@ exports[`Storyshots DailyCard Sort 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -13505,56 +15071,92 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.8333333333333334,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
@@ -13565,6 +15167,12 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.3333333333333333,
+                }
+              }
             >
               17
             </div>
@@ -13575,16 +15183,28 @@ exports[`Storyshots DailyCard Sort 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.6666666666666666,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -14381,12 +16001,18 @@ exports[`Storyshots DailyCard Summary 1`] = `
           className="ui center aligned container"
         >
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             10
           </div>
@@ -14397,16 +16023,28 @@ exports[`Storyshots DailyCard Summary 1`] = `
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 1,
+              }
+            }
           >
             11
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             12
           </div>
@@ -14417,6 +16055,12 @@ exports[`Storyshots DailyCard Summary 1`] = `
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0.5,
+              }
+            }
           >
             13
           </div>
@@ -14427,6 +16071,12 @@ exports[`Storyshots DailyCard Summary 1`] = `
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 1,
+              }
+            }
           >
             14
           </div>
@@ -14437,6 +16087,12 @@ exports[`Storyshots DailyCard Summary 1`] = `
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 1,
+              }
+            }
           >
             15
           </div>
@@ -14447,36 +16103,60 @@ exports[`Storyshots DailyCard Summary 1`] = `
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0.25,
+              }
+            }
           >
             16
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             17
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             18
           </div>
           <div
-            className="ui grey mini circular label"
+            className="ui red mini circular label"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            style={
+              Object {
+                "fontSize": "10%",
+                "opacity": 0,
+              }
+            }
           >
             19
           </div>
@@ -15403,12 +17083,18 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -15419,86 +17105,140 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -15852,12 +17592,18 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
@@ -15868,26 +17614,44 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
@@ -15898,6 +17662,12 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.75,
+                }
+              }
             >
               14
             </div>
@@ -15908,6 +17678,12 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               15
             </div>
@@ -15918,6 +17694,12 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               16
             </div>
@@ -15928,26 +17710,44 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0.25,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -16386,52 +18186,82 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
@@ -16442,6 +18272,12 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 1,
+                }
+              }
             >
               15
             </div>
@@ -16452,36 +18288,60 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "100%",
+                  "opacity": 1.25,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -17331,102 +19191,162 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -18007,102 +19927,162 @@ exports[`Storyshots DailyCard Warning 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -18506,102 +20486,162 @@ exports[`Storyshots DailyCard Warning 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -18936,102 +20976,162 @@ exports[`Storyshots DailyCard Warning 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
@@ -19383,102 +21483,162 @@ exports[`Storyshots DailyCard Warning 1`] = `
             className="ui center aligned container"
           >
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               10
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               11
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               12
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               13
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               14
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               15
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               16
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               17
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               18
             </div>
             <div
-              className="ui grey mini circular label"
+              className="ui red mini circular label"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
+              style={
+                Object {
+                  "fontSize": "10%",
+                  "opacity": 0,
+                }
+              }
             >
               19
             </div>
