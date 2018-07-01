@@ -4610,7 +4610,7 @@ exports[`Storyshots DailyCard Filter 1`] = `
               style={
                 Object {
                   "fontSize": "10%",
-                  "opacity": 1,
+                  "opacity": 0,
                 }
               }
             >
@@ -4626,7 +4626,7 @@ exports[`Storyshots DailyCard Filter 1`] = `
               style={
                 Object {
                   "fontSize": "10%",
-                  "opacity": 1,
+                  "opacity": 0,
                 }
               }
             >

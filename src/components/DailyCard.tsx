@@ -172,17 +172,17 @@ export default class extends Component<DailyCardProps> {
     }
 
     render() {
+        const applyFilter = createApplier(this.props.filter);
+
         const estimatedTasks: Task[] = _(this.props.tasks)
             .reject(t => t.estimatedMinutes === undefined)
             .value();
-        const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
+        const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks.filter(applyFilter));
 
         const totalEstimatedMinutes = _.sumBy(estimatedTasks, t => t.estimatedMinutes);
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
         const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : this.props.minutesToUsePerDay;
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
-
-        const applyFilter = createApplier(this.props.filter);
 
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
