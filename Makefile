@@ -50,6 +50,9 @@ endef
 dev: ## Debug
 	npm run dev
 
+storybook: ## Run storybook
+	npm run storybook
+
 structural-test: ## Structural
 	npm run test
 

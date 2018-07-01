@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 import {Dictionary} from 'lodash';
 import * as moment from 'moment';
+import {Moment} from 'moment';
 import * as TodoistClient from '../client/TodoistClient';
 import TodoistAll from '../models/todoist/TodoistALl';
 import TodoistProject from '../models/todoist/TodoistProject';
@@ -40,7 +41,7 @@ const toDaysOfWeek = (daysOfWeekStr: string): number[] =>
         .map(x => DAY_OF_WEEK_MAPPINGS[x.trim()])
         .filter(x => x !== undefined);
 
-const toRepetition = (dateString: string): Repetition | undefined => {
+const toRepetition = (dateString: string, content: string): Repetition | undefined => {
     if (!dateString) {
         return undefined;
     }
@@ -53,6 +54,11 @@ const toRepetition = (dateString: string): Repetition | undefined => {
         return undefined;
     }
 
+    const datesExcepted: Moment[] = [
+        ...(content.match(/x\d{4}\/\d{1,2}\/\d{1,2}/g) || []).map(x => moment(x, "YYYY/M/D")),
+        ...(content.match(/x\d{1,2}\/\d{1,2}/g ) || []).map(x => moment(x, "M/D")),
+    ];
+
     // "every" or "every other" ??
     q.shift();
     let pattern: Pattern = "every";
@@ -63,17 +69,18 @@ const toRepetition = (dateString: string): Repetition | undefined => {
     }
 
     if (q[0] === "day") {
-        return EVERY_DAY;
+        return EVERY_DAY.addDatesExcepted(datesExcepted);
     }
 
     if (q[0] === "workday") {
-        return EVERY_WEEK_DAY;
+        return EVERY_WEEK_DAY.addDatesExcepted(datesExcepted);
     }
 
     // TODO: Fix when implementing more feature..
     const daysOfWeek: number[] = toDaysOfWeek(q[0]);
     if (daysOfWeek) {
-        return Repetition.fromDaysOfWeek(daysOfWeek, pattern);
+        return Repetition.fromDaysOfWeek(daysOfWeek, pattern)
+            .addDatesExcepted(datesExcepted);
     }
 
     console.warn("Unsupported pattern!!");
@@ -123,7 +130,7 @@ function convertToTasks(todoistTasks: TodoistTask[], projects: TodoistProject[],
                     start: moment(x.due_date_utc).hour(Number(times[1])).minute(Number(times[2])),
                     end: moment(x.due_date_utc).hour(Number(times[3])).minute(Number(times[4])),
                 },
-                repetition: toRepetition(x.date_string),
+                repetition: toRepetition(x.date_string, x.content),
                 icon: config.iconsByProject[String(x.project_id)] || ":white_circle:",
                 itemOrder: x.item_order,
                 dayOrder: x.day_order,

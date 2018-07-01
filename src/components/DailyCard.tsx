@@ -16,6 +16,7 @@ import {
     SemanticCOLORS,
     Statistic,
 } from 'semantic-ui-react';
+import * as moment from 'moment';
 import {Moment} from 'moment';
 import {DATE_FORMAT, SIMPLE_FORMAT} from '../storage/settings';
 import Task, {TaskUpdateParameter} from '../models/Task';
@@ -48,6 +49,22 @@ const groupByHours = (tasks: Task[]): Dictionary<Task[]> => {
     }
 
     return estimatedTasksByHour;
+};
+
+const toTimeLampColorStyle = (tasks: Task[], hour: number): object => {
+   const estimateMinutes: number = _(tasks)
+       .map(x => {
+           const start: Moment = x.time.start.clone();
+           const end: Moment = x.time.end.clone();
+
+           start.hour() < hour && start.hour(hour).minute(0);
+           end.hour() > hour && end.hour(hour+1).minute(0);
+
+           return moment.duration(end.diff(start)).asMinutes();
+       })
+       .sum();
+
+   return  {opacity: estimateMinutes / 60, fontSize: estimateMinutes > 60 ? "100%" : undefined}
 };
 
 const CardHeader = ({props, freeMinutes, isOffTime}: {
@@ -155,17 +172,17 @@ export default class extends Component<DailyCardProps> {
     }
 
     render() {
+        const applyFilter = createApplier(this.props.filter);
+
         const estimatedTasks: Task[] = _(this.props.tasks)
             .reject(t => t.estimatedMinutes === undefined)
             .value();
-        const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks);
+        const estimatedTasksByHours: Dictionary<Task[]> = groupByHours(estimatedTasks.filter(applyFilter));
 
         const totalEstimatedMinutes = _.sumBy(estimatedTasks, t => t.estimatedMinutes);
         const specifiedMinutes = this.props.minutesToUsePerSpecificDays[this.props.date.format(SIMPLE_FORMAT)];
         const minutesToUse = specifiedMinutes !== undefined ? specifiedMinutes : this.props.minutesToUsePerDay;
         const freeMinutes = minutesToUse - totalEstimatedMinutes;
-
-        const applyFilter = createApplier(this.props.filter);
 
         return (
             <Card ref={node => this.props.connectDropTarget && this.props.connectDropTarget(findDOMNode(this))}>
@@ -200,7 +217,8 @@ export default class extends Component<DailyCardProps> {
                                    openOnTriggerMouseEnter={!!estimatedTasksByHours[h]}
                                    trigger={
                                        <Label key={h} content={h} size="mini" circular
-                                              color={estimatedTasksByHours[h] ? "red" : "grey"}/>
+                                              color="red"
+                                              style={toTimeLampColorStyle(estimatedTasksByHours[h], h)}/>
                                    }
                             >
                                 <TaskFeeds tasks={estimatedTasksByHours[h]}

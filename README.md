@@ -40,6 +40,7 @@ Support repeated tasks
 - [x] every other mon,wed,fri
 - [ ] every 1st mon, wed
 - [ ] every 1,15
+- [ ] ending 7-25
 
 * It is going to be supported that not marked
 * It is also be supported that case sensitive
@@ -70,14 +71,14 @@ $ npm i
 ### Debug
 
 ```
-$ npm run dev
+$ make dev
 ```
 
 
 ### Show storybook
 
 ```
-$ npm run storybook
+$ make storybook
 ```
 
 

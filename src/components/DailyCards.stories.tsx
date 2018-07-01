@@ -12,6 +12,8 @@ import DnDWrapper from "./DnDWrapper";
 import { DailyCards } from "./DailyCards";
 import TaskSortField from "../constants/TaskSortField";
 import Order from "../constants/Order";
+import {EVERY_DAY, EVERY_WEEK_DAY} from "../models/Repetition";
+import moment = require("moment");
 
 const DnDWrapperDecorator = storyFn => <DnDWrapper>{storyFn()}</DnDWrapper>;
 
@@ -102,6 +104,47 @@ storiesOf("DailyCards", module)
                 },
                 word: "Task[3-8]",
             })}
+            onUpdateTask={action}
+            onRemoveTask={action}
+        />
+    ))
+    .add("Except dates", () => (
+        <DailyCards
+            baseDate={toDate("2149/01/01")}
+            tasks={[
+                createTask({
+                    id: 1,
+                    name: "Every day [x1/2][x1/4]",
+                    dayOrder: 1,
+                    dueDate: toDate("2149/01/01"),
+                    repetition: EVERY_DAY.addDatesExcepted([
+                        moment('2149/01/02', 'YYYY/M/D'),
+                        moment('2149/01/04', 'YYYY/M/D')
+                    ])
+                }),
+                createTask({
+                    id: 2,
+                    name: "Every week day 1/3- [x1/7][x1/8]",
+                    dayOrder: 2,
+                    dueDate: toDate("2149/01/03"),
+                    repetition: EVERY_WEEK_DAY.addDatesExcepted([
+                        moment('2149/01/07', 'YYYY/M/D'),
+                        moment('2149/01/08', 'YYYY/M/D')
+                    ])
+                }),
+            ]}
+            taskSortField={TaskSortField.DAY_ORDER}
+            taskOrder={Order.ASC}
+            timeLamps={false}
+            milestone={false}
+            seal={false}
+            warning={false}
+            isTasksExpanded
+            minutesToUsePerDay={300}
+            minutesToUsePerSpecificDays={{}}
+            numberOfCards={10}
+            numberOfCardsPerRow={5}
+            onlyWeekday={false}
             onUpdateTask={action}
             onRemoveTask={action}
         />
