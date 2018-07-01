@@ -24,7 +24,8 @@
     ],
     "DailyCards": [
       {"story": "Summary"},
-      {"story": "Filter"}
+      {"story": "Filter"},
+      {"story": "Except dates"}
     ],
     "Icebox": [
       {"story": "Summary", "width": 350}
