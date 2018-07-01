@@ -70,14 +70,14 @@ $ npm i
 ### Debug
 
 ```
-$ npm run dev
+$ make dev
 ```
 
 
 ### Show storybook
 
 ```
-$ npm run storybook
+$ make storybook
 ```
 
 
