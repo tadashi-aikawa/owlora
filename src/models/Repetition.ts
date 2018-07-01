@@ -1,3 +1,5 @@
+import {Moment} from "moment";
+
 type Pattern = "every" | "every other";
 
 class Repetition {
@@ -6,6 +8,7 @@ class Repetition {
     dayOfWeek: number[];
     week: number[] | Pattern;
     month: number[] | Pattern;
+    datesExcepted: Moment[];
 
     constructor(init?: Partial<Repetition>) {
         Object.assign(this, init);
@@ -19,6 +22,11 @@ class Repetition {
             week: pattern,
             month: "every",
         });
+    }
+
+    addDatesExcepted(dates: Moment[]): Repetition {
+        this.datesExcepted = dates;
+        return this;
     }
 }
 
