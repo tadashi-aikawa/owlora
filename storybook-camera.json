@@ -5,6 +5,7 @@
   "viewport": {
     "width": 1920
   },
+  "timeout": 120000,
   "storiesByKind": {
     "DailyCard": [
       {"story": "Summary", "width": 350},
@@ -26,6 +27,9 @@
       {"story": "Summary"},
       {"story": "Filter"},
       {"story": "Except dates"}
+    ],
+    "Icebox": [
+      {"story": "Summary", "width": 350}
     ]
   }
 }
