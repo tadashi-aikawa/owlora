@@ -7,14 +7,16 @@ require('jest-mock-now')(new Date('2000-07-01'));
 
 
 describe.each`
-dateString                | content        | exDay        | exDayOfWeek               | exWeek           | exMonth      | exDatesExcepted
-${"every day"}            | ${"task"}      | ${"every"}   | ${[0, 1, 2, 3, 4, 5, 6]}  | ${"every"}       | ${"every"}   | ${[]}
-${"every workday"}        | ${"task"}      | ${"every"}   | ${[1, 2, 3, 4, 5]}        | ${"every"}       | ${"every"}   | ${[]}
-${"every monday"}         | ${"task"}      | ${"every"}   | ${[1]}                    | ${"every"}       | ${"every"}   | ${[]}
-${"every wed,fri"}        | ${"task"}      | ${"every"}   | ${[3, 5]}                 | ${"every"}       | ${"every"}   | ${[]}
-${"every wed, fri"}       | ${"task"}      | ${"every"}   | ${[3, 5]}                 | ${"every"}       | ${"every"}   | ${[]}
-${"every other monday"}   | ${"task"}      | ${"every"}   | ${[1]}                    | ${"every other"} | ${"every"}   | ${[]}
-${"every other mon,wed"}  | ${"task"}      | ${"every"}   | ${[1, 3]}                 | ${"every other"} | ${"every"}   | ${[]}
+dateString                | content        | exDay        | exDayOfWeek               | exWeek           | exMonth          | exDatesExcepted
+${"every day"}            | ${"task"}      | ${"every"}   | ${[0, 1, 2, 3, 4, 5, 6]}  | ${"every"}       | ${"every"}       | ${[]}
+${"every workday"}        | ${"task"}      | ${"every"}   | ${[1, 2, 3, 4, 5]}        | ${"every"}       | ${"every"}       | ${[]}
+${"every monday"}         | ${"task"}      | ${"every"}   | ${[1]}                    | ${"every"}       | ${"every"}       | ${[]}
+${"every wed,fri"}        | ${"task"}      | ${"every"}   | ${[3, 5]}                 | ${"every"}       | ${"every"}       | ${[]}
+${"every wed, fri"}       | ${"task"}      | ${"every"}   | ${[3, 5]}                 | ${"every"}       | ${"every"}       | ${[]}
+${"every other monday"}   | ${"task"}      | ${"every"}   | ${[1]}                    | ${"every other"} | ${"every"}       | ${[]}
+${"every other mon,wed"}  | ${"task"}      | ${"every"}   | ${[1, 3]}                 | ${"every other"} | ${"every"}       | ${[]}
+${"every 7"}              | ${"task"}      | ${[7]}       | ${[0, 1, 2, 3, 4, 5, 6]}  | ${"every"}       | ${"every"}       | ${[]}
+${"every 7, 14"}          | ${"task"}      | ${[7, 14]}   | ${[0, 1, 2, 3, 4, 5, 6]}  | ${"every"}       | ${"every"}       | ${[]}
 `(
     "toRepetition returns when $dateString",
     ({ dateString, content, exDay, exDayOfWeek, exWeek, exMonth, exDatesExcepted }) => {

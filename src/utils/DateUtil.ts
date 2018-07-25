@@ -39,5 +39,10 @@ export const inTheDay = (task: Task, date: Moment): boolean => {
         return false
     }
 
+    const td: number[] | 'every' = task.repetition.day
+    if (td !== "every" && !_.includes<number>(td, date.date())) {
+        return false
+    }
+
     return true
 }

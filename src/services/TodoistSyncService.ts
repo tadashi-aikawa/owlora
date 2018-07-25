@@ -17,6 +17,7 @@ import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
 import {CommonConfigValue} from '../models/CommonConfig';
+import {isNumber} from "util"
 
 
 const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
@@ -76,9 +77,14 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
         return EVERY_WEEK_DAY.addDatesExcepted(datesExcepted);
     }
 
+    if (q[0].split(",").every(x => /\d+/.test(x))) {
+        const days: number[] = q[0].split(",").map(x => Number(x))
+        return Repetition.fromDays(days, pattern).addDatesExcepted(datesExcepted)
+    }
+
     // TODO: Fix when implementing more feature..
     const daysOfWeek: number[] = toDaysOfWeek(q[0]);
-    if (daysOfWeek) {
+    if (daysOfWeek.length > 0) {
         return Repetition.fromDaysOfWeek(daysOfWeek, pattern)
             .addDatesExcepted(datesExcepted);
     }

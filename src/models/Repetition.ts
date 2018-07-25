@@ -3,7 +3,7 @@ import {Moment} from "moment";
 type Pattern = "every" | "every other";
 
 class Repetition {
-    day: number[] | Pattern;
+    day: number[] | "every";
     // 0: Sun, 1: Mon, ... 6: Sat
     dayOfWeek: number[];
     week: number[] | Pattern;
@@ -16,11 +16,21 @@ class Repetition {
 
     // Ex. "every mon,fri" or "every other mon,fri"
     static fromDaysOfWeek(daysOfWeek: number[], pattern: Pattern): Repetition {
-       return new Repetition({
+        return new Repetition({
             day: "every",
             dayOfWeek: daysOfWeek,
             week: pattern,
             month: "every",
+        });
+    }
+
+    // Ex. "every 1,15" or "every other 1,15"
+    static fromDays(days: number[], pattern: Pattern): Repetition {
+       return new Repetition({
+            day: days,
+            dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
+            week: "every",
+            month: pattern,
         });
     }
 
