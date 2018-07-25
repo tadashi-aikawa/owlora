@@ -53,10 +53,10 @@ dev: ## Debug
 storybook: ## Run storybook
 	npm run storybook
 
-structural-test: ## Structural
+test: ## Unit test & Structural test
 	npm run test
 
-structural-test-update: ## Structural
+test-update: ## Unit test & Structual test with updating
 	npm run test -- -u
 
 build-image: ## Build docker image

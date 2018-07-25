@@ -14,7 +14,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -398,7 +397,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -497,7 +495,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -543,7 +540,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -927,7 +923,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -1026,7 +1021,6 @@ exports[`Storyshots DailyCard Appearance 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -1089,7 +1083,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -1451,7 +1444,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -1550,7 +1542,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -1596,7 +1587,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -1958,7 +1948,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -2057,7 +2046,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -2103,7 +2091,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -2465,7 +2452,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -2564,7 +2550,6 @@ exports[`Storyshots DailyCard Feed color 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -2627,7 +2612,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -2989,7 +2973,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -3088,7 +3071,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -3134,7 +3116,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -3498,7 +3479,6 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
                       <img
                         className="ui avatar image"
                         src="https://avatars1.githubusercontent.com/u/9500018?s=460&v=4"
-                        style={undefined}
                       />
                     </div>
                     <div
@@ -3623,7 +3603,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -3985,7 +3964,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4068,7 +4046,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4151,7 +4128,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4234,7 +4210,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4333,7 +4308,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4409,7 +4383,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4455,7 +4428,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -4817,7 +4789,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4900,7 +4871,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -4999,7 +4969,6 @@ exports[`Storyshots DailyCard Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -5062,7 +5031,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -5424,7 +5392,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -5523,7 +5490,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -5569,7 +5535,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -5931,7 +5896,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -6030,7 +5994,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -6076,7 +6039,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -6438,7 +6400,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -6537,7 +6498,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -6583,7 +6543,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -6945,7 +6904,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -7044,7 +7002,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -7090,7 +7047,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -7452,7 +7408,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -7551,7 +7506,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -7597,7 +7551,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -7704,7 +7657,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
               className="label"
             >
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -7744,7 +7696,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                 -1
               </span>
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -8011,7 +7962,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -8110,7 +8060,6 @@ exports[`Storyshots DailyCard Life status 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -8173,7 +8122,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -8501,7 +8449,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                 className="header"
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -8566,7 +8513,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -8894,7 +8840,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                 className="header"
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -8977,7 +8922,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -9014,7 +8958,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                         className="summary"
                       >
                         <span
-                          onClick={undefined}
                           style={
                             Object {
                               "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -9104,7 +9047,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -9150,7 +9092,6 @@ exports[`Storyshots DailyCard Milestone 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -9510,7 +9451,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
   <div>
     <div
       className="ui card"
-      href={undefined}
       onClick={[Function]}
     >
       <div
@@ -9611,7 +9551,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
               className="value"
             >
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true)",
@@ -9637,7 +9576,6 @@ exports[`Storyshots DailyCard Offtime 1`] = `
               </span>
                Off day!! 
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true)",
@@ -9901,7 +9839,6 @@ exports[`Storyshots DailyCard Past 1`] = `
   <div>
     <div
       className="ui card"
-      href={undefined}
       onClick={[Function]}
     >
       <div
@@ -10263,7 +10200,6 @@ exports[`Storyshots DailyCard Past 1`] = `
                     className="label"
                   >
                     <span
-                      onClick={undefined}
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -10362,7 +10298,6 @@ exports[`Storyshots DailyCard Past 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -10424,7 +10359,6 @@ exports[`Storyshots DailyCard Seal 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -10724,7 +10658,6 @@ exports[`Storyshots DailyCard Seal 1`] = `
             onMouseLeave={[Function]}
           >
             <span
-              onClick={undefined}
               style={
                 Object {
                   "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -10804,7 +10737,6 @@ exports[`Storyshots DailyCard Seal 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -11167,7 +11099,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -11553,7 +11484,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -11638,7 +11568,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -11721,7 +11650,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -11806,7 +11734,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -11907,7 +11834,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -11983,7 +11909,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12059,7 +11984,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12105,7 +12029,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -12491,7 +12414,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12576,7 +12498,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12661,7 +12582,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12744,7 +12664,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12845,7 +12764,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12921,7 +12839,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -12997,7 +12914,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13043,7 +12959,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -13429,7 +13344,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13514,7 +13428,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13599,7 +13512,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13684,7 +13596,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13783,7 +13694,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13859,7 +13769,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13935,7 +13844,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -13981,7 +13889,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -14367,7 +14274,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14452,7 +14358,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14535,7 +14440,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14620,7 +14524,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14721,7 +14624,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14797,7 +14699,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14873,7 +14774,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -14919,7 +14819,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -15305,7 +15204,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15388,7 +15286,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15473,7 +15370,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15558,7 +15454,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15659,7 +15554,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15735,7 +15629,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15811,7 +15704,6 @@ exports[`Storyshots DailyCard Sort 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -15871,7 +15763,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
   <div>
     <div
       className="ui card"
-      href={undefined}
       onClick={[Function]}
     >
       <div
@@ -16171,7 +16062,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
           onMouseLeave={[Function]}
         >
           <span
-            onClick={undefined}
             style={
               Object {
                 "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16311,7 +16201,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     className="label"
                   >
                     <span
-                      onClick={undefined}
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16396,7 +16285,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     className="label"
                   >
                     <span
-                      onClick={undefined}
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16481,7 +16369,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     className="label"
                   >
                     <span
-                      onClick={undefined}
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16564,7 +16451,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                     className="label"
                   >
                     <span
-                      onClick={undefined}
                       style={
                         Object {
                           "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16663,7 +16549,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16739,7 +16624,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16815,7 +16699,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16891,7 +16774,6 @@ exports[`Storyshots DailyCard Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -16953,7 +16835,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -17315,7 +17196,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -17416,7 +17296,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -17462,7 +17341,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -17824,7 +17702,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -17909,7 +17786,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18010,7 +17886,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18056,7 +17931,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -18418,7 +18292,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18503,7 +18376,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18604,7 +18476,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18650,7 +18521,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -18845,7 +18715,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -18946,7 +18815,6 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19009,7 +18877,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -19116,7 +18983,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
               className="label"
             >
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19156,7 +19022,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
                 285
               </span>
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19423,7 +19288,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19506,7 +19370,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19605,7 +19468,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19681,7 +19543,6 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19745,7 +19606,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -19852,7 +19712,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               className="label"
             >
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -19892,7 +19751,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                 -1
               </span>
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20159,7 +20017,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20258,7 +20115,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20304,7 +20160,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -20411,7 +20266,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
               className="label"
             >
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20451,7 +20305,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                 -1
               </span>
               <span
-                onClick={undefined}
                 style={
                   Object {
                     "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20701,7 +20554,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20800,7 +20652,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -20846,7 +20697,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -21208,7 +21058,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -21307,7 +21156,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -21353,7 +21201,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -21698,7 +21545,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -21797,7 +21643,6 @@ exports[`Storyshots DailyCard Warning 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -21860,7 +21705,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -22022,7 +21866,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -22184,7 +22027,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -22346,7 +22188,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -22524,7 +22365,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -22623,7 +22463,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -22669,7 +22508,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -22831,7 +22669,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -23009,7 +22846,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23092,7 +22928,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23191,7 +23026,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23237,7 +23071,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -23399,7 +23232,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -23577,7 +23409,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23676,7 +23507,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23722,7 +23552,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -23900,7 +23729,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -23983,7 +23811,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -24082,7 +23909,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -24128,7 +23954,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -24306,7 +24131,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -24405,7 +24229,6 @@ exports[`Storyshots DailyCards Except dates 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -24468,7 +24291,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -24630,7 +24452,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -24792,7 +24613,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -24954,7 +24774,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -25116,7 +24935,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -25278,7 +25096,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -25456,7 +25273,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -25539,7 +25355,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -25638,7 +25453,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -25684,7 +25498,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -25862,7 +25675,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -25961,7 +25773,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -26007,7 +25818,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -26185,7 +25995,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -26284,7 +26093,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -26330,7 +26138,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -26492,7 +26299,6 @@ exports[`Storyshots DailyCards Filter 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -26671,7 +26477,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
     >
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -26833,7 +26638,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -26995,7 +26799,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -27157,7 +26960,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -27335,7 +27137,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -27434,7 +27235,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -27480,7 +27280,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -27658,7 +27457,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -27757,7 +27555,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -27803,7 +27600,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -27981,7 +27777,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28064,7 +27859,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28163,7 +27957,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28209,7 +28002,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -28387,7 +28179,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28486,7 +28277,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28532,7 +28322,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -28710,7 +28499,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28809,7 +28597,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -28855,7 +28642,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -29033,7 +28819,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29132,7 +28917,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29178,7 +28962,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
       </div>
       <div
         className="ui card"
-        href={undefined}
         onClick={[Function]}
       >
         <div
@@ -29356,7 +29139,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                       className="label"
                     >
                       <span
-                        onClick={undefined}
                         style={
                           Object {
                             "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29455,7 +29237,6 @@ exports[`Storyshots DailyCards Summary 1`] = `
                   }
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29515,7 +29296,6 @@ exports[`Storyshots Icebox Summary 1`] = `
   <div>
     <div
       className="ui card"
-      href={undefined}
       onClick={[Function]}
       style={
         Object {
@@ -29595,7 +29375,6 @@ exports[`Storyshots Icebox Summary 1`] = `
           onMouseLeave={[Function]}
         >
           <span
-            onClick={undefined}
             style={
               Object {
                 "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29699,7 +29478,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                   className="label"
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29782,7 +29560,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                   className="label"
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29865,7 +29642,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                   className="label"
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -29948,7 +29724,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                   className="label"
                 >
                   <span
-                    onClick={undefined}
                     style={
                       Object {
                         "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -30046,7 +29821,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -30122,7 +29896,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -30198,7 +29971,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
@@ -30274,7 +30046,6 @@ exports[`Storyshots Icebox Summary 1`] = `
                 }
               >
                 <span
-                  onClick={undefined}
                   style={
                     Object {
                       "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",

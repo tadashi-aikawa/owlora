@@ -29,17 +29,19 @@ If you have todoist and google accounts, you can trying [Demo](https://owlora-ma
 Support repeated tasks
 ----------------------
 
-- [x] every day
-- [ ] every other day
-- [x] every workday
-- [ ] every other workday
-- [x] every monday
-- [x] every wednesday, friday
-- [x] every tue,sat, sun
-- [x] every other monday
-- [x] every other mon,wed,fri
-- [ ] every 1st mon, wed
-- [ ] every 1,15
+- [x] every day(s)
+- [ ] every other day(s)
+- [x] every workday(s)
+- [ ] every other workday(s)
+- [ ] every 1st workday(s)
+- [x] every monday(s)
+- [x] every wednesday(s), friday(s)
+- [x] every tue(s),sat(s), sun(s)
+- [x] every other monday(s)
+- [x] every other mon(s),wed(s),fri(s)
+- [ ] every 1st mon(s), wed(s)
+- [x] every 1,15
+- [ ] every 3day(s)
 - [ ] ending 7-25
 
 * It is going to be supported that not marked
@@ -82,16 +84,16 @@ $ make storybook
 ```
 
 
-### Structual test (Recommended to run by both human and CI)
+### Test (Unit test & Structual test)
 
 ```
-$ make structual-test
+$ make test
 ```
 
-If results are expected, you run...
+If results of structual test are expected, you run...
 
 ```
-$ make structual-test-update
+$ make test-update
 ```
 
 
