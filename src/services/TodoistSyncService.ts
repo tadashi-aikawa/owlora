@@ -181,3 +181,7 @@ class TodoistSyncService implements SyncService {
 }
 
 export default TodoistSyncService
+export {
+    toRepetition
+}
+
