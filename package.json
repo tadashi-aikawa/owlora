@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --config webpack.config.dev.js --progress --host 0.0.0.0 --watch-poll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest",
+    "test": "jest --coverage",
     "clean-visualized-test": "rm -rf .reg",
     "capture-images": "node storybook-camera.js",
     "compare-images": "reg-suit sync-expected && reg-suit compare",
