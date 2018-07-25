@@ -84,16 +84,16 @@ $ make storybook
 ```
 
 
-### Structual test (Recommended to run by both human and CI)
+### Test (Unit test & Structual test)
 
 ```
-$ make structual-test
+$ make test
 ```
 
-If results are expected, you run...
+If results of structual test are expected, you run...
 
 ```
-$ make structual-test-update
+$ make test-update
 ```
 
 
