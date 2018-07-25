@@ -39,7 +39,7 @@ const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
 
 const toDaysOfWeek = (daysOfWeekStr: string): number[] =>
     daysOfWeekStr.split(',')
-        .map(x => DAY_OF_WEEK_MAPPINGS[x.trim()])
+        .map(x => DAY_OF_WEEK_MAPPINGS[x.trim().replace(/s$/, "")])
         .filter(x => x !== undefined);
 
 const toRepetition = (dateString: string, content: string): Repetition | undefined => {
@@ -69,15 +69,15 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
         q.shift();
     }
 
-    if (q[0] === "day") {
+    if (/^days?$/.test(q[0])) {
         return EVERY_DAY.addDatesExcepted(datesExcepted);
     }
 
-    if (q[0] === "workday") {
+    if (/^workdays?$/.test(q[0])) {
         return EVERY_WEEK_DAY.addDatesExcepted(datesExcepted);
     }
 
-    if (q[0].split(",").every(x => /\d+/.test(x))) {
+    if (q[0].split(",").every(x => /^\d+$/.test(x))) {
         const days: number[] = q[0].split(",").map(x => Number(x))
         return Repetition.fromDays(days, pattern).addDatesExcepted(datesExcepted)
     }
