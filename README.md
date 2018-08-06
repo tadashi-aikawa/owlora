@@ -42,7 +42,9 @@ Support repeated tasks
 - [ ] every 1st mon(s), wed(s)
 - [x] every 1,15
 - [ ] every 3day(s)
-- [ ] ending 7-25
+- [x] ending 2018-7-25
+- [x] ending 7-25
+- [x] ending 7/25
 
 * It is going to be supported that not marked
 * It is also be supported that case sensitive
