@@ -11,13 +11,12 @@ import Label from '../models/Label';
 import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
-import {Repetition, Pattern, EVERY_DAY, EVERY_WEEK_DAY} from '../models/Repetition';
 import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
 import {CommonConfigValue} from '../models/CommonConfig';
-import {isNumber} from "util"
+import {Pattern, Repetition} from "../models/Repetition"
 
 
 const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
@@ -60,6 +59,9 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
         ...(content.match(/x\d{1,2}\/\d{1,2}/g ) || []).map(x => moment(x, "M/D")),
     ];
 
+    const lastDate: Moment = (dateString.match(/ending \d{4}-\d{2}-\d{2}/g) || [])
+        .map(x => moment(x, "YYYY-MM-DD"))[0];
+
     // "every" or "every other" ??
     q.shift();
     let pattern: Pattern = "every";
@@ -70,23 +72,30 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
     }
 
     if (/^days?$/.test(q[0])) {
-        return EVERY_DAY.addDatesExcepted(datesExcepted);
+        return Repetition.everyDay
+            .addDatesExcepted(datesExcepted)
+            .addLastDate(lastDate)
     }
 
     if (/^workdays?$/.test(q[0])) {
-        return EVERY_WEEK_DAY.addDatesExcepted(datesExcepted);
+        return Repetition.everyWeekDay
+            .addDatesExcepted(datesExcepted)
+            .addLastDate(lastDate)
     }
 
     if (q[0].split(",").every(x => /^\d+$/.test(x))) {
         const days: number[] = q[0].split(",").map(x => Number(x))
-        return Repetition.fromDays(days, pattern).addDatesExcepted(datesExcepted)
+        return Repetition.fromDays(days, pattern)
+            .addDatesExcepted(datesExcepted)
+            .addLastDate(lastDate)
     }
 
     // TODO: Fix when implementing more feature..
     const daysOfWeek: number[] = toDaysOfWeek(q[0]);
     if (daysOfWeek.length > 0) {
         return Repetition.fromDaysOfWeek(daysOfWeek, pattern)
-            .addDatesExcepted(datesExcepted);
+            .addDatesExcepted(datesExcepted)
+            .addLastDate(lastDate)
     }
 
     console.warn("Unsupported pattern!!");

@@ -1,24 +1,24 @@
-import * as _ from "lodash";
-import * as React from "react";
+import * as _ from "lodash"
+import * as React from "react"
 
-import { storiesOf } from "@storybook/react";
-import { WithNotes } from "@storybook/addon-notes";
-import { action } from "@storybook/addon-actions";
+import { storiesOf } from "@storybook/react"
+import { WithNotes } from "@storybook/addon-notes"
+import { action } from "@storybook/addon-actions"
 
-import Task from "../models/Task";
-import * as Moment from "moment";
-import { boolean, number, object, select, text, withKnobs } from "@storybook/addon-knobs";
-import DnDWrapper from "./DnDWrapper";
-import { DailyCards } from "./DailyCards";
-import TaskSortField from "../constants/TaskSortField";
-import Order from "../constants/Order";
-import {EVERY_DAY, EVERY_WEEK_DAY} from "../models/Repetition";
-import moment = require("moment");
+import Task from "../models/Task"
+import * as Moment from "moment"
+import { boolean, number, object, select, text, withKnobs } from "@storybook/addon-knobs"
+import DnDWrapper from "./DnDWrapper"
+import { DailyCards } from "./DailyCards"
+import TaskSortField from "../constants/TaskSortField"
+import Order from "../constants/Order"
+import moment = require("moment")
+import { Repetition } from "../models/Repetition"
 
-const DnDWrapperDecorator = storyFn => <DnDWrapper>{storyFn()}</DnDWrapper>;
+const DnDWrapperDecorator = storyFn => <DnDWrapper>{storyFn()}</DnDWrapper>
 
-const toDate = (v: string) => Moment(v, "YYYY/MM/DD");
-const CoolPaddingDecorator = storyFn => <div style={{ padding: 20 }}>{storyFn()}</div>;
+const toDate = (v: string) => Moment(v, "YYYY/MM/DD")
+const CoolPaddingDecorator = storyFn => <div style={{ padding: 20 }}>{storyFn()}</div>
 const createTask = (properties): Task =>
     _.assign(
         {},
@@ -38,7 +38,7 @@ const createTask = (properties): Task =>
             dateString: "",
         },
         properties
-    );
+    )
 
 storiesOf("DailyCards", module)
     .addDecorator(DnDWrapperDecorator)
@@ -117,20 +117,20 @@ storiesOf("DailyCards", module)
                     name: "Every day [x1/2][x1/4]",
                     dayOrder: 1,
                     dueDate: toDate("2149/01/01"),
-                    repetition: EVERY_DAY.addDatesExcepted([
-                        moment('2149/01/02', 'YYYY/M/D'),
-                        moment('2149/01/04', 'YYYY/M/D')
-                    ])
+                    repetition: Repetition.everyDay.addDatesExcepted([
+                        moment("2149/01/02", "YYYY/M/D"),
+                        moment("2149/01/04", "YYYY/M/D"),
+                    ]),
                 }),
                 createTask({
                     id: 2,
                     name: "Every week day 1/3- [x1/7][x1/8]",
                     dayOrder: 2,
                     dueDate: toDate("2149/01/03"),
-                    repetition: EVERY_WEEK_DAY.addDatesExcepted([
-                        moment('2149/01/07', 'YYYY/M/D'),
-                        moment('2149/01/08', 'YYYY/M/D')
-                    ])
+                    repetition: Repetition.everyWeekDay.addDatesExcepted([
+                        moment("2149/01/07", "YYYY/M/D"),
+                        moment("2149/01/08", "YYYY/M/D"),
+                    ]),
                 }),
             ]}
             taskSortField={TaskSortField.DAY_ORDER}
@@ -148,4 +148,34 @@ storiesOf("DailyCards", module)
             onUpdateTask={action}
             onRemoveTask={action}
         />
-    ));
+    ))
+    .add("Last date", () => (
+        <DailyCards
+            baseDate={toDate("2149/01/01")}
+            tasks={[
+                createTask({
+                    id: 1,
+                    name: "Every day [x1/4] to 1/6",
+                    dayOrder: 1,
+                    dueDate: toDate("2149/01/01"),
+                    repetition: Repetition.everyDay
+                        .addDatesExcepted([moment("2149/01/04", "YYYY/M/D")])
+                        .addLastDate(moment("2149/01/06", "YYYY/M/D")),
+                }),
+            ]}
+            taskSortField={TaskSortField.DAY_ORDER}
+            taskOrder={Order.ASC}
+            timeLamps={false}
+            milestone={false}
+            seal={false}
+            warning={false}
+            isTasksExpanded
+            minutesToUsePerDay={300}
+            minutesToUsePerSpecificDays={{}}
+            numberOfCards={10}
+            numberOfCardsPerRow={5}
+            onlyWeekday={false}
+            onUpdateTask={action}
+            onRemoveTask={action}
+        />
+    ))

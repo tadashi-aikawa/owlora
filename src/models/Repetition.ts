@@ -9,9 +9,28 @@ class Repetition {
     week: number[] | Pattern;
     month: number[] | Pattern;
     datesExcepted: Moment[];
+    lastDate?: Moment;
 
     constructor(init?: Partial<Repetition>) {
         Object.assign(this, init);
+    }
+
+    static get everyDay() {
+        return new Repetition({
+            day: "every",
+            dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
+            week: "every",
+            month: "every",
+        });
+    }
+
+    static get everyWeekDay() {
+        return new Repetition({
+            day: "every",
+            dayOfWeek: [1, 2, 3, 4, 5],
+            week: "every",
+            month: "every",
+        });
     }
 
     // Ex. "every mon,fri" or "every other mon,fri"
@@ -38,25 +57,15 @@ class Repetition {
         this.datesExcepted = dates;
         return this;
     }
+
+    addLastDate(date: Moment): Repetition {
+        this.lastDate = date;
+        return this;
+    }
 }
 
-const EVERY_DAY = new Repetition({
-    day: "every",
-    dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
-    week: "every",
-    month: "every",
-});
-
-const EVERY_WEEK_DAY = new Repetition({
-    day: "every",
-    dayOfWeek: [1, 2, 3, 4, 5],
-    week: "every",
-    month: "every",
-});
 
 export {
     Repetition,
     Pattern,
-    EVERY_DAY,
-    EVERY_WEEK_DAY,
 };
