@@ -9,6 +9,7 @@ class Repetition {
     week: number[] | Pattern;
     month: number[] | Pattern;
     datesExcepted: Moment[];
+    lastDate?: Moment;
 
     constructor(init?: Partial<Repetition>) {
         Object.assign(this, init);
@@ -54,6 +55,11 @@ class Repetition {
 
     addDatesExcepted(dates: Moment[]): Repetition {
         this.datesExcepted = dates;
+        return this;
+    }
+
+    addLastDate(date: Moment): Repetition {
+        this.lastDate = date;
         return this;
     }
 }

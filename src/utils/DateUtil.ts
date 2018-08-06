@@ -22,6 +22,10 @@ export const inTheDay = (task: Task, date: Moment): boolean => {
         return false
     }
 
+    if (task.repetition && task.repetition.lastDate && task.repetition.lastDate.isBefore(date)) {
+        return false
+    }
+
     if (date.format(SIMPLE_FORMAT) === task.dueDate.format(SIMPLE_FORMAT)) {
         return true
     }

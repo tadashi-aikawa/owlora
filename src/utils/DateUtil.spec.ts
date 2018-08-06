@@ -116,24 +116,29 @@ ${"2018/07/28"} | ${"Saturday"}  | ${"2018/7/22"}
     test(`${expected} if ${dayOfWeek}(${date})`, () => expect(toStartDayOfWeek(d(date)).format(FORMAT)).toEqual(expected))
 })
 
+const WEEK = [0, 1, 2, 3, 4, 5, 6];
+
 describe.each`
-description                    | date            | dueDate         |  repDay        | repDayOfWeek               | repWeek          | repMonth      | repDatesExcepted   | expected
-${"dueDate"}                   | ${"2018/07/22"} | ${"2018/07/22"} | ${[]}          | ${[]}                      | ${[]}            | ${[]}         | ${[]}              | ${true}
-${"dayOfWeek"}                 | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}                  | ${"every"}       | ${"every"}    | ${[]}              | ${true}
-${"excepted dates"}            | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}                  | ${"every"}       | ${"every"}    | ${["2018/07/22"]}  | ${false}
-${"excepted dates is dueDate"} | ${"2018/07/22"} | ${"2018/07/22"} | ${"every"}     | ${[0, 1, 2, 3, 4, 5, 6]}   | ${"every"}       | ${"every"}    | ${["2018/07/22"]}  | ${false}
-${"dayOfWeek"}                 | ${"2018/07/24"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}                  | ${"every"}       | ${"every"}    | ${[]}              | ${false}
-${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/14"} | ${"every"}     | ${[0, 1]}                  | ${"every other"} | ${"every"}    | ${[]}              | ${true}
-${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/20"} | ${"every"}     | ${[0, 1]}                  | ${"every other"} | ${"every"}    | ${[]}              | ${false}
-${"day"}                       | ${"2018/07/21"} | ${"2018/01/01"} | ${[2, 22]}     | ${[0, 1, 2, 3, 4, 5, 6]}   | ${"every"}       | ${"every"}    | ${[]}              | ${false}
-${"day"}                       | ${"2018/07/22"} | ${"2018/01/01"} | ${[2, 22]}     | ${[0, 1, 2, 3, 4, 5, 6]}   | ${"every"}       | ${"every"}    | ${[]}              | ${true}
-`("inTheDay returns", ({description, date, dueDate, repDay, repDayOfWeek, repWeek, repMonth, repDatesExcepted, expected}) => {
+description                    | date            | dueDate         |  repDay        | repDayOfWeek | repWeek          | repMonth      | repDatesExcepted  | repLastDate    | expected
+${"dueDate"}                   | ${"2018/07/22"} | ${"2018/07/22"} | ${[]}          | ${[]}        | ${[]}            | ${[]}         | ${[]}             | ${""}          | ${true}
+${"dayOfWeek"}                 | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}    | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${true}
+${"excepted dates"}            | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}    | ${"every"}       | ${"every"}    | ${["2018/07/22"]} | ${""}          | ${false}
+${"excepted dates is dueDate"} | ${"2018/07/22"} | ${"2018/07/22"} | ${"every"}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${["2018/07/22"]} | ${""}          | ${false}
+${"dayOfWeek"}                 | ${"2018/07/24"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}    | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/14"} | ${"every"}     | ${[0, 1]}    | ${"every other"} | ${"every"}    | ${[]}             | ${""}          | ${true}
+${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/20"} | ${"every"}     | ${[0, 1]}    | ${"every other"} | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"day"}                       | ${"2018/07/21"} | ${"2018/01/01"} | ${[2, 22]}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"day"}                       | ${"2018/07/22"} | ${"2018/01/01"} | ${[2, 22]}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${true}
+${"date is Last day"}          | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${"2018/7/22"} | ${true}
+${"Last day is over"}          | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${"2018/7/21"} | ${false}
+`("inTheDay returns", ({description, date, dueDate, repDay, repDayOfWeek, repWeek, repMonth, repDatesExcepted, repLastDate, expected}) => {
     const repetition: Repetition = new Repetition({
         day: repDay,
         dayOfWeek: repDayOfWeek,
         week: repWeek,
         month: repMonth,
         datesExcepted: repDatesExcepted.map(d),
+        lastDate: d(repLastDate),
     })
     const task: Task = createTask(d(dueDate), repetition)
 

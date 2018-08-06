@@ -26463,6 +26463,2428 @@ exports[`Storyshots DailyCards Filter 1`] = `
 </div>
 `;
 
+exports[`Storyshots DailyCards Last date 1`] = `
+<div
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <div
+      className="ui five cards"
+    >
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui active transition visible dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2148-12-29 (Sun)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui active transition visible dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2148-12-30 (Mon)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui active transition visible dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2148-12-31 (Tue)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-01 (Wed)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div>
+              <div>
+                <div
+                  className="ui feed"
+                >
+                  <div
+                    className="event"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                        "border": "2px solid",
+                        "borderColor": "rgba(150, 150, 150, 0.1)",
+                        "borderRadius": "20px",
+                        "cursor": "move",
+                        "marginBottom": "10px",
+                        "marginTop": "10px",
+                        "opacity": 1,
+                        "padding": "10px",
+                      }
+                    }
+                  >
+                    <div
+                      className="label"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                            "backgroundPosition": "-65px -325px",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "2080px",
+                            "display": "inline-block",
+                            "fontSize": "inherit",
+                            "height": 32,
+                            "imageRendering": "optimizeQuality",
+                            "lineHeight": "normal",
+                            "margin": "0 .15em",
+                            "position": "relative",
+                            "textIndent": "-9999em",
+                            "top": -3,
+                            "verticalAlign": "middle",
+                            "width": 32,
+                          }
+                        }
+                        title=":smile:"
+                      >
+                        😄
+                      </span>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <div
+                        className="date"
+                      >
+                        Project
+                      </div>
+                      <div
+                        className="summary"
+                      >
+                        Every day [x1/4] to 1/6
+                        <span />
+                      </div>
+                    </div>
+                    <div
+                      className="ui teal large circular label"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "margin": "auto",
+                          "marginLeft": 5,
+                          "textAlign": "center",
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                        "backgroundPosition": "-56.875px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1820px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":smile:"
+                  >
+                    😄
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-02 (Thu)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div>
+              <div>
+                <div
+                  className="ui feed"
+                >
+                  <div
+                    className="event"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                        "border": "2px solid",
+                        "borderColor": "rgba(150, 150, 150, 0.1)",
+                        "borderRadius": "20px",
+                        "cursor": "move",
+                        "marginBottom": "10px",
+                        "marginTop": "10px",
+                        "opacity": 1,
+                        "padding": "10px",
+                      }
+                    }
+                  >
+                    <div
+                      className="label"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                            "backgroundPosition": "-65px -325px",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "2080px",
+                            "display": "inline-block",
+                            "fontSize": "inherit",
+                            "height": 32,
+                            "imageRendering": "optimizeQuality",
+                            "lineHeight": "normal",
+                            "margin": "0 .15em",
+                            "position": "relative",
+                            "textIndent": "-9999em",
+                            "top": -3,
+                            "verticalAlign": "middle",
+                            "width": 32,
+                          }
+                        }
+                        title=":smile:"
+                      >
+                        😄
+                      </span>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <div
+                        className="date"
+                      >
+                        Project
+                      </div>
+                      <div
+                        className="summary"
+                      >
+                        Every day [x1/4] to 1/6
+                        <span />
+                      </div>
+                    </div>
+                    <div
+                      className="ui teal large circular label"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "margin": "auto",
+                          "marginLeft": 5,
+                          "textAlign": "center",
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                        "backgroundPosition": "-56.875px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1820px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":smile:"
+                  >
+                    😄
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-03 (Fri)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div>
+              <div>
+                <div
+                  className="ui feed"
+                >
+                  <div
+                    className="event"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                        "border": "2px solid",
+                        "borderColor": "rgba(150, 150, 150, 0.1)",
+                        "borderRadius": "20px",
+                        "cursor": "move",
+                        "marginBottom": "10px",
+                        "marginTop": "10px",
+                        "opacity": 1,
+                        "padding": "10px",
+                      }
+                    }
+                  >
+                    <div
+                      className="label"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                            "backgroundPosition": "-65px -325px",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "2080px",
+                            "display": "inline-block",
+                            "fontSize": "inherit",
+                            "height": 32,
+                            "imageRendering": "optimizeQuality",
+                            "lineHeight": "normal",
+                            "margin": "0 .15em",
+                            "position": "relative",
+                            "textIndent": "-9999em",
+                            "top": -3,
+                            "verticalAlign": "middle",
+                            "width": 32,
+                          }
+                        }
+                        title=":smile:"
+                      >
+                        😄
+                      </span>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <div
+                        className="date"
+                      >
+                        Project
+                      </div>
+                      <div
+                        className="summary"
+                      >
+                        Every day [x1/4] to 1/6
+                        <span />
+                      </div>
+                    </div>
+                    <div
+                      className="ui teal large circular label"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "margin": "auto",
+                          "marginLeft": 5,
+                          "textAlign": "center",
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                        "backgroundPosition": "-56.875px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1820px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":smile:"
+                  >
+                    😄
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-04 (Sat)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-05 (Sun)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div>
+              <div>
+                <div
+                  className="ui feed"
+                >
+                  <div
+                    className="event"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                        "border": "2px solid",
+                        "borderColor": "rgba(150, 150, 150, 0.1)",
+                        "borderRadius": "20px",
+                        "cursor": "move",
+                        "marginBottom": "10px",
+                        "marginTop": "10px",
+                        "opacity": 1,
+                        "padding": "10px",
+                      }
+                    }
+                  >
+                    <div
+                      className="label"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                            "backgroundPosition": "-65px -325px",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "2080px",
+                            "display": "inline-block",
+                            "fontSize": "inherit",
+                            "height": 32,
+                            "imageRendering": "optimizeQuality",
+                            "lineHeight": "normal",
+                            "margin": "0 .15em",
+                            "position": "relative",
+                            "textIndent": "-9999em",
+                            "top": -3,
+                            "verticalAlign": "middle",
+                            "width": 32,
+                          }
+                        }
+                        title=":smile:"
+                      >
+                        😄
+                      </span>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <div
+                        className="date"
+                      >
+                        Project
+                      </div>
+                      <div
+                        className="summary"
+                      >
+                        Every day [x1/4] to 1/6
+                        <span />
+                      </div>
+                    </div>
+                    <div
+                      className="ui teal large circular label"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "margin": "auto",
+                          "marginLeft": 5,
+                          "textAlign": "center",
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                        "backgroundPosition": "-56.875px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1820px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":smile:"
+                  >
+                    😄
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-06 (Mon)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={95}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "95%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                285
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              1
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div>
+              <div>
+                <div
+                  className="ui feed"
+                >
+                  <div
+                    className="event"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(150, 150, 150, 0.1)",
+                        "border": "2px solid",
+                        "borderColor": "rgba(150, 150, 150, 0.1)",
+                        "borderRadius": "20px",
+                        "cursor": "move",
+                        "marginBottom": "10px",
+                        "marginTop": "10px",
+                        "opacity": 1,
+                        "padding": "10px",
+                      }
+                    }
+                  >
+                    <div
+                      className="label"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                            "backgroundPosition": "-65px -325px",
+                            "backgroundRepeat": "no-repeat",
+                            "backgroundSize": "2080px",
+                            "display": "inline-block",
+                            "fontSize": "inherit",
+                            "height": 32,
+                            "imageRendering": "optimizeQuality",
+                            "lineHeight": "normal",
+                            "margin": "0 .15em",
+                            "position": "relative",
+                            "textIndent": "-9999em",
+                            "top": -3,
+                            "verticalAlign": "middle",
+                            "width": 32,
+                          }
+                        }
+                        title=":smile:"
+                      >
+                        😄
+                      </span>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <div
+                        className="date"
+                      >
+                        Project
+                      </div>
+                      <div
+                        className="summary"
+                      >
+                        Every day [x1/4] to 1/6
+                        <span />
+                      </div>
+                    </div>
+                    <div
+                      className="ui teal large circular label"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "margin": "auto",
+                          "marginLeft": 5,
+                          "textAlign": "center",
+                          "width": "auto",
+                        }
+                      }
+                    >
+                      15
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span>
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginBottom": 2,
+                    "marginLeft": 4,
+                    "marginRight": 4,
+                    "marginTop": 2,
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": 28,
+                      "width": 28,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                        "backgroundPosition": "-56.875px -284.375px",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundSize": "1820px",
+                        "display": "inline-block",
+                        "fontSize": "inherit",
+                        "height": 28,
+                        "imageRendering": "optimizeQuality",
+                        "lineHeight": "normal",
+                        "margin": "0 .15em",
+                        "position": "relative",
+                        "textIndent": "-9999em",
+                        "top": -3,
+                        "verticalAlign": "middle",
+                        "width": 28,
+                      }
+                    }
+                    title=":smile:"
+                  >
+                    😄
+                  </span>
+                </div>
+                <div
+                  className="ui teal label"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "borderRadius": 10,
+                      "marginTop": 4,
+                      "paddingBottom": 4,
+                      "paddingTop": 4,
+                    }
+                  }
+                >
+                  15
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        onClick={[Function]}
+      >
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Facing forward !!
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="hand outline right huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "opacity": 0.5,
+            }
+          }
+        >
+          
+        </div>
+        <div
+          className="ui dimmer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "red",
+              "opacity": 0.5,
+            }
+          }
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="center"
+            >
+              <div>
+                <h2>
+                  Change duedate
+                </h2>
+                <i
+                  aria-hidden="true"
+                  className="arrow circle outline down huge icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ui black inverted segment"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <div
+            className="ui mini inverted one statistics"
+            style={
+              Object {
+                "paddingBottom": 10,
+              }
+            }
+          >
+            <div
+              className="ui statistic"
+            >
+              <div
+                className="value"
+              >
+                2149-01-07 (Tue)
+              </div>
+            </div>
+          </div>
+          <div
+            className="ui green small inverted progress"
+            data-percent={100}
+          >
+            <div
+              className="bar"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              className="label"
+            >
+              <i
+                aria-hidden="true"
+                className="heart icon"
+              />
+               
+              <span
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+              >
+                300
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="content"
+        >
+          <div
+            className="ui horizontal divider"
+          >
+            <span
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              0
+               Tasks
+            </span>
+          </div>
+          <div
+            style={
+              Object {
+                "maxHeight": "100%",
+                "opacity": 1,
+                "transform": "scaleY(1)",
+                "transformOrigin": "top",
+                "transition": "all 0.5s",
+              }
+            }
+          >
+            <div />
+          </div>
+        </div>
+        <div
+          className="extra content"
+        >
+          <span />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DailyCards Summary 1`] = `
 <div
   style={
