@@ -14,6 +14,24 @@ class Repetition {
         Object.assign(this, init);
     }
 
+    static get everyDay() {
+        return new Repetition({
+            day: "every",
+            dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
+            week: "every",
+            month: "every",
+        });
+    }
+
+    static get everyWeekDay() {
+        return new Repetition({
+            day: "every",
+            dayOfWeek: [1, 2, 3, 4, 5],
+            week: "every",
+            month: "every",
+        });
+    }
+
     // Ex. "every mon,fri" or "every other mon,fri"
     static fromDaysOfWeek(daysOfWeek: number[], pattern: Pattern): Repetition {
         return new Repetition({
@@ -40,23 +58,8 @@ class Repetition {
     }
 }
 
-const EVERY_DAY = new Repetition({
-    day: "every",
-    dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
-    week: "every",
-    month: "every",
-});
-
-const EVERY_WEEK_DAY = new Repetition({
-    day: "every",
-    dayOfWeek: [1, 2, 3, 4, 5],
-    week: "every",
-    month: "every",
-});
 
 export {
     Repetition,
     Pattern,
-    EVERY_DAY,
-    EVERY_WEEK_DAY,
 };

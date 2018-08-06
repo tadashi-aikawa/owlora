@@ -11,13 +11,12 @@ import Label from '../models/Label';
 import SyncService from './SyncService';
 import TodoistTask from '../models/todoist/TodoistTask';
 import SyncPayload from '../payloads/SyncPayload';
-import {Repetition, Pattern, EVERY_DAY, EVERY_WEEK_DAY} from '../models/Repetition';
 import MilestoneConfig from '../models/MilestoneConfig';
 import Size from '../constants/Size';
 import EstimateConfig from '../models/EstimateConfig';
 import SealConfig from '../models/SealConfig';
 import {CommonConfigValue} from '../models/CommonConfig';
-import {isNumber} from "util"
+import {Pattern, Repetition} from "../models/Repetition"
 
 
 const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
@@ -70,11 +69,11 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
     }
 
     if (/^days?$/.test(q[0])) {
-        return EVERY_DAY.addDatesExcepted(datesExcepted);
+        return Repetition.everyDay.addDatesExcepted(datesExcepted);
     }
 
     if (/^workdays?$/.test(q[0])) {
-        return EVERY_WEEK_DAY.addDatesExcepted(datesExcepted);
+        return Repetition.everyWeekDay.addDatesExcepted(datesExcepted);
     }
 
     if (q[0].split(",").every(x => /^\d+$/.test(x))) {
