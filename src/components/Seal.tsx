@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Component} from 'react';
 import {findDOMNode} from 'react-dom';
 import Emojify from 'react-emojione';
-import {Label, SemanticCOLORS} from 'semantic-ui-react';
+import {Message, SemanticCOLORS} from 'semantic-ui-react';
 import {Moment} from 'moment';
 import {TaskUpdateParameter} from '../models/Task';
 import {DragSource, DropTarget} from 'react-dnd';
@@ -72,27 +72,33 @@ export default class extends Component<SealProps, SealState> {
     };
 
     render() {
-        const labelStyle = style({
-            cursor: 'move',
-            opacity: this.props.isDragging ? 0.1 : 1,
-        });
-
         return (
-            <Label color={this.props.color}
-                   basic
-                   ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}
-                   className={labelStyle}
-                   onMouseEnter={() => this.setState({hiddenEditIcon: false})}
-                   onMouseLeave={() => this.setState({hiddenEditIcon: true})}
+            <Message color={this.props.color}
+                     compact
+                     size="mini"
+                     ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}
+                     style={{
+                         cursor: 'move',
+                         opacity: this.props.isDragging ? 0.1 : 1,
+                         padding: '10px',
+                         fontSize: '75%',
+                         margin: 0,
+                     }}
+                     onMouseEnter={() => this.setState({hiddenEditIcon: false})}
+                     onMouseLeave={() => this.setState({hiddenEditIcon: true})}
             >
-                <Emojify style={{
-                    width: 16,
-                    height: 16,
-                }}>
-                    {this.props.name}
-                </Emojify>
-                <EditorIcon id={this.props.id} hidden={this.state.hiddenEditIcon} margin={3}/>
-            </Label>
+                <Message.Content>
+                    <Message.Header>
+                        <Emojify style={{
+                            width: 16,
+                            height: 16,
+                        }}>
+                            {this.props.name}
+                        </Emojify>
+                        <EditorIcon id={this.props.id} hidden={this.state.hiddenEditIcon} margin={3}/>
+                    </Message.Header>
+                </Message.Content>
+            </Message>
         );
     }
 };
