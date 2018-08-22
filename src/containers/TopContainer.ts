@@ -2,37 +2,44 @@ import * as _ from 'lodash';
 import {connect} from 'react-redux';
 import Top from '../components/Top';
 import {
-    login, logout, sync, updateConfig, updateFilter, updateTasks, updateTodoistToken,
-    updateUiConfig, removeTasks
+    login,
+    logout,
+    removeTasks,
+    sync,
+    updateConfig,
+    updateFilter,
+    updateTasks,
+    updateTodoistToken,
+    updateUiConfig
 } from '../actions/index';
 import RootState from '../states/index';
 import CommonConfig from '../models/CommonConfig';
 import {TaskUpdateParameter} from '../models/Task';
 import UiConfig from '../models/UiConfig';
-import {dataToJS, firebaseConnect, getFirebase, pathToJS} from 'react-redux-firebase'
-import {config} from "../utils/FirebasePathUtil";
+import {firebaseConnect, getFirebase, getVal} from 'react-redux-firebase'
+import {config} from "../utils/FirebaseUtil";
 import Filter from '../models/Filter';
 
-const mapStateToProps = (state: RootState) => ({
-    tasks: _.values(state.app.tasksById),
-    projects: state.app.projects,
-    labels: state.app.labels,
-    error: state.app.error,
-    isLoading: state.app.isSyncing,
-    guardLoading: state.app.guardSyncing,
+const mapStateToProps = (state: RootState) => {
+    return ({
+        tasks: _.values(state.app.tasksById),
+        projects: state.app.projects,
+        labels: state.app.labels,
+        error: state.app.error,
+        isLoading: state.app.isSyncing,
+        guardLoading: state.app.guardSyncing,
 
-    config: dataToJS(state.firebase, config(getFirebase())),
-    uiConfig: state.storage.uiConfig,
-    filter: state.app.filter,
+        uiConfig: state.storage.uiConfig,
+        filter: state.app.filter,
 
-    token: state.storage.todoist.token,
-    isTokenUpdating: state.storage.todoist.updating,
-    tokenUpdateError: state.storage.todoist.error,
+        token: state.storage.todoist.token,
+        isTokenUpdating: state.storage.todoist.updating,
+        tokenUpdateError: state.storage.todoist.error,
 
-    authError: pathToJS(state.firebase, 'authError'),
-    auth: pathToJS(state.firebase, 'auth'),
-    profile: pathToJS(state.firebase, 'profile'),
-});
+        config: config(state.firebase),
+        auth: state.firebase.auth,
+    });
+}
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -70,8 +77,8 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-const wrappedTop = firebaseConnect((props, firebase) => ([
-    config(firebase)
+const wrappedTop = firebaseConnect((props, store) => ([
+    {path: `/config/${props.auth.uid}`},
 ]))(Top);
 
 const TopContainer = connect(

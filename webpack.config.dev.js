@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const common = require("./webpack.config");
 
 module.exports = Object.assign(common, {
+    mode: 'development',
     plugins: [new webpack.HotModuleReplacementPlugin()],
 
     devServer: {

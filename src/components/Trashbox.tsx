@@ -41,7 +41,7 @@ export default class extends Component<TrashboxProps> {
                 <Dimmer active={this.props.canDrop && this.props.isOver}
                         style={{backgroundColor: "violet", opacity: 0.7}}
                         content={
-                            <Icon name='trash outline' size='huge'/>
+                            <Icon name='trash alternate outline' size='huge'/>
                         }/>
                 <Popup
                     trigger={<Icon size='big' name='trash' color='red' inverted />}

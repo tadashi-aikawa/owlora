@@ -10,10 +10,11 @@ import {applyMiddleware, compose, createStore} from 'redux';
 import createSagaMiddleware from 'redux-saga'
 import root from './sagas'
 import owloraApp, {INITIAL_ROOT_STATE, INITIAL_STORAGE_STATE} from './reducers';
-import {getFirebase, reactReduxFirebase} from 'react-redux-firebase';
+import {reactReduxFirebase} from 'react-redux-firebase';
 import * as persistState from 'redux-localstorage'
 import RootState from './states/index';
 import {StorageState} from './states/StorageState';
+import * as firebase from 'firebase'
 
 const firebaseConfig = {
     apiKey: 'AIzaSyDogXq52bKDV2vhbyLd-UtnUV0DnZ_6RH0',
@@ -44,7 +45,8 @@ const storage = {
     }
 };
 
-const createStoreWithFirebase = compose(reactReduxFirebase(firebaseConfig, config))(createStore);
+firebase.initializeApp(firebaseConfig)
+const createStoreWithFirebase = compose(reactReduxFirebase(firebase, config))(createStore);
 const createFinalStore = compose(persistState('storage', storage))(createStoreWithFirebase);
 const sagaMiddleware = createSagaMiddleware();
 const store = createFinalStore(owloraApp, applyMiddleware(sagaMiddleware));

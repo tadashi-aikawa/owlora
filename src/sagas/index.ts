@@ -18,9 +18,10 @@ import {
     UpdateTodoistTokenAction,
 } from '../actions/index';
 import {Dictionary} from "lodash";
-import {config} from "../utils/FirebasePathUtil";
-import {commonConfigValueSelector, todoistTokenSelector} from '../reducers/selectors';
+import {config, configPath} from "../utils/FirebaseUtil";
+import {commonConfigValueSelector, firebaseSelector, todoistTokenSelector} from '../reducers/selectors';
 import {CommonConfigValue} from '../models/CommonConfig';
+import {getFirebase} from "react-redux-firebase"
 
 const service: SyncService = new TodoistSyncService();
 
@@ -72,18 +73,20 @@ export function* removeTasks(action: RemoveTasksAction) {
     }
 }
 
-export function* login(action: LoginAction) {
+export function* login() {
+    const firebase: any = getFirebase()
     try {
-        const r = yield action.payload.login({provider: 'google'});
+        const r = yield firebase.login({provider: 'google'});
     } catch (e) {
         // TODO: error toaster
         console.log(e);
     }
 }
 
-export function* logout(action: LogoutAction) {
+export function* logout() {
+    const firebase: any = getFirebase()
     try {
-        yield action.payload.logout();
+        yield firebase.logout();
     } catch (e) {
         // TODO: error toaster
         console.log(e);
@@ -91,8 +94,11 @@ export function* logout(action: LogoutAction) {
 }
 
 export function* updateConfig(action: UpdateConfigAction) {
+    const firebase: any = getFirebase()
+    const firebaseState = yield select(firebaseSelector)
     try {
-        yield action.payload.firebase.set(config(action.payload.firebase), action.payload.config);
+        yield firebase.set(configPath(firebaseState), action.payload);
+        // yield firebase.set("config/fJk7u46HgdgLGF5ZRwiAuktoLqj2", action.payload);
     } catch (e) {
         // TODO: error toaster
         console.log(e);

@@ -189,7 +189,7 @@ export default class extends Component<DailyCardProps> {
                 <Dimmer active={this.props.past} content={
                     <div>
                         <h2>Facing forward !!</h2>
-                        <Icon name='hand outline right' size='huge'/>
+                        <Icon name='hand point right' size='huge'/>
                     </div>
                 }/>
                 <Dimmer active={!this.props.canDrop && this.props.isOver}
@@ -200,7 +200,7 @@ export default class extends Component<DailyCardProps> {
                         content={
                             <div>
                                 <h2>Change duedate</h2>
-                                <Icon name='arrow circle outline down' size='huge'/>
+                                <Icon name='arrow alternate circle down outline' size='huge'/>
                             </div>
                         }/>
                 <CardHeader props={this.props}

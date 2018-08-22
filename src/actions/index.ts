@@ -80,10 +80,7 @@ export interface ErrorRemoveTasksAction extends Action {
 export interface UpdateConfigAction extends Action {
     type: ActionType.UPDATE_CONFIG;
     // TODO: firebase
-    payload: {
-        firebase: any,
-        config: CommonConfig,
-    };
+    payload: CommonConfig;
 }
 
 export interface UpdateUiConfigAction extends Action {
@@ -98,14 +95,10 @@ export interface UpdateFilterAction extends Action {
 
 export interface LoginAction extends Action {
     type: ActionType.LOGIN;
-    // TODO: firebase
-    payload: any;
 }
 
 export interface LogoutAction extends Action {
     type: ActionType.LOGOUT;
-    // TODO: firebase
-    payload: any;
 }
 
 export interface UpdateTodoistTokenAction extends Action {
@@ -182,15 +175,15 @@ export function errorRemoveTasks(error: Error): ErrorRemoveTasksAction {
 }
 
 export function login(): LoginAction {
-    return {type: ActionType.LOGIN, payload: getFirebase()}
+    return {type: ActionType.LOGIN}
 }
 
 export function logout(): LogoutAction {
-    return {type: ActionType.LOGOUT, payload: getFirebase()}
+    return {type: ActionType.LOGOUT}
 }
 
 export function updateConfig(config: CommonConfig): UpdateConfigAction {
-    return {type: ActionType.UPDATE_CONFIG, payload: {firebase: getFirebase(), config}}
+    return {type: ActionType.UPDATE_CONFIG, payload: config}
 }
 
 export function updateUiConfig(config: UiConfig): UpdateUiConfigAction {
