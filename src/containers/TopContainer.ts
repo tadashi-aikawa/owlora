@@ -38,6 +38,7 @@ const mapStateToProps = (state: RootState) => {
 
         config: config(state.firebase),
         auth: state.firebase.auth,
+        authError: state.firebase.authError,
     });
 }
 

@@ -1,43 +1,24 @@
 import "../../package"
 import * as React from "react"
-import { Component } from "react"
+import {Component} from "react"
 import * as _ from "lodash"
 import * as moment from "moment"
-import {
-    Button,
-    Container,
-    Dimmer,
-    Feed,
-    Form,
-    Icon,
-    Image,
-    Input,
-    Label as SLabel,
-    Loader,
-    Message,
-    Step,
-} from "semantic-ui-react"
-import { DailyCards } from "./DailyCards"
-import Task, { TaskUpdateParameter } from "../models/Task"
+import {Button, Container, Dimmer, Form, Icon, Image, Input, Loader, Message, Step,} from "semantic-ui-react"
+import {DailyCards} from "./DailyCards"
+import Task, {TaskUpdateParameter} from "../models/Task"
 import CommonConfig from "../models/CommonConfig"
 import Project from "../models/Project"
 import Label from "../models/Label"
-import { DragDropContext } from "react-dnd"
-import ReduxToastr, { toastr } from "react-redux-toastr"
-import Emojify from "react-emojione"
+import {DragDropContext} from "react-dnd"
+import ReduxToastr, {toastr} from "react-redux-toastr"
 
-import { version } from "../../package.json"
+import {version} from "../../package.json"
 import Icebox from "./Icebox"
 import UiConfig from "../models/UiConfig"
 import NavigationMenu from "./NavigationMenu"
-
-import ImageOrEmoji from "./ImageOrEmoji"
-import { INITIAL_SHARED_STATE } from "../reducers/index"
-import { isEmpty, isLoaded } from "react-redux-firebase"
+import {INITIAL_SHARED_STATE} from "../reducers/index"
 import IconFilter from "./IconFilter"
 import Filter from "../models/Filter"
-import Size from "../constants/Size"
-import { DEFAULT_TASK_COLOR } from "../storage/settings"
 import HTML5Backend from 'react-dnd-html5-backend'
 
 
@@ -102,7 +83,7 @@ export interface TopState {
 }
 
 const readyToLoadingTasks = (config: CommonConfig): boolean => {
-    return isLoaded(config) && !isEmpty(config)
+    return !_.isEmpty(config)
 }
 
 @DragDropContext(HTML5Backend)
@@ -118,39 +99,39 @@ export default class extends Component<TopProps, TopState> {
     }
 
     componentWillReceiveProps(nextProps: TopProps) {
+        // props変わったぜ！ AND firebaseとしてロード完了&何かとれたよー
         if (!_.isEqual(this.props.config, nextProps.config) && readyToLoadingTasks(nextProps.config)) {
             nextProps.onReload()
         }
 
         // XXX: mumumumumu....
-        // if (isLoaded(nextProps.config) && isEmpty(nextProps.config)) {
-        //     nextProps.onChangeConfig(INITIAL_SHARED_STATE.config)
-        // }
+        if (nextProps.auth.isLoaded && !nextProps.config) {
+            nextProps.onChangeConfig(INITIAL_SHARED_STATE.config);
+        }
 
-        console.log('-----')
-        // Toaster
-        if (nextProps.error) {
-            toastr.error(nextProps.error.name, nextProps.error.message, {
-                showCloseButton: false,
-                removeOnHover: false,
-            })
-            this.setState({ hasErrorToast: true })
-        } else {
-            if (this.state.hasErrorToast) {
-                toastr.removeByType("error")
-                this.setState({ hasErrorToast: false })
+        // Error toaster handlings (Avoid infinite loop)
+        if (!_.isEqual(this.props.error, nextProps.error)) {
+            if (nextProps.error) {
+                toastr.error(nextProps.error.name, nextProps.error.message, {
+                    showCloseButton: false,
+                    removeOnHover: false,
+                })
+                this.setState({ hasErrorToast: true })
+            } else {
+                if (this.state.hasErrorToast) {
+                    toastr.removeByType("error")
+                    this.setState({ hasErrorToast: false })
+                }
             }
         }
     }
 
     componentDidMount() {
-        // FIXME: テストのあとは消す
-        // window.addEventListener("focus", this.onBackgroundReload, true)
+        window.addEventListener("focus", this.onBackgroundReload, true)
     }
 
     componentWillUnmount() {
-        // FIXME: テストのあとは消す
-        // window.removeEventListener("focus", this.onBackgroundReload)
+        window.removeEventListener("focus", this.onBackgroundReload)
     }
 
     onChangeFilterWord(word) {
@@ -165,7 +146,7 @@ export default class extends Component<TopProps, TopState> {
 
     render() {
         const needsValidTodoistToken = !this.props.token || this.props.tokenUpdateError
-        const needsLogin = isLoaded(this.props.auth) && isEmpty(this.props.auth)
+        const needsLogin = this.props.auth.isLoaded && this.props.auth.isEmpty
 
         if (needsValidTodoistToken) {
             return (
