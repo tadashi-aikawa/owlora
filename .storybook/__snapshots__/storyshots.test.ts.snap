@@ -23,18 +23,14 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -63,18 +59,14 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -549,18 +541,14 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -589,18 +577,14 @@ exports[`Storyshots DailyCard Appearance 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -1092,18 +1076,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -1132,18 +1112,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -1596,18 +1572,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -1636,18 +1608,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -2100,18 +2068,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -2140,18 +2104,14 @@ exports[`Storyshots DailyCard Feed color 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -2621,18 +2581,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -2661,18 +2617,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -3125,18 +3077,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -3165,18 +3113,14 @@ exports[`Storyshots DailyCard Feed icon 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -3612,18 +3556,14 @@ exports[`Storyshots DailyCard Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -3652,18 +3592,14 @@ exports[`Storyshots DailyCard Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -4437,18 +4373,14 @@ exports[`Storyshots DailyCard Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -4477,18 +4409,14 @@ exports[`Storyshots DailyCard Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -5040,18 +4968,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -5080,18 +5004,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -5544,18 +5464,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -5584,18 +5500,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -6048,18 +5960,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -6088,18 +5996,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -6552,18 +6456,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -6592,18 +6492,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -7056,18 +6952,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -7096,18 +6988,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -7560,18 +7448,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -7600,18 +7484,14 @@ exports[`Storyshots DailyCard Life status 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -8131,18 +8011,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -8171,18 +8047,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -8522,18 +8394,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -8562,18 +8430,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -9101,18 +8965,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -9141,18 +9001,14 @@ exports[`Storyshots DailyCard Milestone 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -9460,18 +9316,14 @@ exports[`Storyshots DailyCard Offtime 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Facing forward !!
+            </h2>
+            <i
+              aria-hidden="true"
+              className="hand point right huge icon"
+            />
           </div>
         </div>
       </div>
@@ -9500,18 +9352,14 @@ exports[`Storyshots DailyCard Offtime 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Change duedate
-              </h2>
-              <i
-                aria-hidden="true"
-                className="arrow circle outline down huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Change duedate
+            </h2>
+            <i
+              aria-hidden="true"
+              className="arrow alternate circle down outline huge icon"
+            />
           </div>
         </div>
       </div>
@@ -9848,18 +9696,14 @@ exports[`Storyshots DailyCard Past 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Facing forward !!
+            </h2>
+            <i
+              aria-hidden="true"
+              className="hand point right huge icon"
+            />
           </div>
         </div>
       </div>
@@ -9888,18 +9732,14 @@ exports[`Storyshots DailyCard Past 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Change duedate
-              </h2>
-              <i
-                aria-hidden="true"
-                className="arrow circle outline down huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Change duedate
+            </h2>
+            <i
+              aria-hidden="true"
+              className="arrow alternate circle down outline huge icon"
+            />
           </div>
         </div>
       </div>
@@ -10368,18 +10208,14 @@ exports[`Storyshots DailyCard Seal 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -10408,18 +10244,14 @@ exports[`Storyshots DailyCard Seal 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -10652,37 +10484,53 @@ exports[`Storyshots DailyCard Seal 1`] = `
             />
           </div>
           <div
-            className="ui purple basic label f1hhgdp"
-            onClick={[Function]}
+            className="ui purple mini compact message"
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
-          >
-            <span
-              style={
-                Object {
-                  "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
-                  "backgroundPosition": "-32.5px -503.75px",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "1040px",
-                  "display": "inline-block",
-                  "fontSize": "inherit",
-                  "height": 16,
-                  "imageRendering": "optimizeQuality",
-                  "lineHeight": "normal",
-                  "margin": "0 .15em",
-                  "position": "relative",
-                  "textIndent": "-9999em",
-                  "top": -3,
-                  "verticalAlign": "middle",
-                  "width": 16,
-                }
+            style={
+              Object {
+                "cursor": "move",
+                "fontSize": "75%",
+                "margin": 0,
+                "opacity": 1,
+                "padding": "10px",
               }
-              title=":house:"
+            }
+          >
+            <div
+              className="content"
             >
-              🏠
-            </span>
-             At home
-            <span />
+              <div
+                className="header"
+              >
+                <span
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                      "backgroundPosition": "-32.5px -503.75px",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "1040px",
+                      "display": "inline-block",
+                      "fontSize": "inherit",
+                      "height": 16,
+                      "imageRendering": "optimizeQuality",
+                      "lineHeight": "normal",
+                      "margin": "0 .15em",
+                      "position": "relative",
+                      "textIndent": "-9999em",
+                      "top": -3,
+                      "verticalAlign": "middle",
+                      "width": 16,
+                    }
+                  }
+                  title=":house:"
+                >
+                  🏠
+                </span>
+                 At home
+                <span />
+              </div>
+            </div>
           </div>
           <div
             className="ui hidden icon negative message"
@@ -10746,18 +10594,14 @@ exports[`Storyshots DailyCard Seal 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -10786,18 +10630,14 @@ exports[`Storyshots DailyCard Seal 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -11108,18 +10948,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -11148,18 +10984,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -12038,18 +11870,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -12078,18 +11906,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -12968,18 +12792,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -13008,18 +12828,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -13898,18 +13714,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -13938,18 +13750,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -14828,18 +14636,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -14868,18 +14672,14 @@ exports[`Storyshots DailyCard Sort 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -15772,18 +15572,14 @@ exports[`Storyshots DailyCard Summary 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Facing forward !!
-              </h2>
-              <i
-                aria-hidden="true"
-                className="hand outline right huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Facing forward !!
+            </h2>
+            <i
+              aria-hidden="true"
+              className="hand point right huge icon"
+            />
           </div>
         </div>
       </div>
@@ -15812,18 +15608,14 @@ exports[`Storyshots DailyCard Summary 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Change duedate
-              </h2>
-              <i
-                aria-hidden="true"
-                className="arrow circle outline down huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Change duedate
+            </h2>
+            <i
+              aria-hidden="true"
+              className="arrow alternate circle down outline huge icon"
+            />
           </div>
         </div>
       </div>
@@ -16056,37 +15848,53 @@ exports[`Storyshots DailyCard Summary 1`] = `
           />
         </div>
         <div
-          className="ui basic label f1hhgdp"
-          onClick={[Function]}
+          className="ui mini compact message"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-        >
-          <span
-            style={
-              Object {
-                "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
-                "backgroundPosition": "-422.5px -471.25px",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "1040px",
-                "display": "inline-block",
-                "fontSize": "inherit",
-                "height": 16,
-                "imageRendering": "optimizeQuality",
-                "lineHeight": "normal",
-                "margin": "0 .15em",
-                "position": "relative",
-                "textIndent": "-9999em",
-                "top": -3,
-                "verticalAlign": "middle",
-                "width": 16,
-              }
+          style={
+            Object {
+              "cursor": "move",
+              "fontSize": "75%",
+              "margin": 0,
+              "opacity": 1,
+              "padding": "10px",
             }
-            title=":wine_glass:"
+          }
+        >
+          <div
+            className="content"
           >
-            🍷
-          </span>
-           Seal
-          <span />
+            <div
+              className="header"
+            >
+              <span
+                style={
+                  Object {
+                    "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                    "backgroundPosition": "-422.5px -471.25px",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "1040px",
+                    "display": "inline-block",
+                    "fontSize": "inherit",
+                    "height": 16,
+                    "imageRendering": "optimizeQuality",
+                    "lineHeight": "normal",
+                    "margin": "0 .15em",
+                    "position": "relative",
+                    "textIndent": "-9999em",
+                    "top": -3,
+                    "verticalAlign": "middle",
+                    "width": 16,
+                  }
+                }
+                title=":wine_glass:"
+              >
+                🍷
+              </span>
+               Seal
+              <span />
+            </div>
+          </div>
         </div>
         <div
           className="ui hidden icon negative message"
@@ -16844,18 +16652,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -16884,18 +16688,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -17350,18 +17150,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -17390,18 +17186,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -17940,18 +17732,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -17980,18 +17768,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -18530,18 +18314,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -18570,18 +18350,14 @@ exports[`Storyshots DailyCard Time lamps 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -18886,18 +18662,14 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -18926,18 +18698,14 @@ exports[`Storyshots DailyCard Unknown estimates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -19615,18 +19383,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -19655,18 +19419,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -20169,18 +19929,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -20209,18 +19965,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -20706,18 +20458,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -20746,18 +20494,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21210,18 +20954,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21250,18 +20990,14 @@ exports[`Storyshots DailyCard Warning 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21714,18 +21450,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21754,18 +21486,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21875,18 +21603,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -21915,18 +21639,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22036,18 +21756,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22076,18 +21792,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22197,18 +21909,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22237,18 +21945,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22517,18 +22221,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22557,18 +22257,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22678,18 +22374,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -22718,18 +22410,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23080,18 +22768,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23120,18 +22804,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23241,18 +22921,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23281,18 +22957,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23561,18 +23233,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23601,18 +23269,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -23963,18 +23627,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24003,18 +23663,14 @@ exports[`Storyshots DailyCards Except dates 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24300,18 +23956,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24340,18 +23992,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24461,18 +24109,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24501,18 +24145,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24622,18 +24262,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24662,18 +24298,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24783,18 +24415,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24823,18 +24451,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24944,18 +24568,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -24984,18 +24604,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25105,18 +24721,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25145,18 +24757,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25507,18 +25115,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25547,18 +25151,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25827,18 +25427,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -25867,18 +25463,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26147,18 +25739,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26187,18 +25775,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26308,18 +25892,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26348,18 +25928,14 @@ exports[`Storyshots DailyCards Filter 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26486,18 +26062,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26526,18 +26098,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26647,18 +26215,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26687,18 +26251,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26808,18 +26368,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26848,18 +26404,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -26969,18 +26521,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27009,18 +26557,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27289,18 +26833,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27329,18 +26869,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27609,18 +27145,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27649,18 +27181,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27929,18 +27457,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -27969,18 +27493,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28090,18 +27610,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28130,18 +27646,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28410,18 +27922,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28450,18 +27958,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28730,18 +28234,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28770,18 +28270,14 @@ exports[`Storyshots DailyCards Last date 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28908,18 +28404,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -28948,18 +28440,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29069,18 +28557,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29109,18 +28593,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29230,18 +28710,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29270,18 +28746,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29391,18 +28863,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29431,18 +28899,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29711,18 +29175,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -29751,18 +29211,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30031,18 +29487,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30071,18 +29523,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30433,18 +29881,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30473,18 +29917,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30753,18 +30193,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -30793,18 +30229,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -31073,18 +30505,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -31113,18 +30541,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -31393,18 +30817,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Facing forward !!
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="hand outline right huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Facing forward !!
+              </h2>
+              <i
+                aria-hidden="true"
+                className="hand point right huge icon"
+              />
             </div>
           </div>
         </div>
@@ -31433,18 +30853,14 @@ exports[`Storyshots DailyCards Summary 1`] = `
           <div
             className="content"
           >
-            <div
-              className="center"
-            >
-              <div>
-                <h2>
-                  Change duedate
-                </h2>
-                <i
-                  aria-hidden="true"
-                  className="arrow circle outline down huge icon"
-                />
-              </div>
+            <div>
+              <h2>
+                Change duedate
+              </h2>
+              <i
+                aria-hidden="true"
+                className="arrow alternate circle down outline huge icon"
+              />
             </div>
           </div>
         </div>
@@ -31750,18 +31166,14 @@ exports[`Storyshots Icebox Summary 1`] = `
         <div
           className="content"
         >
-          <div
-            className="center"
-          >
-            <div>
-              <h2>
-                Remove duedate
-              </h2>
-              <i
-                aria-hidden="true"
-                className="arrow circle outline down huge icon"
-              />
-            </div>
+          <div>
+            <h2>
+              Remove duedate
+            </h2>
+            <i
+              aria-hidden="true"
+              className="arrow alternate circle down outline huge icon"
+            />
           </div>
         </div>
       </div>
@@ -31791,37 +31203,53 @@ exports[`Storyshots Icebox Summary 1`] = `
         className="content"
       >
         <div
-          className="ui basic label f1hhgdp"
-          onClick={[Function]}
+          className="ui mini compact message"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-        >
-          <span
-            style={
-              Object {
-                "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
-                "backgroundPosition": "-422.5px -471.25px",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "1040px",
-                "display": "inline-block",
-                "fontSize": "inherit",
-                "height": 16,
-                "imageRendering": "optimizeQuality",
-                "lineHeight": "normal",
-                "margin": "0 .15em",
-                "position": "relative",
-                "textIndent": "-9999em",
-                "top": -3,
-                "verticalAlign": "middle",
-                "width": 16,
-              }
+          style={
+            Object {
+              "cursor": "move",
+              "fontSize": "75%",
+              "margin": 0,
+              "opacity": 1,
+              "padding": "10px",
             }
-            title=":wine_glass:"
+          }
+        >
+          <div
+            className="content"
           >
-            🍷
-          </span>
-           Seal
-          <span />
+            <div
+              className="header"
+            >
+              <span
+                style={
+                  Object {
+                    "backgroundImage": "url(\\"https://github.com/pladaria/react-emojione/blob/emojione3/assets/sprites/emojione-3.1.2-64x64.png?raw=true\\")",
+                    "backgroundPosition": "-422.5px -471.25px",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "1040px",
+                    "display": "inline-block",
+                    "fontSize": "inherit",
+                    "height": 16,
+                    "imageRendering": "optimizeQuality",
+                    "lineHeight": "normal",
+                    "margin": "0 .15em",
+                    "position": "relative",
+                    "textIndent": "-9999em",
+                    "top": -3,
+                    "verticalAlign": "middle",
+                    "width": 16,
+                  }
+                }
+                title=":wine_glass:"
+              >
+                🍷
+              </span>
+               Seal
+              <span />
+            </div>
+          </div>
         </div>
         <div
           className="ui blue message"

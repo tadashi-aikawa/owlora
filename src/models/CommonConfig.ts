@@ -46,9 +46,6 @@ interface CommonConfig {
     minutesToUsePerSpecificDays: DictAndYaml<number>;
     iconsByProject: DictAndYaml<string>;
     colorsByTaskNameRegexp: DictAndYaml<string>;
-
-    isLoaded: boolean;
-    isEmpty: boolean;
 }
 
 export default CommonConfig;
