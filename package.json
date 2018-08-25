@@ -35,6 +35,10 @@
     }
   },
   "dependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.16",
+    "@storybook/addon-knobs": "^4.0.0-alpha.16",
+    "@storybook/addon-notes": "^4.0.0-alpha.16",
+    "@storybook/react": "^4.0.0-alpha.16",
     "@types/js-yaml": "^3.10.1",
     "@types/lodash": "^4.14.97",
     "@types/query-string": "^5.0.1",
@@ -50,9 +54,9 @@
     "moment": "^2.20.1",
     "query-string": "^5.0.1",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2",
     "react-dnd": "^2.5.4",
     "react-dnd-html5-backend": "^2.5.4",
+    "react-dom": "^16.4.2",
     "react-emojione": "^5.0.0",
     "react-redux": "^5.0.7",
     "react-redux-firebase": "^2.1.7",
@@ -66,10 +70,6 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^3.4.0",
-    "@storybook/addon-notes": "^3.3.11",
-    "@storybook/addon-storyshots": "^3.4.0",
-    "@storybook/react": "^3.4.0",
     "@types/jest": "^23.3.0",
     "awesome-typescript-loader": "^5.2.0",
     "cross-conf-env": "^1.1.2",

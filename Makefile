@@ -53,11 +53,8 @@ dev: ## Debug
 storybook: ## Run storybook
 	npm run storybook
 
-test: ## Unit test & Structural test
+test: ## Unit test
 	npm run test
-
-test-update: ## Unit test & Structual test with updating
-	npm run test -- -u
 
 build-image: ## Build docker image
 	@echo 'Starting $@'
