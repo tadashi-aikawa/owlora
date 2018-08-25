@@ -6,10 +6,9 @@ import {AppState} from '../states/AppState';
 import Order from '../constants/Order';
 import TaskSortField from '../constants/TaskSortField';
 import RootState from '../states/index';
-import {firebaseStateReducer} from 'react-redux-firebase'
+import {firebaseReducer} from 'react-redux-firebase'
 import {SharedState} from "../states/SharedState";
 import {StorageState} from '../states/StorageState';
-import Filter from '../models/Filter';
 import Task from "../models/Task";
 
 
@@ -169,5 +168,5 @@ export default combineReducers({
     app: appState as Reducer<any>,
     storage: storageState as Reducer<any>,
     toastr: toastrReducer,
-    firebase: firebaseStateReducer,
+    firebase: firebaseReducer,
 });

@@ -17,15 +17,6 @@ Support platforms
 * Firefox (Not for all)
 
 
-Demo
-----
-
-If you have todoist and google accounts, you can trying [Demo](https://owlora-mamansoft.firebaseapp.com/). 
-
-* Todoist token is used to use todoist sync api
-* Google account is used to synchronize configurations which in server(firebase) and client(browser) 
-
-
 Support repeated tasks
 ----------------------
 
@@ -86,18 +77,11 @@ $ make storybook
 ```
 
 
-### Test (Unit test & Structual test)
+### Test (Unit test)
 
 ```
 $ make test
 ```
-
-If results of structual test are expected, you run...
-
-```
-$ make test-update
-```
-
 
 ### Visualzed test
 

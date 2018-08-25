@@ -5,7 +5,7 @@ import {StorageState} from './StorageState';
 interface RootState {
     app: AppState,
     storage: StorageState,
-    firebase?: SharedState,
+    firebase?: any,
 }
 
 export default RootState;

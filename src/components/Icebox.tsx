@@ -86,7 +86,7 @@ export default class extends Component<IceboxProps> {
                     content={
                         <div>
                             <h2>Remove duedate</h2>
-                            <Icon name="arrow circle outline down" size="huge" />
+                            <Icon name="arrow alternate circle down outline" size="huge" />
                         </div>
                     }
                 />
