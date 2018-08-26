@@ -30,7 +30,10 @@ Support repeated tasks
 - [x] every tue(s),sat(s), sun(s)
 - [x] every other monday(s)
 - [x] every other mon(s),wed(s),fri(s)
-- [ ] every 1st mon(s), wed(s)
+- [x] every 1 mon(s)
+- [x] every 1st mon(s)
+- [x] every 1th mon(s)
+- [x] every first mon(s)
 - [x] every 1,15
 - [ ] every 3day(s)
 - [x] ending 2018-7-25

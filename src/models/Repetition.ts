@@ -1,18 +1,18 @@
-import {Moment} from "moment";
+import { Moment } from "moment"
 
-type Pattern = "every" | "every other";
+type Pattern = "every" | "every other"
 
 class Repetition {
-    day: number[] | "every";
+    day: number[] | "every"
     // 0: Sun, 1: Mon, ... 6: Sat
-    dayOfWeek: number[];
-    week: number[] | Pattern;
-    month: number[] | Pattern;
-    datesExcepted: Moment[];
-    lastDate?: Moment;
+    dayOfWeek: number[]
+    week: number[] | Pattern
+    month: number[] | Pattern
+    datesExcepted: Moment[]
+    lastDate?: Moment
 
     constructor(init?: Partial<Repetition>) {
-        Object.assign(this, init);
+        Object.assign(this, init)
     }
 
     static get everyDay() {
@@ -21,7 +21,7 @@ class Repetition {
             dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
             week: "every",
             month: "every",
-        });
+        })
     }
 
     static get everyWeekDay() {
@@ -30,42 +30,38 @@ class Repetition {
             dayOfWeek: [1, 2, 3, 4, 5],
             week: "every",
             month: "every",
-        });
+        })
     }
 
     // Ex. "every mon,fri" or "every other mon,fri"
-    static fromDaysOfWeek(daysOfWeek: number[], pattern: Pattern): Repetition {
+    static fromDaysOfWeek(daysOfWeek: number[], week: number[] | Pattern, month: Pattern = "every"): Repetition {
         return new Repetition({
             day: "every",
             dayOfWeek: daysOfWeek,
-            week: pattern,
-            month: "every",
-        });
+            week: week,
+            month: month,
+        })
     }
 
     // Ex. "every 1,15" or "every other 1,15"
     static fromDays(days: number[], pattern: Pattern): Repetition {
-       return new Repetition({
+        return new Repetition({
             day: days,
             dayOfWeek: [0, 1, 2, 3, 4, 5, 6],
             week: "every",
             month: pattern,
-        });
+        })
     }
 
     addDatesExcepted(dates: Moment[]): Repetition {
-        this.datesExcepted = dates;
-        return this;
+        this.datesExcepted = dates
+        return this
     }
 
     addLastDate(date: Moment): Repetition {
-        this.lastDate = date;
-        return this;
+        this.lastDate = date
+        return this
     }
 }
 
-
-export {
-    Repetition,
-    Pattern,
-};
+export { Repetition, Pattern }

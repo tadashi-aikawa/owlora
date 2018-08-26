@@ -1,4 +1,14 @@
-import {inTheDay, isFriDay, isMonDay, isThursDay, isTuesDay, isWednesDay, isWeekDay, toStartDayOfWeek} from "./DateUtil"
+import {
+    getTh,
+    inTheDay,
+    isFriDay,
+    isMonDay,
+    isThursDay,
+    isTuesDay,
+    isWednesDay,
+    isWeekDay,
+    toStartDayOfWeek
+} from "./DateUtil"
 import {Moment} from "moment"
 import * as moment from "moment"
 import {Repetition} from "../models/Repetition"
@@ -116,6 +126,20 @@ ${"2018/07/28"} | ${"Saturday"}  | ${"2018/7/22"}
     test(`${expected} if ${dayOfWeek}(${date})`, () => expect(toStartDayOfWeek(d(date)).format(FORMAT)).toEqual(expected))
 })
 
+describe.each`
+date            | expected
+${"2018/07/30"} | ${5}
+${"2018/08/06"} | ${1}
+${"2018/08/13"} | ${2}
+${"2018/08/20"} | ${3}
+${"2018/08/27"} | ${4}
+${"2018/08/04"} | ${1}
+${"2018/08/07"} | ${1}
+${"2018/08/08"} | ${2}
+`("getTh returns", ({date, expected}) => {
+    test(`${date} returns ${expected}`, () => expect(getTh(d(date))).toEqual(expected))
+})
+
 const WEEK = [0, 1, 2, 3, 4, 5, 6];
 
 describe.each`
@@ -127,6 +151,12 @@ ${"excepted dates is dueDate"} | ${"2018/07/22"} | ${"2018/07/22"} | ${"every"} 
 ${"dayOfWeek"}                 | ${"2018/07/24"} | ${"2018/01/01"} | ${"every"}     | ${[0, 1]}    | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${false}
 ${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/14"} | ${"every"}     | ${[0, 1]}    | ${"every other"} | ${"every"}    | ${[]}             | ${""}          | ${true}
 ${"dayOfWeek every other"}     | ${"2018/07/22"} | ${"2018/07/20"} | ${"every"}     | ${[0, 1]}    | ${"every other"} | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"First Monday"}              | ${"2018/07/30"} | ${"2018/01/01"} | ${"every"}     | ${[1]}       | ${[1]}           | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"First Monday"}              | ${"2018/08/01"} | ${"2018/01/01"} | ${"every"}     | ${[1]}       | ${[1]}           | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"First Monday"}              | ${"2018/08/06"} | ${"2018/01/01"} | ${"every"}     | ${[1]}       | ${[1]}           | ${"every"}    | ${[]}             | ${""}          | ${true}
+${"Second Tuesday"}            | ${"2018/07/31"} | ${"2018/01/01"} | ${"every"}     | ${[2]}       | ${[2]}           | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"Second Tuesday"}            | ${"2018/08/07"} | ${"2018/01/01"} | ${"every"}     | ${[2]}       | ${[2]}           | ${"every"}    | ${[]}             | ${""}          | ${false}
+${"Second Tuesday"}            | ${"2018/08/14"} | ${"2018/01/01"} | ${"every"}     | ${[2]}       | ${[2]}           | ${"every"}    | ${[]}             | ${""}          | ${true}
 ${"day"}                       | ${"2018/07/21"} | ${"2018/01/01"} | ${[2, 22]}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${false}
 ${"day"}                       | ${"2018/07/22"} | ${"2018/01/01"} | ${[2, 22]}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${""}          | ${true}
 ${"date is Last day"}          | ${"2018/07/22"} | ${"2018/01/01"} | ${"every"}     | ${WEEK}      | ${"every"}       | ${"every"}    | ${[]}             | ${"2018/7/22"} | ${true}
