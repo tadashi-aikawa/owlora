@@ -1,7 +1,8 @@
-import * as _ from 'lodash'
+import * as _ from "lodash"
 import { Moment } from "moment"
 import Task from "../models/Task"
 import { SIMPLE_FORMAT } from "../storage/settings"
+import { Pattern } from "../models/Repetition"
 
 export const isWeekDay = (date: Moment): boolean => date.day() > 0 && date.day() < 6
 export const isMonDay = (date: Moment): boolean => date.day() === 1
@@ -10,8 +11,26 @@ export const isWednesDay = (date: Moment): boolean => date.day() === 3
 export const isThursDay = (date: Moment): boolean => date.day() === 4
 export const isFriDay = (date: Moment): boolean => date.day() === 5
 
+export const toStartMonth = (date: Moment): Moment => date.clone().startOf("month")
 export const toStartDayOfWeek = (date: Moment): Moment => date.clone().startOf("week")
 export const plusDays = (date: Moment, days: number): Moment => date.clone().add(days, "day")
+
+function isNumberArray(arg: any): arg is number[] {
+    return arg !== "every" && arg !== "every other"
+}
+
+export const getTh = (date: Moment): number => {
+    const d: Moment = toStartMonth(date)
+    let cnt: number = 0
+    while (d.format(SIMPLE_FORMAT) !== date.format(SIMPLE_FORMAT)) {
+        if (d.day() === date.day()) {
+            cnt += 1
+        }
+        d.add(1, "day")
+    }
+
+    return cnt + 1
+}
 
 export const inTheDay = (task: Task, date: Moment): boolean => {
     if (!task.dueDate) {
@@ -43,7 +62,11 @@ export const inTheDay = (task: Task, date: Moment): boolean => {
         return false
     }
 
-    const td: number[] | 'every' = task.repetition.day
+    if (isNumberArray(task.repetition.week) && !_.includes<number>(task.repetition.week, getTh(date))) {
+        return false
+    }
+
+    const td: number[] | "every" = task.repetition.day
     if (td !== "every" && !_.includes<number>(td, date.date())) {
         return false
     }
