@@ -2,7 +2,6 @@ import * as _ from "lodash";
 import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { WithNotes } from "@storybook/addon-notes";
 import { action } from "@storybook/addon-actions";
 
 import Task from "../models/Task";

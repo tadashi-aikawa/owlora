@@ -1,19 +1,18 @@
 import * as _ from "lodash"
 import * as React from "react"
 
-import { storiesOf } from "@storybook/react"
-import { WithNotes } from "@storybook/addon-notes"
-import { action } from "@storybook/addon-actions"
+import {storiesOf} from "@storybook/react"
+import {action} from "@storybook/addon-actions"
 
 import Task from "../models/Task"
 import * as Moment from "moment"
-import { boolean, number, object, select, text, withKnobs } from "@storybook/addon-knobs"
+import {boolean, number, object, select, text, withKnobs} from "@storybook/addon-knobs"
 import DnDWrapper from "./DnDWrapper"
-import { DailyCards } from "./DailyCards"
+import {DailyCards} from "./DailyCards"
 import TaskSortField from "../constants/TaskSortField"
 import Order from "../constants/Order"
+import {Repetition} from "../models/Repetition"
 import moment = require("moment")
-import { Repetition } from "../models/Repetition"
 
 const DnDWrapperDecorator = storyFn => <DnDWrapper>{storyFn()}</DnDWrapper>
 
