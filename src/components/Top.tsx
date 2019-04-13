@@ -11,8 +11,6 @@ import Project from "../models/Project"
 import Label from "../models/Label"
 import {DragDropContext} from "react-dnd"
 import ReduxToastr, {toastr} from "react-redux-toastr"
-
-import {version} from "../../package.json"
 import Icebox from "./Icebox"
 import UiConfig from "../models/UiConfig"
 import NavigationMenu from "./NavigationMenu"
