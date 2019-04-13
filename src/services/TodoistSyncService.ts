@@ -126,7 +126,7 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
             .addLastDate(lastDate)
     }
 
-    console.warn("Unsupported pattern!!")
+    console.warn("Unsupported pattern!! " + dateString)
     return undefined
 }
 

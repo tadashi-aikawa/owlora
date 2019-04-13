@@ -1,13 +1,13 @@
 import * as React from "react";
-import { Component } from "react";
-import { Feed, Label } from "semantic-ui-react";
-import Task, { TaskUpdateParameter } from "../models/Task";
-import { findDOMNode } from "react-dom";
+import {Component} from "react";
+import {Feed, Label} from "semantic-ui-react";
+import Task, {TaskUpdateParameter} from "../models/Task";
+import {findDOMNode} from "react-dom";
 import ImageOrEmoji from "./ImageOrEmoji";
 import Emojify from "react-emojione";
-import { DragSource, DropTarget } from "react-dnd";
+import {DragSource, DropTarget} from "react-dnd";
 import EditorIcon from "./EditIcon";
-import { DEFAULT_TASK_COLOR } from "../storage/settings";
+import {DEFAULT_TASK_COLOR} from "../storage/settings";
 
 export interface TaskFeedState {
     hiddenEditIcon: boolean;
@@ -73,13 +73,13 @@ export default class extends Component<TaskFeedProps, TaskFeedState> {
     };
 
     render() {
-        const { name, projectName, icon, estimatedMinutes, color } = this.props.task;
+        const {name, projectName, icon, estimatedMinutes, color} = this.props.task;
         return (
             <div ref={node => this.props.connectDragSource && this.props.connectDragSource(findDOMNode(this))}>
                 <Feed>
                     <Feed.Event
-                        onMouseEnter={() => this.setState({ hiddenEditIcon: false })}
-                        onMouseLeave={() => this.setState({ hiddenEditIcon: true })}
+                        onMouseEnter={() => this.setState({hiddenEditIcon: false})}
+                        onMouseLeave={() => this.setState({hiddenEditIcon: true})}
                         style={{
                             backgroundColor: color || DEFAULT_TASK_COLOR,
                             border: "2px solid",
@@ -93,13 +93,13 @@ export default class extends Component<TaskFeedProps, TaskFeedState> {
                         }}
                     >
                         <Feed.Label>
-                            <ImageOrEmoji src={icon} />
+                            <ImageOrEmoji src={icon}/>
                         </Feed.Label>
                         <Feed.Content>
-                            <Feed.Date content={<Emojify style={{ height: 20, width: 20 }}>{projectName}</Emojify>} />
+                            <Feed.Date content={<Emojify style={{height: 20, width: 20}}>{projectName}</Emojify>}/>
                             <Feed.Summary>
-                                <Emojify style={{ height: 20, width: 20, marginLeft: 10 }}>{name}</Emojify>
-                                <EditorIcon id={this.props.task.id} hidden={this.state.hiddenEditIcon} />
+                                <Emojify style={{height: 20, width: 20, marginLeft: 10}}>{name}</Emojify>
+                                <EditorIcon id={this.props.task.id} hidden={this.state.hiddenEditIcon}/>
                             </Feed.Summary>
                         </Feed.Content>
                         <Label

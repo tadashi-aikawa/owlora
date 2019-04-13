@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 import * as React from 'react';
-import {Button, Divider, Form, Grid, Icon, Menu, Message, Segment} from 'semantic-ui-react';
+import {Button, Divider, Form, Grid, Icon, Menu, Message, Segment, Tab} from 'semantic-ui-react';
 import {version} from '../../../package.json';
 import CommonConfig, {ArrayAndYaml, DictAndYaml} from '../../models/CommonConfig';
 import ConfigImporter from './ConfigImporter';
@@ -55,6 +55,9 @@ export interface ConfigEditorProps {
 export interface ConfigEditorState {
     activeItem: 'time' | 'visual' | 'import/export' | 'account' | 'info';
 
+    activeTimeTabIndex: number,
+    activeVisualTabIndex: number,
+
     estimates: string;
     milestones: string;
     seals: string;
@@ -70,6 +73,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
 
     state: ConfigEditorState = {
         activeItem: 'time',
+        activeTimeTabIndex: 0,
+        activeVisualTabIndex: 0,
         estimates: ArrayAndYaml.toYaml(this.props.defaultConfig.estimates),
         milestones: ArrayAndYaml.toYaml(this.props.defaultConfig.milestones),
         seals: ArrayAndYaml.toYaml(this.props.defaultConfig.seals),
@@ -101,7 +106,102 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         }
     };
 
+    handleTimeTabChange = (e, {activeIndex}) => this.setState({activeTimeTabIndex: activeIndex})
+    handleVisualTabChange = (e, {activeIndex}) => this.setState({activeVisualTabIndex: activeIndex})
+
     render() {
+        const timePanes = [
+            {
+                menuItem: 'Day', render: () => <Tab.Pane>
+                    <Form.Field inline required>
+                        <label>Minutes to use per day</label>
+                        <Form.Input type="number"
+                                    name="minutesToUsePerDay"
+                                    value={this.state.minutesToUsePerDay}
+                                    onChange={this.handleChange}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Specific days', render: () => <Tab.Pane>
+                    <Form.Field>
+                        <label>Minutes to use per specific days</label>
+                        <Form.TextArea name="minutesToUsePerSpecificDays"
+                                       placeholder='Specific days as yaml (key is yyyyMMdd)'
+                                       value={this.state.minutesToUsePerSpecificDays}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Estimates', render: () => <Tab.Pane>
+                    <Form.Field required>
+                        <Form.TextArea name="estimates"
+                                       placeholder={ESTIMATES_PLACEHOLDER}
+                                       value={this.state.estimates}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            }
+        ]
+
+        const visualPanes = [
+            {
+                menuItem: 'Milestones', render: () => <Tab.Pane>
+                    <Form.Field>
+                        <Form.TextArea name="milestones"
+                                       placeholder={MILESTONES_PLACEHOLDER}
+                                       value={this.state.milestones}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Seals', render: () => <Tab.Pane>
+                    <Form.Field>
+                        <Form.TextArea name="seals"
+                                       placeholder={SEALS_PLACEHOLDER}
+                                       value={this.state.seals}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Icons', render: () => <Tab.Pane>
+                    <Form.Field>
+                        <label>Icons by project id</label>
+                        <Form.TextArea name="iconsByProject"
+                                       placeholder='Icon urls by projects as yaml (key is project id)'
+                                       value={this.state.iconsByProject}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Colors', render: () => <Tab.Pane>
+                    <Form.Field>
+                        <label>Colors by task name regexp</label>
+                        <Form.TextArea name="colorsByTaskNameRegexp"
+                                       placeholder='Task name regexp and color used'
+                                       value={this.state.colorsByTaskNameRegexp}
+                                       onChange={this.handleChange}
+                                       style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+        ]
         return (
             <div>
                 {
@@ -149,79 +249,15 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Grid.Column>
 
                     <Grid.Column stretched width={12}>
-                        <Segment>
                             {
-                                this.state.activeItem === 'visual' ?
-                                    <Form>
-                                        <Form.Field>
-                                            <label><Icon name="pencil"/>Milestones</label>
-                                            <Form.TextArea name="milestones"
-                                                           placeholder={MILESTONES_PLACEHOLDER}
-                                                           value={this.state.milestones}
-                                                           onChange={this.handleChange}
-                                                           autoHeight
-                                            />
-                                        </Form.Field>
-                                        <Form.Field>
-                                            <label><Icon name="pencil"/>Seals</label>
-                                            <Form.TextArea name="seals"
-                                                           placeholder={SEALS_PLACEHOLDER}
-                                                           value={this.state.seals}
-                                                           onChange={this.handleChange}
-                                                           autoHeight
-                                            />
-                                        </Form.Field>
-                                        <Form.Field inline>
-                                            <label><Icon name="pencil"/>Icons by project id</label>
-                                            <Form.TextArea name="iconsByProject"
-                                                           placeholder='Icon urls by projects as yaml (key is project id)'
-                                                           value={this.state.iconsByProject}
-                                                           onChange={this.handleChange}
-                                                           autoHeight
-                                            />
-                                        </Form.Field>
-                                        <Divider section/>
-                                        <Form.Field inline>
-                                            <label><Icon name="pencil"/>Colors by task name regexp</label>
-                                            <Form.TextArea name="colorsByTaskNameRegexp"
-                                                           placeholder='Task name regexp and color used'
-                                                           value={this.state.colorsByTaskNameRegexp}
-                                                           onChange={this.handleChange}
-                                                           autoHeight
-                                            />
-                                        </Form.Field>
-                                    </Form>
-                                    :
-                                    this.state.activeItem === 'time' ?
-                                        <Form>
-                                            <Form.Field inline required>
-                                                <label><Icon name="pencil"/>Minutes to use per day</label>
-                                                <Form.Input type="number"
-                                                            name="minutesToUsePerDay"
-                                                            value={this.state.minutesToUsePerDay}
-                                                            onChange={this.handleChange}
-                                                />
-                                            </Form.Field>
-                                            <Form.Field inline>
-                                                <label><Icon name="pencil"/>Minutes to use per specific days</label>
-                                                <Form.TextArea name="minutesToUsePerSpecificDays"
-                                                               placeholder='Specific days as yaml (key is yyyyMMdd)'
-                                                               value={this.state.minutesToUsePerSpecificDays}
-                                                               onChange={this.handleChange}
-                                                               autoHeight
-                                                />
-                                            </Form.Field>
-                                            <Form.Field inline required>
-                                                <label><Icon name="pencil"/>Estimates</label>
-                                                <Form.TextArea name="estimates"
-                                                               placeholder={ESTIMATES_PLACEHOLDER}
-                                                               value={this.state.estimates}
-                                                               onChange={this.handleChange}
-                                                               autoHeight
-                                                />
-                                            </Form.Field>
-                                        </Form>
-                                        :
+                                this.state.activeItem === 'time' ?
+                                    <Tab panes={timePanes}
+                                         activeIndex={this.state.activeTimeTabIndex}
+                                         onTabChange={this.handleTimeTabChange}/> :
+                                    this.state.activeItem === 'visual' ?
+                                        <Tab panes={visualPanes}
+                                             activeIndex={this.state.activeVisualTabIndex}
+                                             onTabChange={this.handleVisualTabChange}/> :
                                         this.state.activeItem === 'import/export' ?
                                             <ConfigImporter config={_.omit(this.state, ['activeItem', 'todoistToken'])}
                                                             onImport={newState => this.setState(
@@ -234,7 +270,6 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                                 :
                                                 this.state.activeItem === 'info' ? <ConfigInfo version={version}/> : ""
                             }
-                        </Segment>
                     </Grid.Column>
                 </Grid>
             </div>

@@ -278,9 +278,11 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                             position="bottom right"
                                             trigger={<Button icon="tags" circular title="Show labels"/>}
                                         >
-                                            <ul>
-                                                {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
-                                            </ul>
+                                            <div style={{maxHeight: 400, overflowY: "scroll", paddingRight: "20px"}}>
+                                                <ul style={{listStyle: "none"}}>
+                                                    {this.props.labels.map(l => <li key={l.id}>{l.id}: {l.name}</li>)}
+                                                </ul>
+                                            </div>
                                         </Popup>
                                         <Popup
                                             on="click"
@@ -289,9 +291,11 @@ export default class extends Component<NavigationMenuProps, NavigationMenuState>
                                             position="bottom right"
                                             trigger={<Button icon="object group" circular title="Show projects"/>}
                                         >
-                                            <ul>
-                                                {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
-                                            </ul>
+                                            <div style={{maxHeight: 400, overflowY: "scroll", paddingRight: "20px"}}>
+                                                <ul style={{listStyle: "none"}}>
+                                                    {this.props.projects.map(p => <li key={p.id}>{p.id}: {p.name}</li>)}
+                                                </ul>
+                                            </div>
                                         </Popup>
                                     </div>
                                 </div>
