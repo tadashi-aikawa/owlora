@@ -63,3 +63,6 @@ regconfig.json
 
 # Test
 /coverage
+
+# Firebase
+.firebase
