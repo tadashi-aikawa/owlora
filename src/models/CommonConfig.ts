@@ -44,6 +44,10 @@ interface CommonConfig {
     milestones: ArrayAndYaml<MilestoneConfig>;
     seals: ArrayAndYaml<SealConfig>;
     minutesToUsePerSpecificDays: DictAndYaml<number>;
+    lampTime: {
+        begin: number,
+        end: number,
+    },
     iconsByProject: DictAndYaml<string>;
     colorsByTaskNameRegexp: DictAndYaml<string>;
 }

@@ -63,6 +63,8 @@ export interface ConfigEditorState {
     seals: string;
     minutesToUsePerDay: number;
     minutesToUsePerSpecificDays: string;
+    lampTimeBegin: number;
+    lampTimeEnd: number;
     iconsByProject: string;
     colorsByTaskNameRegexp: string;
 
@@ -80,6 +82,8 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
         seals: ArrayAndYaml.toYaml(this.props.defaultConfig.seals),
         minutesToUsePerDay: this.props.defaultConfig.minutesToUsePerDay,
         minutesToUsePerSpecificDays: DictAndYaml.toYaml(this.props.defaultConfig.minutesToUsePerSpecificDays),
+        lampTimeBegin: this.props.defaultConfig.lampTime.begin,
+        lampTimeEnd: this.props.defaultConfig.lampTime.end,
         iconsByProject: DictAndYaml.toYaml(this.props.defaultConfig.iconsByProject),
         colorsByTaskNameRegexp: DictAndYaml.toYaml(this.props.defaultConfig.colorsByTaskNameRegexp),
     };
@@ -98,6 +102,10 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                 seals: ArrayAndYaml.fromYaml(this.state.seals),
                 minutesToUsePerDay: this.state.minutesToUsePerDay && Number(this.state.minutesToUsePerDay),
                 minutesToUsePerSpecificDays: DictAndYaml.fromYaml(this.state.minutesToUsePerSpecificDays),
+                lampTime: {
+                    begin: this.state.lampTimeBegin,
+                    end: this.state.lampTimeEnd,
+                },
                 iconsByProject: DictAndYaml.fromYaml(this.state.iconsByProject),
                 colorsByTaskNameRegexp: DictAndYaml.fromYaml(this.state.colorsByTaskNameRegexp),
             });
@@ -144,6 +152,28 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                                        value={this.state.estimates}
                                        onChange={this.handleChange}
                                        style={{width: "100%", height: "50vh", padding: "10px"}}
+                        />
+                    </Form.Field>
+                </Tab.Pane>
+            },
+            {
+                menuItem: 'Time lamps', render: () => <Tab.Pane>
+                    <Form.Field inline required>
+                        <label>Begin hour</label>
+                        <Form.Input type="number"
+                                    name="lampTimeBegin"
+                                    value={this.state.lampTimeBegin}
+                                    min={0}
+                                    max={23}
+                                    onChange={this.handleChange}
+                        />
+                        <label>End hour</label>
+                        <Form.Input type="number"
+                                    name="lampTimeEnd"
+                                    value={this.state.lampTimeEnd}
+                                    min={0}
+                                    max={23}
+                                    onChange={this.handleChange}
                         />
                     </Form.Field>
                 </Tab.Pane>
@@ -249,27 +279,27 @@ export default class extends React.Component<ConfigEditorProps, ConfigEditorStat
                     </Grid.Column>
 
                     <Grid.Column stretched width={12}>
-                            {
-                                this.state.activeItem === 'time' ?
-                                    <Tab panes={timePanes}
-                                         activeIndex={this.state.activeTimeTabIndex}
-                                         onTabChange={this.handleTimeTabChange}/> :
-                                    this.state.activeItem === 'visual' ?
-                                        <Tab panes={visualPanes}
-                                             activeIndex={this.state.activeVisualTabIndex}
-                                             onTabChange={this.handleVisualTabChange}/> :
-                                        this.state.activeItem === 'import/export' ?
-                                            <ConfigImporter config={_.omit(this.state, ['activeItem', 'todoistToken'])}
-                                                            onImport={newState => this.setState(
-                                                                Object.assign(newState as ConfigEditorState, {activeItem: "main"})
-                                                            )}
-                                            />
+                        {
+                            this.state.activeItem === 'time' ?
+                                <Tab panes={timePanes}
+                                     activeIndex={this.state.activeTimeTabIndex}
+                                     onTabChange={this.handleTimeTabChange}/> :
+                                this.state.activeItem === 'visual' ?
+                                    <Tab panes={visualPanes}
+                                         activeIndex={this.state.activeVisualTabIndex}
+                                         onTabChange={this.handleVisualTabChange}/> :
+                                    this.state.activeItem === 'import/export' ?
+                                        <ConfigImporter config={_.omit(this.state, ['activeItem', 'todoistToken'])}
+                                                        onImport={newState => this.setState(
+                                                            Object.assign(newState as ConfigEditorState, {activeItem: "main"})
+                                                        )}
+                                        />
+                                        :
+                                        this.state.activeItem === 'account' ?
+                                            <span>TODO</span>
                                             :
-                                            this.state.activeItem === 'account' ?
-                                                <span>TODO</span>
-                                                :
-                                                this.state.activeItem === 'info' ? <ConfigInfo version={version}/> : ""
-                            }
+                                            this.state.activeItem === 'info' ? <ConfigInfo version={version}/> : ""
+                        }
                     </Grid.Column>
                 </Grid>
             </div>

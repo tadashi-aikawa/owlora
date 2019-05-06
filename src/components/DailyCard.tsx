@@ -120,6 +120,10 @@ export interface DailyCardProps {
     taskSortField: TaskSortField;
     taskOrder: Order;
     timeLamps: boolean;
+    lampTime: {
+        begin: number,
+        end: number,
+    },
     milestone: boolean;
     seal: boolean;
     warning: boolean;
@@ -210,7 +214,7 @@ export default class extends Component<DailyCardProps> {
                 <Card.Content>
                     {this.props.timeLamps &&
                     <Container textAlign="center">
-                        {_.range(10, 20).map(h =>
+                        {_.range(this.props.lampTime.begin, this.props.lampTime.end).map(h =>
                             <Popup flowing hoverable
                                    key={h}
                                    position="top center"
