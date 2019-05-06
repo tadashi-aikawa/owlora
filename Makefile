@@ -91,6 +91,7 @@ release:  ## Release
 
 	@echo '4. Push'
 	git push
+	git push --tags
 
 	@echo '5. Rebuild with new version'
 	npm run build
