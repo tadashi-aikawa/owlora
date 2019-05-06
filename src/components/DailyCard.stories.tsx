@@ -106,6 +106,7 @@ storiesOf("DailyCard", module)
                 }),
             ]}
             timeLamps={boolean("timeLamps", true)}
+            lampTime={{begin: number("lampTime.begin", 9), end: number("lampTime.end", 18)}}
             milestone={boolean("milestone", true)}
             seal={boolean("seal", true)}
             warning={boolean("warning", true)}
@@ -135,6 +136,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -161,6 +163,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -223,6 +226,7 @@ storiesOf("DailyCard", module)
                     filter={{ iconDisabledMap: {} }}
                     tasks={tasks}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -239,6 +243,7 @@ storiesOf("DailyCard", module)
                     filter={{ iconDisabledMap: {} }}
                     tasks={tasks}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -259,6 +264,7 @@ storiesOf("DailyCard", module)
                     filter={{ iconDisabledMap: {} }}
                     tasks={tasks}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -275,6 +281,7 @@ storiesOf("DailyCard", module)
                     filter={{ iconDisabledMap: {} }}
                     tasks={tasks}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -291,6 +298,7 @@ storiesOf("DailyCard", module)
                     filter={{ iconDisabledMap: {} }}
                     tasks={tasks}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -322,6 +330,7 @@ storiesOf("DailyCard", module)
                     ]}
                     isTasksExpanded
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -354,6 +363,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -388,6 +398,7 @@ storiesOf("DailyCard", module)
                     ]}
                     isTasksExpanded
                     timeLamps
+                    lampTime={{begin: number("(3)lampTime.begin", 9), end: number("(3)lampTime.end", 18)}}
                     milestone
                     seal
                     warning
@@ -412,6 +423,7 @@ storiesOf("DailyCard", module)
                     ]}
                     isTasksExpanded
                     timeLamps={boolean("(4)Time lamps is enabled", false)}
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -438,6 +450,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -460,6 +473,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -486,6 +500,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -508,6 +523,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -530,6 +546,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -560,6 +577,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -590,6 +608,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -616,6 +635,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone={boolean("(3)Milestone is enabled", false)}
                     seal
                     warning
@@ -645,6 +665,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -670,6 +691,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal={boolean("(2)Seal is enabled", false)}
                     warning
@@ -696,6 +718,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning={boolean("(1) warning", true)}
@@ -718,6 +741,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning={boolean("(2) warning", false)}
@@ -740,6 +764,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning={boolean("(3) warning", true)}
@@ -762,6 +787,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning={boolean("(4) warning", false)}
@@ -787,6 +813,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -809,6 +836,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -831,6 +859,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -853,6 +882,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -875,6 +905,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -897,6 +928,7 @@ storiesOf("DailyCard", module)
                         }),
                     ]}
                     timeLamps
+                    lampTime={{begin: 10, end: 19}}
                     milestone
                     seal
                     warning
@@ -930,6 +962,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -993,6 +1026,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -1053,6 +1087,7 @@ storiesOf("DailyCard", module)
                     }),
                 ]}
                 timeLamps
+                lampTime={{begin: 10, end: 19}}
                 milestone
                 seal
                 warning
@@ -1074,6 +1109,7 @@ storiesOf("DailyCard", module)
             filter={{ iconDisabledMap: {} }}
             tasks={[]}
             timeLamps
+            lampTime={{begin: 10, end: 19}}
             milestone
             seal
             warning
@@ -1097,6 +1133,7 @@ storiesOf("DailyCard", module)
                 }),
             ]}
             timeLamps
+            lampTime={{begin: 10, end: 19}}
             milestone
             seal
             warning

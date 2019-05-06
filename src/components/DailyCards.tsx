@@ -30,6 +30,10 @@ export interface DailyCardsProps {
     taskSortField: TaskSortField
     taskOrder: Order
     timeLamps: boolean
+    lampTime: {
+        begin: number,
+        end: number,
+    },
     milestone: boolean
     seal: boolean
     warning: boolean
@@ -64,6 +68,7 @@ export const DailyCards = (props: DailyCardsProps) => {
                     taskSortField={props.taskSortField}
                     taskOrder={props.taskOrder}
                     timeLamps={props.timeLamps}
+                    lampTime={props.lampTime}
                     milestone={props.milestone}
                     seal={props.seal}
                     warning={props.warning}

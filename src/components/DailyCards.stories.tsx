@@ -59,6 +59,7 @@ storiesOf("DailyCards", module)
             taskSortField={TaskSortField.DAY_ORDER}
             taskOrder={Order.ASC}
             timeLamps={false}
+            lampTime={{begin: 10, end: 19}}
             milestone={false}
             seal={false}
             warning={false}
@@ -88,6 +89,7 @@ storiesOf("DailyCards", module)
             taskSortField={TaskSortField.DAY_ORDER}
             taskOrder={Order.ASC}
             timeLamps={false}
+            lampTime={{begin: 10, end: 19}}
             milestone={false}
             seal={false}
             warning={false}
@@ -135,6 +137,7 @@ storiesOf("DailyCards", module)
             taskSortField={TaskSortField.DAY_ORDER}
             taskOrder={Order.ASC}
             timeLamps={false}
+            lampTime={{begin: 10, end: 19}}
             milestone={false}
             seal={false}
             warning={false}
@@ -165,6 +168,7 @@ storiesOf("DailyCards", module)
             taskSortField={TaskSortField.DAY_ORDER}
             taskOrder={Order.ASC}
             timeLamps={false}
+            lampTime={{begin: 10, end: 19}}
             milestone={false}
             seal={false}
             warning={false}

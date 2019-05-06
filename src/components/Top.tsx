@@ -305,6 +305,7 @@ export default class extends Component<TopProps, TopState> {
                             taskSortField={this.props.uiConfig.taskSortField}
                             taskOrder={this.props.uiConfig.taskOrder}
                             timeLamps={this.props.uiConfig.timeLamps}
+                            lampTime={this.props.config.lampTime}
                             milestone={this.props.uiConfig.milestone}
                             seal={this.props.uiConfig.seal}
                             warning={this.props.uiConfig.warning}

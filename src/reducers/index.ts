@@ -23,9 +23,15 @@ const INITIAL_APP_STATE: AppState = {
     },
 };
 
+// `config` may only one recursive assign
+// See FirebaseUtil.ts
 export const INITIAL_SHARED_STATE: SharedState = {
     config: {
         minutesToUsePerDay: 240,
+        lampTime: {
+            begin: 9,
+            end: 18,
+        },
         estimates: {
             array: [],
             yaml: '',
