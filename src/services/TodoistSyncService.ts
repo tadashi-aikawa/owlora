@@ -168,16 +168,16 @@ function convertToTasks(
                 name: x.content,
                 projectName: _.keyBy(projects, p => p.id)[String(x.project_id)].name,
                 estimatedMinutes: matchedEstimate && (matchedEstimate.minutes || 0),
-                dueDate: x.due_date_utc && moment(x.due_date_utc),
-                time: times && {
-                    start: moment(x.due_date_utc)
+                dueDate: x.due && moment(x.due.date),
+                time: times && x.due && {
+                    start: moment(x.due.date)
                         .hour(Number(times[1]))
                         .minute(Number(times[2])),
-                    end: moment(x.due_date_utc)
+                    end: moment(x.due.date)
                         .hour(Number(times[3]))
                         .minute(Number(times[4])),
                 },
-                repetition: toRepetition(x.date_string, x.content),
+                repetition: toRepetition(x.due && x.due.string, x.content),
                 icon: config.iconsByProject[String(x.project_id)] || ":white_circle:",
                 itemOrder: x.item_order,
                 dayOrder: x.day_order,
