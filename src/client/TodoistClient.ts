@@ -3,7 +3,7 @@ import {stringify} from 'query-string';
 import TodoistAll from '../models/todoist/TodoistALl';
 import * as udvi4u from 'uuid/v4';
 
-const baseURL = 'https://todoist.com/API/v7/';
+const baseURL = 'https://todoist.com/API/v8/';
 
 const dueDateUtcReplacer = (key, value) =>
     (key === 'due_date_utc' && value === '') ? null : value;

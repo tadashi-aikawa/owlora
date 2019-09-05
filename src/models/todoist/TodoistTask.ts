@@ -2,15 +2,20 @@
  * Tasks from Todoist API
  * {@link https://developer.todoist.com/?shell#items}
  */
+interface Due {
+    date: string
+    is_recurring: boolean
+    lang: string
+    string: string
+}
+
 interface TodoistTask {
     id: number;
     user_id: number;
     project_id: number;
     content: string;
-    date_string: string;
-    date_lang: string;
     /** ex. (Mon 07 Aug 2006 12:34:56 +0000) */
-    due_date_utc: string;
+    due: Due | null;
     /** 1 to 4 */
     indent: number;
     /** 1 to 4 */
