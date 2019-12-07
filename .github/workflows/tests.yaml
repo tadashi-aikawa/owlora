@@ -1,0 +1,57 @@
+name: "Tests"
+
+on:
+  push:
+    paths:
+      - ".github/**/*"
+      - "src/*"
+      - "src/**/*"
+      - "*.js"
+      - "*.json"
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["10.x", "12.x"]
+    name: Node ${{ matrix.node }}
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - run: npm install
+      - run: npm run build
+      - run: npm test
+
+      - name: "Slack notification (not success)"
+        uses: homoluctus/slatify@master
+        if: "! success()"
+        with:
+          type: ${{ job.status }}
+          username: GitHub Actions (Failure)
+          job_name: ":owlora: :nodejs:*${{ matrix.node }}* Tests"
+          mention: channel
+          mention_if: always
+          icon_emoji: "tio2"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+
+  notify:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Slack Notification (success)"
+        uses: homoluctus/slatify@master
+        if: always()
+        with:
+          type: ${{ job.status }}
+          username: GitHub Actions (Success)
+          job_name: ":owlora: :nodejs: All tests"
+          icon_emoji: ":renne:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
