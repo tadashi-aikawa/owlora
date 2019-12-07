@@ -106,7 +106,7 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
         return Repetition.everyDay.addDatesExcepted(datesExcepted).addLastDate(lastDate)
     }
 
-    if (match(q[0], "workdays?")) {
+    if (match(q[0], "workdays?") || (match(q[0], "work") && match(q[1], "days?"))) {
         return Repetition.everyWeekDay.addDatesExcepted(datesExcepted).addLastDate(lastDate)
     }
 

@@ -20,6 +20,8 @@ describe.each`
     ${"Every Days"}                   | ${"task"} | ${"every"} | ${[0, 1, 2, 3, 4, 5, 6]} | ${"every"}       | ${"every"}       | ${[]}           | ${""}
     ${"every WORKDAY"}                | ${"task"} | ${"every"} | ${[1, 2, 3, 4, 5]}       | ${"every"}       | ${"every"}       | ${[]}           | ${""}
     ${"every workdays"}               | ${"task"} | ${"every"} | ${[1, 2, 3, 4, 5]}       | ${"every"}       | ${"every"}       | ${[]}           | ${""}
+    ${"every work day"}               | ${"task"} | ${"every"} | ${[1, 2, 3, 4, 5]}       | ${"every"}       | ${"every"}       | ${[]}           | ${""}
+    ${"every work days"}              | ${"task"} | ${"every"} | ${[1, 2, 3, 4, 5]}       | ${"every"}       | ${"every"}       | ${[]}           | ${""}
     ${"every monday"}                 | ${"task"} | ${"every"} | ${[1]}                   | ${"every"}       | ${"every"}       | ${[]}           | ${""}
     ${"every mondays"}                | ${"task"} | ${"every"} | ${[1]}                   | ${"every"}       | ${"every"}       | ${[]}           | ${""}
     ${"every WED,fri"}                | ${"task"} | ${"every"} | ${[3, 5]}                | ${"every"}       | ${"every"}       | ${[]}           | ${""}
