@@ -51,7 +51,7 @@ const DAY_OF_WEEK_MAPPINGS: Dictionary<number> = {
     saturday: 6,
 }
 
-const toDaysOfWeek = (daysOfWeekStr: string): number[] =>
+export const toDaysOfWeek = (daysOfWeekStr: string): number[] =>
     daysOfWeekStr
         .split(",")
         .map(x => DAY_OF_WEEK_MAPPINGS[x.trim().replace(/s$/, "")])
@@ -70,7 +70,7 @@ const toRepetition = (dateString: string, content: string): Repetition | undefin
     }
 
     const q: string[] = dateString
-        .replace(", ", ",")
+        .replace(/, /g, ",")
         .toLowerCase()
         .split(" ")
 
@@ -169,14 +169,15 @@ function convertToTasks(
                 projectName: _.keyBy(projects, p => p.id)[String(x.project_id)].name,
                 estimatedMinutes: matchedEstimate && (matchedEstimate.minutes || 0),
                 dueDate: x.due && moment(x.due.date),
-                time: times && x.due && {
-                    start: moment(x.due.date)
-                        .hour(Number(times[1]))
-                        .minute(Number(times[2])),
-                    end: moment(x.due.date)
-                        .hour(Number(times[3]))
-                        .minute(Number(times[4])),
-                },
+                time: times &&
+                    x.due && {
+                        start: moment(x.due.date)
+                            .hour(Number(times[1]))
+                            .minute(Number(times[2])),
+                        end: moment(x.due.date)
+                            .hour(Number(times[3]))
+                            .minute(Number(times[4])),
+                    },
                 repetition: toRepetition(x.due && x.due.string, x.content),
                 icon: config.iconsByProject[String(x.project_id)] || ":white_circle:",
                 itemOrder: x.item_order,
